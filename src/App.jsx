@@ -5,23 +5,9 @@ import Navbar from './components/navbar.jsx';
 import maplibregl from 'maplibre-gl';
 import 'maplibre-gl/dist/maplibre-gl.css';
 import './App.css';
-import argentinaRoutes from "../public/data/rutas.json"
-import casosData from "../public/data/casos.js"; 
-import departamentos from "../public/data/departamentos-argentina.json";
-import departamentosBsAs from "../public/data/departamentos-buenos_aires.json";
-import provincias from "../public/data/provincias.json";
+import casosData from "../public/data/casos.js";
 import mystyle from './mystyle.json';
 
-
-
-
-
-
-
-
-
-
- 
   //limites geograficos
 
   const argentinaBounds = {
@@ -30,12 +16,6 @@ import mystyle from './mystyle.json';
     west: -77.5604, // Longitud mínima de Argentina
     east: -45.6375, // Longitud máxima de Argentina
   };
-
-  
-
-
-
-
 
      //estilos/////////////////////7
 
@@ -82,7 +62,7 @@ import mystyle from './mystyle.json';
 
 
 
-function App() {
+function App(urls) {
 
 
   const [hoveredFeatureId, setHoveredFeatureId] = useState(null);
@@ -182,49 +162,47 @@ const hidePopup = () => {
       >
 
  {/* Capa interactiva para provincias */}
- <Source id="provincias-source" type="geojson" data={provincias}>
-          <Layer
-            id="provincias-layer"
-            type="fill"
-            paint={{
-              'fill-color': [
-                'case',
-                ['==', ['id'], hoveredFeatureId],
-                '#000000', // Fill color when hovered
-                '#b2b7f5', // Fill color when not hovered
-              ],
-              'fill-opacity': 1,
-              'fill-outline-color': [
-                'case',
-                ['==', ['id'], hoveredFeatureId],
-                '#ffffff', // Fill outline color when hovered
-                'blue', // Fill outline color when not hovered
-              ],
-            }}
-          />
-        </Source>
+ <Source id="provincias-source" type="geojson" data={urls.provincias}>
+  <Layer
+  id="provincias-layer"
+  type="fill"
+  paint={{
+          'fill-color': [
+                         'case',
+                         ['==', ['id'], hoveredFeatureId],
+                         '#000000', // Fill color when hovered
+                         '#b2b7f5', // Fill color when not hovered
+                         ],
+          'fill-opacity': 1,
+          'fill-outline-color': [
+                                 'case',
+                                 ['==', ['id'], hoveredFeatureId],
+                                 '#ffffff', // Fill outline color when hovered
+                                 'blue', // Fill outline color when not hovered
+                                 ],
+          }}
+  />
+  </Source>
 
         
 
 
-         {/* Agregar el Source y Layer para mostrar los departamentos */}
-         {departamentos && (
-          <Source id="departamentos-source" type="geojson" data={departamentos}>
-            <Layer
-              id="departamentos-layer"
-              type="fill" // Capa de relleno para representar polígonos
-              paint={{
-                'fill-color': departamentosStyle.fillColor,
-        'fill-opacity': departamentosStyle.fillOpacity,
-        'fill-outline-color': departamentosStyle.color,
-              }}
-            />
-          </Source>
-        )}
+  {/* Agregar el Source y Layer para mostrar los departamentos */}
+                     <Source id="departamentos-source" type="geojson"
+data={urls.departamentos}>
+                     <Layer
+                     id="departamentos-layer"
+                     type="fill" // Capa de relleno para representar polígonos
+                     paint={{
+                             'fill-color': departamentosStyle.fillColor,
+                             'fill-opacity': departamentosStyle.fillOpacity,
+                             'fill-outline-color': departamentosStyle.color,
+                             }}
+                     />
+                     </Source>
 
         {/* Agregar el Source y Layer para mostrar los departamentos de Buenos Aires */}
-        {departamentosBsAs && (
-          <Source id="departamentosBsAs-source" type="geojson" data={departamentosBsAs}>
+<Source id="departamentosBsAs-source" type="geojson" data={urls.departamentosBsAs}>
             <Layer
               id="departamentosBsAs-layer"
               type="fill" // Capa de relleno para representar polígonos
@@ -232,14 +210,13 @@ const hidePopup = () => {
                 'fill-color': countryStyle.fillColor,
         'fill-opacity': countryStyle.fillOpacity,
         'fill-outline-color': countryStyle.color,
-        
-        
-                
-              
+
+
+
+
               }}
             />
           </Source>
-        )}
 
 
 
