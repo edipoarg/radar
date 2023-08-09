@@ -1,5 +1,5 @@
 import  React, { useState, useEffect } from 'react';
-import MapGL, {NavigationControl, Source, Layer, Marker, Popup} from 'react-map-gl';
+import MapGL, {NavigationControl, Source, Layer, Marker, Popup} from 'react-map-gl/maplibre';
 
 import Navbar from './components/navbar.jsx';
 import maplibregl from 'maplibre-gl';
