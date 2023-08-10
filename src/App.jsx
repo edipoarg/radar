@@ -84,26 +84,26 @@ function App(urls) {
   }
 
   return (
-          <div className="App">
-          <Navbar/>
-          <MapGL mapLib={maplibregl} {...mapProps}
-          onHover={handleHover} // Asignar la función handleProvinciasHover al evento onHover
-          onLeave={handleLeave} // Asignar la función handleProvinciasLeave al evento onLeave
-          >
+    <div className="App">
+      <Navbar/>
+      <MapGL mapLib={maplibregl} {...mapProps}
+             onHover={handleHover} // Asignar la función handleProvinciasHover al evento onHover
+             onLeave={handleLeave} // Asignar la función handleProvinciasLeave al evento onLeave
+      >
 
-          {/* Capa interactiva para provincias */}
-          <ProvSource data={urls.provincias} selected={hoveredFeatureId}/>
-          <DepsSource data={urls.departamentos} style={style.departamentos}/>
-          <BsAsSource data={urls.departamentosBsAs} style={style.country}/>
+        {/* Capa interactiva para provincias */}
+        <ProvSource data={urls.provincias} selected={hoveredFeatureId}/>
+        <DepsSource data={urls.departamentos} style={style.departamentos}/>
+        <BsAsSource data={urls.departamentosBsAs} style={style.country}/>
 
-          <Markers casos={casosData} setPopupInfo={setPopupInfo}
-                   setMarker={setHoveredMarkerId} selected={hoveredMarkerId}/>
+        <Markers casos={casosData} setPopupInfo={setPopupInfo}
+                 setMarker={setHoveredMarkerId} selected={hoveredMarkerId}/>
 
-          <NavigationControl position="bottom-right" />
-          </MapGL>
-          {popupInfo && <Popup {...popupInfo} />}
-          </div>
-          );
+        <NavigationControl position="bottom-right" />
+      </MapGL>
+      {popupInfo && <Popup {...popupInfo} />}
+    </div>
+  );
 }
 
 export default App;
