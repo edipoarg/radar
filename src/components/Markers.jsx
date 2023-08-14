@@ -3,7 +3,7 @@ import {Marker} from 'react-map-gl/maplibre';
 export const Markers = ({casos, setPopupInfo, setMarker, selected}) => (
   casos.map((caso) => (
     <div key={caso.ID}>
-      <Marker
+      <Marker 
         longitude={caso.Coordenadas[1]}
         latitude={caso.Coordenadas[0]}
         onMouseEnter={() => setMarker(caso.ID)}
@@ -25,7 +25,12 @@ export const Markers = ({casos, setPopupInfo, setMarker, selected}) => (
       >
         <div className={`marker ${caso.ID === selected ? "hovered" : ""}`}>
           <span>{caso.ID}</span>
+          
+         
         </div>
+  
+        
       </Marker>
+      
     </div>
 )))

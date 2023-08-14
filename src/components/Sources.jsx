@@ -12,7 +12,7 @@ export const ProvSource = ({data, selected}) => (
           '#000000', // Fill color when hovered
           '#b2b7f5', // Fill color when not hovered
         ],
-        'fill-opacity': 1,
+        'fill-opacity': 0.5,
         'fill-outline-color': [
           'case',
           ['==', ['id'], selected],

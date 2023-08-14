@@ -1,0 +1,85 @@
+
+body{
+  background-color: rgba(0, 0, 0, 0);
+  margin: 0;
+}
+
+.radar {
+  /*background: url(https://gtms03.alicdn.com/tps/i3/TB1Vet9IVXXXXbuapXXb2YSIVXX-567-567.png) no-repeat 50% 50%;*/
+  width: 720px;
+  height: 720px;
+  position: 100%;
+  background-size: 100%;
+  position: absolute;
+  
+  margin-left: -100% / 2;
+  margin-top: -100% / 2;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.radar:hover {
+  background: none;
+}
+
+.radar .pointer {
+  position: absolute;
+  z-index: 1024;
+  left: 10.5820106%;
+  right: 10.5820106%;
+  top: 10.5820106%;
+  bottom: 50%;
+  will-change: transform;
+  transform-origin: 50% 100%;
+  border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+  background-image: linear-gradient(135deg, 
+    rgba(97, 85, 223, 0.01) 1%, 
+    rgba(29, 157, 236, 0.02) 30%,
+    rgba(0, 0, 0, 0) 100%
+    );
+  clip-path: polygon(100% 0, 
+    100% 10%, //控制扇形角度 100% => 135deg
+    50% 100%, 0 100%, 0 0);
+  
+  animation: rotate360 8s infinite linear;
+}
+
+.radar .pointer:after {
+  content: "";
+  position: absolute;
+  width: 50%;
+  bottom: -1px;
+  border-top: 2px solid rgba(0, 231, 244, 0.2);
+  box-shadow: 0 0 3px rgba(0, 231, 244, 0.2);
+  border-radius: 9px;
+}
+
+
+
+
+@keyframes rotate360 {
+  0% {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+.spinner1 {
+    align-items: center;
+    border: .3em solid transparent;
+    border-top: .3em solid #4DB6AC;
+    border-right: .3em solid #4DB6AC;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+  }

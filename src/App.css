@@ -1,3 +1,9 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 .App {
   text-align: center;
   width: 100vw;
@@ -14,20 +20,54 @@
   color: white;
   font-weight: bold;
 }
+#markerLine{
+background-color: rgb(249, 38, 6);
+width: 1.5px;
+height: 12px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+
 
 .marker:hover {
   background-color: rgb(52, 7, 7); 
   transform: scale(1.5); /* Increase the size when hovered */
 }
 
+/*== Encabezado==*/
+#heading{
+  position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+z-index: 999;
+  height: 80px;
+  background-color: #00425A;
+  color: #EFF5F5;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  align-items: center;
+  padding-right: 5px;}
+
 .popup {
-  position: absolute;
+  position: fixed;
+  width: 400px;
+  height: 150px;
+  bottom: 20px;
+  left: 20px;
   padding: 15px;
-  color: aliceblue;
-  background-color: black;
+  padding-left:25px;
+  color: black;
+  background-color: white;
   border: 1px solid white;
-  border-radius: 65px;
+  border-radius: 30px;
   z-index: 1;
+  overflow: hidden;
+  white-space: break-spaces;
 }
 
-
+#mapa{
+background-color: #fff4ff;
+}

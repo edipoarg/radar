@@ -1,12 +1,56 @@
 .heading {
-  margin: 0;
-  padding: 0px;
-  background-color: black;
-  color: white;
-  text-align: center;
+  position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+z-index: 999;
+  height: 80px;
+  background-color: #ffffff;
+  color: #00425A;
+  display: grid;
+  grid-template-columns: 1fr 3fr ;
+  align-items: center;
+  padding-right: 5px;
  }
  
  .heading > h1 {
-  padding: 20px;
+  padding: 10px;
   margin: 0;
  }
+
+#menuImg{
+  width: 132px;
+}
+
+
+
+ #menu{
+  display: grid;
+  grid-template-columns: 3fr 1fr; }
+
+#botonMenu{
+  display: flex;
+justify-content: right;
+}
+
+#menuPCBox{
+display: flex;
+justify-content: right;
+align-items: center}
+
+
+ #menuPC{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 60px;
+ 
+ }
+
+ #logoImg {
+width: 106px;
+ }
+
+#logo{
+display: flex;
+padding-left: 20px;
+}

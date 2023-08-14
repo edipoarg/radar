@@ -1,6 +1,5 @@
 {
 
-
    
 
     "id": "43f36e14-e3f5-43c1-84c0-50a9c80dc5c7",
@@ -17,7 +16,7 @@
             "id": "background",
             "type": "background",
             "paint": {
-                "background-color": "#D8F2FF"
+                "background-color": "#fff4ff"
                 
             },
             "filter": [
@@ -32,8 +31,8 @@
             "id": "coastline",
             "type": "line",
             "paint": {
-                "line-blur": 5,
-                "line-color": "#198EC8",
+                "line-blur": 3,
+                "line-color": "#7d97ec",
                 "line-width": {
                     "stops": [
                         [
@@ -73,6 +72,8 @@
             "id": "countries-fill",
             "type": "fill",
             "paint": {
+                "fill-opacity": 0,
+
                 "fill-color": [
                     "match",
                     [
@@ -319,6 +320,7 @@
                     "#d8d7fa",
                     "#d8d7fa"
                 ]
+            
             },
             "filter": [
                 "all"
@@ -334,7 +336,7 @@
             "id": "countries-boundary",
             "type": "line",
             "paint": {
-                "line-color": "rgba(0, 0, 0, 1)",
+                "line-color": "rgba(255, 255, 255, 1)",
                 "line-width": {
                     "stops": [
                         [
@@ -2069,4 +2071,6 @@
         "maptiler:copyright": "This style was generated on MapTiler Cloud. Usage is governed by the license terms in https://github.com/maplibre/demotiles/blob/gh-pages/LICENSE",
         "openmaptiles:version": "3.x"
     }
+
+   
 }

@@ -79,19 +79,22 @@ function App(urls) {
       maxZoom: 10, // Nivel máximo de zoom permitido
     }, style: {
       width: "100%",
-      height: " calc(100vh - 77px)"
+      height: " calc(100vh)"
     }, mapStyle: mystyle
   }
 
   return (
     <div className="App">
-      <Navbar/>
-      <MapGL mapLib={maplibregl} {...mapProps}
+      <Navbar id= "header" ></Navbar>
+      <MapGL id= "mapa" mapLib={maplibregl} {...mapProps}
              onHover={handleHover} // Asignar la función handleProvinciasHover al evento onHover
              onLeave={handleLeave} // Asignar la función handleProvinciasLeave al evento onLeave
       >
 
         {/* Capa interactiva para provincias */}
+       
+
+
         <ProvSource data={urls.provincias} selected={hoveredFeatureId}/>
         <DepsSource data={urls.departamentos} style={style.departamentos}/>
         <BsAsSource data={urls.departamentosBsAs} style={style.country}/>
