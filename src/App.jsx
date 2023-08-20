@@ -9,7 +9,8 @@ import Navbar from "./components/navbar.jsx";
 import "./App.css";
 import mystyle from "./mystyle.json";
 import { fecthData } from "./services/fetchs.js";
-import casos from "../public/data/casos.js";
+import moment from "moment/moment.js";
+import { Slider } from "@mui/material";
 
 //estilos/////////////////////7
 
@@ -53,6 +54,18 @@ function App(urls) {
   const [hoveredMarkerId, setHoveredMarkerId] = useState(null);
   const [popupInfo, setPopupInfo] = useState(null);
   const [data, setData] = useState(null);
+  const [filteredData, setFilteredData] = useState([]);
+  const [months, setMonths] = useState(0);
+  const [value, setValue] = useState(0);
+  const valueLabelFormat = (value) => {
+    const diff = months - value;
+    const date = moment().subtract(diff, "months");
+    return `${date.month() + 1}/${date.year()}`;
+  };
+
+  const handleChange = (event) => {
+    setValue(event.target.value);
+  };
 
   useEffect(() => {
     const apiCal = async () => {
@@ -60,6 +73,7 @@ function App(urls) {
         const data = await fecthData();
         if (data) {
           setData(data);
+          setFilteredData(data)
         }
       } catch (error) {
         console.log(error);
@@ -68,6 +82,19 @@ function App(urls) {
 
     apiCal();
   }, []);
+
+  useEffect(() => {
+    const diff = months - value;
+
+    const date = moment().startOf("month").subtract(diff, "months");
+    if (data) {
+      const checkDate = (e) => {
+        const eventDate = new moment(e.date, 'DD/MM/YYYY')
+        return eventDate >= date;
+      };
+      setFilteredData(data.filter(checkDate));
+    }
+  }, [value]);
 
   const handleHover = (event) => {
     setHoveredFeatureId(event.features?.[0]?.id || null);
@@ -92,11 +119,21 @@ function App(urls) {
 
   useEffect(() => {
     if (data) {
-      let from;
+      const now = new moment();
+      let from = new moment();
       data.forEach((e) => {
-        // console.log("Date: ", new Date(e.date.trim()));
-        console.log("String: ", e.date, 'Date: ', new Date(e.date));
+        const date = new moment(e.date, 'DD/MM/YYYY');
+
+        if (date <= from) {
+          from = date;
+        }
       });
+
+      const yearsDiff = now.year() - from.year();
+      const monthDiff = now.month() - from.month();
+
+      const totalMonths = yearsDiff * 12 + monthDiff;
+      setMonths(totalMonths);
     }
   }, [data]);
 
@@ -118,16 +155,28 @@ function App(urls) {
 
         {data && (
           <Markers
-            events={data}
-            casos={casos}
+            events={filteredData}
             setPopupInfo={setPopupInfo}
             setMarker={setHoveredMarkerId}
             selected={hoveredMarkerId}
           />
         )}
-
         <NavigationControl position="bottom-right" />
       </MapGL>
+
+      <div className="slider-container">
+        <Slider
+          max={months}
+          valueLabelDisplay="auto"
+          value={value}
+          step={1}
+          getAriaValueText={valueLabelFormat}
+          valueLabelFormat={valueLabelFormat}
+          onChange={handleChange}
+          aria-labelledby="non-linear-slider"
+        />
+      </div>
+
       {popupInfo && <Popup {...popupInfo} />}
     </div>
   );

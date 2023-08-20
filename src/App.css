@@ -1,4 +1,4 @@
-*{
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -7,49 +7,70 @@
 .App {
   text-align: center;
   width: 100vw;
+  position: relative;
 }
 
 .marker {
   width: 24px;
   height: 24px;
   border-radius: 50%;
-  background-color:rgb(249, 38, 6); /* or any other color you want for the marker */
+  background-color: rgb(
+    249,
+    38,
+    6
+  ); /* or any other color you want for the marker */
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
   font-weight: bold;
 }
-#markerLine{
-background-color: rgb(249, 38, 6);
-width: 1.5px;
-height: 12px;
-display: flex;
-align-items: center;
-justify-content: center;
+#markerLine {
+  background-color: rgb(249, 38, 6);
+  width: 1.5px;
+  height: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-
+.slider-container {
+  /* width: 300px; */
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 90%;
+  z-index: 999;
+  margin-left: 65px;
+  /* height: 80px; */
+  /* background-color: #00425a; */
+  /* color: #eff5f5; */
+  /* display: grid; */
+  /* grid-template-columns: 1fr 5fr; */
+  /* align-items: center; */
+  padding-right: 5px;
+}
 
 .marker:hover {
-  background-color: rgb(52, 7, 7); 
+  background-color: rgb(52, 7, 7);
   transform: scale(1.5); /* Increase the size when hovered */
 }
 
 /*== Encabezado==*/
-#heading{
+#heading {
   position: fixed;
-top: 0;
-left: 0;
-width: 100%;
-z-index: 999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
   height: 80px;
-  background-color: #00425A;
-  color: #EFF5F5;
+  background-color: #00425a;
+  color: #eff5f5;
   display: grid;
   grid-template-columns: 1fr 5fr;
   align-items: center;
-  padding-right: 5px;}
+  padding-right: 5px;
+}
 
 .popup {
   position: fixed;
@@ -58,7 +79,7 @@ z-index: 999;
   bottom: 20px;
   left: 20px;
   padding: 15px;
-  padding-left:25px;
+  padding-left: 25px;
   color: black;
   background-color: white;
   border: 1px solid white;
@@ -68,6 +89,6 @@ z-index: 999;
   white-space: break-spaces;
 }
 
-#mapa{
-background-color: #fff4ff;
+#mapa {
+  background-color: #fff4ff;
 }

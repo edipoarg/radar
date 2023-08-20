@@ -21,8 +21,7 @@ export const fecthData = async () => {
           longitude,
         },
       };
-      if (longitude !== undefined) {
-        console.log("on fetch", event.date === '');
+      if (longitude !== undefined && event.date !== "") {
         parsedValues.push(event);
       }
     }

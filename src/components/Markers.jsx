@@ -1,6 +1,6 @@
 import { Marker } from "react-map-gl/maplibre";
 
-export const Markers = ({ events, casos, setPopupInfo, setMarker, selected }) =>
+export const Markers = ({ events, setPopupInfo, setMarker, selected }) =>
   events.map((event, index) => {
     const { coords, title, date, source, id } = event;
     return (
