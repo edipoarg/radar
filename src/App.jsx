@@ -11,6 +11,7 @@ import mystyle from "./mystyle.json";
 import { fecthData } from "./services/fetchs.js";
 import moment from "moment/moment.js";
 import { Slider } from "@mui/material";
+import { provincias, departamentos, departamentosBsAs} from './constants/mapsData/index.js'
 
 //estilos/////////////////////7
 
@@ -149,9 +150,9 @@ function App(urls) {
       >
         {/* Capa interactiva para provincias */}
 
-        <ProvSource data={urls.provincias} selected={hoveredFeatureId} />
-        <DepsSource data={urls.departamentos} style={style.departamentos} />
-        <BsAsSource data={urls.departamentosBsAs} style={style.country} />
+        <ProvSource data={provincias} selected={hoveredFeatureId} />
+        <DepsSource data={departamentos} style={style.departamentos} />
+        <BsAsSource data={departamentosBsAs} style={style.country} />
 
         {data && (
           <Markers
