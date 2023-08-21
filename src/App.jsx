@@ -73,7 +73,7 @@ function App(urls) {
         const data = await fecthData();
         if (data) {
           setData(data);
-          setFilteredData(data)
+          setFilteredData(data);
         }
       } catch (error) {
         console.log(error);
@@ -89,7 +89,7 @@ function App(urls) {
     const date = moment().startOf("month").subtract(diff, "months");
     if (data) {
       const checkDate = (e) => {
-        const eventDate = new moment(e.date, 'DD/MM/YYYY')
+        const eventDate = new moment(e.date, "DD/MM/YYYY");
         return eventDate >= date;
       };
       setFilteredData(data.filter(checkDate));
@@ -122,7 +122,7 @@ function App(urls) {
       const now = new moment();
       let from = new moment();
       data.forEach((e) => {
-        const date = new moment(e.date, 'DD/MM/YYYY');
+        const date = new moment(e.date, "DD/MM/YYYY");
 
         if (date <= from) {
           from = date;
