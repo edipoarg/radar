@@ -24,6 +24,8 @@ export const fecthData = async () => {
       if (longitude !== undefined && event.date !== "") {
         parsedValues.push(event);
       }
+    } else {
+      console.log(c)
     }
   });
   return parsedValues;

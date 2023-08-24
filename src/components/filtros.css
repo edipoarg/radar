@@ -1,0 +1,152 @@
+#filtros{
+    width: 100vw;
+    height: 90vh;
+    position: absolute;
+}
+
+#gap{
+    height: 10vh;
+}
+
+#filtrosBox{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+#boxes{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 3px;
+    height: 55vh;
+    padding-left: 5px;
+    z-index: 1000;
+
+}
+
+#filtrosBox2{
+    height: 10vh;
+    display: grid;
+    grid-template-columns: 8fr 1fr;
+}
+
+#display{
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+    padding: 10px;
+        box-shadow: -2px -2px 16px WHITE, 2px 2px 16px #c9c9c9;
+
+}
+
+#filtroTipo{
+    margin-top: 15px;
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: -2px -2px 16px WHITE, 2px 2px 16px #c9c9c9;
+
+
+}
+
+
+
+#gap2{
+    height: 25vh;
+}
+
+
+#rangeSlider{
+
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+    padding: 10px;
+    height: 5vh;
+    /*margin-left: 15px;*/
+    box-shadow: -2px -2px 16px WHITE, 2px 2px 16px #c9c9c9;
+    z-index: 1000;
+
+}
+
+.tipos{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    padding: 7px 5px;
+}
+
+.tipo1Icon{
+background-color: red;
+width: 23px;
+height: 23px;
+border-radius: 5px;
+
+}
+.tipo2Icon{
+    background-color: orange;
+    width: 23px;
+    height: 23px;
+    border-radius: 5px;
+
+    }
+    .tipo3Icon{
+        background-color: yellow;
+        width: 23px;
+        height: 23px;
+        border-radius: 5px;
+        }
+
+        #botonBajar{
+            z-index: 1000;
+
+        }
+
+        .modo{
+            background-color: white;
+            color: black;
+            border-radius: 20px;
+            padding: 10px;
+                box-shadow: -2px -2px 16px WHITE, 2px 2px 16px #c9c9c9;
+        margin-top: 15px;
+        }
+
+
+
+        
+/*== Responsive==*/
+
+/*== tablet==*/
+
+@media (min-width: 768px){
+
+    #filtros{
+        height: 90vh;
+    }
+
+    #gap{
+        height: 15vh;
+    }
+
+
+    
+#boxes{
+    padding: 5px;
+    height: 50vh;
+    padding-left: 15px;
+}
+
+}
+
+
+/*  PC  */
+
+@media (min-width: 1200px){
+
+    
+#filtrosBox{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
+
+  
+}

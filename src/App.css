@@ -36,12 +36,13 @@
 
 .slider-container {
   /* width: 300px; */
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 90%;
-  z-index: 999;
-  margin-left: 65px;
+
+ position: absolute;
+  top: 80vh;
+  left: 3vh;
+  width: 80vw;
+  z-index: 0;
+
   /* height: 80px; */
   /* background-color: #00425a; */
   /* color: #eff5f5; */
@@ -91,4 +92,13 @@
 
 #mapa {
   background-color: #fff4ff;
+}
+
+
+.slider-container{
+  background-color: white;
+  color: black;
+  border-radius: 20px;
+  padding: 20px;
+      box-shadow: -2px -2px 16px WHITE, 2px 2px 16px #c9c9c9;
 }

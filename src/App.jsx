@@ -13,6 +13,10 @@ import moment from "moment/moment.js";
 import { Slider } from "@mui/material";
 import { provincias, departamentos, departamentosBsAs} from './constants/mapsData/index.js'
 
+import Main2 from './components/main2.jsx'; // Cambia la ruta a tu formulario
+import Filtros from './components/filtros.jsx'; // Cambia la ruta a tu formulario
+import Analisis from './components/analisis.jsx'
+
 //estilos/////////////////////7
 
 const style = {
@@ -141,6 +145,7 @@ function App(urls) {
   return (
     <div className="App">
       <Navbar id="header"></Navbar>
+      <Filtros></Filtros>
       <MapGL
         id="mapa"
         mapLib={maplibregl}
@@ -179,6 +184,11 @@ function App(urls) {
       </div>
 
       {popupInfo && <Popup {...popupInfo} />}
+
+      <Main2>
+
+      </Main2>
+    <Analisis></Analisis>
     </div>
   );
 }

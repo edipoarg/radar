@@ -1,0 +1,47 @@
+#analisis{
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100vw;
+    background-color: blue;
+    padding: 20px;
+    padding-top: 18vh;
+}
+
+#analisisHeader{
+    padding: 0vw 2vw;
+    padding-bottom: 10vh;
+
+}
+
+#analisisDatos
+{
+    display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+padding: 4vw 8vw;
+}
+
+/*== Responsive==*/
+
+/*== tablet==*/
+
+@media (min-width: 768px){
+
+    #analisisHeader{
+        padding: 0vw 8vw;
+        padding-bottom: 10vh;
+    
+    }
+    
+}
+
+
+/*  PC  */
+
+@media (min-width: 1200px){
+    #analisisHeader{
+        padding: 0vw 30vw;
+        padding-bottom: 10vh;
+    
+    }
+  
+}
