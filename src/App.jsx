@@ -17,6 +17,8 @@ import Main2 from './components/main2.jsx'; // Cambia la ruta a tu formulario
 import Filtros from './components/filtros.jsx'; // Cambia la ruta a tu formulario
 import Analisis from './components/analisis.jsx'
 
+import Reporta from './components/reporta.jsx'
+
 //estilos/////////////////////7
 
 const style = {
@@ -189,6 +191,7 @@ function App(urls) {
 
       </Main2>
     <Analisis></Analisis>
+    <Reporta></Reporta>
     </div>
   );
 }

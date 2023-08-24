@@ -4,6 +4,14 @@ import './reporta.css'
 
 export default function reportaForm(){
 
+function Submit(e){
+  const formEle = document.querySelector("#formSheet")
+  e.preventDefault
+  console.log("submitted")
+  const formData = new FormData(formEle)
+fetch("https://script.google.com/macros/s/AKfycbySxucaKUPO4gM1WPoknylJuhqL4ElNwvgyDUfzVypgXlTX3u3CtrdBAuwSpB2DQ2O8/exec", {method: "POST", body: formData})
+}
+
 
 return(
 
@@ -20,13 +28,13 @@ return(
         <br /> **no publicaremos ninguna información sin tu autorización </h4>
         </div>
 
-        <form id='formSheet' action="formData.php" method="post">
+        <form id='formSheet' onSubmit={(e)=>Submit(e)}>
           <div class='FormInput'>
             <label htmlFor="email"></label>
             <h3>Email</h3>
 
             <br />
-            <input className="formInput" type="email" name="mail" id="email" required placeholder="Escribe tu email" />
+            <input className="formInput" type="email" name="Mail" id="mail" required placeholder="Escribe tu email" />
           </div>
           <br />
 
@@ -38,7 +46,7 @@ return(
             <input
              className="formInput" 
               type="text"
-              name="tituloHecho"
+              name="Titulo"
               id="titulo"
               required
               placeholder="Escribe tu respuesta"
@@ -60,7 +68,7 @@ return(
     <h3>¿Dónde pasó?</h3>
     <p>Si es posible, insertar enlace de googlemaps o referencia geográfica</p>
   </label>
-  <input  className="formInput"  type="text" name="lugarHecho" id="lugar" placeholder="Escribe aquí" />
+  <input  className="formInput"  type="text" name="Lugar" id="lugar" placeholder="Escribe aquí" />
 </div>
 <br />
 <div>
@@ -71,9 +79,8 @@ return(
   <input
     className="formInput" 
      type="text"
-    name="agresorHecho"
+    name="Agresor"
     id="agresor"
-    value=""
     placeholder="Escribe aquí"
     required
   />
@@ -86,9 +93,8 @@ return(
   <input
    className="formInput" 
     type="text"
-    name="intervencionHecho"
-    id="contexto"
-    value=""
+    name="Intervencion"
+    id="intervencion"
     placeholder="Escribe aquí"
   />
 </div>
@@ -98,7 +104,7 @@ return(
     <p>Fotos, videos o documentos relativos al hecho.</p>
   </label>
   <br />
-  <input  className="formInput"  type="file" name="archivosHecho" id="archivos" multiple />
+  <input  className="formInput"  type="file" name="Archivos" id="archivos" multiple />
 </div>
 <div>
   <label htmlFor="comentarios">
@@ -108,9 +114,8 @@ return(
   <input
    className="formInput" 
     type="text"
-    name="comentariosHecho"
+    name="Comentarios"
     id="observaciones"
-    value=""
     placeholder="Escribe aquí"
   />
 </div>
