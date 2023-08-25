@@ -11,7 +11,7 @@ import mystyle from "./mystyle.json";
 import { fecthData } from "./services/fetchs.js";
 import moment from "moment/moment.js";
 import { Slider } from "@mui/material";
-import { provincias, departamentos, departamentosBsAs} from './constants/mapsData/index.js'
+import { provincias, departamentos, departamentosBsAs} from '../public/data/mapsData/index.js'
 
 //estilos/////////////////////7
 
