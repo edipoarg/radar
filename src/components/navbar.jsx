@@ -5,7 +5,7 @@ export default function Navbar(){
  return (
   <div className="heading">
    <div id="logo">
- <img id= "logoImg" src="../src/assets/logo.png" alt="" />  
+ <img id= "logoImg" src="src/assets/logo.png" alt="" />  
  </div> 
 
  <div id="menu">
@@ -21,7 +21,7 @@ export default function Navbar(){
  
     <div id="botonMenu" >
 
-       <img id= "menuImg" src="../src/assets/menu.png" alt="" />
+       <img id= "menuImg" src="src/assets/menu.png" alt="" />
 
      </div>
  
