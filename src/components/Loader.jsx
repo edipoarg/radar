@@ -9,6 +9,7 @@ export default function Loader({urls, children }) {
 
     useEffect(() => {
         setLoaded(0);
+        console.log(Object.entries(urls))
         Object.entries(urls).map(([k, u]) => fetch(u)
             .then(async r => {
                 debug(`got ${u}`, r);
