@@ -8,10 +8,10 @@ ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <Loader
       urls={{
-        departamentos: "../src/public/data/mapsData/departamentos-argentina.json",
-        departamentosBsAs: "../src/public/data/mapsData/departamentos-buenos_aires.json",
-        provincias: "../src/public/data/mapsData/provincias.json",
-        rutas: "../src/public/data/mapsData/rutas.json",
+        departamentos: "/data/mapsData/departamentos-argentina.json",
+        departamentosBsAs: "/data/mapsData/departamentos-buenos_aires.json",
+        provincias: "/data/mapsData/provincias.json",
+        rutas: "/data/mapsData/rutas.json",
       }}
     >
       <App />
