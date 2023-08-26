@@ -51,7 +51,6 @@ p{
     margin-top: 45px;
   padding: 20px;
   border-radius: 15px 50px;
-  box-shadow: -9px -9px 16px WHITE, 9px 9px 16px #c9c9c9;
 
  
 
@@ -123,10 +122,12 @@ fieldset > input[type='radio']{
         }
 
         
-    #titulo{
+    #tituloForm{
         font-size: 30px;
     }
-    
+    #bajadaForm{
+        padding-top: 3vh;
+    }
 
 
 }
@@ -136,5 +137,35 @@ fieldset > input[type='radio']{
 
 @media (min-width: 1200px){
 
+    #form{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    
+#formHeader{
+    padding: 10px 8vw;
+    padding-top: 20vh;
+    }
+
+    #tituloForm{
+        font-size: 3rem;
+    }
+
+    #bajadaForm{
+        padding-top: 5vh;
+        font-size: 1rem;
+    }
+
   
+    .formInput {background-color: white;
+        color: black;
+        padding: 5px;
+        padding-left: 25px;
+        width: 30vw;
+        border: 1px solid #eaeaea;
+        border-radius: 15px;
+        height: 5vh;
+      
+      }
 }

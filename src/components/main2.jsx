@@ -47,16 +47,16 @@ return(
       <div id='botoneraMain'>
 
         <div id='contactoMain'>
-            <h2>Conectá</h2>
-            <p>Conocé más sobre RADAR</p>
+            <h2 id='conectaTitle'>Conectá</h2>
+            <p id='conectaText'>Conocé más sobre RADAR</p>
             <button><a href="">Ir</a></button>
         </div>
         <div id='listadoMain'>
-          <h3>Listado de todos los casos</h3>
+          <h3 id='listadoText'>Listado de todos los casos</h3>
           <button><a href="">Ir</a></button>
         </div>
         <div id='analisisMain'>
-          <h3>Analisis y estadisticas</h3>
+          <h3 id='analisisText'>Analisis y estadisticas</h3>
           <button><a href="">1</a></button>
         </div>
       </div>

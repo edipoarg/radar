@@ -22,9 +22,9 @@ return(
       <div id="form">
 
         <div id='formHeader'>
-        <h1 id='titulo'>Relevamiento nacional de ataques de derechas radicalizadas
+        <h1 id='tituloForm'>Relevamiento nacional de ataques de derechas radicalizadas
 </h1>
-        <h4>*este reporte no implica la realización de ningún tipo de denuncia institucional sino un aporte a un relevamiento colaborativo con fines periodísticos. 
+        <h4 id='bajadaForm'>*este reporte no implica la realización de ningún tipo de denuncia institucional sino un aporte a un relevamiento colaborativo con fines periodísticos. 
         <br /> **no publicaremos ninguna información sin tu autorización </h4>
         </div>
 

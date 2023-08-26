@@ -18,8 +18,10 @@ import Filtros from './components/filtros.jsx'; // Cambia la ruta a tu formulari
 import Analisis from './components/analisis.jsx'
 
 import Reporta from './components/reporta.jsx'
+import Marquee from './components/marquee.jsx'
+import Notas from './components/notas'
 
-//estilos/////////////////////7
+//estilos/////////////////////
 
 const style = {
   country: {
@@ -113,13 +115,13 @@ function App(urls) {
     initialViewState: {
       longitude: -65.0, // Coordenada longitudinal de Argentina
       latitude: -40.0, // Coordenada latitudinal de Argentina
-      zoom: 3.7, //zoom inicial
-      minZoom: 1, // Nivel mínimo de zoom permitido
-      maxZoom: 10, // Nivel máximo de zoom permitido
+      zoom: 2.7, //zoom inicial
+      minZoom: 2, // Nivel mínimo de zoom permitido
+      maxZoom: 15, // Nivel máximo de zoom permitido
     },
     style: {
-      width: "100%",
-      height: " calc(100vh)",
+      width: "100vw",
+      height: " 90vh",
     },
     mapStyle: mystyle,
   };
@@ -146,8 +148,14 @@ function App(urls) {
 
   return (
     <div className="App">
+     
       <Navbar id="header"></Navbar>
-      <Filtros></Filtros>
+      <Marquee></Marquee>
+
+      
+     
+      <Filtros caseCount={filteredData.length} ></Filtros>
+      <div id='mapGap'></div>
       <MapGL
         id="mapa"
         mapLib={maplibregl}
@@ -169,7 +177,7 @@ function App(urls) {
             selected={hoveredMarkerId}
           />
         )}
-        <NavigationControl position="bottom-right" />
+        <NavigationControl position="top-right" />
       </MapGL>
 
       <div className="slider-container">
@@ -192,6 +200,7 @@ function App(urls) {
       </Main2>
     <Analisis></Analisis>
     <Reporta></Reporta>
+    <Notas></Notas>
     </div>
   );
 }

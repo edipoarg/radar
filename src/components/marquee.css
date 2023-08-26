@@ -1,0 +1,17 @@
+#marquee-container{
+    width: 100vw;
+    height: 3vh;
+    background-color: blue;
+    position: relative;
+    top: 10vh;
+    z-index: 3000;
+position: relative;    
+}
+
+#marqueeContent{
+    color: white
+}
+
+#highlight-text{
+    color: yellow;
+}

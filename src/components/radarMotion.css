@@ -6,15 +6,15 @@ body{
 
 .radar {
   /*background: url(https://gtms03.alicdn.com/tps/i3/TB1Vet9IVXXXXbuapXXb2YSIVXX-567-567.png) no-repeat 50% 50%;*/
-  width: 720px;
-  height: 720px;
+  width: 80vh;
+  height: 80vh;
   position: 100%;
   background-size: 100%;
   position: absolute;
   
   margin-left: -100% / 2;
   margin-top: -100% / 2;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: rgba(255, 255, 255, 0);
 }
 
 .radar:hover {
@@ -32,9 +32,9 @@ body{
   transform-origin: 50% 100%;
   border-radius: 50% 50% 0 0 / 100% 100% 0 0;
   background-image: linear-gradient(135deg, 
-    rgba(97, 85, 223, 0.01) 1%, 
-    rgba(29, 157, 236, 0.02) 30%,
-    rgba(0, 0, 0, 0) 100%
+    rgba(255, 250, 250, 0.3) 1%, 
+    #ff680b1a 40%,
+    rgba(237, 229, 229, 0) 100%
     );
   clip-path: polygon(100% 0, 
     100% 10%, //控制扇形角度 100% => 135deg
@@ -48,8 +48,8 @@ body{
   position: absolute;
   width: 50%;
   bottom: -1px;
-  border-top: 2px solid rgba(0, 231, 244, 0.2);
-  box-shadow: 0 0 3px rgba(0, 231, 244, 0.2);
+  border-top: 2px solid rgba(217, 23, 23, 0.02);
+  box-shadow: 0 0 3px rgba(228, 53, 14, 0.);
   border-radius: 9px;
 }
 
@@ -73,13 +73,3 @@ body{
 
 
 
-
-.spinner1 {
-    align-items: center;
-    border: .3em solid transparent;
-    border-top: .3em solid #4DB6AC;
-    border-right: .3em solid #4DB6AC;
-    border-radius: 100%;
-    display: flex;
-    justify-content: center;
-  }

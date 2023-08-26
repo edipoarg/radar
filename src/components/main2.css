@@ -123,6 +123,24 @@ grid-template-columns: 1fr;
 
 }
 
+#conectaTitle{
+    color: white;
+}
+
+#conectaText{
+    color: white;
+}
+
+#listadoText{
+    color: white;
+}
+
+#analisisText{
+    color: white;
+}
+
+
+
 #listadoMain{
     display: grid;
     grid-template-columns: 4fr 1fr;

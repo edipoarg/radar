@@ -4,7 +4,7 @@ import { Switch, Select, MenuItem } from "@mui/material";
 
 
 
-export default function filtros(){
+export default function filtros({caseCount}){
 
 
 return(
@@ -14,13 +14,20 @@ return(
 
       <div id='gap'></div>
 
+
       <div id='filtrosBox'>
         <div id='boxes'>
-          <div id='display'>
+        <div id='botonFiltros'>
+          <button id='plegable'><h6 id='cerrarFiltros'>x</h6>
+          <h6>Filtros</h6>
+          
+        </button>
+        </div>
 
-            <h1>160</h1>
-            <h4>casos de violencia</h4>
-            <h3>Argentina</h3>
+          <div id='display'>
+          <h4>casos:</h4>
+            <h1 id='cantCasos'>{caseCount}</h1>
+            
           </div>
           <div id='opciones'>
 
@@ -28,28 +35,28 @@ return(
 
               <div class='tipos'>
     
-             <div class='tipo1Icon'></div>
-                   <h4>tipo 1</h4>
+             <div class='tipo3Icon'></div>
+                   <h4 class='tipoClass'>violencia física, sexual y atentados contra la vida </h4>
                    <Switch  defaultChecked></Switch>
                </div>
                
               <div class='tipos'>
               <div class='tipo2Icon'></div>
-                <h4>tipo 2</h4>
+                <h4 class='tipoClass'>insultos, hostigamientos y amenazas </h4>
                 <Switch  defaultChecked></Switch> 
               </div>
               
               <div class='tipos'>            
-              <div class='tipo3Icon'></div>
-                 <h4>tipo 3</h4>
+              <div class='tipo1Icon'></div>
+                 <h4 class='tipoClass'>Ataque a símbolos, murales y lugares </h4>
                 <Switch  defaultChecked ></Switch>
 
               </div>
 
 
             </div>
-            <div class='modo' >
-                <h4>modos</h4>
+            <div class='componente' >
+                <h4>componentes</h4>
 
   <Select
        labelId="modoFiltrado"
@@ -57,9 +64,16 @@ return(
 
 
   >
-<MenuItem value={10}>Todos</MenuItem>
-    <MenuItem value={20}>Twenty</MenuItem>
-    <MenuItem value={30}>Thirty</MenuItem>
+<MenuItem value={0}>Todos</MenuItem>
+    <MenuItem value={1}>negacionismo y apología a la dictadura</MenuItem>
+    <MenuItem value={2}>contra identidades políticas</MenuItem>
+    <MenuItem value={3}>nazismo, antisemitismo y supremacismo</MenuItem>
+    <MenuItem value={4}>misoginia, antifeminismo y antiLGBTINBQ+</MenuItem>
+    <MenuItem value={5}>racismo y xenofobia</MenuItem>
+
+
+
+
   </Select>
 
 
@@ -73,6 +87,7 @@ return(
     
        <div id='mapGap'>
         
+
        </div>
 
 
