@@ -11,7 +11,11 @@ import mystyle from "./mystyle.json";
 import { fecthData } from "./services/fetchs.js";
 import moment from "moment/moment.js";
 import { Slider } from "@mui/material";
-import { provincias, departamentos, departamentosBsAs} from './constants/mapsData/index.js'
+import {
+  provincias,
+  departamentos,
+  departamentosBsAs,
+} from "../public/data/mapsData/index.js";
 
 //estilos/////////////////////7
 
@@ -57,7 +61,7 @@ function App(urls) {
   const [data, setData] = useState(null);
   const [filteredData, setFilteredData] = useState([]);
   const [months, setMonths] = useState(0);
-  const [value, setValue] = useState(0);
+  const [value, setValue] = useState([0, 30]);
   const valueLabelFormat = (value) => {
     const diff = months - value;
     const date = moment().subtract(diff, "months");
@@ -85,13 +89,19 @@ function App(urls) {
   }, []);
 
   useEffect(() => {
+    console.log(value);
     const diff = months - value;
 
-    const date = moment().startOf("month").subtract(diff, "months");
+    const from = moment()
+      .startOf("month")
+      .subtract(months - value[0], "months");
+    const to = moment()
+      .startOf("month")
+      .subtract(months - value[1], "months");
     if (data) {
       const checkDate = (e) => {
         const eventDate = new moment(e.date, "DD/MM/YYYY");
-        return eventDate >= date;
+        return eventDate >= from && eventDate <= to;
       };
       setFilteredData(data.filter(checkDate));
     }
@@ -135,6 +145,7 @@ function App(urls) {
 
       const totalMonths = yearsDiff * 12 + monthDiff;
       setMonths(totalMonths);
+      setValue([0, totalMonths]);
     }
   }, [data]);
 
