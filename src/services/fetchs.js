@@ -8,7 +8,7 @@ export const fecthData = async () => {
 
   let parsedValues = [];
   values.forEach((c) => {
-    if (c.length === 5) {
+    if (c.length === 8) {
       const [latitude, longitude] = c[4].split(",").map(parseFloat);
 
       const event = {
@@ -20,6 +20,10 @@ export const fecthData = async () => {
           latitude,
           longitude,
         },
+        provincia: c[5],
+        tipoId: c[6],
+        tipo: c[7]
+
       };
       if (longitude !== undefined && event.date !== "") {
         parsedValues.push(event);
