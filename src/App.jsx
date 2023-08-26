@@ -5,21 +5,21 @@ import "maplibre-gl/dist/maplibre-gl.css";
 import { ProvSource, DepsSource, BsAsSource } from "./components/Sources.jsx";
 import { Markers } from "./components/Markers.jsx";
 import Popup from "./components/Popup.jsx";
-import Navbar from "./components/navbar.jsx";
 import "./App.css";
 import mystyle from "./mystyle.json";
 import { fecthData } from "./services/fetchs.js";
 import moment from "moment/moment.js";
 import { Slider } from "@mui/material";
-import { provincias, departamentos, departamentosBsAs} from './constants/mapsData/index.js'
-
+import { provincias, departamentos, departamentosBsAs } from './constants/mapsData/index.js';
 import Main2 from './components/main2.jsx'; // Cambia la ruta a tu formulario
 import Filtros from './components/filtros.jsx'; // Cambia la ruta a tu formulario
 import Analisis from './components/analisis.jsx'
+import Listado from './components/listado.jsx';
+import Conecta from './components/conecta.jsx';
+import Reporta from './components/reporta.jsx';
+import Notas from './components/notas';
+import { Route, useLocation } from "react-router-dom";
 
-import Reporta from './components/reporta.jsx'
-import Marquee from './components/marquee.jsx'
-import Notas from './components/notas'
 
 //estilos/////////////////////
 
@@ -59,6 +59,16 @@ const style = {
 };
 
 function App(urls) {
+
+  const location = useLocation();
+
+  // Verifica si la ubicación actual coincide con una de las rutas.
+  const isHomePage = location.pathname === "/mapa";
+  const isConectaPage = location.pathname === "/conecta";
+  const isReportaPage = location.pathname === "/reporta";
+  const isNotasPage = location.pathname === "/notas";
+  const isListadoPage = location.pathname === "/listado";
+
   const [hoveredFeatureId, setHoveredFeatureId] = useState(null);
   const [hoveredMarkerId, setHoveredMarkerId] = useState(null);
   const [popupInfo, setPopupInfo] = useState(null);
@@ -147,62 +157,93 @@ function App(urls) {
   }, [data]);
 
   return (
-    <div className="App">
-     
-      <Navbar id="header"></Navbar>
-      <Marquee></Marquee>
+    <>
 
-      
-     
-      <Filtros caseCount={filteredData.length} ></Filtros>
-      <div id='mapGap'></div>
-      <MapGL
-        id="mapa"
-        mapLib={maplibregl}
-        {...mapProps}
-        onHover={handleHover} // Asignar la función handleProvinciasHover al evento onHover
-        onLeave={handleLeave} // Asignar la función handleProvinciasLeave al evento onLeave
-      >
-        {/* Capa interactiva para provincias */}
 
-        <ProvSource data={provincias} selected={hoveredFeatureId} />
-        <DepsSource data={departamentos} style={style.departamentos} />
-        <BsAsSource data={departamentosBsAs} style={style.country} />
 
-        {data && (
-          <Markers
-            events={filteredData}
-            setPopupInfo={setPopupInfo}
-            setMarker={setHoveredMarkerId}
-            selected={hoveredMarkerId}
-          />
-        )}
-        <NavigationControl position="top-right" />
-      </MapGL>
+      {isHomePage && (
+        <div>
+          <div className="App">
+            <Filtros caseCount={filteredData.length} ></Filtros>
+            <div id='mapGap'></div>
+            <MapGL
+              id="mapa"
+              mapLib={maplibregl}
+              {...mapProps}
+              onHover={handleHover} // Asignar la función handleProvinciasHover al evento onHover
+              onLeave={handleLeave} // Asignar la función handleProvinciasLeave al evento onLeave
+            >
+              {/* Capa interactiva para provincias */}
 
-      <div className="slider-container">
-        <Slider
-          max={months}
-          valueLabelDisplay="auto"
-          value={value}
-          step={1}
-          getAriaValueText={valueLabelFormat}
-          valueLabelFormat={valueLabelFormat}
-          onChange={handleChange}
-          aria-labelledby="non-linear-slider"
-        />
-      </div>
+              <ProvSource data={provincias} selected={hoveredFeatureId} />
+              <DepsSource data={departamentos} style={style.departamentos} />
+              <BsAsSource data={departamentosBsAs} style={style.country} />
 
-      {popupInfo && <Popup {...popupInfo} />}
+              {data && (
+                <Markers
+                  events={filteredData}
+                  setPopupInfo={setPopupInfo}
+                  setMarker={setHoveredMarkerId}
+                  selected={hoveredMarkerId}
+                />
+              )}
+              <NavigationControl position="top-right" />
+            </MapGL>
 
-      <Main2>
+            <div className="slider-container">
+              <Slider
+                max={months}
+                valueLabelDisplay="auto"
+                value={value}
+                step={1}
+                getAriaValueText={valueLabelFormat}
+                valueLabelFormat={valueLabelFormat}
+                onChange={handleChange}
+                aria-labelledby="non-linear-slider"
+              />
+            </div>
 
-      </Main2>
-    <Analisis></Analisis>
-    <Reporta></Reporta>
-    <Notas></Notas>
-    </div>
+            {popupInfo && <Popup {...popupInfo} />}
+
+            <Main2>
+
+            </Main2>
+            <Analisis></Analisis>
+
+          </div>   </div>
+      )}
+      {isReportaPage && (
+        <div>
+          {/* Contenido específico de la página Reporta */}
+          <Reporta></Reporta>
+        </div>
+      )}
+      {isConectaPage && (
+        <div>
+          {/* Contenido específico de la página Conecta */}
+          <Conecta></Conecta>
+        </div>
+      )}
+
+
+      {isNotasPage && (
+        <div>
+          {/* Contenido específico de la página Notas */}
+          <Notas></Notas>
+        </div>
+      )}
+      {isListadoPage && (
+        <div>
+          {/* Contenido específico de la página Listado */}
+          <Listado></Listado>
+        </div>
+      )}
+
+    </>
+
+
   );
 }
+
 
 export default App;
