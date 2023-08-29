@@ -60,6 +60,21 @@ const style = {
 
 function App(urls) {
 
+
+
+ 
+  const handleTipoFilter = () => {
+    const filteredDataByType = filteredDataByTime.filter(event => tipoFilters[event.tipoId]);
+    setFilteredData(filteredDataByType);
+  };
+
+  const [tipoFilters, setTipoFilters] = useState({
+    t1: true,
+    t2: true,
+    t3: true,
+  });
+  
+
   const location = useLocation();
 
   // Verifica si la ubicación actual coincide con una de las rutas.
@@ -102,18 +117,37 @@ function App(urls) {
     apiCal();
   }, []);
 
+
+
+
+  const [filteredDataByTime, setFilteredDataByTime] = useState([]);
+
+
   useEffect(() => {
+    console.log(value);
     const diff = months - value;
 
-    const date = moment().startOf("month").subtract(diff, "months");
+    const from = moment()
+    .startOf("month")
+    .subtract(months - value[0], "months");
+  const to = moment()
+    .startOf("month")
+    .subtract(months - value[1], "months");
     if (data) {
       const checkDate = (e) => {
         const eventDate = new moment(e.date, "DD/MM/YYYY");
-        return eventDate >= date;
+        return eventDate >= from && eventDate <= to;
       };
-      setFilteredData(data.filter(checkDate));
+      const newData = data.filter(checkDate);
+      setFilteredDataByTime(newData);    
+
+
+       // Aplicar también los filtros de tipo a los datos filtrados por tiempo
+    const filteredDataByType = newData.filter(event => tipoFilters[event.tipoId]);
+    setFilteredData(filteredDataByType);
+
     }
-  }, [value]);
+  }, [value, data, tipoFilters]);
 
   const handleHover = (event) => {
     setHoveredFeatureId(event.features?.[0]?.id || null);
@@ -153,8 +187,15 @@ function App(urls) {
 
       const totalMonths = yearsDiff * 12 + monthDiff;
       setMonths(totalMonths);
+      setValue([0, totalMonths]);
     }
   }, [data]);
+
+
+
+
+
+  
 
   return (
     <>
@@ -164,7 +205,12 @@ function App(urls) {
       {isHomePage && (
         <div>
           <div className="App">
-            <Filtros caseCount={filteredData.length} ></Filtros>
+            <Filtros caseCount={filteredData.length}
+             handleTipoFilter={handleTipoFilter} // Pasa la función aquí
+             tipoFilters={tipoFilters} // Pasa el estado aquí
+             setTipoFilters={setTipoFilters} // Agrega esta línea para pasar setTipoFilters
+
+            ></Filtros>
             <div id='mapGap'></div>
             <MapGL
               id="mapa"
@@ -181,10 +227,12 @@ function App(urls) {
 
               {data && (
                 <Markers
-                  events={filteredData}
-                  setPopupInfo={setPopupInfo}
-                  setMarker={setHoveredMarkerId}
-                  selected={hoveredMarkerId}
+                data={filteredData}
+                setPopupInfo={setPopupInfo}
+                setMarker={setHoveredMarkerId}
+                selected={hoveredMarkerId}
+                tipoFilters={tipoFilters}
+                handleTipoFilter={handleTipoFilter}
                 />
               )}
               <NavigationControl position="top-right" />

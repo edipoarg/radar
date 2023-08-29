@@ -1,10 +1,19 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './filtros.css'
 import { Switch, Select, MenuItem } from "@mui/material";
 
 
 
-export default function filtros({caseCount}){
+export default function filtros({caseCount, handleTipoFilter, tipoFilters, setTipoFilters}){
+
+
+  const handleTipoFilterChange = tipoId => event => {
+    setTipoFilters(prevFilters => ({
+      ...prevFilters,
+      [tipoId]: event.target.checked,
+    }));
+    handleTipoFilter();
+  };
 
 
 return(
@@ -33,23 +42,26 @@ return(
 
             <div id='filtroTipo'>
 
-              <div class='tipos'>
+              <div id='filtroTipo3' class='tipos'>
     
              <div class='tipo3Icon'></div>
                    <h4 class='tipoClass'>violencia física, sexual y atentados contra la vida </h4>
-                   <Switch  defaultChecked></Switch>
+                   <Switch  defaultChecked={tipoFilters.t3}
+    onChange={handleTipoFilterChange('t3')}></Switch>
                </div>
                
-              <div class='tipos'>
+              <div id='filtroTipo2' class='tipos'>
               <div class='tipo2Icon'></div>
                 <h4 class='tipoClass'>insultos, hostigamientos y amenazas </h4>
-                <Switch  defaultChecked></Switch> 
+                <Switch  defaultChecked={tipoFilters.t2}
+    onChange={handleTipoFilterChange('t2')}></Switch> 
               </div>
               
-              <div class='tipos'>            
+              <div id='filtroTipo1' class='tipos'>            
               <div class='tipo1Icon'></div>
                  <h4 class='tipoClass'>Ataque a símbolos, murales y lugares </h4>
-                <Switch  defaultChecked ></Switch>
+                <Switch  defaultChecked={tipoFilters.t1}
+    onChange={handleTipoFilterChange('t1')} ></Switch>
 
               </div>
 
@@ -64,12 +76,12 @@ return(
 
 
   >
-<MenuItem value={0}>Todos</MenuItem>
-    <MenuItem value={1}>negacionismo y apología a la dictadura</MenuItem>
-    <MenuItem value={2}>contra identidades políticas</MenuItem>
-    <MenuItem value={3}>nazismo, antisemitismo y supremacismo</MenuItem>
-    <MenuItem value={4}>misoginia, antifeminismo y antiLGBTINBQ+</MenuItem>
-    <MenuItem value={5}>racismo y xenofobia</MenuItem>
+<MenuItem value={1}>Todos</MenuItem>
+    <MenuItem value={2}>negacionismo y apología a la dictadura</MenuItem>
+    <MenuItem value={3}>contra identidades políticas</MenuItem>
+    <MenuItem value={4}>nazismo, antisemitismo y supremacismo</MenuItem>
+    <MenuItem value={5}>misoginia, antifeminismo y antiLGBTINBQ+</MenuItem>
+    <MenuItem value={6}>racismo y xenofobia</MenuItem>
 
 
 
@@ -100,4 +112,3 @@ return(
     </div>
 );
 }
-

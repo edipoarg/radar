@@ -26,8 +26,12 @@
   font-weight: bold;
 }
 
+
+
 .marker.amarillo {
   background-color: yellow; /* Cambia el color según tus preferencias */
+
+  
 }
 
 .marker.naranja {
@@ -119,4 +123,8 @@
   border-radius: 20px;
   padding: 20px;
       box-shadow: -2px -2px 16px WHITE, 2px 2px 16px #c9c9c9;
+}
+
+#pin{
+
 }
