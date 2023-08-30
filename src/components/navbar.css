@@ -2,24 +2,24 @@
   position: fixed;
 top: 0;
 left: 0;
-width: 100%;
-z-index: 999;
-  height: 80px;
+width: 100vw;
+z-index: 2000;
+  height: 8vh;
   background-color: #ffffff;
   color: #00425A;
   display: grid;
   grid-template-columns: 1fr 3fr ;
   align-items: center;
-  padding-right: 5px;
+  padding-right: 2px;
  }
  
  .heading > h1 {
-  padding: 10px;
+  padding: 4px;
   margin: 0;
  }
 
 #menuImg{
-  width: 132px;
+  width: 100px;
 }
 
 
@@ -33,6 +33,10 @@ z-index: 999;
 justify-content: right;
 }
 
+#botonReporta{
+  background-color: blue;
+}
+
 #menuPCBox{
 display: flex;
 justify-content: right;
@@ -42,15 +46,66 @@ align-items: center}
  #menuPC{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 60px;
+  gap: 10px;
+  align-items: center;
+  
+
  
  }
 
  #logoImg {
-width: 106px;
+width: 60px;
  }
 
 #logo{
 display: flex;
 padding-left: 20px;
+}
+
+
+
+/*== Responsive==*/
+
+/*== tablet==*/
+
+@media (min-width: 768px){
+
+  .heading {
+  width: 100vw;
+    height: 10vh;
+    padding-right: 5px;
+   }
+
+   
+ #logoImg {
+  width: 70px;
+   }
+   
+   
+ .heading > h1 {
+  padding: 10px;
+  margin: 0;
+ }
+
+ 
+#menuImg{
+  width: 100px;
+}
+
+#menuPC{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 60px;
+ 
+ }
+
+
+}
+
+
+/*  PC  */
+
+@media (min-width: 1200px){
+
+  
 }

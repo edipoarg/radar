@@ -1,0 +1,171 @@
+
+
+@font-face {
+    font-family: luxora;
+    src: url('../assets/fonts/LuxoraGrotesk-Regular.woff') format('woff');
+    font-style: normal;
+    font-weight: normal;
+  }
+
+
+h1, h2, h5, h3, h4 {
+    color: black;
+    font-family: luxora }
+h3 {
+    color: black;
+    font-size: 10px;
+}
+
+h1, h2{
+    text-align: center;
+}
+
+h1{
+    font-size: 10px;
+}
+
+h2{
+    font-size: 8px;
+}
+
+h5{
+    font-size: 5px;
+}
+
+p{
+    color: black;
+    font-family: luxora;
+    font-size: 5px;
+}
+
+#reportaForm {background-color: #eaeaea;
+    margin: 0;
+  padding: 20px;
+  width: 100vw;
+  padding-top: 80px;
+ }
+
+#formSheet
+ {background-color: white;
+    /*margin: 30px;*/
+    margin-top: 45px;
+  padding: 20px;
+  border-radius: 15px 50px;
+
+ 
+
+}
+
+#formHeader{
+    padding: 10px 40px;
+    justify-content: center;
+    }
+
+    #titulo{
+        font-size: 30px;
+    }
+
+
+
+
+.formInput {background-color: white;
+  padding: 5px;
+  padding-left: 25px;
+  width: 70vw;
+  border: 1px solid #eaeaea;
+  border-radius: 15px;
+  height: 5vh;
+
+}
+
+fieldset {color: black;
+    background-color: white;
+    padding: 5px;
+    border: 0px solid black;
+}
+
+fieldset > input[type='radio']{
+    border-color: black;
+}
+
+
+/*== Responsive==*/
+
+/*== tablet==*/
+
+@media (min-width: 768px){
+
+
+    h3 {
+        font-size: 15px;
+    }
+   
+    
+    h1{
+        font-size: 35px;
+    }
+    
+    h2{
+        font-size: 15px;
+    }
+    
+    h5{
+        font-size: 10px;
+    }
+    
+    p{
+        font-size: 12px;
+    }
+    
+    #formHeader{
+        padding: 0px 100px;
+        }
+
+        
+    #tituloForm{
+        font-size: 30px;
+    }
+    #bajadaForm{
+        padding-top: 3vh;
+    }
+
+
+}
+
+
+/*  PC  */
+
+@media (min-width: 1200px){
+
+    #form{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    
+#formHeader{
+    padding: 10px 8vw;
+    padding-top: 20vh;
+    }
+
+    #tituloForm{
+        font-size: 3rem;
+    }
+
+    #bajadaForm{
+        padding-top: 5vh;
+        font-size: 1rem;
+    }
+
+  
+    .formInput {background-color: white;
+        color: black;
+        padding: 5px;
+        padding-left: 25px;
+        width: 30vw;
+        border: 1px solid #eaeaea;
+        border-radius: 15px;
+        height: 5vh;
+      
+      }
+}

@@ -1,0 +1,59 @@
+{
+  "hash": "91bd025a",
+  "browserHash": "6f4b1dc3",
+  "optimized": {
+    "react": {
+      "src": "../../node_modules/react/index.js",
+      "file": "react.js",
+      "fileHash": "5bec4024",
+      "needsInterop": true
+    },
+    "react-dom/client": {
+      "src": "../../node_modules/react-dom/client.js",
+      "file": "react-dom_client.js",
+      "fileHash": "1d7b8899",
+      "needsInterop": true
+    },
+    "react-map-gl/maplibre": {
+      "src": "../../node_modules/react-map-gl/dist/esm/exports-maplibre.js",
+      "file": "react-map-gl_maplibre.js",
+      "fileHash": "9caee458",
+      "needsInterop": false
+    },
+    "maplibre-gl": {
+      "src": "../../node_modules/maplibre-gl/dist/maplibre-gl.js",
+      "file": "maplibre-gl.js",
+      "fileHash": "ef43faae",
+      "needsInterop": true
+    },
+    "moment/moment.js": {
+      "src": "../../node_modules/moment/moment.js",
+      "file": "moment_moment__js.js",
+      "fileHash": "b126f870",
+      "needsInterop": true
+    },
+    "@mui/material": {
+      "src": "../../node_modules/@mui/material/index.js",
+      "file": "@mui_material.js",
+      "fileHash": "a9d95365",
+      "needsInterop": false
+    },
+    "debug": {
+      "src": "../../node_modules/debug/src/browser.js",
+      "file": "debug.js",
+      "fileHash": "93c288cc",
+      "needsInterop": true
+    }
+  },
+  "chunks": {
+    "chunk-5RJFGHYO": {
+      "file": "chunk-5RJFGHYO.js"
+    },
+    "chunk-VEL4RUZ4": {
+      "file": "chunk-VEL4RUZ4.js"
+    },
+    "chunk-HM4MQYWN": {
+      "file": "chunk-HM4MQYWN.js"
+    }
+  }
+}

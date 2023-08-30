@@ -5,7 +5,6 @@ import "maplibre-gl/dist/maplibre-gl.css";
 import { ProvSource, DepsSource, BsAsSource } from "./components/Sources.jsx";
 import { Markers } from "./components/Markers.jsx";
 import Popup from "./components/Popup.jsx";
-import Navbar from "./components/navbar.jsx";
 import "./App.css";
 import mystyle from "./mystyle.json";
 import { fecthData } from "./services/fetchs.js";
@@ -16,8 +15,18 @@ import {
   departamentos,
   departamentosBsAs,
 } from "../public/data/mapsData/index.js";
+import Main2 from './components/main2.jsx'; // Cambia la ruta a tu formulario
+import Filtros from './components/filtros.jsx'; // Cambia la ruta a tu formulario
+import Analisis from './components/analisis.jsx'
+import Listado from './components/listado.jsx';
+import Conecta from './components/conecta.jsx';
+import Reporta from './components/reporta.jsx';
+import Notas from './components/notas';
+import { Route, useLocation } from "react-router-dom";
 
-//estilos/////////////////////7
+
+
+//estilos/////////////////////
 
 const style = {
   country: {
@@ -55,6 +64,31 @@ const style = {
 };
 
 function App(urls) {
+
+
+
+ 
+  const handleTipoFilter = () => {
+    const filteredDataByType = filteredDataByTime.filter(event => tipoFilters[event.tipoId]);
+    setFilteredData(filteredDataByType);
+  };
+
+  const [tipoFilters, setTipoFilters] = useState({
+    t1: true,
+    t2: true,
+    t3: true,
+  });
+  
+
+  const location = useLocation();
+
+  // Verifica si la ubicación actual coincide con una de las rutas.
+  const isHomePage = location.pathname === "/mapa";
+  const isConectaPage = location.pathname === "/conecta";
+  const isReportaPage = location.pathname === "/reporta";
+  const isNotasPage = location.pathname === "/notas";
+  const isListadoPage = location.pathname === "/listado";
+
   const [hoveredFeatureId, setHoveredFeatureId] = useState(null);
   const [hoveredMarkerId, setHoveredMarkerId] = useState(null);
   const [popupInfo, setPopupInfo] = useState(null);
@@ -88,6 +122,12 @@ function App(urls) {
     apiCal();
   }, []);
 
+
+
+
+  const [filteredDataByTime, setFilteredDataByTime] = useState([]);
+
+
   useEffect(() => {
     console.log(value);
     const diff = months - value;
@@ -98,14 +138,22 @@ function App(urls) {
     const to = moment()
       .startOf("month")
       .subtract(months - value[1], "months");
+
     if (data) {
       const checkDate = (e) => {
         const eventDate = new moment(e.date, "DD/MM/YYYY");
         return eventDate >= from && eventDate <= to;
       };
-      setFilteredData(data.filter(checkDate));
+      const newData = data.filter(checkDate);
+      setFilteredDataByTime(newData);    
+
+
+       // Aplicar también los filtros de tipo a los datos filtrados por tiempo
+    const filteredDataByType = newData.filter(event => tipoFilters[event.tipoId]);
+    setFilteredData(filteredDataByType);
+
     }
-  }, [value]);
+  }, [value, data, tipoFilters]);
 
   const handleHover = (event) => {
     setHoveredFeatureId(event.features?.[0]?.id || null);
@@ -117,13 +165,13 @@ function App(urls) {
     initialViewState: {
       longitude: -65.0, // Coordenada longitudinal de Argentina
       latitude: -40.0, // Coordenada latitudinal de Argentina
-      zoom: 3.7, //zoom inicial
-      minZoom: 1, // Nivel mínimo de zoom permitido
-      maxZoom: 10, // Nivel máximo de zoom permitido
+      zoom: 2.7, //zoom inicial
+      minZoom: 2, // Nivel mínimo de zoom permitido
+      maxZoom: 15, // Nivel máximo de zoom permitido
     },
     style: {
-      width: "100%",
-      height: " calc(100vh)",
+      width: "100vw",
+      height: " 90vh",
     },
     mapStyle: mystyle,
   };
@@ -149,49 +197,107 @@ function App(urls) {
     }
   }, [data]);
 
+
+
+
+
+  
+
   return (
-    <div className="App">
-      <Navbar id="header"></Navbar>
-      <MapGL
-        id="mapa"
-        mapLib={maplibregl}
-        {...mapProps}
-        onHover={handleHover} // Asignar la función handleProvinciasHover al evento onHover
-        onLeave={handleLeave} // Asignar la función handleProvinciasLeave al evento onLeave
-      >
-        {/* Capa interactiva para provincias */}
+    <>
 
-        <ProvSource data={provincias} selected={hoveredFeatureId} />
-        <DepsSource data={departamentos} style={style.departamentos} />
-        <BsAsSource data={departamentosBsAs} style={style.country} />
 
-        {data && (
-          <Markers
-            events={filteredData}
-            setPopupInfo={setPopupInfo}
-            setMarker={setHoveredMarkerId}
-            selected={hoveredMarkerId}
-          />
-        )}
-        <NavigationControl position="bottom-right" />
-      </MapGL>
 
-      <div className="slider-container">
-        <Slider
-          max={months}
-          valueLabelDisplay="auto"
-          value={value}
-          step={1}
-          getAriaValueText={valueLabelFormat}
-          valueLabelFormat={valueLabelFormat}
-          onChange={handleChange}
-          aria-labelledby="non-linear-slider"
-        />
-      </div>
+      {isHomePage && (
+        <div>
+          <div className="App">
+            <Filtros caseCount={filteredData.length}
+             handleTipoFilter={handleTipoFilter} // Pasa la función aquí
+             tipoFilters={tipoFilters} // Pasa el estado aquí
+             setTipoFilters={setTipoFilters} // Agrega esta línea para pasar setTipoFilters
 
-      {popupInfo && <Popup {...popupInfo} />}
-    </div>
+            ></Filtros>
+            <div id='mapGap'></div>
+            <MapGL
+              id="mapa"
+              mapLib={maplibregl}
+              {...mapProps}
+              onHover={handleHover} // Asignar la función handleProvinciasHover al evento onHover
+              onLeave={handleLeave} // Asignar la función handleProvinciasLeave al evento onLeave
+            >
+              {/* Capa interactiva para provincias */}
+
+              <ProvSource data={provincias} selected={hoveredFeatureId} />
+              <DepsSource data={departamentos} style={style.departamentos} />
+              <BsAsSource data={departamentosBsAs} style={style.country} />
+
+              {data && (
+                <Markers
+                data={filteredData}
+                setPopupInfo={setPopupInfo}
+                setMarker={setHoveredMarkerId}
+                selected={hoveredMarkerId}
+                tipoFilters={tipoFilters}
+                handleTipoFilter={handleTipoFilter}
+                />
+              )}
+              <NavigationControl position="top-right" />
+            </MapGL>
+
+            <div className="slider-container">
+              <Slider
+                max={months}
+                valueLabelDisplay="auto"
+                value={value}
+                step={1}
+                getAriaValueText={valueLabelFormat}
+                valueLabelFormat={valueLabelFormat}
+                onChange={handleChange}
+                aria-labelledby="non-linear-slider"
+              />
+            </div>
+
+            {popupInfo && <Popup {...popupInfo} />}
+
+            <Main2>
+
+            </Main2>
+            <Analisis></Analisis>
+
+          </div>   </div>
+      )}
+      {isReportaPage && (
+        <div>
+          {/* Contenido específico de la página Reporta */}
+          <Reporta></Reporta>
+        </div>
+      )}
+      {isConectaPage && (
+        <div>
+          {/* Contenido específico de la página Conecta */}
+          <Conecta></Conecta>
+        </div>
+      )}
+
+
+      {isNotasPage && (
+        <div>
+          {/* Contenido específico de la página Notas */}
+          <Notas></Notas>
+        </div>
+      )}
+      {isListadoPage && (
+        <div>
+          {/* Contenido específico de la página Listado */}
+          <Listado></Listado>
+        </div>
+      )}
+
+    </>
+
+
   );
 }
+
 
 export default App;

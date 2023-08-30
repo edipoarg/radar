@@ -1,0 +1,10 @@
+#notas{
+    width: 100vw;
+    height: 100vh;
+    background-color: orange;
+
+}
+
+#notasContainer{
+    padding: 20vw
+}
