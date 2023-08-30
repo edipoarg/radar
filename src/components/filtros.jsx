@@ -67,29 +67,7 @@ return(
 
 
             </div>
-            <div class='componente' >
-                <h4>componentes</h4>
-
-  <Select
-       labelId="modoFiltrado"
-       id="simple-select"
-
-
-  >
-<MenuItem value={1}>Todos</MenuItem>
-    <MenuItem value={2}>negacionismo y apología a la dictadura</MenuItem>
-    <MenuItem value={3}>contra identidades políticas</MenuItem>
-    <MenuItem value={4}>nazismo, antisemitismo y supremacismo</MenuItem>
-    <MenuItem value={5}>misoginia, antifeminismo y antiLGBTINBQ+</MenuItem>
-    <MenuItem value={6}>racismo y xenofobia</MenuItem>
-
-
-
-
-  </Select>
-
-
-              </div>
+        
 
              
 

@@ -29,28 +29,28 @@ return(
       <h1>20</h1>
       <div class='info'>
         <div class='barra'></div>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut ipsam, obcaecati ad vel, laboriosam dicta facere alias sapiente doloremque a quae, praesentium facilis saepe at nihil magnam eaque commodi exercitationem.</p>
+      <p class='textAnalisis'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut ipsam, obcaecati ad vel, laboriosam dicta facere alias sapiente doloremque a quae, praesentium facilis saepe at nihil magnam eaque commodi exercitationem.</p>
       </div>
       </div>
       <div class='datos'>
       <h1>40</h1>
       <div class='info'>
         <div class='barra'></div>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut ipsam, obcaecati ad vel, laboriosam dicta facere alias sapiente doloremque a quae, praesentium facilis saepe at nihil magnam eaque commodi exercitationem.</p>
+      <p class='textAnalisis'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut ipsam, obcaecati ad vel, laboriosam dicta facere alias sapiente doloremque a quae, praesentium facilis saepe at nihil magnam eaque commodi exercitationem.</p>
       </div>
       </div>
       <div class='datos'>
       <h1>14</h1>
       <div class='info'>
         <div class='barra'></div>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt, quibusdam dolores. Minima molestias dolore velit ipsum dicta quae corrupti, nulla placeat accusamus impedit at.</p>
+      <p class='textAnalisis'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt, quibusdam dolores. Minima molestias dolore velit ipsum dicta quae corrupti, nulla placeat accusamus impedit at.</p>
       </div>
       </div>
       <div class='datos'>
       <h1>86%</h1>
       <div class='info'>
         <div class='barra'></div>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel non facere numquam provident? Repellendus, ut doloribus.</p>
+      <p class='textAnalisis'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel non facere numquam provident? Repellendus, ut doloribus.</p>
       </div>
       </div>
       </div>

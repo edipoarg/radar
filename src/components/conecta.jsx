@@ -1,4 +1,7 @@
 import React from 'react';
+import './conecta.css'
+
+
 
 
 
@@ -10,9 +13,9 @@ export default function reportaForm() {
 
         <div id="conecta">
 
-            <h1>Red de Análisis de las Derechas Argentinas Radicalizadas </h1>
+            <h1 id='conectaTitulo'>Red de Análisis de las Derechas Argentinas Radicalizadas </h1>
 
-            <p>RA-DAR es simultáneamente una Red de Análisis y un Registro de Ataques.
+            <p id='conectaText'>RA-DAR es simultáneamente una Red de Análisis y un Registro de Ataques.
 
                 La Red de Análisis de las Derechas Argentinas Radicalizadas (R.A.D.A.R.)  toma herramientas periodísticas, académicas, informáticas y militantes para producir conocimiento sobre un fenómeno global nuevo, potente y preocupante: el pasaje a la acción violenta de numerosos grupos de derecha radicalizados.
 

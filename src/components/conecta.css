@@ -1,0 +1,20 @@
+#conecta{
+    width: 100vw;
+    background-color: blue;
+    padding: 20vh 15vw;
+
+
+}
+
+#conectaTitulo{
+    color: white;
+    font-size: 3.3rem;
+    padding: 0vh 10vw;
+
+}
+
+#conectaText{
+    padding-top: 5vh;
+color: white;
+font-size: 1rem;
+text-align: justify;}
