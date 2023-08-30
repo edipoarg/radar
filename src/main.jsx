@@ -18,7 +18,8 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         provincias: "data/mapsData/provincias.json",
         rutas: "data/mapsData/rutas.json",
       }}
-    >
+      
+    />
  <Router>
     <Navbar /> {/* Navbar siempre se muestra */}
     <Marquee></Marquee>
@@ -32,6 +33,6 @@ ReactDOM.createRoot(document.getElementById("root")).render(
 
     </Routes>
   </Router>,
-    </Loader>
+    
   </React.StrictMode>
 );
