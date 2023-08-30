@@ -25,7 +25,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     <Marquee></Marquee>
    <App></App>
     <Routes>
-      <Route path="mapa" element={App} /> {/* Página mapa */}
+      <Route path="" element={App} /> {/* Página mapa */}
       <Route path="conecta" element={App} /> {/* Página Conecta */}
       <Route path="reporta" element={App} /> {/* Página Reporta */}
       <Route path="notas" element={App} /> {/* Página Reporta */}
