@@ -61,8 +61,8 @@
 
  position: absolute;
   top: 80vh;
-  left: 3vh;
-  width: 80vw;
+  left: 34vw;
+  width: 55vw;
   z-index: 0;
 
   /* height: 80px; */
@@ -71,7 +71,9 @@
   /* display: grid; */
   /* grid-template-columns: 1fr 5fr; */
   /* align-items: center; */
-  padding-right: 5px;
+  padding-right: 2vw;
+  padding-left: 2vw;
+
 }
 
 .marker:hover {
@@ -105,7 +107,6 @@
   background-color: white;
   color: black;
   border-radius: 20px;
-  padding-left: 32vw;
   padding-bottom: 2vw;
   padding-top: 2vw;
 
@@ -170,3 +171,24 @@ color: lightblue
 
 }
 
+
+
+.slider-container {
+  /* width: 300px; */
+
+ position: absolute;
+  top: 80vh;
+  left: 19vw;
+  width: 70vw;
+  z-index: 0;
+
+  /* height: 80px; */
+  /* background-color: #00425a; */
+  /* color: #eff5f5; */
+  /* display: grid; */
+  /* grid-template-columns: 1fr 5fr; */
+  /* align-items: center; */
+  padding-right: 2vw;
+  padding-left: 2vw;
+
+}
