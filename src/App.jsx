@@ -10,7 +10,11 @@ import mystyle from "./mystyle.json";
 import { fecthData } from "./services/fetchs.js";
 import moment from "moment/moment.js";
 import { Slider } from "@mui/material";
-import { provincias, departamentos, departamentosBsAs } from './constants/mapsData/index.js';
+import {
+  provincias,
+  departamentos,
+  departamentosBsAs,
+} from "../public/data/mapsData/index.js";
 import Main2 from './components/main2.jsx'; // Cambia la ruta a tu formulario
 import Filtros from './components/filtros.jsx'; // Cambia la ruta a tu formulario
 import Analisis from './components/analisis.jsx'
@@ -19,6 +23,7 @@ import Conecta from './components/conecta.jsx';
 import Reporta from './components/reporta.jsx';
 import Notas from './components/notas';
 import { Route, useLocation } from "react-router-dom";
+
 
 
 //estilos/////////////////////
@@ -90,7 +95,7 @@ function App(urls) {
   const [data, setData] = useState(null);
   const [filteredData, setFilteredData] = useState([]);
   const [months, setMonths] = useState(0);
-  const [value, setValue] = useState(0);
+  const [value, setValue] = useState([0, 30]);
   const valueLabelFormat = (value) => {
     const diff = months - value;
     const date = moment().subtract(diff, "months");
@@ -128,11 +133,12 @@ function App(urls) {
     const diff = months - value;
 
     const from = moment()
-    .startOf("month")
-    .subtract(months - value[0], "months");
-  const to = moment()
-    .startOf("month")
-    .subtract(months - value[1], "months");
+      .startOf("month")
+      .subtract(months - value[0], "months");
+    const to = moment()
+      .startOf("month")
+      .subtract(months - value[1], "months");
+
     if (data) {
       const checkDate = (e) => {
         const eventDate = new moment(e.date, "DD/MM/YYYY");
