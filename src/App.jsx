@@ -84,10 +84,10 @@ function App(urls) {
 
   // Verifica si la ubicación actual coincide con una de las rutas.
   const isHomePage = location.pathname === "/radarV3/";
-  const isConectaPage = location.pathname === "/conecta";
-  const isReportaPage = location.pathname === "/reporta";
-  const isNotasPage = location.pathname === "/notas";
-  const isListadoPage = location.pathname === "/listado";
+  const isConectaPage = location.pathname === "/radarV3/conecta";
+  const isReportaPage = location.pathname === "/radarV3/reporta";
+  const isNotasPage = location.pathname === "/radarV3/notas";
+  const isListadoPage = location.pathname === "/radarV3/listado";
 
   const [hoveredFeatureId, setHoveredFeatureId] = useState(null);
   const [hoveredMarkerId, setHoveredMarkerId] = useState(null);
