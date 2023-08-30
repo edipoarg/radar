@@ -83,7 +83,7 @@ function App(urls) {
   const location = useLocation();
 
   // Verifica si la ubicación actual coincide con una de las rutas.
-  const isHomePage = location.pathname === "/";
+  const isHomePage = location.pathname === "/radarV3/";
   const isConectaPage = location.pathname === "/conecta";
   const isReportaPage = location.pathname === "/reporta";
   const isNotasPage = location.pathname === "/notas";
