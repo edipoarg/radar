@@ -29,7 +29,8 @@ ReactDOM.createRoot(document.getElementById("root")).render(
       <Route path="/radarV3/reporta" element={App} /> {/* Página Reporta */}
       <Route path="/radarV3/notas" element={App} /> {/* Página Reporta */}
       <Route path="/radarV3/listado" element={App} /> {/* Página Reporta */}
-
+      <Route path="/radarV3/main2" element={App} />
+  
 
     </Routes>
   </Router>
