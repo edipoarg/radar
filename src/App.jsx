@@ -31,11 +31,12 @@ const style = {
   country: {
     fillColor: "#d8d7fa",
     fillOpacity: 0.6,
-    color: "black",
+    color: "blue",
     weight: 0.2,
+    
   },
   departamentos: {
-    fillColor: "#a2a8f4",
+    fillColor: "#d8d7fa",
     fillOpacity: 0,
     color: "black",
     weight: 2,
@@ -48,14 +49,14 @@ const style = {
     ],
   },
   provincias: {
-    fillColor: "#b2b7f5",
+    fillColor: "#d8d7fa",
     color: "blue",
-    weight: 1,
+    weight: 2,
     lineColor: "#b2b7f5",
     fillOpacity: 1,
     lineWidth: [
-      [1, 0.3],
-      [6, 1],
+      [1, ],
+      [6, 2],
       [14, 15],
       [22, 12],
     ],
@@ -75,9 +76,10 @@ function App(urls) {
   };
 
   const [tipoFilters, setTipoFilters] = useState({
-    t1: true,
-    t2: true,
     t3: true,
+    t2: true,
+    t1: true,
+
   });
   
 
@@ -228,7 +230,7 @@ function App(urls) {
             >
               {/* Capa interactiva para provincias */}
 
-              <ProvSource data={provincias} selected={hoveredFeatureId} />
+              <ProvSource data={provincias} style={style.provincias} />
               <DepsSource data={departamentos} style={style.departamentos} />
               <BsAsSource data={departamentosBsAs} style={style.country} />
 

@@ -31,7 +31,6 @@
 .marker.amarillo {
   background-color: yellow; /* Cambia el color según tus preferencias */
 
-  
 }
 
 .marker.naranja {
@@ -40,7 +39,6 @@
 
 .marker.rojo {
   background-color: red;
-  z-index: 4000; /* Cambia el color según tus preferencias */
 }
 
 /* Resto de los estilos */

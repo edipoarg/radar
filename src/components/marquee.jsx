@@ -6,7 +6,7 @@ export default function Marquee(){
 <div id="marquee-container">
  
 
-<marquee id='marquee' behavior="" direction="">Registro de Ataques de Derechas Argentinas Radicalizadas: una herramienta colaborativa de producción de conocimiento y fortalecimiento de redes de autocuidado. <span id="highlight-text">Reportá un hecho haciendo click <a href="">aqui</a></span></marquee>
+<marquee id='marquee' behavior="" direction="">El Registro de Ataques de Derechas Argentinas Radicalizadas es una herramienta colaborativa de producción de conocimiento y creación de redes de autocuidado. <span id="highlight-text">Si sabés de algún hecho, reportalo <a href="">aqui</a></span></marquee>
 </div>
 
     );
