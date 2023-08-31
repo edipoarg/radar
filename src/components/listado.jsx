@@ -8,13 +8,13 @@ export default function reportaForm(){
 return(
 
  
-    <div id="main2">
+    <div id="Main2">
 
 
       <div id="franja1">
         
         <div id='reportaMain'>
-        <h1 class='titulo'>Reportá</h1>
+        <h1 className='titulo'>Reportá</h1>
         <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non doloribus odit labore perferendis!</h4>
         <button><a href="">ingresar</a></button>
         </div>
@@ -33,7 +33,7 @@ return(
 
       <div id='notasMain'>
 
-      <h1 class='titulo'>Notas</h1>
+      <h1 className='titulo'>Notas</h1>
 
       <h4>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum, distinctio tempora! Esse perspiciatis eius praesentium?</h4>
       <button><a href="">ver</a></button>

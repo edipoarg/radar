@@ -3,6 +3,9 @@
   margin: 0;
   padding: 0;
 }
+#toMain2 {
+  cursor: pointer;
+}
 
 #mapGap{
   height: 11vh;

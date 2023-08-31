@@ -29,10 +29,10 @@ return(
         </div>
 
         <form id='formSheet' onSubmit={(e)=>Submit(e)}>
-          <div class='formInputContainer'>
+          <div className='formInputContainer'>
             <label htmlFor="email">
 
-            <h3 class='formQuestion'>Email</h3>
+            <h3 className='formQuestion'>Email</h3>
 
             </label>
 
@@ -41,10 +41,10 @@ return(
           </div>
           <br />
 
-          <div class='formInputContainer'>
+          <div className='formInputContainer'>
            <label  htmlFor="titulo">
-              <h3 class='formQuestion'>¿Qué pasó?</h3>
-              <p class='bajadaQuestion'>una descripción lo más detallada del hecho</p>
+              <h3 className='formQuestion'>¿Qué pasó?</h3>
+              <p className='bajadaQuestion'>una descripción lo más detallada del hecho</p>
            </label>
             <input
 className="formInput" 
@@ -57,26 +57,26 @@ className="formInput"
             />
           </div>
           <br />
-          <div class='formInputContainer'>
+          <div className='formInputContainer'>
             <label htmlFor="fecha">
-              <h3 class='formQuestion'>¿Cuándo pasó?</h3>
-              <p class='bajadaQuestion'>si no es posible indicar fecha exacta, incorporar una referencia de tiempo en la descripción del hecho</p>
+              <h3 className='formQuestion'>¿Cuándo pasó?</h3>
+              <p className='bajadaQuestion'>si no es posible indicar fecha exacta, incorporar una referencia de tiempo en la descripción del hecho</p>
             </label>
             <input 
              className="formInput" type="date" name="fechaHecho" id="fecha" required />
           </div>
 <br />
-<div class='formInputContainer'>
+<div className='formInputContainer'>
   <label htmlFor="lugar">
-    <h3 class='formQuestion'>¿Dónde pasó?</h3>
-    <p class='bajadaQuestion'>Si es posible, insertar enlace de googlemaps o referencia geográfica</p>
+    <h3 className='formQuestion'>¿Dónde pasó?</h3>
+    <p className='bajadaQuestion'>Si es posible, insertar enlace de googlemaps o referencia geográfica</p>
   </label>
   <input  className="formInput"  type="text" name="Lugar" id="lugar" placeholder="Escribe aquí" />
 </div>
 <br />
-<div class='formInputContainer'>
+<div className='formInputContainer'>
   <label htmlFor="agresor">
-    <h3 class='formQuestion'>¿qué sabes sobre la(s) persona(s) agresora(s)?
+    <h3 className='formQuestion'>¿qué sabes sobre la(s) persona(s) agresora(s)?
 </h3>
   </label>
   <input
@@ -90,9 +90,9 @@ className="formInput"
 </div>
 <br />
 
-<div class='formInputContainer'>
+<div className='formInputContainer'>
   <label htmlFor="intervencion">
-    <h3 class='formQuestion'>¿hubo intervención policial? ¿alguna respuesta estatal o judicial? ¿cuál? 
+    <h3 className='formQuestion'>¿hubo intervención policial? ¿alguna respuesta estatal o judicial? ¿cuál? 
 </h3>
   </label>
   <input
@@ -105,19 +105,19 @@ className="formInput"
 </div>
 <br />
 
-<div class='formInputContainer'>
+<div className='formInputContainer'>
   <label htmlFor="archivos">
-    <h3 class='formQuestion'>Archivos relacionados</h3>
-    <p class='bajadaQuestion'>Fotos, videos o documentos relativos al hecho.</p>
+    <h3 className='formQuestion'>Archivos relacionados</h3>
+    <p className='bajadaQuestion'>Fotos, videos o documentos relativos al hecho.</p>
   </label>
   <br />
   <input  className="formInput"  type="file" name="Archivos" id="archivos" multiple />
 </div>
 <br />
 
-<div class='formInputContainer'>
+<div className='formInputContainer'>
   <label htmlFor="comentarios">
-    <h3 class='formQuestion'>Comentarios adicionales
+    <h3 className='formQuestion'>Comentarios adicionales
 </h3>
   </label>
   <input

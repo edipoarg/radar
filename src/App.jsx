@@ -15,7 +15,7 @@ import {
   departamentos,
   departamentosBsAs
 } from "../public/data/mapsData/index.js";
-import Main2 from './components/main2.jsx'; // Cambia la ruta a tu formulario
+import Main2 from './components/Main2.jsx'; // Cambia la ruta a tu formulario
 import Filtros from './components/filtros.jsx'; // Cambia la ruta a tu formulario
 import Analisis from './components/analisis.jsx'
 import Listado from './components/listado.jsx';
@@ -23,6 +23,7 @@ import Conecta from './components/conecta.jsx';
 import Reporta from './components/reporta.jsx';
 import Notas from './components/notas';
 import { Link, useLocation } from "react-router-dom";
+import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 
 
 
@@ -92,7 +93,7 @@ function App(urls) {
   const isReportaPage = location.pathname === "/radarV3/reporta";
   const isNotasPage = location.pathname === "/radarV3/notas";
   const isListadoPage = location.pathname === "/radarV3/listado";
-  const isMain2Page = location.pathname === "/radarV3/main2";
+  const isMain2Page = location.pathname === "/radarV3/Main2";
 
 
 
@@ -264,16 +265,24 @@ function App(urls) {
                 aria-labelledby="non-linear-slider"
               />
             </div>
-            <Link to="/radarV3/main2">
-              <div id='toMain2'><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
-                <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
-              </svg></div></Link>
-
+            <ScrollLink
+              to="main2-content" // ID del elemento de destino (Main2)
+              spy={true} // Activa el modo espía
+              smooth={true} // Activa el desplazamiento suave
+              duration={500} // Duración de la animación (en milisegundos)
+              offset={-70} // Ajusta un offset opcional (si tienes un encabezado fijo)
+            >
+              <div id="toMain2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                  <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+                </svg>
+              </div>
+            </ScrollLink>
 
 
             {popupInfo && <Popup {...popupInfo} />}
 
-
+            <Main2/>
             <Analisis></Analisis>
 
           </div>   </div>
