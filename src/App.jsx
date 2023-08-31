@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import MapGL, { NavigationControl } from "react-map-gl/maplibre";
 import maplibregl from "maplibre-gl";
 import "maplibre-gl/dist/maplibre-gl.css";
-import { ProvSource, DepsSource, BsAsSource} from "./components/Sources.jsx";
+import { ProvSource, DepsSource, BsAsSource } from "./components/Sources.jsx";
 import { Markers } from "./components/Markers.jsx";
 import Popup from "./components/Popup.jsx";
 import "./App.css";
@@ -13,7 +13,8 @@ import { Slider } from "@mui/material";
 import {
   provincias,
   departamentos,
-  departamentosBsAs} from "../public/data/mapsData/index.js";
+  departamentosBsAs
+} from "../public/data/mapsData/index.js";
 import Main2 from './components/main2.jsx'; // Cambia la ruta a tu formulario
 import Filtros from './components/filtros.jsx'; // Cambia la ruta a tu formulario
 import Analisis from './components/analisis.jsx'
@@ -21,7 +22,7 @@ import Listado from './components/listado.jsx';
 import Conecta from './components/conecta.jsx';
 import Reporta from './components/reporta.jsx';
 import Notas from './components/notas';
-import { Route, useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 
 
@@ -60,7 +61,7 @@ const style = {
       [22, 12],
     ],
   },
- 
+
 
 };
 
@@ -68,7 +69,7 @@ function App(urls) {
 
 
 
- 
+
   const handleTipoFilter = () => {
     const filteredDataByType = filteredDataByTime.filter(event => tipoFilters[event.tipoId]);
     setFilteredData(filteredDataByType);
@@ -79,7 +80,7 @@ function App(urls) {
     t2: true,
     t3: true,
   });
-  
+
 
   const location = useLocation();
 
@@ -89,6 +90,9 @@ function App(urls) {
   const isReportaPage = location.pathname === "/radarV3/reporta";
   const isNotasPage = location.pathname === "/radarV3/notas";
   const isListadoPage = location.pathname === "/radarV3/listado";
+  const isMain2Page = location.pathname === "/radarV3/main2";
+
+
 
   const [hoveredFeatureId, setHoveredFeatureId] = useState(null);
   const [hoveredMarkerId, setHoveredMarkerId] = useState(null);
@@ -146,12 +150,12 @@ function App(urls) {
         return eventDate >= from && eventDate <= to;
       };
       const newData = data.filter(checkDate);
-      setFilteredDataByTime(newData);    
+      setFilteredDataByTime(newData);
 
 
-       // Aplicar también los filtros de tipo a los datos filtrados por tiempo
-    const filteredDataByType = newData.filter(event => tipoFilters[event.tipoId]);
-    setFilteredData(filteredDataByType);
+      // Aplicar también los filtros de tipo a los datos filtrados por tiempo
+      const filteredDataByType = newData.filter(event => tipoFilters[event.tipoId]);
+      setFilteredData(filteredDataByType);
 
     }
   }, [value, data, tipoFilters]);
@@ -202,7 +206,7 @@ function App(urls) {
 
 
 
-  
+
 
   return (
     <>
@@ -213,9 +217,9 @@ function App(urls) {
         <div>
           <div className="App">
             <Filtros caseCount={filteredData.length}
-             handleTipoFilter={handleTipoFilter} // Pasa la función aquí
-             tipoFilters={tipoFilters} // Pasa el estado aquí
-             setTipoFilters={setTipoFilters} // Agrega esta línea para pasar setTipoFilters
+              handleTipoFilter={handleTipoFilter} // Pasa la función aquí
+              tipoFilters={tipoFilters} // Pasa el estado aquí
+              setTipoFilters={setTipoFilters} // Agrega esta línea para pasar setTipoFilters
 
             ></Filtros>
             <div id='mapGap'></div>
@@ -235,12 +239,12 @@ function App(urls) {
 
               {data && (
                 <Markers
-                data={filteredData}
-                setPopupInfo={setPopupInfo}
-                setMarker={setHoveredMarkerId}
-                selected={hoveredMarkerId}
-                tipoFilters={tipoFilters}
-                handleTipoFilter={handleTipoFilter}
+                  data={filteredData}
+                  setPopupInfo={setPopupInfo}
+                  setMarker={setHoveredMarkerId}
+                  selected={hoveredMarkerId}
+                  tipoFilters={tipoFilters}
+                  handleTipoFilter={handleTipoFilter}
                 />
               )}
               <NavigationControl position="top-right" />
@@ -258,21 +262,25 @@ function App(urls) {
                 aria-labelledby="non-linear-slider"
               />
             </div>
+            <Link to="/radarV3/main2">
+              <div id='toMain2'><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+              </svg></div></Link>
 
-            <div id='toMain2'><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
-  <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
-</svg></div>
-   
 
 
             {popupInfo && <Popup {...popupInfo} />}
 
-            <Main2>
 
-            </Main2>
             <Analisis></Analisis>
 
           </div>   </div>
+      )}
+      {isMain2Page && (
+        <div>
+          {/* Contenido específico de la página Main2 */}
+          <Main2></Main2>
+        </div>
       )}
       {isReportaPage && (
         <div>
