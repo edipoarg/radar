@@ -14,7 +14,7 @@ return(
       <div id="mensaje">
         <img src="" alt="" />
   
-        <h1 class='titulo'>Gracias por el aporte</h1>
+        <h1 className='titulo'>Gracias por el aporte</h1>
         <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non doloribus odit labore perferendis!</h3>
         
 
