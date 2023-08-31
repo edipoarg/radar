@@ -1,7 +1,7 @@
 #notas{
     width: 100vw;
     height: 92vh;
-    background-color: orange;
+    background-color: white;
 
 }
 
@@ -9,6 +9,7 @@
     padding: 20px;
     padding-top: 30vh;
     height: 90vh;
+
 }
 
 
@@ -22,7 +23,7 @@
     #notas{
         width: 100vw;
         height: 100vh;
-        background-color: orange;
+        background-color:white;
     
     }
     

@@ -18,8 +18,8 @@ return(
 </h4>
         <h1 id='tituloAnalisis'>RELEVAMIENTO 
 2020 - 2023
-</h1>
-<h4 id='analisisCasos'>149 CASOS</h4>
+</h1><div id='analisisCasosContainer'>
+<h4 id='analisisCasos'>149 CASOS</h4></div>
 <h4 id='analisisCasosBajada'>agrupados por narrativas
 </h4>
 
@@ -64,12 +64,7 @@ return(
       <h1 id='datoN5'>11</h1>
       <div class='info'>
         <div class='barra'></div>
-      <p class='textAnalisis'>racismo y xenofobia
-
-
-
-
-</p>
+      <p class='textAnalisis'>racismo y xenofobia</p>
       </div>
       </div>
 

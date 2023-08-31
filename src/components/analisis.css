@@ -32,6 +32,25 @@ column-gap: 8vw;
 
 }
 
+#analisisCasos{
+    font-size: 2rem;
+    
+}
+
+#analisisCasosContainer{
+    border-style: inset;
+    border-width: 1px;
+    border-radius: 12px;
+
+    border-color: white;
+    }
+
+
+#analisisTextoFinal{
+    color: white;
+    font-size: 1rem;
+    padding: 10vh 20vw;
+}
 
 
 
@@ -41,6 +60,11 @@ column-gap: 8vw;
 }
 #datos1, #datos2, #datos3, #datos4, #datoN5{
     width: 20vw;
+    border-style: inset;
+    border-width: 1px;
+    border-radius: 12px;
+
+    border-color: white;
     
 }
 
@@ -84,6 +108,8 @@ justify-self: right;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
         padding: 0px 15vw;
         column-gap: 0px;
+        column-gap: 1vw;
+
     }
 
     
