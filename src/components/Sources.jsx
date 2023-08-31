@@ -1,24 +1,15 @@
 import {Source, Layer} from 'react-map-gl/maplibre';
 
-export const ProvSource = ({data, selected}) => (
+export const ProvSource = ({data, style}) => (
   <Source id="provincias-source" type="geojson" data={data}>
     <Layer
       id="provincias-layer"
       type="fill"
       paint={{
-        'fill-color': [
-          'case',
-          ['==', ['id'], selected],
-          '#000000', // Fill color when hovered
-          '#b2b7f5', // Fill color when not hovered
-        ],
-        'fill-opacity': 0.5,
-        'fill-outline-color': [
-          'case',
-          ['==', ['id'], selected],
-          '#ffffff', // Fill outline color when hovered
-          'blue', // Fill outline color when not hovered
-        ],
+        'fill-color': style.fillColor,
+        'fill-opacity': style.fillOpacity,
+        'fill-outline-color': style.color,
+
       }}
     />
   </Source>
@@ -45,7 +36,10 @@ export const BsAsSource = ({data, style}) => (
         'fill-color': style.fillColor,
         'fill-opacity': style.fillOpacity,
         'fill-outline-color': style.color,
+
       }}
+      minzoom={5} // Set the minimum zoom level to 4
+
     />
   </Source>
 )

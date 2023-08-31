@@ -22,9 +22,9 @@ export default function Navbar() {
 
         <div id="menuPCBox">
           <ul id="menuPC">
-          <Link to="/radarV3/notas">Notas</Link>
-          <Link to="/radarV3/conecta">Conecta</Link>
-            <Link to="/radarV3/reporta">Reporta</Link>
+          <Link to="/radarV3/notas">INVESTIGACIONES</Link>
+          <Link to="/radarV3/conecta">NOSOTRXS</Link>
+         <Link to="/radarV3/reporta"> <h2 id='botonReporta'>Reporta</h2>  </Link>
 
           </ul>
         </div>
