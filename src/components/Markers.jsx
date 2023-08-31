@@ -23,7 +23,7 @@ export const Markers = ({ data, setPopupInfo, setMarker, selected, tipoFilters }
   
   
   const renderMarker = (event) => {
-    const { coords, title, date, source, id, tipoId } = event;
+    const { coords, title, date, source, id, tipoId, tipo } = event;
     const markerStyle = `marker ${id === selected ? "hovered" : ""} ${tipoIdStyles[tipoId]}`;
 
     return (
@@ -40,6 +40,7 @@ export const Markers = ({ data, setPopupInfo, setMarker, selected, tipoFilters }
               lng: coords.longitude,
             },
             title,
+            tipo,
             date,
             source,
           })

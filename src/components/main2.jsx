@@ -15,13 +15,16 @@ return(
         
         <div id='reportaMain'>
         <h1 id='tituloReportaMain'>Reportá</h1>
-        <h4 class='bajada'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non doloribus odit labore perferendis!</h4>
-        <button id="botonReprotaMain"><a href="">ingresar</a></button>
+       
+     <h4 class='bajada'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non doloribus odit labore perferendis!</h4>
+        <button id="botonReportaMain"><a href="">ingresar</a></button>
         </div>
 
         <div id='botonMain2'>
 
-        <button id='botonMain2'><a href=""><h5>1</h5><h5>mapa</h5></a></button>
+        <button id='botonMain2'><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-up-fill" viewBox="0 0 16 16">
+  <path d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z"/>
+</svg><h5>mapa</h5></a></button>
 
         </div>
 
@@ -54,7 +57,9 @@ return(
      
         <div id='analisisMain'>
           <h3 id='analisisTextMain'>Analisis y estadisticas</h3>
-          <button id="botonAnalisisMain"><a href="">1</a></button>
+          <button id="botonAnalisisMain"><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+  <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+</svg></a></button>
         </div>
       </div>
 

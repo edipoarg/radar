@@ -236,9 +236,13 @@ padding-left: 4px;
     grid-template-columns: 1fr 10fr;
 }
 
-#simple-select{
-    width: 10vw;
-};
+
+#filtroTipo{
+
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 18vw;
+    padding-left: 2vw;
+}
 }
 
 

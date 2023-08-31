@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import MapGL, { NavigationControl } from "react-map-gl/maplibre";
 import maplibregl from "maplibre-gl";
 import "maplibre-gl/dist/maplibre-gl.css";
-import { ProvSource, DepsSource, BsAsSource } from "./components/Sources.jsx";
+import { ProvSource, DepsSource, BsAsSource} from "./components/Sources.jsx";
 import { Markers } from "./components/Markers.jsx";
 import Popup from "./components/Popup.jsx";
 import "./App.css";
@@ -13,8 +13,7 @@ import { Slider } from "@mui/material";
 import {
   provincias,
   departamentos,
-  departamentosBsAs,
-} from "../public/data/mapsData/index.js";
+  departamentosBsAs} from "../public/data/mapsData/index.js";
 import Main2 from './components/main2.jsx'; // Cambia la ruta a tu formulario
 import Filtros from './components/filtros.jsx'; // Cambia la ruta a tu formulario
 import Analisis from './components/analisis.jsx'
@@ -61,6 +60,8 @@ const style = {
       [22, 12],
     ],
   },
+ 
+
 };
 
 function App(urls) {
@@ -231,6 +232,7 @@ function App(urls) {
               <DepsSource data={departamentos} style={style.departamentos} />
               <BsAsSource data={departamentosBsAs} style={style.country} />
 
+
               {data && (
                 <Markers
                 data={filteredData}
@@ -257,7 +259,9 @@ function App(urls) {
               />
             </div>
 
-            <div id='toMain2'><h3>x</h3></div>
+            <div id='toMain2'><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+  <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+</svg></div>
    
 
 

@@ -55,9 +55,15 @@ column-gap: 8vw;
 
 
 #subir{
-justify-self: center;
-    width: 50vw;
+justify-self: right;
+    width: 15vw;
+    margin-right: 7vw;
+    background-color: blue;
+    border-color: white;
+
 }
+
+
 /*== Responsive==*/
 
 /*== tablet==*/
@@ -98,6 +104,15 @@ justify-self: center;
 
 }
 
+#subir{
+    width: 10vw;
+ 
+
+    
+}
+
+
+
 
     
 }
@@ -111,5 +126,16 @@ justify-self: center;
         padding-bottom: 10vh;
     
     }
-  
+
+
+    #analisis{
+        height: 100vh;
+
+    }
+    #subir{
+        width: 8vw;
+        height: 7vh;
+        margin-right: 5vw;
+    }
 }
+
