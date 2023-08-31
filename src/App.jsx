@@ -163,7 +163,7 @@ function App(urls) {
 
   const mapProps = {
     initialViewState: {
-      longitude: -65.0, // Coordenada longitudinal de Argentina
+      longitude: -72.0, // Coordenada longitudinal de Argentina
       latitude: -40.0, // Coordenada latitudinal de Argentina
       zoom: 2.7, //zoom inicial
       minZoom: 2, // Nivel mínimo de zoom permitido
@@ -256,6 +256,10 @@ function App(urls) {
                 aria-labelledby="non-linear-slider"
               />
             </div>
+
+            <div id='toMain2'><h3>x</h3></div>
+   
+
 
             {popupInfo && <Popup {...popupInfo} />}
 

@@ -12,30 +12,38 @@
     width: 100vw;
     display: grid;
     grid-template-columns: 8fr 1fr;
-   column-gap: 20px;
     background-color: #EAEAEA;
     margin-top: 0px;
     padding: 20px;
     padding-bottom: 0px;
     height: 30vh;
+    column-gap: 3vw;
 }
 
 #reportaMain{
-    padding: 20px;
+    padding: 15px;
     background-color: white;
     color: black;
     border-radius: 20px;
     align-self: center;
     height: 100%;
     margin-bottom: 0px;
-    box-shadow: -9px -9px 16px WHITE, 9px 9px 16px #c9c9c9;
+    
    
 }
+
+#tituloReportaMain{
+    font-size: 2rem;
+}
+
+#tituloNotasMain{
+    font-size: 2REM;
+}
+
 
 .botonMain{
     background-color: white;
     color: black;
-    box-shadow: -9px -9px 16px WHITE, 9px 9px 16px #c9c9c9;
 
 }
 
@@ -44,7 +52,6 @@
     margin-bottom: 0px;
     /*width: 100%;*/
     height: 100%;
-    box-shadow: -9px -9px 16px WHITE, 9px 9px 16px #c9c9c9;
 
     }
 
@@ -78,100 +85,120 @@
 
 #franja2{
     width: 100vw;
-
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr ;
     background-color: #EAEAEA;
     margin-top: 0px;
-    padding: 20px;
+    padding: 20px 20px;
     padding-top: 0px;
-    column-gap: 20px;
     height: 57vh;
+    column-gap: 4vw;
 }
 
 
 
 
 #notasMain{
-  /*  width: 50vw;*/
+    width: 90vw;
     background-color: white;
     color: black;
     border-radius: 20px;
     padding: 20px;
     margin-top: 0px;
     margin-right: 0px;
-    box-shadow: -9px -9px 16px WHITE, 9px 9px 16px #c9c9c9;
-
+height: 26vh;
 
 }
 
 #botoneraMain{
- /*  width: 50vw;*/
+    width: 40vw;
 display: grid;
-grid-template-columns: 1fr;
-/*gap: 10px;*/
+grid-template-columns: 3fr 1fr;
+column-gap: 3vw;
+
+
 }
 
 #contactoMain{
+    width: 50vw;
     color: white;
     background-color: blue;
     margin-top: 0px;
     border-radius: 20px;
     padding: 20px;
-    height: 30vh;
-    box-shadow: -9px -9px 16px WHITE, 9px 9px 16px #c9c9c9;
-
+    height: 25vh;
+    
 }
 
 #conectaTitle{
     color: white;
+    
 }
 
 #conectaText{
-    color: white;
+   color: white;
+    width: 35vw;
+    font-size: 1rem;
+
 }
 
 #listadoText{
     color: white;
 }
 
-#analisisText{
+#analisisTextMain{
     color: white;
 }
 
 
 
-#listadoMain{
-    display: grid;
-    grid-template-columns: 4fr 1fr;
-    color: white;
-    background-color: black;
-    margin-top: 0px;
-    border-radius: 20px;
-    padding: 20px;
-    height:8vh;
-    box-shadow: -9px -9px 16px WHITE, 9px 9px 16px #c9c9c9;
-    ;
-}
 
 #analisisMain{ 
+    width: 35vw;
     display: grid;
-    grid-template-columns: 4fr 1fr;
+    grid-template-columns: 1fr;
     color: white;
     background-color: black;
     margin-top: 0px;
     border-radius: 20px;
     padding: 20px;
-    height:8vh;
-    box-shadow: -9px -9px 16px WHITE, 9px 9px 16px #c9c9c9;
+    height:25vh;
+
 }
 
 
 .bajada{
-    padding: 10px 30px;
+    padding: 5px 10px;
+    font-size: 1rem;
 
 }
 
+
+
+#botonReprotaMain, #botonNotasMain{
+background-color: white;
+border-color: blue;
+color: blue;
+width: 23vw;
+
+}
+
+
+#botonConectaMain{
+    background-color:  blue;
+    border-color: white;
+    color: white;
+    width: 23vw;
+    }
+
+    #botonAnalisisMain{
+        background-color: black;
+        border-color: white;
+        height: 5vh;
+        width: 23vw;
+        justify-self: center;
+
+    }
 
 
 /*== Responsive==*/
@@ -187,8 +214,47 @@ grid-template-columns: 1fr;
        column-gap: 20px;
      
         padding: 20px;
-        height: 30vh;
+        height: 42vh;
+        padding-bottom: 0px;
     }
+
+#franja2{
+    grid-template-columns: 1fr 1fr;
+    height: 45vh;
+}
+
+#notasMain{
+    width: 50vw;
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 0px;
+    margin-right: 0px;
+height: 40vh;
+}
+
+#botoneraMain{
+    grid-template-columns: 1fr;
+    height: 40vh;
+    
+}
+
+#analisisMain{
+    width: 41vw;
+    height: 12vh;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+
+}
+#contactoMain{
+    width: 41vw;
+    height: 25vh;
+    padding: 10px;
+
+
+}
+
 
 }
 

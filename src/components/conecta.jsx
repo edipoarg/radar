@@ -12,10 +12,12 @@ export default function reportaForm() {
 
 
         <div id="conecta">
-
+<div id='contectaTituloContainter'>
             <h1 id='conectaTitulo'>Red de Análisis de las Derechas Argentinas Radicalizadas </h1>
 
-            <p id='conectaText'>RA-DAR es simultáneamente una Red de Análisis y un Registro de Ataques.
+            </div>
+<div id='contectaTextContainter'>
+            <h6 id='conectaTextRadar'>RA-DAR es simultáneamente una Red de Análisis y un Registro de Ataques.
 
                 La Red de Análisis de las Derechas Argentinas Radicalizadas (R.A.D.A.R.)  toma herramientas periodísticas, académicas, informáticas y militantes para producir conocimiento sobre un fenómeno global nuevo, potente y preocupante: el pasaje a la acción violenta de numerosos grupos de derecha radicalizados.
 
@@ -26,8 +28,8 @@ export default function reportaForm() {
                 RA-DAR surge por iniciativa del Equipo de Investigación Política (EdiPo) de la Revista Crisis. EdiPO es un organismo de derechos humanos de nuevo tipo que surge en 2018 con el propósito de promover estrategias de resistencia y autocuidado ante las violencias contemporáneas y seguir construyendo de forma colectiva verdad histórica sobre nuestro presente. EdiPo busca construir una cartografía de los poderes contemporáneos, lo más precisa y sintética posible, que permita a las organizaciones sociales y populares construir un cuadro de situación riguroso y útil para la acción.
 
                 Si te interesa lo que hacemos y querés comunicarte con nosotrxs podés hacerlo a través de …
-            </p>
-
+            </h6>
+            </div>
 
         </div>
     );

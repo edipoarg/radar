@@ -8,6 +8,14 @@
   }
 
 
+.formQuestion{
+    font-size: 1.3rem;
+    color: blue;
+    padding: 0vh 5vw;
+}
+
+
+
 h1, h2, h5, h3, h4 {
     color: black;
     font-family: luxora }
@@ -38,6 +46,11 @@ p{
     font-size: 5px;
 }
 
+#tituloForm{
+    font-size: 1.5rem;
+    padding: 4vh 0vh;
+}
+
 #reportaForm {background-color: #eaeaea;
     margin: 0;
   padding: 20px;
@@ -45,16 +58,28 @@ p{
   padding-top: 80px;
  }
 
+
+#bajadaForm{
+    font-size: 1rem;
+    text-align: justify;
+}
+
+
 #formSheet
  {background-color: white;
     /*margin: 30px;*/
-    margin-top: 45px;
-  padding: 20px;
+    margin-top: 35px;
+  padding: 1vh 2vw;
   border-radius: 15px 50px;
+  padding-top: 45px;
+
 
  
 
 }
+
+
+
 
 #formHeader{
     padding: 10px 40px;
@@ -62,13 +87,17 @@ p{
     }
 
     #titulo{
-        font-size: 30px;
+        font-size: 1rem;
+    }
+
+    .formInputContainer {
+        padding: 0vh 5vw ;
+    
     }
 
 
-
-
 .formInput {background-color: white;
+    color: black;
   padding: 5px;
   padding-left: 25px;
   width: 70vw;
@@ -89,11 +118,20 @@ fieldset > input[type='radio']{
 }
 
 
+
+.bajadaQuestion{
+    font-size: 0.7rem;
+    padding: 0vh 5vw;
+    color: black;
+}
+
 /*== Responsive==*/
 
 /*== tablet==*/
 
 @media (min-width: 768px){
+
+    
 
 
     h3 {

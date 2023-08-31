@@ -11,7 +11,7 @@ export default function Navbar() {
     <div className="heading">
 
       {/* Enlace a la ruta MAIN2 */}
-      <Link to="">
+      <Link to="radarV3">
        <div id="logo">
         <img id="logoImg" src="logo.png" alt="" />
       </div>

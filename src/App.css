@@ -5,7 +5,7 @@
 }
 
 #mapGap{
-  height: 13vh;
+  height: 11vh;
 }
 
 .App {
@@ -60,9 +60,9 @@
   /* width: 300px; */
 
  position: absolute;
-  top: 80vh;
-  left: 34vw;
-  width: 55vw;
+  top: 88vh;
+  left: 4vw;
+  width: 80vw;
   z-index: 0;
 
   /* height: 80px; */
@@ -71,8 +71,8 @@
   /* display: grid; */
   /* grid-template-columns: 1fr 5fr; */
   /* align-items: center; */
-  padding-right: 2vw;
-  padding-left: 2vw;
+  padding-right: 6vw;
+  padding-left: 6vw;
 
 }
 
@@ -103,24 +103,43 @@
 }
 
 
+#filtrosBottom{
+  display: grid;
+  grid-template-columns: 5fr 1fr;
+}
+
 .slider-container{
+  display: grid;
   background-color: white;
   color: black;
   border-radius: 20px;
   padding-bottom: 2vw;
   padding-top: 2vw;
 
-      box-shadow: -2px -2px 16px WHITE, 2px 2px 16px #c9c9c9;
 }
 
+#toMain2{
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  position: absolute;
+  top: 88vh;
+  right: 2vw;
+  width: 12vw;
+  z-index: 0;
+  height: 7vh;
+  border-radius: 20px;
+  padding-bottom: 2vw;
+  padding-top: 2vw;
+}
 
 .popup {
  
   position: absolute;
-  top: 60vh;
+  top: 67vh;
   left: 2vw;
-  width: 30vw;
-  height: 30vh;
+  width: 96vw;
+  height: 20vh;
  
   padding: 15px;
   padding-left: 25px;
@@ -128,13 +147,14 @@
   background-color: blue;
   border: 1px solid white;
   border-radius: 30px;
-  z-index: 4000;
+  z-index: 1000;
   overflow: hidden;
   white-space: break-spaces;
 }
 
 #displayTitulo{
-  font-size: 1.2rem;
+  font-size: 1.1rem;
+  padding: 0vh 3vw;
 }
 
 #displayFecha{
@@ -143,14 +163,86 @@
 
 }
 #displayLink{
-color: lightblue
+color: orange
+
+}
+
+
+/*------responsive------*/
+
+/*TV TABLET 768px*/
+@media (min-width: 768px){
+
+
+
+
+
+.slider-container {
+  /* width: 300px; */
+
+ position: absolute;
+  top: 88vh;
+  left: 2vw;
+  width: 83vw;
+  z-index: 0;
+
+  /* height: 80px; */
+  /* background-color: #00425a; */
+  /* color: #eff5f5; */
+  /* display: grid; */
+  /* grid-template-columns: 1fr 5fr; */
+  /* align-items: center; */
+  padding-right: 2vw;
+  padding-left: 2vw;
+
+}
+
+
+.popup {
+ 
+    position: absolute;
+    top: 60vh;
+    left: 1vw;
+    width: 30vw;
+    height: 27vh;
+   
+    padding: 10px;
+    padding-left: 20px;
+
+
+    white-space: break-spaces;
+  }
+
+#displayTitulo{
+  font-size: 1.2rem;
+}
+
+
+#filtrosBottom{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+
+#toMain2{
+  width: 10vw;
+  height: 9vh;
+}
+
+
 
 }
 
 
 
+
 /*TV RESPONISVE 1200px*/
 @media (min-width: 1200px){
+
+  
+#mapGap{
+  height: 13vh;
+}
 
   .popup {
  
@@ -169,7 +261,6 @@ color: lightblue
 
 
 
-}
 
 
 
@@ -190,5 +281,7 @@ color: lightblue
   /* align-items: center; */
   padding-right: 2vw;
   padding-left: 2vw;
+
+}
 
 }

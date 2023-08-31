@@ -1,10 +1,15 @@
+
+
+
+
+
 #marquee-container{
     width: 100vw;
     height: 3vh;
     background-color: blue;
    
-    top: 10vh;
-    z-index: 3000;
+    top: 8vh;
+    z-index: 5000;
 position: fixed;    
 }
 
@@ -14,4 +19,30 @@ position: fixed;
 
 #highlight-text{
     color: yellow;
+}
+
+
+
+
+        
+/*== Responsive==*/
+
+/*== tablet==*/
+
+@media (min-width: 768px){
+
+
+
+
+    #marquee-container{
+        width: 100vw;
+        height: 3vh;
+        background-color: blue;
+       
+        top: 10vh;
+        z-index: 3000;
+    position: fixed;    
+    }
+
+
 }

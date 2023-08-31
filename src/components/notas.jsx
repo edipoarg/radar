@@ -8,7 +8,6 @@ export default function Notas() {
    return (
       
      <div id='notas'>
-      <RadarMotion></RadarMotion>
        <Carousel id='notasContainer'>
          <Carousel.Item>
            <h2>Titulo del informe</h2>

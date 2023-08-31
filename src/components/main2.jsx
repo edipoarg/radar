@@ -14,9 +14,9 @@ return(
       <div id="franja1">
         
         <div id='reportaMain'>
-        <h1 class='titulo'>Reportá</h1>
+        <h1 id='tituloReportaMain'>Reportá</h1>
         <h4 class='bajada'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non doloribus odit labore perferendis!</h4>
-        <button class='botonMain'><a href="">ingresar</a></button>
+        <button id="botonReprotaMain"><a href="">ingresar</a></button>
         </div>
 
         <div id='botonMain2'>
@@ -36,10 +36,10 @@ return(
 
         <div id='notasMain'>
 
-          <h1 class='titulo'>Notas</h1>
+          <h1 id='tituloNotasMain'>Notas</h1>
 
           <h4 class='bajada'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum, distinctio tempora! Esse perspiciatis eius praesentium?</h4>
-          <button><a href="">ver</a></button>
+          <button id="botonNotasMain"><a href="">ver</a></button>
 
        </div>
 
@@ -49,15 +49,12 @@ return(
         <div id='contactoMain'>
             <h2 id='conectaTitle'>Conectá</h2>
             <p id='conectaText'>Conocé más sobre RADAR</p>
-            <button><a href="">Ir</a></button>
+            <button id="botonConectaMain" ><a href="">Ir</a></button>
         </div>
-        <div id='listadoMain'>
-          <h3 id='listadoText'>Listado de todos los casos</h3>
-          <button><a href="">Ir</a></button>
-        </div>
+     
         <div id='analisisMain'>
-          <h3 id='analisisText'>Analisis y estadisticas</h3>
-          <button><a href="">1</a></button>
+          <h3 id='analisisTextMain'>Analisis y estadisticas</h3>
+          <button id="botonAnalisisMain"><a href="">1</a></button>
         </div>
       </div>
 

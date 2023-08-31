@@ -3,26 +3,47 @@
     grid-template-columns: 1fr;
     width: 100vw;
     background-color: blue;
-    padding: 20px;
-    padding-top: 18vh;
+    padding: 20px 0px;
+    padding-top: 10vh;
+
 }
 
 #analisisHeader{
-    padding: 0vw 2vw;
-    padding-bottom: 10vh;
+    padding-bottom: 5vh;
     color: white;
+    
+
+}
+
+#analisisTitulo{
+
+    font-size: 0.7rem;
+    padding: 0vh 5vw;
 
 }
 
 #analisisDatos
 {
     display: grid;
-grid-template-columns: 1fr 1fr 1fr 1fr;
+grid-template-columns: 1fr 1fr ;
 padding: 4vw 8vw;
 color: white;
+column-gap: 8vw;
+}
 
+
+
+
+#datoN1, #datoN2, #datoN3, #datoN4{
+    width: 40vw;
+    font-size: 2.5rem;
+}
+#datos1, #datos2, #datos3, #datos4{
+    width: 20vw;
+}
 
 .textAnalisis{
+    width: 40vw;
     color: white;
     font-size: 1rem;
     text-align: justify;
@@ -30,19 +51,54 @@ color: white;
 }
 
 
-}
 
+
+
+#subir{
+justify-self: center;
+    width: 50vw;
+}
 /*== Responsive==*/
 
 /*== tablet==*/
 
 @media (min-width: 768px){
 
+    
+
     #analisisHeader{
         padding: 0vw 8vw;
         padding-bottom: 10vh;
     
     }
+
+    #analisisDatos{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        padding: 0px;
+        column-gap: 0px;
+    }
+
+    
+#datoN1, #datoN2, #datoN3, #datoN4{
+    width: 20vw;
+    font-size: 3rem;
+    
+}
+
+#datos1, #datos2, #datos3, #datos4{
+    width: 20vw;
+    
+}
+.textAnalisis{
+    width: 20vw;
+    color: white;
+    font-size: 1rem;
+    text-align: justify;
+    padding: 0vh 1vw;
+
+}
+
+
     
 }
 
