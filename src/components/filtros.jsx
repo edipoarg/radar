@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import './filtros.css'
 import { Switch, Select, MenuItem } from "@mui/material";
-import CloseButton from 'react-bootstrap/CloseButton';
 
 
 
@@ -29,7 +28,6 @@ export default function filtros({ caseCount, handleTipoFilter, tipoFilters, setT
         <div id='boxes'>
           <div id='botonFiltros'>
             <br />
-            <CloseButton aria-label="Hide"/>
           </div>
           
           <div id='display'>

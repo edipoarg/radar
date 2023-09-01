@@ -24,15 +24,15 @@ export default function Main2() {
 
           <div id='botonMapa'>
             <ScrollLink
-              to="App" 
+              to="App"
               spy={true} // Activa el modo espía
               smooth={true} // Activa el desplazamiento suave
               duration={500} // Duración de la animación (en milisegundos)
               offset={-70} // Ajusta un offset opcional (si tienes un encabezado fijo)
             >
-              <button id='botonMain2'><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-caret-up-fill" viewBox="0 0 16 16">
+              <button id='botonMain2'><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-caret-up-fill" viewBox="0 0 16 16">
                 <path d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z" />
-              </svg><h5>mapa</h5></a></button>
+              </svg><h5>mapa</h5></button>
             </ScrollLink>
 
           </div>
@@ -67,16 +67,16 @@ export default function Main2() {
             <div id='analisisMain'>
               <h3 id='analisisTextMain'>Relevamiento 2020 - 2023</h3>
               <ScrollLink
-              to="analisis" 
-              spy={true} // Activa el modo espía
-              smooth={true} // Activa el desplazamiento suave
-              duration={500} // Duración de la animación (en milisegundos)
-              offset={-70} // Ajusta un offset opcional (si tienes un encabezado fijo)
-            >
-                <button id="botonAnalisisMain"><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-caret-down-fill" viewBox="0 0 16 16">
-                <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
-              </svg></a></button>
-            </ScrollLink>
+                to="analisis"
+                spy={true} // Activa el modo espía
+                smooth={true} // Activa el desplazamiento suave
+                duration={500} // Duración de la animación (en milisegundos)
+                offset={-70} // Ajusta un offset opcional (si tienes un encabezado fijo)
+              >
+                <button id="botonAnalisisMain"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                  <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+                </svg></button>
+              </ScrollLink>
             </div>
           </div>
 

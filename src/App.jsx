@@ -22,8 +22,10 @@ import Listado from './components/listado.jsx';
 import Conecta from './components/conecta.jsx';
 import Reporta from './components/reporta.jsx';
 import Notas from './components/notas';
-import { Link, useLocation } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
+import { Button } from 'react-bootstrap';
+import CloseButton from 'react-bootstrap/CloseButton';
 
 
 
@@ -35,7 +37,7 @@ const style = {
     fillOpacity: 0.6,
     color: "blue",
     weight: 0.2,
-    
+
   },
   departamentos: {
     fillColor: "#d8d7fa",
@@ -57,7 +59,7 @@ const style = {
     lineColor: "#b2b7f5",
     fillOpacity: 1,
     lineWidth: [
-      [1, ],
+      [1,],
       [6, 2],
       [14, 15],
       [22, 12],
@@ -83,6 +85,13 @@ function App(urls) {
     t1: true,
 
   });
+  // Estado para controlar la visibilidad de "Filtros"
+  const [filtrosVisible, setFiltrosVisible] = useState(true);
+
+  // Función para cambiar la visibilidad de "Filtros"
+  const toggleFiltrosVisibility = () => {
+    setFiltrosVisible(!filtrosVisible);
+  };
 
 
   const location = useLocation();
@@ -217,12 +226,16 @@ function App(urls) {
       {isHomePage && (
         <div>
           <div className="App">
-            <Filtros caseCount={filteredData.length}
-              handleTipoFilter={handleTipoFilter} // Pasa la función aquí
-              tipoFilters={tipoFilters} // Pasa el estado aquí
-              setTipoFilters={setTipoFilters} // Agrega esta línea para pasar setTipoFilters
 
-            ></Filtros>
+            {filtrosVisible && (
+              <Filtros
+                caseCount={filteredData.length}
+                handleTipoFilter={handleTipoFilter}
+                tipoFilters={tipoFilters}
+                setTipoFilters={setTipoFilters}>
+              </Filtros>
+            )}
+
             <div id='mapGap'></div>
             <MapGL
               id="mapa"
@@ -252,6 +265,7 @@ function App(urls) {
             </MapGL>
 
             <div className="slider-container">
+              {/* Agrega un botón o elemento para cambiar la visibilidad de Filtros */}
               <Slider
                 max={months}
                 valueLabelDisplay="auto"
@@ -262,7 +276,10 @@ function App(urls) {
                 onChange={handleChange}
                 aria-labelledby="non-linear-slider"
               />
+              <CloseButton aria-label="Hide" onClick={toggleFiltrosVisibility} />
+
             </div>
+
             <ScrollLink
               to="main2-content" // ID del elemento de destino (Main2)
               spy={true} // Activa el modo espía
@@ -278,9 +295,12 @@ function App(urls) {
             </ScrollLink>
 
 
+
+
+
             {popupInfo && <Popup {...popupInfo} />}
 
-            <Main2/>
+            <Main2 />
             <Analisis></Analisis>
 
           </div>   </div>
