@@ -52,7 +52,7 @@ export default function Main2() {
             <h1 id='tituloNotasMain'>Informe a un año del atentado a CFK</h1>
             <h4 className='autorNotaMain'>Por el Equipo de Investigación Política (EdIPo)
             </h4>
-            <button id="botonNotasMain"><a href="https://informes.revistacrisis.com.ar/la-violencia-avanza-1s/">ver</a></button>
+            <button id="botonNotasMain"><a href="https://informes.revistacrisis.com.ar/la-violencia-avanza-1s/" target="_blank">ver</a></button>
 
           </div>
 
