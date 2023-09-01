@@ -46,7 +46,16 @@
 
 /* Resto de los estilos */
 
-
+#closeButton{
+position: absolute;
+z-index: 5000;
+background-color: white;
+color: white;
+top: 14vh;
+left: 5vw;
+height: 3vw;
+width: 3vw;
+border-radius: 50px;}
 
 #markerLine {
   background-color: rgb(249, 38, 6);
@@ -233,7 +242,16 @@ color: orange
   grid-template-columns: 1fr 1fr;
 }
 
-
+#closeButton{
+  position: absolute;
+  z-index: 5000;
+  background-color: white;
+  color: white;
+  top: 16vh;
+  left: 4vw;
+  height: 3vw;
+  width: 3vw;
+  border-radius: 50px;}
 #toMain2{
   top: 88vh;
   width: 10vw;
@@ -304,5 +322,14 @@ color: orange
 
 }
 
-
+#closeButton{
+  position: absolute;
+  z-index: 5000;
+  background-color: white;
+  color: white;
+  top: 14vh;
+  left: 1vw;
+  height: 3vw;
+  width: 3vw;
+  border-radius: 50px;}
 }

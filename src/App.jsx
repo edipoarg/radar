@@ -237,6 +237,8 @@ function App(urls) {
             )}
 
             <div id='mapGap'></div>
+            <CloseButton id='closeButton' aria-label="Hide" onClick={toggleFiltrosVisibility} />
+
             <MapGL
               id="mapa"
               mapLib={maplibregl}
@@ -276,7 +278,6 @@ function App(urls) {
                 onChange={handleChange}
                 aria-labelledby="non-linear-slider"
               />
-              <CloseButton aria-label="Hide" onClick={toggleFiltrosVisibility} />
 
             </div>
 
