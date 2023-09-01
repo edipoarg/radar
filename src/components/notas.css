@@ -6,16 +6,75 @@
 }
 
 #notasContainer{
-    padding: 20px;
+    padding: 20px 12vw;
     padding-top: 30vh;
     height: 90vh;
+    color: blue;
+  
 
 }
 
+.tituloNota{
+    font-size: 2rem;
+}
 
+.notasItemContainer{
+    border-style: inset;
+    border-color: blue;
+    border-width: 2px;
+    border-radius: 25px;
+    padding: 10vh 15vw;
+    height: 45vh;
+    display: flex;
+  flex-direction: column; /* Arrange items vertically */
+  align-items: center; /* Center items horizontally */
+  justify-content: center; /* Center items vertically */
+  padding: 5vh 5vw;
+  margin: 0 auto;
+ 
 
+}
 
+.notaBotonCrisis{
+    color: blue;
+    background-color: white;
+    border-color: blue;
+       align-items: center;
+    justify-content: center;
+    align-self: center;
+    justify-self: center;
+    align-content: center;
+    justify-items: center;
+    margin-top: 4vh;
+   
+}
 
+.autorNota{
+    font-size: 1rem;
+    padding: 1vh ;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  color: blue; /* Change arrow color */
+  font-size: 2rem; /* Adjust arrow size */
+}
+
+/* Customize the color of the active carousel indicator */
+.carousel-indicators .active {
+    background-color: blue; /* Change to your desired color */
+  }
+
+/* Left Arrow */
+.carousel-control-prev-icon {
+    background-image: url('data:image/svg+xml,%3csvg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="blue" class="bi bi-arrow-left-short" viewBox="0 0 16 16"%3e%3cpath fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"/%3e%3c/svg%3e');
+  }
+  
+  /* Right Arrow */
+  .carousel-control-next-icon {
+    background-image: url('data:image/svg+xml,%3csvg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="blue" class="bi bi-arrow-right-short" viewBox="0 0 16 16"%3e%3cpath fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/%3e%3c/svg%3e');
+  }
+  
 /*== tablet==*/
 
 @media (min-width: 768px){
@@ -23,12 +82,13 @@
     #notas{
         width: 100vw;
         height: 100vh;
-        background-color:white;
+        background-color: white;
     
     }
     
     #notasContainer{
-        padding: 20vw
+        padding: 20vw;
+        color: blue;
     }
 
 

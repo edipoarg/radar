@@ -18,9 +18,10 @@ return(
 </h4>
         <h1 id='tituloAnalisis'>RELEVAMIENTO 
 2020 - 2023
-</h1><div id='analisisCasosContainer'>
-<h4 id='analisisCasos'>149 CASOS</h4></div>
-<h4 id='analisisCasosBajada'>agrupados por narrativas
+</h1>
+<h4 id='analisisCasos'>149 CASOS</h4>
+<h4 id='analisisCasosBajada'>agrupados por sus narrativas*
+
 </h4>
 
                 </div>
@@ -65,15 +66,23 @@ return(
       <div class='info'>
         <div class='barra'></div>
       <p class='textAnalisis'>racismo y xenofobia</p>
-      </div>
-      </div>
-
-
-
+      </div>      
 
       </div>
 
-      <h4 id='analisisTextoFinal'> Este relevamiento es una herramienta dinámica y en construcción. Si bien en esta primera etapa se visualizan hechos del período 2020-2023 que pueden ser geolocalizados, la plataforma está abierta a recibir reportes por fuera de ese recorte espacio-temporal.
+
+
+
+      </div>
+
+      <h4 id='analisisTextoFinal'>RADAR es una herramienta dinámica en construcción. 
+      <br /> 
+      <br />
+      En esta primera etapa se visualizan hechos del período 2020-2023 que puedan ser geolocalizados pero se encuentra abierta a recibir reportes fuera de ese marco espacio-temporal.
+<br />
+<br />
+*Las narrativas no son excluyentes: algunos casos abarcan más de una. 
+
 </h4>
 
       <button id='subir'><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-up-fill" viewBox="0 0 16 16">

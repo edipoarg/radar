@@ -11,13 +11,26 @@ export default function Notas() {
       
        <Carousel id='notasContainer'>
          <Carousel.Item>
-           <h2 className='tituloNota'>Titulo del informe</h2>
-           <h4 className='bajadaNota'>bajada de la nota</h4>
-           {/* Rest of the content */}
-         </Carousel.Item>
+          <div class='notasItemContainer'>
+           <h2 className='tituloNota'>La violencia avanza
+</h2>
+           <h4 className='bajadaNota'>Informe a un año del atentado a CFK
+</h4>
+<h4 className='autorNota'>Por el Equipo de Investigación Política (EdIPo)
+</h4>
+<button className='notaBotonCrisis'>ir a la nota</button>
+           </div>
+         </Carousel.Item >
          <Carousel.Item>
-         <h2 className='tituloNota'>Titulo del informe</h2>
-           <h4 className='bajadaNota'>bajada de la nota</h4>
+         <div class='notasItemContainer'>
+
+         <h2 className='tituloNota'>el atentado a cfk y la guerra que ya llegó
+</h2>
+         
+         <button className='notaBotonCrisis'>ir a la nota</button>
+
+           </div>
+
            </Carousel.Item>
         
            

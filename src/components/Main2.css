@@ -4,7 +4,6 @@
     display: grid;
     grid-template-columns: 1fr;
     width: 100vw;
-    height: 90vh;
 
 }
 
@@ -37,9 +36,17 @@
 }
 
 #tituloNotasMain{
-    font-size: 2REM;
+    font-size: 1.5REM;
+    color: blue;
 }
 
+#bajadaPrincipal{
+    font-size: 0.6rem;
+    padding: 0vh 6vw;
+    text-align: justify;
+    color: blue;
+    padding-top: 1vh;
+}
 
 .botonMain{
     background-color: white;
@@ -95,6 +102,11 @@
     column-gap: 4vw;
 }
 
+.autorNotaMain{
+    font-size: 0.7rem;
+    padding: 1vh ;
+    color: blue;
+}
 
 
 
@@ -136,10 +148,11 @@ column-gap: 3vw;
     
 }
 
-#conectaText{
+#conectaTextMain{
    color: white;
     width: 35vw;
-    font-size: 1rem;
+    font-size: 0.6rem;
+    text-align: justify;
 
 }
 
@@ -149,7 +162,7 @@ column-gap: 3vw;
 
 #analisisTextMain{
     color: white;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 
@@ -252,11 +265,43 @@ height: 40vh;
 #contactoMain{
     width: 41vw;
     height: 25vh;
-    padding: 10px;
+    padding: 0px;
+    
 
 
 }
 
+#botonNotasMain{
+    margin-top: 5vh;
+}
+#conectaTitle{
+    padding: 7px 4vw;
+    margin: 0px;
+
+
+}
+
+
+
+
+#conectaTextMain{
+    color: white;
+     width: 40vw;
+     font-size: 0.7rem;
+     text-align: justify;
+     padding: 2vh 5vw;
+     margin: 0px;
+
+ 
+ }
+
+#bajadaPrincipal{
+    font-size: 1.4rem;
+    padding: 0vh 6vw;
+    text-align: justify;
+    color: blue;
+    padding-top: 1vh;
+}
 
 
 #botonReportaMain, #botonNotasMain{
@@ -276,6 +321,11 @@ height: 40vh;
     
         }
 
+
+        #analisisTextMain{
+            color: white;
+            font-size: 1.7rem;
+        }
 
 }
 
@@ -314,8 +364,27 @@ height: 40vh;
     }
   
     #botonReportaMain{
-        margin-top: 7vh;
+        margin-top: 3vh;
     }
 
 
+    #bajadaPrincipal{
+        font-size: 1.8rem;
+        padding: 0vh 10vw;
+        text-align: justify;
+        color: blue;
+        padding-top: 3vh;
+    }
+
+    
+#conectaTextMain{
+    color: white;
+     width: 40vw;
+     font-size: 1rem;
+     text-align: justify;
+     padding: 2vh 5vw;
+     margin: 0px;
+
+ 
+ }
 }
