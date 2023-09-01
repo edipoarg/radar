@@ -1,8 +1,16 @@
+/* fonts.css */
+@font-face {
+  font-family: 'MiFuente'; /* Nombre de la fuente que asignarás */
+  src: url('./fonts/LuxoraGrotesk-Book.otf') format('opentype'); /* Ruta al archivo OTF o TTF */
+  font-weight: normal; /* Puedes especificar el peso de la fuente (normal, bold, etc.) */
+  font-style: normal; /* Puedes especificar el estilo de la fuente (normal, italic, etc.) */
+}
+
+
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'MiFuente', sans-serif; /* Usa el nombre de la fuente definido arriba */
   line-height: 1.5;
   font-weight: 400;
-
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
