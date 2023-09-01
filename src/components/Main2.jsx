@@ -1,6 +1,7 @@
 import React from 'react';
 import './Main2.css'
 import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
+import { Link } from 'react-router-dom';
 
 
 export default function Main2() {
@@ -19,7 +20,7 @@ export default function Main2() {
           <div id='reportaMain'>
 
             <h4 id='bajadaPrincipal'> El 'Registro de Ataques de Derechas Argentinas Radicalizadas' es un proyecto periodístico colaborativo impulsado por el Equipo de Investigación Política- Edipo de la Revista Crisis con apoyo del Centro de Estudios Legales y Sociales- CELS con el objetivo de fortalecer la democracia y la defensa de los derechos humanos.</h4>
-            <button id="botonReportaMain"><a href="">ingresar</a></button>
+            <Link to= "/radarV3/conecta"> <button id="botonReportaMain">NOSOTRXS</button></Link>
           </div>
 
           <div id='botonMapa'>
@@ -51,7 +52,7 @@ export default function Main2() {
             <h1 id='tituloNotasMain'>Informe a un año del atentado a CFK</h1>
             <h4 className='autorNotaMain'>Por el Equipo de Investigación Política (EdIPo)
             </h4>
-            <button id="botonNotasMain"><a href="">ver</a></button>
+            <button id="botonNotasMain"><a href="https://informes.revistacrisis.com.ar/la-violencia-avanza-1s/">ver</a></button>
 
           </div>
 
