@@ -214,8 +214,6 @@ function App(urls) {
   return (
     <>
 
-
-
       {isHomePage && (
         <div>
           <div className="App">

@@ -33,13 +33,10 @@ z-index: 5000;
 justify-content: right;
 }
 
-#botonReporta{
+/* #botonReporta{
   color: white;
-  background-color: blue;
-  border-radius: 15px;
   font-size: 1rem;
-  padding: 1.5vh 2vw;
-}
+} */
 
 #menuPCBox{
 display: flex;

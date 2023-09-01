@@ -22,11 +22,18 @@ export default function Main2() {
             <button id="botonReportaMain"><a href="">ingresar</a></button>
           </div>
 
-          <div id='botonMain2'>
-
-            <button id='botonMain2'><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-caret-up-fill" viewBox="0 0 16 16">
-              <path d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z" />
-            </svg><h5>mapa</h5></a></button>
+          <div id='botonMapa'>
+            <ScrollLink
+              to="App" 
+              spy={true} // Activa el modo espía
+              smooth={true} // Activa el desplazamiento suave
+              duration={500} // Duración de la animación (en milisegundos)
+              offset={-70} // Ajusta un offset opcional (si tienes un encabezado fijo)
+            >
+              <button id='botonMain2'><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-caret-up-fill" viewBox="0 0 16 16">
+                <path d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z" />
+              </svg><h5>mapa</h5></a></button>
+            </ScrollLink>
 
           </div>
 
@@ -43,7 +50,7 @@ export default function Main2() {
 
             <h1 id='tituloNotasMain'>Informe a un año del atentado a CFK</h1>
             <h4 className='autorNotaMain'>Por el Equipo de Investigación Política (EdIPo)
-</h4>
+            </h4>
             <button id="botonNotasMain"><a href="">ver</a></button>
 
           </div>
@@ -54,14 +61,22 @@ export default function Main2() {
             <div id='contactoMain'>
               <h2 id='conectaTitle'>Reportá un hecho</h2>
               <h2 id='conectaTextMain'>Colaborá en la construcción de una fuente de información pública sobre agresiones a la democracia.</h2>
-              <button id="botonConectaMain" ><a href="">Ir</a></button>
+              <button id="botonConectaMain" ><a href="https://docs.google.com/forms/d/e/1FAIpQLSe5pKXuvkvSUiwI_YEq5OZrfXCmpcsDuz_6co_iS2Qags80_A/viewform" target="_blank" rel="noopener noreferrer">Ir</a></button>
             </div>
 
             <div id='analisisMain'>
               <h3 id='analisisTextMain'>Relevamiento 2020 - 2023</h3>
-              <button id="botonAnalisisMain"><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-caret-down-fill" viewBox="0 0 16 16">
+              <ScrollLink
+              to="analisis" 
+              spy={true} // Activa el modo espía
+              smooth={true} // Activa el desplazamiento suave
+              duration={500} // Duración de la animación (en milisegundos)
+              offset={-70} // Ajusta un offset opcional (si tienes un encabezado fijo)
+            >
+                <button id="botonAnalisisMain"><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-caret-down-fill" viewBox="0 0 16 16">
                 <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
               </svg></a></button>
+            </ScrollLink>
             </div>
           </div>
 
@@ -72,6 +87,6 @@ export default function Main2() {
 
 
       </div>
-     </div> );
+    </div>);
 }
 
