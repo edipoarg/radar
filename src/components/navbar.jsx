@@ -26,9 +26,9 @@ export default function Navbar() {
             <Link to="/radarV3/notas">INVESTIGACIONES</Link>
             <Link to="/radarV3/conecta">NOSOTRXS</Link>
 
-            <Button variant="outline-primary" >
+            <Button variant="outline-primary" size="sm" >
             <a href="https://docs.google.com/forms/d/e/1FAIpQLSe5pKXuvkvSUiwI_YEq5OZrfXCmpcsDuz_6co_iS2Qags80_A/viewform" target="_blank" rel="noopener noreferrer">
-              <h2 id="botonReporta">Reporta</h2>
+              Reporta
             </a>
             </Button>{' '}
 
