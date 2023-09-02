@@ -1,11 +1,5 @@
 
 
-@font-face {
-    font-family: luxora;
-    src: url('../assets/fonts/LuxoraGrotesk-Regular.woff') format('woff');
-    font-style: normal;
-    font-weight: normal;
-  }
 
 
 .formQuestion{
@@ -18,7 +12,7 @@
 
 h1, h2, h5, h3, h4 {
     color: black;
-    font-family: luxora }
+    font-family: 'MiFuente' }
 h3 {
     color: black;
     font-size: 10px;

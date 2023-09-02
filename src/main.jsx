@@ -23,6 +23,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     />
     <Router>
       <NavbarBootstrap /> {/* Navbar siempre se muestra */}
+      <Marquee></Marquee>
       <App></App>
       <Routes
         render={({ location }) => (

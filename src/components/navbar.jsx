@@ -21,10 +21,11 @@ export default function NavbarBootstrap() {
               </Nav.Link>
             </Navbar.Brand>
             <Nav className="me-auto">
-              {/* Agrega las clases para controlar la visibilidad */}
+              <div id="menuPC">
               <Nav.Link href="/radarV3/notas" className="d-none d-lg-block">INVESTIGACIONES</Nav.Link>
               <Nav.Link href="/radarV3/conecta" className="d-none d-lg-block">NOSOTRXS</Nav.Link>
-              <Nav.Link href="https://docs.google.com/forms/d/e/1FAIpQLSe5pKXuvkvSUiwI_YEq5OZrfXCmpcsDuz_6co_iS2Qags80_A/viewform" target="_blank" rel="noopener noreferrer" className="d-none d-lg-block">
+              </div>
+              <Nav.Link href="https://docs.google.com/forms/d/e/1FAIpQLSe5pKXuvkvSUiwI_YEq5OZrfXCmpcsDuz_6co_iS2Qags80_A/viewform" target="_blank" rel="noopener noreferrer">
                 <motion.div whileHover={{ scale: 1.2 }}>REPORTÁ</motion.div>
               </Nav.Link>
             </Nav>
