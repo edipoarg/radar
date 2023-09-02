@@ -3,16 +3,18 @@
   margin: 0;
   padding: 0;
 }
+
 #toMain2 {
   cursor: pointer;
 }
 
-#mapGap{
-  height: 11vh;
+#mapGap {
+  height: 6vh;
+  width: 100%;
 }
 
 .App {
- background-color: white;
+  background-color: white;
   text-align: center;
   width: 100vw;
   position: relative;
@@ -22,7 +24,7 @@
   width: 24px;
   height: 24px;
   border-radius: 50%;
- 
+
   align-items: center;
   justify-content: center;
   color: white;
@@ -32,12 +34,14 @@
 
 
 .marker.amarillo {
-  background-color: yellow; /* Cambia el color según tus preferencias */
+  background-color: yellow;
+  /* Cambia el color según tus preferencias */
 
 }
 
 .marker.naranja {
-  background-color: orange; /* Cambia el color según tus preferencias */
+  background-color: orange;
+  /* Cambia el color según tus preferencias */
 }
 
 .marker.rojo {
@@ -45,17 +49,53 @@
 }
 
 /* Resto de los estilos */
+.transformed-button {
+  position: fixed;
+  z-index: 5000;
+  background-color: white;
+  color: white;
+  top: 14vh;
+  left: 5vw;
+  background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
 
-#closeButton{
-position: absolute;
-z-index: 5000;
-background-color: white;
-color: white;
-top: 14vh;
-left: 5vw;
-height: 3vw;
-width: 3vw;
-border-radius: 50px;}
+
+}
+
+.transformed-button img {
+  position: fixed;
+  top: 14vh;
+  left: 4vw;
+  max-width: 8vw;
+}
+
+.simple-button {
+  background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+
+}
+
+#closeButton {
+  position: fixed;
+  z-index: 5000;
+  background-color: white;
+  color: white;
+  top: 14vh;
+  left: 5vw;
+  
+
+
+}
 
 #markerLine {
   background-color: rgb(249, 38, 6);
@@ -69,7 +109,7 @@ border-radius: 50px;}
 .slider-container {
   /* width: 300px; */
 
- position: absolute;
+  position: absolute;
   top: 86vh;
   left: 4vw;
   width: 80vw;
@@ -88,7 +128,8 @@ border-radius: 50px;}
 
 .marker:hover {
   background-color: rgb(52, 7, 7);
-  transform: scale(1.5); /* Increase the size when hovered */
+  transform: scale(1.5);
+  /* Increase the size when hovered */
 }
 
 /*== Encabezado==*/
@@ -113,12 +154,12 @@ border-radius: 50px;}
 }
 
 
-#filtrosBottom{
+#filtrosBottom {
   display: grid;
   grid-template-columns: 5fr 1fr;
 }
 
-.slider-container{
+.slider-container {
   display: grid;
   background-color: white;
   color: black;
@@ -128,7 +169,7 @@ border-radius: 50px;}
 
 }
 
-#toMain2{
+#toMain2 {
   background-color: black;
   color: white;
   border-radius: 10px;
@@ -144,13 +185,13 @@ border-radius: 50px;}
 }
 
 .popup {
- 
+
   position: absolute;
   top: 67vh;
   left: 2vw;
   width: 96vw;
   height: 18vh;
- 
+
   padding: 15px;
   padding-left: 25px;
   color: white;
@@ -162,46 +203,45 @@ border-radius: 50px;}
   white-space: break-spaces;
 }
 
-#displayTitulo{
+#displayTitulo {
   font-size: 0.9rem;
   padding: 0vh 3vw;
 }
 
-#displayFecha{
+#displayFecha {
   font-size: 0.8rem;
   color: white;
 
 }
 
-#displayTipo{
+#displayTipo {
   font-size: 0.7rem;
   color: lightblue;
 
 }
 
-#displayLink{
-color: orange
-
+#displayLink {
+  color: orange
 }
 
 
 /*------responsive------*/
 
 /*TV TABLET 768px*/
-@media (min-width: 768px){
+@media (min-width: 768px) {
 
 
 
 
 
   .popup {
- 
+
     position: absolute;
     top: 60vh;
     left: 1vw;
     width: 28vw;
     height: 36vh;
-   
+
     padding: 16px 8px;
 
 
@@ -213,52 +253,45 @@ color: orange
 
 
 
-.slider-container {
-  /* width: 300px; */
+  .slider-container {
+    /* width: 300px; */
 
- position: absolute;
-  top: 87vh;
-  left: 30vw;
-  width: 55vw;
-  z-index: 0;
+    position: absolute;
+    top: 87vh;
+    left: 30vw;
+    width: 55vw;
+    z-index: 0;
 
-  /* height: 80px; */
-  /* background-color: #00425a; */
-  /* color: #eff5f5; */
-  /* display: grid; */
-  /* grid-template-columns: 1fr 5fr; */
-  /* align-items: center; */
-  padding-right: 2vw;
-  padding-left: 2vw;
+    /* height: 80px; */
+    /* background-color: #00425a; */
+    /* color: #eff5f5; */
+    /* display: grid; */
+    /* grid-template-columns: 1fr 5fr; */
+    /* align-items: center; */
+    padding-right: 2vw;
+    padding-left: 2vw;
 
-}
-#displayTitulo{
-  font-size: 1.2rem;
-}
+  }
+
+  #displayTitulo {
+    font-size: 1.2rem;
+  }
 
 
-#filtrosBottom{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
+  #filtrosBottom {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 
-#closeButton{
-  position: absolute;
-  z-index: 5000;
-  background-color: white;
-  color: white;
-  top: 16vh;
-  left: 4vw;
-  height: 3vw;
-  width: 3vw;
-  border-radius: 50px;}
-#toMain2{
-  top: 88vh;
-  width: 10vw;
-  height: 8vh;
-  padding-top: 2vw;
 
-}
+
+  #toMain2 {
+    top: 88vh;
+    width: 10vw;
+    height: 8vh;
+    padding-top: 2vw;
+
+  }
 
 
 
@@ -268,21 +301,22 @@ color: orange
 
 
 /*TV RESPONISVE 1200px*/
-@media (min-width: 1200px){
+@media (min-width: 1200px) {
 
-  
-#mapGap{
-  height: 13vh;
-}
+
+  #mapGap {
+    height: 6vh;
+    width: 100%;
+  }
 
   .popup {
- 
+
     position: absolute;
     top: 60vh;
     left: 1vw;
     width: 18vw;
     height: 32vh;
-   
+
     padding: 16px 8px;
 
 
@@ -294,43 +328,34 @@ color: orange
 
 
 
-.slider-container {
-  /* width: 300px; */
+  .slider-container {
+    /* width: 300px; */
 
- position: absolute;
-  top: 80vh;
-  left: 20vw;
-  width: 69vw;
-  z-index: 0;
+    position: absolute;
+    top: 80vh;
+    left: 20vw;
+    width: 69vw;
+    z-index: 0;
 
-  /* height: 80px; */
-  /* background-color: #00425a; */
-  /* color: #eff5f5; */
-  /* display: grid; */
-  /* grid-template-columns: 1fr 5fr; */
-  /* align-items: center; */
-  padding-right: 2vw;
-  padding-left: 2vw;
+    /* height: 80px; */
+    /* background-color: #00425a; */
+    /* color: #eff5f5; */
+    /* display: grid; */
+    /* grid-template-columns: 1fr 5fr; */
+    /* align-items: center; */
+    padding-right: 2vw;
+    padding-left: 2vw;
 
-}
+  }
 
 
-#toMain2{
-  top: 80vh;
-  width: 8vw;
-  height: 12vh;
-  padding-top: 2vw;
+  #toMain2 {
+    top: 80vh;
+    width: 8vw;
+    height: 12vh;
+    padding-top: 2vw;
 
-}
+  }
 
-#closeButton{
-  position: absolute;
-  z-index: 5000;
-  background-color: white;
-  color: white;
-  top: 14vh;
-  left: 1vw;
-  height: 3vw;
-  width: 3vw;
-  border-radius: 50px;}
+
 }

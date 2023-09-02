@@ -212,7 +212,16 @@ function App(urls) {
   }, [data]);
 
 
+  // Step 1: Create a state variable for the close button
+  const [isCloseButtonClicked, setIsCloseButtonClicked] = useState(false);
 
+  // Step 2: Create a click handler for the close button
+  const handleClickCloseButton = () => {
+    // Toggle the state when the button is clicked
+    setIsCloseButtonClicked(!isCloseButtonClicked);
+
+    // Add any additional logic you want when the button is clicked
+  };
 
 
 
@@ -227,12 +236,33 @@ function App(urls) {
                 caseCount={filteredData.length}
                 handleTipoFilter={handleTipoFilter}
                 tipoFilters={tipoFilters}
-                setTipoFilters={setTipoFilters}>
+                setTipoFilters={setTipoFilters}
+              >
               </Filtros>
             )}
-
             <div id='mapGap'></div>
-            <CloseButton id='closeButton' aria-label="Hide" onClick={toggleFiltrosVisibility} />
+
+            {/* Render different button content based on the state */}
+            <button
+              aria-label="Hide"
+              onClick={() => { handleClickCloseButton(); toggleFiltrosVisibility(); }}
+              className={isCloseButtonClicked ? "transformed-button" : "simple-button"}
+            >
+              {isCloseButtonClicked ? (
+                // Content when the button is clicked
+                // You can use any JSX or HTML here
+                <div><img src="menu.png" alt="Radar icons created by DinosoftLabs" /></div>
+              ) : (
+                // Content when the button is not clicked
+                // You can use any JSX or HTML here
+                <div><CloseButton
+                  id="closeButton"
+                  aria-label="Hide"
+                  onClick={toggleFiltrosVisibility}
+                /></div>
+              )}
+            </button>
+            <div id='mapGap'></div>
 
             <MapGL
               id="mapa"
