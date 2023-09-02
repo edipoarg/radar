@@ -309,7 +309,7 @@ function App(urls) {
       {isMain2Page && (
         <div>
           {/* Contenido específico de la página Main2 */}
-          <Main2></Main2>
+          <Main2/>
         </div>
       )}
       {isReportaPage && (

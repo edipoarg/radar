@@ -5,9 +5,10 @@ import Loader from './components/Loader.jsx';
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
 
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Navbar from "./components/navbar.jsx";
+import NavbarBootstrap from "./components/navbar.jsx";
 import "./index.css";
 import Marquee from './components/marquee.jsx';
+import Main2 from "./components/Main2.jsx";
 
 
 ReactDOM.createRoot(document.getElementById("root")).render(
@@ -21,8 +22,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
 
     />
     <Router>
-      <Navbar /> {/* Navbar siempre se muestra */}
-      <Marquee></Marquee>
+      <NavbarBootstrap /> {/* Navbar siempre se muestra */}
       <App></App>
       <Routes
         render={({ location }) => (
@@ -32,7 +32,6 @@ ReactDOM.createRoot(document.getElementById("root")).render(
               timeout={300}
               classNames="fade"
             >
-              
                 <Route path="/radarV3/" element={App} exact /> {/* Página mapa */}
                 <Route path="/radarV3/conecta" element={App} /> {/* Página Conecta */}
                 <Route path="/radarV3/reporta" element={App} /> {/* Página Reporta */}
