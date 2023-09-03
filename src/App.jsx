@@ -15,6 +15,7 @@ import {
   departamentos,
   departamentosBsAs,
   rutas,
+  provinciasName
 } from "../public/data/mapsData/index.js";
 import Main2 from './components/Main2.jsx'; // Cambia la ruta a tu formulario
 import Filtros from './components/filtros.jsx'; // Cambia la ruta a tu formulario
@@ -72,6 +73,8 @@ const style = {
     lineWidth: 2,
   },
 
+
+
 };
 
 function App(urls) {
@@ -98,16 +101,6 @@ function App(urls) {
     setFiltrosVisible(!filtrosVisible);
   };
 
-
-  const location = useLocation();
-
-  // Verifica si la ubicación actual coincide con una de las rutas.
-  const isHomePage = location.pathname === "/radarV3/";
-  const isConectaPage = location.pathname === "/radarV3/conecta";
-  const isReportaPage = location.pathname === "/radarV3/reporta";
-  const isNotasPage = location.pathname === "/radarV3/notas";
-  const isListadoPage = location.pathname === "/radarV3/listado";
-  const isMain2Page = location.pathname === "/radarV3/Main2";
 
 
 
@@ -226,9 +219,7 @@ function App(urls) {
 
 
   return (
-    <>
-
-      {isHomePage && (
+  
         <div>
           <div className="App">
 
@@ -257,6 +248,8 @@ function App(urls) {
               <DepsSource data={departamentos} style={style.departamentos} />
               <BsAsSource data={departamentosBsAs} style={style.country} />
               <RutasSource data={rutas} style={style.rutas}/>
+
+              <ProvinciasName  data={provinciasName}/>
 
               
 
@@ -313,41 +306,9 @@ function App(urls) {
             <Analisis></Analisis>
 
           </div>   </div>
-      )}
-      {isMain2Page && (
-        <div>
-          {/* Contenido específico de la página Main2 */}
-          <Main2/>
-        </div>
-      )}
-      {isReportaPage && (
-        <div>
-          {/* Contenido específico de la página Reporta */}
-          <Reporta></Reporta>
-        </div>
-      )}
-      {isConectaPage && (
-        <div>
-          {/* Contenido específico de la página Conecta */}
-          <Conecta></Conecta>
-        </div>
-      )}
-
-
-      {isNotasPage && (
-        <div>
-          {/* Contenido específico de la página Notas */}
-          <Notas></Notas>
-        </div>
-      )}
-      {isListadoPage && (
-        <div>
-          {/* Contenido específico de la página Listado */}
-          <Listado></Listado>
-        </div>
-      )}
-
-    </>
+      
+     
+    
 
 
   );

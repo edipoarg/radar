@@ -9,6 +9,11 @@ import NavbarBootstrap from "./components/navbar.jsx";
 import "./index.css";
 import Marquee from './components/marquee.jsx';
 import Main2 from "./components/Main2.jsx";
+import Conecta from "./components/conecta.jsx";
+import Notas from "./components/notas.jsx";
+import Reporta from "./components/reporta.jsx";
+import Analisis from "./components/analisis.jsx";
+
 
 
 ReactDOM.createRoot(document.getElementById("root")).render(
@@ -23,8 +28,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     />
     <Router>
       <NavbarBootstrap /> {/* Navbar siempre se muestra */}
-      <Marquee></Marquee>
-      <App></App>
+      <Marquee/>
       <Routes
         render={({ location }) => (
           <TransitionGroup>
@@ -33,12 +37,11 @@ ReactDOM.createRoot(document.getElementById("root")).render(
               timeout={300}
               classNames="fade"
             >
-                <Route path="/radarV3/" element={App} exact /> {/* Página mapa */}
-                <Route path="/radarV3/conecta" element={App} /> {/* Página Conecta */}
-                <Route path="/radarV3/reporta" element={App} /> {/* Página Reporta */}
-                <Route path="/radarV3/notas" element={App} /> {/* Página Reporta */}
-                <Route path="/radarV3/listado" element={App} /> {/* Página Reporta */}
-                <Route path="/radarV3/main2" element={App} />
+                <Route path="./" element={App} exact /> {/* Página mapa */}
+                <Route path="./conecta" element={Conecta} /> {/* Página Conecta */}
+                <Route path="./reporta" element={Reporta} /> {/* Página Reporta */}
+                <Route path="./notas" element={Notas} /> {/* Página Reporta */}
+                <Route path="./main2" element={Main2} />
 
              
             </CSSTransition>

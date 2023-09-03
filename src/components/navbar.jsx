@@ -14,7 +14,7 @@ export default function NavbarBootstrap() {
         <Navbar bg="blue" data-bs-theme="blue">
           <Container>
             <Navbar.Brand href="#home">
-              <Nav.Link href="/radarV3/">
+              <Nav.Link href="./">
                 <div id="logo">
                   <img id="logoImg" src="logo.png" alt="" />
                 </div>
@@ -22,8 +22,8 @@ export default function NavbarBootstrap() {
             </Navbar.Brand>
             <Nav className="me-auto">
               <div id="menuPC">
-              <Nav.Link href="/radarV3/notas" className="d-none d-lg-block">INVESTIGACIONES</Nav.Link>
-              <Nav.Link href="/radarV3/conecta" className="d-none d-lg-block">NOSOTRXS</Nav.Link>
+              <Nav.Link href="./notas" className="d-none d-lg-block">INVESTIGACIONES</Nav.Link>
+              <Nav.Link href="./conecta" className="d-none d-lg-block">NOSOTRXS</Nav.Link>
               </div>
               <Nav.Link href="https://docs.google.com/forms/d/e/1FAIpQLSe5pKXuvkvSUiwI_YEq5OZrfXCmpcsDuz_6co_iS2Qags80_A/viewform" target="_blank" rel="noopener noreferrer">
                 <motion.div whileHover={{ scale: 1.2 }}>REPORTÁ</motion.div>

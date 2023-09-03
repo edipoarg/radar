@@ -20,7 +20,7 @@ export default function Main2() {
           <div id='reportaMain'>
 
             <h4 id='bajadaPrincipal'> El 'Registro de Ataques de Derechas Argentinas Radicalizadas' es un proyecto periodístico colaborativo impulsado por el Equipo de Investigación Política- Edipo de la Revista Crisis con apoyo del Centro de Estudios Legales y Sociales- CELS con el objetivo de fortalecer la democracia y la defensa de los derechos humanos.</h4>
-            <Link to= "/radarV3/conecta"> <button id="botonReportaMain">NOSOTRXS</button></Link>
+            <Link to= "/conecta"> <button id="botonReportaMain">NOSOTRXS</button></Link>
           </div>
 
           <div id='botonMapa'>
