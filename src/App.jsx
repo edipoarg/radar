@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import MapGL, { NavigationControl } from "react-map-gl/maplibre";
 import maplibregl from "maplibre-gl";
 import "maplibre-gl/dist/maplibre-gl.css";
-import { ProvSource, DepsSource, BsAsSource } from "./components/Sources.jsx";
+import { ProvSource, DepsSource, BsAsSource, RutasSource} from "./components/Sources.jsx";
 import { Markers } from "./components/Markers.jsx";
 import Popup from "./components/Popup.jsx";
 import "./App.css";
@@ -13,7 +13,8 @@ import { Slider } from "@mui/material";
 import {
   provincias,
   departamentos,
-  departamentosBsAs
+  departamentosBsAs,
+  rutas,
 } from "../public/data/mapsData/index.js";
 import Main2 from './components/Main2.jsx'; // Cambia la ruta a tu formulario
 import Filtros from './components/filtros.jsx'; // Cambia la ruta a tu formulario
@@ -58,14 +59,18 @@ const style = {
     weight: 2,
     lineColor: "#b2b7f5",
     fillOpacity: 1,
-    lineWidth: [
-      [1,],
-      [6, 2],
-      [14, 15],
-      [22, 12],
-    ],
+    lineWidth: 2,
   },
 
+
+  rutas: {
+    fillColor: "#d8d7fa",
+    color: "blue",
+    weight: 2,
+    lineColor: "white",
+    lineOpacity: 1,
+    lineWidth: 2,
+  },
 
 };
 
@@ -251,6 +256,9 @@ function App(urls) {
               <ProvSource data={provincias} style={style.provincias} />
               <DepsSource data={departamentos} style={style.departamentos} />
               <BsAsSource data={departamentosBsAs} style={style.country} />
+              <RutasSource data={rutas} style={style.rutas}/>
+
+              
 
 
               {data && (
