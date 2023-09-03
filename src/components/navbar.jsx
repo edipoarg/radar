@@ -24,9 +24,12 @@ export default function NavbarBootstrap() {
             <Nav className="me-auto">
               <div id="menuPC">
 <<<<<<< HEAD
+<<<<<<< HEAD
               <Nav.Link to="./notas" as={Link} className="d-none d-lg-block">INVESTIGACIONES</Nav.Link>
               <Nav.Link to="./conecta" as={Link} className="d-none d-lg-block">NOSOTRXS</Nav.Link>
 =======
+=======
+>>>>>>> 66920875c042f71d4047c2a3b04b3911cb039dd2
                 <Nav.Link href="/radarV3/notas" className="d-none d-lg-block">INVESTIGACIONES</Nav.Link>
                 <Nav.Link href="/radarV3/conecta" className="d-none d-lg-block">NOSOTRXS</Nav.Link>
                 <Nav.Link href="https://docs.google.com/forms/d/e/1FAIpQLSe5pKXuvkvSUiwI_YEq5OZrfXCmpcsDuz_6co_iS2Qags80_A/viewform" target="_blank" rel="noopener noreferrer">
@@ -36,7 +39,10 @@ export default function NavbarBootstrap() {
                     borderRadius: ["20%", "20%", "50%", "50%", "20%"],
                   }}>REPORTÁ</motion.div>
                 </Nav.Link>
+<<<<<<< HEAD
 >>>>>>> 6692087 (motion-incorporated-to-img-button)
+=======
+>>>>>>> 66920875c042f71d4047c2a3b04b3911cb039dd2
               </div>
 
             </Nav>
