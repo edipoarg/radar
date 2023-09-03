@@ -5,7 +5,7 @@ import Loader from './components/Loader.jsx';
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
 
 import {
-  createBrowserRouter,
+  createHashRouter,
   RouterProvider,
 } from "react-router-dom";
 import "./index.css";
@@ -18,7 +18,7 @@ import Analisis from "./components/analisis.jsx";
 
 import Root from "./routes/Root.jsx";
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "/",
     element: <Root/>,
