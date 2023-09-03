@@ -9,7 +9,7 @@
 }
 
 #mapGap {
-  height: 6vh;
+  height: 10vh;
   width: 100%;
 }
 
@@ -70,7 +70,7 @@
 .transformed-button img {
   position: fixed;
   top: 14vh;
-  left: 4vw;
+  left: 3vw;
   max-width: 8vw;
 }
 
@@ -87,11 +87,11 @@
 
 #closeButton {
   position: fixed;
-  z-index: 5000;
+  z-index: 1001;
   background-color: white;
   color: white;
-  top: 14vh;
-  left: 5vw;
+  top: 15vh;
+  left: 6vw;
   
 
 
@@ -305,7 +305,7 @@
 
 
   #mapGap {
-    height: 6vh;
+    height: 12vh;
     width: 100%;
   }
 

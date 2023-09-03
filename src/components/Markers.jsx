@@ -25,6 +25,7 @@ export const Markers = ({ data, setPopupInfo, setMarker, selected, tipoFilters }
   const renderMarker = (event) => {
     const { coords, title, date, source, id, tipoId, tipo } = event;
     const markerStyle = `marker ${id === selected ? "hovered" : ""} ${tipoIdStyles[tipoId]}`;
+    const idContent = isNaN(event.id) ? "Invalid ID" : event.id;
 
     return (
       <Marker
