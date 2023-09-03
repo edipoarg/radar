@@ -343,47 +343,9 @@ function App(urls) {
             <Analisis></Analisis>
 
           </div>   </div>
-<<<<<<< HEAD
       
      
     
-=======
-      )}
-      {isMain2Page && (
-        <div>
-          {/* Contenido específico de la página Main2 */}
-          <Main2 />
-        </div>
-      )}
-      {isReportaPage && (
-        <div>
-          {/* Contenido específico de la página Reporta */}
-          <Reporta></Reporta>
-        </div>
-      )}
-      {isConectaPage && (
-        <div>
-          {/* Contenido específico de la página Conecta */}
-          <Conecta></Conecta>
-        </div>
-      )}
-
-
-      {isNotasPage && (
-        <div>
-          {/* Contenido específico de la página Notas */}
-          <Notas></Notas>
-        </div>
-      )}
-      {isListadoPage && (
-        <div>
-          {/* Contenido específico de la página Listado */}
-          <Listado></Listado>
-        </div>
-      )}
-
-    </>
->>>>>>> 66920875c042f71d4047c2a3b04b3911cb039dd2
 
 
   );

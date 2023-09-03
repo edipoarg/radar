@@ -39,37 +39,6 @@ const router = createHashRouter([
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
 
-<<<<<<< HEAD
 <RouterProvider router={router} />
   </React.StrictMode>
-=======
-    />
-    <Router>
-      <NavbarBootstrap /> {/* Navbar siempre se muestra */}
-      <Marquee></Marquee>
-      <App></App>
-      <Routes
-        render={({ location }) => (
-          <TransitionGroup>
-            <CSSTransition
-              key={location.key}
-              timeout={300}
-              classNames="fade"
-            >
-              <Route path="" element={App} exact /> {/* Página mapa */}
-              <Route path="/radarV3/conecta" element={App} /> {/* Página Conecta */}
-              <Route path="/radarV3/reporta" element={App} /> {/* Página Reporta */}
-              <Route path="/radarV3/notas" element={App} /> {/* Página Reporta */}
-              <Route path="/radarV3/listado" element={App} /> {/* Página Reporta */}
-              <Route path="/radarV3/main2" element={App} />
-
-
-            </CSSTransition>
-          </TransitionGroup>
-        )}
-      />
-    </Router>
-
-  </React.StrictMode >
->>>>>>> 66920875c042f71d4047c2a3b04b3911cb039dd2
-);
+ );
