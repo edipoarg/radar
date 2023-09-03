@@ -15,7 +15,6 @@ import {
   departamentos,
   departamentosBsAs,
   rutas,
-  provinciasName
 } from "../public/data/mapsData/index.js";
 import Main2 from './components/Main2.jsx'; // Cambia la ruta a tu formulario
 import Filtros from './components/filtros.jsx'; // Cambia la ruta a tu formulario
@@ -249,7 +248,6 @@ function App(urls) {
               <BsAsSource data={departamentosBsAs} style={style.country} />
               <RutasSource data={rutas} style={style.rutas}/>
 
-              <ProvinciasName  data={provinciasName}/>
 
               
 

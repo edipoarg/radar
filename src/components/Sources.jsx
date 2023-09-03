@@ -81,22 +81,3 @@ export const RutasSource = ({data, style}) => (
 
 /*NOMBRES PROVINCIAS Y MUNICIPIOS */
 
-export const ProvinciasNameSource = ({data}) => (
-  <Source id="ProcinvicasName-source" type="geojson" data={data}>
-    <Layer
-      id="provincias-label"
-      type="symbol"
-      layout={{
-        'text-field': ['get', 'nombre_completo'],
-        'text-anchor': 'center',
-        'text-offset': [0, 0], // Ajusta el desplazamiento según tus necesidades
-      }}
-      paint={{
-        'text-color': 'black', // Color del texto
-
-      }}
-      minzoom={4} // Set the minimum zoom level to 4
-
-    />
-  </Source>
-)
