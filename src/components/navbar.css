@@ -8,6 +8,7 @@
   background-color: #ffffff;
   color: #00425A;
   display: flex;
+  justify-content: space-between;
   grid-template-columns: 1fr 3fr;
   align-items: center;
   padding-right: 2px;

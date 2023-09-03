@@ -33,14 +33,14 @@ ReactDOM.createRoot(document.getElementById("root")).render(
               timeout={300}
               classNames="fade"
             >
-                <Route path="/radarV3/" element={App} exact /> {/* Página mapa */}
-                <Route path="/radarV3/conecta" element={App} /> {/* Página Conecta */}
-                <Route path="/radarV3/reporta" element={App} /> {/* Página Reporta */}
-                <Route path="/radarV3/notas" element={App} /> {/* Página Reporta */}
-                <Route path="/radarV3/listado" element={App} /> {/* Página Reporta */}
-                <Route path="/radarV3/main2" element={App} />
+              <Route path="" element={App} exact /> {/* Página mapa */}
+              <Route path="/radarV3/conecta" element={App} /> {/* Página Conecta */}
+              <Route path="/radarV3/reporta" element={App} /> {/* Página Reporta */}
+              <Route path="/radarV3/notas" element={App} /> {/* Página Reporta */}
+              <Route path="/radarV3/listado" element={App} /> {/* Página Reporta */}
+              <Route path="/radarV3/main2" element={App} />
 
-             
+
             </CSSTransition>
           </TransitionGroup>
         )}

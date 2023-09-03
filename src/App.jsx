@@ -24,7 +24,7 @@ import Reporta from './components/reporta.jsx';
 import Notas from './components/notas';
 import { useLocation } from "react-router-dom";
 import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
-import { Button } from 'react-bootstrap';
+import { motion } from 'framer-motion';
 import CloseButton from 'react-bootstrap/CloseButton';
 
 
@@ -256,7 +256,16 @@ function App(urls) {
               {isCloseButtonClicked ? (
                 // Content when the button is clicked
                 // You can use any JSX or HTML here
-                <div><img src="menu.png" alt="Radar icons created by DinosoftLabs" /></div>
+                <div><motion.img
+                  key="menu.png"
+                  src="menu.png"
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  exit={{ opacity: 0 }}
+                  whileHover={{
+                    scale: [1, 2, 2, 1, 1]
+                  }}
+                /></div>
               ) : (
                 // Content when the button is not clicked
                 // You can use any JSX or HTML here

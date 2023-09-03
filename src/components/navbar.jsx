@@ -22,20 +22,26 @@ export default function NavbarBootstrap() {
             </Navbar.Brand>
             <Nav className="me-auto">
               <div id="menuPC">
-              <Nav.Link href="/radarV3/notas" className="d-none d-lg-block">INVESTIGACIONES</Nav.Link>
-              <Nav.Link href="/radarV3/conecta" className="d-none d-lg-block">NOSOTRXS</Nav.Link>
+                <Nav.Link href="/radarV3/notas" className="d-none d-lg-block">INVESTIGACIONES</Nav.Link>
+                <Nav.Link href="/radarV3/conecta" className="d-none d-lg-block">NOSOTRXS</Nav.Link>
+                <Nav.Link href="https://docs.google.com/forms/d/e/1FAIpQLSe5pKXuvkvSUiwI_YEq5OZrfXCmpcsDuz_6co_iS2Qags80_A/viewform" target="_blank" rel="noopener noreferrer">
+                  <motion.div whileHover={{
+                    scale: [1, 2, 2, 1, 1],
+                    rotate: [0, 0, 270, 270, 0],
+                    borderRadius: ["20%", "20%", "50%", "50%", "20%"],
+                  }}>REPORTÁ</motion.div>
+                </Nav.Link>
               </div>
-              <Nav.Link href="https://docs.google.com/forms/d/e/1FAIpQLSe5pKXuvkvSUiwI_YEq5OZrfXCmpcsDuz_6co_iS2Qags80_A/viewform" target="_blank" rel="noopener noreferrer">
-                <motion.div whileHover={{ scale: 1.2 }}>REPORTÁ</motion.div>
-              </Nav.Link>
+
             </Nav>
-            <div id="botonMenu">
-
-              <ScrollLink to="main2-content"><img id="menuImg" src="menu.png" alt="" /></ScrollLink>
-
-            </div>
           </Container>
         </Navbar>
+      </div>
+
+      <div id="botonMenu">
+
+        <ScrollLink to="main2-content"><img id="menuImg" src="menu.png" alt="" /></ScrollLink>
+
       </div>
     </div>
 
