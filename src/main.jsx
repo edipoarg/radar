@@ -16,6 +16,8 @@ import Reporta from "./components/reporta.jsx";
 
 import Root from "./routes/Root.jsx";
 
+const App = lazy(() => import("./App"))
+
 const loader = async () => ({
   urls: await getURLs({
     departamentos: "data/mapsData/departamentos-argentina.json",
