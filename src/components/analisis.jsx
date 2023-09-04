@@ -38,37 +38,37 @@ export default function analisis() {
 
         <div id='datos1'>
           <h1 id='datoN1'>118</h1>
-          <div class='info'>
-            <div class='barra'></div>
-            <p class='textAnalisis'>contra identidades políticas </p>
+          <div className='info'>
+            <div className='barra'></div>
+            <p className='textAnalisis'>contra identidades políticas </p>
           </div>
         </div>
         <div id='datos2'>
           <h1 id='datoN2'>74</h1>
-          <div class='info'>
-            <div class='barra'></div>
-            <p class='textAnalisis'>negacionismo <br /> y apología a la dictadura </p>
+          <div className='info'>
+            <div className='barra'></div>
+            <p className='textAnalisis'>negacionismo <br /> y apología a la dictadura </p>
           </div>
         </div>
         <div id='datos3'>
           <h1 id='datoN3'>64</h1>
-          <div class='info'>
-            <div class='barra'></div>
-            <p class='textAnalisis'> misoginia, antifeminismo <br /> y antiLGBTINBQ+</p>
+          <div className='info'>
+            <div className='barra'></div>
+            <p className='textAnalisis'> misoginia, antifeminismo <br /> y antiLGBTINBQ+</p>
           </div>
         </div>
         <div id='datos4'>
           <h1 id='datoN4'>32</h1>
-          <div class='info'>
-            <div class='barra'></div>
-            <p class='textAnalisis'>nazismo, antisemitismo <br /> y supremacismo</p>
+          <div className='info'>
+            <div className='barra'></div>
+            <p className='textAnalisis'>nazismo, antisemitismo <br /> y supremacismo</p>
           </div>
         </div>
         <div id='datos5'>
           <h1 id='datoN5'>19</h1>
-          <div class='info'>
-            <div class='barra'></div>
-            <p class='textAnalisis'>racismo y xenofobia</p>
+          <div className='info'>
+            <div className='barra'></div>
+            <p className='textAnalisis'>racismo y xenofobia</p>
           </div>
 
         </div>
@@ -96,7 +96,7 @@ export default function analisis() {
         duration={500} // Duración de la animación (en milisegundos)
         offset={-70} // Ajusta un offset opcional (si tienes un encabezado fijo)
       >
-        <button id='subir'><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-up-fill" viewBox="0 0 16 16">
+        <button id='subir'><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-caret-up-fill" viewBox="0 0 16 16">
           <path d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z" />
         </svg></button>
       </ScrollLink>

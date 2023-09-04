@@ -12,7 +12,7 @@ export default function Notas() {
 
       <Carousel id='notasContainer'>
         <Carousel.Item>
-          <div class='notasItemContainer'>
+          <div className='notasItemContainer'>
             <h2 className='tituloNota'>Informe a un año del atentado a CFK
             </h2>
             <h4 className='bajadaNota'>Por el Equipo de Investigación Política (EdIPo)
@@ -24,7 +24,7 @@ export default function Notas() {
           </div>
         </Carousel.Item >
         <Carousel.Item>
-          <div class='notasItemContainer'>
+          <div className='notasItemContainer'>
 
             <h2 className='tituloNota'>Otras Investigaciones
             </h2>
