@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import moment from "moment/moment.js";
 import { Slider } from "@mui/material";
 import { useLoaderData } from "react-router-dom";
 
@@ -65,6 +64,11 @@ const style = {
   },
 };
 
+const newDate = (d) => {
+  const [day, month, year] = d.split('/');
+  return new Date(year, month, day);
+}
+
 function App() {
   const {urls} = useLoaderData();
   const {provincias, departamentos, departamentosBsAs, rutas} = urls;
@@ -93,8 +97,9 @@ function App() {
   const [filteredDataByTime, setFilteredDataByTime] = useState([]);
   const valueLabelFormat = (value) => {
     const diff = months - value;
-    const date = moment().subtract(diff, "months");
-    return `${date.month() + 1}/${date.year()}`;
+    const date = new Date()
+    date.setMonth(date.getMonth() - diff)
+    return `${date.getMonth() + 1}/${date.getFullYear()}`;
   };
 
   useEffect(() => {
@@ -106,16 +111,16 @@ function App() {
   useEffect(() => {
     const diff = months - value;
 
-    const from = moment()
-      .startOf("month")
-      .subtract(months - value[0], "months");
-    const to = moment()
-      .startOf("month")
-      .subtract(months - value[1], "months");
+    const from = new Date()
+    from.setDate(0)
+    from.setMonth(from.getMonth() - months + value[0] + 1);
+    const to = new Date()
+    to.setDate(0)
+    to.setDate(to.getMonth() - months + value[1] + 1);
 
     if (sheetsData) {
       const checkDate = (e) => {
-        const eventDate = new moment(e.date, "DD/MM/YYYY");
+        const eventDate = newDate(e.date);
         return eventDate >= from && eventDate <= to;
       };
       const newData = sheetsData.filter(checkDate);
@@ -165,18 +170,18 @@ function App() {
 
   useEffect(() => {
     if (sheetsData) {
-      const now = new moment();
-      let from = new moment();
+      const now = new Date();
+      let from = new Date();
       sheetsData.forEach((e) => {
-        const date = new moment(e.date, "DD/MM/YYYY");
+        const date = newDate(e.date)
 
         if (date <= from) {
           from = date;
         }
       });
 
-      const yearsDiff = now.year() - from.year();
-      const monthDiff = now.month() - from.month();
+      const yearsDiff = now.getFullYear() - from.getFullYear();
+      const monthDiff = now.getMonth() - from.getMonth();
 
       const totalMonths = yearsDiff * 12 + monthDiff;
       setMonths(totalMonths);
