@@ -1,31 +1,27 @@
 import React, { useEffect, useState } from "react";
+import moment from "moment/moment.js";
+import { Slider } from "@mui/material";
+import { useLoaderData } from "react-router-dom";
+
 import MapGL, { NavigationControl } from "react-map-gl/maplibre";
 import maplibregl from "maplibre-gl";
 import "maplibre-gl/dist/maplibre-gl.css";
-import { ProvSource, DepsSource, BsAsSource, RutasSource} from "./components/Sources.jsx";
-import { Markers } from "./components/Markers.jsx";
-import Popup from "./components/Popup.jsx";
 import "./App.css";
-import mystyle from "./mystyle.json";
-import { fecthData } from "./services/fetchs.js";
-import moment from "moment/moment.js";
-import { Slider } from "@mui/material";
-import {
-  provincias,
-  departamentos,
-  departamentosBsAs,
-  rutas,
-} from "../public/data/mapsData/index.js";
-import Main2 from './components/Main2.jsx'; // Cambia la ruta a tu formulario
-import Filtros from './components/filtros.jsx'; // Cambia la ruta a tu formulario
-import Analisis from './components/analisis.jsx'
-import { useLocation } from "react-router-dom";
+
 import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 import { motion } from 'framer-motion';
 import CloseButton from 'react-bootstrap/CloseButton';
 import Footer from "./components/footer.jsx"
 
+import {fetchGoogleSheets} from './services/google-sheets'
+import { ProvSource, DepsSource, BsAsSource, RutasSource} from "./components/Sources.jsx";
+import { Markers } from "./components/Markers.jsx";
+import Main2 from "./components/Main2.jsx";
+import Popup from "./components/Popup.jsx";
+import Filtros from './components/filtros.jsx'; // Cambia la ruta a tu formulario
+import Analisis from './components/analisis.jsx'
 
+import mystyle from "./mystyle.json";
 
 //estilos/////////////////////
 
@@ -59,7 +55,6 @@ const style = {
     lineWidth: 2,
   },
 
-
   rutas: {
     fillColor: "#bacbff",
     color: "#2b3bcd",
@@ -68,15 +63,11 @@ const style = {
     lineOpacity: 1,
     lineWidth: 2,
   },
-
-
-
 };
 
-function App(urls) {
-
-
-
+function App() {
+  const {urls} = useLoaderData();
+  const {provincias, departamentos, departamentosBsAs, rutas} = urls;
 
   const handleTipoFilter = () => {
     const filteredDataByType = filteredDataByTime.filter(event => tipoFilters[event.tipoId]);
@@ -92,55 +83,27 @@ function App(urls) {
   // Estado para controlar la visibilidad de "Filtros"
   const [filtrosVisible, setFiltrosVisible] = useState(true);
 
-  // Función para cambiar la visibilidad de "Filtros"
-  const toggleFiltrosVisibility = () => {
-    setFiltrosVisible(!filtrosVisible);
-  };
-
-
-
-
   const [hoveredFeatureId, setHoveredFeatureId] = useState(null);
   const [hoveredMarkerId, setHoveredMarkerId] = useState(null);
   const [popupInfo, setPopupInfo] = useState(null);
-  const [data, setData] = useState(null);
-  const [filteredData, setFilteredData] = useState([]);
+  const [sheetsData, setSheetsData] = useState([]);
+  const [filteredData, setFilteredData] = useState(sheetsData);
   const [months, setMonths] = useState(0);
   const [value, setValue] = useState([0, 30]);
+  const [filteredDataByTime, setFilteredDataByTime] = useState([]);
   const valueLabelFormat = (value) => {
     const diff = months - value;
     const date = moment().subtract(diff, "months");
     return `${date.month() + 1}/${date.year()}`;
   };
 
-  const handleChange = (event) => {
-    setValue(event.target.value);
-  };
+  useEffect(() => {
+    fetchGoogleSheets()
+      .then(setSheetsData)
+  }, [])
+  useEffect(() => {setFilteredData(sheetsData)}, [sheetsData])
 
   useEffect(() => {
-    const apiCal = async () => {
-      try {
-        const data = await fecthData();
-        if (data) {
-          setData(data);
-          setFilteredData(data);
-        }
-      } catch (error) {
-        console.log(error);
-      }
-    };
-
-    apiCal();
-  }, []);
-
-
-
-
-  const [filteredDataByTime, setFilteredDataByTime] = useState([]);
-
-
-  useEffect(() => {
-    console.log(value);
     const diff = months - value;
 
     const from = moment()
@@ -150,12 +113,12 @@ function App(urls) {
       .startOf("month")
       .subtract(months - value[1], "months");
 
-    if (data) {
+    if (sheetsData) {
       const checkDate = (e) => {
         const eventDate = new moment(e.date, "DD/MM/YYYY");
         return eventDate >= from && eventDate <= to;
       };
-      const newData = data.filter(checkDate);
+      const newData = sheetsData.filter(checkDate);
       setFilteredDataByTime(newData);
 
 
@@ -164,7 +127,18 @@ function App(urls) {
       setFilteredData(filteredDataByType);
 
     }
-  }, [value, data, tipoFilters]);
+  },
+  [value, months, sheetsData, tipoFilters]);
+
+  // Función para cambiar la visibilidad de "Filtros"
+  const toggleFiltrosVisibility = () => {
+    setFiltrosVisible(!filtrosVisible);
+  };
+
+  const handleChange = (event) => {
+    setValue(event.target.value);
+  };
+
 
   const handleHover = (event) => {
     setHoveredFeatureId(event.features?.[0]?.id || null);
@@ -190,10 +164,10 @@ function App(urls) {
   
 
   useEffect(() => {
-    if (data) {
+    if (sheetsData) {
       const now = new moment();
       let from = new moment();
-      data.forEach((e) => {
+      sheetsData.forEach((e) => {
         const date = new moment(e.date, "DD/MM/YYYY");
 
         if (date <= from) {
@@ -208,7 +182,7 @@ function App(urls) {
       setMonths(totalMonths);
       setValue([0, totalMonths]);
     }
-  }, [data]);
+  }, [sheetsData]);
 
 
   // Step 1: Create a state variable for the close button
@@ -222,109 +196,89 @@ function App(urls) {
     // Add any additional logic you want when the button is clicked
   };
 
-
-
-
   return (
-  
-          <div className="App">
+    <div>
+      <div className="App">
 
-            {filtrosVisible && (
-              <Filtros
-                caseCount={filteredData.length}
-                handleTipoFilter={handleTipoFilter}
-                tipoFilters={tipoFilters}
-                setTipoFilters={setTipoFilters}
-              >
-              </Filtros>
-            )}
-            <div id='mapGap'></div>
+        {filtrosVisible && (
+          <Filtros
+            caseCount={filteredData.length}
+            handleTipoFilter={handleTipoFilter}
+            tipoFilters={tipoFilters}
+            setTipoFilters={setTipoFilters}
+          >
+          </Filtros>
+        )}
+        <div id='mapGap'></div>
+        <div id='botonFiltrosMain'>
+        {/* Render different button content based on the state */}
+        <button
+          aria-label="Hide"
+          onClick={() => { handleClickCloseButton(); toggleFiltrosVisibility(); }}
+          className={isCloseButtonClicked ? "transformed-button" : "simple-button"}
+        >
+          {isCloseButtonClicked ? (
+            // Content when the button is clicked
+            // You can use any JSX or HTML here
+              <div><h5 id= 'botonFiltrosMap'>FILTROS</h5></div>
+          ) : (
+            // Content when the button is not clicked
+            // You can use any JSX or HTML here
+            <div><CloseButton
+                   id="closeButton"
+                   aria-label="Hide"
+                   onClick={toggleFiltrosVisibility}
+                 /></div>
+          )}
+        </button>
+        <div id='mapGap'></div>
 
-           
-            <div id='mapGap'></div>
-            <div id='botonFiltrosMain'>
+        <MapGL
+          id="mapa"
+          mapLib={maplibregl}
+          {...mapProps}
+          onHover={handleHover} // Asignar la función handleProvinciasHover al evento onHover
+          onLeave={handleLeave} // Asignar la función handleProvinciasLeave al evento onLeave
+        >
+          {/* Capa interactiva para provincias */}
 
-            {/* Render different button content based on the state */}
-              <button
-              aria-label="Hide"
-              onClick={() => { handleClickCloseButton(); toggleFiltrosVisibility(); }}
-              className={isCloseButtonClicked ? "transformed-button" : "simple-button"}
-            >
-              {isCloseButtonClicked ? (
-                <div>
-                {/* Content when the button is clicked 
-                // You can use any JSX or HTML here */}
-               
-                <h5 id= 'botonFiltrosMap'>FILTROS</h5>
-                
-                </div>
-              ) : (
-                // Content when the button is not clicked
-                // You can use any JSX or HTML here
-                <div><CloseButton
-                  id="closeButton"
-                  aria-label="Hide"
-                  onClick={toggleFiltrosVisibility}
-                /></div>
-              )}
-            </button>
+          <ProvSource data={provincias} style={style.provincias} />
+          <DepsSource data={departamentos} style={style.departamentos} />
+          <BsAsSource data={departamentosBsAs} style={style.country} />
+          <RutasSource data={rutas} style={style.rutas}/>
 
+          {sheetsData && (
+            <Markers
+              data={filteredData}
+              setPopupInfo={setPopupInfo}
+              setMarker={setHoveredMarkerId}
+              selected={hoveredMarkerId}
+              tipoFilters={tipoFilters}
+              handleTipoFilter={handleTipoFilter}
+            />
+          )}
+          <NavigationControl position="top-right" />
+        </MapGL>
 
-            </div>
-            <MapGL
-              id="mapa"
-              mapLib={maplibregl}
-              {...mapProps}
-              onHover={handleHover} // Asignar la función handleProvinciasHover al evento onHover
-              onLeave={handleLeave} // Asignar la función handleProvinciasLeave al evento onLeave
-            >
-              {/* Capa interactiva para provincias */}
-
-              <ProvSource data={provincias} style={style.provincias} />
-              <DepsSource data={departamentos} style={style.departamentos} />
-              <BsAsSource data={departamentosBsAs} style={style.country} />
-              <RutasSource data={rutas} style={style.rutas}/>
-
-
-              
-
-
-              {data && (
-                <Markers
-                  data={filteredData}
-                  setPopupInfo={setPopupInfo}
-                  setMarker={setHoveredMarkerId}
-                  selected={hoveredMarkerId}
-                  tipoFilters={tipoFilters}
-                  handleTipoFilter={handleTipoFilter}
-                />
-              )}
-              <NavigationControl position="top-right" />
-            </MapGL>
-
-            <div className="slider-container">
-              {/* Agrega un botón o elemento para cambiar la visibilidad de Filtros */}
-              <Slider
-                max={months}
-                valueLabelDisplay="auto"
-                value={value}
-                step={1}
-                getAriaValueText={valueLabelFormat}
-                valueLabelFormat={valueLabelFormat}
-                onChange={handleChange}
-                aria-labelledby="non-linear-slider"
-              />
-
-              <div id='referenciasFechas'>
+        <div className="slider-container">
+          {/* Agrega un botón o elemento para cambiar la visibilidad de Filtros */}
+          <Slider
+            max={months}
+            valueLabelDisplay="auto"
+            value={value}
+            step={1}
+            getAriaValueText={valueLabelFormat}
+            valueLabelFormat={valueLabelFormat}
+            onChange={handleChange}
+            aria-labelledby="non-linear-slider"
+          />
+          <div id='referenciasFechas'>
               <div> <h6 id='fechaInicio'>2/2020</h6>  </div>
               <div>  </div>
               <div> <h6 id='fechaCierre'>9/2023</h6>  </div>
-              </div>
-
-
-            </div>
-
-            <ScrollLink id='toMain2Container'
+          </div>
+        </div>
+        <ScrollLink id='toMain2Container'
               to="Main2" // ID del elemento de destino (Main2)
               spy={true} // Activa el modo espía
               smooth={true} // Activa el desplazamiento suave
@@ -334,32 +288,15 @@ function App(urls) {
               <div id="toMain2">
                <h4 id='plusBoton'>+</h4>
               </div>
-            </ScrollLink>
+        </ScrollLink>
 
+        {popupInfo && <Popup {...popupInfo} />}
 
-
-
-
-            {popupInfo && <Popup {...popupInfo} />}
-
-            <Main2 />
-       
-              <Analisis/>
-
-              <Footer/>
-              
-
-
-
-
-          </div>
-          
-          
-      
-     
-    
-
-
+        <Main2 />
+        <Analisis />
+        <Footer />
+      </div>
+    </div>
   );
 }
 

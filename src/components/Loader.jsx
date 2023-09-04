@@ -9,16 +9,7 @@ export default function Loader({urls, children }) {
 
     useEffect(() => {
         setLoaded(0);
-        Object.entries(urls).map(([k, u]) => fetch(u)
-            .then(async r => {
-                debug(`got ${u}`, r);
-                setData({
-                    ...data,
-                    [k]: await r.json()
-                })
-                setLoaded(loaded => loaded + 1);
 
-            }))
     }, Object.values(urls))
 
     debug(`${loaded}/${count}`)
@@ -28,4 +19,15 @@ export default function Loader({urls, children }) {
     }
 
     return `Loading... ${loaded}/${count}`
+}
+
+export async function loader(urls) {
+    const data = {};
+    for (let [k, u] of Object.entries(urls)) {
+        await fetch(u)
+        .then(async r => {
+            data[k] = await r.json()
+        })
+    }
+    return data;
 }

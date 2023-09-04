@@ -1,8 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
-import Loader from './components/Loader.jsx';
-import { TransitionGroup, CSSTransition } from 'react-transition-group';
+import {loader as getURLs} from './components/Loader.jsx';
 
 import {
   createHashRouter,
@@ -18,27 +17,31 @@ import Reporta from "./components/reporta.jsx";
 
 import Root from "./routes/Root.jsx";
 
+const loader = async () => ({
+  urls: await getURLs({
+    departamentos: "data/mapsData/departamentos-argentina.json",
+    departamentosBsAs: "data/mapsData/departamentos-buenos_aires.json",
+    provincias: "data/mapsData/provincias.json",
+    rutas: "data/mapsData/rutas.json",
+  }),
+})
+
 const router = createHashRouter([
   {
     path: "/",
     element: <Root/>,
     children:[
-      { path:"/", element:<App/>, },
-
-      { path:"/conecta", element:< Conecta/>, },
-      { path:"/reporta", element:< Reporta/>, },
-      { path:"/notas", element:< Notas/>, },
-      { path:"/main2", element:< Main2/>, },
-
-
-
+      { path:"/", element:<App/>, loader},
+      { path:"/conecta", element:< Conecta/> },
+      { path:"/reporta", element:< Reporta/> },
+      { path:"/notas", element:< Notas/> },
+      { path:"/main2", element:< Main2/> },
     ]
   },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-
-<RouterProvider router={router} />
+    <RouterProvider router={router} />
   </React.StrictMode>
- );
+);
