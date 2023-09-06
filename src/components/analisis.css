@@ -1,10 +1,23 @@
+
+#fondoAnalisisImg{
+position: absolute;    
+background-image: url(radarPuntos.png);
+    height: 30vh;
+    width: 40vh;
+    background-size: cover;
+    right: 0vw;
+    top: 180vh;
+    opacity: 0.4;
+    
+}
+
 #analisis{
     display: grid;
     grid-template-columns: 1fr;
     width: 100vw;
     background-color: #4568f6;
     padding: 20px 0px;
-    padding-top: 10vh;
+    padding-top: 12vh;
 
 }
 
@@ -15,9 +28,25 @@
 
 }
 
+#tituloAnalisisRadar{
+    font-size: 1.3rem;
+    text-align: left;
+    font-family: 'MiFuenteBold';
+    padding-right: 6vw;
+}
+
+
+#tituloAnalisis{
+    font-size: 1.3rem;
+    text-align: left;
+    padding-right: 50vw;
+    color: rgb(43, 43, 133);
+
+}
+
 #analisisTitulo{
 
-    font-size: 0.7rem;
+    font-size: 0.4rem;
     padding: 0vh 8vw;
 
 }
@@ -37,43 +66,71 @@ column-gap: 8vw;
     
 }
 
-
+#enConstruccion{
+    font-size: 1.2rem;
+    padding-top: 5vh;
+    font-family: 'MiFuente';
+}
 
 #analisisTextoFinal{
     color: white;
     font-size: 1rem;
-    padding: 10vh 20vw;
+    padding: 0vh 30vw;
+    padding-bottom: 2vh;
 }
 
-
+#aclaracionAnalisis{
+    font-size: 0.8rem;
+    padding-bottom: 4vh;
+}
 
 #datoN1, #datoN2, #datoN3, #datoN4, #datoN5{
     width: 40vw;
-    font-size: 2.5rem;
+    font-size: 2.rem;
+    text-align: left;
+    color: rgb(43, 43, 133);
 }
 #datos1, #datos2, #datos3, #datos4, #datos5{
-    width: 60vw;
-    border-style: inset;
+    width: 90vw;
+    border-left: solid;
     border-width: 1px;
-    border-radius: 35px;
 
     border-color: white;
-    padding: 20px;
+    padding: 0vh 3vw;
     justify-self: center;
-    margin: 2vh 2vw;
+    margin: 2vh 0vw;
+    text-align: left;
     
 }
 
 .textAnalisis{
-    width: 40vw;
     color: white;
-    font-size: 1rem;
+    font-size: 0.7rem;
     text-align: justify;
-    padding: 0vh 2vw;
+    padding: 0vh 1vw;
+    text-transform: uppercase;
+    font-family: 'MiFuente';
+
 }
 
+#analisisCasos{
+    padding-top: 5vh;
+    padding-bottom: 1vh;
+    text-align: left;
+    border-bottom: solid;
+    width: 50vw;
+    border-width: 0.5vh;
+    font-family: 'MiFuenteBold';
 
+    
+}
+#analisisCasosBajada{
+    text-transform: uppercase;
+    text-align: left;
+    font-size: 0.8rem;
+    padding-top: 1vh;
 
+}
 
 
 #subir{
@@ -90,22 +147,38 @@ justify-self: right;
 
 /*== tablet==*/
 
+
+
 @media (min-width: 768px){
+
+    #fondoAnalisisImg{
+        position: absolute;    
+        background-image: url(radarPuntos.png);
+            height: 50vh;
+            width: 70vh;
+            background-size: cover;
+            right: 0vw;
+            top: 195vh;
+            opacity: 0.4;
+            
+        }
+    
 
     
 
     #analisisHeader{
         padding: 0vw 8vw;
         padding-bottom: 10vh;
+        
     
     }
 
     #analisisDatos{
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        padding: 0px 0vw;
+        padding: 0px 10vw;
         column-gap: 0px;
         column-gap: 0.5vw;
-        width: 20vw;
+        width: 100vw;
 
     }
 
@@ -124,12 +197,16 @@ justify-self: right;
     width: 14.8vw;
     
 }
+
+
+
 .textAnalisis{
     width: 10vw;
     color: white;
-    font-size: 0.8rem;
-    text-align: center;
+    font-size: 0.7rem;
+    text-align: left;
     padding: 0vh 0vw;
+    
 
 }
 
@@ -141,7 +218,9 @@ justify-self: right;
 }
 
 
-
+#analisisCasos{
+    width: 25vw;
+}
 
     
 }
@@ -150,13 +229,19 @@ justify-self: right;
 /*  PC  */
 
 @media (min-width: 1200px){
-    #analisisHeader{
-        padding: 0vw 30vw;
-        padding-bottom: 10vh;
-    
-    }
+  
 
-
+    #fondoAnalisisImg{
+        position: absolute;    
+        background-image: url(radarPuntos.png);
+            height: 70vh;
+            width: 90vh;
+            background-size: cover;
+            right: 15vw;
+            top: 185vh;
+            opacity: 0.4;
+            
+        }
     #subir{
         width: 8vw;
         height: 7vh;
@@ -165,44 +250,25 @@ justify-self: right;
 
 
     
-#analisisTextoFinal{
-    padding: 2vw 30vw;
-}
-
-
-#analisisDatos{
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    padding: 0px 0vw;
-    column-gap: 0px;
-    column-gap: 0.5vw;
-    width: 15vw;
-
-}
-
-
-#datoN1, #datoN2, #datoN3, #datoN4, #datoN5{
-width: 12vw;
-font-size: 2rem;
-    padding: 0vh 0vw;
+#tituloAnalisisRadar{
+        padding-right: 20vw;
+        
+    
+    }
 
 
 
+    #analisisDatos{
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        padding: 0px 15vw;
+        column-gap: 0px;
+        column-gap: 0.5vw;
+        width: 100vw;
 
-}
+    }
 
-#datos1, #datos2, #datos3, #datos4, #datos5{
-width: 15vw;
-height: 30vh;
-
-}
-
-.textAnalisis{
-    width: 12vw;
-    color: white;
-    font-size: 1.2rem;
-    text-align: center;
-    padding: 0vh 0vw;
-
-}
-
+    #tituloAnalisis{
+        padding-right: 20vw;
+        
+    }
 }

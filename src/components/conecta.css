@@ -64,6 +64,10 @@ padding: 15px;
     
     
     }
+
+    #tituloAnalisisRadar{
+        font-size: 2rem;
+    }
     
     #conectaTitulo{
         color: white;

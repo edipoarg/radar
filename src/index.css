@@ -1,7 +1,14 @@
 /* fonts.css */
 @font-face {
   font-family: 'MiFuente'; /* Nombre de la fuente que asignarás */
-  src: url('./fonts/LuxoraGrotesk-Book.otf') format('opentype'); /* Ruta al archivo OTF o TTF */
+  src: url('./fonts/LuxoraGrotesk-Light.otf') format('opentype'); /* Ruta al archivo OTF o TTF */
+  font-weight: normal; /* Puedes especificar el peso de la fuente (normal, bold, etc.) */
+  font-style: normal; /* Puedes especificar el estilo de la fuente (normal, italic, etc.) */
+}
+
+@font-face {
+  font-family: 'MiFuenteBold'; /* Nombre de la fuente que asignarás */
+  src: url('./fonts/LuxoraGrotesk-Medium.otf') format('opentype'); /* Ruta al archivo OTF o TTF */
   font-weight: normal; /* Puedes especificar el peso de la fuente (normal, bold, etc.) */
   font-style: normal; /* Puedes especificar el estilo de la fuente (normal, italic, etc.) */
 }

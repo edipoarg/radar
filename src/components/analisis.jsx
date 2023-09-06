@@ -2,6 +2,7 @@ import React from 'react';
 import './analisis.css'
 import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 
+
 export default function analisis() {
 
 
@@ -10,16 +11,18 @@ export default function analisis() {
 
     <div id="analisis">
 
+      <div id='fondoAnalisisImg'></div>
+
 
       <div id="analisisHeader">
 
         <div id='analisisTitulo'>
-          <h4>Registro de Ataques de Derechas Argentinas Radicalizadas
+          <h4 id='tituloAnalisisRadar'>REGISTRO DE ATAQUES <br /> DE DERECHAS ARGENTINAS RADIZALIZADAS
           </h4>
           <h1 id='tituloAnalisis'>RELEVAMIENTO
             2020 - 2023
           </h1>
-          <h4 id='analisisCasos'>149 CASOS</h4>
+          <h4 id='analisisCasos'> 173 CASOS</h4>
           <h4 id='analisisCasosBajada'>organizados por sus narrativas de odio
 
           </h4>
@@ -34,35 +37,35 @@ export default function analisis() {
       <div id='analisisDatos'>
 
         <div id='datos1'>
-          <h1 id='datoN1'>58</h1>
-          <div class='info'>
-            <div class='barra'></div>
-            <p class='textAnalisis'>negacionismo y apología a la dictadura</p>
-          </div>
-        </div>
-        <div id='datos2'>
-          <h1 id='datoN2'>80</h1>
+          <h1 id='datoN1'>85</h1>
           <div class='info'>
             <div class='barra'></div>
             <p class='textAnalisis'>contra identidades políticas </p>
           </div>
         </div>
-        <div id='datos3'>
-          <h1 id='datoN3'>21</h1>
+        <div id='datos2'>
+          <h1 id='datoN2'>60</h1>
           <div class='info'>
             <div class='barra'></div>
-            <p class='textAnalisis'>nazismo, antisemitismo y supremacismo</p>
+            <p class='textAnalisis'>negacionismo <br /> y apología a la dictadura </p>
+          </div>
+        </div>
+        <div id='datos3'>
+          <h1 id='datoN3'>50</h1>
+          <div class='info'>
+            <div class='barra'></div>
+            <p class='textAnalisis'> misoginia, antifeminismo <br /> y antiLGBTINBQ+</p>
           </div>
         </div>
         <div id='datos4'>
-          <h1 id='datoN4'>29</h1>
+          <h1 id='datoN4'>22</h1>
           <div class='info'>
             <div class='barra'></div>
-            <p class='textAnalisis'>misoginia, antifeminismo y antiLGBTINBQ+</p>
+            <p class='textAnalisis'>nazismo, antisemitismo <br /> y supremacismo</p>
           </div>
         </div>
         <div id='datos5'>
-          <h1 id='datoN5'>11</h1>
+          <h1 id='datoN5'>16</h1>
           <div class='info'>
             <div class='barra'></div>
             <p class='textAnalisis'>racismo y xenofobia</p>
@@ -75,15 +78,18 @@ export default function analisis() {
 
       </div>
 
-      <h4 id='analisisTextoFinal'>RADAR es una herramienta dinámica en construcción.
-        <br />
-        <br />
+
+<h3 id='enConstruccion'>RADAR es una herramienta dinámica en construcción.</h3>
+
+
+      <h4 id='analisisTextoFinal'>
+        
         En esta primera etapa se visualizan hechos del período 2020-2023 que puedan ser geolocalizados pero se encuentra abierta a recibir reportes fuera de ese marco espacio-temporal.
-        <br />
-        <br />
-        *Las narrativas no son excluyentes: algunos casos abarcan más de una.
 
       </h4>
+
+      <h6 id='aclaracionAnalisis'>        *Las narrativas no son excluyentes: algunos casos abarcan más de una.
+</h6>
       <ScrollLink
         to="App"
         spy={true} // Activa el modo espía
