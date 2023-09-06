@@ -20,7 +20,7 @@ export default function analisis() {
             2020 - 2023
           </h1>
           <h4 id='analisisCasos'>149 CASOS</h4>
-          <h4 id='analisisCasosBajada'>agrupados por sus narrativas*
+          <h4 id='analisisCasosBajada'>organizados por sus narrativas de odio
 
           </h4>
 

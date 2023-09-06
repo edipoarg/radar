@@ -15,7 +15,7 @@ export default function Main2() {
 
 <div id="franja1">
 <div id='reportaMain'>
-<h4 id='bajadaPrincipal'> El 'Registro de Ataques de Derechas Argentinas Radicalizadas' es un proyecto periodístico colaborativo impulsado por el Equipo de Investigación Política- Edipo de la Revista Crisis con apoyo del Centro de Estudios Legales y Sociales- CELS con el objetivo de fortalecer la democracia y la defensa de los derechos humanos.</h4>
+<h4 id='bajadaPrincipal'> El <span id='negritaTitulo'> Registro de Ataques de Derechas Argentinas Radicalizadas</span> es un proyecto periodístico colaborativo impulsado por el Equipo de Investigación Política (Edipo) de la Revista Crisis con apoyo del Centro de Estudios Legales y Sociales (CELS) con el objetivo de fortalecer la democracia y la defensa de los derechos humanos.</h4>
   <Link to= "/conecta"> <button id="botonReportaMain">NOSOTRXS</button></Link>
 
 
@@ -67,7 +67,7 @@ export default function Main2() {
             </div>
 
             <div id='analisisMain'>
-              <div><h3 id='analisisTextMain'>Relevamiento</h3> <h6>2020 - 2023</h6></div>
+              <div id='analisisTextComp'><h3 id='analisisTextMain'>Relevamiento</h3> <h6 id='analisisAnios'> 2020 - 2023</h6></div>
               <ScrollLink
                 to="analisis"
                 spy={true} // Activa el modo espía

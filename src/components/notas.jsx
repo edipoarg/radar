@@ -13,23 +13,23 @@ export default function Notas() {
       <Carousel id='notasContainer'>
         <Carousel.Item>
           <div class='notasItemContainer'>
-            <h2 className='tituloNota'>La violencia avanza
+            <h2 className='tituloNota'>Informe a un año del atentado a CFK
             </h2>
-            <h4 className='bajadaNota'>Informe a un año del atentado a CFK
+            <h4 className='bajadaNota'>Por el Equipo de Investigación Política (EdIPo)
             </h4>
-            <h4 className='autorNota'>Por el Equipo de Investigación Política (EdIPo)
+            <h4 className='autorNota'>
             </h4>
-            <Button variant="outline-primary" >ir a la nota
-            </Button>{' '}
+            <button className="botonNotas" ><a href="https://https://informes.revistacrisis.com.ar/la-violencia-avanza-1s/" target="_blank" rel="noopener noreferrer">Ir</a></button>
+
           </div>
         </Carousel.Item >
         <Carousel.Item>
           <div class='notasItemContainer'>
 
-            <h2 className='tituloNota'>el atentado a cfk y la guerra que ya llegó
+            <h2 className='tituloNota'>Otras Investigaciones
             </h2>
 
-            <button className='notaBotonCrisis'>ir a la nota</button>
+            <button className="botonNotas" ><a href="https://revistacrisis.com.ar/autores/equipo-de-investigacion-politica-edipo" target="_blank" rel="noopener noreferrer">Ir</a></button>
 
           </div>
 

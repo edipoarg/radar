@@ -324,7 +324,7 @@ function App(urls) {
 
             </div>
 
-            <ScrollLink
+            <ScrollLink id='toMain2Container'
               to="Main2" // ID del elemento de destino (Main2)
               spy={true} // Activa el modo espía
               smooth={true} // Activa el desplazamiento suave
@@ -332,7 +332,7 @@ function App(urls) {
               offset={-70} // Ajusta un offset opcional (si tienes un encabezado fijo)
             >
               <div id="toMain2">
-               <h4>+</h4>
+               <h4 id='plusBoton'>+</h4>
               </div>
             </ScrollLink>
 

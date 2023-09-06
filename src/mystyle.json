@@ -10,7 +10,7 @@
       "id": "background",
       "type": "background",
       "paint": {
-        "background-color": "#fff4ff"
+        "background-color": "#e9f1ec"
       },
       "filter": ["all"],
       "layout": {

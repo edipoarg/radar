@@ -6,7 +6,13 @@
 
 #toMain2 {
   cursor: pointer;
+
+
+
+
 }
+
+
 
 #mapGap {
   height: 5vh;
@@ -23,7 +29,11 @@
   position: relative;
 }
 
+#masDatosPopup{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 
+}
 
 .App {
   background-color: white;
@@ -169,7 +179,7 @@
   /* width: 300px; */
 
   position: absolute;
-  top: 86vh;
+  top: 83vh;
   left: 4vw;
   width: 80vw;
   z-index: 0;
@@ -248,23 +258,27 @@ text-align: left;
   color: white;
   border-radius: 10px;
   position: absolute;
-  top: 86vh;
+  top: 83vh;
   right: 2vw;
   width: 12vw;
   z-index: 0;
   height: 7vh;
   border-radius: 20px;
-  padding-bottom: 2vw;
-  padding-top: 4vw;
+  height: 10vh;
 }
+
+#plusBoton{
+padding-top: 3vh;
+}
+
 
 .popup {
 
   position: absolute;
-  top: 67vh;
+  top: 68vh;
   left: 2vw;
   width: 96vw;
-  height: 18vh;
+  height: 15vh;
 
   padding: 15px;
   padding-left: 25px;
@@ -278,13 +292,16 @@ text-align: left;
 }
 
 #displayTitulo {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   padding: 0vh 3vw;
 }
 
 #displayFecha {
   font-size: 0.8rem;
   color: white;
+  padding-top: 2vh;
+  
+  
 
 }
 
@@ -301,11 +318,39 @@ text-align: left;
   border-color: white;
   border-width: 1px;
   border-radius: 25px;
+  width: 30vw;
+  height: 5vh;
   
 }
 
 
 /*------responsive------*/
+
+
+/*celus mas grandes*/
+@media (min-width: 400px) {
+  .popup {
+
+    position: absolute;
+    top: 65vh;
+    left: 2vw;
+    width: 96vw;
+    height: 17vh;
+  
+    padding: 15px;
+    padding-left: 25px;
+    color: white;
+    background-color: #4568f6;
+    border: 1px solid white;
+    border-radius: 30px;
+    z-index: 1000;
+    overflow: hidden;
+    white-space: break-spaces;
+  }
+
+
+}
+
 
 /*TV TABLET 768px*/
 @media (min-width: 768px) {
@@ -329,7 +374,10 @@ text-align: left;
 
 
 
-
+  #masDatosPopup{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
 
 
   .slider-container {
@@ -356,6 +404,12 @@ text-align: left;
     font-size: 1.2rem;
   }
 
+  #displayLink {
+    width: 10vw;
+    justify-self: center;
+  }
+
+
 
   #filtrosBottom {
     display: grid;
@@ -368,9 +422,13 @@ text-align: left;
     top: 88vh;
     width: 10vw;
     height: 8vh;
-    padding-top: 2vw;
+    
 
   }
+
+  #plusBoton{
+    padding-top: 2vh;
+    }
 
 
 
@@ -388,10 +446,13 @@ text-align: left;
     width: 100%;
   }
 
+  #displayLink {
+    width: 8vw;
+  }
   .popup {
 
     position: absolute;
-    top: 60vh;
+    top: 63vh;
     left: 1vw;
     width: 18vw;
     height: 32vh;
@@ -432,9 +493,12 @@ text-align: left;
     top: 80vh;
     width: 8vw;
     height: 12vh;
-    padding-top: 2vw;
 
   }
+
+  #plusBoton{
+    padding-top: 4vh;
+    }
 
 
 }

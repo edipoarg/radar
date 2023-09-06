@@ -14,7 +14,8 @@ position: fixed;
 }
 
 #marquee{
-    color: white
+    color: white;
+    font-size: 0.7rem;
 }
 
 #highlight-text{

@@ -7,7 +7,7 @@
 
 #notasContainer{
     padding: 20px 12vw;
-    padding-top: 30vh;
+    padding-top: 25vh;
     height: 90vh;
     color: #2b3bcd;
   
@@ -35,6 +35,11 @@
 
 }
 
+.bajadaNota{
+  text-align: center;
+  font-size: 1rem;
+}
+
 .notaBotonCrisis{
     color: #2b3bcd;
     background-color: white;
@@ -48,6 +53,17 @@
     margin-top: 4vh;
    
 }
+
+.botonNotas{color: #2b3bcd;
+  background-color: white;
+  border-color: #2b3bcd;
+     align-items: center;
+  justify-content: center;
+  align-self: center;
+  justify-self: center;
+  align-content: center;
+  justify-items: center;
+  margin-top: 4vh;}
 
 .autorNota{
     font-size: 1rem;
