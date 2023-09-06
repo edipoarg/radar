@@ -19,7 +19,6 @@ import {
 import Main2 from './components/Main2.jsx'; // Cambia la ruta a tu formulario
 import Filtros from './components/filtros.jsx'; // Cambia la ruta a tu formulario
 import Analisis from './components/analisis.jsx'
-import Listado from './components/listado.jsx';
 import Conecta from './components/conecta.jsx';
 import Reporta from './components/reporta.jsx';
 import Notas from './components/notas';
@@ -36,7 +35,7 @@ const style = {
   country: {
     fillColor: "#d8d7fa",
     fillOpacity: 0.6,
-    color: "blue",
+    color: "#2b3bcd",
     weight: 0.2,
 
   },
@@ -55,7 +54,7 @@ const style = {
   },
   provincias: {
     fillColor: "#d8d7fa",
-    color: "blue",
+    color: "#2b3bcd",
     weight: 2,
     lineColor: "#b2b7f5",
     fillOpacity: 1,
@@ -65,7 +64,7 @@ const style = {
 
   rutas: {
     fillColor: "#d8d7fa",
-    color: "blue",
+    color: "#2b3bcd",
     weight: 2,
     lineColor: "white",
     lineOpacity: 1,
@@ -87,9 +86,9 @@ function App(urls) {
   };
 
   const [tipoFilters, setTipoFilters] = useState({
-    t3: true,
-    t2: true,
     t1: true,
+    t2: true,
+    t3: true,
 
   });
   // Estado para controlar la visibilidad de "Filtros"
@@ -228,7 +227,6 @@ function App(urls) {
 
   return (
   
-        <div>
           <div className="App">
 
             {filtrosVisible && (
@@ -242,25 +240,24 @@ function App(urls) {
             )}
             <div id='mapGap'></div>
 
+           
+            <div id='mapGap'></div>
+            <div id='botonFiltrosMain'>
+
             {/* Render different button content based on the state */}
-            <button
+              <button
               aria-label="Hide"
               onClick={() => { handleClickCloseButton(); toggleFiltrosVisibility(); }}
               className={isCloseButtonClicked ? "transformed-button" : "simple-button"}
             >
               {isCloseButtonClicked ? (
-                // Content when the button is clicked
-                // You can use any JSX or HTML here
-                <div><motion.img
-                  key="menu.png"
-                  src="menu.png"
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  exit={{ opacity: 0 }}
-                  whileHover={{
-                    scale: [1, 2, 2, 1, 1]
-                  }}
-                /></div>
+                <div>
+                {/* Content when the button is clicked 
+                // You can use any JSX or HTML here */}
+               
+                <h5 id= 'botonFiltrosMap'>FILTROS</h5>
+                
+                </div>
               ) : (
                 // Content when the button is not clicked
                 // You can use any JSX or HTML here
@@ -271,8 +268,9 @@ function App(urls) {
                 /></div>
               )}
             </button>
-            <div id='mapGap'></div>
 
+
+            </div>
             <MapGL
               id="mapa"
               mapLib={maplibregl}
@@ -317,19 +315,24 @@ function App(urls) {
                 aria-labelledby="non-linear-slider"
               />
 
+              <div id='referenciasFechas'>
+              <div> <h6 id='fechaInicio'>2/2020</h6>  </div>
+              <div>  </div>
+              <div> <h6 id='fechaCierre'>9/2023</h6>  </div>
+              </div>
+
+
             </div>
 
             <ScrollLink
-              to="main2-content" // ID del elemento de destino (Main2)
+              to="Main2" // ID del elemento de destino (Main2)
               spy={true} // Activa el modo espía
               smooth={true} // Activa el desplazamiento suave
               duration={500} // Duración de la animación (en milisegundos)
               offset={-70} // Ajusta un offset opcional (si tienes un encabezado fijo)
             >
               <div id="toMain2">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-caret-down-fill" viewBox="0 0 16 16">
-                  <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
-                </svg>
+               <h4>+</h4>
               </div>
             </ScrollLink>
 
@@ -340,9 +343,16 @@ function App(urls) {
             {popupInfo && <Popup {...popupInfo} />}
 
             <Main2 />
-            <Analisis></Analisis>
+       
+              <Analisis/>
+              
 
-          </div>   </div>
+
+
+
+          </div>
+          
+          
       
      
     

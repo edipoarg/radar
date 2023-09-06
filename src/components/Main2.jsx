@@ -9,38 +9,39 @@ export default function Main2() {
 
   return (
 
-    <div id="main2-content">
 
 
       <div id="Main2">
 
+<div id="franja1">
+<div id='reportaMain'>
+<h4 id='bajadaPrincipal'> El 'Registro de Ataques de Derechas Argentinas Radicalizadas' es un proyecto periodístico colaborativo impulsado por el Equipo de Investigación Política- Edipo de la Revista Crisis con apoyo del Centro de Estudios Legales y Sociales- CELS con el objetivo de fortalecer la democracia y la defensa de los derechos humanos.</h4>
+  <Link to= "/conecta"> <button id="botonReportaMain">NOSOTRXS</button></Link>
 
-        <div id="franja1">
 
-          <div id='reportaMain'>
 
-            <h4 id='bajadaPrincipal'> El 'Registro de Ataques de Derechas Argentinas Radicalizadas' es un proyecto periodístico colaborativo impulsado por el Equipo de Investigación Política- Edipo de la Revista Crisis con apoyo del Centro de Estudios Legales y Sociales- CELS con el objetivo de fortalecer la democracia y la defensa de los derechos humanos.</h4>
-            <Link to= "/conecta"> <button id="botonReportaMain">NOSOTRXS</button></Link>
-          </div>
+</div>
 
-          <div id='botonMapa'>
-            <ScrollLink
-              to="App"
-              spy={true} // Activa el modo espía
-              smooth={true} // Activa el desplazamiento suave
-              duration={500} // Duración de la animación (en milisegundos)
-              offset={-70} // Ajusta un offset opcional (si tienes un encabezado fijo)
-            >
-              <button id='botonMain2'><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-caret-up-fill" viewBox="0 0 16 16">
-                <path d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z" />
-              </svg><h5>mapa</h5></button>
-            </ScrollLink>
 
-          </div>
+<ScrollLink
+    to="App"
+    spy={true} // Activa el modo espía
+    smooth={true} // Activa el desplazamiento suave
+    duration={500} // Duración de la animación (en milisegundos)
+    offset={-70} // Ajusta un offset opcional (si tienes un encabezado fijo)
+  >
+    <button id='botonMain2'><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-caret-up-fill" viewBox="0 0 16 16">
+      <path d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z" />
+    </svg><h5>mapa</h5></button>
+  </ScrollLink></div>
 
-        </div>
+<div id='botonMapa'>
+ 
 
-        <div id='separadorMain'>
+</div>
+ 
+
+<div id='separadorMain'>
           <div id='bloqueI'></div>
           <div id='bloqueD'></div>
         </div>
@@ -66,7 +67,7 @@ export default function Main2() {
             </div>
 
             <div id='analisisMain'>
-              <h3 id='analisisTextMain'>Relevamiento 2020 - 2023</h3>
+              <div><h3 id='analisisTextMain'>Relevamiento</h3> <h6>2020 - 2023</h6></div>
               <ScrollLink
                 to="analisis"
                 spy={true} // Activa el modo espía
@@ -83,11 +84,10 @@ export default function Main2() {
 
 
         </div>
+      
 
 
 
-
-      </div>
     </div>);
 }
 

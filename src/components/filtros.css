@@ -103,7 +103,7 @@
 justify-items: center;}
 
 .tipo1Icon{
-background-color: yellow;
+background-color: rgb(252, 252, 114);
 width: 23px;
 height: 23px;
 border-radius: 5px;
@@ -111,7 +111,7 @@ padding-left: 4px;
 
 }
 .tipo2Icon{
-    background-color: orange;
+    background-color: rgb(255, 166, 0);
     width: 23px;
     height: 23px;
     border-radius: 5px;
@@ -120,7 +120,7 @@ padding-left: 4px;
 
     }
     .tipo3Icon{
-        background-color: red;
+        background-color: rgb(251, 55, 25);
         width: 23px;
         height: 23px;
         border-radius: 5px;

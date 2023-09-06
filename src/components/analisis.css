@@ -2,7 +2,7 @@
     display: grid;
     grid-template-columns: 1fr;
     width: 100vw;
-    background-color: blue;
+    background-color: #4568f6;
     padding: 20px 0px;
     padding-top: 10vh;
 
@@ -80,7 +80,7 @@ column-gap: 8vw;
 justify-self: right;
     width: 15vw;
     margin-right: 7vw;
-    background-color: blue;
+    background-color: #4568f6;
     border-color: white;
 
 }

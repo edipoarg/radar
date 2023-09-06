@@ -9,7 +9,7 @@
     padding: 20px 12vw;
     padding-top: 30vh;
     height: 90vh;
-    color: blue;
+    color: #2b3bcd;
   
 
 }
@@ -20,7 +20,7 @@
 
 .notasItemContainer{
     border-style: inset;
-    border-color: blue;
+    border-color: #2b3bcd;
     border-width: 2px;
     border-radius: 25px;
     padding: 10vh 15vw;
@@ -36,9 +36,9 @@
 }
 
 .notaBotonCrisis{
-    color: blue;
+    color: #2b3bcd;
     background-color: white;
-    border-color: blue;
+    border-color: #2b3bcd;
        align-items: center;
     justify-content: center;
     align-self: center;
@@ -56,13 +56,13 @@
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-  color: blue; /* Change arrow color */
+  color: #2b3bcd; /* Change arrow color */
   font-size: 2rem; /* Adjust arrow size */
 }
 
 /* Customize the color of the active carousel indicator */
 .carousel-indicators .active {
-    background-color: blue; /* Change to your desired color */
+    background-color: #2b3bcd; /* Change to your desired color */
   }
 
 /* Left Arrow */
@@ -87,8 +87,13 @@
     }
     
     #notasContainer{
-        padding: 20vw;
-        color: blue;
+        padding: 19vh 20vw;
+        height: 90vh;
+        color: #2b3bcd;
+    }
+
+    .notasItemContainer{
+      height: 60vh;
     }
 
 

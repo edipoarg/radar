@@ -9,9 +9,21 @@
 }
 
 #mapGap {
-  height: 10vh;
+  height: 5vh;
   width: 100%;
 }
+
+#botonFiltrosMain{
+ position: absolute;
+ top: 15vh
+
+}
+
+#mapa{
+  position: relative;
+}
+
+
 
 .App {
   background-color: white;
@@ -21,41 +33,76 @@
 }
 
 .marker {
-  width: 24px;
-  height: 24px;
+  width: 9px;
+  height: 9px;
   border-radius: 50%;
+  position: absolute;
 
   align-items: center;
   justify-content: center;
   color: white;
   font-weight: bold;
+
+  
+
+}
+
+#circulo1{
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  position: absolute;
+
+  align-items: center;
+  justify-content: center;
+  opacity: 0.5;
+  transform: translate(-20%, -20%);
+
+
+  
+
+}
+
+#circulo2{
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  position: absolute;
+
+  align-items: center;
+  justify-content: center;
+  opacity: 0.2;
+  transform: translate(-20%, -20%);
+
+
 }
 
 
-
 .marker.amarillo {
-  background-color: yellow;
+  background-color: rgb(252, 252, 114);
   /* Cambia el color según tus preferencias */
 
 }
 
 .marker.naranja {
-  background-color: orange;
+  background-color: rgb(255, 166, 0);
   /* Cambia el color según tus preferencias */
 }
 
 .marker.rojo {
-  background-color: red;
+  background-color: rgb(251, 55, 25);
 }
+
+
 
 /* Resto de los estilos */
 .transformed-button {
-  position: fixed;
+  position: absolute;
   z-index: 5000;
   background-color: white;
   color: white;
-  top: 14vh;
-  left: 5vw;
+  top: 0vh;
+  left: 2vw;
   background: none;
 	color: inherit;
 	border: none;
@@ -68,9 +115,9 @@
 }
 
 .transformed-button img {
-  position: fixed;
-  top: 14vh;
-  left: 3vw;
+  position: absolute;
+  top: 0vh;
+  left: 0vw;
   max-width: 8vw;
 }
 
@@ -86,16 +133,28 @@
 }
 
 #closeButton {
-  position: fixed;
+  position: absolute;
   z-index: 1001;
   background-color: white;
   color: white;
-  top: 15vh;
-  left: 6vw;
-  
+  top: 0vh;
+  left: 3vw;
+
 
 
 }
+
+#botonFiltrosMap{
+  font-size: 1rem;
+  color: #4568f6;
+  border: solid;
+  border-color: #4568f6;
+  border-width: 1px;
+  border-radius: 25px;
+  padding: 0.5vh 1vw;
+}
+
+
 
 #markerLine {
   background-color: rgb(249, 38, 6);
@@ -164,10 +223,25 @@
   background-color: white;
   color: black;
   border-radius: 20px;
-  padding-bottom: 2vw;
+  padding-bottom: 1vw;
   padding-top: 2vw;
 
 }
+
+#referenciasFechas{
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+}
+
+#fechaInicio{
+color: #4568f6;
+text-align: left;
+}
+
+#fechaCierre{
+  color: #4568f6;
+  text-align: right;
+  }
 
 #toMain2 {
   background-color: black;
@@ -195,7 +269,7 @@
   padding: 15px;
   padding-left: 25px;
   color: white;
-  background-color: blue;
+  background-color: #4568f6;
   border: 1px solid white;
   border-radius: 30px;
   z-index: 1000;
@@ -221,7 +295,13 @@
 }
 
 #displayLink {
-  color: orange
+  color: white;
+  border: solid;
+  padding: 0.5vh 1.5vw;
+  border-color: white;
+  border-width: 1px;
+  border-radius: 25px;
+  
 }
 
 
@@ -229,7 +309,6 @@
 
 /*TV TABLET 768px*/
 @media (min-width: 768px) {
-
 
 
 
@@ -305,7 +384,7 @@
 
 
   #mapGap {
-    height: 12vh;
+    height: 5vh;
     width: 100%;
   }
 
