@@ -7,7 +7,8 @@ background-image: url(radarPuntos.png);
     background-size: cover;
     right: 0vw;
     top: 180vh;
-    opacity: 0.4;
+    opacity: 0.2;
+    z-index: 0;
     
 }
 
@@ -36,6 +37,7 @@ background-image: url(radarPuntos.png);
     font-family: 'MiFuenteBold';
     padding-right: 6vw;
     padding-left: 4vw;
+    z-index: 2000;
 }
 
 

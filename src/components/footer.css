@@ -1,0 +1,10 @@
+#footerContainer{
+    width: 100vw;
+    background-color: white;
+    color: black;
+    border-top: solid;
+    border-width: 1px;
+    padding: 3vh 2vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}

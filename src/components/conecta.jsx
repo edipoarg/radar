@@ -1,5 +1,7 @@
 import React from 'react';
 import './conecta.css'
+import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
+
 
 
 
@@ -13,9 +15,9 @@ export default function reportaForm() {
 
         <><div id="conecta">
 
-               
+<div id='radarDeco'><img id='radarDecoImg' src="imgRadar.png" alt="" /></div>               
             <div id='contectaTituloContainter'>
-            <div><img id='logoImgNos' src="../src/components/logoRadar.png" alt="" /></div>
+            <div><img id='logoImgNos' src="logoRadar.png" alt="" /></div>
 
              
                 <h1 id='conectaTitulo'>Registro de Ataques de Derechas Argentinas Radicalizadas</h1>
@@ -44,13 +46,16 @@ export default function reportaForm() {
         
         <div id='conecta2'>
 
-            <h6 id='textConecta2'>Llamamos derechas radicalizadas a aquellos sectores de la ultraderecha que apelan directa o indirectamente a la violencia como método de acción política. No se trata de un calificativo orientado al contenido de sus ideas, sino a las agresiones y ataques desplegados con intención de silenciar, amedrentar, disciplinar o aniquilar reivindicaciones de derechos individuales y/o colectivos, instaurar miedo e influir en la discusión pública. </h6>
+            <h6 id='textConecta2'>Llamamos derechas radicalizadas a aquellos sectores de la ultraderecha que apelan directa o indirectamente a la violencia como método de acción política. No se trata de un calificativo orientado al contenido de sus ideas, sino a las agresiones y ataques desplegados con intención de silenciar, amedrentar, disciplinar o aniquilar reivindicaciones de derechos individuales y/o colectivos, instaurar miedo e influir en la discusión pública.
+            <br />
+<br />
+ </h6>
 
             <h6 id='siTeInteresa'>Si te interesa lo que hacemos y querés comunicarte con nosotrxs podés escribirnos al correo:
             <br />
             <br />
             
-             <a type='email' href="radar.edipo@gmail.com"></a>radar.edipo@gmail.com</h6>
+             <a href="mailto:radar.edipo@gmail.com"></a></h6>
             
             
         </div></>

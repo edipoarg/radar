@@ -7,12 +7,11 @@
 #toMain2 {
   cursor: pointer;
 
-
-
-
 }
 
-
+#plusBoton{
+  color: white;
+}
 
 #mapGap {
   height: 5vh;

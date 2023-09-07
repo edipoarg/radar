@@ -45,5 +45,11 @@ position: fixed;
     position: fixed;    
     }
 
+    
+#marquee{
+    color: white;
+    font-size: 1rem;
+}
+
 
 }

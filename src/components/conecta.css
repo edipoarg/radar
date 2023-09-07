@@ -1,5 +1,7 @@
 
 
+
+
 #contectaTituloContainter{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -25,10 +27,20 @@ width: 70vw;}
 #logoImgNos{
     width: 35vw;
     padding-left: 2vw;
+    z-index: 3000;
+
 
 }
 
 
+#radarDecoImg{
+    position: absolute;
+    opacity: 0.1;
+    top: 4vh;
+    left: 0;
+    height: 30vh;
+    
+    }
 
 
 
@@ -44,6 +56,9 @@ width: 70vw;}
 
 
 }
+
+
+
 
 #conectaTextContainer{
     width: 80vw;
@@ -78,7 +93,9 @@ padding: 15px;
 
 }
 
-
+#textConecta2{
+    font-size: 0.8rem;
+}
 
 
 #siTeInteresa{
@@ -131,6 +148,11 @@ padding: 0vh 4vw;
     text-align: justify;
     font-family: 'MiFuente';
 }
+
+#textConecta2{
+    font-size: 1.1rem;
+}
+
 
 
     #conecta2{
@@ -209,6 +231,15 @@ padding: 0vh 4vw;
     
     }
 
+
+    #radarDecoImg{
+        position: absolute;
+        opacity: 0.1;
+        top: 0vh;
+        left: 3vw;
+        height: 50vh;
+        
+        }
 
 
 }
