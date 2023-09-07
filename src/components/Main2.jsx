@@ -15,7 +15,8 @@ export default function Main2() {
 
 <div id="franja1">
 <div id='reportaMain'>
-<h4 id='bajadaPrincipal'> El <span id='negritaTitulo'> Registro de Ataques de Derechas Argentinas Radicalizadas</span> es un proyecto periodístico colaborativo impulsado por el Equipo de Investigación Política (Edipo) de la Revista Crisis con apoyo del Centro de Estudios Legales y Sociales (CELS) con el objetivo de fortalecer la democracia y la defensa de los derechos humanos.</h4>
+<h4 id='bajadaPrincipal'> <span id='negritaTitulo'> RADAR (Registro de Ataques de Derechas Argentinas Radicalizadas)</span>  es un proyecto periodístico colaborativo impulsado por el Equipo de Investigación Política (EdIPo) de la Revista Crisis, con apoyo del Centro de Estudios Legales y Sociales (CELS), cuyo objetivo es fortalecer la democracia y la defensa de los derechos humanos.
+Presentamos un mapeo de ataques políticos protagonizados por derechas radicalizadas con el fin de contribuir al diagnóstico colectivo y la elaboración de estrategias de autocuidado.</h4>
   <Link to= "/conecta"> <button id="botonReportaMain">NOSOTRXS</button></Link>
 
 
@@ -35,10 +36,8 @@ export default function Main2() {
     </svg><h5 id='botonMapaText'>mapa</h5></button>
   </ScrollLink></div>
 
-<div id='botonMapa'>
  
 
-</div>
  
 
 <div id='separadorMain'>
@@ -61,9 +60,8 @@ export default function Main2() {
           <div id='botoneraMain'>
 
             <div id='contactoMain'>
-              <h2 id='conectaTitle'>Reportá un hecho</h2>
               <h2 id='conectaTextMain'>Colaborá en la construcción de una fuente de información pública sobre agresiones a la democracia.</h2>
-              <button id="botonConectaMain" ><a href="https://docs.google.com/forms/d/e/1FAIpQLSe5pKXuvkvSUiwI_YEq5OZrfXCmpcsDuz_6co_iS2Qags80_A/viewform" target="_blank" rel="noopener noreferrer">Ir</a></button>
+              <button id="botonConectaMain" ><a href="https://docs.google.com/forms/d/e/1FAIpQLSe5pKXuvkvSUiwI_YEq5OZrfXCmpcsDuz_6co_iS2Qags80_A/viewform" target="_blank" rel="noopener noreferrer"><h2 id='reportaBotonText'>REPORTÁ UN HECHO</h2></a></button>
             </div>
 
             <div id='analisisMain'>

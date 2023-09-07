@@ -155,9 +155,9 @@
 
 #botonFiltrosMap{
   font-size: 1rem;
-  color: #4568f6;
+  color: #2b3bcd;
   border: solid;
-  border-color: #4568f6;
+  border-color: #2b3bcd;
   border-width: 1px;
   border-radius: 25px;
   padding: 0.5vh 1vw;
@@ -243,12 +243,12 @@
 }
 
 #fechaInicio{
-color: #4568f6;
+color: #2b3bcd;
 text-align: left;
 }
 
 #fechaCierre{
-  color: #4568f6;
+  color: #2b3bcd;
   text-align: right;
   }
 
@@ -282,7 +282,7 @@ padding-top: 3vh;
   padding: 15px;
   padding-left: 25px;
   color: white;
-  background-color: #4568f6;
+  background-color: #2b3bcd;
   border: 1px solid white;
   border-radius: 30px;
   z-index: 1000;
@@ -293,6 +293,7 @@ padding-top: 3vh;
 #displayTitulo {
   font-size: 0.8rem;
   padding: 0vh 3vw;
+  color: white;
 }
 
 #displayFecha {
@@ -339,7 +340,7 @@ padding-top: 3vh;
     padding: 15px;
     padding-left: 25px;
     color: white;
-    background-color: #4568f6;
+    background-color: #2b3bcd;
     border: 1px solid white;
     border-radius: 30px;
     z-index: 1000;
@@ -400,7 +401,7 @@ padding-top: 3vh;
   }
 
   #displayTitulo {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 
   #displayLink {

@@ -84,11 +84,10 @@ export default function analisis() {
 
       <h4 id='analisisTextoFinal'>
         
-        En esta primera etapa se visualizan hechos del período 2020-2023 que puedan ser geolocalizados pero se encuentra abierta a recibir reportes fuera de ese marco espacio-temporal.
-
+      En esta primera etapa se visualizan hechos geolocalizables del período 2020-2023 pero se encuentra abierta a recibir reportes fuera de ese marco espacio-temporal.
       </h4>
 
-      <h6 id='aclaracionAnalisis'>        *Las narrativas no son excluyentes: algunos casos abarcan más de una.
+      <h6 id='aclaracionAnalisis'>        *Las narrativas no son excluyentes. Algunos casos abarcan más de una.
 </h6>
       <ScrollLink
         to="App"

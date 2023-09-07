@@ -8,7 +8,9 @@
 
 #botonMapaText{
     color: white;
+    font-size: 0.7rem;
 }
+
 
 
 #franja1{
@@ -48,7 +50,7 @@
 }
 
 #tituloNotasMain{
-    font-size: 1.5REM;
+    font-size: 1.5rem;
     color: #2b3bcd;
 }
 
@@ -79,6 +81,8 @@
     height: 100%;
     background-color: black;
     border-radius: 15px;
+    width: 15vw;
+
     
 
     }
@@ -136,7 +140,6 @@
     padding: 3vh 2vw;
     margin-top: 0px;
     margin-right: 0px;
-    z-index: 3000;
 
 }
 
@@ -154,21 +157,17 @@ column-gap: 2vw;
     margin-top: 0px;
     border-radius: 20px;
     padding: 20px;
-    z-index: 3000;
 
    
 }
 
-#conectaTitle{
-    color: white;
-    
-}
 
 #conectaTextMain{
    color: white;
     font-size: 0.6rem;
     text-align: justify;
     padding-bottom: 2vh;
+    padding-top: 2vh;
     
 
 }
@@ -226,7 +225,10 @@ border-radius: 25px;
 
 }
 
-
+#reportaBotonText{
+color: white;
+font-size: 0.8rem;
+}
 #botonConectaMain{
     text-decoration: none; /* Quitar subrayado de enlace */
   cursor: pointer; /* Cambiar el cursor al estilo de clic */
@@ -234,9 +236,8 @@ border-radius: 25px;
     background-color:  #2b3bcd;
     border-color: white;
     color: white;
-    width: 23vw;
+    width: 45vw;
     border-radius: 25px;
-
     }
 
     #botonAnalisisMain{
@@ -379,7 +380,7 @@ border-radius: 25px;
 
 #negritaTitulo{
 
-    font-weight: bold;
+    font-family: 'MiFuenteBold';
 }
         #analisisTextMain{
             color: white;

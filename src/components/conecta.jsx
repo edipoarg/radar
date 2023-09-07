@@ -1,6 +1,8 @@
 import React from 'react';
 import './conecta.css'
 import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
+import { useEffect } from 'react';
+
 
 
 
@@ -9,6 +11,9 @@ import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 
 export default function reportaForm() {
 
+    useEffect(() => {
+        window.scrollTo(0, 0); // Desplázate automáticamente hacia arriba cuando se carga la página
+      }, []);
 
     return (
 
@@ -34,12 +39,7 @@ export default function reportaForm() {
 
 
 
-<div >
-    <br />
-    <br />
-    <svg id='flechaConecta2'xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white" class="bi bi-arrow-down" viewBox="0 0 16 16">
-  <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"/>
-</svg></div>
+
 
 
         </div>
@@ -51,11 +51,11 @@ export default function reportaForm() {
 <br />
  </h6>
 
-            <h6 id='siTeInteresa'>Si te interesa lo que hacemos y querés comunicarte con nosotrxs podés escribirnos al correo:
-            <br />
-            <br />
+            <h6 id='siTeInteresa'>si querés comunicarte con nosotrxs podés escribirnos a
             
-             <a href="mailto:radar.edipo@gmail.com"></a></h6>
+            <br />
+            <br />
+             <a href="mailto:radar.edipo@gmail.com">radar.edipo@gmail.com</a></h6>
             
             
         </div></>
