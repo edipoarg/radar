@@ -14,7 +14,7 @@ import Main2 from "./components/Main2.jsx";
 import Conecta from "./components/conecta.jsx";
 import Notas from "./components/notas.jsx";
 import Reporta from "./components/reporta.jsx";
-import Analisis from "./components/analisis.jsx";
+
 
 import Root from "./routes/Root.jsx";
 

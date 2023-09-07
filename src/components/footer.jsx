@@ -4,38 +4,21 @@ import './footer.css';
 import { motion } from "framer-motion"
 import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 
-export default function NavbarBootstrap() {
+export default function footer() {
   return (
-    <div className="footerContainer">
-     
 
-<div id='logosFooter'>
-    <h6>RADAR ES UN PROYECTO DE</h6>
+<div id='footer'>
 
-<div id='logosContainer'></div>
-<div  id='edipo'> <img id='edipoLogo'
-src="" alt="" /></div>
-
-<div  id='cisis'> <img id='crisisLogo'
-src="" alt="" /></div>
-
-<div  id='cels'> <img id='celsLogo'
-src="" alt="" /></div>
-
-
-</div>
+<div id='espacioVacioFooter'></div>
 
 <div id='Desarrollo'>
 
-<h6>DESARROLLADO X <a href="">Lidiador Sinay</a></h6>
+<h2 id='dx'>Desarrollado x</h2>
+<h6 id='desarrolladoX'> <a id='LS' href="http://instagram.com/lidiadorsinay">Lidiador Sinay <img id='logoLS' src="logoLS.png" alt="" /></a></h6>
 
 
 </div>
-
-
-
-   
-    </div>
+</div>
 
 
   );

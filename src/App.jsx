@@ -23,6 +23,7 @@ import { useLocation } from "react-router-dom";
 import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 import { motion } from 'framer-motion';
 import CloseButton from 'react-bootstrap/CloseButton';
+import Footer from "./components/footer.jsx"
 
 
 
@@ -344,6 +345,8 @@ function App(urls) {
             <Main2 />
        
               <Analisis/>
+
+              <Footer/>
               
 
 
