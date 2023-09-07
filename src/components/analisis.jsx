@@ -16,7 +16,7 @@ export default function analisis() {
 
       <div id="analisisHeader">
 
-        <div id='analisisTitulo'>
+        <div id='analisisTituloSec'>
           <h4 id='tituloAnalisisRadar'>REGISTRO DE ATAQUES <br /> DE DERECHAS ARGENTINAS RADIZALIZADAS
           </h4>
           <h1 id='tituloAnalisis'>RELEVAMIENTO
