@@ -19,9 +19,6 @@ import {
 import Main2 from './components/Main2.jsx'; // Cambia la ruta a tu formulario
 import Filtros from './components/filtros.jsx'; // Cambia la ruta a tu formulario
 import Analisis from './components/analisis.jsx'
-import Conecta from './components/conecta.jsx';
-import Reporta from './components/reporta.jsx';
-import Notas from './components/notas';
 import { useLocation } from "react-router-dom";
 import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 import { motion } from 'framer-motion';
@@ -188,6 +185,8 @@ function App(urls) {
     },
     mapStyle: mystyle,
   };
+
+  
 
   useEffect(() => {
     if (data) {

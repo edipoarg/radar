@@ -1,19 +1,30 @@
 
 
+#contectaTituloContainter{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: baseline;
+
+}
+
+#flechaConecta2{
+
+width: 70vw;}
 
 #conecta{
     width: 100vw;
     background-color: #2b3bcd;
     background-image: url(./fondoNosotrxs.jpg);
     padding: 20vh 5vw;
+    height: 85vh;
   
     
 
 }
 
-#logoImgNosotroxs{
-    width: 30vw;
-    height: 70vh;
+#logoImgNos{
+    width: 35vw;
+    padding-left: 2vw;
 
 }
 
@@ -22,9 +33,12 @@
 
 
 #conectaTitulo{
-    color: white;
-    font-size: 2rem;
+    
+    color: black;
+    font-size: 0.7rem;
     padding: 0vh 5vw;
+    text-transform: uppercase;
+    text-align: right;
     
 
 
@@ -33,6 +47,7 @@
 
 #conectaTextContainer{
     width: 80vw;
+    
 
 
 }
@@ -47,6 +62,7 @@ font-size: 0.8rem;
 padding: 15px;
 
 
+
 }
 
 #conecta2{
@@ -58,6 +74,24 @@ padding: 15px;
     padding: 15px;
     padding: 10vh 10vw;
     padding-bottom: 2vh;
+
+
+}
+
+
+
+
+#siTeInteresa{
+
+    background-color: black;
+    padding: 6vh 6vw;
+    color: white;text-transform: uppercase;
+ text-align: center;
+    font-family: 'MiFuente';
+    font-size: 0.8rem;
+
+border-radius: 30px;
+align-self: center;
 
 }
 
@@ -71,7 +105,7 @@ padding: 15px;
         background-color: #2b3bcd;
         padding: 20vh 15vw;
         padding-bottom: 6vh;
-
+        height: 100vh;
     
     
     }
@@ -81,20 +115,27 @@ padding: 15px;
     }
     
     #conectaTitulo{
-        color: white;
-        font-size: 3.3rem;
-        padding: 0vh 10vw;
+        color: black;
+        font-size: 1.1rem;
+        padding: 0vh 5vw;
+        text-align: right;
     
     }
     
-    #conectaText{
+    #conectaTextRadar{
+padding: 0vh 4vw;
         padding-top: 5vh;
+
     color: white;
-    font-size: 1rem;
-    text-align: justify;}
+    font-size: 1.2rem;
+    text-align: justify;
+    font-family: 'MiFuente';
+}
 
 
     #conecta2{
+        display: grid;
+        grid-template-columns: 4fr 3fr;
         padding-top: 5vh;
         color: #2b3bcd;
         font-size: 1rem;
@@ -103,7 +144,71 @@ padding: 15px;
         padding: 10vh 15vw;
     
     }
+
+    #textConecta2{
+        padding: 0vh 5vw;
+    }
     
+    
+
+    #logoImgNos{
+        width: 35vw;
+        padding-left: 2vw;
+    
+    }
+
+}
+
+@media (min-width: 1200px){
+
+   
+    #tituloAnalisisRadar{
+        font-size: 2rem;
+    }
+    
+    #conectaTitulo{
+        color: black;
+        font-size: 1.4rem;
+        padding: 0vh 5vw;
+        text-align: right;
+    
+    }
+    
+    #conectaTextRadar{
+padding: 0vh 4vw;
+        padding-top: 5vh;
+
+    color: white;
+    font-size: 1.2rem;
+    text-align: justify;
+    font-family: 'MiFuente';
+}
+
+
+    #conecta2{
+        display: grid;
+        grid-template-columns: 4fr 3fr;
+        padding-top: 5vh;
+        color: #2b3bcd;
+        font-size: 1rem;
+        text-align: justify;
+        padding: 15px;
+        padding: 10vh 15vw;
+    
+    }
+
+    #textConecta2{
+        padding: 0vh 5vw;
+    }
+    
+    
+
+    #logoImgNos{
+        width: 28vw;
+        padding-left: 2vw;
+    
+    }
+
 
 
 }
