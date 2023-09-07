@@ -11,7 +11,7 @@ export default function analisis() {
 
     <div id="analisis">
 
-      <div id='fondoAnalisisImg'></div>
+      <div id='fondoAnalisisImg'> <img src="radarPuntos.png" alt="" /></div>
 
 
       <div id="analisisHeader">
