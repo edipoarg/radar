@@ -14,8 +14,8 @@ export const Markers = ({ data, setPopupInfo, setMarker, selected, tipoFilters }
   useEffect(() => {
     const filteredData = data.filter(event => tipoFilters[event.tipoId]);
     const sortedData = [...filteredData].sort((a, b) => {
-      if (a.tipoId === "t1" && b.tipoId !== "t2") return -1;
-      if (a.tipoId === "t2" && b.tipoId === "t3") return -1;
+      if (a.tipoId === "t3" && b.tipoId !== "t2") return -1;
+      if (a.tipoId === "t2" && b.tipoId === "t1") return -1;
       return 1;
     });
     setFilteredAndSortedData(sortedData);

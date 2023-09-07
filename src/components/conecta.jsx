@@ -12,7 +12,11 @@ export default function reportaForm() {
 
 
         <><div id="conecta">
+
+
             <div id='contectaTituloContainter'>
+
+             
                 <h1 id='conectaTitulo'>Registro de Ataques de Derechas Argentinas Radicalizadas</h1>
 
             </div>

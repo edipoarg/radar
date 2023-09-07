@@ -33,14 +33,14 @@ import CloseButton from 'react-bootstrap/CloseButton';
 
 const style = {
   country: {
-    fillColor: "#d8d7fa",
+    fillColor: "#bacbff",
     fillOpacity: 0.6,
     color: "#2b3bcd",
     weight: 0.2,
 
   },
   departamentos: {
-    fillColor: "#d8d7fa",
+    fillColor: "#bacbff",
     fillOpacity: 0,
     color: "black",
     weight: 2,
@@ -53,7 +53,7 @@ const style = {
     ],
   },
   provincias: {
-    fillColor: "#d8d7fa",
+    fillColor: "#bacbff",
     color: "#2b3bcd",
     weight: 2,
     lineColor: "#b2b7f5",
@@ -63,7 +63,7 @@ const style = {
 
 
   rutas: {
-    fillColor: "#d8d7fa",
+    fillColor: "#bacbff",
     color: "#2b3bcd",
     weight: 2,
     lineColor: "white",

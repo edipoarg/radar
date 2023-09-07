@@ -90,7 +90,7 @@ width: 100vw;
 #analisisTextoFinal{
     color: white;
     font-size: 1rem;
-    padding: 0vh 10vw;
+    padding: 0vh 22vw;
     padding-bottom: 2vh;
 
 }
@@ -271,12 +271,14 @@ justify-self: right;
 
     
 #tituloAnalisisRadar{
-        padding-right: 20vw;
+        padding-right: 40vw;
         
     
     }
 
-
+#enConstruccion{
+    padding-top: 5vh;
+}
 
     #analisisDatos{
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -290,5 +292,10 @@ justify-self: right;
     #tituloAnalisis{
         padding-right: 10vw;
         
+    }
+
+    #aclaracionAnalisis{
+        padding-bottom: 5vh;
+
     }
 }
