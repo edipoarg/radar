@@ -19,7 +19,7 @@ export default function Notas() {
             </h4>
             <h4 className='autorNota'>
             </h4>
-            <button className="botonNotas" ><a href="https://https://informes.revistacrisis.com.ar/la-violencia-avanza-1s/" target="_blank" rel="noopener noreferrer">Ir</a></button>
+            <button className="botonNotas" ><a href="http://informes.revistacrisis.com.ar/la-violencia-avanza-1s/" target="_blank" rel="noopener noreferrer">Ir</a></button>
 
           </div>
         </Carousel.Item >
@@ -29,7 +29,7 @@ export default function Notas() {
             <h2 className='tituloNota'>Otras Investigaciones
             </h2>
 
-            <button className="botonNotas" ><a href="https://revistacrisis.com.ar/autores/equipo-de-investigacion-politica-edipo" target="_blank" rel="noopener noreferrer">Ir</a></button>
+            <button className="botonNotas" ><a href="http://revistacrisis.com.ar/autores/equipo-de-investigacion-politica-edipo" target="_blank" rel="noopener noreferrer">Ir</a></button>
 
           </div>
 
