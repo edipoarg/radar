@@ -14,7 +14,7 @@ export default function footer() {
 <div id='Desarrollo'>
 
 <h2 id='dx'>Desarrollado x</h2>
-<h6 id='desarrolladoX'> <a id='LS' href="http://instagram.com/lidiadorsinay">Lidiador Sinay <img id='logoLS' src="logoLS.png" alt="" /></a></h6>
+<h6 id='desarrolladoX'> <a id='LS' href="mailto:lidiadorsinay@gmail.com">Lidiador Sinay <img id='logoLS' src="logoLS.png" alt="" /></a></h6>
 
 
 </div>

@@ -60,7 +60,7 @@ Presentamos un mapeo de ataques políticos protagonizados por derechas radicaliz
           <div id='botoneraMain'>
 
             <div id='contactoMain'>
-              <h2 id='conectaTextMain'>Colaborá en la construcción de una fuente de información pública sobre agresiones a la democracia.</h2>
+              <h2 id='conectaTextMain'>Colaborá en la construcción de una fuente de información pública sobre agresiones de derechas argentinas radicalizadas.</h2>
               <button id="botonConectaMain" ><a href="https://docs.google.com/forms/d/e/1FAIpQLSe5pKXuvkvSUiwI_YEq5OZrfXCmpcsDuz_6co_iS2Qags80_A/viewform" target="_blank" rel="noopener noreferrer"><h2 id='reportaBotonText'>REPORTÁ UN HECHO</h2></a></button>
             </div>
 

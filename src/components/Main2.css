@@ -168,6 +168,7 @@ column-gap: 2vw;
     text-align: justify;
     padding-bottom: 2vh;
     padding-top: 2vh;
+    text-align: center;
     
 
 }
@@ -352,12 +353,12 @@ font-size: 0.8rem;
  }
 
 #bajadaPrincipal{
-    font-size: 1.2rem;
+    font-size: 1rem;
     padding: 0vh 6vw;
     text-align: justify;
     color: #2b3bcd;
     padding-top: 5vh;
-    padding-bottom: 5vh;
+    padding-bottom: 3vh;
 }
 
 
@@ -446,7 +447,7 @@ font-size: 0.8rem;
     padding-top: 1vh;
 }
     #bajadaPrincipal{
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         padding: 0vh 10vw;
         text-align: justify;
         color: #2b3bcd;
