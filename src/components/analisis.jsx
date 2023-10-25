@@ -22,7 +22,7 @@ export default function analisis() {
           <h1 id='tituloAnalisis'>RELEVAMIENTO
             2020 - 2023
           </h1>
-          <h4 id='analisisCasos'> 173 CASOS</h4>
+          <h4 id='analisisCasos'> 190 CASOS</h4>
           <h4 id='analisisCasosBajada'>organizados por sus narrativas de odio
 
           </h4>
@@ -37,35 +37,35 @@ export default function analisis() {
       <div id='analisisDatos'>
 
         <div id='datos1'>
-          <h1 id='datoN1'>85</h1>
+          <h1 id='datoN1'>98</h1>
           <div class='info'>
             <div class='barra'></div>
             <p class='textAnalisis'>contra identidades políticas </p>
           </div>
         </div>
         <div id='datos2'>
-          <h1 id='datoN2'>60</h1>
+          <h1 id='datoN2'>69</h1>
           <div class='info'>
             <div class='barra'></div>
             <p class='textAnalisis'>negacionismo <br /> y apología a la dictadura </p>
           </div>
         </div>
         <div id='datos3'>
-          <h1 id='datoN3'>50</h1>
+          <h1 id='datoN3'>56</h1>
           <div class='info'>
             <div class='barra'></div>
             <p class='textAnalisis'> misoginia, antifeminismo <br /> y antiLGBTINBQ+</p>
           </div>
         </div>
         <div id='datos4'>
-          <h1 id='datoN4'>22</h1>
+          <h1 id='datoN4'>27</h1>
           <div class='info'>
             <div class='barra'></div>
             <p class='textAnalisis'>nazismo, antisemitismo <br /> y supremacismo</p>
           </div>
         </div>
         <div id='datos5'>
-          <h1 id='datoN5'>16</h1>
+          <h1 id='datoN5'>18</h1>
           <div class='info'>
             <div class='barra'></div>
             <p class='textAnalisis'>racismo y xenofobia</p>
