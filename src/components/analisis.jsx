@@ -22,7 +22,7 @@ export default function analisis() {
           <h1 id='tituloAnalisis'>RELEVAMIENTO
             2020 - 2023
           </h1>
-          <h4 id='analisisCasos'> 190 CASOS</h4>
+          <h4 id='analisisCasos'> 201 CASOS</h4>
           <h4 id='analisisCasosBajada'>organizados por sus narrativas de odio
 
           </h4>
@@ -37,7 +37,7 @@ export default function analisis() {
       <div id='analisisDatos'>
 
         <div id='datos1'>
-          <h1 id='datoN1'>98</h1>
+          <h1 id='datoN1'>100</h1>
           <div class='info'>
             <div class='barra'></div>
             <p class='textAnalisis'>contra identidades políticas </p>
