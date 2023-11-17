@@ -37,35 +37,35 @@ export default function analisis() {
       <div id='analisisDatos'>
 
         <div id='datos1'>
-          <h1 id='datoN1'>100</h1>
+          <h1 id='datoN1'>118</h1>
           <div class='info'>
             <div class='barra'></div>
             <p class='textAnalisis'>contra identidades políticas </p>
           </div>
         </div>
         <div id='datos2'>
-          <h1 id='datoN2'>69</h1>
+          <h1 id='datoN2'>74</h1>
           <div class='info'>
             <div class='barra'></div>
             <p class='textAnalisis'>negacionismo <br /> y apología a la dictadura </p>
           </div>
         </div>
         <div id='datos3'>
-          <h1 id='datoN3'>56</h1>
+          <h1 id='datoN3'>64</h1>
           <div class='info'>
             <div class='barra'></div>
             <p class='textAnalisis'> misoginia, antifeminismo <br /> y antiLGBTINBQ+</p>
           </div>
         </div>
         <div id='datos4'>
-          <h1 id='datoN4'>27</h1>
+          <h1 id='datoN4'>32</h1>
           <div class='info'>
             <div class='barra'></div>
             <p class='textAnalisis'>nazismo, antisemitismo <br /> y supremacismo</p>
           </div>
         </div>
         <div id='datos5'>
-          <h1 id='datoN5'>18</h1>
+          <h1 id='datoN5'>19</h1>
           <div class='info'>
             <div class='barra'></div>
             <p class='textAnalisis'>racismo y xenofobia</p>
