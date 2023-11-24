@@ -1,9 +1,14 @@
 import constants from "../constants/constants";
 
 export const fetchGoogleSheets = async () => {
-  const response = await fetch(constants.sheetUrl);
-  const data = await response.json();
-  const values = data.values.slice(1);
+    const response = await fetch(constants.sheetUrl);
+    const data = await response.json();
+    if (! data || ! data.values) {
+        console.error("couldn't fetch data", data)
+        return [];
+    }
+    const values = data.values.slice(1);
+
 
   let parsedValues = [];
   for (let c of values) {
