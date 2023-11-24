@@ -183,7 +183,7 @@ function App() {
       const yearsDiff = now.getFullYear() - from.getFullYear();
       const monthDiff = now.getMonth() - from.getMonth();
 
-      const totalMonths = yearsDiff * 12 + monthDiff;
+      const totalMonths = yearsDiff * 12 + monthDiff + 1;
       setMonths(totalMonths);
       setValue([0, totalMonths]);
     }
