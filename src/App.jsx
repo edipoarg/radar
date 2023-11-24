@@ -119,10 +119,7 @@ function App() {
     to.setDate(to.getMonth() - months + value[1] + 1);
 
     if (sheetsData) {
-      const checkDate = (e) => {
-        const eventDate = newDate(e.date);
-        return eventDate >= from && eventDate <= to;
-      };
+      const checkDate = (e) => e.date >= from && e.date <= to;
       const newData = sheetsData.filter(checkDate);
       setFilteredDataByTime(newData);
 
