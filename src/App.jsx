@@ -106,7 +106,7 @@ function App() {
     fetchGoogleSheets()
       .then(setSheetsData)
   }, [])
-  useEffect(() => {setFilteredData(sheetsData)}, [sheetsData])
+  useEffect(() => setFilteredData(sheetsData), [sheetsData])
 
   useEffect(() => {
     const diff = months - value;
