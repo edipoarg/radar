@@ -197,20 +197,19 @@ function App() {
   };
 
   return (
-    <div>
-      <div className="App">
+    <div className="App">
 
-        {filtrosVisible && (
-          <Filtros
-            caseCount={filteredData.length}
-            handleTipoFilter={handleTipoFilter}
-            tipoFilters={tipoFilters}
-            setTipoFilters={setTipoFilters}
-          >
-          </Filtros>
-        )}
-        <div id='mapGap'></div>
-        <div id='botonFiltrosMain'>
+      {filtrosVisible && (
+        <Filtros
+          caseCount={filteredData.length}
+          handleTipoFilter={handleTipoFilter}
+          tipoFilters={tipoFilters}
+          setTipoFilters={setTipoFilters}
+        >
+        </Filtros>
+      )}
+      <div id='mapGap'></div>
+      <div id='botonFiltrosMain'>
         {/* Render different button content based on the state */}
         <button
           aria-label="Hide"
