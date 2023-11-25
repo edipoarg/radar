@@ -64,11 +64,6 @@ const style = {
   },
 };
 
-const newDate = (d) => {
-  const [day, month, year] = d.split('/');
-  return new Date(year, month, day);
-}
-
 function App() {
   const {urls} = useLoaderData();
   const {provincias, departamentos, departamentosBsAs, rutas} = urls;
@@ -93,7 +88,8 @@ function App() {
   const [sheetsData, setSheetsData] = useState([]);
   const [filteredData, setFilteredData] = useState(sheetsData);
   const [months, setMonths] = useState(0);
-  const [value, setValue] = useState([0, 30]);
+  const [minDate, setMinDate] = useState(new Date());
+  const [monthRange, setMonthRange] = useState([0, 0]);
   const [filteredDataByTime, setFilteredDataByTime] = useState([]);
   const valueLabelFormat = (value) => {
     const diff = months - value;
@@ -104,33 +100,37 @@ function App() {
 
   useEffect(() => {
     fetchGoogleSheets()
-      .then(setSheetsData)
+      .then(({cases, min, max}) => {
+        setSheetsData(cases);
+        const yearsDiff = max.getFullYear() - min.getFullYear();
+        const monthDiff = max.getMonth() - min.getMonth();
+
+        const totalMonths = yearsDiff * 12 + monthDiff + 1;
+        setMinDate(min);
+        setMonths(totalMonths);
+        setMonthRange([0, totalMonths]);
+      })
   }, [])
   useEffect(() => setFilteredData(sheetsData), [sheetsData])
 
   useEffect(() => {
-    const diff = months - value;
+    const from = new Date(minDate)
+    from.setMonth(from.getMonth() + monthRange[0])
 
-    const from = new Date()
-    from.setDate(0)
-    from.setMonth(from.getMonth() - months + value[0] + 1);
-    const to = new Date()
-    to.setDate(0)
-    to.setDate(to.getMonth() - months + value[1] + 1);
+    const to = new Date(minDate)
+    to.setMonth(to.getMonth() + monthRange[1])
 
     if (sheetsData) {
       const checkDate = (e) => e.date >= from && e.date <= to;
       const newData = sheetsData.filter(checkDate);
       setFilteredDataByTime(newData);
-
-
       // Aplicar también los filtros de tipo a los datos filtrados por tiempo
       const filteredDataByType = newData.filter(event => tipoFilters[event.tipoId]);
       setFilteredData(filteredDataByType);
 
     }
   },
-  [value, months, sheetsData, tipoFilters]);
+            [monthRange, minDate, sheetsData, tipoFilters]);
 
   // Función para cambiar la visibilidad de "Filtros"
   const toggleFiltrosVisibility = () => {
@@ -138,7 +138,7 @@ function App() {
   };
 
   const handleChange = (event) => {
-    setValue(event.target.value);
+    setMonthRange(event.target.value);
   };
 
 
@@ -162,30 +162,6 @@ function App() {
     },
     mapStyle: mystyle,
   };
-
-  
-
-  useEffect(() => {
-    if (sheetsData) {
-      const now = new Date();
-      let from = new Date();
-      sheetsData.forEach((e) => {
-        const date = newDate(e.date)
-
-        if (date <= from) {
-          from = date;
-        }
-      });
-
-      const yearsDiff = now.getFullYear() - from.getFullYear();
-      const monthDiff = now.getMonth() - from.getMonth();
-
-      const totalMonths = yearsDiff * 12 + monthDiff + 1;
-      setMonths(totalMonths);
-      setValue([0, totalMonths]);
-    }
-  }, [sheetsData]);
-
 
   // Step 1: Create a state variable for the close button
   const [isCloseButtonClicked, setIsCloseButtonClicked] = useState(false);
@@ -213,7 +189,8 @@ function App() {
       <div id='mapGap'></div>
       <div id='botonFiltrosMain'>
         {/* Render different button content based on the state */}
-        <button
+        <CloseButton
+          id="closeButton"
           aria-label="Hide"
           onClick={() => { handleClickCloseButton(); toggleFiltrosVisibility(); }}
           className={isCloseButtonClicked ? "transformed-button" : "simple-button"}
@@ -221,17 +198,13 @@ function App() {
           {isCloseButtonClicked ? (
             // Content when the button is clicked
             // You can use any JSX or HTML here
-              <div><h5 id= 'botonFiltrosMap'>FILTROS</h5></div>
+            <div><h5 id= 'botonFiltrosMap'>FILTROS</h5></div>
           ) : (
             // Content when the button is not clicked
             // You can use any JSX or HTML here
-            <div><CloseButton
-                   id="closeButton"
-                   aria-label="Hide"
-                   onClick={toggleFiltrosVisibility}
-                 /></div>
+            <div>X</div>
           )}
-        </button>
+        </CloseButton>
         <div id='mapGap'></div>
 
         <MapGL
@@ -266,7 +239,7 @@ function App() {
           <Slider
             max={months}
             valueLabelDisplay="auto"
-            value={value}
+            value={monthRange}
             step={1}
             getAriaValueText={valueLabelFormat}
             valueLabelFormat={valueLabelFormat}
@@ -274,21 +247,21 @@ function App() {
             aria-labelledby="non-linear-slider"
           />
           <div id='referenciasFechas'>
-              <div> <h6 id='fechaInicio'>2/2020</h6>  </div>
-              <div>  </div>
-              <div> <h6 id='fechaCierre'>9/2023</h6>  </div>
+            <div> <h6 id='fechaInicio'>2/2020</h6>  </div>
+            <div>  </div>
+            <div> <h6 id='fechaCierre'>9/2023</h6>  </div>
           </div>
         </div>
         <ScrollLink id='toMain2Container'
-              to="Main2" // ID del elemento de destino (Main2)
-              spy={true} // Activa el modo espía
-              smooth={true} // Activa el desplazamiento suave
-              duration={500} // Duración de la animación (en milisegundos)
-              offset={-70} // Ajusta un offset opcional (si tienes un encabezado fijo)
-            >
-              <div id="toMain2">
-               <h4 id='plusBoton'>+</h4>
-              </div>
+                    to="Main2" // ID del elemento de destino (Main2)
+                    spy={true} // Activa el modo espía
+                    smooth={true} // Activa el desplazamiento suave
+                    duration={500} // Duración de la animación (en milisegundos)
+                    offset={-70} // Ajusta un offset opcional (si tienes un encabezado fijo)
+        >
+          <div id="toMain2">
+            <h4 id='plusBoton'>+</h4>
+          </div>
         </ScrollLink>
 
         {popupInfo && <Popup {...popupInfo} />}
