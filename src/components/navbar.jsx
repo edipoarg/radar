@@ -34,8 +34,8 @@ export default function NavbarBootstrap() {
             <Nav className="me-auto">
               <div id="menuPC">
 
-                <Nav.Link to="./notas" as={Link} className="d-none d-lg-block"> <h6 class='BotonesNavPc'>INVESTIGACIONES</h6> </Nav.Link>
-                <Nav.Link to="./conecta" as={Link} className="d-none d-lg-block"><h6 class='BotonesNavPc'>NOSOTRXS</h6></Nav.Link>
+                <Nav.Link to="./notas" as={Link} className="d-none d-lg-block"> <h6 className='BotonesNavPc'>INVESTIGACIONES</h6> </Nav.Link>
+                <Nav.Link to="./conecta" as={Link} className="d-none d-lg-block"><h6 className='BotonesNavPc'>NOSOTRXS</h6></Nav.Link>
               </div>
               <Nav.Link id='reportaBotonContainerNav' href="https://docs.google.com/forms/d/e/1FAIpQLSe5pKXuvkvSUiwI_YEq5OZrfXCmpcsDuz_6co_iS2Qags80_A/viewform" target="_blank" rel="noopener noreferrer">
                 <motion.div whileHover={{
