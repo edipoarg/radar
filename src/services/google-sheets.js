@@ -34,6 +34,16 @@ export const fetchGoogleSheets = async () => {
         }
         cases.push(event);
 
+        if (!event.tipo) {
+            console.error("case missing tipo", event)
+        }
+        if (!event.tipoId) {
+            console.error("case missing tipoId", event)
+        }
+        if (!event.date) {
+            console.error("case missing date", event, c[2])
+        }
+
 
     return cases;
 };
