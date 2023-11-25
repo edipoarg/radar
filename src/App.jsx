@@ -121,17 +121,13 @@ function App() {
     const to = new Date(minDate)
     to.setMonth(to.getMonth() + monthRange[1])
 
-    if (sheetsData) {
-      const checkDate = (e) => e.date >= from && e.date <= to;
-      const newData = sheetsData.filter(checkDate);
-      setFilteredDataByTime(newData);
-      // Aplicar también los filtros de tipo a los datos filtrados por tiempo
-      const filteredDataByType = newData.filter(event => tipoFilters[event.tipoId]);
-      setFilteredData(filteredDataByType);
-
-    }
-  },
-            [monthRange, minDate, sheetsData, tipoFilters]);
+    const checkDate = (e) => e.date >= from && e.date <= to;
+    const newData = sheetsData.filter(checkDate);
+    setFilteredDataByTime(newData);
+    // Aplicar también los filtros de tipo a los datos filtrados por tiempo
+    const filteredDataByType = newData.filter(event => tipoFilters[event.tipoId]);
+    setFilteredData(filteredDataByType);
+  }, [monthRange, minDate, sheetsData, tipoFilters]);
 
   // Función para cambiar la visibilidad de "Filtros"
   const toggleFiltrosVisibility = () => {
