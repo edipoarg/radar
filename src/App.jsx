@@ -12,7 +12,6 @@ import { motion } from 'framer-motion';
 import CloseButton from 'react-bootstrap/CloseButton';
 import Footer from "./components/footer.jsx"
 
-import {fetchGoogleSheets} from './services/google-sheets'
 import { ProvSource, DepsSource, BsAsSource, RutasSource} from "./components/Sources.jsx";
 import { Markers } from "./components/Markers.jsx";
 import Main2 from "./components/Main2.jsx";
@@ -99,18 +98,20 @@ function App() {
   };
 
   useEffect(() => {
-    fetchGoogleSheets()
-      .then(({cases, min, max}) => {
-        setSheetsData(cases);
-        const yearsDiff = max.getFullYear() - min.getFullYear();
-        const monthDiff = max.getMonth() - min.getMonth();
+    const cases = urls.casos.cases.map(c => ({...c, date: new Date(c.date)}));
+    const max = new Date(urls.casos.max)
+    const min = new Date(urls.casos.min)
 
-        const totalMonths = yearsDiff * 12 + monthDiff + 1;
-        setMinDate(min);
-        setMonths(totalMonths);
-        setMonthRange([0, totalMonths]);
-      })
+    setSheetsData(cases);
+    const yearsDiff = max.getFullYear() - min.getFullYear();
+    const monthDiff = max.getMonth() - min.getMonth();
+
+    const totalMonths = yearsDiff * 12 + monthDiff + 1;
+    setMinDate(min);
+    setMonths(totalMonths);
+    setMonthRange([0, totalMonths]);
   }, [])
+
   useEffect(() => setFilteredData(sheetsData), [sheetsData])
 
   useEffect(() => {

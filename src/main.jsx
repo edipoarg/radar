@@ -24,6 +24,7 @@ const loader = async () => ({
     departamentosBsAs: "data/mapsData/departamentos-buenos_aires.json",
     provincias: "data/mapsData/provincias.json",
     rutas: "data/mapsData/rutas.json",
+    casos: "data/casos.json"
   }),
 })
 

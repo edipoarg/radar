@@ -1,9 +1,12 @@
-import constants from "../constants/constants";
+import constants from "./constants.js";
 
 const newDate = (d) => {
     const [day, month, year] = d.split('/');
     return new Date(year, month, day);
 }
+
+const chomp = s => s.replace(/^ +/, '')
+      .replace(/ +$/, '')
 
 export const fetchGoogleSheets = async () => {
     const response = await fetch(constants.sheetUrl);
@@ -44,7 +47,7 @@ export const fetchGoogleSheets = async () => {
             },
             provincia: c[5],
             tipoId: c[6],
-            tipo: c[7]
+            tipo: c[7].split(/; +/).map(chomp)
         }
         cases.push(event);
 
@@ -62,9 +65,19 @@ export const fetchGoogleSheets = async () => {
             console.error("case missing date", event, c[2])
         }
 
-        byType[c[6]] = [...(byType[c[6]] || []), i]
-        byTypeName[c[7]] = [...(byType[c[7]] || []), i]
+        byType[event.tipoId] = [...(byType[event.tipoId] || []), i]
+        for (let t of event.tipo) {
+            t = t.replace('murales o lugares', 'murales y lugares')
+                .replace('amrnazas', 'amenazas')
+                .replace('violencia física y atentados contra la vida',
+                         'atentados contra la integridad física y la vida')
+                 byTypeName[t] = [...(byTypeName[t] || []), i]
+        }
+
     }
 
     return {cases, byType, byTypeName, min, max};
 };
+
+fetchGoogleSheets()
+    .then(data => console.log(JSON.stringify(data, null, 4)))
