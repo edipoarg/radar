@@ -79,13 +79,15 @@ function App() {
 
   });
   // Estado para controlar la visibilidad de "Filtros"
-  const [filtrosVisible, setFiltrosVisible] = useState(true);
+  const [casesData, setCasesData] = useState([]);
+
+const [filtrosVisible, setFiltrosVisible] = useState(true);
 
   const [hoveredFeatureId, setHoveredFeatureId] = useState(null);
   const [hoveredMarkerId, setHoveredMarkerId] = useState(null);
   const [popupInfo, setPopupInfo] = useState(null);
-  const [sheetsData, setSheetsData] = useState([]);
-  const [filteredData, setFilteredData] = useState(sheetsData);
+
+  const [filteredData, setFilteredData] = useState(casesData);
   const [months, setMonths] = useState(0);
   const [minDate, setMinDate] = useState(new Date());
   const [monthRange, setMonthRange] = useState([0, 0]);
@@ -102,7 +104,7 @@ function App() {
     const max = new Date(urls.casos.max)
     const min = new Date(urls.casos.min)
 
-    setSheetsData(cases);
+    setCasesData(cases);
     const yearsDiff = max.getFullYear() - min.getFullYear();
     const monthDiff = max.getMonth() - min.getMonth();
 
@@ -112,7 +114,7 @@ function App() {
     setMonthRange([0, totalMonths]);
   }, [])
 
-  useEffect(() => setFilteredData(sheetsData), [sheetsData])
+  useEffect(() => setFilteredData(casesData), [casesData])
 
   useEffect(() => {
     const from = new Date(minDate)
@@ -122,12 +124,12 @@ function App() {
     to.setMonth(to.getMonth() + monthRange[1])
 
     const checkDate = (e) => e.date >= from && e.date <= to;
-    const newData = sheetsData.filter(checkDate);
+    const newData = casesData.filter(checkDate);
     setFilteredDataByTime(newData);
     // Aplicar también los filtros de tipo a los datos filtrados por tiempo
     const filteredDataByType = newData.filter(event => tipoFilters[event.tipoId]);
     setFilteredData(filteredDataByType);
-  }, [monthRange, minDate, sheetsData, tipoFilters]);
+  }, [monthRange, minDate, casesData, tipoFilters]);
 
   // Función para cambiar la visibilidad de "Filtros"
   const toggleFiltrosVisibility = () => {
@@ -218,7 +220,7 @@ function App() {
           <BsAsSource data={departamentosBsAs} style={style.country} />
           <RutasSource data={rutas} style={style.rutas}/>
 
-          {sheetsData && (
+          {casesData && (
             <Markers
               data={filteredData}
               setPopupInfo={setPopupInfo}
