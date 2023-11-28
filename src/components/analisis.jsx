@@ -3,12 +3,8 @@ import './analisis.css'
 import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 
 
-export default function analisis() {
-
-
+export default function Analisis({min, max, total, byTypeName}) {
   return (
-
-
     <div id="analisis">
 
       <div id='fondoAnalisisImg'> <img src="radarPuntos.png" alt="" /></div>
@@ -20,9 +16,9 @@ export default function analisis() {
           <h4 id='tituloAnalisisRadar'>REGISTRO DE ATAQUES <br /> DE DERECHAS ARGENTINAS RADICALIZADAS
           </h4>
           <h1 id='tituloAnalisis'>RELEVAMIENTO
-            2020 - 2023
+            {min.getFullYear()} - {max.getFullYear()}
           </h1>
-          <h4 id='analisisCasos'> 201 CASOS</h4>
+          <h4 id='analisisCasos'> {total} CASOS</h4>
           <h4 id='analisisCasosBajada'>organizados por sus narrativas de odio
 
           </h4>
@@ -35,14 +31,16 @@ export default function analisis() {
       </div>
 
       <div id='analisisDatos'>
-
+{Object.keys(byTypeName).map(t => (
         <div id='datos1'>
-          <h1 id='datoN1'>118</h1>
+          <h1 id='datoN1'>{byTypeName[t].length}</h1>
           <div className='info'>
             <div className='barra'></div>
-            <p className='textAnalisis'>contra identidades políticas </p>
+            <p className='textAnalisis'>{t}</p>
           </div>
         </div>
+))}
+
         <div id='datos2'>
           <h1 id='datoN2'>74</h1>
           <div className='info'>

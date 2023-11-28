@@ -102,15 +102,17 @@ const [filtrosVisible, setFiltrosVisible] = useState(true);
   };
 
   useEffect(() => {
+    const {byType, byTypeName} = urls.casos;
     const cases = urls.casos.cases.map(c => ({...c, date: new Date(c.date)}));
     const max = new Date(urls.casos.max)
     const min = new Date(urls.casos.min)
-
-    setCasesData(cases);
     const yearsDiff = max.getFullYear() - min.getFullYear();
     const monthDiff = max.getMonth() - min.getMonth();
 
     const totalMonths = yearsDiff * 12 + monthDiff + 1;
+
+    setCasesData(cases);
+    setAnalisisData({byType, byTypeName, min, max, total: cases.length})
     setMinDate(min);
     setMonths(totalMonths);
     setMonthRange([0, totalMonths]);
@@ -268,7 +270,7 @@ const [filtrosVisible, setFiltrosVisible] = useState(true);
         {popupInfo && <Popup {...popupInfo} />}
 
         <Main2 />
-        <Analisis />
+        <Analisis {...analisisData}/>
         <Footer />
       </div>
     </div>
