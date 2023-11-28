@@ -22,6 +22,7 @@ import Analisis from './components/analisis.jsx'
 import mystyle from "./mystyle.json";
 
 //estilos/////////////////////
+const now = new Date()
 
 const style = {
   country: {
@@ -80,6 +81,7 @@ function App() {
   });
   // Estado para controlar la visibilidad de "Filtros"
   const [casesData, setCasesData] = useState([]);
+    const [analisisData, setAnalisisData] = useState({min: now, max: now});
 
 const [filtrosVisible, setFiltrosVisible] = useState(true);
 
@@ -89,7 +91,7 @@ const [filtrosVisible, setFiltrosVisible] = useState(true);
 
   const [filteredData, setFilteredData] = useState(casesData);
   const [months, setMonths] = useState(0);
-  const [minDate, setMinDate] = useState(new Date());
+  const [minDate, setMinDate] = useState(now);
   const [monthRange, setMonthRange] = useState([0, 0]);
   const [filteredDataByTime, setFilteredDataByTime] = useState([]);
   const valueLabelFormat = (value) => {
