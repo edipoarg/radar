@@ -257,9 +257,17 @@ const [filtrosVisible, setFiltrosVisible] = useState(true);
             aria-labelledby="non-linear-slider"
           />
           <div id='referenciasFechas'>
-            <div> <h6 id='fechaInicio'>2/2020</h6>  </div>
+            <div>
+              <h6 id='fechaInicio'>
+                {dates.min.getMonth()}/{dates.min.getFullYear()}
+              </h6>
+            </div>
             <div>  </div>
-            <div> <h6 id='fechaCierre'>9/2023</h6>  </div>
+            <div>
+              <h6 id='fechaCierre'>
+                {dates.max.getMonth()}/{dates.max.getFullYear()}
+              </h6>
+            </div>
           </div>
         </div>
         <ScrollLink id='toMain2Container'
