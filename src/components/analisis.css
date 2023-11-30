@@ -124,7 +124,14 @@ width: 100vw;
     justify-self: center;
     margin: 2vh 0vw;
     text-align: left;
-    
+}
+
+#datos1 {
+    border-color: rgb(252, 252, 114);
+}
+
+#datos2 {
+    border-color: rgb(255, 166, 0);
 }
 
 .textAnalisis{

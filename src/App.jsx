@@ -64,6 +64,8 @@ const style = {
   },
 };
 
+const emptyFilters = {byId: {}, byName: {}};
+
 function App() {
   const {urls} = useLoaderData();
   const {provincias, departamentos, departamentosBsAs, rutas} = urls;
@@ -81,7 +83,12 @@ function App() {
   });
   // Estado para controlar la visibilidad de "Filtros"
   const [casesData, setCasesData] = useState([]);
-    const [analisisData, setAnalisisData] = useState({min: now, max: now});
+  const [analisisData, setAnalisisData] = useState({
+    min: now,
+    max: now,
+    tipos: emptyFilters,
+    componentes: emptyFilters
+  });
 
 const [filtrosVisible, setFiltrosVisible] = useState(true);
 
@@ -91,7 +98,7 @@ const [filtrosVisible, setFiltrosVisible] = useState(true);
 
   const [filteredData, setFilteredData] = useState(casesData);
   const [months, setMonths] = useState(0);
-  const [minDate, setMinDate] = useState(now);
+  const [dates, setDates] = useState({min: now, max: now});
   const [monthRange, setMonthRange] = useState([0, 0]);
   const [filteredDataByTime, setFilteredDataByTime] = useState([]);
   const valueLabelFormat = (value) => {
@@ -102,7 +109,7 @@ const [filtrosVisible, setFiltrosVisible] = useState(true);
   };
 
   useEffect(() => {
-    const {byType, byTypeName} = urls.casos;
+    const {tipos, componentes} = urls.casos;
     const cases = urls.casos.cases.map(c => ({...c, date: new Date(c.date)}));
     const max = new Date(urls.casos.max)
     const min = new Date(urls.casos.min)
@@ -112,8 +119,8 @@ const [filtrosVisible, setFiltrosVisible] = useState(true);
     const totalMonths = yearsDiff * 12 + monthDiff + 1;
 
     setCasesData(cases);
-    setAnalisisData({byType, byTypeName, min, max, total: cases.length})
-    setMinDate(min);
+    setAnalisisData({tipos, componentes, min, max, total: cases.length})
+    setDates({min, max});
     setMonths(totalMonths);
     setMonthRange([0, totalMonths]);
   }, [])
@@ -121,10 +128,10 @@ const [filtrosVisible, setFiltrosVisible] = useState(true);
   useEffect(() => setFilteredData(casesData), [casesData])
 
   useEffect(() => {
-    const from = new Date(minDate)
+    const from = new Date(dates.min)
     from.setMonth(from.getMonth() + monthRange[0])
 
-    const to = new Date(minDate)
+    const to = new Date(dates.min)
     to.setMonth(to.getMonth() + monthRange[1])
 
     const checkDate = (e) => e.date >= from && e.date <= to;
@@ -133,7 +140,7 @@ const [filtrosVisible, setFiltrosVisible] = useState(true);
     // Aplicar también los filtros de tipo a los datos filtrados por tiempo
     const filteredDataByType = newData.filter(event => tipoFilters[event.tipoId]);
     setFilteredData(filteredDataByType);
-  }, [monthRange, minDate, casesData, tipoFilters]);
+  }, [monthRange, dates, casesData, tipoFilters]);
 
   // Función para cambiar la visibilidad de "Filtros"
   const toggleFiltrosVisibility = () => {
