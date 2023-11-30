@@ -71,10 +71,11 @@ export const fetchTSV = async (url = constants.tsvUrl) => {
             }
             return r;
         }
-        hash(tipos, event.tipoId, event.tipo, t => t.replace('murales o lugares', 'murales y lugares')
-                                                    .replace('amrnazas', 'amenazas')
-                                                    .replace('violencia física y atentados contra la vida',
-                                                             'atentados contra la integridad física y la vida'))
+        hash(tipos, event.tipoId, event.tipo,
+             t => t.replace('murales o lugares', 'murales y lugares')
+                   .replace('amrnazas', 'amenazas')
+                   .replace('violencia física y atentados contra la vida',
+                            'atentados contra la integridad física y la vida'))
         hash(componentes, event.componenteId, event.componente)
     }
     return {cases, tipos, componentes, min, max}
