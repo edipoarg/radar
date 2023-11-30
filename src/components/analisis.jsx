@@ -3,7 +3,7 @@ import './analisis.css'
 import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 
 
-export default function Analisis({min, max, total, byTypeName}) {
+export default function Analisis({min, max, total, tipos, componentes}) {
   return (
     <div id="analisis">
 
@@ -30,50 +30,23 @@ export default function Analisis({min, max, total, byTypeName}) {
 
       </div>
 
-      <div id='analisisDatos'>
-{Object.keys(byTypeName).map(t => (
-        <div id='datos1'>
-          <h1 id='datoN1'>{byTypeName[t].length}</h1>
-          <div className='info'>
-            <div className='barra'></div>
-            <p className='textAnalisis'>{t}</p>
-          </div>
+    <div id='analisisDatos'>
+    {Object.keys(tipos.byName).map((t, i) => (
+      <div id='datos1'>
+        <h1 id='datoN1'>{tipos.byName[t].length}</h1>
+        <div className='info'>
+          <div className='barra'></div>
+          <p className='textAnalisis'>{t}</p>
         </div>
-))}
-
-        <div id='datos2'>
-          <h1 id='datoN2'>74</h1>
-          <div className='info'>
-            <div className='barra'></div>
-            <p className='textAnalisis'>negacionismo <br /> y apología a la dictadura </p>
-          </div>
+      </div>
+    ))}
+    {Object.keys(componentes.byName).map(t => (
+      <div id='datos2'>
+        <h1 id='datoN2'>{componentes.byName[t].length}</h1>
+        <div className='info'>
+          <div className='barra'></div>
+          <p className='textAnalisis'>{t}</p>
         </div>
-        <div id='datos3'>
-          <h1 id='datoN3'>64</h1>
-          <div className='info'>
-            <div className='barra'></div>
-            <p className='textAnalisis'> misoginia, antifeminismo <br /> y antiLGBTINBQ+</p>
-          </div>
-        </div>
-        <div id='datos4'>
-          <h1 id='datoN4'>32</h1>
-          <div className='info'>
-            <div className='barra'></div>
-            <p className='textAnalisis'>nazismo, antisemitismo <br /> y supremacismo</p>
-          </div>
-        </div>
-        <div id='datos5'>
-          <h1 id='datoN5'>19</h1>
-          <div className='info'>
-            <div className='barra'></div>
-            <p className='textAnalisis'>racismo y xenofobia</p>
-          </div>
-
-        </div>
-
-
-
-
       </div>
 
 

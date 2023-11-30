@@ -6,78 +6,79 @@ const newDate = (d) => {
 }
 
 const chomp = s => s.replace(/^ +/, '')
-      .replace(/ +$/, '')
+                    .replace(/ +$/, '')
 
-export const fetchGoogleSheets = async () => {
-    const response = await fetch(constants.sheetUrl);
-    const data = await response.json();
-    if (! data || ! data.values) {
-        console.error("couldn't fetch data", data)
-        return [];
-    }
-    const values = data.values.slice(1);
+const mapChomp = s => s.replace(/; $/, '').split(/;/).map(chomp)
 
-    const byType = {}
-    const byTypeName = {}
-    const cases = [];
+export const fetchTSV = async (url = constants.tsvUrl) => {
+    const config = {};
+    const resp = await fetch(url);
+    const cases = []
+    const tipos = {byId: {}, byName: {}}
+    const componentes = {byId: {}, byName: {}}
 
     let min = new Date();
     let max = new Date();
     max.setDate(0);
-
     let i = 0;
-    for (let c of values) {
-        if (c.length < 8) {
-            console.error("discarding case:", c)
-            continue;
-        }
-        i++;
-        const [latitude, longitude] = c[4].split(",").map(parseFloat);
 
-        if (!latitude || ! longitude)
-            continue;
+
+    const [desc, ...rows] = (await resp.text()).split('\r\n').map(r => r.split('\t'));
+    for (let r of rows) {
+        i++;
+        const f = {}
+        for (let p in r) {
+            f[desc[p].replace('caso.', '')] = r[p]
+        }
+        const [latitude, longitude] = f.coordenadas.split(",").map(parseFloat);
         const event = {
-            id: parseInt(c[0]),
-            title: c[1],
-            date: newDate(c[2]),
-            source: c[3],
+            id: parseInt(f.id),
+            title: f.titulo,
+            date: newDate(f.fecha),
+            source: f.fuente,
             coords: {
                 latitude,
                 longitude,
             },
-            provincia: c[5],
-            tipoId: c[6],
-            tipo: c[7].split(/; +/).map(chomp)
+            provincia: f.provincia,
+            tipoId: mapChomp(f['tipo.id']),
+            tipo: mapChomp(f.tipo),
+            componenteId: mapChomp(f['componente.id']),
+            componente: mapChomp(f.componente)
         }
-        cases.push(event);
+        cases.push(event)
 
         /* update min, max and do sanity checks */
         if (min > event.date) min = event.date
         if (max < event.date) max = event.date
 
-        if (!event.tipo) {
-            console.error("case missing tipo", event)
-        }
-        if (!event.tipoId) {
-            console.error("case missing tipoId", event)
-        }
-        if (!event.date) {
-            console.error("case missing date", event, c[2])
-        }
+        ;['tipo','tipoId', 'componente', 'componenteId', 'date'].forEach(f => {
+            if (! event[f]) {
+                console.error(`case missing ${f}`, event)
+            }
+            if (event[f].includes && event[f].includes("")) {
+                console.error(`${i}: error in ${f}`, event[f], r)
+            }
+        })
+        const hash = (r, ids, names, m = t => t) => {
+            for (let id of ids) {
+                r.byId[id] = [...(r.byId[id] || []), i]
+            }
 
-        byType[event.tipoId] = [...(byType[event.tipoId] || []), i]
-        for (let t of event.tipo) {
-            t = t.replace('murales o lugares', 'murales y lugares')
-                .replace('amrnazas', 'amenazas')
-                .replace('violencia física y atentados contra la vida',
-                         'atentados contra la integridad física y la vida')
-                 byTypeName[t] = [...(byTypeName[t] || []), i]
+            for (let c of names) {
+                c = m(c)
+                r.byName[c] = [...(r.byName[c] || []), i]
+            }
+            return r;
         }
-
+        hash(tipos, event.tipoId, event.tipo, t => t.replace('murales o lugares', 'murales y lugares')
+                                                    .replace('amrnazas', 'amenazas')
+                                                    .replace('violencia física y atentados contra la vida',
+                                                             'atentados contra la integridad física y la vida'))
+        hash(componentes, event.componenteId, event.componente)
     }
+    return {cases, tipos, componentes, min, max}
+}
 
-    return {cases, byType, byTypeName, min, max};
-};
-
-fetchGoogleSheets()
-    .then(data => console.log(JSON.stringify(data, null, 4)))
+fetchTSV()
+    .then(v => console.log(JSON.stringify(v, null, 4)))
