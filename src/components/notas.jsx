@@ -11,6 +11,19 @@ export default function Notas() {
     <div id='notas'>
 
       <Carousel id='notasContainer'>
+
+      <Carousel.Item>
+          <div class='notasItemContainer'>
+            <h2 className='tituloNota'>Los dinosaurios no van a desaparecer
+            </h2>
+            <h4 className='bajadaNota'>Por el Equipo de Investigación Política (EdIPo)
+            </h4>
+            <h4 className='autorNota'>
+            </h4>
+            <button className="botonNotas" ><a href="https://informes.revistacrisis.com.ar/los-dinosaurios-no-van-a-desaparecer/" target="_blank" rel="noopener noreferrer">Ir</a></button>
+
+          </div>
+        </Carousel.Item >
         <Carousel.Item>
           <div className='notasItemContainer'>
             <h2 className='tituloNota'>Informe a un año del atentado a CFK
@@ -23,6 +36,7 @@ export default function Notas() {
 
           </div>
         </Carousel.Item >
+   
         <Carousel.Item>
           <div className='notasItemContainer'>
 
@@ -34,6 +48,7 @@ export default function Notas() {
           </div>
 
         </Carousel.Item>
+        
 
 
       </Carousel>
