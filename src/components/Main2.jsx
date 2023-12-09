@@ -2,6 +2,7 @@ import React from 'react';
 import './Main2.css'
 import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 import { Link } from 'react-router-dom';
+import { Carousel, CarouselItem } from 'react-bootstrap';
 
 
 export default function Main2() {
@@ -47,14 +48,21 @@ Presentamos un mapeo de ataques políticos protagonizados por derechas radicaliz
 
         <div id='franja2'>
 
-          <div id='notasMain'>
-
+          <Carousel id='notasMain'>
+              <Carousel.Item>
+            <h1 id='tituloNotasMain'>Los dinosaurios no van a desaparecer</h1>
+            <h4 className='autorNotaMain'>Por el Equipo de Investigación Política (EdIPo)
+            </h4>
+            <button id="botonNotasMain"><a href="https://informes.revistacrisis.com.ar/los-dinosaurios-no-van-a-desaparecer/" target="_blank">ver</a></button>
+            </Carousel.Item>
+            <Carousel.Item>
             <h1 id='tituloNotasMain'>Informe a un año del atentado a CFK</h1>
             <h4 className='autorNotaMain'>Por el Equipo de Investigación Política (EdIPo)
             </h4>
             <button id="botonNotasMain"><a href="https://informes.revistacrisis.com.ar/la-violencia-avanza-1s/" target="_blank">ver</a></button>
+            </Carousel.Item>
 
-          </div>
+          </Carousel>
 
 
           <div id='botoneraMain'>
