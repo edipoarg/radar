@@ -46,7 +46,9 @@ export default function reportaForm() {
         
         <div id='conecta2'>
 
-            <h6 id='textConecta2'>Llamamos derechas radicalizadas a aquellos sectores de la ultraderecha que apelan directa o indirectamente a la violencia como método de acción política. No se trata de un calificativo orientado al contenido de sus ideas, sino a las agresiones y ataques desplegados con intención de silenciar, amedrentar, disciplinar o aniquilar reivindicaciones de derechos individuales y/o colectivos, instaurar miedo e influir en la discusión pública.
+            <h6 id='textConecta2'>Dentro del amplio espectro que componen las derechas llamamos radicalizadas a los sectores que apelan directa o indirectamente a la violencia como método de intervención política. Entendemos por ataques de derecha radicalizada aquellas acciones que expresan un deseo de aniquilación del otro con el objeto de silenciar, amedrentar, disciplinar o eliminar identidades políticas como forma de influir en la discusión pública e inhibir su participación.
+
+Por el momento solo incluimos en la plataforma aquellos casos geolocalizables que den cuenta de un movimiento más allá del odio agitado en redes, caldo de cultivo necesario del pasaje a la acción. No se trata de desestimar el ecosistema violento que allana el terreno, sino de poner el foco en los actos concretos que hacen carne el discurso disponible.
             <br />
 <br />
  </h6>
