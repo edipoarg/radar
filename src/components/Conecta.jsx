@@ -9,7 +9,7 @@ export const Details = () => (
             RADAR (Registro de Ataques de Derechas Argentinas Radicalizadas)
         </span>
         es un proyecto periodístico colaborativo impulsado por el Equipo de Investigación Política (EdIPo) de la Revista Crisis con apoyo del Centro de Estudios Legales y Sociales (CELS) con el objetivo de fortalecer la democracia y la defensa de los derechos humanos.
-        Presentamos un mapeo colaborativo de hechos de violencia política protagonizados por derechas radicalizadas con el fin de contribuir al diagnóstico colectivo y la elaboración de estrategias de autocuidado.
+        Presentamos un mapeo colaborativo de ataques protagonizados por derechas radicalizadas con el fin de contribuir al diagnóstico colectivo y la elaboración de estrategias de autocuidado.
     </>
 )
 
