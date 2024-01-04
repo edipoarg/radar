@@ -50,7 +50,7 @@ export const Markers = ({ data, setPopupInfo, setMarker, selected, tipoFilters }
           })
         }
       >
-        <div className='circulo' className={markerStyle}/>
+        <div className={markerStyle}/>
 
       </Marker>
     );
