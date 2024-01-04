@@ -41,69 +41,6 @@
   position: relative;
 }
 
-.marker {
-  width: 9px;
-  height: 9px;
-  border-radius: 50%;
-  position: absolute;
-
-  align-items: center;
-  justify-content: center;
-  color: white;
-  font-weight: bold;
-
-  
-
-}
-
-#circulo1{
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  position: absolute;
-
-  align-items: center;
-  justify-content: center;
-  opacity: 0.5;
-  transform: translate(-20%, -20%);
-
-
-  
-
-}
-
-#circulo2{
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
-  position: absolute;
-
-  align-items: center;
-  justify-content: center;
-  opacity: 0.2;
-  transform: translate(-20%, -20%);
-
-
-}
-
-
-.marker.amarillo {
-  background-color: rgb(252, 252, 114);
-  /* Cambia el color según tus preferencias */
-
-}
-
-.marker.naranja {
-  background-color: rgb(255, 166, 0);
-  /* Cambia el color según tus preferencias */
-}
-
-.marker.rojo {
-  background-color: rgb(251, 55, 25);
-}
-
-
-
 /* Resto de los estilos */
 .transformed-button {
   position: absolute;
