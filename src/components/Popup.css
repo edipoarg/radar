@@ -1,0 +1,100 @@
+.popup {
+
+  position: absolute;
+  top: 68vh;
+  left: 2vw;
+  width: 96vw;
+  height: 15vh;
+
+  padding: 15px;
+  padding-left: 25px;
+  color: white;
+  background-color: #2b3bcd;
+  border: 1px solid white;
+  border-radius: 30px;
+  z-index: 1000;
+  overflow: hidden;
+  white-space: break-spaces;
+}
+
+.displayTitulo {
+  font-size: 0.8rem;
+  padding: 0vh 3vw;
+  color: white;
+}
+
+.displayFecha {
+  font-size: 0.8rem;
+  color: white;
+  padding-top: 2vh;
+}
+
+.displayTipo {
+  font-size: 0.7rem;
+  color: lightblue;
+}
+
+.displayLink {
+  color: white;
+  border: solid;
+  padding: 0.5vh 1.5vw;
+  border-color: white;
+  border-width: 1px;
+  border-radius: 25px;
+  width: 30vw;
+  height: 5vh;
+
+}
+
+@media (min-width: 768px) {
+  .popup {
+
+    position: absolute;
+    top: 60vh;
+    left: 1vw;
+    width: 28vw;
+    height: 36vh;
+
+    padding: 16px 8px;
+
+
+    white-space: break-spaces;
+  }
+
+
+
+  .masDatosPopup{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+
+  .displayTitulo {
+    font-size: 1rem;
+  }
+
+  .displayLink {
+    width: 10vw;
+    justify-self: center;
+  }
+}
+
+@media (min-width: 1200px) {
+    .displayLink {
+    width: 8vw;
+  }
+    .popup {
+
+        position: absolute;
+        top: 63vh;
+        left: 1vw;
+        width: 18vw;
+        height: 32vh;
+
+        padding: 16px 8px;
+
+
+        whitespace: breakspaces;
+      }
+
+}
