@@ -1,12 +1,13 @@
 import { Marker } from "react-map-gl/maplibre";
 import React, { useState, useEffect } from "react";
 
+import "./Markers.css"
+
 const tipoIdStyles = {
   t1: "amarillo",
   t2: "naranja",
   t3: "rojo",
 };
-
 
 export const Markers = ({ data, setPopupInfo, setMarker, selected, tipoFilters }) => {
   const [filteredAndSortedData, setFilteredAndSortedData] = useState([]);
