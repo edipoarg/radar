@@ -19,8 +19,8 @@
 }
 
 #botonFiltrosMain{
- position: absolute;
- top: 15vh
+  position: absolute;
+  top: 15vh
 
 }
 
@@ -180,14 +180,14 @@
 }
 
 #fechaInicio{
-color: #2b3bcd;
-text-align: left;
+  color: #2b3bcd;
+  text-align: left;
 }
 
 #fechaCierre{
   color: #2b3bcd;
   text-align: right;
-  }
+}
 
 #toMain2 {
   background-color: black;
@@ -222,7 +222,7 @@ text-align: left;
     left: 2vw;
     width: 96vw;
     height: 17vh;
-  
+
     padding: 15px;
     padding-left: 25px;
     color: white;
@@ -277,10 +277,7 @@ text-align: left;
 
   #plusBoton{
     padding-top: 2vh;
-    }
-
-
-
+  }
 }
 
 
@@ -325,7 +322,7 @@ text-align: left;
 
   #plusBoton{
     padding-top: 4vh;
-    }
+  }
 
 
 }
