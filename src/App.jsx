@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Slider } from "@mui/material";
 import { useLoaderData } from "react-router-dom";
-
 import MapGL, { NavigationControl } from "react-map-gl/maplibre";
 import maplibregl from "maplibre-gl";
 import "maplibre-gl/dist/maplibre-gl.css";
@@ -20,6 +18,7 @@ import Filtros from './components/filtros.jsx'; // Cambia la ruta a tu formulari
 import Analisis from './components/analisis.jsx'
 
 import mystyle from "./mystyle.json";
+import MonthsSlider from "./components/months-slider.jsx";
 
 //estilos/////////////////////
 const now = new Date()
@@ -102,13 +101,6 @@ function App() {
   const [monthRange, setMonthRange] = useState([0, 0]);
   const [filteredDataByTime, setFilteredDataByTime] = useState([]);
 
-  const valueLabelFormat = (value) => {
-    const diff = months - value;
-    const date = new Date()
-    date.setMonth(date.getMonth() - diff)
-    return `${date.getMonth() + 1}/${date.getFullYear()}`;
-  };
-
   useEffect(() => {
     const {tipos, componentes} = urls.casos;
     const cases = urls.casos.cases.map(c => ({...c, date: new Date(c.date)}));
@@ -147,11 +139,6 @@ function App() {
   const toggleFiltrosVisibility = () => {
     setFiltrosVisible(!filtrosVisible);
   };
-
-  const handleChange = (event) => {
-    setMonthRange(event.target.value);
-  };
-
 
   const handleHover = (event) => {
     setHoveredFeatureId(event.features?.[0]?.id || null);
@@ -246,32 +233,15 @@ function App() {
         <NavigationControl position="top-right" />
       </MapGL>
 
-      <div className="slider-container">
-        {/* Agrega un botón o elemento para cambiar la visibilidad de Filtros */}
-        <Slider
-          max={months}
-          valueLabelDisplay="auto"
-          value={monthRange}
-          step={1}
-          getAriaValueText={valueLabelFormat}
-          valueLabelFormat={valueLabelFormat}
-          onChange={handleChange}
-          aria-labelledby="non-linear-slider"
-        />
-        <div id='referenciasFechas'>
-          <div>
-            <h6 id='fechaInicio'>
-              {dates.min.getMonth()}/{dates.min.getFullYear()}
-            </h6>
-          </div>
-          <div>  </div>
-          <div>
-            <h6 id='fechaCierre'>
-              {dates.max.getMonth()}/{dates.max.getFullYear()}
-            </h6>
-          </div>
-        </div>
-      </div>
+      <MonthsSlider
+          className="slider-container"
+          monthRange={monthRange}
+          setMonthRange={setMonthRange}
+          totalMonths={months}
+          startDateLabel="2/2020"
+          endDateLabel="9/2023"
+        />  
+
       <ScrollLink id='toMain2Container'
                   to="Main2" // ID del elemento de destino (Main2)
                   spy={true} // Activa el modo espía
