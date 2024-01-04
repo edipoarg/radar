@@ -90,7 +90,7 @@ function App() {
     componentes: emptyFilters
   });
 
-const [filtrosVisible, setFiltrosVisible] = useState(true);
+  const [filtrosVisible, setFiltrosVisible] = useState(true);
 
   const [hoveredFeatureId, setHoveredFeatureId] = useState(null);
   const [hoveredMarkerId, setHoveredMarkerId] = useState(null);
@@ -215,79 +215,79 @@ const [filtrosVisible, setFiltrosVisible] = useState(true);
             <div>X</div>
           )}
         </CloseButton>
-</div>
-        <div id='mapGap'></div>
+      </div>
+      <div id='mapGap'></div>
 
-        <MapGL
-          id="mapa"
-          mapLib={maplibregl}
-          {...mapProps}
-          onHover={handleHover} // Asignar la función handleProvinciasHover al evento onHover
-          onLeave={handleLeave} // Asignar la función handleProvinciasLeave al evento onLeave
-        >
-          {/* Capa interactiva para provincias */}
+      <MapGL
+        id="mapa"
+        mapLib={maplibregl}
+        {...mapProps}
+        onHover={handleHover} // Asignar la función handleProvinciasHover al evento onHover
+        onLeave={handleLeave} // Asignar la función handleProvinciasLeave al evento onLeave
+      >
+        {/* Capa interactiva para provincias */}
 
-          <ProvSource data={provincias} style={style.provincias} />
-          <DepsSource data={departamentos} style={style.departamentos} />
-          <BsAsSource data={departamentosBsAs} style={style.country} />
-          <RutasSource data={rutas} style={style.rutas}/>
+        <ProvSource data={provincias} style={style.provincias} />
+        <DepsSource data={departamentos} style={style.departamentos} />
+        <BsAsSource data={departamentosBsAs} style={style.country} />
+        <RutasSource data={rutas} style={style.rutas}/>
 
-          {casesData && (
-            <Markers
-              data={filteredData}
-              setPopupInfo={setPopupInfo}
-              setMarker={setHoveredMarkerId}
-              selected={hoveredMarkerId}
-              tipoFilters={tipoFilters}
-              handleTipoFilter={handleTipoFilter}
-            />
-          )}
-          <NavigationControl position="top-right" />
-        </MapGL>
-
-        <div className="slider-container">
-          {/* Agrega un botón o elemento para cambiar la visibilidad de Filtros */}
-          <Slider
-            max={months}
-            valueLabelDisplay="auto"
-            value={monthRange}
-            step={1}
-            getAriaValueText={valueLabelFormat}
-            valueLabelFormat={valueLabelFormat}
-            onChange={handleChange}
-            aria-labelledby="non-linear-slider"
+        {casesData && (
+          <Markers
+            data={filteredData}
+            setPopupInfo={setPopupInfo}
+            setMarker={setHoveredMarkerId}
+            selected={hoveredMarkerId}
+            tipoFilters={tipoFilters}
+            handleTipoFilter={handleTipoFilter}
           />
-          <div id='referenciasFechas'>
-            <div>
-              <h6 id='fechaInicio'>
-                {dates.min.getMonth()}/{dates.min.getFullYear()}
-              </h6>
-            </div>
-            <div>  </div>
-            <div>
-              <h6 id='fechaCierre'>
-                {dates.max.getMonth()}/{dates.max.getFullYear()}
-              </h6>
-            </div>
+        )}
+        <NavigationControl position="top-right" />
+      </MapGL>
+
+      <div className="slider-container">
+        {/* Agrega un botón o elemento para cambiar la visibilidad de Filtros */}
+        <Slider
+          max={months}
+          valueLabelDisplay="auto"
+          value={monthRange}
+          step={1}
+          getAriaValueText={valueLabelFormat}
+          valueLabelFormat={valueLabelFormat}
+          onChange={handleChange}
+          aria-labelledby="non-linear-slider"
+        />
+        <div id='referenciasFechas'>
+          <div>
+            <h6 id='fechaInicio'>
+              {dates.min.getMonth()}/{dates.min.getFullYear()}
+            </h6>
+          </div>
+          <div>  </div>
+          <div>
+            <h6 id='fechaCierre'>
+              {dates.max.getMonth()}/{dates.max.getFullYear()}
+            </h6>
           </div>
         </div>
-        <ScrollLink id='toMain2Container'
-                    to="Main2" // ID del elemento de destino (Main2)
-                    spy={true} // Activa el modo espía
-                    smooth={true} // Activa el desplazamiento suave
-                    duration={500} // Duración de la animación (en milisegundos)
-                    offset={-70} // Ajusta un offset opcional (si tienes un encabezado fijo)
-        >
-          <div id="toMain2">
-            <h4 id='plusBoton'>+</h4>
-          </div>
-        </ScrollLink>
+      </div>
+      <ScrollLink id='toMain2Container'
+                  to="Main2" // ID del elemento de destino (Main2)
+                  spy={true} // Activa el modo espía
+                  smooth={true} // Activa el desplazamiento suave
+                  duration={500} // Duración de la animación (en milisegundos)
+                  offset={-70} // Ajusta un offset opcional (si tienes un encabezado fijo)
+      >
+        <div id="toMain2">
+          <h4 id='plusBoton'>+</h4>
+        </div>
+      </ScrollLink>
 
-        {popupInfo && <Popup {...popupInfo} />}
+      {popupInfo && <Popup {...popupInfo} />}
 
-        <Main2 />
-        <Analisis {...analisisData}/>
-        <Footer />
+      <Main2 />
+      <Analisis {...analisisData}/>
+      <Footer />
     </div>
   );
 }
