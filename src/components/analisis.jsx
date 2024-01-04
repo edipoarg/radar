@@ -24,7 +24,7 @@ export default function Analisis({min, max, total, tipos, componentes}) {
 
       <div id='analisisDatos'>
         {Object.keys(tipos.byName).map((t, i) => (
-          <div id='datos1'>
+          <div id='datos1' key={i}>
             <h1 id='datoN1'>{tipos.byName[t].length}</h1>
             <div className='info'>
               <div className='barra'></div>
@@ -32,8 +32,8 @@ export default function Analisis({min, max, total, tipos, componentes}) {
             </div>
           </div>
         ))}
-        {Object.keys(componentes.byName).map(t => (
-          <div id='datos2'>
+        {Object.keys(componentes.byName).map((t,i) => (
+          <div id='datos2' key={i}>
             <h1 id='datoN2'>{componentes.byName[t].length}</h1>
             <div className='info'>
               <div className='barra'></div>
