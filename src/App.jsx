@@ -215,6 +215,7 @@ const [filtrosVisible, setFiltrosVisible] = useState(true);
             <div>X</div>
           )}
         </CloseButton>
+</div>
         <div id='mapGap'></div>
 
         <MapGL
@@ -287,7 +288,6 @@ const [filtrosVisible, setFiltrosVisible] = useState(true);
         <Main2 />
         <Analisis {...analisisData}/>
         <Footer />
-      </div>
     </div>
   );
 }
