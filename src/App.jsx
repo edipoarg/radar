@@ -101,6 +101,7 @@ function App() {
   const [dates, setDates] = useState({min: now, max: now});
   const [monthRange, setMonthRange] = useState([0, 0]);
   const [filteredDataByTime, setFilteredDataByTime] = useState([]);
+
   const valueLabelFormat = (value) => {
     const diff = months - value;
     const date = new Date()
