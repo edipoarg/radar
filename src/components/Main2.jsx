@@ -3,7 +3,7 @@ import './Main2.css'
 import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 import { Link } from 'react-router-dom';
 import { Carousel, CarouselItem } from 'react-bootstrap';
-
+import { Details } from './Conecta.jsx'
 
 export default function Main2() {
 
@@ -16,8 +16,7 @@ export default function Main2() {
 
 <div id="franja1">
 <div id='reportaMain'>
-<h4 id='bajadaPrincipal'> <span id='negritaTitulo'> RADAR (Registro de Ataques de Derechas Argentinas Radicalizadas)</span>  es un proyecto periodístico colaborativo impulsado por el Equipo de Investigación Política (EdIPo) de la Revista Crisis, con apoyo del Centro de Estudios Legales y Sociales (CELS), cuyo objetivo es fortalecer la democracia y la defensa de los derechos humanos.
-Presentamos un mapeo de ataques políticos protagonizados por derechas radicalizadas con el fin de contribuir al diagnóstico colectivo y la elaboración de estrategias de autocuidado.</h4>
+<h4 id='bajadaPrincipal'><Details /></h4>
   <Link to= "/conecta"> <button id="botonReportaMain">NOSOTRXS</button></Link>
 
 
