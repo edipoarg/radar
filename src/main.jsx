@@ -9,7 +9,7 @@ import {
 import "./index.css";
 
 import Main2 from "./components/Main2.jsx";
-import Conecta from "./components/conecta.jsx";
+import Conecta from "./components/Conecta.jsx";
 import Notas from "./components/notas.jsx";
 import Reporta from "./components/reporta.jsx";
 
