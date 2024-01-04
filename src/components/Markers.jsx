@@ -26,9 +26,7 @@ export const Markers = ({ data, setPopupInfo, setMarker, selected, tipoFilters }
   
   const renderMarker = (event) => {
     const { coords, title, date, source, id, tipoId, tipo } = event;
-    const markerStyle = `marker ${id === selected ? "hovered" : ""} ${tipoIdStyles[tipoId]}`;
-    const markerStyle1 = `marker ${id === selected ? "hovered" : ""} ${tipoIdStyles[tipoId]}`;
-    const markerStyle2 = `marker ${id === selected ? "hovered" : ""} ${tipoIdStyles[tipoId]}`;
+    const markerStyle = `circulo ${id === selected ? "hovered" : ""} ${tipoIdStyles[tipoId]}`;
 
     const idContent = isNaN(event.id) ? "Invalid ID" : event.id;
 
@@ -52,16 +50,8 @@ export const Markers = ({ data, setPopupInfo, setMarker, selected, tipoFilters }
           })
         }
       >
-    
-    <div className={markerStyle}>
+        <div className='circulo' className={markerStyle}/>
 
-    <div id='circulo1' className={markerStyle1}>
-            <div id='circulo2'className={markerStyle2}>
-    
-
-            </div>
-          </div>
-        </div>
       </Marker>
     );
   };
