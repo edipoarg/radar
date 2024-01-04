@@ -1,15 +1,14 @@
+import "./Popup.css"
 
 const Popup = ({coords, title, date, source, tipo}) => (
-  <div className="popup" 
-  //style={{ left: coords.lng, top: coords.lat }}
-  >
-    <div>
-      <h3 id='displayTitulo'>{title}</h3>
-{ /*     <p id='displayTipo'>{tipo}</p>   */}
-     <div id='masDatosPopup'> <p id='displayFecha'>Fecha: {date}</p>
+  <div className="popup">
+    <h3 className='displayTitulo'>{title}</h3>
+    <p className='displayTipo'>{tipo.join(' ')}</p>
 
-      <a id='displayLink' href={source} target="_blank" rel="noreferrer">enlace</a>
-    </div></div>
+    <div className='masDatosPopup'> <p id='displayFecha'>Fecha: {date.toLocaleDateString()}</p>
+
+      <a className='displayLink' href={source} target="_blank" rel="noreferrer">enlace</a>
+    </div>
   </div>
 )
 
