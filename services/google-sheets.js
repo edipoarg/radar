@@ -10,6 +10,17 @@ const chomp = s => s.replace(/^ +/, '')
 
 const mapChomp = s => s.replace(/; $/, '').split(/;/).map(chomp)
 
+const FIXUP = t => t.replace('murales o lugares', 'murales y lugares')                  //
+.replace('símbolos y lugares', 'símbolos, murales y lugares')          //
+.replace('amrnazas', 'amenazas')                                       //
+.replace(/identidades política$/, 'identidades políticas')             //
+.replace('antiLGBTINB+', 'antiLGBTINBQ+')                              //
+.replace('supremaracismo', 'supremacismo')                             //
+.replace(/^racismo y xenofob.a$/, 'racismo, xenofobia y nacionalismo') //
+.replace(/^violencia física y atentados contra la vida$/,              //
+'atentados contra la integridad física y la vida')                     //
+.replace(/^violencia por razones de misoginia, antifeminismo y antiLGBTINB+$/, 'misoginia, antifeminismo y antiLGBTINBQ+')
+
 export const fetchTSV = async (url = constants.tsvUrl) => {
     const config = {};
     const resp = await fetch(url);
@@ -71,12 +82,8 @@ export const fetchTSV = async (url = constants.tsvUrl) => {
             }
             return r;
         }
-        hash(tipos, event.tipoId, event.tipo,
-             t => t.replace('murales o lugares', 'murales y lugares')
-                   .replace('amrnazas', 'amenazas')
-                   .replace('violencia física y atentados contra la vida',
-                            'atentados contra la integridad física y la vida'))
-        hash(componentes, event.componenteId, event.componente)
+        hash(tipos, event.tipoId, event.tipo, FIXUP)
+        hash(componentes, event.componenteId, event.componente, FIXUP)
     }
     return {cases, tipos, componentes, min, max}
 }
