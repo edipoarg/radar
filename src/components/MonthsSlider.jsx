@@ -6,8 +6,8 @@ import "./MonthsSlider.css";
 const valueLabelFormatByMonths = (totalMonths) => (value) => {
     const diff = totalMonths - value;
     const date = new Date()
-    date.setMonth(date.getMonth() - diff)
-    return `${date.getMonth() + 1}/${date.getFullYear()}`;
+    date.setMonth(date.getMonth() - diff - 1)
+    return `${date.getMonth()}/${date.getFullYear()}`;
 };
 /** Agrega un botón o elemento para cambiar la visibilidad de Filtros */
 export default function MonthsSlider({ className, monthRange, setMonthRange, totalMonths, startDateLabel, endDateLabel }) {
