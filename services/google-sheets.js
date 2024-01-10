@@ -1,8 +1,15 @@
 import constants from "./constants.js";
 
 const newDate = (d) => {
-    const [day, month, year] = d.split('/');
-    return new Date(year, month, day);
+    try {
+        const [_, day, month, year] = d.match(
+            '([0-3]?[0-9])/([01]?[0-9])/([12][90][0-9][0-9])'
+        );
+        return new Date(year, month, day);
+    } catch(e) {
+        console.error("cauldn't parse date: ", d, e);
+        return null;
+    }
 }
 
 const chomp = s => s.replace(/^ +/, '')
@@ -60,15 +67,16 @@ export const fetchTSV = async (url = constants.tsvUrl) => {
         cases.push(event)
 
         /* update min, max and do sanity checks */
-        if (min > event.date) min = event.date
-        if (max < event.date) max = event.date
+        if (event.date) {
+            if (min > event.date) min = event.date;
+            if (max < event.date) max = event.date
+        }
 
-        ;['tipo','tipoId', 'componente', 'componenteId', 'date'].forEach(f => {
-            if (! event[f]) {
-                console.error(`case missing ${f}`, event)
-            }
-            if (event[f].includes && event[f].includes("")) {
-                console.error(`${i}: error in ${f}`, event[f], r)
+        ;['tipo','tipoId', 'componente', 'componenteId', 'date'].forEach(g => {
+            if (! event[g]) {
+                console.error(`case missing ${g}`, f)
+            } else if (event[g].hasOwnProperty("includes") && event[g].includes("")) {
+                console.error(`${i}: error in ${f}`, event[g], r)
             }
         })
         const hash = (r, ids, names, m = t => t) => {
