@@ -18,7 +18,7 @@ import Filtros from './components/filtros.jsx'; // Cambia la ruta a tu formulari
 import Analisis from './components/analisis.jsx'
 
 import mystyle from "./mystyle.json";
-import MonthsSlider from "./components/months-slider.jsx";
+import MonthsSlider from "./components/MonthsSlider.jsx";
 
 //estilos/////////////////////
 const now = new Date()

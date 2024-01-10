@@ -1,7 +1,7 @@
 import PropTypes from "prop-types"
 import { useCallback } from "react";
 import { Slider } from "@mui/material";
-import "./months-slider.css";
+import "./MonthsSlider.css";
 
 const valueLabelFormatByMonths = (totalMonths) => (value) => {
     const diff = totalMonths - value;
