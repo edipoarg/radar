@@ -21,8 +21,6 @@ import mystyle from "./mystyle.json";
 import MonthsSlider from "./components/MonthsSlider.jsx";
 
 //estilos/////////////////////
-const now = new Date()
-
 const style = {
   country: {
     fillColor: "#bacbff",
@@ -63,11 +61,12 @@ const style = {
   },
 };
 
-const emptyFilters = {byId: {}, byName: {}};
-
 function App() {
   const {urls} = useLoaderData();
   const {provincias, departamentos, departamentosBsAs, rutas} = urls;
+  const {tipos, componentes} = urls.casos;
+  const cases = urls.casos.cases.map(c => ({...c, date: new Date(c.date)}))
+  const globalDates = {min: new Date(urls.casos.min), max: new Date(urls.casos.max)};
 
   const handleTipoFilter = () => {
     const filteredDataByType = filteredDataByTime.filter(event => tipoFilters[event.tipoId]);
@@ -81,12 +80,11 @@ function App() {
 
   });
   // Estado para controlar la visibilidad de "Filtros"
-  const [casesData, setCasesData] = useState([]);
   const [analisisData, setAnalisisData] = useState({
-    min: now,
-    max: now,
-    tipos: emptyFilters,
-    componentes: emptyFilters
+    tipos, componentes,
+    min: globalDates.min,
+    max: globalDates.max,
+    total:cases.length
   });
 
   const [filtrosVisible, setFiltrosVisible] = useState(true);
@@ -95,45 +93,20 @@ function App() {
   const [hoveredMarkerId, setHoveredMarkerId] = useState(null);
   const [popupInfo, setPopupInfo] = useState(null);
 
-  const [filteredData, setFilteredData] = useState(casesData);
-  const [months, setMonths] = useState(0);
-  const [dates, setDates] = useState({min: now, max: now});
-  const [monthRange, setMonthRange] = useState([0, 0]);
+  const [dates, setDates] = useState(globalDates);
+  const [filteredData, setFilteredData] = useState(cases);
   const [filteredDataByTime, setFilteredDataByTime] = useState([]);
 
-  useEffect(() => {
-    const {tipos, componentes} = urls.casos;
-    const cases = urls.casos.cases.map(c => ({...c, date: new Date(c.date)}));
-    const max = new Date(urls.casos.max)
-    const min = new Date(urls.casos.min)
-    const yearsDiff = max.getFullYear() - min.getFullYear();
-    const monthDiff = max.getMonth() - min.getMonth();
-
-    const totalMonths = yearsDiff * 12 + monthDiff + 1;
-
-    setCasesData(cases);
-    setAnalisisData({tipos, componentes, min, max, total: cases.length})
-    setDates({min, max});
-    setMonths(totalMonths);
-    setMonthRange([0, totalMonths]);
-  }, [])
-
-  useEffect(() => setFilteredData(casesData), [casesData])
 
   useEffect(() => {
-    const from = new Date(dates.min)
-    from.setMonth(from.getMonth() + monthRange[0])
+    const checkDate = (e) => e.date >= dates.min && e.date <= dates.max;
+    const newData = cases.filter(checkDate);
 
-    const to = new Date(dates.min)
-    to.setMonth(to.getMonth() + monthRange[1])
-
-    const checkDate = (e) => e.date >= from && e.date <= to;
-    const newData = casesData.filter(checkDate);
     setFilteredDataByTime(newData);
     // Aplicar también los filtros de tipo a los datos filtrados por tiempo
     const filteredDataByType = newData.filter(event => tipoFilters[event.tipoId]);
     setFilteredData(filteredDataByType);
-  }, [monthRange, dates, casesData, tipoFilters]);
+  }, [dates, tipoFilters]);
 
   // Función para cambiar la visibilidad de "Filtros"
   const toggleFiltrosVisibility = () => {
@@ -220,7 +193,7 @@ function App() {
         <BsAsSource data={departamentosBsAs} style={style.country} />
         <RutasSource data={rutas} style={style.rutas}/>
 
-        {casesData && (
+        {!!(filteredData && filteredData.length) && (
           <Markers
             data={filteredData}
             setPopupInfo={setPopupInfo}
@@ -233,26 +206,20 @@ function App() {
         <NavigationControl position="top-right" />
       </MapGL>
 
-      <MonthsSlider
-          className="slider-container"
-          monthRange={monthRange}
-          setMonthRange={setMonthRange}
-          totalMonths={months}
-          startDateLabel="2/2020"
-          endDateLabel="9/2023"
-        />  
-
-      <ScrollLink id='toMain2Container'
-                  to="Main2" // ID del elemento de destino (Main2)
-                  spy={true} // Activa el modo espía
-                  smooth={true} // Activa el desplazamiento suave
-                  duration={500} // Duración de la animación (en milisegundos)
-                  offset={-70} // Ajusta un offset opcional (si tienes un encabezado fijo)
-      >
-        <div id="toMain2">
-          <h4 id='plusBoton'>+</h4>
-        </div>
-      </ScrollLink>
+      <div className="slider-container">
+        <MonthsSlider {...{globalDates, setDates}}/>
+        <ScrollLink id='toMain2Container'
+                    to="Main2" // ID del elemento de destino (Main2)
+                    spy={true} // Activa el modo espía
+                    smooth={true} // Activa el desplazamiento suave
+                    duration={500} // Duración de la animación (en milisegundos)
+                    offset={-70} // Ajusta un offset opcional (si tienes un encabezado fijo)
+        >
+          <div id="toMain2">
+            <h4 id='plusBoton'>+</h4>
+          </div>
+        </ScrollLink>
+      </div>
 
       {popupInfo && <Popup {...popupInfo} />}
 
