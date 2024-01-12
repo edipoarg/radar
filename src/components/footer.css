@@ -1,52 +1,36 @@
-
+#footer{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
 
 #desarrolladoX{
     background-color: white;
     color: blue;
     font-size: 0.7rem;
     padding: 2vh 1vw;
-    text-align: right;
-    width: 12vw;
+    text-align: center;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    
-
-}
-
-#dx{
-    font-size: 0.7rem;
-    width: 15vw;
-    text-align: right;
-
+    display: inline; /* Hace que el elemento sea en línea en lugar de bloque */
 }
 
 
-#logoLS{
-height: 25px;
-padding-left: 0.5vw;
-}
-
-
-#LS{
+#edipo{
     display: grid;
     grid-template-columns: 1fr 1fr;
     text-align: center;
     align-items: center;
     width: 25px;
     color: black;
+    display: inline; /* Hace que el elemento sea en línea en lugar de bloque */
 
-}
 
-#footer{
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    
 }
 
 
 #Desarrollo{
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 1fr;
     align-items: center;
     align-content: center;
     align-self: center;
