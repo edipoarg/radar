@@ -28,7 +28,7 @@
 
 /*TV TABLET 768px*/
 @media (min-width: 768px) {
-    .slider-container {
+    .months-slider {
         padding-right: 2vw;
         padding-left: 2vw;
     }
@@ -36,7 +36,7 @@
 
 /*TV RESPONISVE 1200px*/
 @media (min-width: 1200px) {
-    .slider-container {
+    .months-slider {
         padding-right: 2vw;
         padding-left: 2vw;
     }

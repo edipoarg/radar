@@ -1,4 +1,4 @@
-import {useState, useCallback, useEffect, useMemo} from "react";
+import {useState, useCallback, useMemo} from "react";
 import PropTypes from "prop-types";
 import { Slider } from "@mui/material";
 
