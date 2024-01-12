@@ -145,13 +145,15 @@
   grid-template-columns: 5fr 1fr;
 }
 
-.slider-container {
+.lower-floating-buttons {
   position: absolute;
   display: flex;
-  flex-direction: row
+  flex-direction: row;
+  align-items: center;
   top: 83vh;
   left: 4vw;
   z-index: 0;
+  gap: 2vw;
 }
 
 #toMain2 {
@@ -202,7 +204,7 @@
 
 /*TV TABLET 768px*/
 @media (min-width: 768px) {
-  .slider-container {
+  .lower-floating-buttons {
     position: absolute;
     top: 87vh;
     left: 30vw;
@@ -239,7 +241,7 @@
     width: 100%;
   }
 
-  .slider-container {
+  .lower-floating-buttons {
     position: absolute;
     top: 80vh;
     left: 20vw;

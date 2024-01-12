@@ -206,7 +206,7 @@ function App() {
         <NavigationControl position="top-right" />
       </MapGL>
 
-      <div className="slider-container">
+      <div className="lower-floating-buttons">
         <MonthsSlider {...{globalDates, setDates}}/>
         <ScrollLink id='toMain2Container'
                     to="Main2" // ID del elemento de destino (Main2)
