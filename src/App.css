@@ -75,19 +75,18 @@
 	font: inherit;
 	cursor: pointer;
 	outline: inherit;
-
+  text-decoration: none;
 }
 
 #closeButton {
   position: absolute;
   z-index: 1001;
   background-color: white;
-  color: white;
+  color: black;
   top: 0vh;
   left: 3vw;
-
-
-
+  border: 10px solid white;
+  border-radius: 10px;
 }
 
 #botonFiltrosMap{
