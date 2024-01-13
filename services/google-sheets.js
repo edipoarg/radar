@@ -72,11 +72,11 @@ export const fetchTSV = async (url = constants.tsvUrl) => {
             if (max < event.date) max = event.date
         }
 
-        ;['tipo','tipoId', 'componente', 'componenteId', 'date'].forEach(g => {
-            if (! event[g]) {
-                console.error(`case missing ${g}`, f)
-            } else if (event[g].hasOwnProperty("includes") && event[g].includes("")) {
-                console.error(`${i}: error in ${f}`, event[g], r)
+        ;['tipo','tipoId', 'componente', 'componenteId', 'date'].forEach(key => {
+            if (! event[key]) {
+                console.error(`case missing ${key}`, f)
+            } else if (event[key]?.includes?.("")) { // something wasn't parsed correctly
+                console.error(`${i}: error in ${f}`, event[key], r)
             }
         })
         const hash = (r, ids, names, m = t => t) => {
