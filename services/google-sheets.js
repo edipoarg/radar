@@ -73,6 +73,7 @@ export const fetchTSV = async (url = constants.tsvUrl) => {
         })
         const hash = (r, ids, names, m = t => t) => {
             for (let id of ids) {
+                id = m(id)
                 r.byId[id] = [...(r.byId[id] || []), i]
             }
 
