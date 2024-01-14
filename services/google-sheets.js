@@ -20,13 +20,37 @@ const FIXUP = t => t.replace('murales o lugares', 'murales y lugares')          
 .replace(/^violencia física y atentados contra la vida$/,              //
 'atentados contra la integridad física y la vida')                     //
 .replace(/^violencia por razones de misoginia, antifeminismo y antiLGBTINB+$/, 'misoginia, antifeminismo y antiLGBTINBQ+')
+class Classifier {
+    byId = {};
+    byName = {};
+    idMap = {};
+    nameMap = {};
+
+    constructor(self, mangle = t => t) {
+        this.mangle = mangle
+    }
+
+    clasify (ids, names, i) {
+
+            for (let id of ids) {
+                id = thismangle(id)
+                this.byId[id] = [...(this.byId[id] || []), i]
+            }
+
+            for (let name of names) {
+                name = mangle(name)
+                this.byName[name] = [...(this.byName[name] || []), i]
+            }
+        }
+    }
+}
 
 export const fetchTSV = async (url = constants.tsvUrl) => {
     const config = {};
     const resp = await fetch(url);
     const cases = []
-    const tipos = {byId: {}, byName: {}}
-    const componentes = {byId: {}, byName: {}}
+    const tipos = new Classifier(FIXUP)
+    const componentes = new Classifier(FIXUP)
 
     let min = new Date();
     let max = new Date();
@@ -71,20 +95,8 @@ export const fetchTSV = async (url = constants.tsvUrl) => {
                 console.error(`${i}: error in ${f}`, event[f], r)
             }
         })
-        const hash = (category, ids, names, mangle = t => t) => {
-            for (let id of ids) {
-                id = mangle(id)
-                category.byId[id] = [...(category.byId[id] || []), i]
-            }
-
-            for (let name of names) {
-                name = mangle(name)
-                category.byName[name] = [...(category.byName[name] || []), i]
-            }
-            return category;
-        }
-        hash(tipos, event.tipoId, event.tipo, FIXUP)
-        hash(componentes, event.componenteId, event.componente, FIXUP)
+        tipos.clasify(event.tipoId, event.tipo, i)
+        componentes.clasify(event.componenteId, event.componente, i)
     }
     return {cases, tipos, componentes, min, max}
 }
