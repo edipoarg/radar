@@ -71,17 +71,17 @@ export const fetchTSV = async (url = constants.tsvUrl) => {
                 console.error(`${i}: error in ${f}`, event[f], r)
             }
         })
-        const hash = (r, ids, names, m = t => t) => {
+        const hash = (category, ids, names, mangle = t => t) => {
             for (let id of ids) {
-                id = m(id)
-                r.byId[id] = [...(r.byId[id] || []), i]
+                id = mangle(id)
+                category.byId[id] = [...(category.byId[id] || []), i]
             }
 
-            for (let c of names) {
-                c = m(c)
-                r.byName[c] = [...(r.byName[c] || []), i]
+            for (let name of names) {
+                name = mangle(name)
+                category.byName[name] = [...(category.byName[name] || []), i]
             }
-            return r;
+            return category;
         }
         hash(tipos, event.tipoId, event.tipo, FIXUP)
         hash(componentes, event.componenteId, event.componente, FIXUP)
