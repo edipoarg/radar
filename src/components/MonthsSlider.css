@@ -1,0 +1,43 @@
+.months-slider {
+    display: grid;
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+    width: 80vw;
+
+    padding-top: 2vw;
+    padding-left: 6vw;
+    padding-bottom: 1vw;
+    padding-right: 6vw;
+}
+
+.months-slider #referenciasFechas {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+}
+
+.months-slider #referenciasFechas #fechaInicio {
+    color: #2b3bcd;
+    text-align: left;
+}
+
+.months-slider #referenciasFechas #fechaCierre {
+    color: #2b3bcd;
+    text-align: right;
+}
+
+/*TV TABLET 768px*/
+@media (min-width: 768px) {
+    .months-slider {
+        padding-right: 2vw;
+        padding-left: 2vw;
+    }
+}
+
+/*TV RESPONISVE 1200px*/
+@media (min-width: 1200px) {
+    .months-slider {
+        padding-right: 2vw;
+        padding-left: 2vw;
+    }
+}
