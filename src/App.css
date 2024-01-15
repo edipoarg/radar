@@ -92,10 +92,6 @@
 #botonFiltrosMap{
   font-size: 1rem;
   color: #2b3bcd;
-  border: solid;
-  border-color: #2b3bcd;
-  border-width: 1px;
-  border-radius: 25px;
   padding: 0.5vh 1vw;
 }
 
