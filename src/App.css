@@ -21,7 +21,6 @@
 #botonFiltrosMain{
   position: absolute;
   top: 15vh
-
 }
 
 #mapa{
@@ -111,25 +110,7 @@
   justify-content: center;
 }
 
-.slider-container {
-  /* width: 300px; */
 
-  position: absolute;
-  top: 83vh;
-  left: 4vw;
-  width: 80vw;
-  z-index: 0;
-
-  /* height: 80px; */
-  /* background-color: #00425a; */
-  /* color: #eff5f5; */
-  /* display: grid; */
-  /* grid-template-columns: 1fr 5fr; */
-  /* align-items: center; */
-  padding-right: 6vw;
-  padding-left: 6vw;
-
-}
 
 .marker:hover {
   background-color: rgb(52, 7, 7);
@@ -164,37 +145,21 @@
   grid-template-columns: 5fr 1fr;
 }
 
-.slider-container {
-  display: grid;
-  background-color: white;
-  color: black;
-  border-radius: 20px;
-  padding-bottom: 1vw;
-  padding-top: 2vw;
-
-}
-
-#referenciasFechas{
-  display: grid;
-  grid-template-columns: 1fr 4fr 1fr;
-}
-
-#fechaInicio{
-  color: #2b3bcd;
-  text-align: left;
-}
-
-#fechaCierre{
-  color: #2b3bcd;
-  text-align: right;
+.lower-floating-buttons {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  top: 83vh;
+  left: 4vw;
+  z-index: 0;
+  gap: 2vw;
 }
 
 #toMain2 {
   background-color: black;
   color: white;
   border-radius: 10px;
-  position: absolute;
-  top: 83vh;
   right: 2vw;
   width: 12vw;
   z-index: 0;
@@ -237,27 +202,14 @@
 
 }
 
-
 /*TV TABLET 768px*/
 @media (min-width: 768px) {
-  .slider-container {
-    /* width: 300px; */
-
+  .lower-floating-buttons {
     position: absolute;
     top: 87vh;
     left: 30vw;
     width: 55vw;
     z-index: 0;
-
-    /* height: 80px; */
-    /* background-color: #00425a; */
-    /* color: #eff5f5; */
-    /* display: grid; */
-    /* grid-template-columns: 1fr 5fr; */
-    /* align-items: center; */
-    padding-right: 2vw;
-    padding-left: 2vw;
-
   }
 
   #filtrosBottom {
@@ -268,11 +220,8 @@
 
 
   #toMain2 {
-    top: 88vh;
     width: 10vw;
     height: 8vh;
-    
-
   }
 
   #plusBoton{
@@ -292,29 +241,16 @@
     width: 100%;
   }
 
-  .slider-container {
-    /* width: 300px; */
-
+  .lower-floating-buttons {
     position: absolute;
     top: 80vh;
     left: 20vw;
     width: 69vw;
     z-index: 0;
-
-    /* height: 80px; */
-    /* background-color: #00425a; */
-    /* color: #eff5f5; */
-    /* display: grid; */
-    /* grid-template-columns: 1fr 5fr; */
-    /* align-items: center; */
-    padding-right: 2vw;
-    padding-left: 2vw;
-
   }
 
 
   #toMain2 {
-    top: 80vh;
     width: 8vw;
     height: 12vh;
 
