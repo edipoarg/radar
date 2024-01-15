@@ -7,7 +7,6 @@ import "./App.css";
 
 import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 import { motion } from 'framer-motion';
-import CloseButton from 'react-bootstrap/CloseButton';
 import Footer from "./components/footer.jsx"
 
 import { ProvSource, DepsSource, BsAsSource, RutasSource} from "./components/Sources.jsx";
@@ -160,22 +159,17 @@ function App() {
       <div id='mapGap'></div>
       <div id='botonFiltrosMain'>
         {/* Render different button content based on the state */}
-        <CloseButton
+        <a
           id="closeButton"
           aria-label="Hide"
           onClick={() => { handleClickCloseButton(); toggleFiltrosVisibility(); }}
-          className={isCloseButtonClicked ? "transformed-button" : "simple-button"}
+          href="#"
+          className={`simple-button ${isCloseButtonClicked ? "transformed-button" : "simple-button"}`}
         >
           {isCloseButtonClicked ? (
-            // Content when the button is clicked
-            // You can use any JSX or HTML here
             <div><h5 id= 'botonFiltrosMap'>FILTROS</h5></div>
-          ) : (
-            // Content when the button is not clicked
-            // You can use any JSX or HTML here
-            <div>X</div>
-          )}
-        </CloseButton>
+          ) : (<>X</>)}
+        </a>
       </div>
       <div id='mapGap'></div>
 
