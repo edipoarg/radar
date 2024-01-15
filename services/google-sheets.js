@@ -32,7 +32,7 @@ class Classifier {
             this.mangle = mangle
     }
 
-    clasify (ids, names, i) {
+    classify (ids, names, i) {
 
         for (let id of ids) {
             id = this.mangle(id)
@@ -96,8 +96,8 @@ export const fetchTSV = async (url = constants.tsvUrl) => {
                 console.error(`${i}: error in ${f}`, event[f], r)
             }
         })
-        tipos.clasify(event.tipoId, event.tipo, i)
-        componentes.clasify(event.componenteId, event.componente, i)
+        tipos.classify(event.tipoId, event.tipo, i)
+        componentes.classify(event.componenteId, event.componente, i)
     }
     return {cases, tipos, componentes, min, max}
 }
