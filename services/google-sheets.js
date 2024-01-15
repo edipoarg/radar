@@ -25,22 +25,23 @@ class Classifier {
     byName = {};
     idMap = {};
     nameMap = {};
+    mangle = t => t;
 
-    constructor(self, mangle = t => t) {
-        this.mangle = mangle
+    constructor(self, mangle) {
+        if (mangle)
+            this.mangle = mangle
     }
 
     clasify (ids, names, i) {
 
-            for (let id of ids) {
-                id = thismangle(id)
-                this.byId[id] = [...(this.byId[id] || []), i]
-            }
+        for (let id of ids) {
+            id = this.mangle(id)
+            this.byId[id] = [...(this.byId[id] || []), i]
+        }
 
-            for (let name of names) {
-                name = mangle(name)
-                this.byName[name] = [...(this.byName[name] || []), i]
-            }
+        for (let name of names) {
+            name = this.mangle(name)
+            this.byName[name] = [...(this.byName[name] || []), i]
         }
     }
 }
