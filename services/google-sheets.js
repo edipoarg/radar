@@ -27,7 +27,7 @@ class Classifier {
     nameMap = {};
     mangle = t => t;
 
-    constructor(self, mangle) {
+    constructor(mangle) {
         if (mangle)
             this.mangle = mangle
     }
