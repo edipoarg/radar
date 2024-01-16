@@ -1,32 +1,25 @@
-import React from 'react';
-import './reporta.css'
+import "./reporta.css";
 
-
-export default function reportaForm(){
-
-
-return(
-
- 
+export default function ReportaForm() {
+  return (
     <div id="enviado">
-
-
       <div id="mensaje">
         <img src="" alt="" />
-  
-        <h1 className='titulo'>Gracias por el aporte</h1>
-        <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non doloribus odit labore perferendis!</h3>
-        
 
+        <h1 className="titulo">Gracias por el aporte</h1>
+        <h3>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non
+          doloribus odit labore perferendis!
+        </h3>
       </div>
-      <div id='masInfo'>
-<button><a href="">Ir al mapa</a></button>
-<button><a href="">Ver notas</a></button>
-</div>
-
-
-
+      <div id="masInfo">
+        <button>
+          <a href="">Ir al mapa</a>
+        </button>
+        <button>
+          <a href="">Ver notas</a>
+        </button>
+      </div>
     </div>
-);
+  );
 }
-
