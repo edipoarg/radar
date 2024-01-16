@@ -1,7 +1,7 @@
 import { Marker } from "react-map-gl/maplibre";
-import React, { useState, useEffect } from "react";
-
-import "./Markers.css"
+import { useState, useEffect } from "react";
+import PropTypes from "prop-types";
+import "./Markers.css";
 
 const tipoIdStyles = {
   t1: "amarillo",
@@ -9,11 +9,17 @@ const tipoIdStyles = {
   t3: "rojo",
 };
 
-export const Markers = ({ data, setPopupInfo, setMarker, selected, tipoFilters }) => {
+export const Markers = ({
+  data,
+  setPopupInfo,
+  setMarker,
+  selected,
+  tipoFilters,
+}) => {
   const [filteredAndSortedData, setFilteredAndSortedData] = useState([]);
 
   useEffect(() => {
-    const filteredData = data.filter(event => tipoFilters[event.tipoId]);
+    const filteredData = data.filter((event) => tipoFilters[event.tipoId]);
     const sortedData = [...filteredData].sort((a, b) => {
       if (a.tipoId === "t3" && b.tipoId !== "t2") return -1;
       if (a.tipoId === "t2" && b.tipoId === "t1") return -1;
@@ -22,13 +28,9 @@ export const Markers = ({ data, setPopupInfo, setMarker, selected, tipoFilters }
     setFilteredAndSortedData(sortedData);
   }, [data, tipoFilters]);
 
-  
-  
   const renderMarker = (event) => {
     const { coords, title, date, source, id, tipoId, tipo } = event;
     const markerStyle = `circulo ${id === selected ? "hovered" : ""} ${tipoIdStyles[tipoId]}`;
-
-    const idContent = isNaN(event.id) ? "Invalid ID" : event.id;
 
     return (
       <Marker
@@ -50,12 +52,10 @@ export const Markers = ({ data, setPopupInfo, setMarker, selected, tipoFilters }
           })
         }
       >
-        <div className={markerStyle}/>
-
+        <div className={markerStyle} />
       </Marker>
     );
   };
-
 
   return (
     <>
@@ -64,4 +64,12 @@ export const Markers = ({ data, setPopupInfo, setMarker, selected, tipoFilters }
       ))}
     </>
   );
+};
+
+Markers.propTypes = {
+  data: PropTypes.array.isRequired,
+  setPopupInfo: PropTypes.func.isRequired,
+  setMarker: PropTypes.func.isRequired,
+  selected: PropTypes.string.isRequired,
+  tipoFilters: PropTypes.array.isRequired,
 };
