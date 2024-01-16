@@ -2,7 +2,7 @@ import constants from "./constants.js";
 
 const newDate = (d) => {
   try {
-    const [_, day, month, year] = d.match(
+    const [, day, month, year] = d.match(
       "([0-3]?[0-9])/([01]?[0-9])/([12][90][0-9][0-9])",
     );
     return new Date(year, month, day);
@@ -58,7 +58,6 @@ class Classifier {
 }
 
 export const fetchTSV = async (url = constants.tsvUrl) => {
-  const config = {};
   const resp = await fetch(url);
   const cases = [];
   const tipos = new Classifier(FIXUP);

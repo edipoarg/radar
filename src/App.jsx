@@ -1,20 +1,24 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { useLoaderData } from "react-router-dom";
 import MapGL, { NavigationControl } from "react-map-gl/maplibre";
 import maplibregl from "maplibre-gl";
 import "maplibre-gl/dist/maplibre-gl.css";
 import "./App.css";
 
-import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
-import { motion } from 'framer-motion';
-import Footer from "./components/footer.jsx"
+import { Link as ScrollLink } from "react-scroll";
+import Footer from "./components/footer.jsx";
 
-import { ProvSource, DepsSource, BsAsSource, RutasSource} from "./components/Sources.jsx";
+import {
+  ProvSource,
+  DepsSource,
+  BsAsSource,
+  RutasSource,
+} from "./components/Sources.jsx";
 import { Markers } from "./components/Markers.jsx";
 import Main2 from "./components/Main2.jsx";
 import Popup from "./components/Popup.jsx";
-import Filtros from './components/filtros.jsx'; // Cambia la ruta a tu formulario
-import Analisis from './components/analisis.jsx'
+import Filtros from "./components/filtros.jsx"; // Cambia la ruta a tu formulario
+import Analisis from "./components/analisis.jsx";
 
 import mystyle from "./mystyle.json";
 import MonthsSlider from "./components/MonthsSlider.jsx";
@@ -26,7 +30,6 @@ const style = {
     fillOpacity: 0.6,
     color: "#2b3bcd",
     weight: 0.2,
-
   },
   departamentos: {
     fillColor: "#bacbff",
@@ -61,14 +64,19 @@ const style = {
 };
 
 function App() {
-  const {urls} = useLoaderData();
-  const {provincias, departamentos, departamentosBsAs, rutas} = urls;
-  const {tipos, componentes} = urls.casos;
-  const cases = urls.casos.cases.map(c => ({...c, date: new Date(c.date)}))
-  const globalDates = {min: new Date(urls.casos.min), max: new Date(urls.casos.max)};
+  const { urls } = useLoaderData();
+  const { provincias, departamentos, departamentosBsAs, rutas } = urls;
+  const { tipos, componentes } = urls.casos;
+  const cases = urls.casos.cases.map((c) => ({ ...c, date: new Date(c.date) }));
+  const globalDates = {
+    min: new Date(urls.casos.min),
+    max: new Date(urls.casos.max),
+  };
 
   const handleTipoFilter = () => {
-    const filteredDataByType = filteredDataByTime.filter(event => tipoFilters[event.tipoId]);
+    const filteredDataByType = filteredDataByTime.filter(
+      (event) => tipoFilters[event.tipoId],
+    );
     setFilteredData(filteredDataByType);
   };
 
@@ -76,19 +84,19 @@ function App() {
     t1: true,
     t2: true,
     t3: true,
-
   });
   // Estado para controlar la visibilidad de "Filtros"
-  const [analisisData, setAnalisisData] = useState({
-    tipos, componentes,
+  const [analisisData] = useState({
+    tipos,
+    componentes,
     min: globalDates.min,
     max: globalDates.max,
-    total:cases.length
+    total: cases.length,
   });
 
   const [filtrosVisible, setFiltrosVisible] = useState(true);
 
-  const [hoveredFeatureId, setHoveredFeatureId] = useState(null);
+  const [setHoveredFeatureId] = useState(null);
   const [hoveredMarkerId, setHoveredMarkerId] = useState(null);
   const [popupInfo, setPopupInfo] = useState(null);
 
@@ -96,14 +104,15 @@ function App() {
   const [filteredData, setFilteredData] = useState(cases);
   const [filteredDataByTime, setFilteredDataByTime] = useState([]);
 
-
   useEffect(() => {
     const checkDate = (e) => e.date >= dates.min && e.date <= dates.max;
     const newData = cases.filter(checkDate);
 
     setFilteredDataByTime(newData);
     // Aplicar también los filtros de tipo a los datos filtrados por tiempo
-    const filteredDataByType = newData.filter(event => tipoFilters[event.tipoId]);
+    const filteredDataByType = newData.filter(
+      (event) => tipoFilters[event.tipoId],
+    );
     setFilteredData(filteredDataByType);
   }, [dates, tipoFilters]);
 
@@ -146,32 +155,37 @@ function App() {
 
   return (
     <div className="App">
-
       {filtrosVisible && (
         <Filtros
           caseCount={filteredData.length}
           handleTipoFilter={handleTipoFilter}
           tipoFilters={tipoFilters}
           setTipoFilters={setTipoFilters}
-        >
-        </Filtros>
+        ></Filtros>
       )}
-      <div id='mapGap'></div>
-      <div id='botonFiltrosMain'>
+      <div id="mapGap"></div>
+      <div id="botonFiltrosMain">
         {/* Render different button content based on the state */}
         <a
           id="closeButton"
           aria-label="Hide"
-          onClick={() => { handleClickCloseButton(); toggleFiltrosVisibility(); }}
+          onClick={() => {
+            handleClickCloseButton();
+            toggleFiltrosVisibility();
+          }}
           href="#"
           className={`simple-button ${isCloseButtonClicked ? "transformed-button" : "simple-button"}`}
         >
           {isCloseButtonClicked ? (
-            <div><h5 id= 'botonFiltrosMap'>FILTROS</h5></div>
-          ) : (<>X</>)}
+            <div>
+              <h5 id="botonFiltrosMap">FILTROS</h5>
+            </div>
+          ) : (
+            <>X</>
+          )}
         </a>
       </div>
-      <div id='mapGap'></div>
+      <div id="mapGap"></div>
 
       <MapGL
         id="mapa"
@@ -185,7 +199,7 @@ function App() {
         <ProvSource data={provincias} style={style.provincias} />
         <DepsSource data={departamentos} style={style.departamentos} />
         <BsAsSource data={departamentosBsAs} style={style.country} />
-        <RutasSource data={rutas} style={style.rutas}/>
+        <RutasSource data={rutas} style={style.rutas} />
 
         {!!(filteredData && filteredData.length) && (
           <Markers
@@ -201,16 +215,17 @@ function App() {
       </MapGL>
 
       <div className="lower-floating-buttons">
-        <MonthsSlider {...{globalDates, setDates}}/>
-        <ScrollLink id='toMain2Container'
-                    to="Main2" // ID del elemento de destino (Main2)
-                    spy={true} // Activa el modo espía
-                    smooth={true} // Activa el desplazamiento suave
-                    duration={500} // Duración de la animación (en milisegundos)
-                    offset={-70} // Ajusta un offset opcional (si tienes un encabezado fijo)
+        <MonthsSlider {...{ globalDates, setDates }} />
+        <ScrollLink
+          id="toMain2Container"
+          to="Main2" // ID del elemento de destino (Main2)
+          spy={true} // Activa el modo espía
+          smooth={true} // Activa el desplazamiento suave
+          duration={500} // Duración de la animación (en milisegundos)
+          offset={-70} // Ajusta un offset opcional (si tienes un encabezado fijo)
         >
           <div id="toMain2">
-            <h4 id='plusBoton'>+</h4>
+            <h4 id="plusBoton">+</h4>
           </div>
         </ScrollLink>
       </div>
@@ -218,11 +233,10 @@ function App() {
       {popupInfo && <Popup {...popupInfo} />}
 
       <Main2 />
-      <Analisis {...analisisData}/>
+      <Analisis {...analisisData} />
       <Footer />
     </div>
   );
 }
-
 
 export default App;
