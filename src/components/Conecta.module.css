@@ -1,19 +1,15 @@
-#negritaTitulo {
+.negritaTitulo {
   font-family: "MiFuenteBold";
   padding-right: 10px;
 }
 
-#contectaTituloContainter {
+.contectaTituloContainer {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: baseline;
 }
 
-#flechaConecta2 {
-  width: 70vw;
-}
-
-#conecta {
+.conecta {
   width: 100vw;
   background-color: #2b3bcd;
   background-image: url(./fondoNosotrxs.jpg);
@@ -21,13 +17,13 @@
   height: 70vh;
 }
 
-#logoImgNos {
+.logoImgNos {
   width: 35vw;
   padding-left: 2vw;
   z-index: 3000;
 }
 
-#radarDecoImg {
+.radarDecoImg {
   position: absolute;
   opacity: 0.1;
   top: 4vh;
@@ -35,7 +31,7 @@
   height: 30vh;
 }
 
-#conectaTitulo {
+.conectaTitulo {
   color: black;
   font-size: 0.7rem;
   padding: 0vh 5vw;
@@ -43,11 +39,7 @@
   text-align: right;
 }
 
-#conectaTextContainer {
-  width: 80vw;
-}
-
-#conectaTextRadar {
+.conectaTextRadar {
   padding-top: 5vh;
   color: white;
   font-size: 1rem;
@@ -56,7 +48,7 @@
   padding: 15px;
 }
 
-#conecta2 {
+.conecta2 {
   background-color: white;
   padding-top: 4vh;
   color: #2b3bcd;
@@ -67,11 +59,11 @@
   padding-bottom: 2vh;
 }
 
-#textConecta2 {
+.textConecta2 {
   font-size: 0.8rem;
 }
 
-#siTeInteresa {
+.siTeInteresa {
   background-color: black;
   padding: 6vh 6vw;
   color: white;
@@ -87,21 +79,21 @@
 /*== tablet==*/
 
 @media (min-width: 768px) {
-  #conecta {
+  .conecta {
     width: 100vw;
     background-color: #2b3bcd;
     padding: 20vh 15vw;
     padding-bottom: 6vh;
     height: 100vh;
   }
-  #conectaTitulo {
+  .conectaTitulo {
     color: black;
     font-size: 1.1rem;
     padding: 0vh 5vw;
     text-align: right;
   }
 
-  #conectaTextRadar {
+  .conectaTextRadar {
     padding: 0vh 4vw;
     padding-top: 5vh;
 
@@ -111,11 +103,11 @@
     font-family: "MiFuente";
   }
 
-  #textConecta2 {
+  .textConecta2 {
     font-size: 1.1rem;
   }
 
-  #conecta2 {
+  .conecta2 {
     display: grid;
     grid-template-columns: 4fr 3fr;
     padding-top: 5vh;
@@ -126,25 +118,25 @@
     padding: 10vh 15vw;
   }
 
-  #textConecta2 {
+  .textConecta2 {
     padding: 0vh 5vw;
   }
 
-  #logoImgNos {
+  .logoImgNos {
     width: 35vw;
     padding-left: 2vw;
   }
 }
 
 @media (min-width: 1200px) {
-  #conectaTitulo {
+  .conectaTitulo {
     color: black;
     font-size: 1.4rem;
     padding: 0vh 5vw;
     text-align: right;
   }
 
-  #conectaTextRadar {
+  .conectaTextRadar {
     padding: 0vh 4vw;
     padding-top: 5vh;
 
@@ -154,7 +146,7 @@
     font-family: "MiFuente";
   }
 
-  #conecta2 {
+  .conecta2 {
     display: grid;
     grid-template-columns: 4fr 3fr;
     padding-top: 5vh;
@@ -165,16 +157,16 @@
     padding: 10vh 15vw;
   }
 
-  #textConecta2 {
+  .textConecta2 {
     padding: 0vh 5vw;
   }
 
-  #logoImgNos {
+  .logoImgNos {
     width: 28vw;
     padding-left: 2vw;
   }
 
-  #radarDecoImg {
+  .radarDecoImg {
     position: absolute;
     opacity: 0.1;
     top: 0vh;
