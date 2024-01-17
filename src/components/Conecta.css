@@ -1,247 +1,184 @@
-#negritaTitulo{
-    font-family: 'MiFuenteBold';
-    padding-right: 10px;
+#negritaTitulo {
+  font-family: "MiFuenteBold";
+  padding-right: 10px;
 }
 
-
-#contectaTituloContainter{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: baseline;
-
+#contectaTituloContainter {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: baseline;
 }
 
-#flechaConecta2{
-
-width: 70vw;}
-
-#conecta{
-    width: 100vw;
-    background-color: #2b3bcd;
-    background-image: url(./fondoNosotrxs.jpg);
-    padding: 20vh 5vw;
-    height: 70vh;
-  
-    
-
+#flechaConecta2 {
+  width: 70vw;
 }
 
-#logoImgNos{
-    width: 35vw;
-    padding-left: 2vw;
-    z-index: 3000;
-
-
+#conecta {
+  width: 100vw;
+  background-color: #2b3bcd;
+  background-image: url(./fondoNosotrxs.jpg);
+  padding: 20vh 5vw;
+  height: 70vh;
 }
 
-
-#radarDecoImg{
-    position: absolute;
-    opacity: 0.1;
-    top: 4vh;
-    left: 0;
-    height: 30vh;
-    
-    }
-
-
-
-#conectaTitulo{
-    
-    color: black;
-    font-size: 0.7rem;
-    padding: 0vh 5vw;
-    text-transform: uppercase;
-    text-align: right;
-    
-
-
-
+#logoImgNos {
+  width: 35vw;
+  padding-left: 2vw;
+  z-index: 3000;
 }
 
-
-
-
-#conectaTextContainer{
-    width: 80vw;
-    
-
-
+#radarDecoImg {
+  position: absolute;
+  opacity: 0.1;
+  top: 4vh;
+  left: 0;
+  height: 30vh;
 }
 
-
-#conectaTextRadar{
-    padding-top: 5vh;
-color: white;
-font-size: 1rem;
-text-align: justify;
-font-size: 0.8rem;
-padding: 15px;
-
-
-
+#conectaTitulo {
+  color: black;
+  font-size: 0.7rem;
+  padding: 0vh 5vw;
+  text-transform: uppercase;
+  text-align: right;
 }
 
-#conecta2{
-    background-color: white;
-    padding-top: 4vh;
-    color: #2b3bcd;
-    font-size: 0.8rem;
-    text-align: justify;
-    padding: 15px;
-    padding: 10vh 10vw;
-    padding-bottom: 2vh;
-
-
+#conectaTextContainer {
+  width: 80vw;
 }
 
-#textConecta2{
-    font-size: 0.8rem;
+#conectaTextRadar {
+  padding-top: 5vh;
+  color: white;
+  font-size: 1rem;
+  text-align: justify;
+  font-size: 0.8rem;
+  padding: 15px;
 }
 
-
-#siTeInteresa{
-
-    background-color: black;
-    padding: 6vh 6vw;
-    color: white;text-transform: uppercase;
- text-align: center;
-    font-family: 'MiFuente';
-    font-size: 0.8rem;
-
-border-radius: 30px;
-align-self: center;
-
+#conecta2 {
+  background-color: white;
+  padding-top: 4vh;
+  color: #2b3bcd;
+  font-size: 0.8rem;
+  text-align: justify;
+  padding: 15px;
+  padding: 10vh 10vw;
+  padding-bottom: 2vh;
 }
 
+#textConecta2 {
+  font-size: 0.8rem;
+}
+
+#siTeInteresa {
+  background-color: black;
+  padding: 6vh 6vw;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "MiFuente";
+  font-size: 0.8rem;
+
+  border-radius: 30px;
+  align-self: center;
+}
 
 /*== tablet==*/
 
-@media (min-width: 768px){
-
-    #conecta{
-        width: 100vw;
-        background-color: #2b3bcd;
-        padding: 20vh 15vw;
-        padding-bottom: 6vh;
-        height: 100vh;
-    
-    
-    }
-
-    #tituloAnalisisRadar{
-        font-size: 2rem;
-    }
-    
-    #conectaTitulo{
-        color: black;
-        font-size: 1.1rem;
-        padding: 0vh 5vw;
-        text-align: right;
-    
-    }
-    
-    #conectaTextRadar{
-padding: 0vh 4vw;
-        padding-top: 5vh;
-
-    color: white;
-    font-size: 1.2rem;
-    text-align: justify;
-    font-family: 'MiFuente';
-}
-
-#textConecta2{
+@media (min-width: 768px) {
+  #conecta {
+    width: 100vw;
+    background-color: #2b3bcd;
+    padding: 20vh 15vw;
+    padding-bottom: 6vh;
+    height: 100vh;
+  }
+  #conectaTitulo {
+    color: black;
     font-size: 1.1rem;
-}
+    padding: 0vh 5vw;
+    text-align: right;
+  }
 
-
-
-    #conecta2{
-        display: grid;
-        grid-template-columns: 4fr 3fr;
-        padding-top: 5vh;
-        color: #2b3bcd;
-        font-size: 1rem;
-        text-align: justify;
-        padding: 15px;
-        padding: 10vh 15vw;
-    
-    }
-
-    #textConecta2{
-        padding: 0vh 5vw;
-    }
-    
-    
-
-    #logoImgNos{
-        width: 35vw;
-        padding-left: 2vw;
-    
-    }
-
-}
-
-@media (min-width: 1200px){
-
-   
-    #tituloAnalisisRadar{
-        font-size: 2rem;
-    }
-    
-    #conectaTitulo{
-        color: black;
-        font-size: 1.4rem;
-        padding: 0vh 5vw;
-        text-align: right;
-    
-    }
-    
-    #conectaTextRadar{
-padding: 0vh 4vw;
-        padding-top: 5vh;
+  #conectaTextRadar {
+    padding: 0vh 4vw;
+    padding-top: 5vh;
 
     color: white;
     font-size: 1.2rem;
     text-align: justify;
-    font-family: 'MiFuente';
+    font-family: "MiFuente";
+  }
+
+  #textConecta2 {
+    font-size: 1.1rem;
+  }
+
+  #conecta2 {
+    display: grid;
+    grid-template-columns: 4fr 3fr;
+    padding-top: 5vh;
+    color: #2b3bcd;
+    font-size: 1rem;
+    text-align: justify;
+    padding: 15px;
+    padding: 10vh 15vw;
+  }
+
+  #textConecta2 {
+    padding: 0vh 5vw;
+  }
+
+  #logoImgNos {
+    width: 35vw;
+    padding-left: 2vw;
+  }
 }
 
+@media (min-width: 1200px) {
+  #conectaTitulo {
+    color: black;
+    font-size: 1.4rem;
+    padding: 0vh 5vw;
+    text-align: right;
+  }
 
-    #conecta2{
-        display: grid;
-        grid-template-columns: 4fr 3fr;
-        padding-top: 5vh;
-        color: #2b3bcd;
-        font-size: 1rem;
-        text-align: justify;
-        padding: 15px;
-        padding: 10vh 15vw;
-    
-    }
+  #conectaTextRadar {
+    padding: 0vh 4vw;
+    padding-top: 5vh;
 
-    #textConecta2{
-        padding: 0vh 5vw;
-    }
-    
-    
+    color: white;
+    font-size: 1.2rem;
+    text-align: justify;
+    font-family: "MiFuente";
+  }
 
-    #logoImgNos{
-        width: 28vw;
-        padding-left: 2vw;
-    
-    }
+  #conecta2 {
+    display: grid;
+    grid-template-columns: 4fr 3fr;
+    padding-top: 5vh;
+    color: #2b3bcd;
+    font-size: 1rem;
+    text-align: justify;
+    padding: 15px;
+    padding: 10vh 15vw;
+  }
 
+  #textConecta2 {
+    padding: 0vh 5vw;
+  }
 
-    #radarDecoImg{
-        position: absolute;
-        opacity: 0.1;
-        top: 0vh;
-        left: 3vw;
-        height: 50vh;
-        
-        }
+  #logoImgNos {
+    width: 28vw;
+    padding-left: 2vw;
+  }
 
-
+  #radarDecoImg {
+    position: absolute;
+    opacity: 0.1;
+    top: 0vh;
+    left: 3vw;
+    height: 50vh;
+  }
 }
