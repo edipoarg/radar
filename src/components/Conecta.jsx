@@ -1,9 +1,9 @@
-import "./Conecta.css";
+import styles from "./Conecta.module.css";
 import { useEffect } from "react";
 
 export const Details = () => (
   <>
-    <span id="negritaTitulo">
+    <span className={styles.negritaTitulo}>
       RADAR (Registro de Ataques de Derechas Argentinas Radicalizadas)
     </span>
     es un proyecto periodístico colaborativo impulsado por el Equipo de
@@ -23,28 +23,29 @@ export default function ReportaForm() {
 
   return (
     <>
-      <div id="conecta">
-        <div id="radarDeco">
-          <img id="radarDecoImg" src="imgRadar.png" alt="" />
+      {/* TODO move this ID to its own constant, as it's used in Main2 and main and navbar  */}
+      <div id="conecta" className={styles.conecta}>
+        <div>
+          <img className={styles.radarDecoImg} src="imgRadar.png" alt="" />
         </div>
-        <div id="contectaTituloContainter">
+        <div className={styles.contectaTituloContainer}>
           <div>
-            <img id="logoImgNos" src="logoRadar.png" alt="" />
+            <img className={styles.logoImgNos} src="logoRadar.png" alt="" />
           </div>
 
-          <h1 id="conectaTitulo">
+          <h1 className={styles.conectaTitulo}>
             Registro de Ataques de Derechas Argentinas Radicalizadas
           </h1>
         </div>
-        <div id="contectaTextContainter">
-          <h6 id="conectaTextRadar">
+        <div>
+          <h6 className={styles.conectaTextRadar}>
             <Details />
           </h6>
         </div>
       </div>
 
-      <div id="conecta2">
-        <h6 id="textConecta2">
+      <div className={styles.conecta2}>
+        <h6 className={styles.textConecta2}>
           Dentro del amplio espectro que componen las derechas llamamos
           radicalizadas a los sectores que apelan directa o indirectamente a la
           violencia como método de intervención política. Entendemos por ataques
@@ -56,7 +57,7 @@ export default function ReportaForm() {
           <br />
         </h6>
 
-        <h6 id="siTeInteresa">
+        <h6 className={styles.siTeInteresa}>
           si querés comunicarte con nosotrxs podés escribirnos a
           <br />
           <br />
