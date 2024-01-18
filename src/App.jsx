@@ -22,6 +22,7 @@ import Analisis from "./components/analisis.jsx";
 
 import mystyle from "./mystyle.json";
 import MonthsSlider from "./components/MonthsSlider.jsx";
+import MapGap from "./components/MapGap.jsx";
 
 //estilos/////////////////////
 const style = {
@@ -161,9 +162,9 @@ function App() {
           handleTipoFilter={handleTipoFilter}
           tipoFilters={tipoFilters}
           setTipoFilters={setTipoFilters}
-        ></Filtros>
-      )}
-      <div id="mapGap"></div>
+        />
+      )}{" "}
+      <MapGap />
       <div id="botonFiltrosMain">
         {/* Render different button content based on the state */}
         <a
@@ -185,8 +186,7 @@ function App() {
           )}
         </a>
       </div>
-      <div id="mapGap"></div>
-
+      <MapGap />
       <MapGL
         id="mapa"
         mapLib={maplibregl}
@@ -213,7 +213,6 @@ function App() {
         )}
         <NavigationControl position="top-right" />
       </MapGL>
-
       <div className="lower-floating-buttons">
         <MonthsSlider {...{ globalDates, setDates }} />
         <ScrollLink
@@ -229,9 +228,7 @@ function App() {
           </div>
         </ScrollLink>
       </div>
-
       {popupInfo && <Popup {...popupInfo} />}
-
       <Main2 />
       <Analisis {...analisisData} />
       <Footer />

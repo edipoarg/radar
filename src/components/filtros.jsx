@@ -1,7 +1,9 @@
-import "./filtros.css";
+import styles from "./filtros.module.css";
 import { Switch } from "@mui/material";
+import PropTypes from "prop-types";
+import MapGap from "./MapGap";
 
-export default function filtros({
+export default function Filtros({
   caseCount,
   handleTipoFilter,
   tipoFilters,
@@ -16,26 +18,28 @@ export default function filtros({
   };
 
   return (
-    <div id="filtros">
-      <div id="gap"></div>
+    <div className={styles.filtros}>
+      <div className={styles.gap}></div>
 
-      <div id="filtrosBox">
-        <div id="boxes">
-          <div id="botonFiltros">
+      <div className={styles.filtrosBox}>
+        <div className={styles.boxes}>
+          <div className={styles.botonFiltros}>
             <br />
           </div>
 
-          <div id="display">
+          <div className={styles.display}>
             <h4>casos:</h4>
-            <h1 id="cantCasos">{caseCount}</h1>
+            <h1 className={styles.cantCasos}>{caseCount}</h1>
           </div>
-          <div id="opciones">
-            <div id="filtroTipo">
-              <div id="filtroTipo1" className="tipos">
-                <div id="tipo1Ref">
+          <div>
+            <div className={styles.filtroTipo}>
+              <div className={styles.tipos}>
+                <div className={styles.tipo1Ref}>
                   {" "}
-                  <div className="tipo1Icon"></div>
-                  <h4 className="tipoClass">Ataque a símbolos y lugares </h4>
+                  <div className={styles.tipo1Icon}></div>
+                  <h4 className={styles.tipoClass}>
+                    Ataque a símbolos y lugares{" "}
+                  </h4>
                 </div>
                 <Switch
                   defaultChecked={tipoFilters.t1}
@@ -43,11 +47,13 @@ export default function filtros({
                 ></Switch>
               </div>
 
-              <div id="filtroTipo2" className="tipos">
-                <div id="tipo2Ref">
+              <div className={styles.tipos}>
+                <div className={styles.tipo2Ref}>
                   {" "}
-                  <div className="tipo2Icon"></div>
-                  <h4 className="tipoClass">Hostigamiento e intimidación </h4>
+                  <div className={styles.tipo2Icon}></div>
+                  <h4 className={styles.tipoClass}>
+                    Hostigamiento e intimidación{" "}
+                  </h4>
                 </div>
 
                 <Switch
@@ -56,11 +62,11 @@ export default function filtros({
                 ></Switch>
               </div>
 
-              <div id="filtroTipo3" className="tipos">
-                <div id="tipo3Ref">
+              <div className={styles.tipos}>
+                <div className={styles.tipo3Ref}>
                   {" "}
-                  <div className="tipo3Icon"></div>
-                  <h4 className="tipoClass">
+                  <div className={styles.tipo3Icon}></div>
+                  <h4 className={styles.tipoClass}>
                     Atentados contra la integridad física y la vida{" "}
                   </h4>
                 </div>
@@ -72,11 +78,21 @@ export default function filtros({
             </div>
           </div>
         </div>
-
-        <div id="mapGap"></div>
+        <MapGap />
       </div>
 
-      <div id="gap2"></div>
+      <div className={styles.gap2}></div>
     </div>
   );
 }
+
+Filtros.propTypes = {
+  caseCount: PropTypes.number.isRequired,
+  handleTipoFilter: PropTypes.func.isRequired,
+  tipoFilters: PropTypes.shape({
+    t1: PropTypes.string.isRequired,
+    t2: PropTypes.string.isRequired,
+    t3: PropTypes.string.isRequired,
+  }).isRequired,
+  setTipoFilters: PropTypes.func.isRequired,
+};
