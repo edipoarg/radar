@@ -13,11 +13,6 @@
   color: white;
 }
 
-#mapGap {
-  height: 5vh;
-  width: 100%;
-}
-
 #botonFiltrosMain{
   position: absolute;
   top: 15vh
@@ -229,13 +224,6 @@
 
 /*TV RESPONISVE 1200px*/
 @media (min-width: 1200px) {
-
-
-  #mapGap {
-    height: 5vh;
-    width: 100%;
-  }
-
   .lower-floating-buttons {
     position: absolute;
     top: 80vh;
