@@ -17,7 +17,7 @@ import {
 import { Markers } from "./components/Markers.jsx";
 import Main2 from "./components/Main2.jsx";
 import Popup from "./components/Popup.jsx";
-import Filtros from "./components/filtros.jsx"; // Cambia la ruta a tu formulario
+import Filtros from "./components/Filtros.jsx"; // Cambia la ruta a tu formulario
 import Analisis from "./components/analisis.jsx";
 
 import mystyle from "./mystyle.json";
@@ -163,7 +163,7 @@ function App() {
           tipoFilters={tipoFilters}
           setTipoFilters={setTipoFilters}
         />
-      )}{" "}
+      )}
       <MapGap />
       <div id="botonFiltrosMain">
         {/* Render different button content based on the state */}

@@ -1,4 +1,4 @@
-import styles from "./analisis.module.css";
+import styles from "./Analisis.module.css";
 import { Link as ScrollLink } from "react-scroll";
 import PropTypes from "prop-types";
 

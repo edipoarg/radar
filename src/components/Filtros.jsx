@@ -1,4 +1,4 @@
-import styles from "./filtros.module.css";
+import styles from "./Filtros.module.css";
 import { Switch } from "@mui/material";
 import PropTypes from "prop-types";
 import MapGap from "./MapGap";
