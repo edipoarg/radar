@@ -6,7 +6,7 @@ import "maplibre-gl/dist/maplibre-gl.css";
 import "./App.css";
 
 import { Link as ScrollLink } from "react-scroll";
-import Footer from "./components/footer.jsx";
+import Footer from "./components/Footer.jsx";
 
 import {
   ProvSource,
