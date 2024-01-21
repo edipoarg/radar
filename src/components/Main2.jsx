@@ -1,4 +1,4 @@
-import "./Main2.css";
+import styles from "./Main2.module.css";
 import { Link as ScrollLink } from "react-scroll";
 import { Link } from "react-router-dom";
 import { Carousel } from "react-bootstrap";
@@ -6,26 +6,30 @@ import { Details } from "./Conecta.jsx";
 
 export default function Main2() {
   return (
-    <div id="Main2">
-      <div id="franja1">
-        <div id="reportaMain">
-          <h4 id="bajadaPrincipal">
+    // TODO move this ID, Main2, to its own constant
+    <div id="Main2" className={styles.Main2}>
+      <div className={styles.franja1}>
+        <div className={styles.reportaMain}>
+          <h4 className={styles.bajadaPrincipal}>
             <Details />
           </h4>
+          {/* TODO move this route identifier to its own constant */}
+
           <Link to="/conecta">
             {" "}
-            <button id="botonReportaMain">NOSOTRXS</button>
+            <button className={styles.botonReportaMain}>NOSOTRXS</button>
           </Link>
         </div>
 
         <ScrollLink
+          // TODO move App string to constant
           to="App"
           spy={true} // Activa el modo espía
           smooth={true} // Activa el desplazamiento suave
           duration={500} // Duración de la animación (en milisegundos)
           offset={-70} // Ajusta un offset opcional (si tienes un encabezado fijo)
         >
-          <button id="botonMain2">
+          <button className={styles.botonMain2}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="16"
@@ -36,24 +40,26 @@ export default function Main2() {
             >
               <path d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z" />
             </svg>
-            <h5 id="botonMapaText">mapa</h5>
+            <h5 className={styles.botonMapaText}>mapa</h5>
           </button>
         </ScrollLink>
       </div>
 
-      <div id="separadorMain">
-        <div id="bloqueI"></div>
-        <div id="bloqueD"></div>
+      <div className={styles.separadorMain}>
+        <div className={styles.bloqueI}></div>
+        <div className={styles.bloqueD}></div>
       </div>
 
-      <div id="franja2">
-        <Carousel id="notasMain">
+      <div className={styles.franja2}>
+        <Carousel className={styles.notasMain}>
           <Carousel.Item>
-            <h1 id="tituloNotasMain">Los dinosaurios no van a desaparecer</h1>
-            <h4 className="autorNotaMain">
+            <h1 className={styles.tituloNotasMain}>
+              Los dinosaurios no van a desaparecer
+            </h1>
+            <h4 className={styles.autorNotaMain}>
               Por el Equipo de Investigación Política (EdIPo)
             </h4>
-            <button id="botonNotasMain">
+            <button className={styles.botonNotasMain}>
               <a
                 href="https://informes.revistacrisis.com.ar/los-dinosaurios-no-van-a-desaparecer/"
                 target="_blank"
@@ -64,11 +70,13 @@ export default function Main2() {
             </button>
           </Carousel.Item>
           <Carousel.Item>
-            <h1 id="tituloNotasMain">Informe a un año del atentado a CFK</h1>
-            <h4 className="autorNotaMain">
+            <h1 className={styles.tituloNotasMain}>
+              Informe a un año del atentado a CFK
+            </h1>
+            <h4 className={styles.autorNotaMain}>
               Por el Equipo de Investigación Política (EdIPo)
             </h4>
-            <button id="botonNotasMain">
+            <button className={styles.botonNotasMain}>
               <a
                 href="https://informes.revistacrisis.com.ar/la-violencia-avanza-1s/"
                 target="_blank"
@@ -80,27 +88,27 @@ export default function Main2() {
           </Carousel.Item>
         </Carousel>
 
-        <div id="botoneraMain">
-          <div id="contactoMain">
-            <h2 id="conectaTextMain">
+        <div className={styles.botoneraMain}>
+          <div className={styles.contactoMain}>
+            <h2 className={styles.conectaTextMain}>
               Colaborá en la construcción de una fuente de información pública
               sobre agresiones de derechas argentinas radicalizadas.
             </h2>
-            <button id="botonConectaMain">
+            <button className={styles.botonConectaMain}>
               <a
                 href="https://docs.google.com/forms/d/e/1FAIpQLSe5pKXuvkvSUiwI_YEq5OZrfXCmpcsDuz_6co_iS2Qags80_A/viewform"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <h2 id="reportaBotonText">REPORTÁ UN HECHO</h2>
+                <h2 className={styles.reportaBotonText}>REPORTÁ UN HECHO</h2>
               </a>
             </button>
           </div>
 
-          <div id="analisisMain">
-            <div id="analisisTextComp">
-              <h3 id="analisisTextMain">Relevamiento</h3>{" "}
-              <h6 id="analisisAnios"> 2020 - 2023</h6>
+          <div className={styles.analisisMain}>
+            <div className={styles.analisisTextComp}>
+              <h3 className={styles.analisisTextMain}>Relevamiento</h3>{" "}
+              <h6 className={styles.analisisAnios}> 2020 - 2023</h6>
             </div>
             <ScrollLink
               to="analisis"
@@ -109,7 +117,7 @@ export default function Main2() {
               duration={500} // Duración de la animación (en milisegundos)
               offset={-70} // Ajusta un offset opcional (si tienes un encabezado fijo)
             >
-              <button id="botonAnalisisMain">
+              <button className={styles.botonAnalisisMain}>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
