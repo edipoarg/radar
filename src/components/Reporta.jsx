@@ -1,4 +1,4 @@
-import styles from "./reporta.module.css";
+import styles from "./Reporta.module.css";
 
 export default function ReportaForm() {
   function Submit(e) {
