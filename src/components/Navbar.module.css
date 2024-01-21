@@ -6,7 +6,7 @@
   z-index: 5000;
   height: 8vh;
   background-color: #ffffff;
-  color: #00425A;
+  color: #00425a;
   display: grid;
   justify-content: space-between;
   grid-template-columns: 1fr 7fr 1fr;
@@ -15,79 +15,47 @@
   align-content: center;
 }
 
-
-#botonesNavPc{
-  font-size: 1rem;
-  
-}
-
-.heading>h1 {
+.heading > h1 {
   padding: 4px;
   margin: 0;
 }
 
-#reportaBotonNav{
+.reportaBotonNav {
   color: white;
   background-color: #2b3bcd;
   padding: 0.5vh 1vw;
   border-radius: 25px;
-
 }
 
-
-#menuImg {
+.menuImg {
   width: 100px;
 }
 
-#menu {
-  display: grid;
-  grid-template-columns: 3fr 1fr;
-  
-  
-}
-
-#menuPC{
-  justify-items: center;
-justify-content: center;
-justify-self: center;
-}
-
-
-#botonMenu {
+.botonMenu {
   justify-self: right;
-
-  
 }
 
-/* #botonReporta{
-  color: white;
-  font-size: 1rem;
-} */
-
-
-
-#menuPCBox {
+.menuPCBox {
   display: flex;
   justify-content: right;
-  align-items: center
+  align-items: center;
 }
 
-
-#menuPC {
+.menuPC {
+  justify-items: center;
+  justify-content: center;
+  justify-self: center;
   display: grid;
-  grid-template-columns: 1fr 1fr ;
+  grid-template-columns: 1fr 1fr;
   gap: 10px;
   align-items: center;
-
-
-
 }
 
-#logoImg {
+.logoImg {
   width: 70px;
 }
 
-#logo {
+.logo {
   display: flex;
   padding-left: 20px;
 }

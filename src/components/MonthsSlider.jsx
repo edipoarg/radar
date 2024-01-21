@@ -1,8 +1,7 @@
 import { useState, useCallback, useMemo } from "react";
 import PropTypes from "prop-types";
 import { Slider } from "@mui/material";
-
-import "./MonthsSlider.css";
+import styles from "./MonthsSlider.module.css";
 
 const date2MonthYear = (d) => `${d.getMonth() + 1}/${d.getFullYear()}`;
 const monthsDiff = (b, a) => {
@@ -42,7 +41,7 @@ export default function MonthsSlider({ className, globalDates, setDates }) {
   }, []);
 
   return (
-    <div className={`months-slider ${className ?? ""}`}>
+    <div className={`${styles["months-slider"]} ${className ?? ""}`}>
       <Slider
         max={months}
         valueLabelDisplay="auto"
@@ -53,13 +52,17 @@ export default function MonthsSlider({ className, globalDates, setDates }) {
         onChange={handleChange}
         aria-labelledby="non-linear-slider"
       />
-      <div id="referenciasFechas">
+      <div className={styles.referenciasFechas}>
         <div>
-          <h6 id="fechaInicio">{date2MonthYear(globalDates.min)}</h6>
+          <h6 className={styles.fechaInicio}>
+            {date2MonthYear(globalDates.min)}
+          </h6>
         </div>
         <div> </div>
         <div>
-          <h6 id="fechaCierre">{date2MonthYear(globalDates.max)}</h6>
+          <h6 className={styles.fechaCierre}>
+            {date2MonthYear(globalDates.max)}
+          </h6>
         </div>
       </div>
     </div>
