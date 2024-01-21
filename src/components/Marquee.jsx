@@ -1,16 +1,16 @@
-import "./marquee.css";
+import styles from "./Marquee.module.css";
 
 export default function Marquee() {
   return (
-    <div id="marquee-container">
-      <marquee id="marquee" direction="">
+    <div className={styles.marqueeContainer}>
+      <marquee direction="">
         El Registro de Ataques de Derechas Argentinas Radicalizadas es una
         herramienta colaborativa de producción de conocimiento y creación de
         redes de autocuidado.{" "}
-        <span id="highlight-text">
+        <span className={styles.highlightText}>
           Si sabés de algún hecho, reportalo{" "}
           <a
-            id="linkMarquee"
+            className={styles.linkMarquee}
             href="https://docs.google.com/forms/d/e/1FAIpQLSe5pKXuvkvSUiwI_YEq5OZrfXCmpcsDuz_6co_iS2Qags80_A/viewform"
             target="_blank"
             rel="noopener noreferrer"

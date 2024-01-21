@@ -18,7 +18,7 @@ import { Markers } from "./components/Markers.jsx";
 import Main2 from "./components/Main2.jsx";
 import Popup from "./components/Popup.jsx";
 import Filtros from "./components/Filtros.jsx"; // Cambia la ruta a tu formulario
-import Analisis from "./components/analisis.jsx";
+import Analisis from "./components/Analisis.jsx";
 
 import mystyle from "./mystyle.json";
 import MonthsSlider from "./components/MonthsSlider.jsx";
