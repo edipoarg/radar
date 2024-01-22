@@ -4,6 +4,7 @@ import MapGL, { NavigationControl } from "react-map-gl/maplibre";
 import maplibregl from "maplibre-gl";
 import "maplibre-gl/dist/maplibre-gl.css";
 import "./App.css";
+import styles from "./App.module.css";
 
 import { Link as ScrollLink } from "react-scroll";
 import Footer from "./components/Footer.jsx";
@@ -25,7 +26,7 @@ import MonthsSlider from "./components/MonthsSlider.jsx";
 import MapGap from "./components/MapGap.jsx";
 
 //estilos/////////////////////
-const style = {
+const mapSourceStyles = {
   country: {
     fillColor: "#bacbff",
     fillOpacity: 0.6,
@@ -155,7 +156,7 @@ function App() {
   };
 
   return (
-    <div className="App">
+    <div className={styles.App}>
       {filtrosVisible && (
         <Filtros
           caseCount={filteredData.length}
@@ -165,21 +166,21 @@ function App() {
         />
       )}
       <MapGap />
-      <div id="botonFiltrosMain">
+      <div className={styles.botonFiltrosMain}>
+        {/* FIXME: Why is this not a button? */}
         {/* Render different button content based on the state */}
         <a
-          id="closeButton"
           aria-label="Hide"
           onClick={() => {
             handleClickCloseButton();
             toggleFiltrosVisibility();
           }}
           href="#"
-          className={`simple-button ${isCloseButtonClicked ? "transformed-button" : "simple-button"}`}
+          className={`${styles.closeButton} ${styles["simple-button"]} ${isCloseButtonClicked ? styles["transformed-button"] : ""}`}
         >
           {isCloseButtonClicked ? (
             <div>
-              <h5 id="botonFiltrosMap">FILTROS</h5>
+              <h5 className={styles.botonFiltrosMap}>FILTROS</h5>
             </div>
           ) : (
             <>X</>
@@ -188,7 +189,7 @@ function App() {
       </div>
       <MapGap />
       <MapGL
-        id="mapa"
+        className={styles.mapa}
         mapLib={maplibregl}
         {...mapProps}
         onHover={handleHover} // Asignar la función handleProvinciasHover al evento onHover
@@ -196,10 +197,13 @@ function App() {
       >
         {/* Capa interactiva para provincias */}
 
-        <ProvSource data={provincias} style={style.provincias} />
-        <DepsSource data={departamentos} style={style.departamentos} />
-        <BsAsSource data={departamentosBsAs} style={style.country} />
-        <RutasSource data={rutas} style={style.rutas} />
+        <ProvSource data={provincias} style={mapSourceStyles.provincias} />
+        <DepsSource
+          data={departamentos}
+          style={mapSourceStyles.departamentos}
+        />
+        <BsAsSource data={departamentosBsAs} style={mapSourceStyles.country} />
+        <RutasSource data={rutas} style={mapSourceStyles.rutas} />
 
         {!!(filteredData && filteredData.length) && (
           <Markers
@@ -213,18 +217,17 @@ function App() {
         )}
         <NavigationControl position="top-right" />
       </MapGL>
-      <div className="lower-floating-buttons">
+      <div className={styles["lower-floating-buttons"]}>
         <MonthsSlider {...{ globalDates, setDates }} />
         <ScrollLink
-          id="toMain2Container"
           to="Main2" // ID del elemento de destino (Main2)
           spy={true} // Activa el modo espía
           smooth={true} // Activa el desplazamiento suave
           duration={500} // Duración de la animación (en milisegundos)
           offset={-70} // Ajusta un offset opcional (si tienes un encabezado fijo)
         >
-          <div id="toMain2">
-            <h4 id="plusBoton">+</h4>
+          <div className={styles.toMain2}>
+            <h4 className={styles.plusBoton}>+</h4>
           </div>
         </ScrollLink>
       </div>
