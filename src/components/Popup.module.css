@@ -1,5 +1,4 @@
 .popup {
-
   position: absolute;
   top: 68vh;
   left: 2vw;
@@ -15,6 +14,11 @@
   z-index: 1000;
   overflow: hidden;
   white-space: break-spaces;
+}
+
+.masDatosPopup {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .displayTitulo {
@@ -37,12 +41,10 @@
   border-radius: 25px;
   width: 30vw;
   height: 5vh;
-
 }
 
 @media (min-width: 768px) {
   .popup {
-
     position: absolute;
     top: 60vh;
     left: 1vw;
@@ -51,17 +53,13 @@
 
     padding: 16px 8px;
 
-
     white-space: break-spaces;
   }
 
-
-
-  .masDatosPopup{
+  .masDatosPopup {
     display: grid;
     grid-template-columns: 1fr;
   }
-
 
   .displayTitulo {
     font-size: 1rem;
@@ -74,21 +72,39 @@
 }
 
 @media (min-width: 1200px) {
-    .displayLink {
+  .displayLink {
     width: 8vw;
   }
-    .popup {
+  .popup {
+    position: absolute;
+    top: 63vh;
+    left: 1vw;
+    width: 18vw;
+    height: 32vh;
 
-        position: absolute;
-        top: 63vh;
-        left: 1vw;
-        width: 18vw;
-        height: 32vh;
+    padding: 16px 8px;
 
-        padding: 16px 8px;
+    white-space: breakspaces;
+  }
+}
 
+/*celus mas grandes*/
+@media (min-width: 400px) {
+  .popup {
+    position: absolute;
+    top: 65vh;
+    left: 2vw;
+    width: 96vw;
+    height: 17vh;
 
-        white-space: breakspaces;
-      }
-
+    padding: 15px;
+    padding-left: 25px;
+    color: white;
+    background-color: #2b3bcd;
+    border: 1px solid white;
+    border-radius: 30px;
+    z-index: 1000;
+    overflow: hidden;
+    white-space: break-spaces;
+  }
 }
