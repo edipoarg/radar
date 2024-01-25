@@ -11,5 +11,5 @@ only the main branch is supported. releases that get a security audit are clearl
 
 ## Reporting a Vulnerability
 
-Please do report vulnerabilities to helo@archivo.ar and give us a 1 week window to get back to you.
+Please do report vulnerabilities to cve@investigacionpolitica.com and give us a 1 week window to get back to you.
 we encourage responsible disclosure, only after our partners have had a chance to update.
