@@ -1,16 +1,30 @@
 import { useState, useCallback, useMemo } from "react";
-import PropTypes from "prop-types";
 import { Slider } from "@mui/material";
 import styles from "./MonthsSlider.module.css";
 
-const date2MonthYear = (d) => `${d.getMonth() + 1}/${d.getFullYear()}`;
-const monthsDiff = (b, a) => {
+const date2MonthYear = (d: Date) => `${d.getMonth() + 1}/${d.getFullYear()}`;
+const monthsDiff = (b: Date, a: Date) => {
   const yearsDiff = a.getFullYear() - b.getFullYear();
   const monthDiff = a.getMonth() - b.getMonth();
   return yearsDiff * 12 + monthDiff;
 };
 
-export default function MonthsSlider({ className, globalDates, setDates }) {
+interface BoundaryDates {
+  min: Date;
+  max: Date;
+}
+
+interface Props {
+  className: string;
+  globalDates: BoundaryDates;
+  setDates: (dates: BoundaryDates) => void;
+}
+
+export default function MonthsSlider({
+  className,
+  globalDates,
+  setDates,
+}: Props) {
   const months = useMemo(
     () => monthsDiff(globalDates.min, globalDates.max),
     [globalDates],
@@ -18,7 +32,7 @@ export default function MonthsSlider({ className, globalDates, setDates }) {
   const [monthRange, setMonthRange] = useState([0, months]);
 
   const valueLabelFormat = useCallback(
-    (value) => {
+    (value: number) => {
       const diff = months - value;
       const date = new Date();
       date.setMonth(date.getMonth() - 1 - diff);
@@ -28,17 +42,24 @@ export default function MonthsSlider({ className, globalDates, setDates }) {
   );
 
   // Uso useCallback para evitar que se re-declare la función anónima en cada render
-  const handleChange = useCallback((event) => {
-    const range = event.target.value;
-    const min = new Date(globalDates.min);
-    const max = new Date(globalDates.min);
+  const handleChange = useCallback(
+    (_event: Event, value: number[] | number) => {
+      /* La API de MUI no permite parametrizar el tipo del value.
+       * El estado del arte es hacer esta chanchada: forzar el tipo a la forma que sabés que va a recibir en runtime.
+       * Ejemplos acá: https://www.programcreek.com/typescript/?api=@mui/material.Slider
+       */
+      const range = value as [number, number];
+      const min = new Date(globalDates.min);
+      const max = new Date(globalDates.min);
 
-    max.setMonth(min.getMonth() + range[1]);
-    min.setMonth(min.getMonth() + range[0]);
+      max.setMonth(min.getMonth() + range[1]);
+      min.setMonth(min.getMonth() + range[0]);
 
-    setMonthRange(range);
-    setDates({ min, max });
-  }, []);
+      setMonthRange(range);
+      setDates({ min, max });
+    },
+    [],
+  );
 
   return (
     <div className={`${styles["months-slider"]} ${className ?? ""}`}>
@@ -68,13 +89,3 @@ export default function MonthsSlider({ className, globalDates, setDates }) {
     </div>
   );
 }
-
-MonthsSlider.propTypes = {
-  className: PropTypes.string,
-  globalDates: PropTypes.objectOf(PropTypes.instanceOf(Date)).isRequired,
-  setDates: PropTypes.func.isRequired,
-};
-
-MonthsSlider.defaultProps = {
-  className: "",
-};
