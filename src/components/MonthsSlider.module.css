@@ -11,17 +11,17 @@
     padding-right: 6vw;
 }
 
-.months-slider #referenciasFechas {
+.months-slider .referenciasFechas {
     display: grid;
     grid-template-columns: 1fr 4fr 1fr;
 }
 
-.months-slider #referenciasFechas #fechaInicio {
+.months-slider .referenciasFechas .fechaInicio {
     color: #2b3bcd;
     text-align: left;
 }
 
-.months-slider #referenciasFechas #fechaCierre {
+.months-slider .referenciasFechas .fechaCierre {
     color: #2b3bcd;
     text-align: right;
 }

@@ -1,12 +1,12 @@
 import { Marker } from "react-map-gl/maplibre";
 import { useState, useEffect } from "react";
 import PropTypes from "prop-types";
-import "./Markers.css";
+import styles from "./Markers.module.css";
 
 const tipoIdStyles = {
-  t1: "amarillo",
-  t2: "naranja",
-  t3: "rojo",
+  t1: styles.amarillo,
+  t2: styles.naranja,
+  t3: styles.rojo,
 };
 
 export const Markers = ({
@@ -30,7 +30,8 @@ export const Markers = ({
 
   const renderMarker = (event) => {
     const { coords, title, date, source, id, tipoId, tipo } = event;
-    const markerStyle = `circulo ${id === selected ? "hovered" : ""} ${tipoIdStyles[tipoId]}`;
+    // Document this: Where does 'hovered' come from? It's not in the stylesheet
+    const markerStyle = `${styles.circulo} ${id === selected ? "hovered" : ""} ${tipoIdStyles[tipoId]}`;
 
     return (
       <Marker

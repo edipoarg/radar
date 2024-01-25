@@ -1,4 +1,4 @@
-import "./reporta.css";
+import styles from "./Reporta.module.css";
 
 export default function ReportaForm() {
   function Submit(e) {
@@ -13,13 +13,13 @@ export default function ReportaForm() {
   }
 
   return (
-    <div id="reportaForm">
-      <div id="form">
-        <div id="formHeader">
-          <h1 id="tituloForm">
+    <div className={styles.reportaForm}>
+      <div className={styles.form}>
+        <div className={styles.formHeader}>
+          <h1 className={styles.tituloForm}>
             Relevamiento nacional de ataques de derechas radicalizadas
           </h1>
-          <h4 id="bajadaForm">
+          <h4 className={styles.bajadaForm}>
             *este reporte no implica la realización de ningún tipo de denuncia
             institucional sino un aporte a un relevamiento colaborativo con
             fines periodísticos.
@@ -27,14 +27,18 @@ export default function ReportaForm() {
           </h4>
         </div>
 
-        <form id="formSheet" onSubmit={(e) => Submit(e)}>
-          <div className="formInputContainer">
+        <form
+          id="formSheet"
+          className={styles.formSheet}
+          onSubmit={(e) => Submit(e)}
+        >
+          <div className={styles.formInputContainer}>
             <label htmlFor="email">
-              <h3 className="formQuestion">Email</h3>
+              <h3 className={styles.formQuestion}>Email</h3>
             </label>
 
             <input
-              className="formInput"
+              className={styles.formInput}
               type="email"
               name="Mail"
               id="mail"
@@ -44,15 +48,15 @@ export default function ReportaForm() {
           </div>
           <br />
 
-          <div className="formInputContainer">
+          <div className={styles.formInputContainer}>
             <label htmlFor="titulo">
-              <h3 className="formQuestion">¿Qué pasó?</h3>
-              <p className="bajadaQuestion">
+              <h3 className={styles.formQuestion}>¿Qué pasó?</h3>
+              <p className={styles.bajadaQuestion}>
                 una descripción lo más detallada del hecho
               </p>
             </label>
             <input
-              className="formInput"
+              className={`${styles.formInput} ${styles.titulo}`}
               type="text"
               name="Titulo"
               id="titulo"
@@ -62,16 +66,16 @@ export default function ReportaForm() {
             />
           </div>
           <br />
-          <div className="formInputContainer">
+          <div className={styles.formInputContainer}>
             <label htmlFor="fecha">
-              <h3 className="formQuestion">¿Cuándo pasó?</h3>
-              <p className="bajadaQuestion">
+              <h3 className={styles.formQuestion}>¿Cuándo pasó?</h3>
+              <p className={styles.bajadaQuestion}>
                 si no es posible indicar fecha exacta, incorporar una referencia
                 de tiempo en la descripción del hecho
               </p>
             </label>
             <input
-              className="formInput"
+              className={styles.formInput}
               type="date"
               name="fechaHecho"
               id="fecha"
@@ -79,16 +83,16 @@ export default function ReportaForm() {
             />
           </div>
           <br />
-          <div className="formInputContainer">
+          <div className={styles.formInputContainer}>
             <label htmlFor="lugar">
-              <h3 className="formQuestion">¿Dónde pasó?</h3>
-              <p className="bajadaQuestion">
+              <h3 className={styles.formQuestion}>¿Dónde pasó?</h3>
+              <p className={styles.bajadaQuestion}>
                 Si es posible, insertar enlace de googlemaps o referencia
                 geográfica
               </p>
             </label>
             <input
-              className="formInput"
+              className={styles.formInput}
               type="text"
               name="Lugar"
               id="lugar"
@@ -96,14 +100,14 @@ export default function ReportaForm() {
             />
           </div>
           <br />
-          <div className="formInputContainer">
+          <div className={styles.formInputContainer}>
             <label htmlFor="agresor">
-              <h3 className="formQuestion">
+              <h3 className={styles.formQuestion}>
                 ¿qué sabes sobre la(s) persona(s) agresora(s)?
               </h3>
             </label>
             <input
-              className="formInput"
+              className={styles.formInput}
               type="text"
               name="Agresor"
               id="agresor"
@@ -113,15 +117,15 @@ export default function ReportaForm() {
           </div>
           <br />
 
-          <div className="formInputContainer">
+          <div className={styles.formInputContainer}>
             <label htmlFor="intervencion">
-              <h3 className="formQuestion">
+              <h3 className={styles.formQuestion}>
                 ¿hubo intervención policial? ¿alguna respuesta estatal o
                 judicial? ¿cuál?
               </h3>
             </label>
             <input
-              className="formInput"
+              className={styles.formInput}
               type="text"
               name="Intervencion"
               id="intervencion"
@@ -130,16 +134,16 @@ export default function ReportaForm() {
           </div>
           <br />
 
-          <div className="formInputContainer">
+          <div className={styles.formInputContainer}>
             <label htmlFor="archivos">
-              <h3 className="formQuestion">Archivos relacionados</h3>
-              <p className="bajadaQuestion">
+              <h3 className={styles.formQuestion}>Archivos relacionados</h3>
+              <p className={styles.bajadaQuestion}>
                 Fotos, videos o documentos relativos al hecho.
               </p>
             </label>
             <br />
             <input
-              className="formInput"
+              className={styles.formInput}
               type="file"
               name="Archivos"
               id="archivos"
@@ -148,12 +152,12 @@ export default function ReportaForm() {
           </div>
           <br />
 
-          <div className="formInputContainer">
+          <div className={styles.formInputContainer}>
             <label htmlFor="comentarios">
-              <h3 className="formQuestion">Comentarios adicionales</h3>
+              <h3 className={styles.formQuestion}>Comentarios adicionales</h3>
             </label>
             <input
-              className="formInput"
+              className={styles.formInput}
               type="text"
               name="Comentarios"
               id="observaciones"

@@ -1,73 +1,70 @@
-import "./analisis.css";
+import styles from "./Analisis.module.css";
 import { Link as ScrollLink } from "react-scroll";
 import PropTypes from "prop-types";
 
 export default function Analisis({ min, max, total, tipos, componentes }) {
   return (
-    <div id="analisis">
-      <div id="fondoAnalisisImg">
+    /* TODO: extract this ID, "analisis", which is also used in Main2 and App, to a constant */
+    <div id="analisis" className={styles.analisis}>
+      <div className={styles.fondoAnalisisImg}>
         {" "}
         <img src="radarPuntos.png" alt="" />
       </div>
-      <div id="analisisHeader">
-        <div id="analisisTituloSec">
-          <h4 id="tituloAnalisisRadar">
+      <div className={styles.analisisHeader}>
+        <div className={styles.analisisTituloSec}>
+          <h4 className={styles.tituloAnalisisRadar}>
             REGISTRO DE ATAQUES <br /> DE DERECHAS ARGENTINAS RADICALIZADAS
           </h4>
-          <h1 id="tituloAnalisis">
+          <h1 className={styles.tituloAnalisis}>
             RELEVAMIENTO
             {min.getFullYear()} - {max.getFullYear()}
           </h1>
-          <h4 id="analisisCasos"> {total} CASOS</h4>
-          <h4 id="analisisCasosBajada">
+          <h4 className={styles.analisisCasos}> {total} CASOS</h4>
+          <h4 className={styles.analisisCasosBajada}>
             organizados por sus narrativas de odio
           </h4>
         </div>
-
-        <div id="analisisImg" />
       </div>
 
-      <div id="analisisDatos">
+      <div className={styles.analisisDatos}>
         {Object.keys(tipos.byName).map((t, i) => (
-          <div id="datos1" key={i}>
-            <h1 id="datoN1">{tipos.byName[t].length}</h1>
-            <div className="info">
-              <div className="barra"></div>
-              <p className="textAnalisis">{t}</p>
+          <div className={styles.datos1} key={i}>
+            <h1 className={styles.datoN1}>{tipos.byName[t].length}</h1>
+            <div>
+              <p className={styles.textAnalisis}>{t}</p>
             </div>
           </div>
         ))}
         {Object.keys(componentes.byName).map((t, i) => (
-          <div id="datos2" key={i}>
-            <h1 id="datoN2">{componentes.byName[t].length}</h1>
-            <div className="info">
-              <div className="barra"></div>
-              <p className="textAnalisis">{t}</p>
+          <div className={styles.datos2} key={i}>
+            <h1 className={styles.datoN2}>{componentes.byName[t].length}</h1>
+            <div>
+              <p className={styles.textAnalisis}>{t}</p>
             </div>
           </div>
         ))}
       </div>
 
-      <h3 id="enConstruccion">
+      <h3 className={styles.enConstruccion}>
         RADAR es una herramienta dinámica en construcción.
       </h3>
-      <h4 id="analisisTextoFinal">
+      <h4 className={styles.analisisTextoFinal}>
         En esta primera etapa se visualizan hechos geolocalizables del período
         2020-2023 pero se encuentra abierta a recibir reportes fuera de ese
         marco espacio-temporal.
       </h4>
 
-      <h6 id="aclaracionAnalisis">
+      <h6 className={styles.aclaracionAnalisis}>
         *Las narrativas no son excluyentes. Algunos casos abarcan más de una.
       </h6>
       <ScrollLink
-        to="App"
+        to="App" // TODO: move this hard-coded string to its own constant
         spy={true} // Activa el modo espía
         smooth={true} // Activa el desplazamiento suave
         duration={500} // Duración de la animación (en milisegundos)
         offset={-70} // Ajusta un offset opcional (si tienes un encabezado fijo)
       >
-        <button id="subir">
+        <button className={styles.subir}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="16"
