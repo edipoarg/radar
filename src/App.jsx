@@ -22,7 +22,7 @@ import Filtros from "./components/Filtros.jsx"; // Cambia la ruta a tu formulari
 import Analisis from "./components/Analisis.jsx";
 
 import mystyle from "./mystyle.json";
-import MonthsSlider from "./components/MonthsSlider.jsx";
+import MonthsSlider from "./components/MonthsSlider.tsx";
 import MapGap from "./components/MapGap.jsx";
 
 //estilos/////////////////////
