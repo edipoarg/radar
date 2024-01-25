@@ -13,7 +13,7 @@ import Reporta from "./components/Reporta.jsx";
 import Root from "./routes/Root.jsx";
 import Navlinks from "./routes/index.js";
 
-const App = lazy(() => import("./App"));
+const App = lazy(() => import("./App.jsx"));
 
 const loader = async () => ({
   urls: await getURLs({
@@ -39,8 +39,11 @@ const router = createHashRouter([
   },
 ]);
 
-ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
-    <RouterProvider router={router} />
-  </React.StrictMode>,
-);
+const root = document.getElementById("root");
+
+if (root)
+  ReactDOM.createRoot(root).render(
+    <React.StrictMode>
+      <RouterProvider router={router} />
+    </React.StrictMode>,
+  );
