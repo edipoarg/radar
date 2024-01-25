@@ -1,15 +1,20 @@
-import "./Popup.css";
+import styles from "./Popup.module.css";
 import PropTypes from "prop-types";
 
 const Popup = ({ title, date, source, tipo }) => (
-  <div className="popup">
-    <h3 className="displayTitulo">{title}</h3>
-    <p className="displayTipo">{tipo.join(" ")}</p>
+  <div className={styles.popup}>
+    <h3 className={styles.displayTitulo}>{title}</h3>
+    <p className={styles.displayTipo}>{tipo.join(" ")}</p>
 
-    <div className="masDatosPopup">
+    <div className={styles.masDatosPopup}>
       {" "}
-      <p id="displayFecha">Fecha: {date.toLocaleDateString()}</p>
-      <a className="displayLink" href={source} target="_blank" rel="noreferrer">
+      <p>Fecha: {date.toLocaleDateString()}</p>
+      <a
+        className={styles.displayLink}
+        href={source}
+        target="_blank"
+        rel="noreferrer"
+      >
         enlace
       </a>
     </div>

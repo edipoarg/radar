@@ -1,0 +1,176 @@
+.negritaTitulo {
+  font-family: "MiFuenteBold";
+  padding-right: 10px;
+}
+
+.contectaTituloContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: baseline;
+}
+
+.conecta {
+  width: 100vw;
+  background-color: #2b3bcd;
+  background-image: url(./fondoNosotrxs.jpg);
+  padding: 20vh 5vw;
+  height: 70vh;
+}
+
+.logoImgNos {
+  width: 35vw;
+  padding-left: 2vw;
+  z-index: 3000;
+}
+
+.radarDecoImg {
+  position: absolute;
+  opacity: 0.1;
+  top: 4vh;
+  left: 0;
+  height: 30vh;
+}
+
+.conectaTitulo {
+  color: black;
+  font-size: 0.7rem;
+  padding: 0vh 5vw;
+  text-transform: uppercase;
+  text-align: right;
+}
+
+.conectaTextRadar {
+  padding-top: 5vh;
+  color: white;
+  font-size: 1rem;
+  text-align: justify;
+  font-size: 0.8rem;
+  padding: 15px;
+}
+
+.conecta2 {
+  background-color: white;
+  padding-top: 4vh;
+  color: #2b3bcd;
+  font-size: 0.8rem;
+  text-align: justify;
+  padding: 15px;
+  padding: 10vh 10vw;
+  padding-bottom: 2vh;
+}
+
+.textConecta2 {
+  font-size: 0.8rem;
+}
+
+.siTeInteresa {
+  background-color: black;
+  padding: 6vh 6vw;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "MiFuente";
+  font-size: 0.8rem;
+
+  border-radius: 30px;
+  align-self: center;
+}
+
+/*== tablet==*/
+
+@media (min-width: 768px) {
+  .conecta {
+    width: 100vw;
+    background-color: #2b3bcd;
+    padding: 20vh 15vw;
+    padding-bottom: 6vh;
+    height: 100vh;
+  }
+  .conectaTitulo {
+    color: black;
+    font-size: 1.1rem;
+    padding: 0vh 5vw;
+    text-align: right;
+  }
+
+  .conectaTextRadar {
+    padding: 0vh 4vw;
+    padding-top: 5vh;
+
+    color: white;
+    font-size: 1.2rem;
+    text-align: justify;
+    font-family: "MiFuente";
+  }
+
+  .textConecta2 {
+    font-size: 1.1rem;
+  }
+
+  .conecta2 {
+    display: grid;
+    grid-template-columns: 4fr 3fr;
+    padding-top: 5vh;
+    color: #2b3bcd;
+    font-size: 1rem;
+    text-align: justify;
+    padding: 15px;
+    padding: 10vh 15vw;
+  }
+
+  .textConecta2 {
+    padding: 0vh 5vw;
+  }
+
+  .logoImgNos {
+    width: 35vw;
+    padding-left: 2vw;
+  }
+}
+
+@media (min-width: 1200px) {
+  .conectaTitulo {
+    color: black;
+    font-size: 1.4rem;
+    padding: 0vh 5vw;
+    text-align: right;
+  }
+
+  .conectaTextRadar {
+    padding: 0vh 4vw;
+    padding-top: 5vh;
+
+    color: white;
+    font-size: 1.2rem;
+    text-align: justify;
+    font-family: "MiFuente";
+  }
+
+  .conecta2 {
+    display: grid;
+    grid-template-columns: 4fr 3fr;
+    padding-top: 5vh;
+    color: #2b3bcd;
+    font-size: 1rem;
+    text-align: justify;
+    padding: 15px;
+    padding: 10vh 15vw;
+  }
+
+  .textConecta2 {
+    padding: 0vh 5vw;
+  }
+
+  .logoImgNos {
+    width: 28vw;
+    padding-left: 2vw;
+  }
+
+  .radarDecoImg {
+    position: absolute;
+    opacity: 0.1;
+    top: 0vh;
+    left: 3vw;
+    height: 50vh;
+  }
+}

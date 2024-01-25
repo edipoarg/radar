@@ -1,0 +1,139 @@
+.mapa {
+  position: relative;
+  background-color: #fff4ff;
+}
+
+.App {
+  background-color: white;
+  text-align: center;
+  width: 100vw;
+  position: relative;
+}
+
+.toMain2 {
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  right: 2vw;
+  width: 12vw;
+  z-index: 0;
+  height: 7vh;
+  border-radius: 20px;
+  height: 10vh;
+}
+
+.plusBoton {
+  color: white;
+  padding-top: 3vh;
+}
+
+.lower-floating-buttons {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  top: 83vh;
+  left: 4vw;
+  z-index: 0;
+  gap: 2vw;
+}
+
+.botonFiltrosMain {
+  position: absolute;
+  top: 15vh;
+}
+
+.botonFiltrosMap {
+    font-size: 1rem;
+    color: #2b3bcd;
+    padding: 0.5vh 1vw;
+  } 
+
+.closeButton {
+  position: absolute;
+  z-index: 1001;
+  background-color: white;
+  color: black;
+  top: 0vh;
+  left: 3vw;
+  border: 10px solid white;
+  border-radius: 10px;
+}
+
+.transformed-button {
+  position: absolute;
+  z-index: 5000;
+  background-color: white;
+  color: white;
+  top: 0vh;
+  left: 2vw;
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
+/* FIXME el transformed-button nunca tiene una img. Esto está OK? */
+.transformed-button img {
+  position: absolute;
+  top: 0vh;
+  left: 0vw;
+  max-width: 8vw;
+}
+
+.simple-button {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  text-decoration: none;
+}
+
+/*------responsive------*/
+
+/*TV TABLET 768px*/
+@media (min-width: 768px) {
+  .lower-floating-buttons {
+    position: absolute;
+    top: 87vh;
+    left: 30vw;
+    width: 55vw;
+    z-index: 0;
+  }
+
+  .toMain2 {
+    width: 10vw;
+    height: 8vh;
+  }
+
+  .plusBoton {
+    padding-top: 2vh;
+  }
+}
+
+/*TV RESPONISVE 1200px*/
+@media (min-width: 1200px) {
+  .lower-floating-buttons {
+    position: absolute;
+    top: 80vh;
+    left: 20vw;
+    width: 69vw;
+    z-index: 0;
+  }
+
+  .toMain2 {
+    width: 8vw;
+    height: 12vh;
+  }
+
+  .plusBoton {
+    padding-top: 4vh;
+  }
+}
