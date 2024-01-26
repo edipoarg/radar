@@ -27,6 +27,12 @@
   color: white;
 }
 
+.displayFecha {
+  font-size: 0.8rem;
+  color: white;
+  padding-top: 2vh;
+}
+
 .displayTipo {
   font-size: 0.7rem;
   color: lightblue;
@@ -43,6 +49,26 @@
   height: 5vh;
 }
 
+/*celus mas grandes*/
+@media (min-width: 400px) {
+  .popup {
+    position: absolute;
+    top: 65vh;
+    left: 2vw;
+    width: 96vw;
+    height: 17vh;
+    padding: 15px;
+    padding-left: 25px;
+    color: white;
+    background-color: #2b3bcd;
+    border: 1px solid white;
+    border-radius: 30px;
+    z-index: 1000;
+    overflow: hidden;
+    white-space: break-spaces;
+  }
+}
+
 @media (min-width: 768px) {
   .popup {
     position: absolute;
@@ -50,9 +76,7 @@
     left: 1vw;
     width: 28vw;
     height: 36vh;
-
     padding: 16px 8px;
-
     white-space: break-spaces;
   }
 
@@ -75,36 +99,15 @@
   .displayLink {
     width: 8vw;
   }
+
   .popup {
     position: absolute;
     top: 63vh;
     left: 1vw;
     width: 18vw;
     height: 32vh;
-
     padding: 16px 8px;
-
     white-space: breakspaces;
   }
 }
 
-/*celus mas grandes*/
-@media (min-width: 400px) {
-  .popup {
-    position: absolute;
-    top: 65vh;
-    left: 2vw;
-    width: 96vw;
-    height: 17vh;
-
-    padding: 15px;
-    padding-left: 25px;
-    color: white;
-    background-color: #2b3bcd;
-    border: 1px solid white;
-    border-radius: 30px;
-    z-index: 1000;
-    overflow: hidden;
-    white-space: break-spaces;
-  }
-}
