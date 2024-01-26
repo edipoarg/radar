@@ -8,7 +8,7 @@ const Popup = ({ title, date, source, tipo }) => (
 
     <div className={styles.masDatosPopup}>
       {" "}
-      <p>Fecha: {date.toLocaleDateString()}</p>
+      <p className={styles.displayFecha}>Fecha: {date.toLocaleDateString()}</p>
       <a
         className={styles.displayLink}
         href={source}
