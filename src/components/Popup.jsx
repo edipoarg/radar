@@ -1,7 +1,7 @@
 import styles from "./Popup.module.css";
 import PropTypes from "prop-types";
 
-const Popup = ({ title, date, source}) => (
+const Popup = ({ title, date, source }) => (
   <div className={styles.popup}>
     <h3 className={styles.displayTitulo}>{title}</h3>
     <div className={styles.masDatosPopup}>
