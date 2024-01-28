@@ -35,7 +35,8 @@
   align-items: center;
   top: 83vh;
   left: 4vw;
-  z-index: 0;
+  /* TODO: este valor de index deberia ser alguna constante  definida*/
+  z-index: 10000;
   gap: 2vw;
 }
 
@@ -45,10 +46,10 @@
 }
 
 .botonFiltrosMap {
-    font-size: 1rem;
-    color: #2b3bcd;
-    padding: 0.5vh 1vw;
-  } 
+  font-size: 1rem;
+  color: #2b3bcd;
+  padding: 0.5vh 1vw;
+}
 
 .closeButton {
   position: absolute;
