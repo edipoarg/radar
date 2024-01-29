@@ -14,7 +14,19 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
-    "plugins": [{ "name": "typescript-plugin-css-modules" }]
+    "plugins": [{ "name": "typescript-plugin-css-modules" }],
+    // https://www.typescriptlang.org/tsconfig#strictNullChecks
+    "strictNullChecks": true,
+    /* Indexed access of an Array<T> can return T, but if the index is out of bounds, it returns undefined.
+     * This option makes the indexed access of Array<T> to evaluate to T | undefined. 
+     * 
+     * const numbers: Array = [];
+     * // this should fail, type of test should be number | undefined
+     * const test = numbers[0].toFixed();
+     *
+     */
+    // https://www.typescriptlang.org/tsconfig#noUncheckedIndexedAccess
+    "noUncheckedIndexedAccess": true
   },
   "include": ["src"],
   "references": [{ "path": "./tsconfig.node.json" }]
