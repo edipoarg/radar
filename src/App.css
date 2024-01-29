@@ -15,8 +15,3 @@
 }
 
 /* TODO: Check whether this class selector is used within the <Marker /> external component */
-.marker:hover {
-  background-color: rgb(52, 7, 7);
-  /* Increase the size when hovered */
-  transform: scale(1.5);
-}
