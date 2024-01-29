@@ -58,7 +58,7 @@ export default function MonthsSlider({
       setMonthRange(range);
       setDates({ min, max });
     },
-    [],
+    [globalDates.min, setDates],
   );
 
   return (
