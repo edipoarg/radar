@@ -1,8 +1,26 @@
 import styles from "./Analisis.module.css";
 import { Link as ScrollLink } from "react-scroll";
-import PropTypes from "prop-types";
 
-export default function Analisis({ min, max, total, tipos, componentes }) {
+type PropWithByName = {
+  // TODO: These strings are constant and could be narrowed down to a union
+  byName: Record<string, number[]>;
+};
+
+interface Props {
+  min: Date;
+  max: Date;
+  total: number;
+  tipos: PropWithByName;
+  componentes: PropWithByName;
+}
+
+export default function Analisis({
+  min,
+  max,
+  total,
+  tipos,
+  componentes,
+}: Props) {
   return (
     /* TODO: extract this ID, "analisis", which is also used in Main2 and App, to a constant */
     <div id="analisis" className={styles.analisis}>
@@ -27,17 +45,17 @@ export default function Analisis({ min, max, total, tipos, componentes }) {
       </div>
 
       <div className={styles.analisisDatos}>
-        {Object.keys(tipos.byName).map((t, i) => (
+        {Object.entries(tipos.byName).map(([t, value], i) => (
           <div className={styles.datos1} key={i}>
-            <h1 className={styles.datoN1}>{tipos.byName[t].length}</h1>
+            <h1 className={styles.datoN1}>{value.length}</h1>
             <div>
               <p className={styles.textAnalisis}>{t}</p>
             </div>
           </div>
         ))}
-        {Object.keys(componentes.byName).map((t, i) => (
+        {Object.entries(componentes.byName).map(([t, value], i) => (
           <div className={styles.datos2} key={i}>
-            <h1 className={styles.datoN2}>{componentes.byName[t].length}</h1>
+            <h1 className={styles.datoN2}>{value.length}</h1>
             <div>
               <p className={styles.textAnalisis}>{t}</p>
             </div>
@@ -80,15 +98,3 @@ export default function Analisis({ min, max, total, tipos, componentes }) {
     </div>
   );
 }
-
-const PropWithByName = PropTypes.shape({
-  byName: PropTypes.array.isRequired,
-}).isRequired;
-
-Analisis.propTypes = {
-  min: PropTypes.instanceOf(Date),
-  max: PropTypes.instanceOf(Date),
-  total: PropTypes.number.isRequired,
-  tipos: PropWithByName,
-  componentes: PropWithByName,
-};
