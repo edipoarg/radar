@@ -98,8 +98,8 @@ function App() {
 
   const [filtrosVisible, setFiltrosVisible] = useState(true);
 
-  const [setHoveredFeatureId] = useState(null);
-  const [hoveredMarkerId, setHoveredMarkerId] = useState(null);
+  const [setSelectedFeatureId] = useState(null);
+  const [selectedMarkerId, setSelectedMarkerId] = useState(null);
   const [popupInfo, setPopupInfo] = useState(null);
 
   const [dates, setDates] = useState(globalDates);
@@ -124,10 +124,10 @@ function App() {
   };
 
   const handleHover = (event) => {
-    setHoveredFeatureId(event.features?.[0]?.id || null);
+    setSelectedFeatureId(event.features?.[0]?.id || null);
   };
 
-  const handleLeave = () => setHoveredFeatureId(null);
+  const handleLeave = () => setSelectedFeatureId(null);
 
   const mapProps = {
     initialViewState: {
@@ -209,8 +209,8 @@ function App() {
           <Markers
             data={filteredData}
             setPopupInfo={setPopupInfo}
-            setMarker={setHoveredMarkerId}
-            selected={hoveredMarkerId}
+            setMarker={setSelectedMarkerId}
+            selected={selectedMarkerId}
             tipoFilters={tipoFilters}
             handleTipoFilter={handleTipoFilter}
           />
