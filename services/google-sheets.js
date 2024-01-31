@@ -5,7 +5,7 @@ const newDate = (d) => {
     const [, day, month, year] = d.match(
       "([0-3]?[0-9])/([01]?[0-9])/([12][90][0-9][0-9])",
     );
-    return new Date(year, month, day);
+    return new Date(year, month - 1, day);
   } catch (e) {
     console.error("cauldn't parse date: ", d, e);
     return null;
