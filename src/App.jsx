@@ -18,9 +18,8 @@ import {
 import { Markers } from "./components/Markers.jsx";
 import Main2 from "./components/Main2.jsx";
 import Popup from "./components/Popup.jsx";
-import Filtros from "./components/Filtros.jsx"; // Cambia la ruta a tu formulario
+import Filtros from "./components/Filtros"; // Cambia la ruta a tu formulario
 import Analisis from "./components/Analisis.tsx";
-
 import mystyle from "./mystyle.json";
 import MonthsSlider from "./components/MonthsSlider.tsx";
 import MapGap from "./components/MapGap.jsx";
