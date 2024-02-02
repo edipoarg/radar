@@ -2,7 +2,7 @@ import styles from "./Main2.module.css";
 import { Link as ScrollLink } from "react-scroll";
 import { Link } from "react-router-dom";
 import { Carousel } from "react-bootstrap";
-import { Details } from "./Conecta.jsx";
+import { Details } from "./Conecta";
 import Navlinks from "../routes/index.js";
 
 export default function Main2() {
