@@ -1,21 +1,36 @@
 import styles from "./Filtros.module.css";
 import { Switch } from "@mui/material";
-import PropTypes from "prop-types";
 import MapGap from "./MapGap";
+
+// TODO: use this as a useState type parameter when migrating App to ts
+export interface Filters {
+  t1: boolean;
+  t2: boolean;
+  t3: boolean;
+}
+
+interface Props {
+  caseCount: number;
+  handleTipoFilter: () => void;
+  tipoFilters: Filters;
+  setTipoFilters: (filters: unknown) => void;
+}
 
 export default function Filtros({
   caseCount,
   handleTipoFilter,
   tipoFilters,
   setTipoFilters,
-}) {
-  const handleTipoFilterChange = (tipoId) => (event) => {
-    setTipoFilters((prevFilters) => ({
-      ...prevFilters,
-      [tipoId]: event.target.checked,
-    }));
-    handleTipoFilter();
-  };
+}: Props) {
+  const handleTipoFilterChange =
+    (tipoId: "t1" | "t2" | "t3") =>
+    (event: React.ChangeEvent<HTMLInputElement>) => {
+      setTipoFilters((prevFilters: Filters) => ({
+        ...prevFilters,
+        [tipoId]: event.target.checked,
+      }));
+      handleTipoFilter();
+    };
 
   return (
     <div className={styles.filtros}>
@@ -85,14 +100,3 @@ export default function Filtros({
     </div>
   );
 }
-
-Filtros.propTypes = {
-  caseCount: PropTypes.number.isRequired,
-  handleTipoFilter: PropTypes.func.isRequired,
-  tipoFilters: PropTypes.shape({
-    t1: PropTypes.string.isRequired,
-    t2: PropTypes.string.isRequired,
-    t3: PropTypes.string.isRequired,
-  }).isRequired,
-  setTipoFilters: PropTypes.func.isRequired,
-};
