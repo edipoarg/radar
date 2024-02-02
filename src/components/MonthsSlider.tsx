@@ -62,7 +62,7 @@ export default function MonthsSlider({
   );
 
   return (
-    <div className={`${styles["months-slider"]} ${className ?? ""}`}>
+    <div className={`${styles["months-slider"]} ${className}`}>
       <Slider
         max={months}
         valueLabelDisplay="auto"
