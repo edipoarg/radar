@@ -28,6 +28,6 @@
     // https://www.typescriptlang.org/tsconfig#noUncheckedIndexedAccess
     "noUncheckedIndexedAccess": true
   },
-  "include": ["src"],
+  "include": ["src", "services"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
