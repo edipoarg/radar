@@ -1,16 +1,20 @@
+import { useCallback } from "react";
 import styles from "./Reporta.module.css";
 
 export default function ReportaForm() {
-  function Submit(e) {
-    const formEle = document.querySelector("#formSheet");
+  const submit: React.FormEventHandler<HTMLFormElement> = useCallback((e) => {
+    const formEle: HTMLFormElement | null =
+      document.querySelector("#formSheet");
     e.preventDefault;
     console.log("submitted");
-    const formData = new FormData(formEle);
-    fetch(
-      "https://script.google.com/macros/s/AKfycbySxucaKUPO4gM1WPoknylJuhqL4ElNwvgyDUfzVypgXlTX3u3CtrdBAuwSpB2DQ2O8/exec",
-      { method: "POST", body: formData },
-    );
-  }
+    if (formEle !== null) {
+      const formData = new FormData(formEle);
+      fetch(
+        "https://script.google.com/macros/s/AKfycbySxucaKUPO4gM1WPoknylJuhqL4ElNwvgyDUfzVypgXlTX3u3CtrdBAuwSpB2DQ2O8/exec",
+        { method: "POST", body: formData },
+      );
+    }
+  }, []);
 
   return (
     <div className={styles.reportaForm}>
@@ -27,11 +31,7 @@ export default function ReportaForm() {
           </h4>
         </div>
 
-        <form
-          id="formSheet"
-          className={styles.formSheet}
-          onSubmit={(e) => Submit(e)}
-        >
+        <form id="formSheet" className={styles.formSheet} onSubmit={submit}>
           <div className={styles.formInputContainer}>
             <label htmlFor="email">
               <h3 className={styles.formQuestion}>Email</h3>
@@ -62,7 +62,7 @@ export default function ReportaForm() {
               id="titulo"
               required
               placeholder="Escribe tu respuesta"
-              maxLength="30"
+              maxLength={30}
             />
           </div>
           <br />
