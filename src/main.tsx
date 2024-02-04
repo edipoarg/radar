@@ -5,7 +5,7 @@ import { loader as getURLs } from "./components/Loader.jsx";
 import { createHashRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
 
-import Main2 from "./components/Main2.jsx";
+import Main2 from "./components/Main2";
 import Conecta from "./components/Conecta";
 import Notas from "./components/Notas.jsx";
 import Reporta from "./components/Reporta";
