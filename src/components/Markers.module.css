@@ -10,7 +10,6 @@
     transform: translate(-20%, -20%);
 }
 
-
 .circulo::before {
     content:"";
     width: 9px;
@@ -63,4 +62,9 @@
     /* Increase the size when hovered */
     transform: scale(1.5);
   }
-  
+
+  /* Estilo para el marcador seleccionado */
+.circulo.selected {
+    background-color: rgb(52, 7, 7);
+    transform: scale(1.5);
+  }
