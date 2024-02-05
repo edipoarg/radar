@@ -1,5 +1,5 @@
 
-.circulo {
+.circle {
     width: 15px;
     height: 15px;
     border-radius: 50%;
@@ -10,7 +10,7 @@
     transform: translate(-20%, -20%);
 }
 
-.circulo::before {
+.circle::before {
     content:"";
     width: 9px;
     height: 9px;
@@ -26,7 +26,7 @@
     opacity: 1;
 }
 
-.circulo:after {
+.circle:after {
     content: "";
     width: 25px;
     height: 25px;
@@ -42,29 +42,29 @@
 }
 
 
-.circulo.amarillo {
+.circle.amarillo {
     background-color: rgb(252, 252, 114);
     /* Cambia el color según tus preferencias */
 
 }
 
-.circulo.naranja {
+.circle.naranja {
     background-color: rgb(255, 166, 0);
     /* Cambia el color según tus preferencias */
 }
 
-.circulo.rojo {
+.circle.rojo {
     background-color: rgb(251, 55, 25);
 }
 
-.circulo:hover {
+.circle:hover {
     background-color: rgb(52, 7, 7);
     /* Increase the size when hovered */
     transform: scale(1.5);
   }
 
   /* Estilo para el marcador seleccionado */
-.circulo.selected {
+.circle.selected {
     background-color: rgb(52, 7, 7);
     transform: scale(1.5);
   }

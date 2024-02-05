@@ -30,8 +30,7 @@ export const Markers = ({
 
   const renderMarker = (event) => {
     const { coords, title, date, source, id, tipoId, tipo } = event;
-    // Document this: Where does 'hovered' come from? It's not in the stylesheet
-    const markerStyle = `${styles.circulo} ${id === selected ? styles.selected : ""} ${tipoIdStyles[tipoId]}`;
+    const markerStyle = `${styles.circle} ${id === selected ? styles.selected : ""} ${tipoIdStyles[tipoId]}`;
 
     return (
       <Marker
