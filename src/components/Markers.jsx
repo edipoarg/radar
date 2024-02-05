@@ -30,8 +30,7 @@ export const Markers = ({
 
   const renderMarker = (event) => {
     const { coords, title, date, source, id, tipoId } = event;
-    // Document this: Where does 'hovered' come from? It's not in the stylesheet
-    const markerStyle = `${styles.circulo} ${id === selected ? "hovered" : ""} ${tipoIdStyles[tipoId]}`;
+    const markerStyle = `${styles.circulo} ${id === selected ? styles.selected : ""} ${tipoIdStyles[tipoId]}`;
 
     return (
       <Marker
@@ -40,7 +39,8 @@ export const Markers = ({
         latitude={coords.latitude}
         onMouseEnter={() => setMarker(id)}
         onMouseLeave={() => setMarker(null)}
-        onClick={() =>
+        onClick={() => {
+          setMarker(id);
           setPopupInfo({
             coords: {
               lat: coords.latitude,
@@ -49,8 +49,8 @@ export const Markers = ({
             title,
             date,
             source,
-          })
-        }
+          });
+        }}
       >
         <div className={markerStyle} />
       </Marker>
