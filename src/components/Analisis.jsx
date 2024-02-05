@@ -27,14 +27,7 @@ export default function Analisis({ min, max, total, tipos, componentes }) {
       </div>
 
       <div className={styles.analisisDatos}>
-        {Object.keys(tipos.byName).map((t, i) => (
-          <div className={styles.datos1} key={i}>
-            <h1 className={styles.datoN1}>{tipos.byName[t].length}</h1>
-            <div>
-              <p className={styles.textAnalisis}>{t}</p>
-            </div>
-          </div>
-        ))}
+
         {Object.keys(componentes.byName).map((t, i) => (
           <div className={styles.datos2} key={i}>
             <h1 className={styles.datoN2}>{componentes.byName[t].length}</h1>
