@@ -68,7 +68,7 @@ const mapSourceStyles = {
 function App() {
   const { urls } = useLoaderData();
   const { provincias, departamentos, departamentosBsAs, rutas } = urls;
-  const { tipos, componentes } = urls.casos;
+  const { componentes } = urls.casos;
   const cases = urls.casos.cases.map((c) => ({ ...c, date: new Date(c.date) }));
   const globalDates = {
     min: new Date(urls.casos.min),
@@ -89,7 +89,6 @@ function App() {
   });
   // Estado para controlar la visibilidad de "Filtros"
   const [analisisData] = useState({
-    tipos,
     componentes,
     min: globalDates.min,
     max: globalDates.max,
