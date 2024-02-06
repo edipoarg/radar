@@ -81,6 +81,5 @@ Analisis.propTypes = {
   min: PropTypes.instanceOf(Date),
   max: PropTypes.instanceOf(Date),
   total: PropTypes.number.isRequired,
-  tipos: PropWithByName,
   componentes: PropWithByName,
 };
