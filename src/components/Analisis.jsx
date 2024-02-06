@@ -2,7 +2,7 @@ import styles from "./Analisis.module.css";
 import { Link as ScrollLink } from "react-scroll";
 import PropTypes from "prop-types";
 
-export default function Analisis({ min, max, total, tipos, componentes }) {
+export default function Analisis({ min, max, total, componentes }) {
   return (
     /* TODO: extract this ID, "analisis", which is also used in Main2 and App, to a constant */
     <div id="analisis" className={styles.analisis}>
@@ -27,7 +27,6 @@ export default function Analisis({ min, max, total, tipos, componentes }) {
       </div>
 
       <div className={styles.analisisDatos}>
-
         {Object.keys(componentes.byName).map((t, i) => (
           <div className={styles.datos2} key={i}>
             <h1 className={styles.datoN2}>{componentes.byName[t].length}</h1>
