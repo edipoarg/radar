@@ -1,7 +1,22 @@
 import { Source, Layer } from "react-map-gl/maplibre";
-import PropTypes from "prop-types";
+import type {
+  FillLayerSpecification,
+  LineLayerSpecification,
+} from "maplibre-gl";
 
-export const ProvSource = ({ data, style }) => (
+type LayerPaintProperty = NonNullable<FillLayerSpecification["paint"]>;
+type FillOpacity = LayerPaintProperty["fill-opacity"];
+
+interface SourceWithFillLayerProps {
+  data: unknown;
+  style: {
+    fillColor: string;
+    fillOpacity: FillOpacity;
+    color: string;
+  };
+}
+
+export const ProvSource = ({ data, style }: SourceWithFillLayerProps) => (
   <Source id="provincias-source" type="geojson" data={data}>
     <Layer
       id="provincias-layer"
@@ -14,7 +29,7 @@ export const ProvSource = ({ data, style }) => (
     />
   </Source>
 );
-export const DepsSource = ({ data, style }) => (
+export const DepsSource = ({ data, style }: SourceWithFillLayerProps) => (
   <Source id="departamentos-source" type="geojson" data={data}>
     <Layer
       id="departamentos-layer"
@@ -27,7 +42,7 @@ export const DepsSource = ({ data, style }) => (
     />
   </Source>
 );
-export const BsAsSource = ({ data, style }) => (
+export const BsAsSource = ({ data, style }: SourceWithFillLayerProps) => (
   <Source id="departamentosBsAs-source" type="geojson" data={data}>
     <Layer
       id="departamentosBsAs-layer"
@@ -41,8 +56,7 @@ export const BsAsSource = ({ data, style }) => (
     />
   </Source>
 );
-
-export const MunicipiosSource = ({ data, style }) => (
+export const MunicipiosSource = ({ data, style }: SourceWithFillLayerProps) => (
   <Source id="municipios-source" type="geojson" data={data}>
     <Layer
       id="municipios-layer"
@@ -57,7 +71,20 @@ export const MunicipiosSource = ({ data, style }) => (
   </Source>
 );
 
-export const RutasSource = ({ data, style }) => (
+type LinePaintProperty = NonNullable<LineLayerSpecification["paint"]>;
+type LineColor = LinePaintProperty["line-color"];
+type LineOpacity = LinePaintProperty["line-opacity"];
+type LineWidth = LinePaintProperty["line-width"];
+interface SourceWithLineLayerProps {
+  data: unknown;
+  style: {
+    lineColor: LineColor;
+    lineOpacity: LineOpacity;
+    lineWidth: LineWidth;
+  };
+}
+
+export const RutasSource = ({ data, style }: SourceWithLineLayerProps) => (
   <Source id="rutas-source" type="geojson" data={data}>
     <Layer
       id="rutas-layer"
@@ -71,21 +98,3 @@ export const RutasSource = ({ data, style }) => (
     />
   </Source>
 );
-
-const SourcePropTypes = {
-  data: PropTypes.object.isRequired,
-  style: PropTypes.shape({
-    fillColor: PropTypes.string,
-    fillOpacity: PropTypes.string,
-    color: PropTypes.string,
-    lineColor: PropTypes.string,
-    lineOpacity: PropTypes.string,
-    lineWidth: PropTypes.string,
-  }),
-};
-
-ProvSource.propTypes = SourcePropTypes;
-DepsSource.propTypes = SourcePropTypes;
-BsAsSource.propTypes = SourcePropTypes;
-MunicipiosSource.propTypes = SourcePropTypes;
-RutasSource.propTypes = SourcePropTypes;
