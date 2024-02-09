@@ -16,7 +16,7 @@ import {
   RutasSource,
 } from "./components/Sources.jsx";
 import { Markers } from "./components/Markers.jsx";
-import Main2 from "./components/Main2.jsx";
+import Main2 from "./components/Main2";
 import Popup from "./components/Popup.jsx";
 import Filtros from "./components/Filtros.jsx"; // Cambia la ruta a tu formulario
 import Analisis from "./components/Analisis";
