@@ -7,7 +7,7 @@ import "./App.css";
 import styles from "./App.module.css";
 import Navlinks from "./routes/index";
 import { Link as ScrollLink } from "react-scroll";
-import Footer from "./components/Footer.jsx";
+import Footer from "./components/Footer";
 
 import {
   ProvSource,
