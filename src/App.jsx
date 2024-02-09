@@ -23,7 +23,7 @@ import Analisis from "./components/Analisis";
 
 import mystyle from "./mystyle.json";
 import MonthsSlider from "./components/MonthsSlider";
-import MapGap from "./components/MapGap.jsx";
+import MapGap from "./components/MapGap";
 
 //estilos/////////////////////
 const mapSourceStyles = {
