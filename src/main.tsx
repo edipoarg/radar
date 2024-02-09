@@ -1,6 +1,5 @@
 import React, { lazy } from "react";
 import ReactDOM from "react-dom/client";
-import { loader as getURLs } from "./components/Loader.jsx";
 
 import { createHashRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
@@ -12,11 +11,12 @@ import Reporta from "./components/Reporta";
 
 import Root from "./routes/Root.jsx";
 import Navlinks from "./routes/index.js";
+import { fetchUrlsData } from "./helpers/fetchUrlsData";
 
 const App = lazy(() => import("./App.jsx"));
 
 const loader = async () => ({
-  urls: await getURLs({
+  urls: await fetchUrlsData({
     departamentos: "data/mapsData/departamentos-argentina.json",
     departamentosBsAs: "data/mapsData/departamentos-buenos_aires.json",
     provincias: "data/mapsData/provincias.json",
