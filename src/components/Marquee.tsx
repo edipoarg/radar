@@ -4,6 +4,7 @@ import Navlinks from "../routes/index.js";
 export default function Marquee() {
   return (
     <div className={styles.marqueeContainer}>
+      {/* @ts-expect-error marquees are deprecated and not part of the JSXIntrinsicElements types. */}
       <marquee direction="">
         El Registro de Ataques de Derechas Argentinas Radicalizadas es una
         herramienta colaborativa de producción de conocimiento y creación de
@@ -19,6 +20,7 @@ export default function Marquee() {
             aqui
           </a>
         </span>
+        {/* @ts-expect-error marquees are deprecated and not part of the JSXIntrinsicElements types. */}
       </marquee>
     </div>
   );
