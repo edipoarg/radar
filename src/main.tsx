@@ -8,7 +8,7 @@ import "./index.css";
 import Main2 from "./components/Main2.jsx";
 import Conecta from "./components/Conecta";
 import Notas from "./components/Notas.jsx";
-import Reporta from "./components/Reporta.jsx";
+import Reporta from "./components/Reporta";
 
 import Root from "./routes/Root.jsx";
 
