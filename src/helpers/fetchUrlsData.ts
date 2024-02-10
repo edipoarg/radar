@@ -1,11 +1,23 @@
+function fetchSingleUrlData(url: string): Promise<string> {
+  return fetch(url).then((r) => r.json());
+}
+
 export async function fetchUrlsData(
   urls: Record<string, string>,
 ): Promise<Record<string, string>> {
-  const data: Record<string, string> = {};
-  for (const [k, u] of Object.entries(urls)) {
-    await fetch(u).then(async (r) => {
-      data[k] = await r.json();
-    });
-  }
-  return data;
+  /* Convert URLs into an array of promises of tuples consisting of
+   * on one hand, the key of the URL,
+   * and on the other, the response to the URL itself
+   */
+  const keyAndResponsePromises = Object.entries(urls).map(
+    async ([key, url]): Promise<[string, string]> => [
+      key,
+      await fetchSingleUrlData(url),
+    ],
+  );
+  const keyAndResponses = await Promise.all(keyAndResponsePromises);
+  return keyAndResponses.reduce(
+    (accum, [key, response]) => ({ ...accum, [key]: response }),
+    {},
+  );
 }
