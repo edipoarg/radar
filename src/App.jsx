@@ -14,7 +14,7 @@ import {
   DepsSource,
   BsAsSource,
   RutasSource,
-} from "./components/Sources.jsx";
+} from "./components/Sources";
 import { Markers } from "./components/Markers.jsx";
 import Main2 from "./components/Main2";
 import Popup from "./components/Popup";
