@@ -1,20 +1,6 @@
 import constants from "./constants.js";
 
-const newDate = (d) => {
-  try {
-    const [, day, month, year] = d.match(
-      "([0-3]?[0-9])/([01]?[0-9])/([12][90][0-9][0-9])",
-    );
-    return new Date(year, month - 1, day);
-  } catch (e) {
-    console.error("cauldn't parse date: ", d, e);
-    return null;
-  }
-};
-
-const chomp = (s) => s.replace(/^ +/, "").replace(/ +$/, "");
-
-const mapChomp = (s) => s.replace(/; $/, "").split(/;/).map(chomp);
+import { newDate, mapChomp, Classifier } from "../src/utils.js";
 
 const FIXUP = (t) =>
   t
@@ -33,29 +19,6 @@ const FIXUP = (t) =>
       /^violencia por razones de misoginia, antifeminismo y antiLGBTINB+$/,
       "misoginia, antifeminismo y antiLGBTINBQ+",
     );
-class Classifier {
-  byId = {};
-  byName = {};
-  idMap = {};
-  nameMap = {};
-  mangle = (t) => t;
-
-  constructor(mangle) {
-    if (mangle) this.mangle = mangle;
-  }
-
-  classify(ids, names, i) {
-    for (let id of ids) {
-      id = this.mangle(id);
-      this.byId[id] = [...(this.byId[id] || []), i];
-    }
-
-    for (let name of names) {
-      name = this.mangle(name);
-      this.byName[name] = [...(this.byName[name] || []), i];
-    }
-  }
-}
 
 export const fetchTSV = async (url = constants.tsvUrl) => {
   const resp = await fetch(url);
