@@ -70,10 +70,14 @@
 }
 
 .tipos {
-  display: grid;
-  grid-template-columns: 1fr;
+  display: flex;
+  flex-direction: column;
   padding: 7px 5px;
   justify-items: center;
+  justify-content: space-between;
+}
+.tipos span { /* HACK(xaiki): this is done to style the MUI Switch */
+  margin: 0 auto;
 }
 
 .tipo1Icon {
