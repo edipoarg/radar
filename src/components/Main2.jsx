@@ -5,7 +5,7 @@ import { Carousel } from "react-bootstrap";
 import { Details } from "./Conecta.jsx";
 import {
   ConectaRoute,
-  HomeRoute,
+  HomeAnchorRoute,
   NotaLosDinosauriosRoute,
   NotaLaViolenciaAvanzaRoute,
   ReportaRoute,
@@ -15,7 +15,7 @@ import {
 export default function Main2() {
   return (
     // TODO move this ID, Main2, to its own constant
-    <div id="Main2" className={styles.Main2}>
+    <div id="main2Anchor" className={styles.Main2}>
       <div className={styles.franja1}>
         <div className={styles.reportaMain}>
           <h4 className={styles.bajadaPrincipal}>
@@ -31,7 +31,7 @@ export default function Main2() {
 
         <ScrollLink
           // TODO move App string to constant
-          to={HomeRoute}
+          to={HomeAnchorRoute}
           spy={true} // Activa el modo espía
           smooth={true} // Activa el desplazamiento suave
           duration={500} // Duración de la animación (en milisegundos)

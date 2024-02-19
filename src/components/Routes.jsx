@@ -1,10 +1,11 @@
 export const HomeRoute = "/";
+export const HomeAnchorRoute = "homeAnchor";
 export const ConectaRoute = "/conecta";
 export const ReportaRoute =
   "https://docs.google.com/forms/d/e/1FAIpQLSe5pKXuvkvSUiwI_YEq5OZrfXCmpcsDuz_6co_iS2Qags80_A/viewform";
 export const NotasRoute = "/notas";
-export const Main2Route = "Main2";
-export const AnalisisRoute = "analisis";
+export const Main2Route = "main2Anchor";
+export const AnalisisRoute = "analisisAnchor";
 export const NotaLosDinosauriosRoute =
   "https://informes.revistacrisis.com.ar/los-dinosaurios-no-van-a-desaparecer/";
 export const NotaLaViolenciaAvanzaRoute =
