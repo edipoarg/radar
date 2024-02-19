@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { useLoaderData } from "react-router-dom";
 import MapGL, { NavigationControl } from "react-map-gl/maplibre";
 import maplibregl from "maplibre-gl";
@@ -75,18 +75,19 @@ function App() {
     max: new Date(urls.casos.max),
   };
 
-  const handleTipoFilter = () => {
-    const filteredDataByType = filteredDataByTime.filter(
-      (event) => tipoFilters[event.tipoId],
-    );
-    setFilteredData(filteredDataByType);
-  };
-
   const [tipoFilters, setTipoFilters] = useState({
     t1: true,
     t2: true,
     t3: true,
   });
+
+  const handleTipoFilter = useCallback(() => {
+    const filteredDataByType = filteredDataByTime.filter(
+      (event) => tipoFilters[event.tipoId],
+    );
+    setFilteredData(filteredDataByType);
+  }, [filteredDataByTime, tipoFilters]);
+
   // Estado para controlar la visibilidad de "Filtros"
   const [analisisData] = useState({
     componentes,
