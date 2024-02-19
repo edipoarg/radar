@@ -1,7 +1,12 @@
 import styles from "./Popup.module.css";
-import PropTypes from "prop-types";
 
-const Popup = ({ title, date, source }) => (
+interface Props {
+  title: string;
+  date: Date;
+  source: string;
+}
+
+const Popup = ({ title, date, source }: Props) => (
   <div className={styles.popup}>
     <h3 className={styles.displayTitulo}>{title}</h3>
     <div className={styles.masDatosPopup}>
@@ -18,11 +23,5 @@ const Popup = ({ title, date, source }) => (
     </div>
   </div>
 );
-
-Popup.propTypes = {
-  title: PropTypes.string.isRequired,
-  date: PropTypes.instanceOf(Date).isRequired,
-  source: PropTypes.string.isRequired,
-};
 
 export default Popup;

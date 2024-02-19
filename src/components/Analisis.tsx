@@ -1,8 +1,19 @@
 import styles from "./Analisis.module.css";
 import { Link as ScrollLink } from "react-scroll";
-import PropTypes from "prop-types";
 
-export default function Analisis({ min, max, total, componentes }) {
+type PropWithByName = {
+  // TODO: These strings are constant and could be narrowed down to a union
+  byName: Record<string, number[]>;
+};
+
+interface Props {
+  min: Date;
+  max: Date;
+  total: number;
+  componentes: PropWithByName;
+}
+
+export default function Analisis({ min, max, total, componentes }: Props) {
   return (
     /* TODO: extract this ID, "analisis", which is also used in Main2 and App, to a constant */
     <div id="analisis" className={styles.analisis}>
@@ -29,7 +40,7 @@ export default function Analisis({ min, max, total, componentes }) {
       <div className={styles.analisisDatos}>
         {Object.keys(componentes.byName).map((t, i) => (
           <div className={styles.datos2} key={i}>
-            <h1 className={styles.datoN2}>{componentes.byName[t].length}</h1>
+            <h1 className={styles.datoN2}>{componentes.byName[t]?.length}</h1>
             <div>
               <p className={styles.textAnalisis}>{t}</p>
             </div>
@@ -72,14 +83,3 @@ export default function Analisis({ min, max, total, componentes }) {
     </div>
   );
 }
-
-const PropWithByName = PropTypes.shape({
-  byName: PropTypes.array.isRequired,
-}).isRequired;
-
-Analisis.propTypes = {
-  min: PropTypes.instanceOf(Date),
-  max: PropTypes.instanceOf(Date),
-  total: PropTypes.number.isRequired,
-  componentes: PropWithByName,
-};
