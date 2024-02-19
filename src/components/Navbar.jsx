@@ -5,12 +5,7 @@ import { Link as ScrollLink } from "react-scroll";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import {
-  ConectaRoute,
-  HomeRoute,
-  ReportaRoute,
-  NotasRoute,
-} from "./Routes.jsx";
+import Navlinks from "../routes/index.js";
 
 export default function NavbarBootstrap() {
   return (
@@ -18,7 +13,7 @@ export default function NavbarBootstrap() {
       <div>
         {/* TODO: move these hrefs to constants. Check whether the nested Brand and Link work as intended. */}
         <Navbar.Brand href="#home">
-          <Nav.Link as={Link} to={HomeRoute}>
+          <Nav.Link as={Link} to={Navlinks.HomeRoute}>
             <div className={styles.logo}>
               <img className={styles.logoImg} src="logoRadar.png" alt="" />
             </div>
@@ -33,7 +28,7 @@ export default function NavbarBootstrap() {
               <div className={styles.menuPC}>
                 {/* TODO: move these hrefs to constants */}
                 <Nav.Link
-                  to={NotasRoute}
+                  to={Navlinks.NotasRoute}
                   as={Link}
                   className="d-none d-lg-block"
                 >
@@ -41,7 +36,7 @@ export default function NavbarBootstrap() {
                   <h6>INVESTIGACIONES</h6>{" "}
                 </Nav.Link>
                 <Nav.Link
-                  to={ConectaRoute}
+                  to={Navlinks.ConectaRoute}
                   as={Link}
                   className="d-none d-lg-block"
                 >
@@ -49,7 +44,7 @@ export default function NavbarBootstrap() {
                 </Nav.Link>
               </div>
               <Nav.Link
-                href={ReportaRoute}
+                href={Navlinks.ReportaRoute}
                 target="_blank"
                 rel="noopener noreferrer"
               >

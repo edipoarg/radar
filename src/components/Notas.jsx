@@ -2,11 +2,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import styles from "./Notas.module.css";
 import "./NotasGlobalStyles.css";
 import { Carousel } from "react-bootstrap";
-import {
-  NotaLosDinosauriosRoute,
-  NotaLaViolenciaAvanzaRoute,
-  OtrasInvestigacionesRoute,
-} from "./Routes.jsx";
+import Navlinks from "../routes/index.js";
 
 export default function Notas() {
   return (
@@ -23,7 +19,7 @@ export default function Notas() {
             <h4 className={styles.autorNota}></h4>
             <button className={styles.botonNotas}>
               <a
-                href={NotaLosDinosauriosRoute}
+                href={Navlinks.NotaLosDinosaurios}
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -43,7 +39,7 @@ export default function Notas() {
             <h4 className={styles.autorNota}></h4>
             <button className={styles.botonNotas}>
               <a
-                href={NotaLaViolenciaAvanzaRoute}
+                href={Navlinks.NotaLaViolenciaAvanzaRoute}
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -59,7 +55,7 @@ export default function Notas() {
 
             <button className={styles.botonNotas}>
               <a
-                href={OtrasInvestigacionesRoute}
+                href={Navlinks.OtrasInvestigacionesRoute}
                 target="_blank"
                 rel="noopener noreferrer"
               >

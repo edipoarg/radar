@@ -5,7 +5,7 @@ import maplibregl from "maplibre-gl";
 import "maplibre-gl/dist/maplibre-gl.css";
 import "./App.css";
 import styles from "./App.module.css";
-import { Main2Route } from "./components/Routes.jsx";
+import Navlinks from "./routes/index";
 import { Link as ScrollLink } from "react-scroll";
 import Footer from "./components/Footer.jsx";
 
@@ -219,7 +219,7 @@ function App() {
       <div className={styles["lower-floating-buttons"]}>
         <MonthsSlider {...{ globalDates, setDates }} />
         <ScrollLink
-          to={Main2Route} // ID del elemento de destino (Main2)
+          to={Navlinks.Main2Route} // ID del elemento de destino (Main2)
           spy={true} // Activa el modo espía
           smooth={true} // Activa el desplazamiento suave
           duration={500} // Duración de la animación (en milisegundos)

@@ -1,5 +1,5 @@
 import styles from "./Marquee.module.css";
-import { ReportaRoute } from "./Routes.jsx";
+import Navlinks from "../routes/index.js";
 
 export default function Marquee() {
   return (
@@ -12,7 +12,7 @@ export default function Marquee() {
           Si sabés de algún hecho, reportalo{" "}
           <a
             className={styles.linkMarquee}
-            href={ReportaRoute}
+            href={Navlinks.ReportaRoute}
             target="_blank"
             rel="noopener noreferrer"
           >

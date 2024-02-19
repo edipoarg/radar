@@ -1,6 +1,6 @@
 import styles from "./Conecta.module.css";
 import { useEffect } from "react";
-import { MailRadarRoute } from "./Routes.jsx";
+import Navlinks from "../routes/index.js";
 
 export const Details = () => (
   <>
@@ -62,7 +62,7 @@ export default function ReportaForm() {
           si querés comunicarte con nosotrxs podés escribirnos a
           <br />
           <br />
-          <a href={MailRadarRoute}>radar.edipo@gmail.com</a>
+          <a href={Navlinks.MailRadarRoute}>radar.edipo@gmail.com</a>
         </h6>
       </div>
     </>
