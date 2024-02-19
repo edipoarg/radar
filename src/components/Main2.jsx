@@ -3,6 +3,14 @@ import { Link as ScrollLink } from "react-scroll";
 import { Link } from "react-router-dom";
 import { Carousel } from "react-bootstrap";
 import { Details } from "./Conecta.jsx";
+import {
+  ConectaRoute,
+  HomeRoute,
+  NotaLosDinosauriosRoute,
+  NotaLaViolenciaAvanzaRoute,
+  ReportaRoute,
+  AnalisisRoute,
+} from "./Routes.jsx";
 
 export default function Main2() {
   return (
@@ -15,7 +23,7 @@ export default function Main2() {
           </h4>
           {/* TODO move this route identifier to its own constant */}
 
-          <Link to="/conecta">
+          <Link to={ConectaRoute}>
             {" "}
             <button className={styles.botonReportaMain}>NOSOTRXS</button>
           </Link>
@@ -23,7 +31,7 @@ export default function Main2() {
 
         <ScrollLink
           // TODO move App string to constant
-          to="App"
+          to={HomeRoute}
           spy={true} // Activa el modo espía
           smooth={true} // Activa el desplazamiento suave
           duration={500} // Duración de la animación (en milisegundos)
@@ -61,7 +69,7 @@ export default function Main2() {
             </h4>
             <button className={styles.botonNotasMain}>
               <a
-                href="https://informes.revistacrisis.com.ar/los-dinosaurios-no-van-a-desaparecer/"
+                href={NotaLosDinosauriosRoute}
                 target="_blank"
                 rel="noreferrer"
               >
@@ -78,7 +86,7 @@ export default function Main2() {
             </h4>
             <button className={styles.botonNotasMain}>
               <a
-                href="https://informes.revistacrisis.com.ar/la-violencia-avanza-1s/"
+                href={NotaLaViolenciaAvanzaRoute}
                 target="_blank"
                 rel="noreferrer"
               >
@@ -95,11 +103,7 @@ export default function Main2() {
               sobre agresiones de derechas argentinas radicalizadas.
             </h2>
             <button className={styles.botonConectaMain}>
-              <a
-                href="https://docs.google.com/forms/d/e/1FAIpQLSe5pKXuvkvSUiwI_YEq5OZrfXCmpcsDuz_6co_iS2Qags80_A/viewform"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <a href={ReportaRoute} target="_blank" rel="noopener noreferrer">
                 <h2 className={styles.reportaBotonText}>REPORTÁ UN HECHO</h2>
               </a>
             </button>
@@ -111,7 +115,7 @@ export default function Main2() {
               <h6 className={styles.analisisAnios}> 2020 - 2023</h6>
             </div>
             <ScrollLink
-              to="analisis"
+              to={AnalisisRoute}
               spy={true} // Activa el modo espía
               smooth={true} // Activa el desplazamiento suave
               duration={500} // Duración de la animación (en milisegundos)

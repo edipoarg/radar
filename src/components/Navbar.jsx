@@ -5,6 +5,12 @@ import { Link as ScrollLink } from "react-scroll";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
+import {
+  ConectaRoute,
+  HomeRoute,
+  ReportaRoute,
+  NotasRoute,
+} from "./Routes.jsx";
 
 export default function NavbarBootstrap() {
   return (
@@ -12,7 +18,7 @@ export default function NavbarBootstrap() {
       <div>
         {/* TODO: move these hrefs to constants. Check whether the nested Brand and Link work as intended. */}
         <Navbar.Brand href="#home">
-          <Nav.Link href="/">
+          <Nav.Link as={Link} to={HomeRoute}>
             <div className={styles.logo}>
               <img className={styles.logoImg} src="logoRadar.png" alt="" />
             </div>
@@ -26,12 +32,16 @@ export default function NavbarBootstrap() {
             <Nav className="me-auto">
               <div className={styles.menuPC}>
                 {/* TODO: move these hrefs to constants */}
-                <Nav.Link to="./notas" as={Link} className="d-none d-lg-block">
+                <Nav.Link
+                  to={NotasRoute}
+                  as={Link}
+                  className="d-none d-lg-block"
+                >
                   {" "}
                   <h6>INVESTIGACIONES</h6>{" "}
                 </Nav.Link>
                 <Nav.Link
-                  to="./conecta"
+                  to={ConectaRoute}
                   as={Link}
                   className="d-none d-lg-block"
                 >
@@ -39,8 +49,7 @@ export default function NavbarBootstrap() {
                 </Nav.Link>
               </div>
               <Nav.Link
-                // TODO: Move this URL to an ENV file or constant
-                href="https://docs.google.com/forms/d/e/1FAIpQLSe5pKXuvkvSUiwI_YEq5OZrfXCmpcsDuz_6co_iS2Qags80_A/viewform"
+                href={ReportaRoute}
                 target="_blank"
                 rel="noopener noreferrer"
               >
