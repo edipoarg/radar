@@ -15,7 +15,7 @@ export const newDate = (d) => {
     assert(day <= 31, day);
     assert(month <= 12, month);
 
-    return new Date(year, month - 1, day);
+    return new Date(year, month, day);
   } catch (e) {
     console.error("couldn't parse date: ", d, e);
     return null;
