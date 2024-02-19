@@ -1,4 +1,5 @@
 import styles from "./Footer.module.css";
+import { EdipoRoute } from "./Routes.jsx";
 
 export default function Footer() {
   return (
@@ -8,7 +9,7 @@ export default function Footer() {
         <h6 className={styles.desarrolladoX}>
           {" "}
           Desarrollado x{" "}
-          <a className={styles.edipo} href="http://investigacionpolitica.com">
+          <a className={styles.edipo} href={EdipoRoute}>
             {" "}
             [ EdIPo ]{" "}
           </a>

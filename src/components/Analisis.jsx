@@ -1,6 +1,7 @@
 import styles from "./Analisis.module.css";
 import { Link as ScrollLink } from "react-scroll";
 import PropTypes from "prop-types";
+import { HomeRoute } from "./Routes.jsx";
 
 export default function Analisis({ min, max, total, componentes }) {
   return (
@@ -50,7 +51,7 @@ export default function Analisis({ min, max, total, componentes }) {
         *Las narrativas no son excluyentes. Algunos casos abarcan más de una.
       </h6>
       <ScrollLink
-        to="App" // TODO: move this hard-coded string to its own constant
+        to={HomeRoute} // TODO: move this hard-coded string to its own constant
         spy={true} // Activa el modo espía
         smooth={true} // Activa el desplazamiento suave
         duration={500} // Duración de la animación (en milisegundos)

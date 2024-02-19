@@ -1,4 +1,5 @@
 import styles from "./Marquee.module.css";
+import { ReportaRoute } from "./Routes.jsx";
 
 export default function Marquee() {
   return (
@@ -11,7 +12,7 @@ export default function Marquee() {
           Si sabés de algún hecho, reportalo{" "}
           <a
             className={styles.linkMarquee}
-            href="https://docs.google.com/forms/d/e/1FAIpQLSe5pKXuvkvSUiwI_YEq5OZrfXCmpcsDuz_6co_iS2Qags80_A/viewform"
+            href={ReportaRoute}
             target="_blank"
             rel="noopener noreferrer"
           >

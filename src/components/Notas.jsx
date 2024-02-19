@@ -2,6 +2,11 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import styles from "./Notas.module.css";
 import "./NotasGlobalStyles.css";
 import { Carousel } from "react-bootstrap";
+import {
+  NotaLosDinosauriosRoute,
+  NotaLaViolenciaAvanzaRoute,
+  OtrasInvestigacionesRoute,
+} from "./Routes.jsx";
 
 export default function Notas() {
   return (
@@ -18,7 +23,7 @@ export default function Notas() {
             <h4 className={styles.autorNota}></h4>
             <button className={styles.botonNotas}>
               <a
-                href="https://informes.revistacrisis.com.ar/los-dinosaurios-no-van-a-desaparecer/"
+                href={NotaLosDinosauriosRoute}
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -38,7 +43,7 @@ export default function Notas() {
             <h4 className={styles.autorNota}></h4>
             <button className={styles.botonNotas}>
               <a
-                href="http://informes.revistacrisis.com.ar/la-violencia-avanza-1s/"
+                href={NotaLaViolenciaAvanzaRoute}
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -54,7 +59,7 @@ export default function Notas() {
 
             <button className={styles.botonNotas}>
               <a
-                href="http://revistacrisis.com.ar/autores/equipo-de-investigacion-politica-edipo"
+                href={OtrasInvestigacionesRoute}
                 target="_blank"
                 rel="noopener noreferrer"
               >
