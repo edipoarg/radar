@@ -3,14 +3,7 @@ import { Link as ScrollLink } from "react-scroll";
 import { Link } from "react-router-dom";
 import { Carousel } from "react-bootstrap";
 import { Details } from "./Conecta.jsx";
-import {
-  ConectaRoute,
-  HomeAnchorRoute,
-  NotaLosDinosauriosRoute,
-  NotaLaViolenciaAvanzaRoute,
-  ReportaRoute,
-  AnalisisRoute,
-} from "./Routes.jsx";
+import Navlinks from "../routes/index.js";
 
 export default function Main2() {
   return (
@@ -23,7 +16,7 @@ export default function Main2() {
           </h4>
           {/* TODO move this route identifier to its own constant */}
 
-          <Link to={ConectaRoute}>
+          <Link to={Navlinks.ConectaRoute}>
             {" "}
             <button className={styles.botonReportaMain}>NOSOTRXS</button>
           </Link>
@@ -31,7 +24,7 @@ export default function Main2() {
 
         <ScrollLink
           // TODO move App string to constant
-          to={HomeAnchorRoute}
+          to={Navlinks.HomeAnchorRoute}
           spy={true} // Activa el modo espía
           smooth={true} // Activa el desplazamiento suave
           duration={500} // Duración de la animación (en milisegundos)
@@ -69,7 +62,7 @@ export default function Main2() {
             </h4>
             <button className={styles.botonNotasMain}>
               <a
-                href={NotaLosDinosauriosRoute}
+                href={Navlinks.NotaLosDinosauriosRoute}
                 target="_blank"
                 rel="noreferrer"
               >
@@ -86,7 +79,7 @@ export default function Main2() {
             </h4>
             <button className={styles.botonNotasMain}>
               <a
-                href={NotaLaViolenciaAvanzaRoute}
+                href={Navlinks.NotaLaViolenciaAvanzaRoute}
                 target="_blank"
                 rel="noreferrer"
               >
@@ -103,7 +96,11 @@ export default function Main2() {
               sobre agresiones de derechas argentinas radicalizadas.
             </h2>
             <button className={styles.botonConectaMain}>
-              <a href={ReportaRoute} target="_blank" rel="noopener noreferrer">
+              <a
+                href={Navlinks.ReportaRoute}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <h2 className={styles.reportaBotonText}>REPORTÁ UN HECHO</h2>
               </a>
             </button>
@@ -115,7 +112,7 @@ export default function Main2() {
               <h6 className={styles.analisisAnios}> 2020 - 2023</h6>
             </div>
             <ScrollLink
-              to={AnalisisRoute}
+              to={Navlinks.AnalisisRoute}
               spy={true} // Activa el modo espía
               smooth={true} // Activa el desplazamiento suave
               duration={500} // Duración de la animación (en milisegundos)

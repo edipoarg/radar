@@ -1,5 +1,5 @@
 import styles from "./Footer.module.css";
-import { EdipoRoute } from "./Routes.jsx";
+import Navlinks from "../routes/index.js";
 
 export default function Footer() {
   return (
@@ -9,7 +9,7 @@ export default function Footer() {
         <h6 className={styles.desarrolladoX}>
           {" "}
           Desarrollado x{" "}
-          <a className={styles.edipo} href={EdipoRoute}>
+          <a className={styles.edipo} href={Navlinks.EdipoRoute}>
             {" "}
             [ EdIPo ]{" "}
           </a>
