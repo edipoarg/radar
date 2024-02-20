@@ -81,13 +81,6 @@ function App() {
     t3: true,
   });
 
-  const handleTipoFilter = useCallback(() => {
-    const filteredDataByType = filteredDataByTime.filter(
-      (event) => tipoFilters[event.tipoId],
-    );
-    setFilteredData(filteredDataByType);
-  }, [filteredDataByTime, tipoFilters]);
-
   // Estado para controlar la visibilidad de "Filtros"
   const [analisisData] = useState({
     componentes,
@@ -105,6 +98,13 @@ function App() {
   const [dates, setDates] = useState(globalDates);
   const [filteredData, setFilteredData] = useState(cases);
   const [filteredDataByTime, setFilteredDataByTime] = useState([]);
+
+  const handleTipoFilter = useCallback(() => {
+    const filteredDataByType = filteredDataByTime.filter(
+      (event) => tipoFilters[event.tipoId],
+    );
+    setFilteredData(filteredDataByType);
+  }, [filteredDataByTime, tipoFilters]);
 
   useEffect(() => {
     const checkDate = (e) => e.date >= dates.min && e.date <= dates.max;
