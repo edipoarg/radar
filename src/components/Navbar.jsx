@@ -26,7 +26,6 @@ export default function NavbarBootstrap() {
           <Container>
             <Nav className="me-auto">
               <div className={styles.menuPC}>
-                {/* TODO: move these hrefs to constants */}
                 <Nav.Link
                   to={Navlinks.notas}
                   as={Link}
@@ -44,7 +43,7 @@ export default function NavbarBootstrap() {
                 </Nav.Link>
               </div>
               <Nav.Link
-                href={Navlinks.reporta}
+                href={Navlinks.reportaForm}
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -63,7 +62,7 @@ export default function NavbarBootstrap() {
       </div>
 
       <div className={styles.botonMenu}>
-        <ScrollLink to="main2-content">
+        <ScrollLink to={Navlinks.main2Anchor}>
           <img className={styles.menuImg} src="menu.png" alt="" />
         </ScrollLink>
       </div>

@@ -12,7 +12,7 @@ export default function Marquee() {
           Si sabés de algún hecho, reportalo{" "}
           <a
             className={styles.linkMarquee}
-            href={Navlinks.reporta}
+            href={Navlinks.reportaForm}
             target="_blank"
             rel="noopener noreferrer"
           >
