@@ -1,20 +1,20 @@
 const Navlinks = {
-  HomeRoute: "/",
-  HomeAnchorRoute: "homeAnchor",
-  ConectaRoute: "/conecta",
-  ReportaRoute:
+  home: "/",
+  homeAnchor: "homeAnchor",
+  conecta: "/conecta",
+  reporta:
     "https://docs.google.com/forms/d/e/1FAIpQLSe5pKXuvkvSUiwI_YEq5OZrfXCmpcsDuz_6co_iS2Qags80_A/viewform",
-  NotasRoute: "/notas",
-  Main2Route: "main2Anchor",
-  AnalisisRoute: "analisisAnchor",
-  NotaLosDinosauriosRoute:
+  notas: "/notas",
+  main2: "main2Anchor",
+  analisis: "analisisAnchor",
+  notaLosDinosaurios:
     "https://informes.revistacrisis.com.ar/los-dinosaurios-no-van-a-desaparecer/",
-  NotaLaViolenciaAvanzaRoute:
+  notaLaViolenciaAvanza:
     "https://informes.revistacrisis.com.ar/la-violencia-avanza-1s/",
-  OtrasInvestigacionesRoute:
+  otrasInvestigaciones:
     "http://revistacrisis.com.ar/autores/equipo-de-investigacion-politica-edipo",
-  EdipoRoute: "http://investigacionpolitica.com",
-  MailRadarRoute: "mailto:radar.edipo@gmail.com",
+  edipo: "http://investigacionpolitica.com",
+  mailRadar: "mailto:radar.edipo@gmail.com",
 };
 
 export default Navlinks;

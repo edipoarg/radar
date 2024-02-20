@@ -39,7 +39,7 @@ export default function Notas() {
             <h4 className={styles.autorNota}></h4>
             <button className={styles.botonNotas}>
               <a
-                href={Navlinks.NotaLaViolenciaAvanzaRoute}
+                href={Navlinks.notaLaViolenciaAvanza}
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -55,7 +55,7 @@ export default function Notas() {
 
             <button className={styles.botonNotas}>
               <a
-                href={Navlinks.OtrasInvestigacionesRoute}
+                href={Navlinks.otrasInvestigaciones}
                 target="_blank"
                 rel="noopener noreferrer"
               >
