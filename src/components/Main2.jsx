@@ -1,10 +1,10 @@
 import styles from "./Main2.module.css";
 import { Link as ScrollLink } from "react-scroll";
-import { Link } from "react-router-dom";
 import { Carousel } from "react-bootstrap";
 import { Button } from "./Button.jsx";
 import { Details } from "./Conecta.jsx";
 import Navlinks from "../routes/index.js";
+import notas from "../notas.json";
 
 const buttonThemes = {
   default: {
@@ -61,40 +61,18 @@ export default function Main2() {
 
       <div className={styles.franja2}>
         <Carousel className={styles.notasMain}>
-          <Carousel.Item>
-            <h1 className={styles.tituloNotasMain}>
-              Los dinosaurios no van a desaparecer
-            </h1>
-            <h4 className={styles.autorNotaMain}>
-              Por el Equipo de Investigación Política (EdIPo)
-            </h4>
-            <button className={styles.botonNotasMain}>
-              <a
-                href={Navlinks.notaLosDinosaurios}
-                target="_blank"
-                rel="noreferrer"
-              >
-                ver
-              </a>
-            </button>
-          </Carousel.Item>
-          <Carousel.Item>
-            <h1 className={styles.tituloNotasMain}>
-              Informe a un año del atentado a CFK
-            </h1>
-            <h4 className={styles.autorNotaMain}>
-              Por el Equipo de Investigación Política (EdIPo)
-            </h4>
-            <button className={styles.botonNotasMain}>
-              <a
-                href={Navlinks.notaLaViolenciaAvanza}
-                target="_blank"
-                rel="noreferrer"
-              >
-                ver
-              </a>
-            </button>
-          </Carousel.Item>
+          {notas.map(({ title, author, link }, i) => (
+            <Carousel.Item key={i}>
+              <h1 className={styles.tituloNotasMain}>{title}</h1>
+              {author && (
+                <h4 className={styles.autorNotaMain}>
+                  <>Por {author}</>
+                </h4>
+              )}
+
+              <Button to={link}>ver</Button>
+            </Carousel.Item>
+          ))}
         </Carousel>
 
         <div className={styles.botoneraMain}>

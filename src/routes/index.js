@@ -9,12 +9,6 @@ const Navlinks = {
   main2: "/main2",
   main2Anchor: "main2Anchor",
   analisis: "analisisAnchor",
-  notaLosDinosaurios:
-    "https://informes.revistacrisis.com.ar/los-dinosaurios-no-van-a-desaparecer/",
-  notaLaViolenciaAvanza:
-    "https://informes.revistacrisis.com.ar/la-violencia-avanza-1s/",
-  otrasInvestigaciones:
-    "http://revistacrisis.com.ar/autores/equipo-de-investigacion-politica-edipo",
   edipo: "http://investigacionpolitica.com",
   mailRadar: "mailto:radar.edipo@gmail.com",
 };
