@@ -1,5 +1,5 @@
 import { expect, it, describe } from "vitest";
-import { newDate, chomp /* mapChomp, Classifier  */ } from "./utils.js";
+import { newDate, chomp, mapChomp, Classifier } from "./utils.js";
 
 describe("newDate", () => {
   it("parses DD/MM/YYYY dates correctly", () => {
@@ -21,3 +21,36 @@ describe("chomp", () => {
     expect(chomp("lol ")).toBe("lol");
   });
 });
+
+describe("mapChomp", () => {
+    it("should remove all trailing and preciding spaces on elements and return them in an array", () => {
+        const r = mapChomp(" this ; is;a;  cruel cruel; world");
+        expect(r[0]).toBe("this");
+        expect(r[1]).toBe("is");
+        expect(r[2]).toBe("a");
+        expect(r[3]).toBe("cruel cruel");
+        expect(r[4]).toBe("world");
+    })
+})
+
+describe("Classifier", () => {
+    it("should return an object of type Classifier", () => {
+        const C = new Classifier();
+        expect(C instanceof Classifier);
+    })
+
+    it("should classify", () => {
+        const C = new Classifier();
+        C.classify([0, 1, 2], ["zero", "one", "two"], 0);
+        C.classify([0, 1, 2], ["zero", "one"], 1);
+        C.classify([0, 2], ["zero", "one"], 2);
+
+        expect(C.byId["0"]).toStrictEqual([0, 1, 2]);
+        expect(C.byId["1"]).toStrictEqual([0, 1]);
+        expect(C.byId["2"]).toStrictEqual([0, 1, 2]);
+
+        expect(C.byName["zero"]).toStrictEqual([0, 1, 2]);
+        expect(C.byName["one"]).toStrictEqual([0, 1, 2]);
+        expect(C.byName["two"]).toStrictEqual([0]);
+    })
+})
