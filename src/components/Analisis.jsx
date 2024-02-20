@@ -6,7 +6,7 @@ import Navlinks from "../routes/index.js";
 export default function Analisis({ min, max, total, componentes }) {
   return (
     /* : extract this ID, "analisis", which is also used in Main2 and App, to a constant */
-    <div id="analisisAnchor" className={styles.analisis}>
+    <div id={Navlinks.analisis} className={styles.analisis}>
       <div className={styles.fondoAnalisisImg}>
         {" "}
         <img src="radarPuntos.png" alt="" />

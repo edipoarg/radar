@@ -11,9 +11,8 @@ export default function NavbarBootstrap() {
   return (
     <div className={styles.heading}>
       <div>
-        {/* TODO: move these hrefs to constants. Check whether the nested Brand and Link work as intended. */}
-        <Navbar.Brand href="#home">
-          <Nav.Link as={Link} to={Navlinks.home}>
+        <Navbar.Brand>
+          <Nav.Link href={Navlinks.home}>
             <div className={styles.logo}>
               <img className={styles.logoImg} src="logoRadar.png" alt="" />
             </div>

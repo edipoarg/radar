@@ -155,7 +155,7 @@ function App() {
   };
 
   return (
-    <div id="homeAnchor" className={styles.App}>
+    <div id={Navlinks.homeAnchor} className={styles.App}>
       {filtrosVisible && (
         <Filtros
           caseCount={filteredData.length}

@@ -7,7 +7,7 @@ import Navlinks from "../routes/index.js";
 
 export default function Main2() {
   return (
-    <div id="main2Anchor" className={styles.Main2}>
+    <div id={Navlinks.main2Anchor} className={styles.Main2}>
       <div className={styles.franja1}>
         <div className={styles.reportaMain}>
           <h4 className={styles.bajadaPrincipal}>
