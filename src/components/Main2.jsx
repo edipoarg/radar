@@ -16,7 +16,7 @@ export default function Main2() {
           </h4>
           {/* TODO move this route identifier to its own constant */}
 
-          <Link to={Navlinks.ConectaRoute}>
+          <Link to={Navlinks.Conecta}>
             {" "}
             <button className={styles.botonReportaMain}>NOSOTRXS</button>
           </Link>
@@ -24,7 +24,7 @@ export default function Main2() {
 
         <ScrollLink
           // TODO move App string to constant
-          to={Navlinks.HomeAnchorRoute}
+          to={Navlinks.homeAnchor}
           spy={true} // Activa el modo espía
           smooth={true} // Activa el desplazamiento suave
           duration={500} // Duración de la animación (en milisegundos)
@@ -62,7 +62,7 @@ export default function Main2() {
             </h4>
             <button className={styles.botonNotasMain}>
               <a
-                href={Navlinks.NotaLosDinosauriosRoute}
+                href={Navlinks.notaLosDinosaurios}
                 target="_blank"
                 rel="noreferrer"
               >
@@ -79,7 +79,7 @@ export default function Main2() {
             </h4>
             <button className={styles.botonNotasMain}>
               <a
-                href={Navlinks.NotaLaViolenciaAvanzaRoute}
+                href={Navlinks.notaLaViolenciaAvanza}
                 target="_blank"
                 rel="noreferrer"
               >
@@ -97,7 +97,7 @@ export default function Main2() {
             </h2>
             <button className={styles.botonConectaMain}>
               <a
-                href={Navlinks.ReportaRoute}
+                href={Navlinks.reporta}
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -112,7 +112,7 @@ export default function Main2() {
               <h6 className={styles.analisisAnios}> 2020 - 2023</h6>
             </div>
             <ScrollLink
-              to={Navlinks.AnalisisRoute}
+              to={Navlinks.analisis}
               spy={true} // Activa el modo espía
               smooth={true} // Activa el desplazamiento suave
               duration={500} // Duración de la animación (en milisegundos)

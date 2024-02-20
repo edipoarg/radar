@@ -62,7 +62,7 @@ export default function ReportaForm() {
           si querés comunicarte con nosotrxs podés escribirnos a
           <br />
           <br />
-          <a href={Navlinks.MailRadarRoute}>radar.edipo@gmail.com</a>
+          <a href={Navlinks.mailRadar}>radar.edipo@gmail.com</a>
         </h6>
       </div>
     </>

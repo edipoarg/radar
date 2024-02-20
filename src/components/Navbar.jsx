@@ -13,7 +13,7 @@ export default function NavbarBootstrap() {
       <div>
         {/* TODO: move these hrefs to constants. Check whether the nested Brand and Link work as intended. */}
         <Navbar.Brand href="#home">
-          <Nav.Link as={Link} to={Navlinks.HomeRoute}>
+          <Nav.Link as={Link} to={Navlinks.home}>
             <div className={styles.logo}>
               <img className={styles.logoImg} src="logoRadar.png" alt="" />
             </div>
@@ -28,7 +28,7 @@ export default function NavbarBootstrap() {
               <div className={styles.menuPC}>
                 {/* TODO: move these hrefs to constants */}
                 <Nav.Link
-                  to={Navlinks.NotasRoute}
+                  to={Navlinks.notas}
                   as={Link}
                   className="d-none d-lg-block"
                 >
@@ -36,7 +36,7 @@ export default function NavbarBootstrap() {
                   <h6>INVESTIGACIONES</h6>{" "}
                 </Nav.Link>
                 <Nav.Link
-                  to={Navlinks.ConectaRoute}
+                  to={Navlinks.conecta}
                   as={Link}
                   className="d-none d-lg-block"
                 >
@@ -44,7 +44,7 @@ export default function NavbarBootstrap() {
                 </Nav.Link>
               </div>
               <Nav.Link
-                href={Navlinks.ReportaRoute}
+                href={Navlinks.reporta}
                 target="_blank"
                 rel="noopener noreferrer"
               >

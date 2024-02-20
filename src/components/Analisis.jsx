@@ -51,7 +51,7 @@ export default function Analisis({ min, max, total, componentes }) {
         *Las narrativas no son excluyentes. Algunos casos abarcan más de una.
       </h6>
       <ScrollLink
-        to={Navlinks.HomeAnchorRoute} // TODO: move this hard-coded string to its own constant
+        to={Navlinks.homeAnchor} // TODO: move this hard-coded string to its own constant
         spy={true} // Activa el modo espía
         smooth={true} // Activa el desplazamiento suave
         duration={500} // Duración de la animación (en milisegundos)

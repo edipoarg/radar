@@ -9,7 +9,7 @@ export default function Footer() {
         <h6 className={styles.desarrolladoX}>
           {" "}
           Desarrollado x{" "}
-          <a className={styles.edipo} href={Navlinks.EdipoRoute}>
+          <a className={styles.edipo} href={Navlinks.edipo}>
             {" "}
             [ EdIPo ]{" "}
           </a>
