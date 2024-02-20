@@ -1,11 +1,12 @@
 import styles from "./Analisis.module.css";
 import { Link as ScrollLink } from "react-scroll";
 import PropTypes from "prop-types";
+import Navlinks from "../routes/index.js";
 
 export default function Analisis({ min, max, total, componentes }) {
   return (
-    /* TODO: extract this ID, "analisis", which is also used in Main2 and App, to a constant */
-    <div id="analisis" className={styles.analisis}>
+    /* : extract this ID, "analisis", which is also used in Main2 and App, to a constant */
+    <div id={Navlinks.analisis} className={styles.analisis}>
       <div className={styles.fondoAnalisisImg}>
         {" "}
         <img src="radarPuntos.png" alt="" />
@@ -50,7 +51,7 @@ export default function Analisis({ min, max, total, componentes }) {
         *Las narrativas no son excluyentes. Algunos casos abarcan más de una.
       </h6>
       <ScrollLink
-        to="App" // TODO: move this hard-coded string to its own constant
+        to={Navlinks.homeAnchor}
         spy={true} // Activa el modo espía
         smooth={true} // Activa el desplazamiento suave
         duration={500} // Duración de la animación (en milisegundos)
