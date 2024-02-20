@@ -2,18 +2,15 @@ import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 import styles from "./Button.module.css";
 
-export const themes = {
-  default: {
-    color: "#2b3bcd",
-    background: "white",
-  },
-  inverted: {
-    color: "white",
-    background: "#2b3bcd",
-  },
+const defaultTheme = {
+  color: "#2b3bcd",
+  background: "white",
+  hover: "#535bf2",
 };
 
-export const Button = ({ children, to = "#", theme = themes.default }) => {
+export const Button = ({ children, to = "#", theme = {} }) => {
+  theme = { ...defaultTheme, ...theme };
+
   const css = {
     "--color": theme.color,
     "--background": theme.background,
