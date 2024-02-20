@@ -7,14 +7,12 @@ import Navlinks from "../routes/index.js";
 
 export default function Main2() {
   return (
-    // TODO move this ID, Main2, to its own constant
     <div id="main2Anchor" className={styles.Main2}>
       <div className={styles.franja1}>
         <div className={styles.reportaMain}>
           <h4 className={styles.bajadaPrincipal}>
             <Details />
           </h4>
-          {/* TODO move this route identifier to its own constant */}
 
           <Link to={Navlinks.Conecta}>
             {" "}
@@ -23,7 +21,6 @@ export default function Main2() {
         </div>
 
         <ScrollLink
-          // TODO move App string to constant
           to={Navlinks.homeAnchor}
           spy={true} // Activa el modo espía
           smooth={true} // Activa el desplazamiento suave
@@ -97,7 +94,7 @@ export default function Main2() {
             </h2>
             <button className={styles.botonConectaMain}>
               <a
-                href={Navlinks.reporta}
+                href={Navlinks.reportaForm}
                 target="_blank"
                 rel="noopener noreferrer"
               >
