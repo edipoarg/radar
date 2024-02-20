@@ -5,7 +5,7 @@ import maplibregl from "maplibre-gl";
 import "maplibre-gl/dist/maplibre-gl.css";
 import "./App.css";
 import styles from "./App.module.css";
-
+import Navlinks from "./routes/index";
 import { Link as ScrollLink } from "react-scroll";
 import Footer from "./components/Footer.jsx";
 
@@ -156,7 +156,7 @@ function App() {
   };
 
   return (
-    <div className={styles.App}>
+    <div id={Navlinks.homeAnchor} className={styles.App}>
       {filtrosVisible && (
         <Filtros
           caseCount={filteredData.length}
@@ -220,7 +220,7 @@ function App() {
       <div className={styles["lower-floating-buttons"]}>
         <MonthsSlider {...{ globalDates, setDates }} />
         <ScrollLink
-          to="Main2" // ID del elemento de destino (Main2)
+          to={Navlinks.main2Anchor} // ID del elemento de destino (Main2)
           spy={true} // Activa el modo espía
           smooth={true} // Activa el desplazamiento suave
           duration={500} // Duración de la animación (en milisegundos)
