@@ -16,14 +16,14 @@ describe("newDate", () => {
 });
 
 describe("chomp", () => {
-  it("should remove all trailing and preceding space", () => {
+  it("should remove all trailing and preceding spaces", () => {
     expect(chomp(" lol")).toBe("lol");
     expect(chomp("lol ")).toBe("lol");
   });
 });
 
 describe("mapChomp", () => {
-    it("should remove all trailing and preciding spaces on elements and return them in an array", () => {
+    it("should take a ';' separated string and split it to a chomped array", () => {
         const r = mapChomp(" this ; is;a;  cruel cruel; world");
         expect(r[0]).toBe("this");
         expect(r[1]).toBe("is");
