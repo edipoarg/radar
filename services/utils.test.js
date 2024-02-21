@@ -34,7 +34,7 @@ describe("mapChomp", () => {
 })
 
 describe("Classifier", () => {
-    it("should classify", () => {
+    it("should map entries to the correct byId and byName hashes", () => {
         const C = new Classifier();
         C.classify([0, 1, 2], ["zero", "one", "two"], 0);
         C.classify([0, 1, 2], ["zero", "one"], 1);
