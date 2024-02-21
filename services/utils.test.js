@@ -34,11 +34,6 @@ describe("mapChomp", () => {
 })
 
 describe("Classifier", () => {
-    it("should return an object of type Classifier", () => {
-        const C = new Classifier();
-        expect(C instanceof Classifier);
-    })
-
     it("should classify", () => {
         const C = new Classifier();
         C.classify([0, 1, 2], ["zero", "one", "two"], 0);
