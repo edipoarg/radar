@@ -115,7 +115,8 @@
   position: relative;
   line-height: 1em;
   /* max-height = line-height (1.2) * lines max number (3) */
-  max-height: 3em;
+  /* a few more pixels to avoid clipping the text*/
+  max-height: 3.1em;
   /* fix problem when last visible word doesn't adjoin right side  */
   text-align: justify;
   /* place for '...' */
