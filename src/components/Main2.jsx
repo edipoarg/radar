@@ -1,29 +1,38 @@
 import styles from "./Main2.module.css";
 import { Link as ScrollLink } from "react-scroll";
-import { Link } from "react-router-dom";
 import { Carousel } from "react-bootstrap";
+import { Button } from "./Button.jsx";
 import { Details } from "./Conecta.jsx";
+import Navlinks from "../routes/index.js";
+import notas from "../notas.json";
+
+const buttonThemes = {
+  default: {
+    color: "#2b3bcd",
+    background: "white",
+    hover: "#535bf2",
+  },
+  inverted: {
+    color: "white",
+    background: "#2b3bcd",
+    hover: "#535bf2",
+  },
+};
 
 export default function Main2() {
   return (
-    // TODO move this ID, Main2, to its own constant
-    <div id="Main2" className={styles.Main2}>
+    <div id={Navlinks.main2Anchor} className={styles.Main2}>
       <div className={styles.franja1}>
         <div className={styles.reportaMain}>
           <h4 className={styles.bajadaPrincipal}>
             <Details />
           </h4>
-          {/* TODO move this route identifier to its own constant */}
 
-          <Link to="/conecta">
-            {" "}
-            <button className={styles.botonReportaMain}>NOSOTRXS</button>
-          </Link>
+          <Button to={Navlinks.connecta}>NOSOTRXS</Button>
         </div>
 
         <ScrollLink
-          // TODO move App string to constant
-          to="App"
+          to={Navlinks.homeAnchor}
           spy={true} // Activa el modo espía
           smooth={true} // Activa el desplazamiento suave
           duration={500} // Duración de la animación (en milisegundos)
@@ -52,40 +61,18 @@ export default function Main2() {
 
       <div className={styles.franja2}>
         <Carousel className={styles.notasMain}>
-          <Carousel.Item>
-            <h1 className={styles.tituloNotasMain}>
-              Los dinosaurios no van a desaparecer
-            </h1>
-            <h4 className={styles.autorNotaMain}>
-              Por el Equipo de Investigación Política (EdIPo)
-            </h4>
-            <button className={styles.botonNotasMain}>
-              <a
-                href="https://informes.revistacrisis.com.ar/los-dinosaurios-no-van-a-desaparecer/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                ver
-              </a>
-            </button>
-          </Carousel.Item>
-          <Carousel.Item>
-            <h1 className={styles.tituloNotasMain}>
-              Informe a un año del atentado a CFK
-            </h1>
-            <h4 className={styles.autorNotaMain}>
-              Por el Equipo de Investigación Política (EdIPo)
-            </h4>
-            <button className={styles.botonNotasMain}>
-              <a
-                href="https://informes.revistacrisis.com.ar/la-violencia-avanza-1s/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                ver
-              </a>
-            </button>
-          </Carousel.Item>
+          {notas.map(({ title, author, link }, i) => (
+            <Carousel.Item key={i}>
+              <h1 className={styles.tituloNotasMain}>{title}</h1>
+              {author && (
+                <h4 className={styles.autorNotaMain}>
+                  <>Por {author}</>
+                </h4>
+              )}
+
+              <Button to={link}>ver</Button>
+            </Carousel.Item>
+          ))}
         </Carousel>
 
         <div className={styles.botoneraMain}>
@@ -94,15 +81,9 @@ export default function Main2() {
               Colaborá en la construcción de una fuente de información pública
               sobre agresiones de derechas argentinas radicalizadas.
             </h2>
-            <button className={styles.botonConectaMain}>
-              <a
-                href="https://docs.google.com/forms/d/e/1FAIpQLSe5pKXuvkvSUiwI_YEq5OZrfXCmpcsDuz_6co_iS2Qags80_A/viewform"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <h2 className={styles.reportaBotonText}>REPORTÁ UN HECHO</h2>
-              </a>
-            </button>
+            <Button theme={buttonThemes.inverted} to={Navlinks.reportaForm}>
+              REPORTÁ UN HECHO
+            </Button>
           </div>
 
           <div className={styles.analisisMain}>
@@ -111,7 +92,7 @@ export default function Main2() {
               <h6 className={styles.analisisAnios}> 2020 - 2023</h6>
             </div>
             <ScrollLink
-              to="analisis"
+              to={Navlinks.analisis}
               spy={true} // Activa el modo espía
               smooth={true} // Activa el desplazamiento suave
               duration={500} // Duración de la animación (en milisegundos)

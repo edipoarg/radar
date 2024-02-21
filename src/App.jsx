@@ -1,11 +1,11 @@
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { useLoaderData } from "react-router-dom";
 import MapGL, { NavigationControl } from "react-map-gl/maplibre";
 import maplibregl from "maplibre-gl";
 import "maplibre-gl/dist/maplibre-gl.css";
 import "./App.css";
 import styles from "./App.module.css";
-
+import Navlinks from "./routes/index";
 import { Link as ScrollLink } from "react-scroll";
 import Footer from "./components/Footer.jsx";
 
@@ -68,18 +68,11 @@ const mapSourceStyles = {
 function App() {
   const { urls } = useLoaderData();
   const { provincias, departamentos, departamentosBsAs, rutas } = urls;
-  const { tipos, componentes } = urls.casos;
+  const { componentes } = urls.casos;
   const cases = urls.casos.cases.map((c) => ({ ...c, date: new Date(c.date) }));
   const globalDates = {
     min: new Date(urls.casos.min),
     max: new Date(urls.casos.max),
-  };
-
-  const handleTipoFilter = () => {
-    const filteredDataByType = filteredDataByTime.filter(
-      (event) => tipoFilters[event.tipoId],
-    );
-    setFilteredData(filteredDataByType);
   };
 
   const [tipoFilters, setTipoFilters] = useState({
@@ -87,9 +80,9 @@ function App() {
     t2: true,
     t3: true,
   });
+
   // Estado para controlar la visibilidad de "Filtros"
   const [analisisData] = useState({
-    tipos,
     componentes,
     min: globalDates.min,
     max: globalDates.max,
@@ -105,6 +98,13 @@ function App() {
   const [dates, setDates] = useState(globalDates);
   const [filteredData, setFilteredData] = useState(cases);
   const [filteredDataByTime, setFilteredDataByTime] = useState([]);
+
+  const handleTipoFilter = useCallback(() => {
+    const filteredDataByType = filteredDataByTime.filter(
+      (event) => tipoFilters[event.tipoId],
+    );
+    setFilteredData(filteredDataByType);
+  }, [filteredDataByTime, tipoFilters]);
 
   useEffect(() => {
     const checkDate = (e) => e.date >= dates.min && e.date <= dates.max;
@@ -156,7 +156,7 @@ function App() {
   };
 
   return (
-    <div className={styles.App}>
+    <div id={Navlinks.homeAnchor} className={styles.App}>
       {filtrosVisible && (
         <Filtros
           caseCount={filteredData.length}
@@ -220,7 +220,7 @@ function App() {
       <div className={styles["lower-floating-buttons"]}>
         <MonthsSlider {...{ globalDates, setDates }} />
         <ScrollLink
-          to="Main2" // ID del elemento de destino (Main2)
+          to={Navlinks.main2Anchor} // ID del elemento de destino (Main2)
           spy={true} // Activa el modo espía
           smooth={true} // Activa el desplazamiento suave
           duration={500} // Duración de la animación (en milisegundos)
