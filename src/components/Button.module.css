@@ -22,7 +22,7 @@
     border-color: var(--color);
     color: var(--color);
     border-radius: 15vh;
-    width: 100%;
+    width: auto;
     white-space: nowrap;
     text-align: center;
 }
