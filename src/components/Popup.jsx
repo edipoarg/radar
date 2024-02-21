@@ -3,7 +3,11 @@ import PropTypes from "prop-types";
 
 const Popup = ({ title, date, source }) => (
   <div className={styles.popup}>
-    <h3 className={styles.displayTitulo}>{title}</h3>
+    <h3
+      className={`${styles.displayTitulo} ${styles["multiline-text-with-ellipsis"]}`}
+    >
+      {title}
+    </h3>
     <div className={styles.masDatosPopup}>
       {" "}
       <p className={styles.displayFecha}>Fecha: {date.toLocaleDateString()}</p>
