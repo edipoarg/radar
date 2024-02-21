@@ -21,7 +21,7 @@ export default function MonthsSlider({ className, globalDates, setDates }) {
     (value) => {
       const diff = months - value;
       const date = new Date();
-      date.setMonth(date.getMonth() + 1 - diff);
+      date.setMonth(date.getMonth() - 1 - diff);
       return date2MonthYear(date);
     },
     [months],
