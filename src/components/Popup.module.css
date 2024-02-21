@@ -1,4 +1,5 @@
 .popup {
+  --background-color: #2b3bcd;
   position: absolute;
   top: 68vh;
   left: 2vw;
@@ -8,7 +9,7 @@
   padding: 15px;
   padding-left: 25px;
   color: white;
-  background-color: #2b3bcd;
+  background-color: var(--background-color);
   border: 1px solid white;
   border-radius: 30px;
   z-index: 1000;
@@ -55,7 +56,7 @@
     padding: 15px;
     padding-left: 25px;
     color: white;
-    background-color: #2b3bcd;
+    background-color: var(--background-color);
     border: 1px solid white;
     border-radius: 30px;
     z-index: 1000;
@@ -106,3 +107,41 @@
   }
 }
 
+/* Taken from https://hackingui.com/a-pure-css-solution-for-multiline-text-truncation/ */
+.multiline-text-with-ellipsis {
+  /* hide text if it more than N lines  */
+  overflow: hidden;
+  /* to set '...' in absolute position */
+  position: relative;
+  line-height: 1em;
+  /* max-height = line-height (1.2) * lines max number (3) */
+  max-height: 3em;
+  /* fix problem when last visible word doesn't adjoin right side  */
+  text-align: justify;
+  /* place for '...' */
+  padding-right: 1em;
+  margin-right: 1em;
+}
+/* create the ... */
+.multiline-text-with-ellipsis:before {
+  /* show dots at the end */
+  content: "...";
+  position: absolute;
+  /* set position to right bottom corner of block */
+  right: 0;
+  bottom: 0;
+}
+/* hide ... if we have text, which is less than or equal to max lines */
+.multiline-text-with-ellipsis:after {
+  /* hide dots at the end */
+  content: "";
+  position: absolute;
+  /* set position to right bottom corner of text */
+  right: 0;
+  /* set width and height */
+  width: 1em;
+  height: 1em;
+  margin-top: 0.2em;
+  /* bg color same as parent bg color */
+  background: var(--background-color);
+}
