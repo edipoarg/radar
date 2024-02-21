@@ -44,13 +44,13 @@ jobs:
         id: pages
         uses: actions/configure-pages@v3
       - name: Install dependencies
-        run: npm install
+        run: yarn
         working-directory: ${{ env.BUILD_PATH }}
-      - name: Build with npm
+      - name: Build with yarn
         env:
           VITE_TSV_ID: ${{ secrets.VITE_TSV_ID}}
         run: |
-         npm run build && cat public/data/casos.json
+         yarn run build && cat public/data/casos.json
         working-directory: ${{ env.BUILD_PATH }}
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
