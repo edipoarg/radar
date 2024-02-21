@@ -1,6 +1,6 @@
 import constants from "./constants.js";
 
-import { newDate, mapChomp, Classifier } from "../src/utils.js";
+import { newDate, mapChomp, Classifier } from "./utils.js";
 
 const FIXUP = (t) =>
   t
