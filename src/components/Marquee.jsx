@@ -1,5 +1,4 @@
 import styles from "./Marquee.module.css";
-import Navlinks from "../routes/index.js";
 
 export default function Marquee() {
   return (
@@ -12,7 +11,7 @@ export default function Marquee() {
           Si sabés de algún hecho, reportalo{" "}
           <a
             className={styles.linkMarquee}
-            href={Navlinks.reportaForm}
+            href="https://docs.google.com/forms/d/e/1FAIpQLSe5pKXuvkvSUiwI_YEq5OZrfXCmpcsDuz_6co_iS2Qags80_A/viewform"
             target="_blank"
             rel="noopener noreferrer"
           >

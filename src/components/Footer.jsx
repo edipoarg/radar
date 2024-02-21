@@ -1,5 +1,4 @@
 import styles from "./Footer.module.css";
-import Navlinks from "../routes/index.js";
 
 export default function Footer() {
   return (
@@ -9,7 +8,7 @@ export default function Footer() {
         <h6 className={styles.desarrolladoX}>
           {" "}
           Desarrollado x{" "}
-          <a className={styles.edipo} href={Navlinks.edipo}>
+          <a className={styles.edipo} href="http://investigacionpolitica.com">
             {" "}
             [ EdIPo ]{" "}
           </a>

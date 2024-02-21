@@ -1,12 +1,11 @@
 import styles from "./Analisis.module.css";
 import { Link as ScrollLink } from "react-scroll";
 import PropTypes from "prop-types";
-import Navlinks from "../routes/index.js";
 
-export default function Analisis({ min, max, total, componentes }) {
+export default function Analisis({ min, max, total, tipos, componentes }) {
   return (
-    /* : extract this ID, "analisis", which is also used in Main2 and App, to a constant */
-    <div id={Navlinks.analisis} className={styles.analisis}>
+    /* TODO: extract this ID, "analisis", which is also used in Main2 and App, to a constant */
+    <div id="analisis" className={styles.analisis}>
       <div className={styles.fondoAnalisisImg}>
         {" "}
         <img src="radarPuntos.png" alt="" />
@@ -28,6 +27,7 @@ export default function Analisis({ min, max, total, componentes }) {
       </div>
 
       <div className={styles.analisisDatos}>
+
         {Object.keys(componentes.byName).map((t, i) => (
           <div className={styles.datos2} key={i}>
             <h1 className={styles.datoN2}>{componentes.byName[t].length}</h1>
@@ -51,7 +51,7 @@ export default function Analisis({ min, max, total, componentes }) {
         *Las narrativas no son excluyentes. Algunos casos abarcan más de una.
       </h6>
       <ScrollLink
-        to={Navlinks.homeAnchor}
+        to="App" // TODO: move this hard-coded string to its own constant
         spy={true} // Activa el modo espía
         smooth={true} // Activa el desplazamiento suave
         duration={500} // Duración de la animación (en milisegundos)
@@ -82,5 +82,6 @@ Analisis.propTypes = {
   min: PropTypes.instanceOf(Date),
   max: PropTypes.instanceOf(Date),
   total: PropTypes.number.isRequired,
+  tipos: PropWithByName,
   componentes: PropWithByName,
 };

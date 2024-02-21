@@ -11,7 +11,6 @@ import Notas from "./components/Notas.jsx";
 import Reporta from "./components/Reporta.jsx";
 
 import Root from "./routes/Root.jsx";
-import Navlinks from "./routes/index.js";
 
 const App = lazy(() => import("./App"));
 
@@ -30,11 +29,11 @@ const router = createHashRouter([
     path: "/",
     element: <Root />,
     children: [
-      { path: Navlinks.home, element: <App />, loader },
-      { path: Navlinks.conecta, element: <Conecta /> },
-      { path: Navlinks.reporta, element: <Reporta /> },
-      { path: Navlinks.notas, element: <Notas /> },
-      { path: Navlinks.main2, element: <Main2 /> },
+      { path: "/", element: <App />, loader },
+      { path: "/conecta", element: <Conecta /> },
+      { path: "/reporta", element: <Reporta /> },
+      { path: "/notas", element: <Notas /> },
+      { path: "/main2", element: <Main2 /> },
     ],
   },
 ]);
