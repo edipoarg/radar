@@ -9,6 +9,7 @@ const defaultTheme = {
 };
 
 export const Button = ({ children, to = "#", theme = {} }) => {
+  /* superload theme with defaultTheme */
   theme = { ...defaultTheme, ...theme };
 
   const css = {
