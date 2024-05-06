@@ -1,8 +1,12 @@
 {
     "updates": [
         {
-            "date": "2024-04-09",
+            "date": "09-04-2024",
             "description": "20 new cases from December 2023 to March 2024. total: 282 cases registered. Additionally, some sources and violence components have been edited. Exp: broken Telam sources have been replaced, and approximately 40 violence components of cases that were already uploaded have been edited. Creation of news.json"
+        },
+        {
+            "date": "06-05-2024",
+            "description": "Update of cases. New cases were added (3), repetitions were removed (2), and others were edited. Total number of cases: 280."
         }
     ]
 }
