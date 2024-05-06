@@ -43,7 +43,7 @@ export default function Analisis({ min, max, total, componentes }) {
       </h3>
       <h4 className={styles.analisisTextoFinal}>
         En esta primera etapa se visualizan hechos geolocalizables del período
-        2020-2023 pero se encuentra abierta a recibir reportes fuera de ese
+        2020-2024 pero se encuentra abierta a recibir reportes fuera de ese
         marco espacio-temporal.
       </h4>
 

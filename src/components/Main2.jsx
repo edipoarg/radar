@@ -89,7 +89,7 @@ export default function Main2() {
           <div className={styles.analisisMain}>
             <div className={styles.analisisTextComp}>
               <h3 className={styles.analisisTextMain}>Relevamiento</h3>{" "}
-              <h6 className={styles.analisisAnios}> 2020 - 2023</h6>
+              <h6 className={styles.analisisAnios}> 2020 - 2024</h6>
             </div>
             <ScrollLink
               to={Navlinks.analisis}
