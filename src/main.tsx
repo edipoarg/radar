@@ -1,4 +1,4 @@
-import React, { lazy } from "react";
+import React from "react";
 import ReactDOM from "react-dom/client";
 
 import { createHashRouter, RouterProvider } from "react-router-dom";
@@ -12,8 +12,7 @@ import Reporta from "./components/Reporta";
 import Root from "./routes/Root.jsx";
 import Navlinks from "./routes/index.js";
 import { fetchUrlsData } from "./helpers/fetchUrlsData";
-
-const App = lazy(() => import("./App.jsx"));
+import App from "./App";
 
 const loader = async () => ({
   urls: await fetchUrlsData({
