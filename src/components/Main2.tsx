@@ -28,7 +28,7 @@ export default function Main2() {
             <Details />
           </h4>
 
-          <Button to={Navlinks.connecta}>NOSOTRXS</Button>
+          <Button to={Navlinks.conecta}>NOSOTRXS</Button>
         </div>
 
         <ScrollLink
