@@ -15,10 +15,10 @@ import {
   BsAsSource,
   RutasSource,
 } from "./components/Sources";
-import { Markers } from "./components/Markers.jsx";
+import { Markers } from "./components/Markers";
 import Main2 from "./components/Main2";
 import Popup from "./components/Popup";
-import Filtros from "./components/Filtros.jsx"; // Cambia la ruta a tu formulario
+import Filtros from "./components/Filtros"; // Cambia la ruta a tu formulario
 import Analisis from "./components/Analisis";
 
 import mystyle from "./mystyle.json";
