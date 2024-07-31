@@ -5,7 +5,7 @@ import { Link as ScrollLink } from "react-scroll";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import Navlinks from "../routes/index.js";
+import Navlinks from "../../routes/index.js";
 
 export default function NavbarBootstrap() {
   return (

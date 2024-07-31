@@ -4,10 +4,10 @@ import ReactDOM from "react-dom/client";
 import { createHashRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
 
-import Main2 from "./components/Main2";
-import Conecta from "./components/Conecta";
-import Notas from "./components/Notas";
-import Reporta from "./components/Reporta";
+import Main2 from "./components/Main2/Main2";
+import Conecta from "./components/Conecta/Conecta";
+import Notas from "./components/Notas/Notas";
+import Reporta from "./components/Reporta/Reporta";
 
 import Root from "./routes/Root.jsx";
 import Navlinks from "./routes/index.js";

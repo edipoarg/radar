@@ -1,6 +1,6 @@
 import styles from "./Filtros.module.css";
 import { Switch } from "@mui/material";
-import MapGap from "./MapGap";
+import MapGap from "../MapGap/MapGap";
 
 // TODO: use this as a useState type parameter when migrating App to ts
 export interface Filters {

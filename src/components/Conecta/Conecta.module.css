@@ -12,7 +12,7 @@
 .conecta {
   width: 100vw;
   background-color: #2b3bcd;
-  background-image: url(./fondoNosotrxs.jpg);
+  background-image: url(../fondoNosotrxs.jpg);
   padding: 20vh 5vw;
   height: 70vh;
 }
@@ -86,6 +86,7 @@
     padding-bottom: 6vh;
     height: 100vh;
   }
+
   .conectaTitulo {
     color: black;
     font-size: 1.1rem;

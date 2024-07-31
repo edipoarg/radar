@@ -1,6 +1,6 @@
 import styles from "./Conecta.module.css";
 import { useEffect } from "react";
-import Navlinks from "../routes/index.js";
+import Navlinks from "../../routes/index.js";
 
 export const Details = () => (
   <>

@@ -1,10 +1,10 @@
 import styles from "./Main2.module.css";
 import { Link as ScrollLink } from "react-scroll";
 import { Carousel } from "react-bootstrap";
-import { Details } from "./Conecta";
-import { Button } from "./Button.jsx";
-import Navlinks from "../routes/index.js";
-import notas from "../notas.json";
+import { Details } from "../Conecta/Conecta.js";
+import { Button } from "../Button/Button.jsx";
+import Navlinks from "../../routes/index.js";
+import notas from "../../notas.json";
 
 const buttonThemes = {
   default: {

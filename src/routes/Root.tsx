@@ -1,6 +1,6 @@
 import { Outlet } from "react-router-dom";
-import Marquee from "../components/Marquee";
-import NavbarBootstrap from "../components/Navbar";
+import NavbarBootstrap from "../components/Navbar/Navbar";
+import Marquee from "../components/Marquee/Marquee";
 
 export default function Root() {
   return (
