@@ -1,6 +1,6 @@
 .fondoAnalisisImg {
   position: absolute;
-  background-image: url(radarPuntos.png);
+  background-image: url(../radarPuntos.png);
   height: 30vh;
   width: 40vh;
   background-size: cover;
@@ -39,6 +39,7 @@
     font-size: 2rem;
   }
 }
+
 @media (min-width: 768px) {
   .tituloAnalisisRadar {
     font-size: 2rem;
@@ -171,7 +172,7 @@
 @media (min-width: 768px) {
   .fondoAnalisisImg {
     position: absolute;
-    background-image: url(radarPuntos.png);
+    background-image: url(../radarPuntos.png);
     height: 50vh;
     width: 70vh;
     background-size: cover;
@@ -227,7 +228,7 @@
 @media (min-width: 1200px) {
   .fondoAnalisisImg {
     position: absolute;
-    background-image: url(radarPuntos.png);
+    background-image: url(../radarPuntos.png);
     height: 70vh;
     width: 90vh;
     background-size: cover;

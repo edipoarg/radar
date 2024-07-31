@@ -1,6 +1,6 @@
+import Navlinks from "../../routes";
 import styles from "./Analisis.module.css";
 import { Link as ScrollLink } from "react-scroll";
-import Navlinks from "../routes/index.js";
 
 type PropWithByName = {
   // TODO: These strings are constant and could be narrowed down to a union
