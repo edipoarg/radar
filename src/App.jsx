@@ -7,23 +7,23 @@ import "./App.css";
 import styles from "./App.module.css";
 import Navlinks from "./routes/index";
 import { Link as ScrollLink } from "react-scroll";
-import Footer from "./components/Footer";
+import Footer from "./components/Footer/Footer";
 
 import {
   ProvSource,
   DepsSource,
   BsAsSource,
   RutasSource,
-} from "./components/Sources";
-import { Markers } from "./components/Markers";
-import Main2 from "./components/Main2";
-import Popup from "./components/Popup";
-import Filtros from "./components/Filtros"; // Cambia la ruta a tu formulario
-import Analisis from "./components/Analisis";
+} from "./components/Sources/Sources";
+import { Markers } from "./components/Markers/Markers";
+import Main2 from "./components/Main2/Main2";
+import Popup from "./components/Popup/Popup";
+import Filtros from "./components/Filtros/Filtros"; // Cambia la ruta a tu formulario
+import Analisis from "./components/Analisis/Analisis";
 
 import mystyle from "./mystyle.json";
-import MonthsSlider from "./components/MonthsSlider";
-import MapGap from "./components/MapGap";
+import MonthsSlider from "./components/MonthsSlider/MonthsSlider";
+import MapGap from "./components/MapGap/MapGap";
 
 //estilos/////////////////////
 const mapSourceStyles = {

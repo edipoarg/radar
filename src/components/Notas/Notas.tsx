@@ -2,8 +2,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import styles from "./Notas.module.css";
 import "./NotasGlobalStyles.css";
 import { Carousel } from "react-bootstrap";
-import { Button } from "./Button.jsx";
-import notas from "../notas.json";
+import { Button } from "../Button/Button";
+import notas from "../../notas.json";
 
 export default function Notas() {
   return (
