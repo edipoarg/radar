@@ -5,29 +5,29 @@ RADAR es un proyecto periodístico colaborativo impulsado por el Equipo de Inves
 
 Llamamos derechas radicalizadas a aquellos sectores de la ultraderecha que apelan directa o indirectamente a la violencia como método de acción política. No se trata de un calificativo orientado al contenido de sus ideas, sino a las agresiones y ataques desplegados con intención de silenciar, amedrentar, disciplinar o aniquilar reivindicaciones de derechos individuales y/o colectivos, instaurar miedo e influir en la discusión pública.
 
-si querés comunicarte con nosotrxs podés escribirnos a
+si querés comunicarte con nosotrxs podés escribirnos a radar.edipo@gmail.com
 
-radar.edipo@gmail.com
+# Contribuciones
 
-# Forked from: React + Vite
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Usamos la versión de Node detallada en el archivo `.nvmrc`, y para manejar dependencias usamos Yarn.
 
-Currently, two official plugins are available:
+Se recomienda usar:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Alguna distribución de Linux, aunque sea en WSL.
+- [NVM](https://github.com/nvm-sh/nvm)
+- Un editor de texto como VSCode o VSCodium, para el que se recomiendan las siguientes extensiones:
+    - CSS Modules de clinyong
+    - ESLint de dbaeumer 
 
-# Get started with React JS and MapLibre GL JS
 
-## Built With
+## Documentación de React JS y MapLibre GL JS
 
 * [React.js](https://reactjs.org/)
 * [MapLibre GL JS](https://maplibre.org/)
 * [MapTiler](https://www.maptiler.com/)
 * [react-map-gl](https://visgl.github.io/react-map-gl/docs/get-started)
 
+
 ## License
 
 Distributed under the AGPLv3 License. See `LICENSE` for more information.
-
-<p align="right">(<a href="#top">back to top</a>)</p>
