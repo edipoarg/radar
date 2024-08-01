@@ -76,7 +76,9 @@
   justify-items: center;
   justify-content: space-between;
 }
-.tipos span { /* HACK(xaiki): this is done to style the MUI Switch */
+
+.tipos span {
+  /* HACK(xaiki): this is done to style the MUI Switch */
   margin: 0 auto;
 }
 
@@ -87,6 +89,7 @@
   border-radius: 5px;
   padding-left: 4px;
 }
+
 .tipo2Icon {
   background-color: rgb(255, 166, 0);
   width: 23px;
@@ -94,23 +97,13 @@
   border-radius: 5px;
   padding-left: 4px;
 }
+
 .tipo3Icon {
   background-color: rgb(251, 55, 25);
   width: 23px;
   height: 23px;
   border-radius: 5px;
   padding-left: 4px;
-}
-
-.componente {
-  background-color: white;
-  color: black;
-  border-radius: 20px;
-  padding: 10px;
-  box-shadow:
-    -2px -2px 16px WHITE,
-    2px 2px 16px #c9c9c9;
-  margin-top: 15px;
 }
 
 /*== Responsive==*/
@@ -131,6 +124,7 @@
   .filtros {
     height: 90vh;
   }
+
   .tipoClass {
     font-size: 10px;
     padding-top: 1vh;

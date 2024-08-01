@@ -11,10 +11,6 @@
   color: #2b3bcd;
 }
 
-.tituloNota {
-  font-size: 2rem;
-}
-
 .notasItemContainer {
   border-style: inset;
   border-color: #2b3bcd;
@@ -23,47 +19,14 @@
   padding: 10vh 15vw;
   height: 45vh;
   display: flex;
-  flex-direction: column; /* Arrange items vertically */
-  align-items: center; /* Center items horizontally */
-  justify-content: center; /* Center items vertically */
+  flex-direction: column;
+  /* Arrange items vertically */
+  align-items: center;
+  /* Center items horizontally */
+  justify-content: center;
+  /* Center items vertically */
   padding: 5vh 5vw;
   margin: 0 auto;
-}
-
-.bajadaNota {
-  text-align: center;
-  font-size: 1rem;
-}
-
-.notaBotonCrisis {
-  color: #2b3bcd;
-  background-color: white;
-  border-color: #2b3bcd;
-  align-items: center;
-  justify-content: center;
-  align-self: center;
-  justify-self: center;
-  align-content: center;
-  justify-items: center;
-  margin-top: 4vh;
-}
-
-.botonNotas {
-  color: #2b3bcd;
-  background-color: white;
-  border-color: #2b3bcd;
-  align-items: center;
-  justify-content: center;
-  align-self: center;
-  justify-self: center;
-  align-content: center;
-  justify-items: center;
-  margin-top: 4vh;
-}
-
-.autorNota {
-  font-size: 1rem;
-  padding: 1vh;
 }
 
 /*== tablet==*/
