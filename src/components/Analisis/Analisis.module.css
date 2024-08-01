@@ -96,7 +96,6 @@
   color: rgb(118, 138, 227);
 }
 
-.datoN1,
 .datoN2 {
   width: 40vw;
   font-size: 2rem;
@@ -104,7 +103,6 @@
   color: rgb(118, 138, 227);
 }
 
-.datos1,
 .datos2 {
   width: 90vw;
   border-left: solid;
@@ -115,10 +113,6 @@
   justify-self: center;
   margin: 2vh 0vw;
   text-align: left;
-}
-
-.datos1 {
-  border-color: rgb(252, 252, 114);
 }
 
 .datos2 {
@@ -194,14 +188,12 @@
     width: 100vw;
   }
 
-  .datoN1,
   .datoN2 {
     width: 12vw;
     font-size: 2rem;
     padding: 0vh 0vw;
   }
 
-  .datos1,
   .datos2 {
     width: 14.8vw;
   }
