@@ -6,6 +6,8 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
+# we should never have a package-lock because we use yarn
+package-lock.json
 
 node_modules
 dist
