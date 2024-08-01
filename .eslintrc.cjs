@@ -7,6 +7,7 @@ module.exports = {
     'plugin:react/jsx-runtime',
     'plugin:react-hooks/recommended',
     "prettier",
+    "plugin:css-modules/recommended",
     "plugin:prettier/recommended",
     'plugin:@typescript-eslint/recommended',
   ],
@@ -14,8 +15,9 @@ module.exports = {
   ignorePatterns: ['dist', '.eslintrc.cjs', 'vite.config.ts'],
   parserOptions: { ecmaVersion: 'latest', sourceType: 'module', project: "./tsconfig.json" },
   settings: { react: { version: '18.2' } },
-  plugins: ['react-refresh'],
+  plugins: ['react-refresh', 'css-modules'],
   rules: {
+    "@typescript-eslint/consistent-type-imports": "error",
     'react-refresh/only-export-components': [
       'warn',
       { allowConstantExport: true },
