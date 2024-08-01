@@ -12,8 +12,8 @@ export default function Notas() {
         {notas.map(({ title, author, link }, i) => (
           <Carousel.Item key={i}>
             <div className={styles.notasItemContainer}>
-              <h1 className={styles.tituloNotasMain}>{title}</h1>
-              {author && <h4 className={styles.autorNotaMain}>Por {author}</h4>}
+              <h1>{title}</h1>
+              {author && <h4>Por {author}</h4>}
               <Button to={link}>ver</Button>
             </div>
           </Carousel.Item>
