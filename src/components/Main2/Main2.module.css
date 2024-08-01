@@ -50,17 +50,11 @@
   padding-top: 1vh;
 }
 
-.botonMain {
-  text-decoration: none; /* Quitar subrayado de enlace */
-  cursor: pointer; /* Cambiar el cursor al estilo de clic */
-
-  background-color: white;
-  color: black;
-}
-
 .botonMain2 {
-  text-decoration: none; /* Quitar subrayado de enlace */
-  cursor: pointer; /* Cambiar el cursor al estilo de clic */
+  text-decoration: none;
+  /* Quitar subrayado de enlace */
+  cursor: pointer;
+  /* Cambiar el cursor al estilo de clic */
 
   align-self: center;
   margin-bottom: 0px;
@@ -163,50 +157,16 @@
   padding: 20px;
 }
 
-.bajada {
-  padding: 5px 10px;
-  font-size: 0.8rem;
-}
-
-.botonReportaMain,
-.botonNotasMain {
-  text-decoration: none; /* Quitar subrayado de enlace */
-  cursor: pointer; /* Cambiar el cursor al estilo de clic */
-
-  background-color: white;
-  border-color: #2b3bcd;
-  color: #2b3bcd;
-  border-radius: 15px;
-}
-
-.botonReportaMain {
-  font-size: smaller;
-  border-radius: 25px;
-}
-
-.reportaBotonText {
-  color: white;
-  font-size: 0.8rem;
-}
-.botonConectaMain {
-  text-decoration: none; /* Quitar subrayado de enlace */
-  cursor: pointer; /* Cambiar el cursor al estilo de clic */
-
-  background-color: #2b3bcd;
-  border-color: white;
-  color: white;
-  width: 45vw;
-  border-radius: 25px;
-}
-
 .botonAnalisisMain {
   background-color: black;
   border-color: black;
   height: 5vh;
   width: 23vw;
   justify-self: center;
-  text-decoration: none; /* Quitar subrayado de enlace */
-  cursor: pointer; /* Cambiar el cursor al estilo de clic */
+  text-decoration: none;
+  /* Quitar subrayado de enlace */
+  cursor: pointer;
+  /* Cambiar el cursor al estilo de clic */
   border-radius: 25px;
 }
 
@@ -264,9 +224,6 @@
     padding: 0px;
   }
 
-  .botonNotasMain {
-    margin-top: 5vh;
-  }
   #conectaTitle {
     padding: 7px 4vw;
     margin: 0px;
@@ -275,6 +232,7 @@
   .analisisTextMain {
     text-align: right;
   }
+
   .analisisTextComp {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -303,15 +261,6 @@
     padding-bottom: 3vh;
   }
 
-  .botonReportaMain,
-  .botonNotasMain {
-    width: 15vw;
-  }
-
-  .botonConectaMain {
-    width: 15vw;
-  }
-
   .botonAnalisisMain {
     height: 5vh;
     width: 8vw;
@@ -331,17 +280,9 @@
 /*  PC  */
 
 @media (min-width: 1200px) {
-  .botonReportaMain,
-  .botonNotasMain {
-    width: 8vw;
-  }
 
   .separadorMain {
     column-gap: 55px;
-  }
-
-  .botonConectaMain {
-    width: 8vw;
   }
 
   .botonAnalisisMain {
@@ -353,20 +294,13 @@
     font-size: 1.5rem;
     padding-top: 2vh;
   }
+
   .tituloNotasMain {
     padding-top: 5vh;
   }
 
-  .botonNotasMain {
-    margin-top: 7vh;
-  }
-
   #tituloReportaMain {
     padding-top: 5vh;
-  }
-
-  .botonReportaMain {
-    margin-top: 3vh;
   }
 
   .analisisTextMain,
@@ -374,6 +308,7 @@
     font-size: 1.2rem;
     padding-top: 1vh;
   }
+
   .bajadaPrincipal {
     font-size: 1.3rem;
     padding: 0vh 10vw;
