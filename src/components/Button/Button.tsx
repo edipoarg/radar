@@ -20,7 +20,7 @@ type Props = PropsWithChildren & {
 };
 
 export const Button = ({ children, to = "#", theme }: Props) => {
-  /* superload theme with defaultTheme */
+  /* overload theme with defaultTheme */
   theme = { ...defaultTheme, ...(theme ?? {}) };
 
   const css = {
