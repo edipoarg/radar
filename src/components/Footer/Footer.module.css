@@ -1,40 +1,28 @@
 .footer {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
+  padding: 2vh 1rem;
+  background-color: white;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.footer>h6 {
+  margin: 0
 }
 
 .desarrolladoX {
-  background-color: white;
   color: blue;
   font-size: 0.7rem;
-  padding: 2vh 1vw;
   text-align: center;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  display: inline; /* Hace que el elemento sea en línea en lugar de bloque */
 }
 
 .edipo {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
   text-align: center;
-  align-items: center;
   width: 25px;
   color: black;
-  display: inline; /* Hace que el elemento sea en línea en lugar de bloque */
 }
 
-.desarrollo {
-  display: grid;
-  grid-template-columns: 1fr;
-  align-items: center;
-  align-content: center;
-  align-self: center;
-}
-
-@media (min-width: 768px) {
-  .footer {
-    display: grid;
-    grid-template-columns: 4fr 1fr;
-  }
+.version {
+  font-size: 0.7rem;
 }
