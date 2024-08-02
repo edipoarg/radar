@@ -221,7 +221,10 @@ function App() {
         <NavigationControl position="top-right" />
       </MapGL>
       <div className={styles["lower-floating-buttons"]}>
-        <MonthsSlider boundaryDates={boundaryDates} setBoundaryDates={setDates} />
+        <MonthsSlider
+          boundaryDates={boundaryDates}
+          setBoundaryDates={setDates}
+        />
         <ScrollLink
           to={Navlinks.main2Anchor} // ID del elemento de destino (Main2)
           spy={true} // Activa el modo espía

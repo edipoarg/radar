@@ -2,13 +2,11 @@ import { useState, useCallback, useMemo } from "react";
 import { Slider } from "@mui/material";
 import styles from "./MonthsSlider.module.css";
 import type { BoundaryDates } from "../../types/dates";
-
-const date2MonthYear = (d: Date) => `${d.getMonth() + 1}/${d.getFullYear()}`;
-const monthsDiff = (b: Date, a: Date) => {
-  const yearsDiff = a.getFullYear() - b.getFullYear();
-  const monthDiff = a.getMonth() - b.getMonth();
-  return yearsDiff * 12 + monthDiff;
-};
+import {
+  date2MonthYear,
+  monthsDiff,
+  sliderKnobToSliderKnobLabel,
+} from "./dateHelpers";
 
 interface Props {
   className: string;
@@ -23,17 +21,13 @@ export default function MonthsSlider({
 }: Props) {
   const months = useMemo(
     () => monthsDiff(boundaryDates.min, boundaryDates.max),
-    [boundaryDates],
+    [boundaryDates.min, boundaryDates.max],
   );
   const [monthRange, setMonthRange] = useState([0, months]);
 
   const valueLabelFormat = useCallback(
-    (value: number) => {
-      const diff = months - value;
-      const date = new Date();
-      date.setMonth(date.getMonth() - 1 - diff);
-      return date2MonthYear(date);
-    },
+    (knobValue: number) =>
+      sliderKnobToSliderKnobLabel(new Date())(months)(knobValue),
     [months],
   );
 
