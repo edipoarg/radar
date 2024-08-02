@@ -14,24 +14,30 @@ interface Props {
   setBoundaryDates: (dates: BoundaryDates) => void;
 }
 
-export default function MonthsSlider({
-  className,
-  boundaryDates,
-  setBoundaryDates,
-}: Props) {
-  const months = useMemo(
+const useSliderBehavior = (
+  boundaryDates: BoundaryDates,
+  setBoundaryDates: (dates: BoundaryDates) => void,
+) => {
+  const totalMonths = useMemo(
     () => monthsDiff(boundaryDates.min, boundaryDates.max),
     [boundaryDates.min, boundaryDates.max],
   );
-  const [monthRange, setMonthRange] = useState([0, months]);
+  /** monthRange represents the indices of the months that are currently within the selected range.
+   * It starts with [0, {however many months there are within the boundary dates, minus one}]
+   * Then, as you use the slider, the starting and ending indices change
+   */
+  const [monthRange, setMonthRange] = useState<[number, number]>([
+    0,
+    totalMonths,
+  ]);
 
   const valueLabelFormat = useCallback(
     (knobValue: number) =>
-      sliderKnobToSliderKnobLabel(new Date())(months)(knobValue),
-    [months],
+      sliderKnobToSliderKnobLabel(new Date())(totalMonths)(knobValue),
+    [totalMonths],
   );
 
-  const handleChange = useCallback(
+  const handleSliderValueChange = useCallback(
     (_event: Event, value: number[] | number) => {
       /* La API de MUI no permite parametrizar el tipo del value.
        * El estado del arte es hacer esta chanchada: forzar el tipo a la forma que sabés que va a recibir en runtime.
@@ -50,16 +56,26 @@ export default function MonthsSlider({
     [boundaryDates.min, setBoundaryDates],
   );
 
+  return { totalMonths, monthRange, valueLabelFormat, handleSliderValueChange };
+};
+
+export default function MonthsSlider({
+  className,
+  boundaryDates,
+  setBoundaryDates,
+}: Props) {
+  const { monthRange, totalMonths, handleSliderValueChange, valueLabelFormat } =
+    useSliderBehavior(boundaryDates, setBoundaryDates);
   return (
     <div className={`${styles["months-slider"]} ${className}`}>
       <Slider
-        max={months}
+        max={totalMonths}
         valueLabelDisplay="auto"
         value={monthRange}
         step={1}
         getAriaValueText={valueLabelFormat}
         valueLabelFormat={valueLabelFormat}
-        onChange={handleChange}
+        onChange={handleSliderValueChange}
         aria-labelledby="non-linear-slider"
       />
       <div className={styles.referenciasFechas}>
