@@ -1,6 +1,7 @@
 import { useState, useCallback, useMemo } from "react";
 import { Slider } from "@mui/material";
 import styles from "./MonthsSlider.module.css";
+import type { BoundaryDates } from "../../types/dates";
 
 const date2MonthYear = (d: Date) => `${d.getMonth() + 1}/${d.getFullYear()}`;
 const monthsDiff = (b: Date, a: Date) => {
@@ -9,25 +10,20 @@ const monthsDiff = (b: Date, a: Date) => {
   return yearsDiff * 12 + monthDiff;
 };
 
-interface BoundaryDates {
-  min: Date;
-  max: Date;
-}
-
 interface Props {
   className: string;
-  globalDates: BoundaryDates;
-  setDates: (dates: BoundaryDates) => void;
+  boundaryDates: BoundaryDates;
+  setBoundaryDates: (dates: BoundaryDates) => void;
 }
 
 export default function MonthsSlider({
   className,
-  globalDates,
-  setDates,
+  boundaryDates,
+  setBoundaryDates,
 }: Props) {
   const months = useMemo(
-    () => monthsDiff(globalDates.min, globalDates.max),
-    [globalDates],
+    () => monthsDiff(boundaryDates.min, boundaryDates.max),
+    [boundaryDates],
   );
   const [monthRange, setMonthRange] = useState([0, months]);
 
@@ -41,7 +37,6 @@ export default function MonthsSlider({
     [months],
   );
 
-  // Uso useCallback para evitar que se re-declare la función anónima en cada render
   const handleChange = useCallback(
     (_event: Event, value: number[] | number) => {
       /* La API de MUI no permite parametrizar el tipo del value.
@@ -49,16 +44,16 @@ export default function MonthsSlider({
        * Ejemplos acá: https://www.programcreek.com/typescript/?api=@mui/material.Slider
        */
       const range = value as [number, number];
-      const min = new Date(globalDates.min);
-      const max = new Date(globalDates.min);
+      const min = new Date(boundaryDates.min);
+      const max = new Date(boundaryDates.min);
 
       max.setMonth(min.getMonth() + range[1]);
       min.setMonth(min.getMonth() + range[0]);
 
       setMonthRange(range);
-      setDates({ min, max });
+      setBoundaryDates({ min, max });
     },
-    [globalDates.min, setDates],
+    [boundaryDates.min, setBoundaryDates],
   );
 
   return (
@@ -76,13 +71,13 @@ export default function MonthsSlider({
       <div className={styles.referenciasFechas}>
         <div>
           <h6 className={styles.fechaInicio}>
-            {date2MonthYear(globalDates.min)}
+            {date2MonthYear(boundaryDates.min)}
           </h6>
         </div>
         <div> </div>
         <div>
           <h6 className={styles.fechaCierre}>
-            {date2MonthYear(globalDates.max)}
+            {date2MonthYear(boundaryDates.max)}
           </h6>
         </div>
       </div>

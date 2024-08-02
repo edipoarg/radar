@@ -70,7 +70,10 @@ function App() {
   const { provincias, departamentos, departamentosBsAs, rutas } = urls;
   const { componentes } = urls.casos;
   const cases = urls.casos.cases.map((c) => ({ ...c, date: new Date(c.date) }));
-  const globalDates = {
+  /** Boundary dates are the earliest date that a case can be from
+   * and the latest date that a case can be from in order to be shown on the map.
+   */
+  const boundaryDates = {
     min: new Date(urls.casos.min),
     max: new Date(urls.casos.max),
   };
@@ -84,8 +87,8 @@ function App() {
   // Estado para controlar la visibilidad de "Filtros"
   const [analisisData] = useState({
     componentes,
-    min: globalDates.min,
-    max: globalDates.max,
+    min: boundaryDates.min,
+    max: boundaryDates.max,
     total: cases.length,
   });
 
@@ -95,7 +98,7 @@ function App() {
   const [selectedMarkerId, setSelectedMarkerId] = useState(null);
   const [popupInfo, setPopupInfo] = useState(null);
 
-  const [dates, setDates] = useState(globalDates);
+  const [dates, setDates] = useState(boundaryDates);
   const [filteredData, setFilteredData] = useState(cases);
   const [filteredDataByTime, setFilteredDataByTime] = useState([]);
 
@@ -218,7 +221,7 @@ function App() {
         <NavigationControl position="top-right" />
       </MapGL>
       <div className={styles["lower-floating-buttons"]}>
-        <MonthsSlider {...{ globalDates, setDates }} />
+        <MonthsSlider boundaryDates={boundaryDates} setBoundaryDates={setDates} />
         <ScrollLink
           to={Navlinks.main2Anchor} // ID del elemento de destino (Main2)
           spy={true} // Activa el modo espía
