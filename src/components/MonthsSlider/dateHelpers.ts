@@ -8,10 +8,12 @@ export const monthsDiff = (b: Date, a: Date) => {
   return yearsDiff * 12 + monthDiff;
 };
 
+/** the underlying assumption of this function is that the current date's month corresponds to the last month of the slider */
 export const sliderKnobToSliderKnobLabel =
-  (currentDate: Date) => (months: number) => (knobValue: number) => {
-    console.log("value " + knobValue);
-    const diff = months - knobValue;
+  (currentDate: Date) =>
+  (totalNumberOfMonths: number) =>
+  (knobValue: number) => {
+    const diff = totalNumberOfMonths - knobValue;
     // We had a bug where we were getting the wrong month if the day where you executed this function was during the end of the month
     // We detected this on July the 30th. This is because you can't get, say, February the 31st.
     currentDate.setDate(1);

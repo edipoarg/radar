@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useMemo, useState } from "react";
 import { useLoaderData } from "react-router-dom";
 import MapGL, { NavigationControl } from "react-map-gl/maplibre";
 import maplibregl from "maplibre-gl";
@@ -67,16 +67,22 @@ const mapSourceStyles = {
 
 function App() {
   const { urls } = useLoaderData();
-  const { provincias, departamentos, departamentosBsAs, rutas } = urls;
-  const { componentes } = urls.casos;
-  const cases = urls.casos.cases.map((c) => ({ ...c, date: new Date(c.date) }));
+  const { provincias, departamentos, departamentosBsAs, rutas, casos } = urls;
+  const { componentes } = casos;
+  const cases = useMemo(
+    () => casos.cases.map((c) => ({ ...c, date: new Date(c.date) })),
+    [casos],
+  );
   /** Boundary dates are the earliest date that a case can be from
    * and the latest date that a case can be from in order to be shown on the map.
    */
-  const boundaryDates = {
-    min: new Date(urls.casos.min),
-    max: new Date(urls.casos.max),
-  };
+  const boundaryDates = useMemo(
+    () => ({
+      min: new Date(casos.min),
+      max: new Date(casos.max),
+    }),
+    [casos.min, casos.max],
+  );
 
   const [tipoFilters, setTipoFilters] = useState({
     t1: true,
