@@ -11,15 +11,15 @@ import {
 interface Props {
   className: string;
   boundaryDates: BoundaryDates;
-  setBoundaryDates: (dates: BoundaryDates) => void;
+  setFilterDates: (dates: BoundaryDates) => void;
 }
 
 const useSliderBehavior = (
   boundaryDates: BoundaryDates,
-  setBoundaryDates: (dates: BoundaryDates) => void,
+  setFilterDates: (dates: BoundaryDates) => void,
 ) => {
   const totalMonths = useMemo(
-    () => monthsDiff(boundaryDates.min, boundaryDates.max),
+    () => monthsDiff(boundaryDates.min, boundaryDates.max) + 1,
     [boundaryDates.min, boundaryDates.max],
   );
   /** monthRange represents the indices of the months that are currently within the selected range.
@@ -33,8 +33,8 @@ const useSliderBehavior = (
 
   const valueLabelFormat = useCallback(
     (knobValue: number) =>
-      sliderKnobToSliderKnobLabel(new Date())(totalMonths)(knobValue),
-    [totalMonths],
+      sliderKnobToSliderKnobLabel(boundaryDates.max)(totalMonths)(knobValue),
+    [boundaryDates.max, totalMonths],
   );
 
   const handleSliderValueChange = useCallback(
@@ -51,9 +51,9 @@ const useSliderBehavior = (
       min.setMonth(min.getMonth() + range[0]);
 
       setMonthRange(range);
-      setBoundaryDates({ min, max });
+      setFilterDates({ min, max });
     },
-    [boundaryDates.min, setBoundaryDates],
+    [boundaryDates.min, setFilterDates],
   );
 
   return { totalMonths, monthRange, valueLabelFormat, handleSliderValueChange };
@@ -62,14 +62,15 @@ const useSliderBehavior = (
 export default function MonthsSlider({
   className,
   boundaryDates,
-  setBoundaryDates,
+  setFilterDates,
 }: Props) {
   const { monthRange, totalMonths, handleSliderValueChange, valueLabelFormat } =
-    useSliderBehavior(boundaryDates, setBoundaryDates);
+    useSliderBehavior(boundaryDates, setFilterDates);
   return (
     <div className={`${styles["months-slider"]} ${className}`}>
       <Slider
-        max={totalMonths}
+        min={0}
+        max={totalMonths - 1}
         valueLabelDisplay="auto"
         value={monthRange}
         step={1}
