@@ -1,5 +1,9 @@
 const fs = require("fs");
-const { parseTsvDateToJsDate, mapChomp, Classifier } = require("./utils.cjs");
+const {
+  parseTsvDateToUTCMillis,
+  mapChomp,
+  Classifier,
+} = require("./utils.cjs");
 
 const FIXUP = (t) =>
   t
@@ -41,7 +45,7 @@ const fetchTSV = async (fileLocation = "services/data/sheet.tsv") => {
     const event = {
       id: parseInt(f.id),
       title: f.titulo,
-      date: parseTsvDateToJsDate(f.fecha),
+      date: parseTsvDateToUTCMillis(f.fecha),
       source: f.fuente,
       coords: {
         latitude,
@@ -73,7 +77,13 @@ const fetchTSV = async (fileLocation = "services/data/sheet.tsv") => {
     componentes.classify(event.componenteId, event.componente, i);
   }
   max.setHours(0, 0, 0, 0);
-  return { cases, tipos, componentes, min, max };
+  return {
+    cases,
+    tipos,
+    componentes,
+    min,
+    max: Date.UTC(max.getFullYear(), max.getMonth(), max.getDate()),
+  };
 };
 
 fetchTSV().then((v) => console.log(JSON.stringify(v, null, 4)));
