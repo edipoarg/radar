@@ -16,7 +16,7 @@ const Popup = ({ title, date, source }: Props) => (
     <div className={styles.masDatosPopup}>
       {" "}
       <p className={styles.displayFecha}>
-        Fecha: {date.toLocaleDateString("es-AR")}
+        Fecha: {date.toLocaleDateString("es-AR", { timeZone: "UTC" })}
       </p>
       <a
         className={styles.displayLink}
