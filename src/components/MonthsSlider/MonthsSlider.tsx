@@ -1,88 +1,94 @@
 import { useState, useCallback, useMemo } from "react";
 import { Slider } from "@mui/material";
 import styles from "./MonthsSlider.module.css";
-
-const date2MonthYear = (d: Date) => `${d.getMonth() + 1}/${d.getFullYear()}`;
-const monthsDiff = (b: Date, a: Date) => {
-  const yearsDiff = a.getFullYear() - b.getFullYear();
-  const monthDiff = a.getMonth() - b.getMonth();
-  return yearsDiff * 12 + monthDiff;
-};
-
-interface BoundaryDates {
-  min: Date;
-  max: Date;
-}
+import type { BoundaryDates } from "../../types/dates";
+import {
+  date2MonthYear,
+  monthsDiff,
+  sliderKnobToSliderKnobLabel,
+} from "./dateHelpers";
 
 interface Props {
   className: string;
-  globalDates: BoundaryDates;
-  setDates: (dates: BoundaryDates) => void;
+  boundaryDates: BoundaryDates;
+  setFilterDates: (dates: BoundaryDates) => void;
 }
 
-export default function MonthsSlider({
-  className,
-  globalDates,
-  setDates,
-}: Props) {
-  const months = useMemo(
-    () => monthsDiff(globalDates.min, globalDates.max),
-    [globalDates],
+const useSliderBehavior = (
+  boundaryDates: BoundaryDates,
+  setFilterDates: (dates: BoundaryDates) => void,
+) => {
+  const totalMonths = useMemo(
+    () => monthsDiff(boundaryDates.min, boundaryDates.max) + 1,
+    [boundaryDates.min, boundaryDates.max],
   );
-  const [monthRange, setMonthRange] = useState([0, months]);
+  /** monthRange represents the indices of the months that are currently within the selected range.
+   * It starts with [0, {however many months there are within the boundary dates, minus one}]
+   * Then, as you use the slider, the starting and ending indices change
+   */
+  const [monthRange, setMonthRange] = useState<[number, number]>([
+    0,
+    totalMonths,
+  ]);
 
   const valueLabelFormat = useCallback(
-    (value: number) => {
-      const diff = months - value;
-      const date = new Date();
-      date.setMonth(date.getMonth() - 1 - diff);
-      return date2MonthYear(date);
-    },
-    [months],
+    (knobValue: number) =>
+      sliderKnobToSliderKnobLabel(boundaryDates.max)(totalMonths)(knobValue),
+    [boundaryDates.max, totalMonths],
   );
 
-  // Uso useCallback para evitar que se re-declare la función anónima en cada render
-  const handleChange = useCallback(
+  const handleSliderValueChange = useCallback(
     (_event: Event, value: number[] | number) => {
       /* La API de MUI no permite parametrizar el tipo del value.
        * El estado del arte es hacer esta chanchada: forzar el tipo a la forma que sabés que va a recibir en runtime.
        * Ejemplos acá: https://www.programcreek.com/typescript/?api=@mui/material.Slider
        */
       const range = value as [number, number];
-      const min = new Date(globalDates.min);
-      const max = new Date(globalDates.min);
+      const min = new Date(boundaryDates.min);
+      const max = new Date(boundaryDates.min);
 
       max.setMonth(min.getMonth() + range[1]);
       min.setMonth(min.getMonth() + range[0]);
 
       setMonthRange(range);
-      setDates({ min, max });
+      setFilterDates({ min, max });
     },
-    [globalDates.min, setDates],
+    [boundaryDates.min, setFilterDates],
   );
 
+  return { totalMonths, monthRange, valueLabelFormat, handleSliderValueChange };
+};
+
+export default function MonthsSlider({
+  className,
+  boundaryDates,
+  setFilterDates,
+}: Props) {
+  const { monthRange, totalMonths, handleSliderValueChange, valueLabelFormat } =
+    useSliderBehavior(boundaryDates, setFilterDates);
   return (
     <div className={`${styles["months-slider"]} ${className}`}>
       <Slider
-        max={months}
+        min={0}
+        max={totalMonths - 1}
         valueLabelDisplay="auto"
         value={monthRange}
         step={1}
         getAriaValueText={valueLabelFormat}
         valueLabelFormat={valueLabelFormat}
-        onChange={handleChange}
+        onChange={handleSliderValueChange}
         aria-labelledby="non-linear-slider"
       />
       <div className={styles.referenciasFechas}>
         <div>
           <h6 className={styles.fechaInicio}>
-            {date2MonthYear(globalDates.min)}
+            {date2MonthYear(boundaryDates.min)}
           </h6>
         </div>
         <div> </div>
         <div>
           <h6 className={styles.fechaCierre}>
-            {date2MonthYear(globalDates.max)}
+            {date2MonthYear(boundaryDates.max)}
           </h6>
         </div>
       </div>
