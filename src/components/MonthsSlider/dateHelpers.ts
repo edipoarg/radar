@@ -1,5 +1,8 @@
 export const date2MonthYear = (d: Date) =>
-  `${d.getMonth() + 1}/${d.getFullYear()}`;
+  d.toLocaleDateString("es-AR", {
+    month: "short",
+    year: "numeric",
+  });
 
 /** Returns the amount of months that happened between the months corresponding to two given dates */
 export const monthsDiff = (b: Date, a: Date) => {
