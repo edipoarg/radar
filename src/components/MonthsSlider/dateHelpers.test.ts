@@ -10,13 +10,13 @@ describe("sliderKnobToSliderKnobLabel", () => {
       describe("and given a knob value of 1, thus making the corresponding month February (zero-indexed)", () => {
         const label = labelerByValue(1);
         it("should return 2/2024", () => {
-          expect(label).toEqual("2/2024");
+          expect(label).toEqual("feb 2024");
         });
       });
       describe("and given a knob value of 0, thus making the corresponding month January (zero-indexed)", () => {
         const label = labelerByValue(0);
         it("should return 1/2024", () => {
-          expect(label).toEqual("1/2024");
+          expect(label).toEqual("ene 2024");
         });
       });
     });
@@ -29,7 +29,7 @@ describe("sliderKnobToSliderKnobLabel", () => {
       describe("and given a knob value of 1, thus making the corresponding month february (zero-indexed)", () => {
         const label = labelerByValue(1);
         it("should return 2/2024", () => {
-          expect(label).toEqual("2/2024");
+          expect(label).toEqual("feb 2024");
         });
       });
     });
