@@ -13,9 +13,10 @@
   align-items: center;
   padding-right: 2px;
   align-content: center;
+  box-shadow: 0 2px 60px 5px #00000050;
 }
 
-.heading > h1 {
+.heading>h1 {
   padding: 4px;
   margin: 0;
 }
