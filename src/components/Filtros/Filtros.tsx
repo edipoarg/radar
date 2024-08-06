@@ -1,6 +1,5 @@
 import styles from "./Filtros.module.css";
 import { Switch } from "@mui/material";
-import MapGap from "../MapGap/MapGap";
 
 // TODO: use this as a useState type parameter when migrating App to ts
 export interface Filters {
@@ -34,14 +33,11 @@ export default function Filtros({
 
   return (
     <div className={styles.filtros}>
-      <div className={styles.gap}></div>
-
       <div className={styles.filtrosBox}>
         <div className={styles.boxes}>
           <div className={styles.botonFiltros}>
             <br />
           </div>
-
           <div className={styles.display}>
             <h4>casos:</h4>
             <h1 className={styles.cantCasos}>{caseCount}</h1>
@@ -93,10 +89,7 @@ export default function Filtros({
             </div>
           </div>
         </div>
-        <MapGap />
       </div>
-
-      <div className={styles.gap2}></div>
     </div>
   );
 }
