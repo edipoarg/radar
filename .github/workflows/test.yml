@@ -8,4 +8,4 @@ jobs:
     - name: Install modules
       run: yarn
     - name: Run Vitest
-      run: npm run test
+      run: yarn test
