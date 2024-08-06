@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useMemo, useState } from "react";
 import { useLoaderData } from "react-router-dom";
 import MapGL, { NavigationControl } from "react-map-gl/maplibre";
 import maplibregl from "maplibre-gl";
@@ -65,13 +65,22 @@ const mapSourceStyles = {
 
 function App() {
   const { urls } = useLoaderData();
-  const { provincias, departamentos, departamentosBsAs, rutas } = urls;
-  const { componentes } = urls.casos;
-  const cases = urls.casos.cases.map((c) => ({ ...c, date: new Date(c.date) }));
-  const globalDates = {
-    min: new Date(urls.casos.min),
-    max: new Date(urls.casos.max),
-  };
+  const { provincias, departamentos, departamentosBsAs, rutas, casos } = urls;
+  const { componentes } = casos;
+  const cases = useMemo(
+    () => casos.cases.map((c) => ({ ...c, date: new Date(c.date) })),
+    [casos],
+  );
+  /** Boundary dates are the earliest date that a case can be from
+   * and the latest date that a case can be from in order to be shown on the map.
+   */
+  const boundaryDates = useMemo(
+    () => ({
+      min: new Date(casos.min),
+      max: new Date(casos.max),
+    }),
+    [casos.min, casos.max],
+  );
 
   const [tipoFilters, setTipoFilters] = useState({
     t1: true,
@@ -82,8 +91,8 @@ function App() {
   // Estado para controlar la visibilidad de "Filtros"
   const [analisisData] = useState({
     componentes,
-    min: globalDates.min,
-    max: globalDates.max,
+    min: boundaryDates.min,
+    max: boundaryDates.max,
     total: cases.length,
   });
 
@@ -91,7 +100,7 @@ function App() {
   const [selectedMarkerId, setSelectedMarkerId] = useState(null);
   const [popupInfo, setPopupInfo] = useState(null);
 
-  const [dates, setDates] = useState(globalDates);
+  const [dates, setDates] = useState(boundaryDates);
   const [filteredData, setFilteredData] = useState(cases);
   const [filteredDataByTime, setFilteredDataByTime] = useState([]);
 
@@ -203,7 +212,7 @@ function App() {
         <NavigationControl position="top-right" />
       </MapGL>
       <div className={styles["lower-floating-buttons"]}>
-        <MonthsSlider {...{ globalDates, setDates }} />
+        <MonthsSlider boundaryDates={boundaryDates} setFilterDates={setDates} />
         <ScrollLink
           to={Navlinks.main2Anchor} // ID del elemento de destino (Main2)
           spy={true} // Activa el modo espía

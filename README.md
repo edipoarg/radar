@@ -16,8 +16,9 @@ Se recomienda usar:
 - Alguna distribución de Linux, aunque sea en WSL.
 - [NVM](https://github.com/nvm-sh/nvm)
 - Un editor de texto como VSCode o VSCodium, para el que se recomiendan las siguientes extensiones:
-    - CSS Modules de clinyong
-    - ESLint de dbaeumer 
+    - **CSS Modules** de clinyong
+    - **ESLint** de dbaeumer
+    - **Vitest** de vitest
 
 
 ## Documentación de React JS y MapLibre GL JS
