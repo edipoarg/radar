@@ -2,5 +2,18 @@
     "env": {
         "node": true,
         "commonjs": true
-    }
+    },
+    "overrides": [
+        {
+            "files": [
+                "*.js",
+                "*.jsx",
+                "*.cjs"
+            ],
+            "rules": {
+                "@typescript-eslint/no-unnecessary-condition": "off",
+                "@typescript-eslint/no-var-requires": "off"
+            }
+        }
+    ]
 }
