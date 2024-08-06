@@ -4,7 +4,7 @@ const assert = (condition, message = "Assertion failed") => {
   }
 };
 
-export const newDate = (d) => {
+const newDate = (d) => {
   const D = chomp(d);
 
   try {
@@ -21,10 +21,10 @@ export const newDate = (d) => {
     return null;
   }
 };
-export const chomp = (s) => s.replace(/^ +/, "").replace(/ +$/, "");
-export const mapChomp = (s) => s.replace(/; $/, "").split(/;/).map(chomp);
+const chomp = (s) => s.replace(/^ +/, "").replace(/ +$/, "");
+const mapChomp = (s) => s.replace(/; $/, "").split(/;/).map(chomp);
 
-export class Classifier {
+class Classifier {
   byId = {};
   byName = {};
   idMap = {};
@@ -47,3 +47,5 @@ export class Classifier {
     }
   }
 }
+
+module.exports = { Classifier, mapChomp, chomp, newDate };
