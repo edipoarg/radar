@@ -28,6 +28,13 @@ Se recomienda usar:
 * [MapTiler](https://www.maptiler.com/)
 * [react-map-gl](https://visgl.github.io/react-map-gl/docs/get-started)
 
+## Variables de ambiente
+Para correr el proyecto, necesitás pasarle al script `yarn build` la variable de ambiente `CASES_SPREADSHEET_ID`:
+
+`env CASES_SPREADSHEET_ID=000000000000000000000 yarn build`
+
+reemplazando los ceros por la key correspondiente.
+
 
 ## License
 
