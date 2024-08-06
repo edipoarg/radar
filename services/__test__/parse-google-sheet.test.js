@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { fetchTSV } from "../google-sheets.cjs";
+import { fetchTSV } from "../parse-tsv.cjs";
 import parsedCases from "./casos-parseados.json";
 
 describe("fetchTSV", () => {
