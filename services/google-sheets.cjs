@@ -19,8 +19,8 @@ const FIXUP = (t) =>
       "misoginia, antifeminismo y antiLGBTINBQ+",
     );
 
-const fetchTSV = async () => {
-  const resp = fs.readFileSync("services/data/sheet.tsv", "utf8");
+const fetchTSV = async (fileLocation = "services/data/sheet.tsv") => {
+  const resp = fs.readFileSync(fileLocation, "utf8");
   const cases = [];
   const tipos = new Classifier(FIXUP);
   const componentes = new Classifier(FIXUP);
@@ -72,7 +72,12 @@ const fetchTSV = async () => {
     tipos.classify(event.tipoId, event.tipo, i);
     componentes.classify(event.componenteId, event.componente, i);
   }
+  max.setHours(0, 0, 0, 0);
   return { cases, tipos, componentes, min, max };
 };
 
 fetchTSV().then((v) => console.log(JSON.stringify(v, null, 4)));
+
+module.exports = {
+  fetchTSV,
+};
