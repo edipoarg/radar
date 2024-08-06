@@ -44,6 +44,7 @@ const useSliderBehavior = (
        * Ejemplos acá: https://www.programcreek.com/typescript/?api=@mui/material.Slider
        */
       const range = value as [number, number];
+      if (range[1] <= range[0]) return;
       const min = new Date(boundaryDates.min);
       const max = new Date(boundaryDates.min);
 
