@@ -48,7 +48,7 @@ jobs:
         working-directory: ${{ env.BUILD_PATH }}
       - name: Build with yarn
         env:
-          VITE_TSV_ID: ${{ secrets.VITE_TSV_ID}}
+          CASES_SPREADSHEET_ID: ${{ secrets.CASES_SPREADSHEET_ID }}
         run: |
          yarn run build && cat public/data/casos.json
         working-directory: ${{ env.BUILD_PATH }}
