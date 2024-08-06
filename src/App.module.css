@@ -28,7 +28,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  top: 83vh;
+  top: 72vh;
   left: 4vw;
   /* TODO: este valor de index deberia ser alguna constante  definida*/
   z-index: 10000;
@@ -37,7 +37,7 @@
 
 .botonFiltrosMain {
   position: absolute;
-  top: 15vh;
+  top: 3vh;
 }
 
 .botonFiltrosMap {
@@ -98,7 +98,7 @@
 @media (min-width: 768px) {
   .lower-floating-buttons {
     position: absolute;
-    top: 87vh;
+    top: 72vh;
     left: 30vw;
     width: 55vw;
     z-index: 0;
@@ -118,7 +118,7 @@
 @media (min-width: 1200px) {
   .lower-floating-buttons {
     position: absolute;
-    top: 80vh;
+    top: 872h;
     left: 20vw;
     width: 69vw;
     z-index: 0;
