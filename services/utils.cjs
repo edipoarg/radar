@@ -1,28 +1,35 @@
-const assert = (condition, message = "Assertion failed") => {
-  if (!condition) {
-    throw new Error(message);
-  }
-};
-
-const newDate = (d) => {
-  const D = chomp(d);
-
+const parseTsvDateToJsDate = (d) => {
   try {
-    const [, day, month, year] = D.match(
-      "^([0-3]?[0-9])/([01]?[0-9])/([12][90][0-9][0-9])$",
-    );
+    const dComponents = d.trim().split("/");
+    if (dComponents.length !== 3) return null;
+    const [strDate, strMonth, strYear] = dComponents;
+    const [date, month, year] = [+strDate, +strMonth, +strYear];
 
-    assert(day <= 31, day);
-    assert(month <= 12, month);
-
-    return new Date(year, month, day);
+    if (
+      month > 12 ||
+      month < 1 ||
+      isNaN(month) ||
+      isNaN(year) ||
+      isNaN(date) ||
+      date < 1 ||
+      date > 31 ||
+      strYear.length !== 4
+    )
+      return null;
+    const newDate = new Date(year, month - 1, date);
+    newDate.setHours(0, 0, 0, 0);
+    if (isNaN(newDate.getTime())) return null;
+    return newDate;
   } catch (e) {
     console.error("couldn't parse date: ", d, e);
     return null;
   }
 };
-const chomp = (s) => s.replace(/^ +/, "").replace(/ +$/, "");
-const mapChomp = (s) => s.replace(/; $/, "").split(/;/).map(chomp);
+const mapChomp = (s) =>
+  s
+    .replace(/; $/, "")
+    .split(/;/)
+    .map((s) => s.trim());
 
 class Classifier {
   byId = {};
@@ -48,4 +55,4 @@ class Classifier {
   }
 }
 
-module.exports = { Classifier, mapChomp, chomp, newDate };
+module.exports = { Classifier, mapChomp, parseTsvDateToJsDate };

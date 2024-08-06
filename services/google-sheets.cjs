@@ -1,5 +1,5 @@
 const fs = require("fs");
-const { newDate, mapChomp, Classifier } = require("./utils.cjs");
+const { parseTsvDateToJsDate, mapChomp, Classifier } = require("./utils.cjs");
 
 const FIXUP = (t) =>
   t
@@ -37,10 +37,11 @@ const fetchTSV = async () => {
       f[desc[p].replace("caso.", "")] = r[p];
     }
     const [latitude, longitude] = f.coordenadas.split(",").map(parseFloat);
+
     const event = {
       id: parseInt(f.id),
       title: f.titulo,
-      date: newDate(f.fecha),
+      date: parseTsvDateToJsDate(f.fecha),
       source: f.fuente,
       coords: {
         latitude,
