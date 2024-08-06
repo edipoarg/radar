@@ -1,29 +1,23 @@
-const parseTsvDateToJsDate = (d) => {
-  try {
-    const dComponents = d.trim().split("/");
-    if (dComponents.length !== 3) return null;
-    const [strDate, strMonth, strYear] = dComponents;
-    const [date, month, year] = [+strDate, +strMonth, +strYear];
+const parseTsvDateToUTCMillis = (d) => {
+  const dComponents = d.trim().split("/");
+  if (dComponents.length !== 3) return null;
+  const [strDate, strMonth, strYear] = dComponents;
+  const [date, month, year] = [+strDate, +strMonth, +strYear];
 
-    if (
-      month > 12 ||
-      month < 1 ||
-      isNaN(month) ||
-      isNaN(year) ||
-      isNaN(date) ||
-      date < 1 ||
-      date > 31 ||
-      strYear.length !== 4
-    )
-      return null;
-    const newDate = new Date(year, month - 1, date);
-    newDate.setHours(0, 0, 0, 0);
-    if (isNaN(newDate.getTime())) return null;
-    return newDate;
-  } catch (e) {
-    console.error("couldn't parse date: ", d, e);
+  if (
+    month > 12 ||
+    month < 1 ||
+    isNaN(month) ||
+    isNaN(year) ||
+    isNaN(date) ||
+    date < 1 ||
+    date > 31 ||
+    strYear.length !== 4
+  )
     return null;
-  }
+  const newDate = Date.UTC(year, month - 1, date, 0, 0, 0, 0);
+  if (isNaN(newDate)) return null;
+  return newDate;
 };
 const mapChomp = (s) =>
   s
@@ -55,4 +49,8 @@ class Classifier {
   }
 }
 
-module.exports = { Classifier, mapChomp, parseTsvDateToJsDate };
+module.exports = {
+  Classifier,
+  mapChomp,
+  parseTsvDateToUTCMillis,
+};

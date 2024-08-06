@@ -3,7 +3,7 @@
         {
             "id": 1,
             "title": "Ataque con reinvidicaciones de Videla en local del PTS",
-            "date": "2020-02-04T03:00:00.000Z",
+            "date": 1580774400000,
             "source": "https://www.laizquierdadiario.cl/Escrachan-con-pintadas-golpistas-local-del-PTS-de-Tucuman",
             "coords": {
                 "latitude": -26.835555385741557,
@@ -28,7 +28,7 @@
         {
             "id": 2,
             "title": "Ataque a Lof Che Buenuleo",
-            "date": "2020-04-29T03:00:00.000Z",
+            "date": 1588118400000,
             "source": "https://www.pagina12.com.ar/409330-bariloche-condenaron-a-quienes-atacaron-a-la-comunidad-mapuc",
             "coords": {
                 "latitude": -41.15625323825466,
@@ -51,7 +51,7 @@
         {
             "id": 3,
             "title": "Ataque a mural de la memoria en Polideportivo Escolar ",
-            "date": "2020-05-06T03:00:00.000Z",
+            "date": 1588723200000,
             "source": "https://www.facebook.com/andaresypensares/posts/2753468998312822/ ",
             "coords": {
                 "latitude": -34.60452709516184,
@@ -74,7 +74,7 @@
         {
             "id": 4,
             "title": "Ataque a baldosas de la memoria frente a Normal N° 7",
-            "date": "2020-05-08T03:00:00.000Z",
+            "date": 1588896000000,
             "source": "https://www.facebook.com/andaresypensares/posts/2753468998312822/",
             "coords": {
                 "latitude": -34.60237814525413,
@@ -97,7 +97,7 @@
         {
             "id": 5,
             "title": "Ataque a mural de \"La Casa de Teresa Israel\"",
-            "date": "2020-05-08T03:00:00.000Z",
+            "date": 1588896000000,
             "source": "  http://www.redeco.com.ar/nacional/ddhh/29167-ataque-a-la-casa-teresa-israel-y-al-normal-n%C2%BA-7-de-almagro ",
             "coords": {
                 "latitude": -34.60176254414161,
@@ -120,7 +120,7 @@
         {
             "id": 6,
             "title": "Intento de incendio en local del Partido Obrero",
-            "date": "2020-05-09T03:00:00.000Z",
+            "date": 1588982400000,
             "source": "https://www.tiempoar.com.ar/informacion-general/atentados-pintadas-y-otras-agresiones-fascistas-que-inquietan-a-almagro/  ",
             "coords": {
                 "latitude": -34.60845693853674,
@@ -143,7 +143,7 @@
         {
             "id": 7,
             "title": "Atentado a local de FORJA",
-            "date": "2020-05-30T03:00:00.000Z",
+            "date": 1590796800000,
             "source": "https://www.pagina12.com.ar/269248-arrojaron-una-bomba-molotov-en-un-local-de-forja",
             "coords": {
                 "latitude": -34.599522489484755,
@@ -166,7 +166,7 @@
         {
             "id": 8,
             "title": "Ataque a murales de referentes travestis",
-            "date": "2020-06-17T03:00:00.000Z",
+            "date": 1592352000000,
             "source": "https://eltalacomunicacionpopular.com.ar/condenamos-actos-de-vandalismo-que-transmiten-mensajes-de-odio/",
             "coords": {
                 "latitude": -29.420206489788022,
@@ -189,7 +189,7 @@
         {
             "id": 9,
             "title": "Ataque a mural en homenaje a Paola Acosta",
-            "date": "2020-09-03T03:00:00.000Z",
+            "date": 1599091200000,
             "source": "https://latinta.com.ar/2020/09/10/mural-paola-acosta-femicidios/",
             "coords": {
                 "latitude": -31.404206259238762,
@@ -212,7 +212,7 @@
         {
             "id": 10,
             "title": "Ataque a Casa Popular Atahualpa Yupanqui ",
-            "date": "2020-10-09T03:00:00.000Z",
+            "date": 1602201600000,
             "source": "https://www.saavedraonline.com.ar/zurdos-empobrecedores-y-asesinos-comunistas-vandalizaron-una-sede-de-patria-grande-en-villa-urquiza/ ",
             "coords": {
                 "latitude": -34.572803801892626,
@@ -235,7 +235,7 @@
         {
             "id": 11,
             "title": "Ataque a monumento a Néstor Kirchner",
-            "date": "2020-10-27T03:00:00.000Z",
+            "date": 1603756800000,
             "source": "https://www.pagina12.com.ar/481394-vandalizaron-un-monumento-del-expresidente-nestor-kirchner",
             "coords": {
                 "latitude": -34.50900387198553,
@@ -258,7 +258,7 @@
         {
             "id": 12,
             "title": "Aparición de afiches con propaganda neonazi",
-            "date": "2020-10-30T03:00:00.000Z",
+            "date": 1604016000000,
             "source": "https://viapais.com.ar/mar-del-plata/2088957-aparecieron-afiches-con-propaganda-neonazi-en-el-centro-de-mar-del-plata/",
             "coords": {
                 "latitude": -37.99674593199154,
@@ -281,7 +281,7 @@
         {
             "id": 13,
             "title": "Ataque a militantes del Polo Obrero",
-            "date": "2020-11-03T03:00:00.000Z",
+            "date": 1604361600000,
             "source": "https://m.facebook.com/infoestacionfinlandia/photos/a.2798226183548268/3374016672635880/?locale=hi_IN&_rdr",
             "coords": {
                 "latitude": -34.606645803707316,
@@ -304,7 +304,7 @@
         {
             "id": 14,
             "title": "Ataque a pañuelos de Madres y Abuelas de Plaza de Mayo",
-            "date": "2020-11-28T03:00:00.000Z",
+            "date": 1606521600000,
             "source": "https://www.pagina12.com.ar/309031-bariloche-vandalizaron-panuelos-de-las-madres-en-la-marcha-p",
             "coords": {
                 "latitude": -41.13344849350453,
@@ -327,7 +327,7 @@
         {
             "id": 15,
             "title": "Manifestación en falcón verde frente a homenaje a desaparecidxs",
-            "date": "2020-11-28T03:00:00.000Z",
+            "date": 1606521600000,
             "source": "https://www.pagina12.com.ar/308885-un-falcon-verde-desfilo-en-la-marcha-de-los-antiderechos",
             "coords": {
                 "latitude": -37.229922798676256,
@@ -350,7 +350,7 @@
         {
             "id": 16,
             "title": "Ataque a Unidad Básica \"CFK\" ",
-            "date": "2020-12-04T03:00:00.000Z",
+            "date": 1607040000000,
             "source": "https://www.tiempoar.com.ar/informacion-general/atentados-pintadas-y-otras-agresiones-fascistas-que-inquietan-a-almagro/ ",
             "coords": {
                 "latitude": -34.63432379724473,
@@ -373,7 +373,7 @@
         {
             "id": 17,
             "title": "Ataque a bancos de la diversidad",
-            "date": "2020-12-07T03:00:00.000Z",
+            "date": 1607299200000,
             "source": "https://www.eldiariodelarepublica.com/nota/2021-2-1-11-38-0-intervinieron-dos-bancos-de-la-plaza-pringles-con-los-colores-de-la-diversidad",
             "coords": {
                 "latitude": -33.302010435073,
@@ -396,7 +396,7 @@
         {
             "id": 18,
             "title": "Ataque transodiante a \"Casa Azul\"",
-            "date": "2020-12-12T03:00:00.000Z",
+            "date": 1607731200000,
             "source": "https://www.laizquierdadiario.com/San-Luis-arte-como-respuesta-al-ataque-odiante-a-Casa-Azul ",
             "coords": {
                 "latitude": -33.30650954157912,
@@ -419,7 +419,7 @@
         {
             "id": 19,
             "title": "Ataque a local del Frente Grande",
-            "date": "2021-01-11T03:00:00.000Z",
+            "date": 1610323200000,
             "source": "https://www.canal13sanjuan.com/politica/2021/1/11/vandalizaron-un-partido-k-fue-una-organizacion-religiosa-152266.html",
             "coords": {
                 "latitude": -31.53154675327386,
@@ -442,7 +442,7 @@
         {
             "id": 20,
             "title": "Ataque a mural homenaje a detenidxs desaparecidxs de Club Ferro",
-            "date": "2021-02-08T03:00:00.000Z",
+            "date": 1612742400000,
             "source": "https://www.pagina12.com.ar/322829-vandalizaron-el-mural-en-homenaje-a-los-detenidos-desapareci  ",
             "coords": {
                 "latitude": -34.61890606404176,
@@ -465,7 +465,7 @@
         {
             "id": 21,
             "title": "Ataque a escultura de Santiago Maldonado",
-            "date": "2021-02-21T03:00:00.000Z",
+            "date": 1613865600000,
             "source": "https://www.apdh-argentina.org.ar/declaraciones/repudiamos-la-destruccion-de-la-escultura-de-santiago-maldonado-en-cushamen-chubut",
             "coords": {
                 "latitude": -42.319416837114076,
@@ -488,7 +488,7 @@
         {
             "id": 22,
             "title": "Bolsas mortuorias con nombres de figuras militantes y de derechos humanos",
-            "date": "2021-02-28T03:00:00.000Z",
+            "date": 1614470400000,
             "source": "https://www.perfil.com/noticias/politica/bolsas-mortuorias-que-dijo-la-agrupacion-jovenes-republicanos-responsable-de-la-escena.phtml",
             "coords": {
                 "latitude": -34.608101760251934,
@@ -513,7 +513,7 @@
         {
             "id": 23,
             "title": "Ataque transodiante a \"Casa Azul\"",
-            "date": "2021-03-09T03:00:00.000Z",
+            "date": 1615248000000,
             "source": "https://www.minutouno.com/sociedad/inadi/san-luis-atacaron-la-sede-del-y-un-centro-cultural-n5200331 ",
             "coords": {
                 "latitude": -33.30775667620314,
@@ -536,7 +536,7 @@
         {
             "id": 24,
             "title": "Ataque a mural en memoria de Gustavo Correa",
-            "date": "2021-03-15T03:00:00.000Z",
+            "date": 1615766400000,
             "source": "https://m.facebook.com/cta.sanluis/photos/a.1869804983244706/3233081403583717/?type=3&eid=ARCyh6VlCY8OG5JKR6lElT9v2IMIkXRJzpDJPM9XNQ2dQFn2B6I8qoDjFfjkJZmpe_G7aoUNacXcOkAU&locale=es_ES",
             "coords": {
                 "latitude": -31.295006500366885,
@@ -559,7 +559,7 @@
         {
             "id": 25,
             "title": "Ataque a sede de la Asociación de Docentes Universitarios (ADU)",
-            "date": "2021-03-16T03:00:00.000Z",
+            "date": 1615852800000,
             "source": "https://www.eldiariodelarepublica.com/nota/2021-3-16-18-59-0-las-pintadas-y-el-vandalismo-llegaron-a-la-sede-de-adu-en-san-luis",
             "coords": {
                 "latitude": -33.29588298508329,
@@ -582,7 +582,7 @@
         {
             "id": 26,
             "title": "Segundo ataque a mural en memoria de Gustavo Correa",
-            "date": "2021-03-25T03:00:00.000Z",
+            "date": 1616630400000,
             "source": "https://hoydia.com.ar/sociedad/80850-por-segunda-vez-restauran-el-mural-en-memoria-de-gustavo-correa-html/",
             "coords": {
                 "latitude": -31.294686388049737,
@@ -605,7 +605,7 @@
         {
             "id": 27,
             "title": "Ataque a mural en memoria de desaparecidxs en dictadura",
-            "date": "2021-03-27T03:00:00.000Z",
+            "date": 1616803200000,
             "source": "https://www.lacapitalmdp.com/vandalizan-mural-en-memoria-de-los-desaparecidos-en-la-dictadura/",
             "coords": {
                 "latitude": -37.988770614665206,
@@ -628,7 +628,7 @@
         {
             "id": 28,
             "title": "Ataque a local de Nueva Mayoría",
-            "date": "2021-04-23T03:00:00.000Z",
+            "date": 1619136000000,
             "source": "https://www.tiempoar.com.ar/informacion-general/atentados-pintadas-y-otras-agresiones-fascistas-que-inquietan-a-almagro/",
             "coords": {
                 "latitude": -34.62003307717036,
@@ -651,7 +651,7 @@
         {
             "id": 29,
             "title": "Detención de hombres por planificación de atentado contra comunidad judía",
-            "date": "2021-04-24T03:00:00.000Z",
+            "date": 1619222400000,
             "source": "https://www.infobae.com/sociedad/policiales/2021/04/24/tucuman-detuvieron-a-dos-hombres-que-planificaban-atentados-contra-la-comunidad-judia/",
             "coords": {
                 "latitude": -26.844234220283955,
@@ -674,7 +674,7 @@
         {
             "id": 30,
             "title": "Atentado a local del Partido del Trabajo y del Pueblo (PTP)",
-            "date": "2021-04-26T03:00:00.000Z",
+            "date": 1619395200000,
             "source": "https://www.lanueva.com/nota/2021-4-26-9-30-0-denunciaron-un-atentado-en-la-sede-local-del-ptp-no-van-a-lograr-amedrentarnos ",
             "coords": {
                 "latitude": -38.72324345543175,
@@ -697,7 +697,7 @@
         {
             "id": 31,
             "title": "Ataque a cartel conmemorativo de desaparecidxs en dictadura ",
-            "date": "2021-04-28T03:00:00.000Z",
+            "date": 1619568000000,
             "source": "https://www.elindependiente.com.ar/pagina.php?id=275635",
             "coords": {
                 "latitude": -29.524681861023815,
@@ -720,7 +720,7 @@
         {
             "id": 32,
             "title": "Ataque con símbolos nazis frente a local del MST ",
-            "date": "2021-05-03T03:00:00.000Z",
+            "date": 1620000000000,
             "source": "https://www.canal13sanjuan.com/san-juan/2021/5/4/vandalismo-el-local-partidario-del-mst-en-san-juan-amanecio-con-pintadas-159541.html",
             "coords": {
                 "latitude": -31.542512650978342,
@@ -743,7 +743,7 @@
         {
             "id": 33,
             "title": "Ataque con símbolos nazis en Canal 13 San Juan y Diario Tiempo San Juan ",
-            "date": "2021-05-09T03:00:00.000Z",
+            "date": 1620518400000,
             "source": "https://www.canal13sanjuan.com/policial/2021/5/9/aparecieron-extranas-pintadas-nazis-en-el-frente-de-canal-13-tiempo-de-san-juan-159870.html",
             "coords": {
                 "latitude": -31.53067026400091,
@@ -768,7 +768,7 @@
         {
             "id": 34,
             "title": "Ataque negacionista sobre homenaje a Madres de Plaza de Mayo",
-            "date": "2021-05-10T03:00:00.000Z",
+            "date": 1620604800000,
             "source": "https://www.canal13sanjuan.com/san-juan/2021/5/10/vandalizaron-un-homenaje-las-madres-de-plaza-de-mayo-en-una-plaza-159949.html",
             "coords": {
                 "latitude": -31.55550026243687,
@@ -793,7 +793,7 @@
         {
             "id": 35,
             "title": "Esvásticas pintadas",
-            "date": "2021-05-12T03:00:00.000Z",
+            "date": 1620777600000,
             "source": "https://misionesonline.net/2021/05/12/esvasticas-pintadas-en-una-ciudad-de-misiones/",
             "coords": {
                 "latitude": -26.41001457636945,
@@ -816,7 +816,7 @@
         {
             "id": 36,
             "title": "Pintadas antisemitas",
-            "date": "2021-05-12T03:00:00.000Z",
+            "date": 1620777600000,
             "source": "https://www.canal13sanjuan.com/san-juan/2021/5/12/otra-repudiable-pintada-nazi-cuadras-de-plaza-25-160082.html",
             "coords": {
                 "latitude": -31.528896837046762,
@@ -839,7 +839,7 @@
         {
             "id": 37,
             "title": "Pintadas antisemitas frente a sinagoga",
-            "date": "2021-05-17T03:00:00.000Z",
+            "date": 1621209600000,
             "source": "https://www.labrujula24.com/notas/2021/05/17/pintadas-antisemitas-en-el-frente-de-una-sinagoga-n130023/",
             "coords": {
                 "latitude": -38.720833879747985,
@@ -862,7 +862,7 @@
         {
             "id": 38,
             "title": "Ataque a bandera de diversidad izada en el Obelisco ",
-            "date": "2021-05-18T03:00:00.000Z",
+            "date": 1621296000000,
             "source": "https://agenciapresentes.org/2021/05/18/otro-atentado-contra-una-bandera-de-la-diversidad-esta-vez-fue-en-el-obelisco-de-la-ciudad-de-buenos-aires/ ",
             "coords": {
                 "latitude": -34.603562185059786,
@@ -885,7 +885,7 @@
         {
             "id": 39,
             "title": "Atentado con explosivo a local de La Cámpora ",
-            "date": "2021-05-25T03:00:00.000Z",
+            "date": 1621900800000,
             "source": "https://www.perfil.com/noticias/actualidad/investigan-una-fuerte-explosion-en-un-local-de-la-campora-en-bahia-blanca.phtml",
             "coords": {
                 "latitude": -38.72326372351372,
@@ -908,7 +908,7 @@
         {
             "id": 40,
             "title": "Amenaza de bomba en la Casa de Gobierno de La Pampa",
-            "date": "2021-05-31T03:00:00.000Z",
+            "date": 1622419200000,
             "source": "https://viapais.com.ar/santa-rosa/santa-rosa-desalojaron-la-casa-de-gobierno-por-una-amenaza-de-bomba/",
             "coords": {
                 "latitude": -36.62137607582536,
@@ -931,7 +931,7 @@
         {
             "id": 41,
             "title": "Ataque transodiante a  \"Casa Azul\"",
-            "date": "2021-06-10T03:00:00.000Z",
+            "date": 1623283200000,
             "source": "https://www.minutouno.com/sociedad/inadi/san-luis-atacaron-la-sede-del-y-un-centro-cultural-n5200331",
             "coords": {
                 "latitude": -33.307658045280256,
@@ -954,7 +954,7 @@
         {
             "id": 42,
             "title": "Bandera travesti trans incediada frente a INADI provincial",
-            "date": "2021-06-11T03:00:00.000Z",
+            "date": 1623369600000,
             "source": " https://infonews.com/odio-a-las-infancias-trans-inadi-san-luis-lgbtiq-transodio.html ",
             "coords": {
                 "latitude": -33.23159298355094,
@@ -977,7 +977,7 @@
         {
             "id": 43,
             "title": "Ataque a Centro Cultural Esquina Rebelde ",
-            "date": "2021-08-27T03:00:00.000Z",
+            "date": 1630022400000,
             "source": "https://diario.cemba.com.ar/fuera-feminazis-escribieron-un-grafiti-amenazador-frente-a-la-esquina-rebelde-del-abasto-4/",
             "coords": {
                 "latitude": -34.60077443392618,
@@ -1000,7 +1000,7 @@
         {
             "id": 44,
             "title": "Ataque a \"Espacio Mayos\" ",
-            "date": "2021-08-30T03:00:00.000Z",
+            "date": 1630281600000,
             "source": "http://www.revistaelabasto.com.ar/la-legislatura-portena-repudio-los-ataques-vandalicos-a-locales-partidarios-del-abasto/",
             "coords": {
                 "latitude": -34.60237719718469,
@@ -1023,7 +1023,7 @@
         {
             "id": 45,
             "title": "Ataque a militantes del Partido Obrero",
-            "date": "2021-09-04T03:00:00.000Z",
+            "date": 1630713600000,
             "source": "https://web.archive.org/web/20240303065239/https://www.telam.com.ar/notas/202109/567535-denunciaron-un-ataque-de-neonazis-contra-militantes-del-frente-de-izquierda.html",
             "coords": {
                 "latitude": -34.58106185066847,
@@ -1046,7 +1046,7 @@
         {
             "id": 46,
             "title": "Segundo ataque a \"Espacio Mayos\" ",
-            "date": "2021-09-04T03:00:00.000Z",
+            "date": 1630713600000,
             "source": "http://www.revistaelabasto.com.ar/la-legislatura-portena-repudio-los-ataques-vandalicos-a-locales-partidarios-del-abasto/",
             "coords": {
                 "latitude": -34.60237719718469,
@@ -1071,7 +1071,7 @@
         {
             "id": 47,
             "title": "Ataque a local de Movemos",
-            "date": "2021-09-04T03:00:00.000Z",
+            "date": 1630713600000,
             "source": "http://www.revistaelabasto.com.ar/la-legislatura-portena-repudio-los-ataques-vandalicos-a-locales-partidarios-del-abasto/",
             "coords": {
                 "latitude": -34.60269412901256,
@@ -1094,7 +1094,7 @@
         {
             "id": 48,
             "title": "Ataque a pañuelos de Madres y Abuelas de Plaza de Mayo",
-            "date": "2021-09-05T03:00:00.000Z",
+            "date": 1630800000000,
             "source": "https://web.archive.org/web/20210906115629/https://www.telam.com.ar/notas/202109/567595-repudio-vandalismo-panuelos-plaza-mayo-mar-del-plata.html",
             "coords": {
                 "latitude": -37.998644938764095,
@@ -1117,7 +1117,7 @@
         {
             "id": 49,
             "title": "Segundo ataque a local de Movemos",
-            "date": "2021-11-08T03:00:00.000Z",
+            "date": 1636329600000,
             "source": "https://aylibertad.com.ar/blog/2021/12/08/ataques-neofascistas-en-almagro/",
             "coords": {
                 "latitude": -34.60269412901256,
@@ -1140,7 +1140,7 @@
         {
             "id": 50,
             "title": "Ataque al Centro Cultural \"La Casa de Teresa\"",
-            "date": "2021-09-10T03:00:00.000Z",
+            "date": 1631232000000,
             "source": "https://www.tiempoar.com.ar/informacion-general/atentados-pintadas-y-otras-agresiones-fascistas-que-inquietan-a-almagro/",
             "coords": {
                 "latitude": -34.6017448819246,
@@ -1163,7 +1163,7 @@
         {
             "id": 51,
             "title": "Esvásticas pintadas en cementerio israelita",
-            "date": "2021-09-21T03:00:00.000Z",
+            "date": 1632182400000,
             "source": "https://urgente24.com/actualidad/santa-fe-rito-umbanda-y-esvasticas-cementerio-israelita-n527120",
             "coords": {
                 "latitude": -31.612333024225947,
@@ -1186,7 +1186,7 @@
         {
             "id": 52,
             "title": "Ataque a homenaje a Abuelas y Madres de Plaza de Mayo ",
-            "date": "2021-09-26T03:00:00.000Z",
+            "date": 1632614400000,
             "source": "https://www.minutouno.com/sociedad/olavarria/un-grupo-cercano-al-pro-se-adjudico-pintadas-contra-las-abuelas-y-madres-plaza-mayo-n5288793",
             "coords": {
                 "latitude": -36.8867140101965,
@@ -1209,7 +1209,7 @@
         {
             "id": 53,
             "title": "Destrucción de pañuelo de cerámica en local de Movemos",
-            "date": "2021-09-30T03:00:00.000Z",
+            "date": 1632960000000,
             "source": "https://webcache.googleusercontent.com/search?q=cache:tgT-4pS7SUcJ:https://twitter.com/movemos_caba/status/1443568875661004814&cd=11&hl=es-419&ct=clnk&gl=ar",
             "coords": {
                 "latitude": -34.60269412901256,
@@ -1234,7 +1234,7 @@
         {
             "id": 54,
             "title": "Ataque a Universidad Popular Barrios de Pie",
-            "date": "2021-10-10T03:00:00.000Z",
+            "date": 1633824000000,
             "source": "  http://www.revistaelabasto.com.ar/vandalizaron-el-frente-de-la-universidad-popular-de-barrios-de-pie-en-anchorena-al-300/ ",
             "coords": {
                 "latitude": -34.60541287217031,
@@ -1257,7 +1257,7 @@
         {
             "id": 55,
             "title": "Ataque a local de Comunarte",
-            "date": "2021-10-17T03:00:00.000Z",
+            "date": 1634428800000,
             "source": "https://aylibertad.com.ar/blog/2021/12/08/ataques-neofascistas-en-almagro/",
             "coords": {
                 "latitude": -34.614979786784794,
@@ -1280,7 +1280,7 @@
         {
             "id": 56,
             "title": "Ataque a mural de HIJOS",
-            "date": "2021-10-20T03:00:00.000Z",
+            "date": 1634688000000,
             "source": " https://www.0221.com.ar/nota/2021-10-21-8-27-0-derechos-humanos-vandalismo-y-repudio-atacaron-un-mural-en-homenaje-a-los-desaparecidos",
             "coords": {
                 "latitude": -34.86720770624439,
@@ -1303,7 +1303,7 @@
         {
             "id": 57,
             "title": "Ataque a mural de Eva Perón en sede de la UNTDF",
-            "date": "2021-10-20T03:00:00.000Z",
+            "date": 1634688000000,
             "source": "https://lacontratapatdf.com/nota/16598/vandalizaron-un-mural-de-eva-peron-en-la-sede-de-la-untdf-de-rio-grande/",
             "coords": {
                 "latitude": -53.780138084485706,
@@ -1326,7 +1326,7 @@
         {
             "id": 58,
             "title": "Ataque a local de la Juventud del PTS",
-            "date": "2021-10-28T03:00:00.000Z",
+            "date": 1635379200000,
             "source": " https://www.laizquierdadiario.com/Repudio-seguidores-de-Milei-atacaron-local-de-la-juventud-del-PTS-en-La-Plata ",
             "coords": {
                 "latitude": -34.90997622485675,
@@ -1349,7 +1349,7 @@
         {
             "id": 59,
             "title": "Ataque a Amarama Patio Cultural",
-            "date": "2021-11-12T03:00:00.000Z",
+            "date": 1636675200000,
             "source": "https://www.instagram.com/p/CWRdreHsJam/?igshid=MzRlODBiNWFlZA%3D%3D",
             "coords": {
                 "latitude": -34.60337804718193,
@@ -1373,7 +1373,7 @@
         {
             "id": 60,
             "title": "Atentado en la casa de referente mapuche Olga Curipan",
-            "date": "2021-11-14T03:00:00.000Z",
+            "date": 1636848000000,
             "source": "https://urbana939.com.ar/repudios-al-atentado-en-la-casa-la-referente-mapuche-olga-curipan",
             "coords": {
                 "latitude": -38.71842616476072,
@@ -1398,7 +1398,7 @@
         {
             "id": 61,
             "title": "Ataque a sede del Ministerio de Desarrollo Social de la Nación ",
-            "date": "2021-11-18T03:00:00.000Z",
+            "date": 1637193600000,
             "source": "https://twitter.com/MDSNacionNqn/status/1461354846590697483?s=20",
             "coords": {
                 "latitude": -38.94743130089985,
@@ -1423,7 +1423,7 @@
         {
             "id": 62,
             "title": "Asesinato de Elías Garay e intento de asesinato de Gonzalo Cabrerade",
-            "date": "2021-11-21T03:00:00.000Z",
+            "date": 1637452800000,
             "source": "https://latinta.com.ar/2021/11/muerte-anunciada-asesinar-mapuche/",
             "coords": {
                 "latitude": -41.90847983999839,
@@ -1446,7 +1446,7 @@
         {
             "id": 63,
             "title": "Ataque a bustos de Perón, Evita y mural de Santiago Maldonado ",
-            "date": "2021-11-21T03:00:00.000Z",
+            "date": 1637452800000,
             "source": "https://diputadosbsas.com.ar/berisso-atacaron-homenajes-a-peron-evita-y-santiago-maldonado/",
             "coords": {
                 "latitude": -34.86785632832456,
@@ -1469,7 +1469,7 @@
         {
             "id": 64,
             "title": "Ataque a local de Nuevo Encuentro",
-            "date": "2021-12-04T03:00:00.000Z",
+            "date": 1638576000000,
             "source": "http://www.revistaelabasto.com.ar/otro-caso-de-violencia-politica-en-el-abasto-vandalizaron-el-frente-del-local-de-nuevo-encuentro-de-zelaya-y-aguero-que-homenajeaba-al-vecino-y-murguero-julio-cesar-abruzzese-detenido-desaparecido/",
             "coords": {
                 "latitude": -34.60114900534827,
@@ -1494,7 +1494,7 @@
         {
             "id": 65,
             "title": "Ataque a Espacio de Memoria Ex Centro Clandestino de Detención \"Comisaría 5ta\" ",
-            "date": "2021-12-07T03:00:00.000Z",
+            "date": 1638835200000,
             "source": "https://web.archive.org/web/20211207223125/https://www.telam.com.ar/notas/202112/577193-vandalizaron-mural-abuelas-de-plaza-de-mayo-la-plata.html",
             "coords": {
                 "latitude": -34.939781832969466,
@@ -1517,7 +1517,7 @@
         {
             "id": 66,
             "title": "Intento de incendio en espacio cultural LGBTINB+ \"Maricafé\"",
-            "date": "2022-01-15T03:00:00.000Z",
+            "date": 1642204800000,
             "source": "https://www.pagina12.com.ar/395703-intentaron-incendiar-el-espacio-cultural-lgtb-maricafe-en-pa",
             "coords": {
                 "latitude": -34.59414960278695,
@@ -1540,7 +1540,7 @@
         {
             "id": 67,
             "title": "Ataque físico, con armas blancas y de fuego en marcha contra el FMI ",
-            "date": "2022-02-08T03:00:00.000Z",
+            "date": 1644278400000,
             "source": "https://argentina.indymedia.org/2022/02/14/preocupacion-por-el-brutal-ataque-fascista-en-la-marcha-contra-el-fmi-en-cordoba/",
             "coords": {
                 "latitude": -31.4198054767746,
@@ -1563,7 +1563,7 @@
         {
             "id": 68,
             "title": "Ataque a Centro Cultural Roseti y Esquina Rebelde",
-            "date": "2022-02-22T03:00:00.000Z",
+            "date": 1645488000000,
             "source": "http://www.revistaelabasto.com.ar/legislatura-portena-el-frente-de-izquierda-promueve-el-repudio-a-los-ataques-contra-roseti-y-esquina-rebelde-del-abasto/",
             "coords": {
                 "latitude": -34.600588173236055,
@@ -1586,7 +1586,7 @@
         {
             "id": 69,
             "title": "Ataque a Centro Cultural Roseti",
-            "date": "2022-03-02T03:00:00.000Z",
+            "date": 1646179200000,
             "source": "https://www.instagram.com/p/CapQKraOICv/?img_index=1",
             "coords": {
                 "latitude": -34.60056961711935,
@@ -1609,7 +1609,7 @@
         {
             "id": 70,
             "title": "Ataque a Universidad Popular Barrios De Pie",
-            "date": "2022-03-06T03:00:00.000Z",
+            "date": 1646524800000,
             "source": "http://www.revistaelabasto.com.ar/danaron-el-frente-de-la-universidad-popular-barrios-de-pie-del-abasto/",
             "coords": {
                 "latitude": -34.60530690347006,
@@ -1632,7 +1632,7 @@
         {
             "id": 71,
             "title": "Ataque con símbolos nazis a mural por 16° aniversario del “No al Alca”",
-            "date": "2022-03-17T03:00:00.000Z",
+            "date": 1647475200000,
             "source": "https://quedigital.com.ar/sociedad/repudian-un-nuevo-ataque-a-un-mural-con-pintadas-nazis-en-mar-del-plata/",
             "coords": {
                 "latitude": -37.98709773315776,
@@ -1657,7 +1657,7 @@
         {
             "id": 72,
             "title": "Ataque con arma de fuego a cartel señalizador de sitio de memoria",
-            "date": "2022-03-19T03:00:00.000Z",
+            "date": 1647648000000,
             "source": "https://www.pagina12.com.ar/410976-balazos-y-pintura-roja  ",
             "coords": {
                 "latitude": -31.326998303403606,
@@ -1680,7 +1680,7 @@
         {
             "id": 73,
             "title": "Ataque a mural del Partido Comunista Revolucionario (PCR) ",
-            "date": "2022-03-19T03:00:00.000Z",
+            "date": 1647648000000,
             "source": " https://www.eldia.com/nota/2022-3-24-10-15-0-el-partido-comunista-local-denuncia-ataque-a-un-mural-y-amenazas-politica-y-economia",
             "coords": {
                 "latitude": -34.8964489750609,
@@ -1703,7 +1703,7 @@
         {
             "id": 74,
             "title": "Ataque a local de Juventud Peronista ",
-            "date": "2022-03-19T03:00:00.000Z",
+            "date": 1647648000000,
             "source": "https://www.eldia.com/nota/2022-3-24-10-15-0-el-partido-comunista-local-denuncia-ataque-a-un-mural-y-amenazas-politica-y-economia",
             "coords": {
                 "latitude": -34.9084717072239,
@@ -1726,7 +1726,7 @@
         {
             "id": 75,
             "title": "Ataque a Sitio de la Memoria Virrey Cevallos",
-            "date": "2022-03-21T03:00:00.000Z",
+            "date": 1647820800000,
             "source": "https://www.nueva-ciudad.com.ar/notas/202203/48621-vandalizaron-el-frente-del-sitio-de-la-memoria-virrey-cevallos.html",
             "coords": {
                 "latitude": -34.61579030632665,
@@ -1749,7 +1749,7 @@
         {
             "id": 76,
             "title": "Ataque a cartel señalizador de sitio de memoria",
-            "date": "2022-03-24T03:00:00.000Z",
+            "date": 1648080000000,
             "source": "https://www.pagina12.com.ar/410976-balazos-y-pintura-roja",
             "coords": {
                 "latitude": -31.328109642776706,
@@ -1772,7 +1772,7 @@
         {
             "id": 77,
             "title": "Ataque a  estación \"Rodolfo Walsh” ",
-            "date": "2022-03-25T03:00:00.000Z",
+            "date": 1648166400000,
             "source": "https://www.pagina12.com.ar/410703-militantes-pro-vandalizaron-la-estacion-de-subte-rodolfo-wal ",
             "coords": {
                 "latitude": -34.6218287762636,
@@ -1795,7 +1795,7 @@
         {
             "id": 78,
             "title": "Destrucción de estatua de Cristina Fernández de Kirchner",
-            "date": "2022-03-30T03:00:00.000Z",
+            "date": 1648598400000,
             "source": "https://www.pagina12.com.ar/411855-mas-violencia-contra-cristina-kirchner-vandalizaron-una-esta",
             "coords": {
                 "latitude": -51.61539894339552,
@@ -1820,7 +1820,7 @@
         {
             "id": 79,
             "title": "Muñecos ahorcados de referentes del oficialismo, la izquierda y los derechos humanos",
-            "date": "2022-04-23T03:00:00.000Z",
+            "date": 1650672000000,
             "source": "https://www.pagina12.com.ar/417378-que-hay-detras-de-los-munecos-ahorcados-durante-el-tractoraz",
             "coords": {
                 "latitude": -34.60823421664768,
@@ -1843,7 +1843,7 @@
         {
             "id": 80,
             "title": "Ataque a mural de la memoria en Polideportivo escolar ",
-            "date": "2022-04-24T03:00:00.000Z",
+            "date": 1650758400000,
             "source": "http://www.revistaelabasto.com.ar/almagro-el-frente-de-izquierda-repudia-en-la-legislatura-portena-el-vandalismo-al-mural-por-la-memoria-en-el-polideportivo-de-sarmiento-4041/",
             "coords": {
                 "latitude": -34.60433145786152,
@@ -1868,7 +1868,7 @@
         {
             "id": 81,
             "title": "Ataque a cartel señalizador de Sitio de Enterramiento Clandestino de Campo Militar San Pedro",
-            "date": "2022-05-08T03:00:00.000Z",
+            "date": 1651968000000,
             "source": "https://www.notife.com/ataque-a-la-memoria-vandalizan-el-cartel-que-senala-el-campo-militar-san-pedro  ",
             "coords": {
                 "latitude": -31.337937265079166,
@@ -1891,7 +1891,7 @@
         {
             "id": 82,
             "title": "Segundo ataque a sede del Ministerio de Desarrollo Social de la Nación ",
-            "date": "2022-05-23T03:00:00.000Z",
+            "date": 1653264000000,
             "source": "https://infobaires24.com.ar/realizan-pintadas-nazis-para-vandalizar-un-crd-en-neuquen/",
             "coords": {
                 "latitude": -38.94413555078762,
@@ -1916,7 +1916,7 @@
         {
             "id": 83,
             "title": "Ataque con símbolos nazis en murales por Memoria, Verdad y Justicia",
-            "date": "2022-05-27T03:00:00.000Z",
+            "date": 1653609600000,
             "source": "https://www.anroca.com.ar/noticias/2022/05/27/118174-por-segunda-vez-en-la-semana-pintan-esvasticas-sobre-murales-por-la-memoria-la-verdad-y-la-justicia",
             "coords": {
                 "latitude": -38.94952225177439,
@@ -1941,7 +1941,7 @@
         {
             "id": 84,
             "title": "Amenaza a la Asociación Pampeana de Escritorxs (APE) ",
-            "date": "2022-06-24T03:00:00.000Z",
+            "date": 1656028800000,
             "source": "https://www.radiokermes.com/noticias/11423-una-amenaza-en-la-ape",
             "coords": {
                 "latitude": -36.62732745188574,
@@ -1965,7 +1965,7 @@
         {
             "id": 85,
             "title": "Ataque con armas largas y molotovs a comunidad Indigena La Armonia ",
-            "date": "2022-06-29T03:00:00.000Z",
+            "date": 1656460800000,
             "source": "https://www.laizquierdadiario.com/Santiago-del-Estero-nuevo-ataque-contra-la-comunidad-indigena-La-Armonia",
             "coords": {
                 "latitude": -25.807191440806825,
@@ -1990,7 +1990,7 @@
         {
             "id": 86,
             "title": "Hostigamiento y amenazas a legisladoras porteñas del FDT",
-            "date": "2022-07-04T03:00:00.000Z",
+            "date": 1656892800000,
             "source": "https://www.pagina12.com.ar/483182-claudia-neira-denuncio-por-amenazas-a-otros-integrantes-de-r",
             "coords": {
                 "latitude": -34.60784427629919,
@@ -2015,7 +2015,7 @@
         {
             "id": 87,
             "title": "Amenazas a Jorge Ferraresi",
-            "date": "2022-07-04T03:00:00.000Z",
+            "date": 1656892800000,
             "source": "https://www.tiempoar.com.ar/politica/atentado-cfk-morel-tribunales/",
             "coords": {
                 "latitude": -34.60784427629919,
@@ -2038,7 +2038,7 @@
         {
             "id": 88,
             "title": "Guillotina en manifestación con cartel \"TODOS PRESOS MUERTOS O EXILIADOS\" ",
-            "date": "2022-07-09T03:00:00.000Z",
+            "date": 1657324800000,
             "source": "https://www.infobae.com/fotos/2022/07/09/las-movilizaciones-del-9-de-julio-en-fotos-banderazo-y-protestas-en-todo-el-pais-contra-el-gobierno/",
             "coords": {
                 "latitude": -34.602944115430525,
@@ -2061,7 +2061,7 @@
         {
             "id": 89,
             "title": "Ataque a Instituto Patria con amenazas de muerte a CFK",
-            "date": "2022-07-21T03:00:00.000Z",
+            "date": 1658361600000,
             "source": "https://web.archive.org/web/20240302165430/https://www.telam.com.ar/notas/202207/599301-amenazas-vicepresidenta-instituto-patria.html",
             "coords": {
                 "latitude": -34.60772242137866,
@@ -2087,7 +2087,7 @@
         {
             "id": 90,
             "title": "Ataque a Juan Grabois ",
-            "date": "2022-08-02T03:00:00.000Z",
+            "date": 1659398400000,
             "source": "https://www.lanacion.com.ar/politica/juan-grabois-fue-increpado-en-la-entrada-al-congreso-por-un-grupo-de-manifestantes-andate-a-cuba-nid02082022/",
             "coords": {
                 "latitude": -34.60982089396355,
@@ -2110,7 +2110,7 @@
         {
             "id": 91,
             "title": "Ataque a Myriam Bregman",
-            "date": "2022-08-03T03:00:00.000Z",
+            "date": 1659484800000,
             "source": "https://twitter.com/MARCELOFAVAOK/status/1554516242773540866?s=20 ",
             "coords": {
                 "latitude": -34.60982089396355,
@@ -2133,7 +2133,7 @@
         {
             "id": 92,
             "title": "Ataque a cronista de C5N ",
-            "date": "2022-08-03T03:00:00.000Z",
+            "date": 1659484800000,
             "source": "https://www.youtube.com/watch?v=7rpl9w7xt84&ab_channel=C5N",
             "coords": {
                 "latitude": -34.6078169795143,
@@ -2158,7 +2158,7 @@
         {
             "id": 93,
             "title": "Ataque a cementerio judío ",
-            "date": "2022-08-21T03:00:00.000Z",
+            "date": 1661040000000,
             "source": " https://visavis.com.ar/2022/08/23/vandalizaron-un-cementerio-judio-en-entre-rios-rompieron-y-destrozaron-tumbas/ ",
             "coords": {
                 "latitude": -32.355290878174124,
@@ -2181,7 +2181,7 @@
         {
             "id": 94,
             "title": "Amenazas a Victoria Donda ",
-            "date": "2022-08-25T03:00:00.000Z",
+            "date": 1661385600000,
             "source": "https://www.perfil.com/noticias/politica/victoria-donda-denuncio-amenazas-de-muerte-lider-revolucion-federal-jonathan-morel.phtml",
             "coords": {
                 "latitude": -34.516650097548364,
@@ -2208,7 +2208,7 @@
         {
             "id": 95,
             "title": "Ataque a tumba de Ana María Villarreal a 50 años de la masacre de Trelew",
-            "date": "2022-08-29T03:00:00.000Z",
+            "date": 1661731200000,
             "source": "https://www.pagina12.com.ar/476837-atacaron-la-tumba-de-ana-maria-villarreal",
             "coords": {
                 "latitude": -24.795685527001368,
@@ -2231,7 +2231,7 @@
         {
             "id": 96,
             "title": "Ataque a militantes frente a casa de CFK",
-            "date": "2022-08-31T03:00:00.000Z",
+            "date": 1661904000000,
             "source": "https://www.pagina12.com.ar/478188-un-repartidor-agredio-a-militantes-que-estaban-frente-a-la-c",
             "coords": {
                 "latitude": -34.59249386701821,
@@ -2254,7 +2254,7 @@
         {
             "id": 97,
             "title": "Intento de asesinato de Cristina Fernández de Kirchner",
-            "date": "2022-09-01T03:00:00.000Z",
+            "date": 1661990400000,
             "source": "https://www.pagina12.com.ar/478434-el-video-que-muestra-el-intento-de-asesinato-contra-cristina",
             "coords": {
                 "latitude": -34.59249386701821,
@@ -2278,7 +2278,7 @@
         {
             "id": 98,
             "title": "Ataque a sede del PJ bonaerense",
-            "date": "2022-09-03T03:00:00.000Z",
+            "date": 1662163200000,
             "source": "https://web.archive.org/web/20240303100721/https://www.telam.com.ar/notas/202209/603799-ataque-sede-partido-justicialista-pj-la-plata-cfk-cristina-kirchner.html",
             "coords": {
                 "latitude": -34.917020557592494,
@@ -2301,7 +2301,7 @@
         {
             "id": 99,
             "title": "Ataque a sede del Frente Nacional Peronista ",
-            "date": "2022-09-05T03:00:00.000Z",
+            "date": 1662336000000,
             "source": "https://diputadosbsas.com.ar/la-plata-vandalismo-contra-local-peronista/ ",
             "coords": {
                 "latitude": -34.919555786472934,
@@ -2324,7 +2324,7 @@
         {
             "id": 100,
             "title": "Ataque a placa en homenaje a Abuelas de Plaza de Mayo",
-            "date": "2022-09-07T03:00:00.000Z",
+            "date": 1662508800000,
             "source": "http://www.revistaelabasto.com.ar/vandalizaron-la-placa-en-homenaje-a-abuelas-de-plaza-de-mayo-del-parque-de-la-estacion/",
             "coords": {
                 "latitude": -34.60767350556045,
@@ -2347,7 +2347,7 @@
         {
             "id": 101,
             "title": "Ataque con arma de fuego a monumento a Néstor Kirchner",
-            "date": "2022-09-12T03:00:00.000Z",
+            "date": 1662940800000,
             "source": "https://www.clarin.com/politica/alberto-fernandez-denuncio-ataque-monumento-nestor-kirchner-ruta-7_0_RxxkgRbTe5.html",
             "coords": {
                 "latitude": -34.50900387198553,
@@ -2370,7 +2370,7 @@
         {
             "id": 102,
             "title": "Ataque a mural en conmemoración de la noche de los lápices y Nestor Kirchner ",
-            "date": "2022-09-18T03:00:00.000Z",
+            "date": 1663459200000,
             "source": "https://web.archive.org/web/20240303035051/https://www.telam.com.ar/notas/202209/605214-vandalizacion-mural-noche-lapices-quilmes.html",
             "coords": {
                 "latitude": -34.72365225613275,
@@ -2395,7 +2395,7 @@
         {
             "id": 103,
             "title": "Tercer ataque a espacio lésbico \"La Vulvería\"",
-            "date": "2022-09-24T03:00:00.000Z",
+            "date": 1663977600000,
             "source": "https://www.anred.org/2022/09/29/rosario-pintadas-agresivas-en-el-frente-del-espacio-lesbico-la-vulveria/",
             "coords": {
                 "latitude": -32.940916106728416,
@@ -2420,7 +2420,7 @@
         {
             "id": 104,
             "title": "Ataque a placa en homenaje a Abuelas de Plaza de Mayo",
-            "date": "2022-09-26T03:00:00.000Z",
+            "date": 1664150400000,
             "source": "http://www.revistaelabasto.com.ar/parque-de-la-estacion-volvieron-a-romper-la-placa-en-homenaje-a-abuelas-de-plaza-de-mayo-la-segunda-vez-en-menos-de-un-mes/",
             "coords": {
                 "latitude": -34.6077794712405,
@@ -2443,7 +2443,7 @@
         {
             "id": 105,
             "title": "Ataque a comunidades mapuches ",
-            "date": "2022-10-04T03:00:00.000Z",
+            "date": 1664841600000,
             "source": "https://www.anred.org/2022/10/25/denuncian-al-intendente-de-el-bolson-por-avalar-e-incentivar-a-sicarios-y-nacionalistas-que-amenazan-a-la-comunidad-mapuche/",
             "coords": {
                 "latitude": -41.96475667424759,
@@ -2466,7 +2466,7 @@
         {
             "id": 106,
             "title": "Aparición de bandera con símbolo nazi ",
-            "date": "2022-10-22T03:00:00.000Z",
+            "date": 1666396800000,
             "source": "https://www.unoentrerios.com.ar/la-municipalidad-parana-denuncio-un-caso-antisemitismo-n2740535.html ",
             "coords": {
                 "latitude": -31.720753139853876,
@@ -2489,7 +2489,7 @@
         {
             "id": 107,
             "title": "Ataque a Universidad Popular Barrios de Pie",
-            "date": "2022-10-23T03:00:00.000Z",
+            "date": 1666483200000,
             "source": "https://www.revistaelabasto.com.ar/la-legislatura-portena-repudio-el-vandalismo-al-mural-del-parque-de-la-estacion-y-la-universidad-de-barrios-de-pie/",
             "coords": {
                 "latitude": -34.60541287217031,
@@ -2512,7 +2512,7 @@
         {
             "id": 108,
             "title": "Ataque a pañuelos y whipala en mural del Parque de la Estación",
-            "date": "2022-10-23T03:00:00.000Z",
+            "date": 1666483200000,
             "source": "https://www.revistaelabasto.com.ar/tras-el-vandalismo-vecinos-restauraron-el-mural-del-parque-de-la-estacion-en-anchorena-y-peron/",
             "coords": {
                 "latitude": -34.607694727899364,
@@ -2537,7 +2537,7 @@
         {
             "id": 109,
             "title": "Ataque a pañuelo de Madres de Plaza Mayo",
-            "date": "2022-10-25T03:00:00.000Z",
+            "date": 1666656000000,
             "source": "https://www.lacapital.com.ar/la-ciudad/negacionismo-repudio-y-decepcion-vandalizaron-un-simbolo-la-plaza-25-mayo-n10031108.html ",
             "coords": {
                 "latitude": -32.94679038053134,
@@ -2560,7 +2560,7 @@
         {
             "id": 110,
             "title": "Ataque negacionista en Espacio de Memoria ",
-            "date": "2022-11-12T03:00:00.000Z",
+            "date": 1668211200000,
             "source": "https://clip-urbano.com/2022/11/15/la-cpm-se-solidarizo-con-el-colectivo-faro-de-la-memoria-de-mar-del-plata-tras-una-agresion/",
             "coords": {
                 "latitude": -38.091459312870604,
@@ -2583,7 +2583,7 @@
         {
             "id": 111,
             "title": "Ataque transodiante a INADI provincial  ",
-            "date": "2022-12-26T03:00:00.000Z",
+            "date": 1672012800000,
             "source": "https://www.argentina.gob.ar/noticias/san-luis-repudio-por-un-nuevo-ataque-transodiante-la-delegacion-del-inadi/",
             "coords": {
                 "latitude": -33.30552780138541,
@@ -2606,7 +2606,7 @@
         {
             "id": 112,
             "title": "Ataque a Centro Cultural JJ",
-            "date": "2023-01-13T03:00:00.000Z",
+            "date": 1673568000000,
             "source": "https://elnumeral.com/2023/01/17/otro-ataquede-odio-a-un-centro-cultural-porteno/",
             "coords": {
                 "latitude": -34.6056210638721,
@@ -2629,7 +2629,7 @@
         {
             "id": 113,
             "title": "Ataque a manifestantes en 7°Marcha por la Soberanía a Lago Escondido",
-            "date": "2023-02-01T03:00:00.000Z",
+            "date": 1675209600000,
             "source": "https://infobaires24.com.ar/brutal-ataque-lewis-lago-escondido-hieren-diputado-harispe/ ",
             "coords": {
                 "latitude": -41.71576734624674,
@@ -2652,7 +2652,7 @@
         {
             "id": 114,
             "title": "Caravana antimapuche",
-            "date": "2023-03-20T03:00:00.000Z",
+            "date": 1679270400000,
             "source": "https://www.mendozapost.com/sociedad/tierras-a-mapuches-caravanazo-mendocino-para-decirle-basta-al-gobierno-nacional/ ",
             "coords": {
                 "latitude": -35.483293655572446,
@@ -2675,7 +2675,7 @@
         {
             "id": 115,
             "title": "Ataque a muestra de arte feminista en UNCUYO",
-            "date": "2023-03-23T03:00:00.000Z",
+            "date": 1679529600000,
             "source": "https://www.mdzol.com/sociedad/2023/3/20/video-el-momento-exacto-del-violento-ataque-de-religiosos-la-muestra-feminista-de-la-uncuyo-323664.html\r ",
             "coords": {
                 "latitude": -32.87985297417169,
@@ -2698,7 +2698,7 @@
         {
             "id": 116,
             "title": "Ataque a monumentos de desaparecidxs, Santiago Maldonado y Rafael Nahuel",
-            "date": "2023-03-24T03:00:00.000Z",
+            "date": 1679616000000,
             "source": "https://www.eqsnotas.com/actualidad/repudiable-acto-de-vandalismo-en-la-placa-que-recuerda-a-norberto-amaturi_a641d8cdddb054aacf1c0125e",
             "coords": {
                 "latitude": -42.920280392244415,
@@ -2723,7 +2723,7 @@
         {
             "id": 117,
             "title": "Ataque con gasoil sobre pañuelos de las Madres de Plaza de Mayo para evitar su repintada",
-            "date": "2023-03-24T03:00:00.000Z",
+            "date": 1679616000000,
             "source": "https://elargentinodiario.com.ar/zona-destacada/24/03/2023/bariloche-tiran-gasoil-en-el-centro-civico-para-impedir-la-repintada-de-panuelos-de-las-madres-de-plaza-de-mayo/",
             "coords": {
                 "latitude": -41.1334161705398,
@@ -2746,7 +2746,7 @@
         {
             "id": 118,
             "title": "Ataque a placas en memoria de desaparecidxs ",
-            "date": "2023-03-27T03:00:00.000Z",
+            "date": 1679875200000,
             "source": "https://www.pagina12.com.ar/534637-esquel-vandalizaron-las-placas-que-recuerdan-a-desaparecidos",
             "coords": {
                 "latitude": -42.89883368355561,
@@ -2769,7 +2769,7 @@
         {
             "id": 119,
             "title": "Amenazas con arma de fuego a local de Izquierda Socialista ",
-            "date": "2023-03-29T03:00:00.000Z",
+            "date": 1680048000000,
             "source": "https://izquierdasocialista.org.ar/2020/index.php/blog/para-la-web/item/21615-grave-amenaza-con-arma-de-fuego-contra-local-de-izquierda-socialista-en-el-frente-de-izquierda-unidad ",
             "coords": {
                 "latitude": -34.919925758837465,
@@ -2792,7 +2792,7 @@
         {
             "id": 120,
             "title": "Grupo paramilitar en acto homenaje a caídos en Malvinas",
-            "date": "2023-04-02T03:00:00.000Z",
+            "date": 1680393600000,
             "source": "https://www.elancasti.com.ar/edicion-impresa/polemica-la-participacion-una-organizacion-paramilitar-n521915",
             "coords": {
                 "latitude": -28.213468993650494,
@@ -2815,7 +2815,7 @@
         {
             "id": 121,
             "title": "Ataque a pañuelos blancos pintados el 24 de marzo",
-            "date": "2023-04-02T03:00:00.000Z",
+            "date": 1680393600000,
             "source": "https://www.unoentrerios.com.ar/la-provincia/la-paz-vandalizaron-panuelos-blancos-y-hay-repudio-n10054905.html ",
             "coords": {
                 "latitude": -30.740319809769005,
@@ -2838,7 +2838,7 @@
         {
             "id": 122,
             "title": "Ataque homofóbico por un gendarme en local LGBTINB+",
-            "date": "2023-04-16T03:00:00.000Z",
+            "date": 1681603200000,
             "source": "https://www.jujuyalmomento.com/capital/detuvieron-un-hombre-armado-un-conocido-boliche-la-capital-jujena-n152419 ",
             "coords": {
                 "latitude": -24.186454830854835,
@@ -2862,7 +2862,7 @@
         {
             "id": 123,
             "title": "Pintadas antisemitas en local del Frente de Todos",
-            "date": "2023-04-18T03:00:00.000Z",
+            "date": 1681776000000,
             "source": "https://www.pagina12.com.ar/541748-pintadas-antisemitas-a-un-candidato-del-frente-de-todos",
             "coords": {
                 "latitude": -32.94660149887876,
@@ -2887,7 +2887,7 @@
         {
             "id": 124,
             "title": "Ataque a mural del Paseo de la Memoria",
-            "date": "2023-04-26T03:00:00.000Z",
+            "date": 1682467200000,
             "source": "https://www.lavozdesanjusto.com.ar/vandalizan-mural-del-paseo-de-la-memoria-en-40-anos-de-democracia-aun-hay-quienes-se-empenan-en-d-134979",
             "coords": {
                 "latitude": -31.427442960101526,
@@ -2910,7 +2910,7 @@
         {
             "id": 125,
             "title": "Amenaza de bomba en Teatro Argentino previo a acto de CFK",
-            "date": "2023-04-27T03:00:00.000Z",
+            "date": 1682553600000,
             "source": "https://www.ambito.com/politica/amenaza-bomba-el-teatro-argentino-la-plata-antes-del-acto-cristina-kirchner-n5709553 ",
             "coords": {
                 "latitude": -34.917643459094705,
@@ -2933,7 +2933,7 @@
         {
             "id": 126,
             "title": "Ataque a espacio de la memoria ",
-            "date": "2023-04-30T03:00:00.000Z",
+            "date": 1682812800000,
             "source": "https://www.diariochaco.com/638235-vandalismo-en-la-plaza-25-de-mayo-atacaron-con-aerosoles-un-espacio-por-la-memoria",
             "coords": {
                 "latitude": -26.426584514882112,
@@ -2956,7 +2956,7 @@
         {
             "id": 127,
             "title": "Agresiones a Pepe Mujica durante su visita a Buenos Aires",
-            "date": "2023-05-14T03:00:00.000Z",
+            "date": 1684022400000,
             "source": "https://elnoticierodigital.com.ar/2023/05/15/video-seguidores-de-milei-atacaron-a-mujica-en-buenos-aires-mugriento-anda-a-banarte/",
             "coords": {
                 "latitude": -34.57849757755391,
@@ -2979,7 +2979,7 @@
         {
             "id": 128,
             "title": "Atentado al local de la Corriente de Expresión Renovada (CER)",
-            "date": "2023-05-26T03:00:00.000Z",
+            "date": 1685059200000,
             "source": "https://www.chacodiapordia.com/2023/05/27/desde-la-legislatura-repudian-el-ataque-del-local-del-cer-en-fontana/",
             "coords": {
                 "latitude": -27.418206796248764,
@@ -3002,7 +3002,7 @@
         {
             "id": 129,
             "title": "Ataque a Radio Rebelde",
-            "date": "2023-05-29T03:00:00.000Z",
+            "date": 1685318400000,
             "source": "https://web.archive.org/web/20240303111318/https://www.telam.com.ar/notas/202305/629727-luis-delia-radio-rebelde-ataque.html",
             "coords": {
                 "latitude": -34.60959771882245,
@@ -3027,7 +3027,7 @@
         {
             "id": 130,
             "title": "Profanación de rewe sagrado de la Lafken Winkul Mapu",
-            "date": "2023-05-30T03:00:00.000Z",
+            "date": 1685404800000,
             "source": "https://www.elcordillerano.com.ar/noticias/2023/05/30/162402-la-lafken-winkul-mapu-denuncia-que-profanaron-el-rewe-de-villa-mascardi",
             "coords": {
                 "latitude": -41.34872031747351,
@@ -3050,7 +3050,7 @@
         {
             "id": 131,
             "title": "Ataque a baldosa en memoria de María Claudia Falcone",
-            "date": "2023-06-05T03:00:00.000Z",
+            "date": 1685923200000,
             "source": " https://www.pagina12.com.ar/556307-reparacion-y-desagravio-en-la-escuela-claudia-falcone ",
             "coords": {
                 "latitude": -34.58706636516268,
@@ -3073,7 +3073,7 @@
         {
             "id": 132,
             "title": "Ataque a baldosas y pañuelos de la memoria en Escuela Técnica N° 30 \"Dr. Norberto Piñero\"",
-            "date": "2023-06-05T03:00:00.000Z",
+            "date": 1685923200000,
             "source": "https://www.revistaelabasto.com.ar/almagro-vandalizaron-las-baldosas-por-la-memoria-frente-a-la-escuela-pinero/",
             "coords": {
                 "latitude": -34.59741234420085,
@@ -3096,7 +3096,7 @@
         {
             "id": 133,
             "title": "Ataque transodiante a INADI provincial",
-            "date": "2023-06-11T03:00:00.000Z",
+            "date": 1686441600000,
             "source": "https://www.grupolaprovincia.com/sociedad/vandalizan-el-frente-de-la-sede-del-inadi-en-san-luis-con-un-mensaje-de-odio-denuncio-su-titular-1171601",
             "coords": {
                 "latitude": -32.94739439175615,
@@ -3119,7 +3119,7 @@
         {
             "id": 134,
             "title": "Destrozos, robo y mensajes de odio en local de Unión por la Patria",
-            "date": "2023-06-23T03:00:00.000Z",
+            "date": 1687478400000,
             "source": "https://www.lacapitalmdp.com/destrozos-robo-y-mensajes-de-odio-en-un-ataque-a-local-de-union-por-la-patria-en-mar-del-plata/  ",
             "coords": {
                 "latitude": -38.00606590351133,
@@ -3142,7 +3142,7 @@
         {
             "id": 135,
             "title": "Ataque a Espacio de Memoria ex Regimiento de Infantería 9",
-            "date": "2023-07-01T03:00:00.000Z",
+            "date": 1688169600000,
             "source": "https://www.ellitoral.com.ar/corrientes/2023-7-2-9-21-0-vandalizaron-el-espacio-de-memoria-de-la-ciudad-de-corrientes-los-detalles",
             "coords": {
                 "latitude": -27.4732227478124,
@@ -3165,7 +3165,7 @@
         {
             "id": 136,
             "title": "Nuevo ataque en Estación Rodolfo Walsh",
-            "date": "2023-07-01T03:00:00.000Z",
+            "date": 1688169600000,
             "source": "www.pagina12.com.ar/563977-vandalizaron-la-estacion-rodolfo-walsh     ",
             "coords": {
                 "latitude": -34.6218287762636,
@@ -3188,7 +3188,7 @@
         {
             "id": 137,
             "title": "Ataque a mural de Lucas Verón ",
-            "date": "2023-07-10T03:00:00.000Z",
+            "date": 1688947200000,
             "source": "https://www.el1digital.com.ar/sociedad/restauraran-el-mural-de-lucas-veron-lo-haremos-las-veces-que-sea-necesario-aseguro-lily-galeano/",
             "coords": {
                 "latitude": -34.674437945806254,
@@ -3213,7 +3213,7 @@
         {
             "id": 138,
             "title": "Ataque al nuevo cementerio israelita ",
-            "date": "2023-07-13T03:00:00.000Z",
+            "date": 1689206400000,
             "source": "https://www.rosario3.com/informaciongeneral/Vandalizaron-el-nuevo-cementerio-israelita-Destruyeron-muchas-tumbas-y-no-se-llevaron-nada-20230715-0009.html  https://www.facebook.com/photo?fbid=649813643843127&set=a.546982904126202 ",
             "coords": {
                 "latitude": -32.96272303873747,
@@ -3236,7 +3236,7 @@
         {
             "id": 139,
             "title": "Ataque a sede del Ministerio de Desarrollo Social de la Nación",
-            "date": "2023-07-14T03:00:00.000Z",
+            "date": 1689292800000,
             "source": "https://www.rionegro.com.ar/sociedad/pintadas-nazis-en-la-sede-de-un-organismo-de-nacion-en-neuquen-3024849/ ",
             "coords": {
                 "latitude": -38.95024322257465,
@@ -3261,7 +3261,7 @@
         {
             "id": 140,
             "title": "Ataque a Museo Dr. Gregorio Álvarez",
-            "date": "2023-07-15T03:00:00.000Z",
+            "date": 1689379200000,
             "source": "https://www.lmneuquen.com/neuquen/vandalizaron-simbolos-nazis-la-casa-museo-gregorio-alvarez-n1041000  ",
             "coords": {
                 "latitude": -38.95062836730392,
@@ -3286,7 +3286,7 @@
         {
             "id": 141,
             "title": "Ataque racista contra manifestantes ",
-            "date": "2023-07-21T03:00:00.000Z",
+            "date": 1689897600000,
             "source": "https://www.infobae.com/politica/2023/07/22/nuevos-incidentes-en-jujuy-tras-35-dias-de-piquetes-hartazgo-y-dialogo-roto-entre-el-gobierno-y-los-pueblos-indigenas/",
             "coords": {
                 "latitude": -23.743705535551534,
@@ -3309,7 +3309,7 @@
         {
             "id": 142,
             "title": "Ataque a placa de memoria de familia La Blunda ",
-            "date": "2023-07-23T03:00:00.000Z",
+            "date": 1690070400000,
             "source": "https://laopinionaustral.com.ar/noticias/vandalizaron-la-placa-de-la-familia-la-blunda-fue-muy-triste-me-impacto-670182.html",
             "coords": {
                 "latitude": -34.441640624558886,
@@ -3332,7 +3332,7 @@
         {
             "id": 143,
             "title": "Ataque a mural de Santiago Maldonado ",
-            "date": "2023-07-23T03:00:00.000Z",
+            "date": 1690070400000,
             "source": "https://www.resumenlatinoamericano.org/2023/07/31/nacion-mapuche-cushamen-quienes-no-aguantan-la-mirada-de-santiago-maldonado/",
             "coords": {
                 "latitude": -42.32103657843433,
@@ -3355,7 +3355,7 @@
         {
             "id": 144,
             "title": "Ataque a local de Frente Vecinal",
-            "date": "2023-07-28T03:00:00.000Z",
+            "date": 1690502400000,
             "source": "https://www.eqsnotas.com/policiales/repudiable--vandalizaron-el-local-del-frente-vecinal-esquel_a64c44563a4ccf894ee510b24  ",
             "coords": {
                 "latitude": -42.91091122563533,
@@ -3380,7 +3380,7 @@
         {
             "id": 145,
             "title": "Ataque a baldosas de estudiantes desaparecidxs en escuela Carlos Pellegrini",
-            "date": "2023-08-10T03:00:00.000Z",
+            "date": 1691625600000,
             "source": "https://web.archive.org/web/20230813002735/https://www.telam.com.ar/notas/202308/636753-vandalizaron-placas-recordatorias-estudiantes-profesores-desaparecidos-escuelas-portenas.html",
             "coords": {
                 "latitude": -34.59047213541111,
@@ -3403,7 +3403,7 @@
         {
             "id": 146,
             "title": "Ataque a baldosas de estudiantes desaparecidxs en escuela Claudia Falcone ",
-            "date": "2023-08-10T03:00:00.000Z",
+            "date": 1691625600000,
             "source": "https://web.archive.org/web/20230813002735/https://www.telam.com.ar/notas/202308/636753-vandalizaron-placas-recordatorias-estudiantes-profesores-desaparecidos-escuelas-portenas.html",
             "coords": {
                 "latitude": -34.58142598016367,
@@ -3428,7 +3428,7 @@
         {
             "id": 147,
             "title": "Ataque a baldosas de estudiantes desaparecidxs en escuela Manuel Belgrano",
-            "date": "2023-08-10T03:00:00.000Z",
+            "date": 1691625600000,
             "source": "https://web.archive.org/web/20230813002735/https://www.telam.com.ar/notas/202308/636753-vandalizaron-placas-recordatorias-estudiantes-profesores-desaparecidos-escuelas-portenas.html",
             "coords": {
                 "latitude": -34.58990686577853,
@@ -3453,7 +3453,7 @@
         {
             "id": 148,
             "title": "Ataques a espacios LGBTINB+ ",
-            "date": "2023-08-10T03:00:00.000Z",
+            "date": 1691625600000,
             "source": "http://lamecha.ar/organizaciones-lgbtqy-denuncian-atentado-transodiante/",
             "coords": {
                 "latitude": -31.527605862188675,
@@ -3477,7 +3477,7 @@
         {
             "id": 149,
             "title": "Ataque homoodiante en contexto electoral",
-            "date": "2023-08-13T03:00:00.000Z",
+            "date": 1691884800000,
             "source": "fuente directa verificada",
             "coords": {
                 "latitude": -34.596475023278664,
@@ -3501,7 +3501,7 @@
         {
             "id": 150,
             "title": "Ataque a placa conmemorativa de Jose Luis Cabezas ",
-            "date": "2023-08-14T03:00:00.000Z",
+            "date": 1691971200000,
             "source": "https://www.tunoticia.com.ar/vandalizaron-monumento-de-cabezas-en-la-ciudad/",
             "coords": {
                 "latitude": -38.9519397822721,
@@ -3526,7 +3526,7 @@
         {
             "id": 151,
             "title": "Persecución y ataque verbal a investigadoras del Conicet",
-            "date": "2023-08-18T03:00:00.000Z",
+            "date": 1692316800000,
             "source": "https://web.archive.org/web/20240302172648/https://www.telam.com.ar/notas/202308/637872-conicet-agresion-becarias-la-plata.html",
             "coords": {
                 "latitude": -34.91993823057726,
@@ -3549,7 +3549,7 @@
         {
             "id": 152,
             "title": "Ataque a mural LGBTINB+ en estacionamiento de boliche Queens ",
-            "date": "2023-08-26T03:00:00.000Z",
+            "date": 1693008000000,
             "source": "https://www.mdzol.com/sociedad/2023/8/27/pintadas-vandalismo-amenazas-para-la-comunidad-lgbtiq-en-mendoza-363857.html",
             "coords": {
                 "latitude": -32.89621217947645,
@@ -3572,7 +3572,7 @@
         {
             "id": 153,
             "title": "Ataque anti ESI en Escuela Secundaria 70",
-            "date": "2023-09-29T03:00:00.000Z",
+            "date": 1695945600000,
             "source": "https://www.infobae.com/sociedad/2023/09/01/mas-de-10-escuelas-de-la-plata-fueron-vandalizadas-con-leyendas-en-contra-de-la-esi/",
             "coords": {
                 "latitude": -34.921131862869444,
@@ -3595,7 +3595,7 @@
         {
             "id": 154,
             "title": "Ataque anti ESI en Escuela Secundaria Manuel Belgrano",
-            "date": "2023-08-31T03:00:00.000Z",
+            "date": 1693440000000,
             "source": "https://www.pagina12.com.ar/584059-vandalizan-escuelas-de-la-plata-con-leyendas-contrarias-a-la",
             "coords": {
                 "latitude": -34.90719750903056,
@@ -3618,7 +3618,7 @@
         {
             "id": 155,
             "title": "Ataque anti ESI en Escuela Secundaria 92",
-            "date": "2023-08-31T03:00:00.000Z",
+            "date": 1693440000000,
             "source": "https://agenciapresentes.org/2023/09/01/vandalizan-16-escuelas-y-jardines-de-la-plata-con-desinformacion-contra-la-esi/",
             "coords": {
                 "latitude": -34.89295432185903,
@@ -3641,7 +3641,7 @@
         {
             "id": 156,
             "title": "Ataque anti ESI en Escuela Secundaria 14",
-            "date": "2023-08-31T03:00:00.000Z",
+            "date": 1693440000000,
             "source": "https://www.laplata1.com/2023-09-01/el-inadi-repudio-la-vandalizacion-de-las-escuelas-de-la-plata-con-mensajes-en-contra-de-la-esi-94828/",
             "coords": {
                 "latitude": -34.90047358379679,
@@ -3664,7 +3664,7 @@
         {
             "id": 157,
             "title": "Ataque anti ESI en Escuela Secundaria 46",
-            "date": "2023-08-31T03:00:00.000Z",
+            "date": 1693440000000,
             "source": "https://diputadosbsas.com.ar/la-plata-escuelas-escrachadas-contra-esi/",
             "coords": {
                 "latitude": -34.93120480373436,
@@ -3687,7 +3687,7 @@
         {
             "id": 158,
             "title": "Ataque anti ESI en Escuela Primaria 11",
-            "date": "2023-08-31T03:00:00.000Z",
+            "date": 1693440000000,
             "source": "https://agenciapresentes.org/2023/09/01/vandalizan-16-escuelas-y-jardines-de-la-plata-con-desinformacion-contra-la-esi/",
             "coords": {
                 "latitude": -34.931239118038974,
@@ -3710,7 +3710,7 @@
         {
             "id": 159,
             "title": "Ataque anti ESI en ISFD 17",
-            "date": "2023-08-31T03:00:00.000Z",
+            "date": 1693440000000,
             "source": "https://www.infobae.com/sociedad/2023/09/01/mas-de-10-escuelas-de-la-plata-fueron-vandalizadas-con-leyendas-en-contra-de-la-esi/",
             "coords": {
                 "latitude": -34.93072570423431,
@@ -3733,7 +3733,7 @@
         {
             "id": 160,
             "title": "Ataque anti ESI en Instituto San Vicente de Paul ",
-            "date": "2023-08-31T03:00:00.000Z",
+            "date": 1693440000000,
             "source": "https://agenciapresentes.org/2023/09/01/vandalizan-16-escuelas-y-jardines-de-la-plata-con-desinformacion-contra-la-esi/",
             "coords": {
                 "latitude": -34.90301470148472,
@@ -3756,7 +3756,7 @@
         {
             "id": 161,
             "title": "Ataque anti ESI en Jardín 903",
-            "date": "2023-08-31T03:00:00.000Z",
+            "date": 1693440000000,
             "source": "https://www.laizquierdadiario.com/Repudian-pintadas-antiderechos-contra-la-ESI-en-escuelas-de-La-Plata",
             "coords": {
                 "latitude": -34.9315877593635,
@@ -3779,7 +3779,7 @@
         {
             "id": 162,
             "title": "Ataque anti ESI en Jardín 918",
-            "date": "2023-08-31T03:00:00.000Z",
+            "date": 1693440000000,
             "source": "https://infocielo.com/sociedad/la-plata-docentes-y-activistas-convocan-una-jornada-al-aire-libre-defensa-la-esi-n770651",
             "coords": {
                 "latitude": -34.92705268911208,
@@ -3802,7 +3802,7 @@
         {
             "id": 163,
             "title": "Ataque anti ESI en Colegio \"Nuestra Señora de la Misericordia\" ",
-            "date": "2023-08-31T03:00:00.000Z",
+            "date": 1693440000000,
             "source": "https://www.lavoz.com.ar/ciudadanos/la-plata-vandalizaron-escuelas-con-mensajes-en-contra-de-la-esi/",
             "coords": {
                 "latitude": -34.90750790052505,
@@ -3825,7 +3825,7 @@
         {
             "id": 164,
             "title": "Ataque anti ESI en Escuela Primaria 8",
-            "date": "2023-08-31T03:00:00.000Z",
+            "date": 1693440000000,
             "source": "https://www.0221.com.ar/nota/2023-9-1-10-58-0-escuelas-de-la-plata-fueron-vandalizadas-con-las-paredes-pintadas-en-contra-de-la-ley-esi",
             "coords": {
                 "latitude": -34.9267831521634,
@@ -3848,7 +3848,7 @@
         {
             "id": 165,
             "title": "Ataque anti ESI en Escuela Primaria 64",
-            "date": "2023-08-31T03:00:00.000Z",
+            "date": 1693440000000,
             "source": "https://www.losandes.com.ar/sociedad/esi-es-pedofilia-vandalizaron-escuelas-de-la-plata-con-pintadas-repudiables/",
             "coords": {
                 "latitude": -34.9284870962941,
@@ -3871,7 +3871,7 @@
         {
             "id": 166,
             "title": "Ataque anti ESI en Escuela Secundaria 11",
-            "date": "2023-08-31T03:00:00.000Z",
+            "date": 1693440000000,
             "source": "https://www.pagina12.com.ar/584059-vandalizan-escuelas-de-la-plata-con-leyendas-contrarias-a-la",
             "coords": {
                 "latitude": -34.91129297619021,
@@ -3894,7 +3894,7 @@
         {
             "id": 167,
             "title": "Ataque anti ESI en Escuela Secundaria 32 (exNormal 1)",
-            "date": "2023-08-31T03:00:00.000Z",
+            "date": 1693440000000,
             "source": "https://www.infobae.com/sociedad/2023/09/01/mas-de-10-escuelas-de-la-plata-fueron-vandalizadas-con-leyendas-en-contra-de-la-esi/",
             "coords": {
                 "latitude": -34.92201503471131,
@@ -3917,7 +3917,7 @@
         {
             "id": 168,
             "title": "Ataque anti ESI en Escuela Secundaria 93 \"Rafael Hernandez\"",
-            "date": "2023-08-31T03:00:00.000Z",
+            "date": 1693440000000,
             "source": "https://diputadosbsas.com.ar/la-plata-escuelas-escrachadas-contra-esi/",
             "coords": {
                 "latitude": -34.9054535146624,
@@ -3940,7 +3940,7 @@
         {
             "id": 169,
             "title": "Ataque anti ESI en la Escuela Secundaria Técnica 1 \"Valentín Vergara\"",
-            "date": "2023-08-31T03:00:00.000Z",
+            "date": 1693440000000,
             "source": "https://agenciapresentes.org/2023/09/01/vandalizan-16-escuelas-y-jardines-de-la-plata-con-desinformacion-contra-la-esi/",
             "coords": {
                 "latitude": -34.90083098598942,
@@ -3963,7 +3963,7 @@
         {
             "id": 170,
             "title": "Ataque anti ESI en Escuela Primaria N° 37 Remedios de Escalada / ISFDyT n° 9 Sede Psicopedagogía",
-            "date": "2023-08-31T03:00:00.000Z",
+            "date": 1693440000000,
             "source": "https://agenciapresentes.org/2023/09/01/vandalizan-16-escuelas-y-jardines-de-la-plata-con-desinformacion-contra-la-esi/",
             "coords": {
                 "latitude": -34.90662716710666,
@@ -3986,7 +3986,7 @@
         {
             "id": 171,
             "title": "Cuarto ataque a espacio lésbico \"La Vulvería\"",
-            "date": "2023-08-31T03:00:00.000Z",
+            "date": 1693440000000,
             "source": "https://www.conclusion.com.ar/info-general/pintaron-esvasticas-frente-al-centro-cultural-lesbico-feminista-la-vulveria/09/2023/",
             "coords": {
                 "latitude": -32.940919714654605,
@@ -4011,7 +4011,7 @@
         {
             "id": 172,
             "title": "Incendio de monumento a María Remedios del Valle",
-            "date": "2023-09-01T03:00:00.000Z",
+            "date": 1693526400000,
             "source": "https://www.argentina.gob.ar/noticias/el-ministerio-de-cultura-denuncia-y-repudia-el-ataque-al-monumento-en-homenaje-maria",
             "coords": {
                 "latitude": -34.617873132647276,
@@ -4034,7 +4034,7 @@
         {
             "id": 173,
             "title": "Amenaza de bomba en Centro Cultural de la Memoria Haroldo Conti",
-            "date": "2023-09-02T03:00:00.000Z",
+            "date": 1693612800000,
             "source": "https://www.c5n.com/sociedad/amenaza-bomba-el-centro-cultural-la-memoria-haroldo-conti-n125304",
             "coords": {
                 "latitude": -34.53993410467033,
@@ -4057,7 +4057,7 @@
         {
             "id": 174,
             "title": "Ataque a busto de Eva Perón",
-            "date": "2022-11-17T03:00:00.000Z",
+            "date": 1668643200000,
             "source": "https://www.diagonales.com/municipio/vandalizaron-un-busto-de-evita-en-tigre-y-zamora-advirtio-sobre-la--violencia-antiperonista-_a63768071eb62c25901506c37 ",
             "coords": {
                 "latitude": -34.46013129103586,
@@ -4080,7 +4080,7 @@
         {
             "id": 175,
             "title": "Ataque en domicilio a director de Región Sanitaria Nº 1 con incendio y amenazas",
-            "date": "2022-01-08T03:00:00.000Z",
+            "date": 1641600000000,
             "source": "https://www.pagina12.com.ar/394160-atentado-en-bahia-blanca-colocaron-un-explosivo-en-la-casa-d",
             "coords": {
                 "latitude": -38.719995916619155,
@@ -4103,7 +4103,7 @@
         {
             "id": 176,
             "title": "Ataques a sede del PJ y al Instituto de Ciencia, Tecnología e Innovación",
-            "date": "2023-09-03T03:00:00.000Z",
+            "date": 1693699200000,
             "source": "https://www.pagina12.com.ar/584628-ataque-a-un-local-del-pj",
             "coords": {
                 "latitude": -27.4465863006461,
@@ -4126,7 +4126,7 @@
         {
             "id": 177,
             "title": "Ataque a radio del ex centro clandestino de detención \"Olimpo\"",
-            "date": "2022-05-15T03:00:00.000Z",
+            "date": 1652572800000,
             "source": "https://www.pagina12.com.ar/423252-la-secretaria-de-derechos-humanos-repudio-la-vandalizacion-d",
             "coords": {
                 "latitude": -34.63631313186987,
@@ -4151,7 +4151,7 @@
         {
             "id": 178,
             "title": "Ataque a homenaje a víctimas de la dictadura en ex centro clandestino de detención \"Olimpo\"",
-            "date": "2022-09-10T03:00:00.000Z",
+            "date": 1662768000000,
             "source": "https://www.inforegion.com.ar/2022/09/07/un-nuevo-acto-de-vandalismo-esta-vez-en-el-ex-centro-de-detencion-clandestino-el-olimpo/",
             "coords": {
                 "latitude": -34.63635392788236,
@@ -4174,7 +4174,7 @@
         {
             "id": 179,
             "title": "Amenazas con apología a la dictadura e incendio en Instituto de Formación Docente N 113",
-            "date": "2023-09-13T03:00:00.000Z",
+            "date": 1694563200000,
             "source": "https://www.pagina12.com.ar/588141-el-odio-no-para-amenazas-pro-dictadura-en-la-universidad-de-",
             "coords": {
                 "latitude": -34.57291050479415,
@@ -4199,7 +4199,7 @@
         {
             "id": 180,
             "title": "Amenaza con bombas molotov en local de Partido Comunista",
-            "date": "2023-09-04T03:00:00.000Z",
+            "date": 1693785600000,
             "source": "https://ctaciudad.org/repudiamos-las-amenazas-con-bombas-molotov-en-la-sede-portena-del-partido-comunista",
             "coords": {
                 "latitude": -34.60567992340312,
@@ -4222,7 +4222,7 @@
         {
             "id": 181,
             "title": "Ataque a mural del MST con pintadas del Batallón Azov",
-            "date": "2022-03-20T03:00:00.000Z",
+            "date": 1647734400000,
             "source": "https://www.cba24n.com.ar/cordoba/un-barrio-de-cordoba-con-pintadas-de-azov--el-grupo-paramilitar-neonazi-ucraniano_a62347f9aa866c7e991b40254",
             "coords": {
                 "latitude": -31.404146,
@@ -4247,7 +4247,7 @@
         {
             "id": 182,
             "title": "Ataque en marcha LGBT+: ostentación de arma de fuego, ataque con cadena y destrozo de placa",
-            "date": "2020-06-28T03:00:00.000Z",
+            "date": 1593302400000,
             "source": "https://agenciapresentes.org/2020/06/29/cordoba-antiderechos-intentaron-arriar-bandera-lgbt-y-destruyeron-placa-del-orgullo/",
             "coords": {
                 "latitude": -31.430025,
@@ -4270,7 +4270,7 @@
         {
             "id": 183,
             "title": "Hostigamiento a integrantes del Coro del ECuNHi",
-            "date": "2023-09-01T03:00:00.000Z",
+            "date": 1693526400000,
             "source": "https://web.archive.org/web/20230908105742/https://www.telam.com.ar/notas/202309/639416-denuncian-amenaza-filtracion-de-imagenes-chat-liceo-militar.html",
             "coords": {
                 "latitude": -36.01821627210198,
@@ -4293,7 +4293,7 @@
         {
             "id": 184,
             "title": "Ataque al periodista Pablo Duggan",
-            "date": "2023-09-14T03:00:00.000Z",
+            "date": 1694649600000,
             "source": "https://www.pagina12.com.ar/588170-amenazaron-y-escupieron-al-periodista-pablo-duggan-en-un-res",
             "coords": {
                 "latitude": -34.4017051029573,
@@ -4318,7 +4318,7 @@
         {
             "id": 185,
             "title": "Ataque con pintada nazi en casa de militante desaparecido",
-            "date": "2023-09-02T03:00:00.000Z",
+            "date": 1693612800000,
             "source": "https://www.pagina12.com.ar/587147-una-esvastica-y-la-palabra-kagon",
             "coords": {
                 "latitude": -34.53748174688215,
@@ -4343,7 +4343,7 @@
         {
             "id": 186,
             "title": "Hostigamiento y amenazas de muerte a investigador del CONICET",
-            "date": "2023-09-25T03:00:00.000Z",
+            "date": 1695600000000,
             "source": "https://agenciapresentes.org/2023/09/28/facundo-saxe-tengo-que-salir-a-explicar-que-no-estoy-trabajando-el-ano-de-batman/",
             "coords": {
                 "latitude": -34.92064199861639,
@@ -4366,7 +4366,7 @@
         {
             "id": 187,
             "title": "Pintada en reivindicación a Videla en la Facultad de las Artes de la UNT",
-            "date": "2023-09-20T03:00:00.000Z",
+            "date": 1695168000000,
             "source": "https://www.eltucumano.com/noticia/actualidad/294558/conmocion-y-bronca-aparecieron-pintadas-reivindicando-la-dictadura-en-la-facultad-de-artes",
             "coords": {
                 "latitude": -26.839608911346684,
@@ -4389,7 +4389,7 @@
         {
             "id": 188,
             "title": "Ataque al frente del bachillerato popular Marielle Franco con pintadas pro dictadura",
-            "date": "2023-10-02T03:00:00.000Z",
+            "date": 1696204800000,
             "source": "https://www.perfil.com/noticias/sociedad/volve-videla-vandalizaron-un-bachillerato-con-frases-que-reivindican-la-dictadura.phtml",
             "coords": {
                 "latitude": -34.658536716826426,
@@ -4414,7 +4414,7 @@
         {
             "id": 189,
             "title": "Agresiones a stand LGBTINBQ+ en la Feria del Libro de Mendoza",
-            "date": "2023-10-07T03:00:00.000Z",
+            "date": 1696636800000,
             "source": "https://www.infobae.com/cultura/2023/10/09/agreden-un-stand-con-publicaciones-de-la-comunidad-lgbtiq-en-la-feria-del-libro-de-mendoza/",
             "coords": {
                 "latitude": -32.89789880405175,
@@ -4437,7 +4437,7 @@
         {
             "id": 190,
             "title": "Ataque a local partidario y a militantes de UxP en la noche del debate presidencial",
-            "date": "2023-10-08T03:00:00.000Z",
+            "date": 1696723200000,
             "source": "https://www.0221.com.ar/la-plata/asi-atacaron-un-local-julio-alak-el-centro-la-plata-el-debate-presidencial-n81586",
             "coords": {
                 "latitude": -34.91675457865518,
@@ -4460,7 +4460,7 @@
         {
             "id": 191,
             "title": "Ataque racista al Tercer Malón de la Paz en la noche del debate presidencial",
-            "date": "2023-10-08T03:00:00.000Z",
+            "date": 1696723200000,
             "source": "https://www.diarioregistrado.com/politica/la-peor-cara-de-la-derecha--agresiones-racistas-en-el-malon-por-la-paz_a6525534ad93b80969583726c",
             "coords": {
                 "latitude": -34.58333762791244,
@@ -4483,7 +4483,7 @@
         {
             "id": 192,
             "title": "Ataque a locales partidarios del PJ y PC con pintadas insultantes y esvásticas ",
-            "date": "2023-10-13T03:00:00.000Z",
+            "date": 1697155200000,
             "source": "https://dib.com.ar/2023/10/vandalizan-locales-del-pj-y-el-pc-en-bahia-blanca-pintadas-antisemitas-y-milei-2023/",
             "coords": {
                 "latitude": -38.71291516842763,
@@ -4508,7 +4508,7 @@
         {
             "id": 193,
             "title": "Amenazas a diputada del MST-FIT",
-            "date": "2023-10-10T03:00:00.000Z",
+            "date": 1696896000000,
             "source": "https://twitter.com/vaninabiasi/status/1711818314488389835?s=46&t=BVfqFMTGqxZd2uNo11L9RQ",
             "coords": {
                 "latitude": -34.609756073648335,
@@ -4531,7 +4531,7 @@
         {
             "id": 194,
             "title": "Ataque Anti ESI a homenaje a desaparecido en Escuela Técnica nro. 28",
-            "date": "2023-09-28T03:00:00.000Z",
+            "date": 1695859200000,
             "source": "https://twitter.com/AdemysPrensa/status/1707399212562882763",
             "coords": {
                 "latitude": -34.55771643997383,
@@ -4556,7 +4556,7 @@
         {
             "id": 195,
             "title": "Amenazas a referente del PO-FIT",
-            "date": "2023-10-10T03:00:00.000Z",
+            "date": 1696896000000,
             "source": "https://twitter.com/solanopo/status/1711842219336851926?s=46&t=BVfqFMTGqxZd2uNo11L9RQ",
             "coords": {
                 "latitude": -34.609934645017184,
@@ -4579,7 +4579,7 @@
         {
             "id": 196,
             "title": "Ataque a docente en supermercado",
-            "date": "2023-10-13T03:00:00.000Z",
+            "date": 1697155200000,
             "source": "https://twitter.com/RevistaPPV/status/1712912433591759145?s=19",
             "coords": {
                 "latitude": -34.64415555939016,
@@ -4602,7 +4602,7 @@
         {
             "id": 197,
             "title": "Ataque a local del Partido Comunista",
-            "date": "2023-10-19T03:00:00.000Z",
+            "date": 1697673600000,
             "source": "https://andigital.com.ar/politica/item/119027-vandalizaron-un-local-del-partido-comunista-en-la-plata-y-repudian-el-accionar-de-sectores-de-ultraderecha",
             "coords": {
                 "latitude": -34.92327471012541,
@@ -4625,7 +4625,7 @@
         {
             "id": 198,
             "title": "Ataque con piedras a Casa de la Cultura Néstor Kirchner y Radio Enlace ",
-            "date": "2023-10-23T03:00:00.000Z",
+            "date": 1698019200000,
             "source": "https://redaccionrosario.com/2023/10/24/atentaron-contra-la-casa-de-la-cultura-y-radio-enlace-de-pueblo-esther/",
             "coords": {
                 "latitude": -33.073559866988035,
@@ -4648,7 +4648,7 @@
         {
             "id": 199,
             "title": "Ataque a Centro Cultural de Pueblo Esther",
-            "date": "2021-01-01T03:00:00.000Z",
+            "date": 1609459200000,
             "source": "https://redaccionrosario.com/2021/02/02/un-centro-cultural-de-pueblo-esther-fue-victima-de-pintadas-intimidatorias/",
             "coords": {
                 "latitude": -33.05723208222616,
@@ -4671,7 +4671,7 @@
         {
             "id": 200,
             "title": "Pintadas anti ESI Secundaria 70",
-            "date": "2023-01-01T03:00:00.000Z",
+            "date": 1672531200000,
             "source": "https://capital24.com.ar/contenido/2295/nuevas-pintadas-contra-la-educacion-sexual-integral-en-la-plata?fbclid=IwAR2qENUdHsD-3IsGLzx7ZwMibPtwl5VkN9E9vA3NIQ5elsiQhHddxzT7ThA",
             "coords": {
                 "latitude": -34.92144151391553,
@@ -4694,7 +4694,7 @@
         {
             "id": 201,
             "title": "Pintadas anti ESI sobre mural de T.R.A.M.O.",
-            "date": "2023-10-30T03:00:00.000Z",
+            "date": 1698624000000,
             "source": "https://www.facebook.com/TrabajadorxsMuralistasOrganizadxs",
             "coords": {
                 "latitude": -34.921424218259304,
@@ -4717,7 +4717,7 @@
         {
             "id": 202,
             "title": "Detención por publicación de amenazas antisemitas en 4chan",
-            "date": "2023-02-10T03:00:00.000Z",
+            "date": 1675987200000,
             "source": "https://www.infobae.com/sociedad/policiales/2023/10/28/detuvieron-a-un-hombre-en-villa-urquiza-por-publicar-amenazas-antisemitas-llamo-a-matar-ninos-en-escuelas-judias/?utm_medium=Social&utm_source=Twitter#Echobox=1698495379",
             "coords": {
                 "latitude": -34.58763145503111,
@@ -4740,7 +4740,7 @@
         {
             "id": 203,
             "title": "Detención por publicación de amenazas antisemitas en X",
-            "date": "2023-10-20T03:00:00.000Z",
+            "date": 1697760000000,
             "source": "https://www.infobae.com/sociedad/policiales/2023/10/20/detuvieron-a-un-hombre-en-san-isidro-por-publicar-amenazas-antisemitas-le-incautaron-una-coleccion-de-cuchillos/",
             "coords": {
                 "latitude": -34.5874989657765,
@@ -4763,7 +4763,7 @@
         {
             "id": 204,
             "title": "Imputación de dos personas por conformar corriente neonazi",
-            "date": "2023-10-26T03:00:00.000Z",
+            "date": 1698278400000,
             "source": "https://www.lacapitalmdp.com/descubren-nueva-corriente-neonazis-en-mar-del-plata-e-imputan-a-dos-personas/",
             "coords": {
                 "latitude": -38.00786182957971,
@@ -4790,7 +4790,7 @@
         {
             "id": 205,
             "title": "Ataque a local de Unión x la Patria",
-            "date": "2023-10-31T03:00:00.000Z",
+            "date": 1698710400000,
             "source": "https://twitter.com/ColinirEma/status/1719348885187936482?t=JZ0BTLcrJOMeKuRsOPWC1g&s=08",
             "coords": {
                 "latitude": -43.25593550910524,
@@ -4813,7 +4813,7 @@
         {
             "id": 206,
             "title": "Ataque a mural en defensa de la ESI y el aborto legal",
-            "date": "2023-10-30T03:00:00.000Z",
+            "date": 1698624000000,
             "source": "https://www.instagram.com/p/CzCc9S1vJd9/?igshid=MTc4MmM1YmI2Ng==",
             "coords": {
                 "latitude": -34.92139422155868,
@@ -4836,7 +4836,7 @@
         {
             "id": 207,
             "title": "Ataque antisemita en edificio residencial",
-            "date": "2023-11-01T03:00:00.000Z",
+            "date": 1698796800000,
             "source": "https://www.instagram.com/p/CzHiGhnpziS/?igshid=MTc4MmM1YmI2Ng%3D%3D",
             "coords": {
                 "latitude": -34.61474569876421,
@@ -4859,7 +4859,7 @@
         {
             "id": 208,
             "title": "Ataque libertario a taller de capacitación de género",
-            "date": "2023-11-07T03:00:00.000Z",
+            "date": 1699315200000,
             "source": "https://www.pagina12.com.ar/614553-ataque-libertario-a-un-taller-de-capacitacion-de-genero-del-",
             "coords": {
                 "latitude": -34.57764598499016,
@@ -4882,7 +4882,7 @@
         {
             "id": 209,
             "title": "Ataque por colgar un cartel en apoyo a Palestina",
-            "date": "2023-11-09T03:00:00.000Z",
+            "date": 1699488000000,
             "source": "https://www.anred.org/2023/11/10/grave-imputan-penalmente-y-escrachan-a-vecino-por-colgar-un-cartel-en-apoyo-a-palestina/",
             "coords": {
                 "latitude": -34.64057569396435,
@@ -4907,7 +4907,7 @@
         {
             "id": 210,
             "title": "Amenazas de muerte a presidente de la Juventud Radical",
-            "date": "2023-11-14T03:00:00.000Z",
+            "date": 1699920000000,
             "source": "https://www.pagina12.com.ar/616840-el-falcon-pasa-la-semana-que-viene-las-violentas-amenazas-al",
             "coords": {
                 "latitude": -34.581746681050646,
@@ -4932,7 +4932,7 @@
         {
             "id": 211,
             "title": "Amenaza a la presidenta del Centro de Estudiantes de la Escuela Normal Tomás Godoy Cruz",
-            "date": "2023-11-14T03:00:00.000Z",
+            "date": 1699920000000,
             "source": "https://pcr.org.ar/nota/mendoza-repudiamos-las-amenazas-y-persecucion-a-nuestra-companera/",
             "coords": {
                 "latitude": -32.891200292441496,
@@ -4957,7 +4957,7 @@
         {
             "id": 212,
             "title": "Ataque en Facultad de Ciencias Políticas y Sociales de la UNCUYO",
-            "date": "2023-11-15T03:00:00.000Z",
+            "date": 1700006400000,
             "source": "https://www.lanacion.com.ar/sociedad/amedrentamiento-y-amenazas-preocupacion-en-mendoza-por-violentas-pintadas-en-la-universidad-nacional-nid16112023/",
             "coords": {
                 "latitude": -32.879242500778574,
@@ -4980,7 +4980,7 @@
         {
             "id": 213,
             "title": "Ataque a mural de espacio político y cultural \"Joaquín Areta\"",
-            "date": "2023-11-15T03:00:00.000Z",
+            "date": 1700006400000,
             "source": "https://www.instagram.com/p/CzqvUIVOV34/?igshid=MzRlODBiNWFlZA%3D%3D&img_index=3",
             "coords": {
                 "latitude": -34.61499063645491,
@@ -5005,7 +5005,7 @@
         {
             "id": 214,
             "title": "Ataque a barbería LGTBQ+",
-            "date": "2023-10-23T03:00:00.000Z",
+            "date": 1698019200000,
             "source": "Fuente directa verificada.",
             "coords": {
                 "latitude": -31.42206347304105,
@@ -5028,7 +5028,7 @@
         {
             "id": 215,
             "title": "Ataque a monumento de Eva Perón",
-            "date": "2023-11-16T03:00:00.000Z",
+            "date": 1700092800000,
             "source": "https://www.inforegion.com.ar/2023/11/16/avellaneda-vandalizaron-el-monumento-a-eva-peron/",
             "coords": {
                 "latitude": -34.672872542986056,
@@ -5051,7 +5051,7 @@
         {
             "id": 216,
             "title": "Ataque y amenaza de muerte a referente del Frente Patria Grande ",
-            "date": "2023-11-14T03:00:00.000Z",
+            "date": 1699920000000,
             "source": "Fuente directa verificada.",
             "coords": {
                 "latitude": -34.5129337946181,
@@ -5074,7 +5074,7 @@
         {
             "id": 217,
             "title": "Doxeo y amenazas a Claudio Tolcachir ",
-            "date": "2023-11-15T03:00:00.000Z",
+            "date": 1700006400000,
             "source": "https://x.com/tolcachirc/status/1724914912370053448?s=20",
             "coords": {
                 "latitude": -34.603689453199806,
@@ -5097,7 +5097,7 @@
         {
             "id": 218,
             "title": "Ataque a murales en Universidad Nacional de Córdoba ",
-            "date": "2023-11-12T03:00:00.000Z",
+            "date": 1699747200000,
             "source": "https://www.laizquierdadiario.com/Fueron-30-000-Repudian-la-vandalizacion-del-mural-por-lxs-27-procesadxs-en-la-UNC",
             "coords": {
                 "latitude": -31.43463299810783,
@@ -5120,7 +5120,7 @@
         {
             "id": 219,
             "title": "Amenaza en Teatro Argentino de La Plata",
-            "date": "2023-11-16T03:00:00.000Z",
+            "date": 1700092800000,
             "source": "Fuente directa verificada",
             "coords": {
                 "latitude": -34.91773580441992,
@@ -5143,7 +5143,7 @@
         {
             "id": 220,
             "title": "Ataque coordinado a locales de UxP: sede del PJ",
-            "date": "2023-11-15T03:00:00.000Z",
+            "date": 1700006400000,
             "source": "https://www.pagina12.com.ar/617644-vandalizaron-sedes-de-uxp-en-la-ciudad-de-salta-y-en-oran",
             "coords": {
                 "latitude": -24.778438102929943,
@@ -5166,7 +5166,7 @@
         {
             "id": 221,
             "title": "Ataque coordinado a locales de UxP: Unidad Popular ",
-            "date": "2023-11-15T03:00:00.000Z",
+            "date": 1700006400000,
             "source": "https://www.pagina12.com.ar/617644-vandalizaron-sedes-de-uxp-en-la-ciudad-de-salta-y-en-oran",
             "coords": {
                 "latitude": -24.801638250251575,
@@ -5189,7 +5189,7 @@
         {
             "id": 222,
             "title": "Ataque coordinado a locales de UxP: El Aguante ",
-            "date": "2023-11-15T03:00:00.000Z",
+            "date": 1700006400000,
             "source": "https://www.pagina12.com.ar/617644-vandalizaron-sedes-de-uxp-en-la-ciudad-de-salta-y-en-oran",
             "coords": {
                 "latitude": -24.79639167563723,
@@ -5212,7 +5212,7 @@
         {
             "id": 223,
             "title": "Ataque coordinado a locales de UxP",
-            "date": "2023-11-15T03:00:00.000Z",
+            "date": 1700006400000,
             "source": "https://www.pagina12.com.ar/617644-vandalizaron-sedes-de-uxp-en-la-ciudad-de-salta-y-en-oran",
             "coords": {
                 "latitude": -23.128807302157952,
@@ -5235,7 +5235,7 @@
         {
             "id": 224,
             "title": "Amenaza en domicilio a integrante de Hermanxs de Detenidxs Desaparecidxs y  Asesinadxs por el terrorismo de Estado",
-            "date": "2023-11-17T03:00:00.000Z",
+            "date": 1700179200000,
             "source": "https://www.politicargentina.com/notas/202311/54761-amenazaron-a-una-militante-de-ddhh-te-va-a-pasar-lo-mismo-que-esos-que-desaparecimos.html",
             "coords": {
                 "latitude": -34.60158383495484,
@@ -5260,7 +5260,7 @@
         {
             "id": 225,
             "title": "Amenaza en domicilio a integrante de Hermanxs de Detenidxs Desaparecidxs y  Asesinadxs por el terrorismo de Estado",
-            "date": "2023-10-29T03:00:00.000Z",
+            "date": 1698537600000,
             "source": "https://www.politicargentina.com/notas/202311/54761-amenazaron-a-una-militante-de-ddhh-te-va-a-pasar-lo-mismo-que-esos-que-desaparecimos.html",
             "coords": {
                 "latitude": -34.60158383495484,
@@ -5285,7 +5285,7 @@
         {
             "id": 226,
             "title": "Amedrentamiento en Centro Cultural Marcela Maidana de Merlo",
-            "date": "2023-11-21T03:00:00.000Z",
+            "date": 1700524800000,
             "source": "https://www.instagram.com/p/Cz9oIQ5PcyI/?igshid=MTc4MmM1YmI2Ng%3D%3D&img_index=1",
             "coords": {
                 "latitude": -34.67354820472095,
@@ -5308,7 +5308,7 @@
         {
             "id": 227,
             "title": "Ataque al dirigente social y político Rafael Klejzer",
-            "date": "2023-11-20T03:00:00.000Z",
+            "date": 1700438400000,
             "source": "https://elargentinodiario.com.ar/politica/21/11/2023/solidaridad-de-la-cta-con-el-dirigente-rafael-klejzer-tras-el-ataque-a-su-casa/",
             "coords": {
                 "latitude": -34.6294568706703,
@@ -5331,7 +5331,7 @@
         {
             "id": 228,
             "title": "Ataque a la imprenta recuperada Chilavert",
-            "date": "2023-11-20T03:00:00.000Z",
+            "date": 1700438400000,
             "source": "https://www.pagina12.com.ar/672109-denuncian-pintadas-amenazantes-en-una-imprenta-recuperada-en",
             "coords": {
                 "latitude": -34.64191184860275,
@@ -5354,7 +5354,7 @@
         {
             "id": 229,
             "title": "Ataque a espacio cultural de la diversidad \"La Zorrería\"",
-            "date": "2023-11-21T03:00:00.000Z",
+            "date": 1700524800000,
             "source": "https://www.instagram.com/p/Cz7ks3BuCS0/?igshid=YTI4YzE2YTYwMA%3D%3D&img_index=1",
             "coords": {
                 "latitude": -34.80261277319323,
@@ -5379,7 +5379,7 @@
         {
             "id": 230,
             "title": "Ataque a local de organización política \"Descamisadxs\"",
-            "date": "2023-11-22T03:00:00.000Z",
+            "date": 1700611200000,
             "source": "https://www.infobae.com/sociedad/policiales/2023/11/22/militantes-peronistas-en-cordoba-denunciaron-amenazas-les-dejaron-una-bala-en-la-puerta-del-local/",
             "coords": {
                 "latitude": -31.40570201505006,
@@ -5402,7 +5402,7 @@
         {
             "id": 231,
             "title": "Amenazas a militantes de DDHH en el Jardin de Infantes N° 916  ",
-            "date": "2023-11-19T03:00:00.000Z",
+            "date": 1700352000000,
             "source": "https://www.pagina12.com.ar/625707-panuelos-y-memoria-para-repudiar-a-victoria-villarruel",
             "coords": {
                 "latitude": -34.61798445627391,
@@ -5425,7 +5425,7 @@
         {
             "id": 232,
             "title": "Amenazas y ataque en local del PJ",
-            "date": "2023-11-19T03:00:00.000Z",
+            "date": 1700352000000,
             "source": "Fuente directa verificada",
             "coords": {
                 "latitude": -34.66291330737403,
@@ -5448,7 +5448,7 @@
         {
             "id": 233,
             "title": "Intento de agresion física y amenazas a integrante de Ciudad Futura",
-            "date": "2023-10-30T03:00:00.000Z",
+            "date": 1698624000000,
             "source": "Fuente directa verificada",
             "coords": {
                 "latitude": -33.74528474069538,
@@ -5471,7 +5471,7 @@
         {
             "id": 234,
             "title": "Ataque en Marcha del Orgullo de San Martín",
-            "date": "2023-11-11T03:00:00.000Z",
+            "date": 1699660800000,
             "source": "Fuente directa verificada",
             "coords": {
                 "latitude": -34.57762296200987,
@@ -5494,7 +5494,7 @@
         {
             "id": 235,
             "title": "Amenaza en patota a activista por los DDHH y familiar de militante asesinada con simulacro de disparos",
-            "date": "2023-11-20T03:00:00.000Z",
+            "date": 1700438400000,
             "source": "Fuente directa verificada",
             "coords": {
                 "latitude": -34.701373018482045,
@@ -5517,7 +5517,7 @@
         {
             "id": 236,
             "title": "Ataque a sede de la Dirección de Género, Mujeres y Diversidades ",
-            "date": "2023-11-20T03:00:00.000Z",
+            "date": 1700438400000,
             "source": "https://www.pagina12.com.ar/688767-amenaza-de-bomba-en-el-ministerio-de-mujeres-generos-y-diver",
             "coords": {
                 "latitude": -35.386447658913234,
@@ -5540,7 +5540,7 @@
         {
             "id": 237,
             "title": "Ataque a sitio de la Memoria Punta Indio",
-            "date": "2023-11-27T03:00:00.000Z",
+            "date": 1701043200000,
             "source": "https://twitter.com/_perycia/status/1729232214888423817",
             "coords": {
                 "latitude": -35.351995524233054,
@@ -5563,7 +5563,7 @@
         {
             "id": 238,
             "title": "Amenazas a Concejala de Barranqueras",
-            "date": "2023-11-20T03:00:00.000Z",
+            "date": 1700438400000,
             "source": "https://web.archive.org/web/20231204042115/https://www.telam.com.ar/notas/202311/647325-repudio-jovenes-lla-increparon-concejal-chaquenia.html",
             "coords": {
                 "latitude": -27.482278693917653,
@@ -5586,7 +5586,7 @@
         {
             "id": 239,
             "title": "Ataque físico a docente de la comunidad LGTBINB+ en colectivo Linea 561 ",
-            "date": "2023-11-23T03:00:00.000Z",
+            "date": 1700697600000,
             "source": "https://www.pagina12.com.ar/688804-ataque-brutal-a-una-maestra-lesbiana",
             "coords": {
                 "latitude": -34.77519243406422,
@@ -5609,7 +5609,7 @@
         {
             "id": 240,
             "title": "Amenazas en Hospital Durand",
-            "date": "2023-11-26T03:00:00.000Z",
+            "date": 1700956800000,
             "source": "https://www.tiempoar.com.ar/politica/amenazas-hospital-durand/",
             "coords": {
                 "latitude": -34.60975179821415,
@@ -5634,7 +5634,7 @@
         {
             "id": 241,
             "title": "Tras victoria de J. Milei Comisario de Rio Negro publica video de Falcon Verde.",
-            "date": "2023-11-20T03:00:00.000Z",
+            "date": 1700438400000,
             "source": "https://www.perfil.com/noticias/sociedad/un-comisario-de-rio-negro-publico-un-video-con-un-falcon-verde-y-fue-suspendido.phtml",
             "coords": {
                 "latitude": -40.73334168285129,
@@ -5657,7 +5657,7 @@
         {
             "id": 242,
             "title": "Ataque físico a integrante de la comunidad LGTBIQ+ luego de la marcha del Orgullo",
-            "date": "2023-11-25T03:00:00.000Z",
+            "date": 1700870400000,
             "source": "https://www.pagina12.com.ar/689832-una-persona-fue-gravemente-lesionada-al-volver-de-la-marcha-",
             "coords": {
                 "latitude": -29.413393410630967,
@@ -5680,7 +5680,7 @@
         {
             "id": 243,
             "title": "Ataque con balines de plomo a manifestantes en Marcha contra las violencias 25N",
-            "date": "2023-11-24T03:00:00.000Z",
+            "date": 1700784000000,
             "source": "https://web.archive.org/web/20240302214118/https://www.telam.com.ar/notas/202312/648484-represion-jujuy.html",
             "coords": {
                 "latitude": -24.185598975447654,
@@ -5703,7 +5703,7 @@
         {
             "id": 244,
             "title": "Hostigamiento a trabajadoras del Ministerio de Mujeres, Género y Diversidad",
-            "date": "2023-11-22T03:00:00.000Z",
+            "date": 1700611200000,
             "source": "https://www.pagina12.com.ar/688767-amenaza-de-bomba-en-el-ministerio-de-mujeres-generos-y-diver",
             "coords": {
                 "latitude": -34.610575092828455,
@@ -5726,7 +5726,7 @@
         {
             "id": 245,
             "title": "Atentado contra Centro Cultural A la Vuelta de la Esquina",
-            "date": "2023-12-02T03:00:00.000Z",
+            "date": 1701475200000,
             "source": "https://www.instagram.com/reel/C0VN5-sL5OQ/?igshid=MzRlODBiNWFlZA%3D%3D",
             "coords": {
                 "latitude": -37.99718072780228,
@@ -5749,7 +5749,7 @@
         {
             "id": 246,
             "title": "Ataque a integrantes del Centro Cultural de la diversidad \"La Zorrería\"",
-            "date": "2023-11-19T03:00:00.000Z",
+            "date": 1700352000000,
             "source": "https://www.anred.org/2023/11/25/ataques-homo-odiantes-en-el-conurbano/",
             "coords": {
                 "latitude": -34.80261277319323,
@@ -5772,7 +5772,7 @@
         {
             "id": 247,
             "title": "Ataque a Centro Cultural de la diversidad \"La Zorrería\"",
-            "date": "2023-09-21T03:00:00.000Z",
+            "date": 1695254400000,
             "source": "https://www.anred.org/2023/11/25/ataques-homo-odiantes-en-el-conurbano/",
             "coords": {
                 "latitude": -34.80261277319323,
@@ -5795,7 +5795,7 @@
         {
             "id": 248,
             "title": " Ataque contra Radio Nacional Córdoba",
-            "date": "2023-12-08T03:00:00.000Z",
+            "date": 1701993600000,
             "source": "https://www.enorsai.com.ar/politica/40442-vandalismo-libertario-contra-radio-nacional--un-ataque-a-la-libertad-de-expresion.html",
             "coords": {
                 "latitude": -31.41171321939054,
@@ -5820,7 +5820,7 @@
         {
             "id": 249,
             "title": "Robo de busto de Eva Perón",
-            "date": "2023-12-05T03:00:00.000Z",
+            "date": 1701734400000,
             "source": "https://www.lacapitalmdp.com/se-robaron-el-busto-de-eva-peron-de-la-plaza-rocha/",
             "coords": {
                 "latitude": -37.99286488789208,
@@ -5843,7 +5843,7 @@
         {
             "id": 250,
             "title": "Ataque a boliche LGBTIQ+ \"Club Mercury\"",
-            "date": "2023-11-03T03:00:00.000Z",
+            "date": 1698969600000,
             "source": "https://www.redboing.com/ahora-mercury-vandalizaron-otro-local-de-la-comunidad-lgbt-y-pintaron-esvasticas/",
             "coords": {
                 "latitude": -32.94179989920632,
@@ -5866,7 +5866,7 @@
         {
             "id": 251,
             "title": "Hostigamiento y amenazas a periodista feminista",
-            "date": "2023-11-23T03:00:00.000Z",
+            "date": 1700697600000,
             "source": "https://www.pagina12.com.ar/687987-escalada-de-violencia-machista-ante-el-nuevo-escenario-polit",
             "coords": {
                 "latitude": -29.414971965659863,
@@ -5891,7 +5891,7 @@
         {
             "id": 252,
             "title": "Ataque y amenazas en domicilio de referente de Hijos",
-            "date": "2023-12-09T03:00:00.000Z",
+            "date": 1702080000000,
             "source": "https://www.lavoz.com.ar/politica/energico-repudio-por-las-amenazas-a-un-integrante-de-hijos-cordoba/",
             "coords": {
                 "latitude": -31.419449493196748,
@@ -5914,7 +5914,7 @@
         {
             "id": 253,
             "title": "Hostigamiento a integrantes de radio La Voz Indígena y ARETEDE",
-            "date": "2023-12-17T03:00:00.000Z",
+            "date": 1702771200000,
             "source": "https://www.pagina12.com.ar/695968-denuncian-hostigamiento-a-integrantes-de-la-radio-la-voz-ind",
             "coords": {
                 "latitude": -22.514478989738333,
@@ -5941,7 +5941,7 @@
         {
             "id": 254,
             "title": "Amenazas a militantes del Movimiento Universitario de Izquierda",
-            "date": "2023-09-12T03:00:00.000Z",
+            "date": 1694476800000,
             "source": "https://www.instagram.com/p/CxJ1QGAuDvg/?igsh=M3VxZHBucXhsdHBp",
             "coords": {
                 "latitude": -34.57796466431125,
@@ -5966,7 +5966,7 @@
         {
             "id": 255,
             "title": "Incendio intencional a local de Nuevo Encuentro",
-            "date": "2023-12-17T03:00:00.000Z",
+            "date": 1702771200000,
             "source": "https://www.lanacion.com.ar/politica/incendiaron-un-local-partidario-del-espacio-nuevo-encuentro-en-villa-gesell-hay-un-detenido-nid18122023/",
             "coords": {
                 "latitude": -37.25993167007707,
@@ -5989,7 +5989,7 @@
         {
             "id": 256,
             "title": "Ataque a estatua de Néstor Kirchner",
-            "date": "2023-12-13T03:00:00.000Z",
+            "date": 1702425600000,
             "source": "https://www.eldiariodecarlospaz.com.ar/sociedad/2023/12/13/estatua-de-nestor-kirchner-mutilada-desata-controversia-en-anisacate-190197.html",
             "coords": {
                 "latitude": -31.72229369812882,
@@ -6012,7 +6012,7 @@
         {
             "id": 257,
             "title": "Ataque a cartel señalizador de la desaparición de Santiago Maldonado",
-            "date": "2023-12-14T03:00:00.000Z",
+            "date": 1702512000000,
             "source": "https://m.facebook.com/story.php/?id=100094137174271&story_fbid=216432808171290",
             "coords": {
                 "latitude": -42.34820916241368,
@@ -6035,7 +6035,7 @@
         {
             "id": 258,
             "title": "Ataque a candidatas de Ciudad Futura",
-            "date": "2023-09-11T03:00:00.000Z",
+            "date": 1694390400000,
             "source": "https://extremodiario.com.ar/noticias/la-posta-hoy/97279-pueblo-esther-se-burlo-de-la-derrota-de-las-candidatas-de-ciudad-futura-y-su-publicacion-fue-duramente-cuestionada.html",
             "coords": {
                 "latitude": -33.07127101702837,
@@ -6058,7 +6058,7 @@
         {
             "id": 259,
             "title": "Nueva pintada en el frente de imprenta recuperada Chilavert",
-            "date": "2023-12-24T03:00:00.000Z",
+            "date": 1703376000000,
             "source": "https://ansol.com.ar/ataques-cooperativa-imprenta-chilavert",
             "coords": {
                 "latitude": -34.641311675552366,
@@ -6081,7 +6081,7 @@
         {
             "id": 260,
             "title": "Amenaza e insultos a periodista de C5N",
-            "date": "2022-08-19T03:00:00.000Z",
+            "date": 1660867200000,
             "source": "https://www.pagina12.com.ar/500813-nuevo-pedido-de-indagatoria-del-fiscal-para-morel-y-sosa",
             "coords": {
                 "latitude": -34.58125048414633,
@@ -6106,7 +6106,7 @@
         {
             "id": 261,
             "title": "Ataques a espacio lésbico \"La Vulvería\"",
-            "date": "2020-09-28T03:00:00.000Z",
+            "date": 1601251200000,
             "source": "https://www.lacapital.com.ar/la-ciudad/repudian-un-nuevo-ataque-con-escritos-odio-la-biblioteca-popular-lesbico-feminista-n2613432.html",
             "coords": {
                 "latitude": -32.940919714654605,
@@ -6129,7 +6129,7 @@
         {
             "id": 262,
             "title": "Tercer ataque a local de Movemos",
-            "date": "2021-12-08T03:00:00.000Z",
+            "date": 1638921600000,
             "source": "https://aylibertad.com.ar/blog/2021/12/08/ataques-neofascistas-en-almagro/",
             "coords": {
                 "latitude": -34.60269412901256,
@@ -6152,7 +6152,7 @@
         {
             "id": 263,
             "title": "Ataque a una manifestante y su hija durante cacerolazo",
-            "date": "2023-12-20T03:00:00.000Z",
+            "date": 1703030400000,
             "source": "Fuente directa verificada",
             "coords": {
                 "latitude": -34.580657739490405,
@@ -6175,7 +6175,7 @@
         {
             "id": 264,
             "title": "Ataque por odio de género en La Plata",
-            "date": "2023-12-29T03:00:00.000Z",
+            "date": 1703808000000,
             "source": "Fuente directa verificada",
             "coords": {
                 "latitude": -34.915089179008994,
@@ -6199,7 +6199,7 @@
         {
             "id": 265,
             "title": "Ataque a mural en homenaje a Hebe de Bonafini",
-            "date": "2024-01-04T03:00:00.000Z",
+            "date": 1704326400000,
             "source": "Fuente directa verificada",
             "coords": {
                 "latitude": -34.617159654965974,
@@ -6224,7 +6224,7 @@
         {
             "id": 266,
             "title": "Ataque a baldosas en homenaje a militante desaparecido",
-            "date": "2024-01-08T03:00:00.000Z",
+            "date": 1704672000000,
             "source": "https://www.instagram.com/p/C11-DKbMCK1/?igsh=MWowc2JwcXVwdTF6ZQ%3D%3D&img_index=1",
             "coords": {
                 "latitude": -34.91858980886112,
@@ -6247,7 +6247,7 @@
         {
             "id": 267,
             "title": "Ataque a notero de C5N",
-            "date": "2024-01-09T03:00:00.000Z",
+            "date": 1704758400000,
             "source": "https://www.eldestapeweb.com/sociedad/television/violencia-politica-repudiable-amenaza-de-militante-de-milei-a-notero-de-c5n-20241912330",
             "coords": {
                 "latitude": -34.608203201752204,
@@ -6270,7 +6270,7 @@
         {
             "id": 268,
             "title": "Ataque a manifestantes durante movilización del paro general en Santiago del Estero",
-            "date": "2024-01-24T03:00:00.000Z",
+            "date": 1706054400000,
             "source": "https://www.tiempoar.com.ar/ta_article/en-santiago-un-vecino-le-tiro-agua-hirviendo-a-los-manifestantes-desde-su-balcon/",
             "coords": {
                 "latitude": -27.781525977291217,
@@ -6293,7 +6293,7 @@
         {
             "id": 269,
             "title": "Amenaza y hostigamiento a militante del FOL",
-            "date": "2024-02-05T03:00:00.000Z",
+            "date": 1707091200000,
             "source": "Fuente directa verificada",
             "coords": {
                 "latitude": -34.6095845491767,
@@ -6316,7 +6316,7 @@
         {
             "id": 270,
             "title": "Amenazan a la médica Virginia Créimer",
-            "date": "2024-01-16T03:00:00.000Z",
+            "date": 1705363200000,
             "source": "https://www.laizquierdadiario.com/Denuncian-que-grupos-de-ultraderecha-amenazan-a-la-medica-Virginia-Creimer",
             "coords": {
                 "latitude": -34.60965545253294,
@@ -6339,7 +6339,7 @@
         {
             "id": 271,
             "title": "Ataque a escuela primaria \"Esteban Echeverria\"",
-            "date": "2024-02-27T03:00:00.000Z",
+            "date": 1708992000000,
             "source": "Fuente directa verificada",
             "coords": {
                 "latitude": -31.940794958975594,
@@ -6364,7 +6364,7 @@
         {
             "id": 272,
             "title": "Agresion y amenaza a Cecilia Panzetta Concejala de Agua de Oro y docente en IPETyM N° 61",
-            "date": "2024-02-19T03:00:00.000Z",
+            "date": 1708300800000,
             "source": "https://aguadeoronoticias.com.ar/2024/02/21/una-docente-y-concejala-de-agua-de-oro-fue-agredida-en-el-colectivo-por-un-libertario/",
             "coords": {
                 "latitude": -31.16057155091348,
@@ -6389,7 +6389,7 @@
         {
             "id": 273,
             "title": "Agresión a grupo de mujeres en San Martín de los Andes",
-            "date": "2024-03-08T03:00:00.000Z",
+            "date": 1709856000000,
             "source": "https://www.losandes.com.ar/sociedad/violencia-en-el-8m-un-hombre-agredio-a-un-grupo-de-mujeres-en-san-martin-de-los-andes-video/",
             "coords": {
                 "latitude": -40.15544988593838,
@@ -6414,7 +6414,7 @@
         {
             "id": 274,
             "title": "Atropello a transeúntes en la manifestación en defensa del Gaumont y el cine nacional",
-            "date": "2024-03-14T03:00:00.000Z",
+            "date": 1710374400000,
             "source": "https://www.anred.org/2024/03/15/sigue-el-ataque-a-la-cultura-la-policia-reprimio-en-el-gaumont/",
             "coords": {
                 "latitude": -34.60892230845455,
@@ -6437,7 +6437,7 @@
         {
             "id": 275,
             "title": "Escultura de pañuelo de las Madres y Abuelas vandalizado en El Bolsón",
-            "date": "2024-03-21T03:00:00.000Z",
+            "date": 1710979200000,
             "source": "https://www.instagram.com/p/C4zAPmqOI8C/?igsh=MWN6aWpmbjRtMm96cQ%3D%3D&img_index=2",
             "coords": {
                 "latitude": -41.96482019886447,
@@ -6460,7 +6460,7 @@
         {
             "id": 276,
             "title": "Ataque a militante de H.I.J.O.S. Sabrina Bölke",
-            "date": "2024-03-05T03:00:00.000Z",
+            "date": 1709596800000,
             "source": "https://www.pagina12.com.ar/723116-el-testimonio-de-la-militante-atacada-un-gobierno-elegido-po",
             "coords": {
                 "latitude": -34.60416502146539,
@@ -6487,7 +6487,7 @@
         {
             "id": 277,
             "title": "Ataque a busto en honor a Madres de Plaza de Mayo",
-            "date": "2024-03-23T03:00:00.000Z",
+            "date": 1711152000000,
             "source": "https://www.provincia23.com.ar/2024/03/25/vandalizaron-busto-y-placa-que-homenajea-a-las-madres-de-plaza-de-mayo/",
             "coords": {
                 "latitude": -53.78621159574263,
@@ -6510,7 +6510,7 @@
         {
             "id": 278,
             "title": "Amenazan a Teresa Laborde, hija de exdetenida y fundadora de ExDetenidos Desaparecidos",
-            "date": "2023-11-20T03:00:00.000Z",
+            "date": 1700438400000,
             "source": "https://www.pagina12.com.ar/723464-si-seguis-adoctrinando-sos-boleta",
             "coords": {
                 "latitude": -34.76156986694231,
@@ -6533,7 +6533,7 @@
         {
             "id": 279,
             "title": "Segunda amenaza a Teresa Laborde, hija de exdetenida y fundadora de ExDetenidos Desaparecidos",
-            "date": "2024-02-29T03:00:00.000Z",
+            "date": 1709164800000,
             "source": "https://www.pagina12.com.ar/723464-si-seguis-adoctrinando-sos-boleta",
             "coords": {
                 "latitude": -34.76029890126901,
@@ -6556,7 +6556,7 @@
         {
             "id": 280,
             "title": "Ataque negacionista en FyL UBA",
-            "date": "2023-11-20T03:00:00.000Z",
+            "date": 1700438400000,
             "source": "Fuente directa verificada",
             "coords": {
                 "latitude": -34.62809382007368,
@@ -7891,6 +7891,6 @@
         "idMap": {},
         "nameMap": {}
     },
-    "min": "2020-02-04T03:00:00.000Z",
-    "max": "2024-07-31T03:00:00.000Z"
+    "min": 1580774400000,
+    "max": 1722384000000
 }
