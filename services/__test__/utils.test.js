@@ -1,5 +1,5 @@
 import { expect, it, describe } from "vitest";
-import { newDate, chomp, mapChomp, Classifier } from "./utils.js";
+import { newDate, chomp, mapChomp, Classifier } from "../utils.cjs";
 
 describe("newDate", () => {
   it("parses DD/MM/YYYY dates correctly", () => {

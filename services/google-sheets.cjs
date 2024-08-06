@@ -1,6 +1,5 @@
-import constants from "./constants.js";
-
-import { newDate, mapChomp, Classifier } from "./utils.js";
+const fs = require("fs");
+const { newDate, mapChomp, Classifier } = require("./utils.cjs");
 
 const FIXUP = (t) =>
   t
@@ -20,8 +19,8 @@ const FIXUP = (t) =>
       "misoginia, antifeminismo y antiLGBTINBQ+",
     );
 
-export const fetchTSV = async (url = constants.tsvUrl) => {
-  const resp = await fetch(url);
+const fetchTSV = async () => {
+  const resp = fs.readFileSync("services/data/sheet.tsv", "utf8");
   const cases = [];
   const tipos = new Classifier(FIXUP);
   const componentes = new Classifier(FIXUP);
@@ -30,10 +29,7 @@ export const fetchTSV = async (url = constants.tsvUrl) => {
   let max = new Date();
   max.setDate(0);
   let i = 0;
-
-  const [desc, ...rows] = (await resp.text())
-    .split("\r\n")
-    .map((r) => r.split("\t"));
+  const [desc, ...rows] = resp.split("\r\n").map((r) => r.split("\t"));
   for (let r of rows) {
     i++;
     const f = {};
