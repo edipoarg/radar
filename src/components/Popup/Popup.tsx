@@ -15,7 +15,9 @@ const Popup = ({ title, date, source }: Props) => (
     </h3>
     <div className={styles.masDatosPopup}>
       {" "}
-      <p className={styles.displayFecha}>Fecha: {date.toLocaleDateString()}</p>
+      <p className={styles.displayFecha}>
+        Fecha: {date.toLocaleDateString("es-AR")}
+      </p>
       <a
         className={styles.displayLink}
         href={source}
