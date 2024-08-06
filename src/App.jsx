@@ -8,7 +8,6 @@ import styles from "./App.module.css";
 import Navlinks from "./routes/index";
 import { Link as ScrollLink } from "react-scroll";
 import Footer from "./components/Footer/Footer";
-
 import {
   ProvSource,
   DepsSource,
@@ -23,7 +22,6 @@ import Analisis from "./components/Analisis/Analisis";
 
 import mystyle from "./mystyle.json";
 import MonthsSlider from "./components/MonthsSlider/MonthsSlider";
-import MapGap from "./components/MapGap/MapGap";
 
 //estilos/////////////////////
 const mapSourceStyles = {
@@ -90,8 +88,6 @@ function App() {
   });
 
   const [filtrosVisible, setFiltrosVisible] = useState(true);
-
-  const [setSelectedFeatureId] = useState(null);
   const [selectedMarkerId, setSelectedMarkerId] = useState(null);
   const [popupInfo, setPopupInfo] = useState(null);
 
@@ -123,12 +119,6 @@ function App() {
     setFiltrosVisible(!filtrosVisible);
   };
 
-  const handleHover = (event) => {
-    setSelectedFeatureId(event.features?.[0]?.id || null);
-  };
-
-  const handleLeave = () => setSelectedFeatureId(null);
-
   const mapProps = {
     initialViewState: {
       longitude: -72.0, // Coordenada longitudinal de Argentina
@@ -139,7 +129,7 @@ function App() {
     },
     style: {
       width: "100vw",
-      height: " 90vh",
+      height: "90vh",
     },
     mapStyle: mystyle,
   };
@@ -165,7 +155,6 @@ function App() {
           setTipoFilters={setTipoFilters}
         />
       )}
-      <MapGap />
       <div className={styles.botonFiltrosMain}>
         {/* FIXME: Why is this not a button? */}
         {/* Render different button content based on the state */}
@@ -187,13 +176,9 @@ function App() {
           )}
         </a>
       </div>
-      <MapGap />
       <MapGL
-        className={styles.mapa}
         mapLib={maplibregl}
-        {...mapProps}
-        onHover={handleHover} // Asignar la función handleProvinciasHover al evento onHover
-        onLeave={handleLeave} // Asignar la función handleProvinciasLeave al evento onLeave
+        {...{ ...mapProps, style: { ...mapProps.style, marginTop: "8vh" } }}
       >
         {/* Capa interactiva para provincias */}
 
