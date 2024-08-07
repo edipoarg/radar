@@ -1,91 +1,225 @@
+// @ts-check
+const { parseTsvDateToUTCMillis, separateBySemicolon } = require("./utils.cjs");
 const fs = require("fs");
-const {
-  parseTsvDateToUTCMillis,
-  mapChomp,
-  Classifier,
-} = require("./utils.cjs");
+/** @import { Case, AttacksData, Clasificacion } from  "./json-shape"; */
 
-const FIXUP = (t) =>
-  t
-    .replace("murales o lugares", "murales y lugares") //
-    .replace("símbolos y lugares", "símbolos, murales y lugares") //
-    .replace("amrnazas", "amenazas") //
-    .replace(/identidades política$/, "identidades políticas") //
-    .replace("antiLGBTINB+", "antiLGBTINBQ+") //
-    .replace("supremaracismo", "supremacismo") //
-    .replace(/^racismo y xenofob.a$/, "racismo, xenofobia y nacionalismo") //
+/**
+ * @param {string} caseTypeDescription
+ * @returns {string}
+ */
+const correctTipoOrComponenteDescription = (caseTypeDescription) =>
+  caseTypeDescription
+    .replace("murales o lugares", "murales y lugares")
+    .replace("símbolos y lugares", "símbolos, murales y lugares")
+    .replace("amrnazas", "amenazas")
+    .replace(/identidades política$/, "identidades políticas")
+    .replace("antiLGBTINB+", "antiLGBTINBQ+")
+    .replace("supremaracismo", "supremacismo")
+    .replace(/^racismo y xenofob.a$/, "racismo, xenofobia y nacionalismo")
     .replace(
-      /^violencia física y atentados contra la vida$/, //
+      /^violencia física y atentados contra la vida$/,
       "atentados contra la integridad física y la vida",
-    ) //
+    )
     .replace(
       /^violencia por razones de misoginia, antifeminismo y antiLGBTINB+$/,
       "misoginia, antifeminismo y antiLGBTINBQ+",
     );
 
-const fetchTSV = async (fileLocation = "services/data/sheet.tsv") => {
+/**
+ * @param {string[]} tsvRow
+ * @returns {Case | null}
+ */
+const tsvRowToCase = (tsvRow) => {
+  const [
+    tsvId,
+    tsvTitle,
+    tsvDate,
+    tsvSource,
+    tsvCoords,
+    tsvProvince,
+    tsvTypeIds,
+    tsvTypeDescription,
+    tsvComponentIds,
+    tsvComponentDescriptions,
+  ] = tsvRow;
+
+  // Yo no estoy a la defensiva, vos estás a la defensiva
+  if (tsvId === undefined) return null;
+  if (tsvSource === undefined) return null;
+  if (tsvProvince === undefined) return null;
+  if (tsvTypeIds === undefined) return null;
+
+  if (tsvCoords === undefined) return null;
+  const [latitude, longitude] = tsvCoords
+    .split(",")
+    .map((coord) => parseFloat(coord));
+  if (latitude === undefined) return null;
+  if (longitude === undefined) return null;
+
+  if (tsvTitle === undefined) return null;
+  const date = parseTsvDateToUTCMillis(tsvDate);
+  if (date === null) return null;
+
+  if (tsvTypeDescription === undefined) return null;
+  if (tsvComponentIds === undefined) return null;
+  if (tsvComponentDescriptions == undefined) return null;
+
+  return {
+    id: parseInt(tsvId ?? ""),
+    title: tsvTitle,
+    date,
+    source: tsvSource,
+    coords: {
+      latitude,
+      longitude,
+    },
+    provincia: tsvProvince,
+    tipoId: separateBySemicolon(tsvTypeIds),
+    tipo: separateBySemicolon(tsvTypeDescription).map(
+      correctTipoOrComponenteDescription,
+    ),
+    componenteId: separateBySemicolon(tsvComponentIds),
+    componente: separateBySemicolon(tsvComponentDescriptions).map(
+      correctTipoOrComponenteDescription,
+    ),
+  };
+};
+
+/** @type {(cases: Case[]) => string[]} */
+const getAllIdsForTipos = (cases) => {
+  /** @type {string[]} */
+  let tiposIds = [];
+  cases.forEach((eachCase) => {
+    const newIds = eachCase.tipoId.filter((tipo) => !tiposIds.includes(tipo));
+    tiposIds = [...tiposIds, ...newIds];
+  });
+  return tiposIds;
+};
+
+/** @type {(cases: Case[]) => string[]} */
+const getAllNamesForTipos = (cases) => {
+  /** @type {string[]} */
+  let tiposNames = [];
+  cases.forEach((eachCase) => {
+    const newNames = eachCase.tipo.filter((tipo) => !tiposNames.includes(tipo));
+    tiposNames = [...tiposNames, ...newNames];
+  });
+  return tiposNames;
+};
+
+/** @type {(cases: Case[]) => Clasificacion} */
+const getTiposClassification = (cases) => {
+  const tiposIds = getAllIdsForTipos(cases);
+  const tiposNames = getAllNamesForTipos(cases);
+
+  /** @type {Record<string, number[]>} */
+  const caseIdsByTipoIds = {};
+  tiposIds.forEach((tipoId) => {
+    caseIdsByTipoIds[tipoId] = cases
+      .filter((eachCase) => eachCase.tipoId.includes(tipoId))
+      .map((eachCase) => eachCase.id);
+  });
+
+  /** @type {Record<string, number[]>} */
+  const caseIdsByTipoName = {};
+  tiposNames.forEach((tipoName) => {
+    caseIdsByTipoName[tipoName] = cases
+      .filter((eachCase) => eachCase.tipo.includes(tipoName))
+      .map((eachCase) => eachCase.id);
+  });
+  /** @type {Clasificacion} */
+  const tipos = {
+    byId: caseIdsByTipoIds,
+    byName: caseIdsByTipoName,
+  };
+  return tipos;
+};
+
+/** @type {(cases: Case[]) => string[]} */
+const getAllIdsForComponentes = (cases) => {
+  /** @type {string[]} */
+  let componentesIds = [];
+  cases.forEach((eachCase) => {
+    const newIds = eachCase.componenteId.filter(
+      (componente) => !componentesIds.includes(componente),
+    );
+    componentesIds = [...componentesIds, ...newIds];
+  });
+  return componentesIds;
+};
+
+/** @type {(cases: Case[]) => string[]} */
+const getAllNamesForComponentes = (cases) => {
+  /** @type {string[]} */
+  let componentesNames = [];
+  cases.forEach((eachCase) => {
+    const newNames = eachCase.componente.filter(
+      (componente) => !componentesNames.includes(componente),
+    );
+    componentesNames = [...componentesNames, ...newNames];
+  });
+  return componentesNames;
+};
+
+/** @type {(cases: Case[]) => Clasificacion} */
+const getComponentesClassification = (cases) => {
+  const componentesIds = getAllIdsForComponentes(cases);
+  const componentesNames = getAllNamesForComponentes(cases);
+
+  /** @type {Record<string, number[]>} */
+  const caseIdsByComponenteIds = {};
+  componentesIds.forEach((componenteId) => {
+    caseIdsByComponenteIds[componenteId] = cases
+      .filter((eachCase) => eachCase.componenteId.includes(componenteId))
+      .map((eachCase) => eachCase.id);
+  });
+
+  /** @type {Record<string, number[]>} */
+  const caseIdsByComponenteName = {};
+  componentesNames.forEach((componenteName) => {
+    caseIdsByComponenteName[componenteName] = cases
+      .filter((eachCase) => eachCase.componente.includes(componenteName))
+      .map((eachCase) => eachCase.id);
+  });
+  /** @type {Clasificacion} */
+  const componentes = {
+    byId: caseIdsByComponenteIds,
+    byName: caseIdsByComponenteName,
+  };
+  return componentes;
+};
+
+/**
+ * @param {string | undefined} fileLocation
+ * @returns {Promise<AttacksData | null>}
+ */
+const parseTSVToJSON = async (fileLocation = "services/data/sheet.tsv") => {
   const resp = fs.readFileSync(fileLocation, "utf8");
-  const cases = [];
-  const tipos = new Classifier(FIXUP);
-  const componentes = new Classifier(FIXUP);
+  const [_tsvHeader, ...tsvRows] = resp.split("\r\n").map((r) => r.split("\t"));
+  /** type {(Case)[]} */
+  const cases = tsvRows
+    .map(tsvRowToCase)
+    .filter((eachCase) => eachCase !== null);
 
-  let min = new Date();
-  let max = new Date();
-  max.setDate(0);
-  let i = 0;
-  const [desc, ...rows] = resp.split("\r\n").map((r) => r.split("\t"));
-  for (let r of rows) {
-    i++;
-    const f = {};
-    for (let p in r) {
-      f[desc[p].replace("caso.", "")] = r[p];
-    }
-    const [latitude, longitude] = f.coordenadas.split(",").map(parseFloat);
+  const tipos = getTiposClassification(cases);
+  const componentes = getComponentesClassification(cases);
 
-    const event = {
-      id: parseInt(f.id),
-      title: f.titulo,
-      date: parseTsvDateToUTCMillis(f.fecha),
-      source: f.fuente,
-      coords: {
-        latitude,
-        longitude,
-      },
-      provincia: f.provincia,
-      tipoId: mapChomp(f["tipo.id"]),
-      tipo: mapChomp(f.tipo),
-      componenteId: mapChomp(f["componente.id"]),
-      componente: mapChomp(f.componente),
-    };
-    cases.push(event);
+  const allDates = cases.map((c) => c.date);
+  // sorts in-place, so it mutates allDates!
+  allDates.sort();
+  const min = allDates[0];
+  const max = allDates[allDates.length - 1];
+  if (min === undefined || max === undefined) return null;
 
-    /* update min, max and do sanity checks */
-    if (event.date) {
-      if (min > event.date) min = event.date;
-      if (max < event.date) max = event.date;
-    }
-
-    ["tipo", "tipoId", "componente", "componenteId", "date"].forEach((key) => {
-      if (!event[key]) {
-        console.error(`case missing ${key}`, f);
-      } else if (event[key]?.includes?.("")) {
-        // something wasn't parsed correctly
-        console.error(`${i}: error in ${f}`, event[key], r);
-      }
-    });
-    tipos.classify(event.tipoId, event.tipo, i);
-    componentes.classify(event.componenteId, event.componente, i);
-  }
-  max.setHours(0, 0, 0, 0);
   return {
     cases,
     tipos,
     componentes,
     min,
-    max: Date.UTC(max.getFullYear(), max.getMonth(), max.getDate()),
+    max,
   };
 };
 
 module.exports = {
-  fetchTSV,
+  parseTSVToJSON,
 };

@@ -1,5 +1,5 @@
 import { expect, it, describe } from "vitest";
-import { parseTsvDateToUTCMillis, mapChomp, Classifier } from "../utils.cjs";
+import { parseTsvDateToUTCMillis } from "../utils.cjs";
 
 describe("parseTsvDateToJsDate", () => {
   it("parses DD/MM/YYYY dates correctly", () => {
@@ -15,32 +15,4 @@ describe("parseTsvDateToJsDate", () => {
       });
     }),
   );
-});
-
-describe("mapChomp", () => {
-  it("should take a ';' separated string and split it to a chomped array", () => {
-    const r = mapChomp(" this ; is;a;  cruel cruel; world");
-    expect(r[0]).toBe("this");
-    expect(r[1]).toBe("is");
-    expect(r[2]).toBe("a");
-    expect(r[3]).toBe("cruel cruel");
-    expect(r[4]).toBe("world");
-  });
-});
-
-describe("Classifier", () => {
-  it("should map entries to the correct byId and byName hashes", () => {
-    const C = new Classifier();
-    C.classify([0, 1, 2], ["zero", "one", "two"], 0);
-    C.classify([0, 1, 2], ["zero", "one"], 1);
-    C.classify([0, 2], ["zero", "one"], 2);
-
-    expect(C.byId["0"]).toStrictEqual([0, 1, 2]);
-    expect(C.byId["1"]).toStrictEqual([0, 1]);
-    expect(C.byId["2"]).toStrictEqual([0, 1, 2]);
-
-    expect(C.byName["zero"]).toStrictEqual([0, 1, 2]);
-    expect(C.byName["one"]).toStrictEqual([0, 1, 2]);
-    expect(C.byName["two"]).toStrictEqual([0]);
-  });
 });

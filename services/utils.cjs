@@ -19,7 +19,12 @@ const parseTsvDateToUTCMillis = (d) => {
   if (isNaN(newDate)) return null;
   return newDate;
 };
-const mapChomp = (s) =>
+
+/**
+ * @param {string} s
+ * @returns {string[]}
+ */
+const separateBySemicolon = (s) =>
   s
     .replace(/; $/, "")
     .split(/;/)
@@ -51,6 +56,6 @@ class Classifier {
 
 module.exports = {
   Classifier,
-  mapChomp,
+  separateBySemicolon,
   parseTsvDateToUTCMillis,
 };
