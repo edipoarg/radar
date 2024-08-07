@@ -1,26 +1,28 @@
+import type { Case } from "../../../common/json-shape";
 import styles from "./Popup.module.css";
 
 interface Props {
-  title: string;
-  date: Date;
-  source: string;
+  popupCase: Case;
 }
 
-const Popup = ({ title, date, source }: Props) => (
+const Popup = ({ popupCase }: Props) => (
   <div className={styles.popup}>
     <h3
       className={`${styles.displayTitulo} ${styles["multiline-text-with-ellipsis"]}`}
     >
-      {title}
+      {popupCase.title}
     </h3>
     <div className={styles.masDatosPopup}>
       {" "}
       <p className={styles.displayFecha}>
-        Fecha: {date.toLocaleDateString("es-AR", { timeZone: "UTC" })}
+        Fecha:{" "}
+        {new Date(popupCase.date).toLocaleDateString("es-AR", {
+          timeZone: "UTC",
+        })}
       </p>
       <a
         className={styles.displayLink}
-        href={source}
+        href={popupCase.source}
         target="_blank"
         rel="noreferrer"
       >
