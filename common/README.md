@@ -1,0 +1,1 @@
+This folder contains code that is shared between `src` and `services`.
