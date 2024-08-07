@@ -12,7 +12,7 @@ interface Props {
   caseCount: number;
   handleTipoFilter: () => void;
   tipoFilters: Filters;
-  setTipoFilters: (filters: unknown) => void;
+  setTipoFilters: (callback: (prevFilters: Filters) => Filters) => void;
 }
 
 export default function Filtros({

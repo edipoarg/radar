@@ -1,7 +1,11 @@
 {
   "compilerOptions": {
     "target": "ESNext",
-    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "lib": [
+      "DOM",
+      "DOM.Iterable",
+      "ESNext"
+    ],
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": false,
@@ -14,7 +18,11 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
-    "plugins": [{ "name": "typescript-plugin-css-modules" }],
+    "plugins": [
+      {
+        "name": "typescript-plugin-css-modules"
+      }
+    ],
     // https://www.typescriptlang.org/tsconfig#strictNullChecks
     "strictNullChecks": true,
     /* Indexed access of an Array<T> can return T, but if the index is out of bounds, it returns undefined.
@@ -28,6 +36,14 @@
     // https://www.typescriptlang.org/tsconfig#noUncheckedIndexedAccess
     "noUncheckedIndexedAccess": true
   },
-  "include": ["src", "services"],
-  "references": [{ "path": "./tsconfig.node.json" }]
+  "include": [
+    "src",
+    "services",
+    "common",
+  ],
+  "references": [
+    {
+      "path": "./tsconfig.node.json"
+    }
+  ]
 }

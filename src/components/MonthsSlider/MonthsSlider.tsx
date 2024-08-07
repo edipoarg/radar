@@ -9,7 +9,7 @@ import {
 } from "./dateHelpers";
 
 interface Props {
-  className: string;
+  className?: string;
   boundaryDates: BoundaryDates;
   setFilterDates: (dates: BoundaryDates) => void;
 }
@@ -68,7 +68,7 @@ export default function MonthsSlider({
   const { monthRange, totalMonths, handleSliderValueChange, valueLabelFormat } =
     useSliderBehavior(boundaryDates, setFilterDates);
   return (
-    <div className={`${styles["months-slider"]} ${className}`}>
+    <div className={`${styles["months-slider"]} ${className ?? ""}`}>
       <Slider
         min={0}
         max={totalMonths - 1}

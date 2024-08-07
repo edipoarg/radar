@@ -1,7 +1,7 @@
 // @ts-check
 const { parseTsvDateToUTCMillis, separateBySemicolon } = require("./utils.cjs");
 const fs = require("fs");
-/** @import { Case, AttacksData, Clasificacion } from  "./json-shape"; */
+/** @import { Case, AttacksData, Clasificacion } from  "../common/json-shape"; */
 
 /**
  * @param {string} caseTypeDescription
