@@ -11,15 +11,16 @@ import {
 interface Props {
   className?: string;
   boundaryDates: BoundaryDates;
-  setFilterDates: (dates: BoundaryDates) => void;
+  setFilterDates: (dates: { min: number; max: number }) => void;
 }
 
 const useSliderBehavior = (
   boundaryDates: BoundaryDates,
-  setFilterDates: (dates: BoundaryDates) => void,
+  setFilterDates: (dates: { min: number; max: number }) => void,
 ) => {
   const totalMonths = useMemo(
-    () => monthsDiff(boundaryDates.min, boundaryDates.max) + 1,
+    // Plus one because we don't want the difference but the totality. e.g. Jan and Feb are 2, not 1
+    () => monthsDiff(boundaryDates.min, boundaryDates.max) + 2,
     [boundaryDates.min, boundaryDates.max],
   );
   /** monthRange represents the indices of the months that are currently within the selected range.
@@ -44,17 +45,32 @@ const useSliderBehavior = (
        * Ejemplos acá: https://www.programcreek.com/typescript/?api=@mui/material.Slider
        */
       const range = value as [number, number];
-      if (range[1] <= range[0]) return;
-      const min = new Date(boundaryDates.min);
-      const max = new Date(boundaryDates.min);
+      if (range[1] < range[0]) return;
 
-      max.setMonth(min.getMonth() + range[1]);
-      min.setMonth(min.getMonth() + range[0]);
+      const min = new Date(boundaryDates.min);
+      const max = new Date(boundaryDates.max);
+
+      // Make max the last day of its month
+      max.setMonth(max.getMonth() + 1);
+      max.setDate(-1);
+      max.setHours(23);
+      max.setMinutes(59);
+
+      // Make min the first day of its month
+      min.setDate(1);
+      min.setHours(0);
+      min.setMinutes(0);
+
+      max.setMonth(max.getMonth() - (totalMonths - (range[1] + 1)));
+      min.setMonth(min.getMonth() + range[0] - 1);
 
       setMonthRange(range);
-      setFilterDates({ min, max });
+      setFilterDates({
+        min: min.getTime(),
+        max: max.getTime(),
+      });
     },
-    [boundaryDates.min, setFilterDates],
+    [boundaryDates.min, boundaryDates.max, totalMonths, setFilterDates],
   );
 
   return { totalMonths, monthRange, valueLabelFormat, handleSliderValueChange };
