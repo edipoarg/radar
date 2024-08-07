@@ -20,7 +20,7 @@ const useSliderBehavior = (
 ) => {
   const totalMonths = useMemo(
     // Plus one because we don't want the difference but the totality. e.g. Jan and Feb are 2, not 1
-    () => monthsDiff(boundaryDates.min, boundaryDates.max) + 2,
+    () => monthsDiff(boundaryDates.min, boundaryDates.max) + 1,
     [boundaryDates.min, boundaryDates.max],
   );
   /** monthRange represents the indices of the months that are currently within the selected range.
