@@ -97,7 +97,6 @@ function App() {
   const [selectedMarkerId, setSelectedMarkerId] = useState(null);
 
   const [popupInfo, setPopupInfo] =
-    // eslint-disable-next-line prettier/prettier
     /** @type {[Case | null, (c: Case) => void]}  */ (useState(null));
 
   const [dates, setDates] = useState({ min: casos.min, max: casos.max });
@@ -123,7 +122,7 @@ function App() {
       event.tipoId.some((individualTipo) => tipoFilters[individualTipo]),
     );
     setFilteredData(filteredDataByType);
-  }, [dates, tipoFilters]);
+  }, [dates, tipoFilters, cases]);
 
   const toggleFiltrosVisibility = () => {
     setFiltrosVisible(!filtrosVisible);
