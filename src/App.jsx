@@ -1,3 +1,4 @@
+// @ts-check
 import { useCallback, useEffect, useMemo, useState } from "react";
 import { useLoaderData } from "react-router-dom";
 import MapGL, { NavigationControl } from "react-map-gl/maplibre";
@@ -21,7 +22,7 @@ import Filtros from "./components/Filtros/Filtros";
 import Analisis from "./components/Analisis/Analisis";
 import mystyle from "./mystyle.json";
 import MonthsSlider from "./components/MonthsSlider/MonthsSlider";
-/** @import { AttacksData } from "../common/json-shape" */
+/** @import { AttacksData, Case } from "../common/json-shape" */
 
 const mapSourceStyles = {
   country: {
@@ -64,6 +65,7 @@ const mapSourceStyles = {
 
 function App() {
   const { urls } = useLoaderData();
+  /** @type {{ casos: AttacksData }} */
   const { provincias, departamentos, departamentosBsAs, rutas, casos } = urls;
   /** @type {AttacksData} */
   const { componentes, cases } = casos;
@@ -94,9 +96,12 @@ function App() {
 
   const [filtrosVisible, setFiltrosVisible] = useState(true);
   const [selectedMarkerId, setSelectedMarkerId] = useState(null);
-  const [popupInfo, setPopupInfo] = useState(null);
 
-  const [dates, setDates] = useState(boundaryDates);
+  const [popupInfo, setPopupInfo] =
+    // eslint-disable-next-line prettier/prettier
+    /** @type {[Case | null, (c: Case) => void]}  */ (useState(null));
+
+  const [dates, setDates] = useState({ min: casos.min, max: casos.max });
   const [filteredData, setFilteredData] = useState(cases);
   const [filteredDataByTime, setFilteredDataByTime] = useState([]);
 
@@ -108,13 +113,15 @@ function App() {
   }, [filteredDataByTime, tipoFilters]);
 
   useEffect(() => {
-    const checkDate = (e) => e.date >= dates.min && e.date <= dates.max;
-    const newData = cases.filter(checkDate);
+    /** @type {(c: Case) => boolean} */
+    const checkDate = (eachCase) =>
+      eachCase.date >= dates.min && eachCase.date <= dates.max;
+    const newData = cases.filter((c) => checkDate(c));
 
     setFilteredDataByTime(newData);
     // Aplicar también los filtros de tipo a los datos filtrados por tiempo
-    const filteredDataByType = newData.filter(
-      (event) => tipoFilters[event.tipoId],
+    const filteredDataByType = newData.filter((event) =>
+      event.tipoId.some((individualTipo) => tipoFilters[individualTipo]),
     );
     setFilteredData(filteredDataByType);
   }, [dates, tipoFilters]);
@@ -214,7 +221,7 @@ function App() {
           </div>
         </ScrollLink>
       </div>
-      {popupInfo && <Popup {...popupInfo} />}
+      {popupInfo && <Popup popupCase={popupInfo} />}
       <Main2 />
       <Analisis {...analisisData} />
       <Footer />
