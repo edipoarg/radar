@@ -17,13 +17,12 @@ import {
 import { Markers } from "./components/Markers/Markers";
 import Main2 from "./components/Main2/Main2";
 import Popup from "./components/Popup/Popup";
-import Filtros from "./components/Filtros/Filtros"; // Cambia la ruta a tu formulario
+import Filtros from "./components/Filtros/Filtros";
 import Analisis from "./components/Analisis/Analisis";
-
 import mystyle from "./mystyle.json";
 import MonthsSlider from "./components/MonthsSlider/MonthsSlider";
+/** @import { AttacksData } from "../common/json-shape" */
 
-//estilos/////////////////////
 const mapSourceStyles = {
   country: {
     fillColor: "#bacbff",
@@ -66,11 +65,8 @@ const mapSourceStyles = {
 function App() {
   const { urls } = useLoaderData();
   const { provincias, departamentos, departamentosBsAs, rutas, casos } = urls;
-  const { componentes } = casos;
-  const cases = useMemo(
-    () => casos.cases.map((c) => ({ ...c, date: new Date(c.date) })),
-    [casos],
-  );
+  /** @type {AttacksData} */
+  const { componentes, cases } = casos;
   /** Boundary dates are the earliest date that a case can be from
    * and the latest date that a case can be from in order to be shown on the map.
    */
@@ -123,7 +119,6 @@ function App() {
     setFilteredData(filteredDataByType);
   }, [dates, tipoFilters]);
 
-  // Función para cambiar la visibilidad de "Filtros"
   const toggleFiltrosVisibility = () => {
     setFiltrosVisible(!filtrosVisible);
   };
@@ -143,15 +138,9 @@ function App() {
     mapStyle: mystyle,
   };
 
-  // Step 1: Create a state variable for the close button
   const [isCloseButtonClicked, setIsCloseButtonClicked] = useState(false);
-
-  // Step 2: Create a click handler for the close button
   const handleClickCloseButton = () => {
-    // Toggle the state when the button is clicked
     setIsCloseButtonClicked(!isCloseButtonClicked);
-
-    // Add any additional logic you want when the button is clicked
   };
 
   return (
