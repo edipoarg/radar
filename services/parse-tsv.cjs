@@ -195,11 +195,16 @@ const getComponentesClassification = (cases) => {
  */
 const parseTSVToJSON = async (fileLocation = "services/data/sheet.tsv") => {
   const resp = fs.readFileSync(fileLocation, "utf8");
+  console.info("Got response for sheet TSV.");
+  console.info(resp);
+
   const [_tsvHeader, ...tsvRows] = resp.split("\r\n").map((r) => r.split("\t"));
   /** type {(Case)[]} */
   const cases = tsvRows
     .map(tsvRowToCase)
     .filter((eachCase) => eachCase !== null);
+
+  console.info(`Got ${cases.length} cases.`);
 
   const tipos = getTiposClassification(cases);
   const componentes = getComponentesClassification(cases);
@@ -209,6 +214,9 @@ const parseTSVToJSON = async (fileLocation = "services/data/sheet.tsv") => {
   allDates.sort();
   const min = allDates[0];
   const max = allDates[allDates.length - 1];
+
+  console.info(`dates are min:${min}, max: ${max}`);
+
   if (min === undefined || max === undefined) return null;
 
   return {
