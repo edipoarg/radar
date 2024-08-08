@@ -35,63 +35,6 @@
   gap: 2vw;
 }
 
-.botonFiltrosMain {
-  position: absolute;
-  top: 3vh;
-}
-
-.botonFiltrosMap {
-  font-size: 1rem;
-  color: #2b3bcd;
-  padding: 0.5vh 1vw;
-}
-
-.closeButton {
-  position: absolute;
-  z-index: 1001;
-  background-color: white;
-  color: black;
-  top: 0vh;
-  left: 3vw;
-  border: 10px solid white;
-  border-radius: 10px;
-}
-
-.transformed-button {
-  position: absolute;
-  z-index: 5000;
-  background-color: white;
-  color: white;
-  top: 0vh;
-  left: 2vw;
-  background: none;
-  color: inherit;
-  border: none;
-  padding: 0;
-  font: inherit;
-  cursor: pointer;
-  outline: inherit;
-}
-
-/* FIXME el transformed-button nunca tiene una img. Esto está OK? */
-.transformed-button img {
-  position: absolute;
-  top: 0vh;
-  left: 0vw;
-  max-width: 8vw;
-}
-
-.simple-button {
-  background: none;
-  color: inherit;
-  border: none;
-  padding: 0;
-  font: inherit;
-  cursor: pointer;
-  outline: inherit;
-  text-decoration: none;
-}
-
 /*------responsive------*/
 
 /*TV TABLET 768px*/

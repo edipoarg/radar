@@ -85,7 +85,6 @@ function App() {
     t3: true,
   });
 
-  // Estado para controlar la visibilidad de "Filtros"
   const [analisisData] = useState({
     componentes,
     min: boundaryDates.min,
@@ -93,7 +92,6 @@ function App() {
     total: cases.length,
   });
 
-  const [filtrosVisible, setFiltrosVisible] = useState(true);
   const [selectedMarkerId, setSelectedMarkerId] = useState(null);
 
   const [popupInfo, setPopupInfo] =
@@ -124,10 +122,6 @@ function App() {
     setFilteredData(filteredDataByType);
   }, [dates, tipoFilters, cases]);
 
-  const toggleFiltrosVisibility = () => {
-    setFiltrosVisible(!filtrosVisible);
-  };
-
   const mapProps = {
     initialViewState: {
       longitude: -72.0, // Coordenada longitudinal de Argentina
@@ -143,42 +137,14 @@ function App() {
     mapStyle: mystyle,
   };
 
-  const [isCloseButtonClicked, setIsCloseButtonClicked] = useState(false);
-  const handleClickCloseButton = () => {
-    setIsCloseButtonClicked(!isCloseButtonClicked);
-  };
-
   return (
     <div id={Navlinks.homeAnchor} className={styles.App}>
-      {filtrosVisible && (
-        <Filtros
-          caseCount={filteredData.length}
-          handleTipoFilter={handleTipoFilter}
-          tipoFilters={tipoFilters}
-          setTipoFilters={setTipoFilters}
-        />
-      )}
-      <div className={styles.botonFiltrosMain}>
-        {/* FIXME: Why is this not a button? */}
-        {/* Render different button content based on the state */}
-        <a
-          aria-label="Hide"
-          onClick={() => {
-            handleClickCloseButton();
-            toggleFiltrosVisibility();
-          }}
-          href="#"
-          className={`${styles.closeButton} ${styles["simple-button"]} ${isCloseButtonClicked ? styles["transformed-button"] : ""}`}
-        >
-          {isCloseButtonClicked ? (
-            <div>
-              <h5 className={styles.botonFiltrosMap}>FILTROS</h5>
-            </div>
-          ) : (
-            <>X</>
-          )}
-        </a>
-      </div>
+      <Filtros
+        caseCount={filteredData.length}
+        handleTipoFilter={handleTipoFilter}
+        tipoFilters={tipoFilters}
+        setTipoFilters={setTipoFilters}
+      />
       <MapGL
         mapLib={maplibregl}
         {...{ ...mapProps, style: { ...mapProps.style, marginTop: "8vh" } }}
