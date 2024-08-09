@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useMemo, useState } from "react";
 import { useLoaderData } from "react-router-dom";
+import type { MapStyle } from "react-map-gl/maplibre";
 import MapGL, { NavigationControl } from "react-map-gl/maplibre";
 import maplibregl from "maplibre-gl";
 import "maplibre-gl/dist/maplibre-gl.css";
@@ -21,7 +22,8 @@ import Filtros from "./components/Filtros/Filtros";
 import Analisis from "./components/Analisis/Analisis";
 import mystyle from "./mystyle.json";
 import MonthsSlider from "./components/MonthsSlider/MonthsSlider";
-/** @import { AttacksData, Case } from "../common/json-shape" */
+import type { AttacksData, Case } from "../common/json-shape";
+import type { CaseTipoId } from "./types/caseData";
 
 const mapSourceStyles = {
   country: {
@@ -62,11 +64,19 @@ const mapSourceStyles = {
   },
 };
 
+type LoaderData = {
+  urls: {
+    provincias: unknown;
+    departamentos: unknown;
+    departamentosBsAs: unknown;
+    rutas: unknown;
+    casos: AttacksData;
+  };
+};
+
 function App() {
-  const { urls } = useLoaderData();
-  /** @type {{ casos: AttacksData }} */
+  const { urls } = useLoaderData() as LoaderData;
   const { provincias, departamentos, departamentosBsAs, rutas, casos } = urls;
-  /** @type {AttacksData} */
   const { componentes, cases } = casos;
   /** Boundary dates are the earliest date that a case can be from
    * and the latest date that a case can be from in order to be shown on the map.
@@ -92,32 +102,34 @@ function App() {
     total: cases.length,
   });
 
-  const [selectedMarkerId, setSelectedMarkerId] = useState(null);
+  const [selectedMarkerId, setSelectedMarkerId] = useState<null | string>(null);
 
-  const [popupInfo, setPopupInfo] =
-    /** @type {[Case | null, (c: Case) => void]}  */ (useState(null));
+  const [popupInfo, setPopupInfo] = useState<Case | null>(null);
 
   const [dates, setDates] = useState({ min: casos.min, max: casos.max });
-  const [filteredData, setFilteredData] = useState(cases);
-  const [filteredDataByTime, setFilteredDataByTime] = useState([]);
+  const [filteredData, setFilteredData] = useState<Case[]>(cases);
+  const [filteredDataByTime, setFilteredDataByTime] = useState<Case[]>([]);
 
   const handleTipoFilter = useCallback(() => {
-    const filteredDataByType = filteredDataByTime.filter(
-      (event) => tipoFilters[event.tipoId],
+    const filteredDataByType = filteredDataByTime.filter((event: Case) =>
+      event.tipoId.some(
+        (individualTipo) => tipoFilters[individualTipo as CaseTipoId],
+      ),
     );
     setFilteredData(filteredDataByType);
   }, [filteredDataByTime, tipoFilters]);
 
   useEffect(() => {
-    /** @type {(c: Case) => boolean} */
-    const checkDate = (eachCase) =>
+    const checkDate = (eachCase: Case) =>
       eachCase.date >= dates.min && eachCase.date <= dates.max;
     const newData = cases.filter((c) => checkDate(c));
 
     setFilteredDataByTime(newData);
     // Aplicar también los filtros de tipo a los datos filtrados por tiempo
     const filteredDataByType = newData.filter((event) =>
-      event.tipoId.some((individualTipo) => tipoFilters[individualTipo]),
+      event.tipoId.some(
+        (individualTipo) => tipoFilters[individualTipo as CaseTipoId],
+      ),
     );
     setFilteredData(filteredDataByType);
   }, [dates, tipoFilters, cases]);
@@ -134,7 +146,7 @@ function App() {
       width: "100vw",
       height: "90vh",
     },
-    mapStyle: mystyle,
+    mapStyle: mystyle as MapStyle,
   };
 
   return (
@@ -147,7 +159,10 @@ function App() {
       />
       <MapGL
         mapLib={maplibregl}
-        {...{ ...mapProps, style: { ...mapProps.style, marginTop: "8vh" } }}
+        {...{
+          ...mapProps,
+          style: { ...mapProps.style, marginTop: "8vh" },
+        }}
       >
         {/* Capa interactiva para provincias */}
 
@@ -159,14 +174,13 @@ function App() {
         <BsAsSource data={departamentosBsAs} style={mapSourceStyles.country} />
         <RutasSource data={rutas} style={mapSourceStyles.rutas} />
 
-        {!!(filteredData && filteredData.length) && (
+        {filteredData.length !== 0 && (
           <Markers
             data={filteredData}
             setPopupInfo={setPopupInfo}
             setMarker={setSelectedMarkerId}
             selected={selectedMarkerId}
             tipoFilters={tipoFilters}
-            handleTipoFilter={handleTipoFilter}
           />
         )}
         <NavigationControl position="top-right" />
