@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useMemo, useState } from "react";
 import { useLoaderData } from "react-router-dom";
+import type { MapStyle } from "react-map-gl/maplibre";
 import MapGL, { NavigationControl } from "react-map-gl/maplibre";
 import maplibregl from "maplibre-gl";
 import "maplibre-gl/dist/maplibre-gl.css";
@@ -145,7 +146,7 @@ function App() {
       width: "100vw",
       height: "90vh",
     },
-    mapStyle: mystyle,
+    mapStyle: mystyle as MapStyle,
   };
 
   return (
