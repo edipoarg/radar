@@ -119,7 +119,6 @@ function App() {
   }, [filteredDataByTime, tipoFilters]);
 
   useEffect(() => {
-    /** @type {(c: Case) => boolean} */
     const checkDate = (eachCase: Case) =>
       eachCase.date >= dates.min && eachCase.date <= dates.max;
     const newData = cases.filter((c) => checkDate(c));
