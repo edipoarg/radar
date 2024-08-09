@@ -21,6 +21,7 @@ import Filtros from "./components/Filtros/Filtros";
 import Analisis from "./components/Analisis/Analisis";
 import mystyle from "./mystyle.json";
 import MonthsSlider from "./components/MonthsSlider/MonthsSlider";
+import type { AttacksData, Case } from "../common/json-shape";
 /** @import { AttacksData, Case } from "../common/json-shape" */
 
 const mapSourceStyles = {
@@ -62,11 +63,19 @@ const mapSourceStyles = {
   },
 };
 
+type LoaderData = {
+  urls: {
+    provincias: unknown;
+    departamentos: unknown;
+    departamentosBsAs: unknown;
+    rutas: unknown;
+    casos: AttacksData;
+  };
+};
+
 function App() {
-  const { urls } = useLoaderData();
-  /** @type {{ casos: AttacksData }} */
+  const { urls } = useLoaderData() as LoaderData;
   const { provincias, departamentos, departamentosBsAs, rutas, casos } = urls;
-  /** @type {AttacksData} */
   const { componentes, cases } = casos;
   /** Boundary dates are the earliest date that a case can be from
    * and the latest date that a case can be from in order to be shown on the map.
@@ -92,25 +101,24 @@ function App() {
     total: cases.length,
   });
 
-  const [selectedMarkerId, setSelectedMarkerId] = useState(null);
+  const [selectedMarkerId, setSelectedMarkerId] = useState<null | string>(null);
 
-  const [popupInfo, setPopupInfo] =
-    /** @type {[Case | null, (c: Case) => void]}  */ (useState(null));
+  const [popupInfo, setPopupInfo] = useState<Case | null>(null);
 
   const [dates, setDates] = useState({ min: casos.min, max: casos.max });
-  const [filteredData, setFilteredData] = useState(cases);
-  const [filteredDataByTime, setFilteredDataByTime] = useState([]);
+  const [filteredData, setFilteredData] = useState<Case[]>(cases);
+  const [filteredDataByTime, setFilteredDataByTime] = useState<Case[]>([]);
 
   const handleTipoFilter = useCallback(() => {
     const filteredDataByType = filteredDataByTime.filter(
-      (event) => tipoFilters[event.tipoId],
+      (event: Case) => tipoFilters[event.tipoId],
     );
     setFilteredData(filteredDataByType);
   }, [filteredDataByTime, tipoFilters]);
 
   useEffect(() => {
     /** @type {(c: Case) => boolean} */
-    const checkDate = (eachCase) =>
+    const checkDate = (eachCase: Case) =>
       eachCase.date >= dates.min && eachCase.date <= dates.max;
     const newData = cases.filter((c) => checkDate(c));
 
@@ -159,14 +167,13 @@ function App() {
         <BsAsSource data={departamentosBsAs} style={mapSourceStyles.country} />
         <RutasSource data={rutas} style={mapSourceStyles.rutas} />
 
-        {!!(filteredData && filteredData.length) && (
+        {filteredData.length !== 0 && (
           <Markers
             data={filteredData}
             setPopupInfo={setPopupInfo}
             setMarker={setSelectedMarkerId}
             selected={selectedMarkerId}
             tipoFilters={tipoFilters}
-            handleTipoFilter={handleTipoFilter}
           />
         )}
         <NavigationControl position="top-right" />
