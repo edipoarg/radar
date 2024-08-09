@@ -22,7 +22,7 @@ import Analisis from "./components/Analisis/Analisis";
 import mystyle from "./mystyle.json";
 import MonthsSlider from "./components/MonthsSlider/MonthsSlider";
 import type { AttacksData, Case } from "../common/json-shape";
-/** @import { AttacksData, Case } from "../common/json-shape" */
+import type { CaseTipoId } from "./types/caseData";
 
 const mapSourceStyles = {
   country: {
@@ -110,8 +110,10 @@ function App() {
   const [filteredDataByTime, setFilteredDataByTime] = useState<Case[]>([]);
 
   const handleTipoFilter = useCallback(() => {
-    const filteredDataByType = filteredDataByTime.filter(
-      (event: Case) => tipoFilters[event.tipoId],
+    const filteredDataByType = filteredDataByTime.filter((event: Case) =>
+      event.tipoId.some(
+        (individualTipo) => tipoFilters[individualTipo as CaseTipoId],
+      ),
     );
     setFilteredData(filteredDataByType);
   }, [filteredDataByTime, tipoFilters]);
@@ -125,7 +127,9 @@ function App() {
     setFilteredDataByTime(newData);
     // Aplicar también los filtros de tipo a los datos filtrados por tiempo
     const filteredDataByType = newData.filter((event) =>
-      event.tipoId.some((individualTipo) => tipoFilters[individualTipo]),
+      event.tipoId.some(
+        (individualTipo) => tipoFilters[individualTipo as CaseTipoId],
+      ),
     );
     setFilteredData(filteredDataByType);
   }, [dates, tipoFilters, cases]);
@@ -155,7 +159,10 @@ function App() {
       />
       <MapGL
         mapLib={maplibregl}
-        {...{ ...mapProps, style: { ...mapProps.style, marginTop: "8vh" } }}
+        {...{
+          ...mapProps,
+          style: { ...mapProps.style, marginTop: "8vh" },
+        }}
       >
         {/* Capa interactiva para provincias */}
 
