@@ -180,7 +180,6 @@ function App() {
             setPopupInfo={setPopupInfo}
             setMarker={setSelectedMarkerId}
             selected={selectedMarkerId}
-            tipoFilters={tipoFilters}
           />
         )}
         <NavigationControl position="top-right" />
