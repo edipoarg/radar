@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { useLoaderData } from "react-router-dom";
 import type { MapStyle } from "react-map-gl/maplibre";
 import MapGL, { NavigationControl } from "react-map-gl/maplibre";
@@ -81,7 +81,6 @@ type FiltersUtilities = {
   setTipoFilters: (setter: (oldFilters: TipoFilter) => TipoFilter) => void;
   tipoFilters: TipoFilter;
   filteredData: Case[];
-  handleTipoFilter: () => void;
 };
 const useFilters = (attacksData: AttacksData): FiltersUtilities => {
   const { cases } = attacksData;
@@ -97,23 +96,12 @@ const useFilters = (attacksData: AttacksData): FiltersUtilities => {
   });
 
   const [filteredData, setFilteredData] = useState<Case[]>(cases);
-  const [filteredDataByTime, setFilteredDataByTime] = useState<Case[]>([]);
-
-  const handleTipoFilter = useCallback(() => {
-    const filteredDataByType = filteredDataByTime.filter((event: Case) =>
-      event.tipoId.some(
-        (individualTipo) => tipoFilters[individualTipo as CaseTipoId],
-      ),
-    );
-    setFilteredData(filteredDataByType);
-  }, [filteredDataByTime, tipoFilters]);
 
   useEffect(() => {
     const checkDate = (eachCase: Case) =>
       eachCase.date >= dates.min && eachCase.date <= dates.max;
     const newData = cases.filter((c) => checkDate(c));
 
-    setFilteredDataByTime(newData);
     // Aplicar también los filtros de tipo a los datos filtrados por tiempo
     const filteredDataByType = newData.filter((event) =>
       event.tipoId.some(
@@ -127,7 +115,6 @@ const useFilters = (attacksData: AttacksData): FiltersUtilities => {
     setDates,
     setTipoFilters,
     filteredData,
-    handleTipoFilter,
     tipoFilters,
   };
 };
@@ -158,13 +145,8 @@ function App() {
   const [selectedMarkerId, setSelectedMarkerId] = useState<null | string>(null);
   const [popupInfo, setPopupInfo] = useState<Case | null>(null);
 
-  const {
-    filteredData,
-    handleTipoFilter,
-    setDates,
-    setTipoFilters,
-    tipoFilters,
-  } = useFilters(casos);
+  const { filteredData, setDates, setTipoFilters, tipoFilters } =
+    useFilters(casos);
 
   const mapProps = {
     initialViewState: {
@@ -185,7 +167,6 @@ function App() {
     <div id={Navlinks.homeAnchor} className={styles.App}>
       <Filtros
         caseCount={filteredData.length}
-        handleTipoFilter={handleTipoFilter}
         tipoFilters={tipoFilters}
         setTipoFilters={setTipoFilters}
       />
