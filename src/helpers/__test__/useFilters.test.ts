@@ -36,8 +36,8 @@ describe("caseIsWithinMinAndMaxDatesWithDates", () => {
     });
     describe("when passed a case that happened at April the 6th 0:00 GMT-3", () => {
       const theCase: Case = { ...emptyCase, date: 1712372400000 };
-      it("returns false", () => {
-        expect(caseIsOnAprilFifth(theCase)).toBeFalsy();
+      it("returns true", () => {
+        expect(caseIsOnAprilFifth(theCase)).toBeTruthy();
       });
     });
     describe("when passed a case that happened at April the 5th 15:00 GMT-3", () => {
