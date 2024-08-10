@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useState } from "react";
 import type { AttacksData, Case } from "../../common/json-shape";
-import type { CaseTipoId } from "../types/caseData";
+import { isCaseTipoId, type CaseTipoId } from "../types/caseData";
 
 type TipoFilter = Record<CaseTipoId, boolean>;
 
@@ -28,9 +28,9 @@ export const useFilters = (attacksData: AttacksData): FiltersUtilities => {
   });
   const isAllowedByTipoFilters = useCallback(
     (someCase: Case) =>
-      someCase.tipoId.some(
-        (individualTipo) => tipoFilters[individualTipo as CaseTipoId],
-      ),
+      someCase.tipoId
+        .filter(isCaseTipoId)
+        .some((individualTipo) => tipoFilters[individualTipo]),
     [tipoFilters],
   );
 
