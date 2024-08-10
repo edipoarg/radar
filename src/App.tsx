@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useState } from "react";
 import { useLoaderData } from "react-router-dom";
 import type { MapStyle } from "react-map-gl/maplibre";
 import MapGL, { NavigationControl } from "react-map-gl/maplibre";
@@ -83,33 +83,36 @@ type FiltersUtilities = {
   filteredData: Case[];
 };
 const useFilters = (attacksData: AttacksData): FiltersUtilities => {
-  const { cases } = attacksData;
-  const [dates, setDates] = useState({
-    min: attacksData.min,
-    max: attacksData.max,
-  });
+  const { cases, min, max } = attacksData;
+
+  const [dates, setDates] = useState({ min, max });
+  const isWithinMinAndMaxDates = useCallback(
+    (someCase: Case) =>
+      someCase.date >= dates.min && someCase.date <= dates.max,
+    [dates.min, dates.max],
+  );
 
   const [tipoFilters, setTipoFilters] = useState({
     t1: true,
     t2: true,
     t3: true,
   });
+  const isAllowedByTipoFilters = useCallback(
+    (someCase: Case) =>
+      someCase.tipoId.some(
+        (individualTipo) => tipoFilters[individualTipo as CaseTipoId],
+      ),
+    [tipoFilters],
+  );
 
   const [filteredData, setFilteredData] = useState<Case[]>(cases);
 
   useEffect(() => {
-    const checkDate = (eachCase: Case) =>
-      eachCase.date >= dates.min && eachCase.date <= dates.max;
-    const newData = cases.filter((c) => checkDate(c));
-
-    // Aplicar también los filtros de tipo a los datos filtrados por tiempo
-    const filteredDataByType = newData.filter((event) =>
-      event.tipoId.some(
-        (individualTipo) => tipoFilters[individualTipo as CaseTipoId],
-      ),
-    );
-    setFilteredData(filteredDataByType);
-  }, [dates, tipoFilters, cases]);
+    const newData = cases
+      .filter(isWithinMinAndMaxDates)
+      .filter(isAllowedByTipoFilters);
+    setFilteredData(newData);
+  }, [cases, isAllowedByTipoFilters, isWithinMinAndMaxDates]);
 
   return {
     setDates,
