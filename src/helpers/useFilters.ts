@@ -13,7 +13,7 @@ type FiltersUtilities = {
 
 export const caseIsWithinMinAndMaxDatesWithDates =
   (dates: { min: number; max: number }) => (someCase: Case) =>
-    someCase.date >= dates.min && someCase.date < dates.max;
+    someCase.date >= dates.min && someCase.date <= dates.max;
 
 export const caseIsAllowedByTipoFiltersWithFilters =
   (filters: TipoFilters) => (someCase: Case) =>
