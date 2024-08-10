@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useMemo, useState } from "react";
+import { useMemo, useState } from "react";
 import { useLoaderData } from "react-router-dom";
 import type { MapStyle } from "react-map-gl/maplibre";
 import MapGL, { NavigationControl } from "react-map-gl/maplibre";
@@ -23,7 +23,7 @@ import Analisis from "./components/Analisis/Analisis";
 import mystyle from "./mystyle.json";
 import MonthsSlider from "./components/MonthsSlider/MonthsSlider";
 import type { AttacksData, Case } from "../common/json-shape";
-import type { CaseTipoId } from "./types/caseData";
+import { useFilters } from "./helpers/useFilters";
 
 const mapSourceStyles = {
   country: {
@@ -71,54 +71,6 @@ type LoaderData = {
     departamentosBsAs: unknown;
     rutas: unknown;
     casos: AttacksData;
-  };
-};
-
-type TipoFilter = Record<CaseTipoId, boolean>;
-
-type FiltersUtilities = {
-  setDates: (dates: { min: number; max: number }) => void;
-  setTipoFilters: (setter: (oldFilters: TipoFilter) => TipoFilter) => void;
-  tipoFilters: TipoFilter;
-  filteredData: Case[];
-};
-const useFilters = (attacksData: AttacksData): FiltersUtilities => {
-  const { cases, min, max } = attacksData;
-
-  const [dates, setDates] = useState({ min, max });
-  const isWithinMinAndMaxDates = useCallback(
-    (someCase: Case) =>
-      someCase.date >= dates.min && someCase.date <= dates.max,
-    [dates.min, dates.max],
-  );
-
-  const [tipoFilters, setTipoFilters] = useState({
-    t1: true,
-    t2: true,
-    t3: true,
-  });
-  const isAllowedByTipoFilters = useCallback(
-    (someCase: Case) =>
-      someCase.tipoId.some(
-        (individualTipo) => tipoFilters[individualTipo as CaseTipoId],
-      ),
-    [tipoFilters],
-  );
-
-  const [filteredData, setFilteredData] = useState<Case[]>(cases);
-
-  useEffect(() => {
-    const newData = cases
-      .filter(isWithinMinAndMaxDates)
-      .filter(isAllowedByTipoFilters);
-    setFilteredData(newData);
-  }, [cases, isAllowedByTipoFilters, isWithinMinAndMaxDates]);
-
-  return {
-    setDates,
-    setTipoFilters,
-    filteredData,
-    tipoFilters,
   };
 };
 
