@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import type { AttacksData, Case } from "../../common/json-shape";
 import { isCaseTipoId, type CaseTipoId } from "../types/caseData";
 
-type TipoFilters = Record<CaseTipoId, boolean>;
+export type TipoFilters = Record<CaseTipoId, boolean>;
 
 type FiltersUtilities = {
   setDates: (dates: { min: number; max: number }) => void;
@@ -13,7 +13,7 @@ type FiltersUtilities = {
 
 export const caseIsWithinMinAndMaxDatesWithDates =
   (dates: { min: number; max: number }) => (someCase: Case) =>
-    someCase.date >= dates.min && someCase.date <= dates.max;
+    someCase.date >= dates.min && someCase.date < dates.max;
 
 export const caseIsAllowedByTipoFiltersWithFilters =
   (filters: TipoFilters) => (someCase: Case) =>
