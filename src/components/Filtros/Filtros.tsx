@@ -1,12 +1,8 @@
+import type { CaseTipoId } from "../../types/caseData";
 import styles from "./Filtros.module.css";
 import { Switch } from "@mui/material";
 
-// TODO: use this as a useState type parameter when migrating App to ts
-export interface Filters {
-  t1: boolean;
-  t2: boolean;
-  t3: boolean;
-}
+type Filters = Record<CaseTipoId, boolean>;
 
 interface Props {
   caseCount: number;
