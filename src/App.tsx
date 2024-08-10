@@ -74,20 +74,21 @@ type LoaderData = {
   };
 };
 
-function App() {
-  const { urls } = useLoaderData() as LoaderData;
-  const { provincias, departamentos, departamentosBsAs, rutas, casos } = urls;
-  const { componentes, cases } = casos;
-  /** Boundary dates are the earliest date that a case can be from
-   * and the latest date that a case can be from in order to be shown on the map.
-   */
-  const boundaryDates = useMemo(
-    () => ({
-      min: new Date(casos.min),
-      max: new Date(casos.max),
-    }),
-    [casos.min, casos.max],
-  );
+type TipoFilter = Record<CaseTipoId, boolean>;
+
+type FiltersUtilities = {
+  setDates: (dates: { min: number; max: number }) => void;
+  setTipoFilters: (setter: (oldFilters: TipoFilter) => TipoFilter) => void;
+  tipoFilters: TipoFilter;
+  filteredData: Case[];
+  handleTipoFilter: () => void;
+};
+const useFilters = (attacksData: AttacksData): FiltersUtilities => {
+  const { cases } = attacksData;
+  const [dates, setDates] = useState({
+    min: attacksData.min,
+    max: attacksData.max,
+  });
 
   const [tipoFilters, setTipoFilters] = useState({
     t1: true,
@@ -95,18 +96,6 @@ function App() {
     t3: true,
   });
 
-  const [analisisData] = useState({
-    componentes,
-    min: boundaryDates.min,
-    max: boundaryDates.max,
-    total: cases.length,
-  });
-
-  const [selectedMarkerId, setSelectedMarkerId] = useState<null | string>(null);
-
-  const [popupInfo, setPopupInfo] = useState<Case | null>(null);
-
-  const [dates, setDates] = useState({ min: casos.min, max: casos.max });
   const [filteredData, setFilteredData] = useState<Case[]>(cases);
   const [filteredDataByTime, setFilteredDataByTime] = useState<Case[]>([]);
 
@@ -133,6 +122,49 @@ function App() {
     );
     setFilteredData(filteredDataByType);
   }, [dates, tipoFilters, cases]);
+
+  return {
+    setDates,
+    setTipoFilters,
+    filteredData,
+    handleTipoFilter,
+    tipoFilters,
+  };
+};
+
+function App() {
+  const { urls } = useLoaderData() as LoaderData;
+  const { provincias, departamentos, departamentosBsAs, rutas, casos } = urls;
+  const { componentes, cases } = casos;
+  /** Boundary dates are the earliest date that a case can be from
+   * and the latest date that a case can be from in order to be shown on the map.
+   */
+  const boundaryDates = useMemo(
+    () => ({
+      min: new Date(casos.min),
+      max: new Date(casos.max),
+    }),
+    [casos.min, casos.max],
+  );
+
+  // This data doesn't change when we apply filters
+  const [analisisData] = useState({
+    componentes,
+    min: boundaryDates.min,
+    max: boundaryDates.max,
+    total: cases.length,
+  });
+
+  const [selectedMarkerId, setSelectedMarkerId] = useState<null | string>(null);
+  const [popupInfo, setPopupInfo] = useState<Case | null>(null);
+
+  const {
+    filteredData,
+    handleTipoFilter,
+    setDates,
+    setTipoFilters,
+    tipoFilters,
+  } = useFilters(casos);
 
   const mapProps = {
     initialViewState: {
@@ -164,8 +196,6 @@ function App() {
           style: { ...mapProps.style, marginTop: "8vh" },
         }}
       >
-        {/* Capa interactiva para provincias */}
-
         <ProvSource data={provincias} style={mapSourceStyles.provincias} />
         <DepsSource
           data={departamentos}
