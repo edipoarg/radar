@@ -6,14 +6,12 @@ type Filters = Record<CaseTipoId, boolean>;
 
 interface Props {
   caseCount: number;
-  handleTipoFilter: () => void;
   tipoFilters: Filters;
   setTipoFilters: (callback: (prevFilters: Filters) => Filters) => void;
 }
 
 export default function Filtros({
   caseCount,
-  handleTipoFilter,
   tipoFilters,
   setTipoFilters,
 }: Props) {
@@ -24,7 +22,6 @@ export default function Filtros({
         ...prevFilters,
         [tipoId]: event.target.checked,
       }));
-      handleTipoFilter();
     };
 
   return (
