@@ -24,7 +24,7 @@ export default function ReportaForm() {
 
   return (
     <>
-      {/* TODO move this ID to its own constant, as it's used in Main2 and main and navbar  */}
+      {/* TODO move this ID to its own constant, as it's used in SiteSummary and main and navbar  */}
       <div id="conecta" className={styles.conecta}>
         <div>
           <img className={styles.radarDecoImg} src="imgRadar.png" alt="" />
