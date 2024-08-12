@@ -4,7 +4,6 @@ import { createHashRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
 import Conecta from "./components/Conecta/Conecta";
 import Notas from "./components/Notas/Notas";
-import Reporta from "./components/Reporta/Reporta";
 import Root from "./routes/Root.jsx";
 import Navlinks from "./routes/index.js";
 import { fetchUrlsData } from "./helpers/fetchUrlsData";
@@ -27,7 +26,6 @@ const router = createHashRouter([
     children: [
       { path: Navlinks.home, element: <App />, loader },
       { path: Navlinks.conecta, element: <Conecta /> },
-      { path: Navlinks.reporta, element: <Reporta /> },
       { path: Navlinks.notas, element: <Notas /> },
     ],
   },
