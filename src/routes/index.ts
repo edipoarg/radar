@@ -2,7 +2,6 @@ const Navlinks = {
   home: "/",
   homeAnchor: "homeAnchor",
   conecta: "/conecta",
-  reporta: "/reporta",
   reportaForm:
     "https://docs.google.com/forms/d/e/1FAIpQLSe5pKXuvkvSUiwI_YEq5OZrfXCmpcsDuz_6co_iS2Qags80_A/viewform",
   notas: "/notas",
