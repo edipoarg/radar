@@ -1,18 +1,18 @@
 import { useMemo, useState } from "react";
 import { useLoaderData } from "react-router-dom";
-import "./App.css";
-import styles from "./App.module.css";
-import Navlinks from "./routes/index";
+import "./Landing.css";
+import styles from "./Landing.module.css";
+import Navlinks from "../../routes/index";
 import { Link as ScrollLink } from "react-scroll";
-import Footer from "./components/Footer/Footer";
-import SiteSummary from "./components/SiteSummary/SiteSummary";
-import Popup from "./components/Popup/Popup";
-import Filtros from "./components/Filtros/Filtros";
-import Analisis from "./components/Analisis/Analisis";
-import MonthsSlider from "./components/MonthsSlider/MonthsSlider";
-import type { AttacksData, Case } from "../common/json-shape";
-import { useFilters } from "./helpers/useFilters";
-import { RadarMap } from "./components/Map/Map";
+import Footer from "../Footer/Footer";
+import SiteSummary from "../SiteSummary/SiteSummary";
+import Popup from "../Popup/Popup";
+import Filtros from "../Filtros/Filtros";
+import Analisis from "../Analisis/Analisis";
+import MonthsSlider from "../MonthsSlider/MonthsSlider";
+import { RadarMap } from "../Map/Map";
+import type { AttacksData, Case } from "../../../common/json-shape";
+import { useFilters } from "../../helpers/useFilters";
 
 type LoaderData = {
   urls: {
@@ -24,7 +24,7 @@ type LoaderData = {
   };
 };
 
-function App() {
+function Landing() {
   const { urls } = useLoaderData() as LoaderData;
   const { provincias, departamentos, departamentosBsAs, rutas, casos } = urls;
   const { componentes, cases } = casos;
@@ -53,7 +53,7 @@ function App() {
     useFilters(casos);
 
   return (
-    <div id={Navlinks.homeAnchor} className={styles.App}>
+    <div id={Navlinks.homeAnchor} className={styles.Landing}>
       <Filtros
         caseCount={filteredData.length}
         tipoFilters={tipoFilters}
@@ -91,4 +91,4 @@ function App() {
   );
 }
 
-export default App;
+export default Landing;

@@ -7,7 +7,7 @@ import Notas from "./components/Notas/Notas";
 import Root from "./routes/Root.jsx";
 import Navlinks from "./routes/index";
 import { fetchUrlsData } from "./helpers/fetchUrlsData";
-import App from "./App";
+import Landing from "./components/Landing/Landing";
 
 const loader = async () => ({
   urls: await fetchUrlsData({
@@ -24,7 +24,7 @@ const router = createHashRouter([
     path: "/",
     element: <Root />,
     children: [
-      { path: Navlinks.home, element: <App />, loader },
+      { path: Navlinks.home, element: <Landing />, loader },
       { path: Navlinks.conecta, element: <Conecta /> },
       { path: Navlinks.notas, element: <Notas /> },
     ],
