@@ -5,7 +5,7 @@
   position: relative;
 }
 
-.toMain2 {
+.toSiteSummary {
   cursor: pointer;
   background-color: black;
   color: white;
@@ -47,7 +47,7 @@
     z-index: 0;
   }
 
-  .toMain2 {
+  .toSiteSummary {
     width: 10vw;
     height: 8vh;
   }
@@ -67,7 +67,7 @@
     z-index: 0;
   }
 
-  .toMain2 {
+  .toSiteSummary {
     width: 8vw;
     height: 12vh;
   }

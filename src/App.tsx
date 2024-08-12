@@ -5,7 +5,7 @@ import styles from "./App.module.css";
 import Navlinks from "./routes/index";
 import { Link as ScrollLink } from "react-scroll";
 import Footer from "./components/Footer/Footer";
-import Main2 from "./components/Main2/Main2";
+import SiteSummary from "./components/SiteSummary/SiteSummary";
 import Popup from "./components/Popup/Popup";
 import Filtros from "./components/Filtros/Filtros";
 import Analisis from "./components/Analisis/Analisis";
@@ -72,19 +72,19 @@ function App() {
       <div className={styles["lower-floating-buttons"]}>
         <MonthsSlider boundaryDates={boundaryDates} setFilterDates={setDates} />
         <ScrollLink
-          to={Navlinks.main2Anchor} // ID del elemento de destino (Main2)
+          to={Navlinks.siteSummary} // ID del elemento de destino (SiteSummary)
           spy={true} // Activa el modo espía
           smooth={true} // Activa el desplazamiento suave
           duration={500} // Duración de la animación (en milisegundos)
           offset={-70} // Ajusta un offset opcional (si tienes un encabezado fijo)
         >
-          <div className={styles.toMain2}>
+          <div className={styles.toSiteSummary}>
             <h4 className={styles.plusBoton}>+</h4>
           </div>
         </ScrollLink>
       </div>
       {popupInfo && <Popup popupCase={popupInfo} />}
-      <Main2 />
+      <SiteSummary />
       <Analisis {...analisisData} />
       <Footer />
     </div>

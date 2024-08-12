@@ -1,8 +1,8 @@
-import styles from "./Main2.module.css";
+import styles from "./SiteSummary.module.css";
 import { Link as ScrollLink } from "react-scroll";
 import { Carousel } from "react-bootstrap";
 import { Details } from "../Conecta/Conecta.js";
-import { Button } from "../Button/Button.jsx";
+import { Button } from "../Button/Button.js";
 import Navlinks from "../../routes/index.js";
 import notas from "../../notas.json";
 
@@ -19,9 +19,9 @@ const buttonThemes = {
   },
 };
 
-export default function Main2() {
+export default function SiteSummary() {
   return (
-    <div id={Navlinks.main2Anchor} className={styles.Main2}>
+    <div id={Navlinks.siteSummary} className={styles.SiteSummary}>
       <div className={styles.franja1}>
         <div className={styles.reportaMain}>
           <h4 className={styles.bajadaPrincipal}>
@@ -38,7 +38,7 @@ export default function Main2() {
           duration={500} // Duración de la animación (en milisegundos)
           offset={-70} // Ajusta un offset opcional (si tienes un encabezado fijo)
         >
-          <button className={styles.botonMain2}>
+          <button className={styles.botonSiteSummary}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="16"
