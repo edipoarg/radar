@@ -1,4 +1,4 @@
-.Main2 {
+.SiteSummary {
   width: 100vw;
   z-index: 3000;
 }
@@ -50,7 +50,7 @@
   padding-top: 1vh;
 }
 
-.botonMain2 {
+.botonSiteSummary {
   text-decoration: none;
   /* Quitar subrayado de enlace */
   cursor: pointer;

@@ -61,7 +61,7 @@ export default function NavbarBootstrap() {
       </div>
 
       <div className={styles.botonMenu}>
-        <ScrollLink to={Navlinks.main2Anchor}>
+        <ScrollLink to={Navlinks.siteSummary}>
           <img className={styles.menuImg} src="menu.png" alt="" />
         </ScrollLink>
       </div>
