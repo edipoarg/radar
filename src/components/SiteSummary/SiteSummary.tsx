@@ -3,7 +3,7 @@ import { Link as ScrollLink } from "react-scroll";
 import { Carousel } from "react-bootstrap";
 import { Details } from "../Conecta/Conecta.js";
 import { Button } from "../Button/Button.js";
-import Navlinks from "../../routes/index.js";
+import Navlinks from "../../routes/index";
 import notas from "../../notas.json";
 
 const buttonThemes = {

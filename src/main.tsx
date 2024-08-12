@@ -5,7 +5,7 @@ import "./index.css";
 import Conecta from "./components/Conecta/Conecta";
 import Notas from "./components/Notas/Notas";
 import Root from "./routes/Root.jsx";
-import Navlinks from "./routes/index.js";
+import Navlinks from "./routes/index";
 import { fetchUrlsData } from "./helpers/fetchUrlsData";
 import App from "./App";
 

@@ -1,5 +1,5 @@
 import styles from "./Footer.module.css";
-import Navlinks from "../../routes/index.js";
+import Navlinks from "../../routes/index";
 
 const currentVersion = import.meta.env.VITE_RADAR_VERSION;
 
