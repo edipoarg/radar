@@ -1,7 +1,7 @@
 .popup {
   --background-color: #2b3bcd;
   position: absolute;
-  top: 68vh;
+  top: 55vh;
   left: 2vw;
   width: 96vw;
   height: 15vh;
@@ -49,7 +49,7 @@
 @media (min-width: 400px) {
   .popup {
     position: absolute;
-    top: 65vh;
+    top: 50vh;
     left: 2vw;
     width: 96vw;
     height: 17vh;
@@ -123,6 +123,7 @@
   padding-right: 1em;
   margin-right: 1em;
 }
+
 /* create the ... */
 .multiline-text-with-ellipsis:before {
   /* show dots at the end */
@@ -132,6 +133,7 @@
   right: 0;
   bottom: 0;
 }
+
 /* hide ... if we have text, which is less than or equal to max lines */
 .multiline-text-with-ellipsis:after {
   /* hide dots at the end */
