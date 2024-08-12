@@ -5,6 +5,10 @@ interface Props {
   popupCase: Case;
 }
 
+const isLink = (caseSource: string) => {
+  return caseSource !== "Fuente directa verificada";
+};
+
 const Popup = ({ popupCase }: Props) => (
   <div className={styles.popup}>
     <h3
@@ -20,14 +24,18 @@ const Popup = ({ popupCase }: Props) => (
           timeZone: "UTC",
         })}
       </p>
-      <a
-        className={styles.displayLink}
-        href={popupCase.source}
-        target="_blank"
-        rel="noreferrer"
-      >
-        enlace
-      </a>
+      {isLink(popupCase.source) ? (
+        <a
+          className={styles.displayLink}
+          href={popupCase.source}
+          target="_blank"
+          rel="noreferrer"
+        >
+          enlace
+        </a>
+      ) : (
+        <p>[Fuente directa verificada]</p>
+      )}
     </div>
   </div>
 );
