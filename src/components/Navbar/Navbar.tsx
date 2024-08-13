@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import styles from "./Navbar.module.css";
 import { motion } from "framer-motion";
 import { Link as ScrollLink } from "react-scroll";
@@ -12,11 +12,11 @@ export default function NavbarBootstrap() {
     <div className={styles.heading}>
       <div>
         <Navbar.Brand>
-          <Nav.Link href={Navlinks.home}>
+          <NavLink to={Navlinks.home}>
             <div className={styles.logo}>
               <img className={styles.logoImg} src="logoRadar.png" alt="" />
             </div>
-          </Nav.Link>
+          </NavLink>
         </Navbar.Brand>
       </div>
 
