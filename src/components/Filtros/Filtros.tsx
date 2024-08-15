@@ -30,48 +30,44 @@ export default function Filtros({
         <h4>casos:</h4>
         <h1 className={styles.cantCasos}>{caseCount}</h1>
       </header>
-      <div>
-        <div className={styles.filtrosPorTipo}>
-          <div className={styles.tipos}>
-            <div className={styles.tipo1Ref}>
-              {" "}
-              <div className={styles.tipo1Icon}></div>
-              <h4 className={styles.tipoClass}>Ataque a símbolos y lugares </h4>
-            </div>
-            <Switch
-              defaultChecked={tipoFilters.t1}
-              onChange={handleTipoFilterChange("t1")}
-            ></Switch>
+      <div className={styles.filtrosPorTipo}>
+        <div className={styles.tipo}>
+          <div className={styles.tipoLabel}>
+            <div className={`${styles.tipoIcon} ${styles.tipo1Icon}`}></div>
+            <p className={styles.tipoDescription}>
+              Ataque a símbolos y lugares{" "}
+            </p>
           </div>
+          <Switch
+            defaultChecked={tipoFilters.t1}
+            onChange={handleTipoFilterChange("t1")}
+          />
+        </div>
 
-          <div className={styles.tipos}>
-            <div className={styles.tipo2Ref}>
-              {" "}
-              <div className={styles.tipo2Icon}></div>
-              <h4 className={styles.tipoClass}>
-                Hostigamiento e intimidación{" "}
-              </h4>
-            </div>
-
-            <Switch
-              defaultChecked={tipoFilters.t2}
-              onChange={handleTipoFilterChange("t2")}
-            ></Switch>
+        <div className={styles.tipo}>
+          <div className={styles.tipoLabel}>
+            <div className={`${styles.tipoIcon} ${styles.tipo2Icon}`}></div>
+            <p className={styles.tipoDescription}>
+              Hostigamiento e intimidación
+            </p>
           </div>
+          <Switch
+            defaultChecked={tipoFilters.t2}
+            onChange={handleTipoFilterChange("t2")}
+          />
+        </div>
 
-          <div className={styles.tipos}>
-            <div className={styles.tipo3Ref}>
-              {" "}
-              <div className={styles.tipo3Icon}></div>
-              <h4 className={styles.tipoClass}>
-                Atentados contra la integridad física y la vida{" "}
-              </h4>
-            </div>
-            <Switch
-              defaultChecked={tipoFilters.t3}
-              onChange={handleTipoFilterChange("t3")}
-            ></Switch>
+        <div className={styles.tipo}>
+          <div className={styles.tipoLabel}>
+            <div className={`${styles.tipoIcon} ${styles.tipo3Icon}`}></div>
+            <p className={styles.tipoDescription}>
+              Atentados contra la integridad física y la vida
+            </p>
           </div>
+          <Switch
+            defaultChecked={tipoFilters.t3}
+            onChange={handleTipoFilterChange("t3")}
+          />
         </div>
       </div>
     </div>
