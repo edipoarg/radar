@@ -8,13 +8,6 @@
   flex-direction: column;
 }
 
-.tipo2Ref,
-.tipo1Ref,
-.tipo3Ref {
-  display: grid;
-  grid-template-columns: 1fr 3fr;
-}
-
 .filtros>header {
   background-color: white;
   color: black;
@@ -31,58 +24,58 @@
 }
 
 .filtrosPorTipo {
-  display: grid;
-  grid-template-columns: 1fr;
   margin-top: 5px;
+  padding: 5px 5px;
   background-color: white;
   color: black;
   border-radius: 20px;
-  padding: 2px 2px;
-  justify-content: center;
-  text-align: center;
-  width: 45vw;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: start;
+  width: 50vw;
 }
 
-.tipoClass {
-  font-size: 10px;
-}
-
-
-.tipos {
+.tipo {
   display: flex;
   flex-direction: column;
   padding: 7px 5px;
-  justify-items: center;
+  align-items: center;
   justify-content: space-between;
+  width: 100%;
 }
 
-.tipos span {
-  /* HACK(xaiki): this is done to style the MUI Switch */
-  margin: 0 auto;
+.tipoLabel {
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+  width: 100%;
+}
+
+
+.tipoIcon {
+  width: 23px;
+  height: 23px;
+  border-radius: 5px;
+  padding-left: 4px;
+  margin-right: 5px;
+  flex-shrink: 0;
 }
 
 .tipo1Icon {
   background-color: rgb(252, 252, 114);
-  width: 23px;
-  height: 23px;
-  border-radius: 5px;
-  padding-left: 4px;
 }
 
 .tipo2Icon {
   background-color: rgb(255, 166, 0);
-  width: 23px;
-  height: 23px;
-  border-radius: 5px;
-  padding-left: 4px;
 }
 
 .tipo3Icon {
   background-color: rgb(251, 55, 25);
-  width: 23px;
-  height: 23px;
-  border-radius: 5px;
-  padding-left: 4px;
+}
+
+.tipoDescription {
+  font-size: 10px;
 }
 
 /*== Responsive==*/
@@ -90,55 +83,40 @@
 /*== tablet==*/
 
 @media (min-width: 768px) {
+
+  .filtros {
+    padding: 5px;
+    padding-left: 15px;
+  }
+
   .filtros>header {
     width: 18vw;
     height: 13vh;
   }
 
-  .tipoClass {
-    font-size: 10px;
-    padding-top: 1vh;
-  }
-
-  .tipo2Ref,
-  .tipo1Ref,
-  .tipo3Ref {
-    grid-template-columns: 1fr;
-    justify-items: center;
-    padding-top: 5px;
-  }
-
   .filtrosPorTipo {
-    grid-template-columns: 1fr 1fr 1fr;
-    width: 29vw;
-    padding-left: 2vw;
-  }
-
-  .filtros {
-    padding: 5px;
-    height: 50vh;
-    padding-left: 15px;
-  }
-
-  .filtrosPorTipo {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    margin-top: 15px;
-    background-color: white;
-    color: black;
-    border-radius: 20px;
-    padding: 10px;
+    flex-direction: row;
+    width: fit-content;
+    height: fit-content;
     justify-content: center;
     text-align: center;
+    min-width: 18vw;
+    align-items: stretch;
   }
-}
 
-/*  PC  */
+  .tipoLabel {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1vh;
+    width: 60px;
+  }
 
-@media (min-width: 1200px) {
-  .filtrosPorTipo {
-    grid-template-columns: 1fr 1fr 1fr;
-    width: 18vw;
-    padding-left: 2vw;
+  .tipoLabel>p {
+    margin: 0;
+  }
+
+  .tipoDescription {
+    font-size: 10px;
   }
 }
