@@ -2,15 +2,12 @@
   width: 100vw;
   height: 90vh;
   position: absolute;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
 }
 
 .botonFiltros {
   height: 7vh;
-}
-
-.filtrosBox {
-  display: grid;
-  grid-template-columns: 1fr 5fr;
 }
 
 .boxes {
@@ -109,13 +106,9 @@
     height: 13vh;
   }
 
-  .filtrosBox {
+  .filtros {
     display: grid;
     grid-template-columns: 1fr 4fr;
-  }
-
-  .filtros {
-    height: 90vh;
   }
 
   .tipoClass {
@@ -159,7 +152,7 @@
 /*  PC  */
 
 @media (min-width: 1200px) {
-  .filtrosBox {
+  .filtros {
     display: grid;
     grid-template-columns: 1fr 10fr;
   }
