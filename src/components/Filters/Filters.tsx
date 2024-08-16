@@ -1,6 +1,6 @@
 import type { CaseTipoId } from "../../types/caseData";
 import Filter from "./Filter/Filter";
-import styles from "./Filtros.module.css";
+import styles from "./Filters.module.css";
 
 type Filters = Record<CaseTipoId, boolean>;
 
@@ -10,7 +10,7 @@ interface Props {
   setTipoFilters: (callback: (prevFilters: Filters) => Filters) => void;
 }
 
-export default function Filtros({
+export default function Filters({
   caseCount,
   tipoFilters,
   setTipoFilters,
