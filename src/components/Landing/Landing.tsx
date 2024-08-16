@@ -7,7 +7,7 @@ import { Link as ScrollLink } from "react-scroll";
 import Footer from "../Footer/Footer";
 import SiteSummary from "../SiteSummary/SiteSummary";
 import Popup from "../Popup/Popup";
-import Filtros from "../Filtros/Filtros";
+import Filters from "../Filters/Filters";
 import Analisis from "../Analisis/Analisis";
 import MonthsSlider from "../MonthsSlider/MonthsSlider";
 import { RadarMap } from "../Map/Map";
@@ -54,7 +54,7 @@ function Landing() {
 
   return (
     <div id={Navlinks.homeAnchor} className={styles.Landing}>
-      <Filtros
+      <Filters
         caseCount={filteredData.length}
         tipoFilters={tipoFilters}
         setTipoFilters={setTipoFilters}
