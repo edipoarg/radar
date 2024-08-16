@@ -36,32 +36,6 @@
   width: 50vw;
 }
 
-.tipo {
-  display: flex;
-  flex-direction: column;
-  padding: 7px 5px;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-}
-
-.tipoLabel {
-  display: flex;
-  justify-content: flex-start;
-  gap: 20px;
-  width: 100%;
-}
-
-
-.tipoIcon {
-  width: 23px;
-  height: 23px;
-  border-radius: 5px;
-  padding-left: 4px;
-  margin-right: 5px;
-  flex-shrink: 0;
-}
-
 .tipo1Icon {
   background-color: rgb(252, 252, 114);
 }
@@ -74,9 +48,6 @@
   background-color: rgb(251, 55, 25);
 }
 
-.tipoDescription {
-  font-size: 10px;
-}
 
 /*== Responsive==*/
 
@@ -102,21 +73,5 @@
     text-align: center;
     min-width: 18vw;
     align-items: stretch;
-  }
-
-  .tipoLabel {
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 1vh;
-    width: 60px;
-  }
-
-  .tipoLabel>p {
-    margin: 0;
-  }
-
-  .tipoDescription {
-    font-size: 10px;
   }
 }

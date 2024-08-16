@@ -1,6 +1,6 @@
 import type { CaseTipoId } from "../../types/caseData";
+import Filter from "./Filter/Filter";
 import styles from "./Filtros.module.css";
-import { Switch } from "@mui/material";
 
 type Filters = Record<CaseTipoId, boolean>;
 
@@ -16,11 +16,10 @@ export default function Filtros({
   setTipoFilters,
 }: Props) {
   const handleTipoFilterChange =
-    (tipoId: "t1" | "t2" | "t3") =>
-    (event: React.ChangeEvent<HTMLInputElement>) => {
+    (tipoId: "t1" | "t2" | "t3") => (checked: boolean) => {
       setTipoFilters((prevFilters: Filters) => ({
         ...prevFilters,
-        [tipoId]: event.target.checked,
+        [tipoId]: checked,
       }));
     };
 
@@ -31,44 +30,24 @@ export default function Filtros({
         <h1 className={styles.cantCasos}>{caseCount}</h1>
       </header>
       <div className={styles.filtrosPorTipo}>
-        <div className={styles.tipo}>
-          <div className={styles.tipoLabel}>
-            <div className={`${styles.tipoIcon} ${styles.tipo1Icon}`}></div>
-            <p className={styles.tipoDescription}>
-              Ataque a símbolos y lugares{" "}
-            </p>
-          </div>
-          <Switch
-            defaultChecked={tipoFilters.t1}
-            onChange={handleTipoFilterChange("t1")}
-          />
-        </div>
-
-        <div className={styles.tipo}>
-          <div className={styles.tipoLabel}>
-            <div className={`${styles.tipoIcon} ${styles.tipo2Icon}`}></div>
-            <p className={styles.tipoDescription}>
-              Hostigamiento e intimidación
-            </p>
-          </div>
-          <Switch
-            defaultChecked={tipoFilters.t2}
-            onChange={handleTipoFilterChange("t2")}
-          />
-        </div>
-
-        <div className={styles.tipo}>
-          <div className={styles.tipoLabel}>
-            <div className={`${styles.tipoIcon} ${styles.tipo3Icon}`}></div>
-            <p className={styles.tipoDescription}>
-              Atentados contra la integridad física y la vida
-            </p>
-          </div>
-          <Switch
-            defaultChecked={tipoFilters.t3}
-            onChange={handleTipoFilterChange("t3")}
-          />
-        </div>
+        <Filter
+          description="Ataque a símbolos y lugares"
+          iconClassname={styles.tipo1Icon}
+          onChange={handleTipoFilterChange("t1")}
+          value={tipoFilters.t1}
+        />
+        <Filter
+          description="Hostigamiento e intimidación"
+          iconClassname={styles.tipo2Icon}
+          onChange={handleTipoFilterChange("t2")}
+          value={tipoFilters.t2}
+        />
+        <Filter
+          description="Atentados contra la integridad física y la vida"
+          iconClassname={styles.tipo3Icon}
+          onChange={handleTipoFilterChange("t3")}
+          value={tipoFilters.t3}
+        />
       </div>
     </div>
   );
