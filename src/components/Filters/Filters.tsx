@@ -1,13 +1,11 @@
-import type { CaseTipoId } from "../../types/caseData";
+import type { TipoFilters } from "../../helpers/useFilters";
 import Filter from "./Filter/Filter";
 import styles from "./Filters.module.css";
 
-type Filters = Record<CaseTipoId, boolean>;
-
 interface Props {
   caseCount: number;
-  tipoFilters: Filters;
-  setTipoFilters: (callback: (prevFilters: Filters) => Filters) => void;
+  tipoFilters: TipoFilters;
+  setTipoFilters: (callback: (prevFilters: TipoFilters) => TipoFilters) => void;
 }
 
 export default function Filters({
@@ -17,7 +15,7 @@ export default function Filters({
 }: Props) {
   const handleTipoFilterChange =
     (tipoId: "t1" | "t2" | "t3") => (checked: boolean) => {
-      setTipoFilters((prevFilters: Filters) => ({
+      setTipoFilters((prevFilters: TipoFilters) => ({
         ...prevFilters,
         [tipoId]: checked,
       }));
