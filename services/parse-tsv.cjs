@@ -4,28 +4,6 @@ const fs = require("fs");
 /** @import { Case, AttacksData, Clasificacion } from  "../common/json-shape"; */
 
 /**
- * @param {string} caseTypeDescription
- * @returns {string}
- */
-const correctTipoOrComponenteDescription = (caseTypeDescription) =>
-  caseTypeDescription
-    .replace("murales o lugares", "murales y lugares")
-    .replace("símbolos y lugares", "símbolos, murales y lugares")
-    .replace("amrnazas", "amenazas")
-    .replace(/identidades política$/, "identidades políticas")
-    .replace("antiLGBTINB+", "antiLGBTINBQ+")
-    .replace("supremaracismo", "supremacismo")
-    .replace(/^racismo y xenofob.a$/, "racismo, xenofobia y nacionalismo")
-    .replace(
-      /^violencia física y atentados contra la vida$/,
-      "atentados contra la integridad física y la vida",
-    )
-    .replace(
-      /^violencia por razones de misoginia, antifeminismo y antiLGBTINB+$/,
-      "misoginia, antifeminismo y antiLGBTINBQ+",
-    );
-
-/**
  * @param {string[]} tsvRow
  * @returns {Case | null}
  */
@@ -75,13 +53,9 @@ const tsvRowToCase = (tsvRow) => {
     },
     provincia: tsvProvince,
     tipoId: separateBySemicolon(tsvTypeIds),
-    tipo: separateBySemicolon(tsvTypeDescription).map(
-      correctTipoOrComponenteDescription,
-    ),
+    tipo: separateBySemicolon(tsvTypeDescription),
     componenteId: separateBySemicolon(tsvComponentIds),
-    componente: separateBySemicolon(tsvComponentDescriptions).map(
-      correctTipoOrComponenteDescription,
-    ),
+    componente: separateBySemicolon(tsvComponentDescriptions),
   };
 };
 
