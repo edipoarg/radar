@@ -10,15 +10,8 @@
                 "longitude": -65.21858569749686
             },
             "provincia": "Tucumán",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c1",
-                "c2"
             ],
             "componente": [
                 "negacionismo y apología a la dictadura",
@@ -35,14 +28,8 @@
                 "longitude": -71.31829879210171
             },
             "provincia": "Río Negro",
-            "tipoId": [
-                "t3"
-            ],
             "tipo": [
                 "atentados contra la integridad física y la vida"
-            ],
-            "componenteId": [
-                "c5"
             ],
             "componente": [
                 "racismo y xenofobia"
@@ -58,14 +45,8 @@
                 "longitude": -58.42200409093986
             },
             "provincia": "CABA",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c1"
             ],
             "componente": [
                 "negacionismo y apología a la dictadura"
@@ -81,14 +62,8 @@
                 "longitude": -58.42502821977571
             },
             "provincia": "CABA",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c1"
             ],
             "componente": [
                 "negacionismo y apología a la dictadura"
@@ -104,14 +79,8 @@
                 "longitude": -58.42186433566206
             },
             "provincia": "CABA",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c1"
             ],
             "componente": [
                 "negacionismo y apología a la dictadura"
@@ -127,14 +96,8 @@
                 "longitude": -58.42691613326826
             },
             "provincia": "CABA",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c2"
             ],
             "componente": [
                 "contra identidades políticas"
@@ -150,14 +113,8 @@
                 "longitude": -58.43022717744733
             },
             "provincia": "CABA",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c2"
             ],
             "componente": [
                 "contra identidades políticas"
@@ -173,14 +130,8 @@
                 "longitude": -66.84060945562148
             },
             "provincia": "La Rioja",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c4"
             ],
             "componente": [
                 "misoginia, antifeminismo y antiLGBTINBQ+"
@@ -196,14 +147,8 @@
                 "longitude": -64.18262973273153
             },
             "provincia": "Córdoba",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c4"
             ],
             "componente": [
                 "misoginia, antifeminismo y antiLGBTINBQ+"
@@ -219,14 +164,8 @@
                 "longitude": -58.482172084658046
             },
             "provincia": "CABA",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c2"
             ],
             "componente": [
                 "contra identidades políticas"
@@ -242,14 +181,8 @@
                 "longitude": -61.5243199756026
             },
             "provincia": "Buenos Aires",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c2"
             ],
             "componente": [
                 "contra identidades políticas"
@@ -265,14 +198,8 @@
                 "longitude": -57.54944203863374
             },
             "provincia": "Buenos Aires",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c3"
             ],
             "componente": [
                 "nazismo, antisemitismo y supremacismo"
@@ -288,14 +215,8 @@
                 "longitude": -58.44821948465955
             },
             "provincia": "CABA",
-            "tipoId": [
-                "t3"
-            ],
             "tipo": [
                 "atentados contra la integridad física y la vida"
-            ],
-            "componenteId": [
-                "c2"
             ],
             "componente": [
                 "contra identidades políticas"
@@ -311,14 +232,8 @@
                 "longitude": -71.31005156037172
             },
             "provincia": "Río Negro ",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c1"
             ],
             "componente": [
                 "negacionismo y apología a la dictadura"
@@ -334,14 +249,8 @@
                 "longitude": -58.843116445504705
             },
             "provincia": "Buenos Aires",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c1"
             ],
             "componente": [
                 "negacionismo y apología a la dictadura"
@@ -357,14 +266,8 @@
                 "longitude": -58.416339779474676
             },
             "provincia": "CABA",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c2"
             ],
             "componente": [
                 "contra identidades políticas"
@@ -380,14 +283,8 @@
                 "longitude": -66.33695714013804
             },
             "provincia": "San Luis",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c4"
             ],
             "componente": [
                 "misoginia, antifeminismo y antiLGBTINBQ+"
@@ -403,14 +300,8 @@
                 "longitude": -66.33753993028233
             },
             "provincia": "San Luis",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c4"
             ],
             "componente": [
                 "misoginia, antifeminismo y antiLGBTINBQ+"
@@ -426,14 +317,8 @@
                 "longitude": -68.52469517256695
             },
             "provincia": "San Juan",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c2"
             ],
             "componente": [
                 "contra identidades políticas"
@@ -449,14 +334,8 @@
                 "longitude": -58.44780996625058
             },
             "provincia": "CABA",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c1"
             ],
             "componente": [
                 "negacionismo y apología a la dictadura"
@@ -472,14 +351,8 @@
                 "longitude": -71.13484419319111
             },
             "provincia": "Chubut",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c2"
             ],
             "componente": [
                 "contra identidades políticas"
@@ -495,15 +368,8 @@
                 "longitude": -58.37227247559694
             },
             "provincia": "CABA",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c1",
-                "c2"
             ],
             "componente": [
                 "negacionismo y apología a la dictadura",
@@ -520,14 +386,8 @@
                 "longitude": -66.33696347533206
             },
             "provincia": "San Luis",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c4"
             ],
             "componente": [
                 "misoginia, antifeminismo y antiLGBTINBQ+"
@@ -543,14 +403,8 @@
                 "longitude": -64.30136814978685
             },
             "provincia": "Córdoba",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c1"
             ],
             "componente": [
                 "negacionismo y apología a la dictadura"
@@ -566,14 +420,8 @@
                 "longitude": -66.33680680363088
             },
             "provincia": "San Luis",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c2"
             ],
             "componente": [
                 "contra identidades políticas"
@@ -589,14 +437,8 @@
                 "longitude": -64.29816403696947
             },
             "provincia": "Córdoba",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c1"
             ],
             "componente": [
                 "negacionismo y apología a la dictadura"
@@ -612,14 +454,8 @@
                 "longitude": -57.55066885347312
             },
             "provincia": "Buenos Aires",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c1"
             ],
             "componente": [
                 "negacionismo y apología a la dictadura"
@@ -635,14 +471,8 @@
                 "longitude": -58.4223873197747
             },
             "provincia": "CABA",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c2"
             ],
             "componente": [
                 "contra identidades políticas"
@@ -658,14 +488,8 @@
                 "longitude": -65.28477642496794
             },
             "provincia": "Tucumán",
-            "tipoId": [
-                "t3"
-            ],
             "tipo": [
                 "atentados contra la integridad física y la vida"
-            ],
-            "componenteId": [
-                "c3"
             ],
             "componente": [
                 "nazismo, antisemitismo y supremacismo"
@@ -681,14 +505,8 @@
                 "longitude": -62.26343748650534
             },
             "provincia": "Buenos Aires",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c2"
             ],
             "componente": [
                 "contra identidades políticas"
@@ -704,14 +522,8 @@
                 "longitude": -68.55746093285602
             },
             "provincia": "La Rioja",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c1"
             ],
             "componente": [
                 "negacionismo y apología a la dictadura"
@@ -727,14 +539,8 @@
                 "longitude": -68.52561441195255
             },
             "provincia": "San Juan",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c3"
             ],
             "componente": [
                 "nazismo, antisemitismo y supremacismo"
@@ -750,15 +556,8 @@
                 "longitude": -68.52765780514454
             },
             "provincia": "San Juan",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c3",
-                "c6"
             ],
             "componente": [
                 "nazismo, antisemitismo y supremacismo",
@@ -775,15 +574,8 @@
                 "longitude": -68.51299495773931
             },
             "provincia": "San Juan",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c1",
-                "c3"
             ],
             "componente": [
                 "negacionismo y apología a la dictadura",
@@ -800,14 +592,8 @@
                 "longitude": -54.60711170541505
             },
             "provincia": "Misiones",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c3"
             ],
             "componente": [
                 "nazismo, antisemitismo y supremacismo"
@@ -823,14 +609,8 @@
                 "longitude": -68.5295278896354
             },
             "provincia": "San Juan",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c3"
             ],
             "componente": [
                 "nazismo, antisemitismo y supremacismo"
@@ -846,14 +626,8 @@
                 "longitude": -62.261237727377804
             },
             "provincia": "Buenos Aires",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c3"
             ],
             "componente": [
                 "nazismo, antisemitismo y supremacismo"
@@ -869,14 +643,8 @@
                 "longitude": -58.3815596965657
             },
             "provincia": "CABA",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c4"
             ],
             "componente": [
                 "misoginia, antifeminismo y antiLGBTINBQ+"
@@ -892,14 +660,8 @@
                 "longitude": -62.26832443352756
             },
             "provincia": "Buenos Aires",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c2"
             ],
             "componente": [
                 "contra identidades políticas"
@@ -915,14 +677,8 @@
                 "longitude": -64.28010151252985
             },
             "provincia": "La Pampa",
-            "tipoId": [
-                "t2"
-            ],
             "tipo": [
                 "hostigamiento e intimidación"
-            ],
-            "componenteId": [
-                "c2"
             ],
             "componente": [
                 "contra identidades políticas"
@@ -938,14 +694,8 @@
                 "longitude": -66.33761793431697
             },
             "provincia": "San Luis",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c4"
             ],
             "componente": [
                 "misoginia, antifeminismo y antiLGBTINBQ+"
@@ -961,14 +711,8 @@
                 "longitude": -66.34654052362772
             },
             "provincia": "San Luis",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c4"
             ],
             "componente": [
                 "misoginia, antifeminismo y antiLGBTINBQ+"
@@ -984,14 +728,8 @@
                 "longitude": -58.41229860815042
             },
             "provincia": "CABA",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c4"
             ],
             "componente": [
                 "misoginia, antifeminismo y antiLGBTINBQ+"
@@ -1007,14 +745,8 @@
                 "longitude": -58.41414173379569
             },
             "provincia": "CABA",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c2"
             ],
             "componente": [
                 "contra identidades políticas"
@@ -1030,14 +762,8 @@
                 "longitude": -58.47426989999999
             },
             "provincia": "CABA",
-            "tipoId": [
-                "t3"
-            ],
             "tipo": [
                 "atentados contra la integridad física y la vida"
-            ],
-            "componenteId": [
-                "c2"
             ],
             "componente": [
                 "contra identidades políticas"
@@ -1053,15 +779,8 @@
                 "longitude": -58.41414173379569
             },
             "provincia": "CABA",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c1",
-                "c2"
             ],
             "componente": [
                 "negacionismo y apología a la dictadura",
@@ -1078,14 +797,8 @@
                 "longitude": -58.41367001845509
             },
             "provincia": "CABA",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c2"
             ],
             "componente": [
                 "contra identidades políticas"
@@ -1101,14 +814,8 @@
                 "longitude": -57.548782619503264
             },
             "provincia": " Buenos Aires",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c1"
             ],
             "componente": [
                 "negacionismo y apología a la dictadura"
@@ -1124,14 +831,8 @@
                 "longitude": -58.41367001845509
             },
             "provincia": "CABA",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c2"
             ],
             "componente": [
                 "contra identidades políticas"
@@ -1147,14 +848,8 @@
                 "longitude": -58.42131716504123
             },
             "provincia": "CABA",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c2"
             ],
             "componente": [
                 "contra identidades políticas"
@@ -1170,14 +865,8 @@
                 "longitude": -60.71835605397865
             },
             "provincia": "Santa Fe",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c3"
             ],
             "componente": [
                 "nazismo, antisemitismo y supremacismo"
@@ -1193,14 +882,8 @@
                 "longitude": -60.304537084659565
             },
             "provincia": "Buenos Aires",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c1"
             ],
             "componente": [
                 "negacionismo y apología a la dictadura"
@@ -1216,15 +899,8 @@
                 "longitude": -58.41367001845509
             },
             "provincia": "CABA",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c1",
-                "c2"
             ],
             "componente": [
                 "negacionismo y apología a la dictadura",
@@ -1241,14 +917,8 @@
                 "longitude": -58.41096039001233
             },
             "provincia": "CABA",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c2"
             ],
             "componente": [
                 "contra identidades políticas"
@@ -1264,14 +934,8 @@
                 "longitude": -58.41989502956814
             },
             "provincia": "CABA",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c2"
             ],
             "componente": [
                 "contra identidades políticas"
@@ -1287,14 +951,8 @@
                 "longitude": -57.885475133779146
             },
             "provincia": "Buenos Aires",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c1"
             ],
             "componente": [
                 "negacionismo y apología a la dictadura"
@@ -1310,14 +968,8 @@
                 "longitude": -67.70213382731507
             },
             "provincia": "Tierra del Fuego",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c2"
             ],
             "componente": [
                 "contra identidades políticas"
@@ -1333,14 +985,8 @@
                 "longitude": -57.945496280385974
             },
             "provincia": "Buenos Aires",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c2"
             ],
             "componente": [
                 "contra identidades políticas"
@@ -1356,15 +1002,9 @@
                 "longitude": -58.41378041945706
             },
             "provincia": "CABA",
-            "tipoId": [
-                "t2"
-            ],
             "tipo": [
                 "hostigamiento e intimidación",
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c2"
             ],
             "componente": [
                 "contra identidades políticas"
@@ -1380,15 +1020,8 @@
                 "longitude": -62.26454123894763
             },
             "provincia": "Buenos Aires",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c2",
-                "c5"
             ],
             "componente": [
                 "contra identidades políticas",
@@ -1405,15 +1038,8 @@
                 "longitude": -68.05059808195348
             },
             "provincia": "Neuquén",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c1",
-                "c3"
             ],
             "componente": [
                 "negacionismo y apología a la dictadura",
@@ -1430,14 +1056,8 @@
                 "longitude": -71.38863355445906
             },
             "provincia": "Río Negro",
-            "tipoId": [
-                "t3"
-            ],
             "tipo": [
                 "atentados contra la integridad física y la vida"
-            ],
-            "componenteId": [
-                "c5"
             ],
             "componente": [
                 "racismo y xenofobia"
@@ -1453,14 +1073,8 @@
                 "longitude": -57.88311008650533
             },
             "provincia": "Buenos Aires",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c2"
             ],
             "componente": [
                 "contra identidades políticas"
@@ -1476,15 +1090,8 @@
                 "longitude": -58.41105620443307
             },
             "provincia": "CABA",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c1",
-                "c2"
             ],
             "componente": [
                 "negacionismo y apología a la dictadura",
@@ -1501,14 +1108,8 @@
                 "longitude": -57.95359353377467
             },
             "provincia": "Buenos Aires",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c1"
             ],
             "componente": [
                 "negacionismo y apología a la dictadura"
@@ -1524,14 +1125,8 @@
                 "longitude": -58.420991575597725
             },
             "provincia": "CABA",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c4"
             ],
             "componente": [
                 "misoginia, antifeminismo y antiLGBTINBQ+"
@@ -1547,14 +1142,8 @@
                 "longitude": -64.1889986318043
             },
             "provincia": "Córdoba",
-            "tipoId": [
-                "t3"
-            ],
             "tipo": [
                 "atentados contra la integridad física y la vida"
-            ],
-            "componenteId": [
-                "c2"
             ],
             "componente": [
                 "contra identidades políticas"
@@ -1570,14 +1159,8 @@
                 "longitude": -58.41265487559734
             },
             "provincia": "CABA",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c4"
             ],
             "componente": [
                 "misoginia, antifeminismo y antiLGBTINBQ+"
@@ -1593,14 +1176,8 @@
                 "longitude": -58.41254111977588
             },
             "provincia": "CABA",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c4"
             ],
             "componente": [
                 "misoginia, antifeminismo y antiLGBTINBQ+"
@@ -1616,14 +1193,8 @@
                 "longitude": -58.4108745593267
             },
             "provincia": "CABA",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c2"
             ],
             "componente": [
                 "contra identidades políticas"
@@ -1639,15 +1210,8 @@
                 "longitude": -57.57113126124584
             },
             "provincia": "Buenos Aires",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c2",
-                "c3"
             ],
             "componente": [
                 "contra identidades políticas",
@@ -1664,14 +1228,8 @@
                 "longitude": -60.430166615450624
             },
             "provincia": "Santa Fe",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c1"
             ],
             "componente": [
                 "negacionismo y apología a la dictadura"
@@ -1687,14 +1245,8 @@
                 "longitude": -57.93978363381451
             },
             "provincia": "Buenos Aires",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c2"
             ],
             "componente": [
                 "contra identidades políticas"
@@ -1710,14 +1262,8 @@
                 "longitude": -57.95045131105197
             },
             "provincia": "Buenos Aires",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c2"
             ],
             "componente": [
                 "contra identidades políticas"
@@ -1733,14 +1279,8 @@
                 "longitude": -58.388097184083
             },
             "provincia": "CABA",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c1"
             ],
             "componente": [
                 "negacionismo y apología a la dictadura"
@@ -1756,14 +1296,8 @@
                 "longitude": -60.47440115688897
             },
             "provincia": "Santa Fe",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c1"
             ],
             "componente": [
                 "negacionismo y apología a la dictadura"
@@ -1779,14 +1313,8 @@
                 "longitude": -58.39151938847432
             },
             "provincia": "CABA",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c1"
             ],
             "componente": [
                 "negacionismo y apología a la dictadura"
@@ -1802,15 +1330,8 @@
                 "longitude": -69.21259803438937
             },
             "provincia": "Santa Cruz",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c1",
-                "c4"
             ],
             "componente": [
                 "contra identidades políticas",
@@ -1827,14 +1348,8 @@
                 "longitude": -58.372251017925535
             },
             "provincia": "CABA",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c2"
             ],
             "componente": [
                 "contra identidades políticas"
@@ -1850,15 +1365,8 @@
                 "longitude": -58.42175772864721
             },
             "provincia": "CABA",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c1",
-                "c2"
             ],
             "componente": [
                 "negacionismo y apología a la dictadura",
@@ -1875,14 +1383,8 @@
                 "longitude": -60.56260790848537
             },
             "provincia": "Santa Fe",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c1"
             ],
             "componente": [
                 "negacionismo y apología a la dictadura"
@@ -1898,15 +1400,8 @@
                 "longitude": -68.05025860090053
             },
             "provincia": "Neuquén",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c1",
-                "c3"
             ],
             "componente": [
                 "negacionismo y apología a la dictadura",
@@ -1923,15 +1418,8 @@
                 "longitude": -68.05211327653709
             },
             "provincia": "Neuquén",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c1",
-                "c3"
             ],
             "componente": [
                 "negacionismo y apología a la dictadura",
@@ -1948,15 +1436,9 @@
                 "longitude": -64.30523526767341
             },
             "provincia": "La Pampa",
-            "tipoId": [
-                "t2"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares",
                 "hostigamiento e intimidación"
-            ],
-            "componenteId": [
-                "c4"
             ],
             "componente": [
                 "misoginia, antifeminismo y antiLGBTINBQ+"
@@ -1972,15 +1454,8 @@
                 "longitude": -62.826294479168055
             },
             "provincia": "Neuquén",
-            "tipoId": [
-                "t3"
-            ],
             "tipo": [
                 "atentados contra la integridad física y la vida"
-            ],
-            "componenteId": [
-                "c2",
-                "c5"
             ],
             "componente": [
                 "racismo y xenofobia",
@@ -1997,15 +1472,8 @@
                 "longitude": -58.37025099911148
             },
             "provincia": "CABA",
-            "tipoId": [
-                "t2"
-            ],
             "tipo": [
                 "hostigamiento e intimidación"
-            ],
-            "componenteId": [
-                "c2",
-                "c4"
             ],
             "componente": [
                 "contra identidades políticas",
@@ -2022,14 +1490,8 @@
                 "longitude": -58.37025099911148
             },
             "provincia": "CABA",
-            "tipoId": [
-                "t2"
-            ],
             "tipo": [
                 "hostigamiento e intimidación"
-            ],
-            "componenteId": [
-                "c2"
             ],
             "componente": [
                 "contra identidades políticas"
@@ -2045,14 +1507,8 @@
                 "longitude": -58.38154894232859
             },
             "provincia": "CABA",
-            "tipoId": [
-                "t2"
-            ],
             "tipo": [
                 "hostigamiento e intimidación"
-            ],
-            "componenteId": [
-                "c2"
             ],
             "componente": [
                 "contra identidades políticas"
@@ -2068,16 +1524,9 @@
                 "longitude": -58.39070157871416
             },
             "provincia": "CABA",
-            "tipoId": [
-                "t2"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares",
                 "hostigamiento e intimidación"
-            ],
-            "componenteId": [
-                "c2",
-                "c4"
             ],
             "componente": [
                 "contra identidades políticas",
@@ -2094,14 +1543,8 @@
                 "longitude": -58.392603935459356
             },
             "provincia": "CABA",
-            "tipoId": [
-                "t2"
-            ],
             "tipo": [
                 "hostigamiento e intimidación"
-            ],
-            "componenteId": [
-                "c2"
             ],
             "componente": [
                 "contra identidades políticas"
@@ -2117,14 +1560,8 @@
                 "longitude": -58.392603935459356
             },
             "provincia": "CABA",
-            "tipoId": [
-                "t2"
-            ],
             "tipo": [
                 "hostigamiento e intimidación"
-            ],
-            "componenteId": [
-                "c2"
             ],
             "componente": [
                 "contra identidades políticas"
@@ -2140,15 +1577,8 @@
                 "longitude": -58.37028470016661
             },
             "provincia": "CABA",
-            "tipoId": [
-                "t3"
-            ],
             "tipo": [
                 "atentados contra la integridad física y la vida"
-            ],
-            "componenteId": [
-                "c2",
-                "c6"
             ],
             "componente": [
                 "contra identidades políticas",
@@ -2165,14 +1595,8 @@
                 "longitude": -58.798755687119055
             },
             "provincia": "Santiago del Estero",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c3"
             ],
             "componente": [
                 "nazismo, antisemitismo y supremacismo"
@@ -2188,16 +1612,8 @@
                 "longitude": -58.4862259586971
             },
             "provincia": "Buenos Aires",
-            "tipoId": [
-                "t2"
-            ],
             "tipo": [
                 "hostigamiento e intimidación"
-            ],
-            "componenteId": [
-                "c1",
-                "c2",
-                "c4"
             ],
             "componente": [
                 "negacionismo y apología a la dictadura",
@@ -2215,14 +1631,8 @@
                 "longitude": -65.39549541534046
             },
             "provincia": "Salta",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c1"
             ],
             "componente": [
                 "negacionismo y apología a la dictadura"
@@ -2238,14 +1648,8 @@
                 "longitude": -58.3876775467621
             },
             "provincia": "CABA",
-            "tipoId": [
-                "t3"
-            ],
             "tipo": [
                 "atentados contra la integridad física y la vida"
-            ],
-            "componenteId": [
-                "c2"
             ],
             "componente": [
                 "contra identidades políticas"
@@ -2261,14 +1665,8 @@
                 "longitude": -58.3876775467621
             },
             "provincia": "CABA",
-            "tipoId": [
-                "t3"
-            ],
             "tipo": [
                 "atentados contra la integridad física y la vida"
-            ],
-            "componenteId": [
-                "c2"
             ],
             "componente": [
                 "contra identidades políticas",
@@ -2285,14 +1683,8 @@
                 "longitude": -57.947511557670204
             },
             "provincia": "Buenos Aires",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c2"
             ],
             "componente": [
                 "contra identidades políticas"
@@ -2308,14 +1700,8 @@
                 "longitude": -57.94967328465955
             },
             "provincia": "Buenos Aires",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c2"
             ],
             "componente": [
                 "contra identidades políticas"
@@ -2331,14 +1717,8 @@
                 "longitude": -58.41280574975316
             },
             "provincia": "CABA",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c1"
             ],
             "componente": [
                 "negacionismo y apología a la dictadura"
@@ -2354,14 +1734,8 @@
                 "longitude": -61.5243199756026
             },
             "provincia": "Buenos Aires",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c2"
             ],
             "componente": [
                 "contra identidades políticas"
@@ -2377,15 +1751,8 @@
                 "longitude": -58.24826224675457
             },
             "provincia": "Buenos Aires",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c1",
-                "c2"
             ],
             "componente": [
                 "negacionismo y apología a la dictadura",
@@ -2402,15 +1769,8 @@
                 "longitude": -60.637665871164884
             },
             "provincia": "Santa Fe",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c3",
-                "c4"
             ],
             "componente": [
                 "nazismo, antisemitismo y supremacismo",
@@ -2427,14 +1787,8 @@
                 "longitude": -58.412719919067534
             },
             "provincia": "CABA",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c1"
             ],
             "componente": [
                 "negacionismo y apología a la dictadura"
@@ -2450,14 +1804,8 @@
                 "longitude": -71.53493054048398
             },
             "provincia": "Río Negro",
-            "tipoId": [
-                "t3"
-            ],
             "tipo": [
                 "atentados contra la integridad física y la vida"
-            ],
-            "componenteId": [
-                "c5"
             ],
             "componente": [
                 "racismo y xenofobia"
@@ -2473,14 +1821,8 @@
                 "longitude": -60.54199401534046
             },
             "provincia": "Entre Ríos",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c3"
             ],
             "componente": [
                 "nazismo, antisemitismo y supremacismo"
@@ -2496,14 +1838,8 @@
                 "longitude": -58.41113205138356
             },
             "provincia": "CABA",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c2"
             ],
             "componente": [
                 "contra identidades políticas"
@@ -2519,15 +1855,8 @@
                 "longitude": -58.41345204973756
             },
             "provincia": "CABA",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c1",
-                "c5"
             ],
             "componente": [
                 "negacionismo y apología a la dictadura",
@@ -2544,14 +1873,8 @@
                 "longitude": -60.633216786505336
             },
             "provincia": "Santa Fe",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c1"
             ],
             "componente": [
                 "negacionismo y apología a la dictadura"
@@ -2567,14 +1890,8 @@
                 "longitude": -57.54495735767022
             },
             "provincia": "Buenos Aires",
-            "tipoId": [
-                "t2"
-            ],
             "tipo": [
                 "hostigamiento e intimidación"
-            ],
-            "componenteId": [
-                "c1"
             ],
             "componente": [
                 "negacionismo y apología a la dictadura"
@@ -2590,14 +1907,8 @@
                 "longitude": -66.33895307721346
             },
             "provincia": "San Luis",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c4"
             ],
             "componente": [
                 "misoginia, antifeminismo y antiLGBTINBQ+"
@@ -2613,14 +1924,8 @@
                 "longitude": -58.409782666726
             },
             "provincia": "CABA",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c4"
             ],
             "componente": [
                 "misoginia, antifeminismo y antiLGBTINBQ+"
@@ -2636,14 +1941,8 @@
                 "longitude": -71.66366287652158
             },
             "provincia": "Río Negro",
-            "tipoId": [
-                "t3"
-            ],
             "tipo": [
                 "atentados contra la integridad física y la vida"
-            ],
-            "componenteId": [
-                "c5"
             ],
             "componente": [
                 "racismo y xenofobia"
@@ -2659,14 +1958,8 @@
                 "longitude": -69.57990104768835
             },
             "provincia": "Mendoza",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c5"
             ],
             "componente": [
                 "racismo y xenofobia"
@@ -2676,20 +1969,14 @@
             "id": 115,
             "title": "Ataque a muestra de arte feminista en UNCUYO",
             "date": 1679529600000,
-            "source": "https://www.mdzol.com/sociedad/2023/3/20/video-el-momento-exacto-del-violento-ataque-de-religiosos-la-muestra-feminista-de-la-uncuyo-323664.html",
+            "source": "https://www.mdzol.com/sociedad/2023/3/20/video-el-momento-exacto-del-violento-ataque-de-religiosos-la-muestra-feminista-de-la-uncuyo-323664.html\r ",
             "coords": {
                 "latitude": -32.87985297417169,
                 "longitude": -68.87725532141349
             },
             "provincia": "Mendoza",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c4"
             ],
             "componente": [
                 "misoginia, antifeminismo y antiLGBTINBQ+"
@@ -2705,15 +1992,8 @@
                 "longitude": -71.33351643898155
             },
             "provincia": "Chubut",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c1",
-                "c2"
             ],
             "componente": [
                 "negacionismo y apología a la dictadura",
@@ -2730,14 +2010,8 @@
                 "longitude": -71.30999255177473
             },
             "provincia": "Río Negro ",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c1"
             ],
             "componente": [
                 "negacionismo y apología a la dictadura"
@@ -2753,14 +2027,8 @@
                 "longitude": -71.29938124232979
             },
             "provincia": "Chubut",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c1"
             ],
             "componente": [
                 "negacionismo y apología a la dictadura"
@@ -2776,14 +2044,8 @@
                 "longitude": -57.93813101349466
             },
             "provincia": "Buenos Aires",
-            "tipoId": [
-                "t2"
-            ],
             "tipo": [
                 "hostigamiento e intimidación"
-            ],
-            "componenteId": [
-                "c2"
             ],
             "componente": [
                 "contra identidades políticas"
@@ -2799,14 +2061,8 @@
                 "longitude": -65.87747056826326
             },
             "provincia": "Catamarca",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c6"
             ],
             "componente": [
                 "otros"
@@ -2822,14 +2078,8 @@
                 "longitude": -59.644420310254255
             },
             "provincia": "Entre Ríos",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c1"
             ],
             "componente": [
                 "negacionismo y apología a la dictadura"
@@ -2845,15 +2095,9 @@
                 "longitude": -65.27144340147626
             },
             "provincia": "Jujuy",
-            "tipoId": [
-                "t3"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares",
                 "atentados contra la integridad física y la vida"
-            ],
-            "componenteId": [
-                "c4"
             ],
             "componente": [
                 "misoginia, antifeminismo y antiLGBTINBQ+"
@@ -2869,15 +2113,8 @@
                 "longitude": -60.64270933521196
             },
             "provincia": "Santa Fe",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c2",
-                "c3"
             ],
             "componente": [
                 "contra identidades políticas",
@@ -2894,14 +2131,8 @@
                 "longitude": -62.097795057671405
             },
             "provincia": "Córdoba",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c1"
             ],
             "componente": [
                 "negacionismo y apología a la dictadura"
@@ -2917,14 +2148,8 @@
                 "longitude": -57.951410486505324
             },
             "provincia": "Buenos Aires",
-            "tipoId": [
-                "t2"
-            ],
             "tipo": [
                 "hostigamiento e intimidación"
-            ],
-            "componenteId": [
-                "c2"
             ],
             "componente": [
                 "contra identidades políticas"
@@ -2940,14 +2165,8 @@
                 "longitude": -58.862912483880066
             },
             "provincia": "Chaco",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c1"
             ],
             "componente": [
                 "negacionismo y apología a la dictadura"
@@ -2963,14 +2182,8 @@
                 "longitude": -58.419023271164896
             },
             "provincia": "CABA",
-            "tipoId": [
-                "t2"
-            ],
             "tipo": [
                 "hostigamiento e intimidación"
-            ],
-            "componenteId": [
-                "c2"
             ],
             "componente": [
                 "contra identidades políticas"
@@ -2986,14 +2199,8 @@
                 "longitude": -59.03579255541677
             },
             "provincia": "Chaco",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c2"
             ],
             "componente": [
                 "contra identidades políticas"
@@ -3009,15 +2216,8 @@
                 "longitude": -58.4058450621041
             },
             "provincia": "CABA",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c2",
-                "c6"
             ],
             "componente": [
                 "contra identidades políticas",
@@ -3034,14 +2234,8 @@
                 "longitude": -71.51791228916903
             },
             "provincia": "Río Negro",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c5"
             ],
             "componente": [
                 "racismo y xenofobia"
@@ -3057,14 +2251,8 @@
                 "longitude": -58.42199926626778
             },
             "provincia": "CABA",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c1"
             ],
             "componente": [
                 "negacionismo y apología a la dictadura"
@@ -3080,14 +2268,8 @@
                 "longitude": -58.419348769319114
             },
             "provincia": "CABA",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c1"
             ],
             "componente": [
                 "negacionismo y apología a la dictadura"
@@ -3103,14 +2285,8 @@
                 "longitude": -66.51357569172633
             },
             "provincia": "San Luis",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c4"
             ],
             "componente": [
                 "misoginia, antifeminismo y antiLGBTINBQ+"
@@ -3126,14 +2302,8 @@
                 "longitude": -57.55069680483551
             },
             "provincia": "Buenos Aires",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c2"
             ],
             "componente": [
                 "contra identidades políticas"
@@ -3149,14 +2319,8 @@
                 "longitude": -58.85306172269907
             },
             "provincia": "Corrientes ",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c1"
             ],
             "componente": [
                 "negacionismo y apología a la dictadura"
@@ -3172,14 +2336,8 @@
                 "longitude": -58.39151938847432
             },
             "provincia": "CABA",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c1"
             ],
             "componente": [
                 "negacionismo y apología a la dictadura"
@@ -3195,15 +2353,8 @@
                 "longitude": -58.554542627394426
             },
             "provincia": "Buenos Aires",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c1",
-                "c3"
             ],
             "componente": [
                 "negacionismo y apología a la dictadura",
@@ -3220,14 +2371,8 @@
                 "longitude": -60.71933446439551
             },
             "provincia": "Santa Fe",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c3"
             ],
             "componente": [
                 "nazismo, antisemitismo y supremacismo"
@@ -3243,15 +2388,8 @@
                 "longitude": -68.05093067116489
             },
             "provincia": "Neuquén",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c1",
-                "c3"
             ],
             "componente": [
                 "negacionismo y apología a la dictadura",
@@ -3268,15 +2406,8 @@
                 "longitude": -68.05485628650533
             },
             "provincia": "Neuquén",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c1",
-                "c3"
             ],
             "componente": [
                 "negacionismo y apología a la dictadura",
@@ -3293,14 +2424,8 @@
                 "longitude": -65.46960460589227
             },
             "provincia": "Jujuy",
-            "tipoId": [
-                "t3"
-            ],
             "tipo": [
                 "atentados contra la integridad física y la vida"
-            ],
-            "componenteId": [
-                "c1"
             ],
             "componente": [
                 "racismo y xenofobia"
@@ -3316,14 +2441,8 @@
                 "longitude": -58.55506217549279
             },
             "provincia": "Buenos Aires",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c1"
             ],
             "componente": [
                 "negacionismo y apología a la dictadura"
@@ -3339,14 +2458,8 @@
                 "longitude": -71.13448928303777
             },
             "provincia": "Chubut",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c5"
             ],
             "componente": [
                 "contra identidades políticas"
@@ -3362,15 +2475,8 @@
                 "longitude": -71.31868360343552
             },
             "provincia": "Chubut",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c2",
-                "c4"
             ],
             "componente": [
                 "contra identidades políticas",
@@ -3387,14 +2493,8 @@
                 "longitude": -58.39424770621387
             },
             "provincia": "CABA",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c1"
             ],
             "componente": [
                 "negacionismo y apología a la dictadura"
@@ -3410,15 +2510,8 @@
                 "longitude": -58.421259097322185
             },
             "provincia": "CABA",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c1",
-                "c2"
             ],
             "componente": [
                 "negacionismo y apología a la dictadura",
@@ -3435,15 +2528,8 @@
                 "longitude": -58.405222424343606
             },
             "provincia": "CABA",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c1",
-                "c2"
             ],
             "componente": [
                 "negacionismo y apología a la dictadura",
@@ -3460,15 +2546,9 @@
                 "longitude": -68.56867595519202
             },
             "provincia": "San Juan",
-            "tipoId": [
-                "t3"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares",
                 "atentados contra la integridad física y la vida"
-            ],
-            "componenteId": [
-                "c4"
             ],
             "componente": [
                 "misoginia, antifeminismo y antiLGBTINBQ+"
@@ -3484,15 +2564,9 @@
                 "longitude": -58.38093964661511
             },
             "provincia": "CABA",
-            "tipoId": [
-                "t3"
-            ],
             "tipo": [
                 "hostigamiento e intimidación",
                 "atentados contra la integridad física y la vida"
-            ],
-            "componenteId": [
-                "c4"
             ],
             "componente": [
                 "misoginia, antifeminismo y antiLGBTINBQ+"
@@ -3508,15 +2582,8 @@
                 "longitude": -68.05942871654993
             },
             "provincia": "Neuquén",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c1",
-                "c2"
             ],
             "componente": [
                 "negacionismo y apología a la dictadura",
@@ -3533,14 +2600,8 @@
                 "longitude": -57.95351467507304
             },
             "provincia": "Buenos Aires",
-            "tipoId": [
-                "t2"
-            ],
             "tipo": [
                 "hostigamiento e intimidación"
-            ],
-            "componenteId": [
-                "c7"
             ],
             "componente": [
                 "otros"
@@ -3556,14 +2617,8 @@
                 "longitude": -68.83001083192457
             },
             "provincia": "Mendoza",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c4"
             ],
             "componente": [
                 "misoginia, antifeminismo y antiLGBTINBQ+"
@@ -3579,14 +2634,8 @@
                 "longitude": -57.96098598004395
             },
             "provincia": "Buenos Aires",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c4"
             ],
             "componente": [
                 "misoginia, antifeminismo y antiLGBTINBQ+"
@@ -3602,14 +2651,8 @@
                 "longitude": -57.963741645891666
             },
             "provincia": "Buenos Aires",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c4"
             ],
             "componente": [
                 "misoginia, antifeminismo y antiLGBTINBQ+"
@@ -3625,14 +2668,8 @@
                 "longitude": -57.97005601586375
             },
             "provincia": "Buenos Aires",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c4"
             ],
             "componente": [
                 "misoginia, antifeminismo y antiLGBTINBQ+"
@@ -3648,14 +2685,8 @@
                 "longitude": -57.96256979744488
             },
             "provincia": "Buenos Aires",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c4"
             ],
             "componente": [
                 "misoginia, antifeminismo y antiLGBTINBQ+"
@@ -3671,14 +2702,8 @@
                 "longitude": -57.93763576965326
             },
             "provincia": "Buenos Aires",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c4"
             ],
             "componente": [
                 "misoginia, antifeminismo y antiLGBTINBQ+"
@@ -3694,14 +2719,8 @@
                 "longitude": -57.93772160454668
             },
             "provincia": "Buenos Aires",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c4"
             ],
             "componente": [
                 "misoginia, antifeminismo y antiLGBTINBQ+"
@@ -3717,14 +2736,8 @@
                 "longitude": -57.93831780569586
             },
             "provincia": "Buenos Aires",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c4"
             ],
             "componente": [
                 "misoginia, antifeminismo y antiLGBTINBQ+"
@@ -3740,14 +2753,8 @@
                 "longitude": -57.94904410419092
             },
             "provincia": "Buenos Aires",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c4"
             ],
             "componente": [
                 "misoginia, antifeminismo y antiLGBTINBQ+"
@@ -3763,14 +2770,8 @@
                 "longitude": -57.965845277739916
             },
             "provincia": "Buenos Aires",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c4"
             ],
             "componente": [
                 "misoginia, antifeminismo y antiLGBTINBQ+"
@@ -3786,14 +2787,8 @@
                 "longitude": -57.95448706862948
             },
             "provincia": "Buenos Aires",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c4"
             ],
             "componente": [
                 "misoginia, antifeminismo y antiLGBTINBQ+"
@@ -3809,14 +2804,8 @@
                 "longitude": -57.95214820419076
             },
             "provincia": "Buenos Aires",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c4"
             ],
             "componente": [
                 "misoginia, antifeminismo y antiLGBTINBQ+"
@@ -3832,14 +2821,8 @@
                 "longitude": -57.954343575353775
             },
             "provincia": "Buenos Aires",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c4"
             ],
             "componente": [
                 "misoginia, antifeminismo y antiLGBTINBQ+"
@@ -3855,14 +2838,8 @@
                 "longitude": -57.96027973311222
             },
             "provincia": "Buenos Aires",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c4"
             ],
             "componente": [
                 "misoginia, antifeminismo y antiLGBTINBQ+"
@@ -3878,14 +2855,8 @@
                 "longitude": -57.99319520387204
             },
             "provincia": "Buenos Aires",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c4"
             ],
             "componente": [
                 "misoginia, antifeminismo y antiLGBTINBQ+"
@@ -3901,14 +2872,8 @@
                 "longitude": -57.95682903302575
             },
             "provincia": "Buenos Aires",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c4"
             ],
             "componente": [
                 "misoginia, antifeminismo y antiLGBTINBQ+"
@@ -3924,14 +2889,8 @@
                 "longitude": -58.02113437013463
             },
             "provincia": "Buenos Aires",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c4"
             ],
             "componente": [
                 "misoginia, antifeminismo y antiLGBTINBQ+"
@@ -3947,14 +2906,8 @@
                 "longitude": -57.96806539069865
             },
             "provincia": "Buenos Aires",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c4"
             ],
             "componente": [
                 "misoginia, antifeminismo y antiLGBTINBQ+"
@@ -3970,14 +2923,8 @@
                 "longitude": -57.94938641953414
             },
             "provincia": "Buenos Aires",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c4"
             ],
             "componente": [
                 "misoginia, antifeminismo y antiLGBTINBQ+"
@@ -3993,18 +2940,11 @@
                 "longitude": -60.6376877306839
             },
             "provincia": "Santa Fe",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
             ],
-            "componenteId": [
-                "c3",
-                "c4"
-            ],
             "componente": [
-                "nazismo, antisemitismo y supremacismo",
+                "nazismo, antisemitismo y supremaracismo",
                 "misoginia, antifeminismo y antiLGBTINBQ+"
             ]
         },
@@ -4018,14 +2958,8 @@
                 "longitude": -58.37953302939016
             },
             "provincia": "CABA",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c5"
             ],
             "componente": [
                 "racismo y xenofobia"
@@ -4041,14 +2975,8 @@
                 "longitude": -58.46401743446734
             },
             "provincia": "CABA",
-            "tipoId": [
-                "t2"
-            ],
             "tipo": [
                 "hostigamiento e intimidación"
-            ],
-            "componenteId": [
-                "c1"
             ],
             "componente": [
                 "negacionismo y apología a la dictadura"
@@ -4064,14 +2992,8 @@
                 "longitude": -58.63513406784239
             },
             "provincia": "Buenos Aires",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c2"
             ],
             "componente": [
                 "contra identidades políticas"
@@ -4087,14 +3009,8 @@
                 "longitude": -62.271282455732994
             },
             "provincia": "Buenos Aires",
-            "tipoId": [
-                "t2"
-            ],
             "tipo": [
                 "hostigamiento e intimidación"
-            ],
-            "componenteId": [
-                "c2"
             ],
             "componente": [
                 "contra identidades políticas"
@@ -4110,14 +3026,8 @@
                 "longitude": -58.9829823046441
             },
             "provincia": "Chaco",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c2"
             ],
             "componente": [
                 "contra identidades políticas"
@@ -4133,15 +3043,8 @@
                 "longitude": -58.48643811663569
             },
             "provincia": "CABA",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c1",
-                "c6"
             ],
             "componente": [
                 "negacionismo y apología a la dictadura",
@@ -4158,14 +3061,8 @@
                 "longitude": -58.48659984230535
             },
             "provincia": "CABA",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c1"
             ],
             "componente": [
                 "negacionismo y apología a la dictadura"
@@ -4181,15 +3078,8 @@
                 "longitude": -58.53754732991579
             },
             "provincia": "Buenos Aires",
-            "tipoId": [
-                "t2"
-            ],
             "tipo": [
                 "hostigamiento e intimidación"
-            ],
-            "componenteId": [
-                "c1",
-                "c2"
             ],
             "componente": [
                 "negacionismo y apología a la dictadura",
@@ -4206,14 +3096,8 @@
                 "longitude": -58.39232765677527
             },
             "provincia": "CABA",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c2"
             ],
             "componente": [
                 "contra identidades políticas"
@@ -4229,15 +3113,8 @@
                 "longitude": -64.18251
             },
             "provincia": "Córdoba",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c2",
-                "c3"
             ],
             "componente": [
                 "contra identidades políticas",
@@ -4254,14 +3131,8 @@
                 "longitude": -64.181075
             },
             "provincia": "Córdoba",
-            "tipoId": [
-                "t2"
-            ],
             "tipo": [
                 "hostigamiento e intimidación"
-            ],
-            "componenteId": [
-                "c4"
             ],
             "componente": [
                 "misoginia, antifeminismo y antiLGBTINBQ+"
@@ -4277,14 +3148,8 @@
                 "longitude": -59.10351382880162
             },
             "provincia": "Buenos Aires",
-            "tipoId": [
-                "t2"
-            ],
             "tipo": [
                 "hostigamiento e intimidación"
-            ],
-            "componenteId": [
-                "c1"
             ],
             "componente": [
                 "negacionismo y apología a la dictadura"
@@ -4300,15 +3165,8 @@
                 "longitude": -58.637419198220705
             },
             "provincia": "Buenos Aires",
-            "tipoId": [
-                "t2"
-            ],
             "tipo": [
                 "hostigamiento e intimidación"
-            ],
-            "componenteId": [
-                "c2",
-                "c6"
             ],
             "componente": [
                 "contra identidades políticas",
@@ -4325,15 +3183,8 @@
                 "longitude": -58.547318671183604
             },
             "provincia": "Buenos Aires",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c1",
-                "c3"
             ],
             "componente": [
                 "negacionismo y apología a la dictadura",
@@ -4350,14 +3201,8 @@
                 "longitude": -57.95917950014241
             },
             "provincia": "Buenos Aires",
-            "tipoId": [
-                "t2"
-            ],
             "tipo": [
                 "hostigamiento e intimidación"
-            ],
-            "componenteId": [
-                "c4"
             ],
             "componente": [
                 "misoginia, antifeminismo y antiLGBTINBQ+"
@@ -4373,14 +3218,8 @@
                 "longitude": -65.21010446787986
             },
             "provincia": "Tucumán",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c1"
             ],
             "componente": [
                 "negacionismo y apología a la dictadura"
@@ -4396,15 +3235,8 @@
                 "longitude": -58.4792827882616
             },
             "provincia": "CABA",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c1",
-                "c2"
             ],
             "componente": [
                 "negacionismo y apología a la dictadura",
@@ -4421,14 +3253,8 @@
                 "longitude": -68.8500991733414
             },
             "provincia": "Mendoza",
-            "tipoId": [
-                "t2"
-            ],
             "tipo": [
                 "hostigamiento e intimidación"
-            ],
-            "componenteId": [
-                "c4"
             ],
             "componente": [
                 "misoginia, antifeminismo y antiLGBTINBQ+"
@@ -4444,14 +3270,8 @@
                 "longitude": -57.953947917201354
             },
             "provincia": "Buenos Aires",
-            "tipoId": [
-                "t3"
-            ],
             "tipo": [
-                "atentados contra la integridad física y la vida"
-            ],
-            "componenteId": [
-                "c2"
+                "violencia física y atentados contra la vida"
             ],
             "componente": [
                 "contra identidades políticas"
@@ -4467,14 +3287,8 @@
                 "longitude": -58.39214270004773
             },
             "provincia": "Buenos Aires",
-            "tipoId": [
-                "t2"
-            ],
             "tipo": [
                 "hostigamiento e intimidación"
-            ],
-            "componenteId": [
-                "c5"
             ],
             "componente": [
                 "racismo y xenofobia"
@@ -4490,15 +3304,8 @@
                 "longitude": -62.266529761720804
             },
             "provincia": "Buenos Aires",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c2",
-                "c3"
             ],
             "componente": [
                 "contra identidades políticas",
@@ -4515,14 +3322,8 @@
                 "longitude": -58.392055739262176
             },
             "provincia": "Buenos Aires",
-            "tipoId": [
-                "t2"
-            ],
             "tipo": [
                 "hostigamiento e intimidación"
-            ],
-            "componenteId": [
-                "c3"
             ],
             "componente": [
                 "nazismo, antisemitismo y supremacismo"
@@ -4538,15 +3339,8 @@
                 "longitude": -58.4574515496772
             },
             "provincia": "Buenos Aires",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c1",
-                "c4"
             ],
             "componente": [
                 "negacionismo y apología a la dictadura",
@@ -4563,14 +3357,8 @@
                 "longitude": -58.391940941364396
             },
             "provincia": "Buenos Aires",
-            "tipoId": [
-                "t2"
-            ],
             "tipo": [
                 "hostigamiento e intimidación"
-            ],
-            "componenteId": [
-                "c3"
             ],
             "componente": [
                 "nazismo, antisemitismo y supremacismo"
@@ -4586,14 +3374,8 @@
                 "longitude": -58.51953639592628
             },
             "provincia": "Buenos Aires",
-            "tipoId": [
-                "t2"
-            ],
             "tipo": [
                 "hostigamiento e intimidación"
-            ],
-            "componenteId": [
-                "c2"
             ],
             "componente": [
                 "contra identidades políticas"
@@ -4609,14 +3391,8 @@
                 "longitude": -57.9589950728369
             },
             "provincia": "Buenos Aires",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c2"
             ],
             "componente": [
                 "contra identidades políticas"
@@ -4632,14 +3408,8 @@
                 "longitude": -60.57259754498061
             },
             "provincia": "Santa Fe",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c2"
             ],
             "componente": [
                 "contra identidades políticas"
@@ -4655,14 +3425,8 @@
                 "longitude": -60.56514889436672
             },
             "provincia": "Santa Fe",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c2"
             ],
             "componente": [
                 "contra identidades políticas"
@@ -4678,14 +3442,8 @@
                 "longitude": -57.961092161368
             },
             "provincia": "Buenos Aires",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c4"
             ],
             "componente": [
                 "misoginia, antifeminismo y antiLGBTINBQ+"
@@ -4701,14 +3459,8 @@
                 "longitude": -57.96342527593703
             },
             "provincia": "Buenos Aires",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c4"
             ],
             "componente": [
                 "misoginia, antifeminismo y antiLGBTINBQ+"
@@ -4724,14 +3476,8 @@
                 "longitude": -58.3689685910654
             },
             "provincia": "CABA",
-            "tipoId": [
-                "t2"
-            ],
             "tipo": [
                 "hostigamiento e intimidación"
-            ],
-            "componenteId": [
-                "c3"
             ],
             "componente": [
                 "nazismo, antisemitismo y supremacismo"
@@ -4747,14 +3493,8 @@
                 "longitude": -58.36849652227284
             },
             "provincia": "CABA",
-            "tipoId": [
-                "t2"
-            ],
             "tipo": [
                 "hostigamiento e intimidación"
-            ],
-            "componenteId": [
-                "c3"
             ],
             "componente": [
                 "nazismo, antisemitismo y supremacismo"
@@ -4770,16 +3510,8 @@
                 "longitude": -57.56263167114815
             },
             "provincia": "Buenos Aires",
-            "tipoId": [
-                "t2"
-            ],
             "tipo": [
                 "hostigamiento e intimidación"
-            ],
-            "componenteId": [
-                "c3",
-                "c4",
-                "c5"
             ],
             "componente": [
                 "nazismo, antisemitismo y supremacismo",
@@ -4797,14 +3529,8 @@
                 "longitude": -65.3042681508942
             },
             "provincia": "Chubut",
-            "tipoId": [
-                "t2"
-            ],
             "tipo": [
                 "hostigamiento e intimidación"
-            ],
-            "componenteId": [
-                "c2"
             ],
             "componente": [
                 "contra identidades políticas"
@@ -4820,14 +3546,8 @@
                 "longitude": -57.96115983574444
             },
             "provincia": "Buenos Aires",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c4"
             ],
             "componente": [
                 "misoginia, antifeminismo y antiLGBTINBQ+"
@@ -4843,14 +3563,8 @@
                 "longitude": -58.445417328823794
             },
             "provincia": "CABA",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c3"
             ],
             "componente": [
                 "nazismo, antisemitismo y supremacismo"
@@ -4866,14 +3580,8 @@
                 "longitude": -58.43434097189241
             },
             "provincia": "CABA",
-            "tipoId": [
-                "t2"
-            ],
             "tipo": [
                 "hostigamiento e intimidación"
-            ],
-            "componenteId": [
-                "c4"
             ],
             "componente": [
                 "misoginia, antifeminismo y antiLGBTINBQ+"
@@ -4889,15 +3597,8 @@
                 "longitude": -58.45761218478178
             },
             "provincia": "CABA",
-            "tipoId": [
-                "t2"
-            ],
             "tipo": [
                 "hostigamiento e intimidación"
-            ],
-            "componenteId": [
-                "c2",
-                "c3"
             ],
             "componente": [
                 "contra identidades políticas",
@@ -4914,15 +3615,8 @@
                 "longitude": -58.47867628277423
             },
             "provincia": "CABA",
-            "tipoId": [
-                "t2"
-            ],
             "tipo": [
                 "hostigamiento e intimidación"
-            ],
-            "componenteId": [
-                "c1",
-                "c2"
             ],
             "componente": [
                 "negacionismo y apología a la dictadura",
@@ -4939,15 +3633,8 @@
                 "longitude": -68.84385307764178
             },
             "provincia": "Mendoza",
-            "tipoId": [
-                "t2"
-            ],
             "tipo": [
                 "hostigamiento e intimidación"
-            ],
-            "componenteId": [
-                "c1",
-                "c2"
             ],
             "componente": [
                 "negacionismo y apología a la dictadura",
@@ -4964,14 +3651,8 @@
                 "longitude": -68.87795236097313
             },
             "provincia": "Mendoza",
-            "tipoId": [
-                "t2"
-            ],
             "tipo": [
                 "hostigamiento e intimidación"
-            ],
-            "componenteId": [
-                "c2"
             ],
             "componente": [
                 "contra identidades políticas"
@@ -4987,15 +3668,8 @@
                 "longitude": -58.41272036307083
             },
             "provincia": "CABA",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c2",
-                "c4"
             ],
             "componente": [
                 "contra identidades políticas",
@@ -5012,14 +3686,8 @@
                 "longitude": -64.14935670887292
             },
             "provincia": "Córdoba",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c4"
             ],
             "componente": [
                 "misoginia, antifeminismo y antiLGBTINBQ+"
@@ -5035,14 +3703,8 @@
                 "longitude": -58.36097991571659
             },
             "provincia": "Buenos Aires",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c2"
             ],
             "componente": [
                 "contra identidades políticas"
@@ -5058,14 +3720,8 @@
                 "longitude": -58.523417663808395
             },
             "provincia": "Buenos Aires",
-            "tipoId": [
-                "t2"
-            ],
             "tipo": [
                 "hostigamiento e intimidación"
-            ],
-            "componenteId": [
-                "c2"
             ],
             "componente": [
                 "contra identidades políticas"
@@ -5081,14 +3737,8 @@
                 "longitude": -58.38179982884785
             },
             "provincia": "CABA",
-            "tipoId": [
-                "t2"
-            ],
             "tipo": [
                 "hostigamiento e intimidación"
-            ],
-            "componenteId": [
-                "c2"
             ],
             "componente": [
                 "contra identidades políticas"
@@ -5104,14 +3754,8 @@
                 "longitude": -64.18301201040758
             },
             "provincia": "Córdoba",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c1"
             ],
             "componente": [
                 "negacionismo y apología a la dictadura"
@@ -5127,14 +3771,8 @@
                 "longitude": -57.951088625148664
             },
             "provincia": "Buenos Aires",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c2"
             ],
             "componente": [
                 "contra identidades políticas"
@@ -5150,14 +3788,8 @@
                 "longitude": -65.40848754928614
             },
             "provincia": "Salta",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c2"
             ],
             "componente": [
                 "contra identidades políticas"
@@ -5173,14 +3805,8 @@
                 "longitude": -65.41634454195595
             },
             "provincia": "Salta",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c2"
             ],
             "componente": [
                 "contra identidades políticas"
@@ -5196,14 +3822,8 @@
                 "longitude": -65.41287177581601
             },
             "provincia": "Salta",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c2"
             ],
             "componente": [
                 "contra identidades políticas"
@@ -5219,14 +3839,8 @@
                 "longitude": -64.319291472597
             },
             "provincia": "Salta",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c2"
             ],
             "componente": [
                 "contra identidades políticas"
@@ -5242,15 +3856,8 @@
                 "longitude": -58.37975818468421
             },
             "provincia": "CABA",
-            "tipoId": [
-                "t2"
-            ],
             "tipo": [
                 "hostigamiento e intimidación"
-            ],
-            "componenteId": [
-                "c1",
-                "c2"
             ],
             "componente": [
                 "negacionismo y apología a la dictadura",
@@ -5267,15 +3874,8 @@
                 "longitude": -58.37975818468421
             },
             "provincia": "CABA",
-            "tipoId": [
-                "t2"
-            ],
             "tipo": [
                 "hostigamiento e intimidación"
-            ],
-            "componenteId": [
-                "c1",
-                "c2"
             ],
             "componente": [
                 "negacionismo y apología a la dictadura",
@@ -5292,14 +3892,8 @@
                 "longitude": -58.78610926137372
             },
             "provincia": "Buenos Aires",
-            "tipoId": [
-                "t2"
-            ],
             "tipo": [
                 "hostigamiento e intimidación"
-            ],
-            "componenteId": [
-                "c2"
             ],
             "componente": [
                 "contra identidades políticas"
@@ -5315,14 +3909,8 @@
                 "longitude": -58.3834574406324
             },
             "provincia": "CABA",
-            "tipoId": [
-                "t2"
-            ],
             "tipo": [
                 "hostigamiento e intimidación"
-            ],
-            "componenteId": [
-                "c2"
             ],
             "componente": [
                 "contra identidades políticas"
@@ -5338,14 +3926,8 @@
                 "longitude": -58.42436643596001
             },
             "provincia": "CABA",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c2"
             ],
             "componente": [
                 "contra identidades políticas"
@@ -5361,15 +3943,8 @@
                 "longitude": -58.4785751345263
             },
             "provincia": "Buenos Aires",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c2",
-                "c4"
             ],
             "componente": [
                 "contra identidades políticas",
@@ -5386,14 +3961,8 @@
                 "longitude": -64.1940002445467
             },
             "provincia": "Córdoba",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c2"
             ],
             "componente": [
                 "contra identidades políticas"
@@ -5409,14 +3978,8 @@
                 "longitude": -58.555285303689914
             },
             "provincia": "Buenos Aires",
-            "tipoId": [
-                "t2"
-            ],
             "tipo": [
                 "hostigamiento e intimidación"
-            ],
-            "componenteId": [
-                "c1"
             ],
             "componente": [
                 "negacionismo y apología a la dictadura"
@@ -5432,14 +3995,8 @@
                 "longitude": -58.36142340554313
             },
             "provincia": "Buenos Aires",
-            "tipoId": [
-                "t2"
-            ],
             "tipo": [
                 "hostigamiento e intimidación"
-            ],
-            "componenteId": [
-                "c2"
             ],
             "componente": [
                 "contra identidades políticas"
@@ -5455,14 +4012,8 @@
                 "longitude": -61.96906446564992
             },
             "provincia": "Santa Fe",
-            "tipoId": [
-                "t3"
-            ],
             "tipo": [
-                "atentados contra la integridad física y la vida"
-            ],
-            "componenteId": [
-                "c2"
+                "violencia física y atentados contra la vida"
             ],
             "componente": [
                 "contra identidades políticas"
@@ -5478,14 +4029,8 @@
                 "longitude": -58.53894288599409
             },
             "provincia": "Buenos Aires",
-            "tipoId": [
-                "t2"
-            ],
             "tipo": [
                 "hostigamiento e intimidación"
-            ],
-            "componenteId": [
-                "c4"
             ],
             "componente": [
                 "misoginia, antifeminismo y antiLGBTINBQ+"
@@ -5501,14 +4046,8 @@
                 "longitude": -58.295782437860716
             },
             "provincia": "Buenos Aires",
-            "tipoId": [
-                "t2"
-            ],
             "tipo": [
                 "hostigamiento e intimidación"
-            ],
-            "componenteId": [
-                "c1"
             ],
             "componente": [
                 "negacionismo y apología a la dictadura"
@@ -5524,14 +4063,8 @@
                 "longitude": -57.33709824295395
             },
             "provincia": "Buenos Aires",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c4"
             ],
             "componente": [
                 "misoginia, antifeminismo y antiLGBTINBQ+"
@@ -5547,14 +4080,8 @@
                 "longitude": -57.29294630771347
             },
             "provincia": "Buenos Aires",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c1"
             ],
             "componente": [
                 "negacionismo y apología a la dictadura"
@@ -5570,14 +4097,8 @@
                 "longitude": -58.932820983488604
             },
             "provincia": "Chaco",
-            "tipoId": [
-                "t2"
-            ],
             "tipo": [
                 "hostigamiento e intimidación"
-            ],
-            "componenteId": [
-                "c2"
             ],
             "componente": [
                 "contra identidades políticas"
@@ -5593,14 +4114,8 @@
                 "longitude": -58.45246211717232
             },
             "provincia": "Buenos Aires ",
-            "tipoId": [
-                "t3"
-            ],
             "tipo": [
-                "atentados contra la integridad física y la vida"
-            ],
-            "componenteId": [
-                "c4"
+                "violencia física y atentados contra la vida"
             ],
             "componente": [
                 "misoginia, antifeminismo y antiLGBTINBQ+"
@@ -5616,15 +4131,8 @@
                 "longitude": -58.43778730369027
             },
             "provincia": "CABA",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c1",
-                "c2"
             ],
             "componente": [
                 "negacionismo y apología a la dictadura",
@@ -5641,14 +4149,8 @@
                 "longitude": -64.95381433715633
             },
             "provincia": "Rio Negro",
-            "tipoId": [
-                "t2"
-            ],
             "tipo": [
                 "hostigamiento e intimidación"
-            ],
-            "componenteId": [
-                "c1"
             ],
             "componente": [
                 "negacionismo y apología a la dictadura"
@@ -5664,14 +4166,8 @@
                 "longitude": -66.85680810344216
             },
             "provincia": "La Rioja",
-            "tipoId": [
-                "t3"
-            ],
             "tipo": [
-                "atentados contra la integridad física y la vida"
-            ],
-            "componenteId": [
-                "c4"
+                "violencia física y atentados contra la vida"
             ],
             "componente": [
                 "misoginia, antifeminismo y antiLGBTINBQ+"
@@ -5687,14 +4183,8 @@
                 "longitude": -65.29944401764574
             },
             "provincia": "Jujuy",
-            "tipoId": [
-                "t3"
-            ],
             "tipo": [
-                "atentados contra la integridad física y la vida"
-            ],
-            "componenteId": [
-                "c4"
+                "violencia física y atentados contra la vida"
             ],
             "componente": [
                 "misoginia, antifeminismo y antiLGBTINBQ+"
@@ -5710,14 +4200,8 @@
                 "longitude": -58.369745223835565
             },
             "provincia": "CABA",
-            "tipoId": [
-                "t2"
-            ],
             "tipo": [
                 "hostigamiento e intimidación"
-            ],
-            "componenteId": [
-                "c4"
             ],
             "componente": [
                 "misoginia, antifeminismo y antiLGBTINBQ+"
@@ -5733,14 +4217,8 @@
                 "longitude": -57.5255160912266
             },
             "provincia": "Buenos Aires",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c2"
             ],
             "componente": [
                 "contra identidades políticas"
@@ -5756,14 +4234,8 @@
                 "longitude": -58.4785751345263
             },
             "provincia": "Buenos Aires",
-            "tipoId": [
-                "t2"
-            ],
             "tipo": [
                 "hostigamiento e intimidación"
-            ],
-            "componenteId": [
-                "c4"
             ],
             "componente": [
                 "misoginia, antifeminismo y antiLGBTINBQ+"
@@ -5779,14 +4251,8 @@
                 "longitude": -58.4785751345263
             },
             "provincia": "Buenos Aires",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c4"
             ],
             "componente": [
                 "misoginia, antifeminismo y antiLGBTINBQ+"
@@ -5802,15 +4268,8 @@
                 "longitude": -64.18554800445354
             },
             "provincia": "Córdoba",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c2",
-                "c6"
             ],
             "componente": [
                 "contra identidades políticas",
@@ -5827,14 +4286,8 @@
                 "longitude": -57.55738912184317
             },
             "provincia": "Buenos Aires",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c2"
             ],
             "componente": [
                 "contra identidades políticas"
@@ -5850,14 +4303,8 @@
                 "longitude": -60.63577735166086
             },
             "provincia": "Santa Fe",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c4"
             ],
             "componente": [
                 "misoginia, antifeminismo y antiLGBTINBQ+"
@@ -5873,15 +4320,8 @@
                 "longitude": -66.8564160311352
             },
             "provincia": "La Rioja",
-            "tipoId": [
-                "t2"
-            ],
             "tipo": [
                 "hostigamiento e intimidación"
-            ],
-            "componenteId": [
-                "c4",
-                "c6"
             ],
             "componente": [
                 "misoginia, antifeminismo y antiLGBTINBQ+",
@@ -5898,14 +4338,8 @@
                 "longitude": -64.19097831697097
             },
             "provincia": "Córdoba",
-            "tipoId": [
-                "t2"
-            ],
             "tipo": [
                 "hostigamiento e intimidación"
-            ],
-            "componenteId": [
-                "c1"
             ],
             "componente": [
                 "negacionismo y apología a la dictadura"
@@ -5921,16 +4355,8 @@
                 "longitude": -63.79526339515018
             },
             "provincia": "Salta",
-            "tipoId": [
-                "t2"
-            ],
             "tipo": [
                 "hostigamiento e intimidación"
-            ],
-            "componenteId": [
-                "c4",
-                "c5",
-                "c6"
             ],
             "componente": [
                 "misoginia, antifeminismo y antiLGBTINBQ+",
@@ -5948,15 +4374,8 @@
                 "longitude": -58.527254582035646
             },
             "provincia": "Buenos Aires",
-            "tipoId": [
-                "t2"
-            ],
             "tipo": [
                 "hostigamiento e intimidación"
-            ],
-            "componenteId": [
-                "c2",
-                "c4"
             ],
             "componente": [
                 "contra identidades políticas",
@@ -5973,14 +4392,8 @@
                 "longitude": -56.971898066763565
             },
             "provincia": "Buenos Aires",
-            "tipoId": [
-                "t2"
-            ],
             "tipo": [
                 "hostigamiento e intimidación"
-            ],
-            "componenteId": [
-                "c2"
             ],
             "componente": [
                 "contra identidades políticas"
@@ -5996,14 +4409,8 @@
                 "longitude": -64.40398560123182
             },
             "provincia": "Córdoba",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c2"
             ],
             "componente": [
                 "contra identidades políticas"
@@ -6019,14 +4426,8 @@
                 "longitude": -71.10884801797282
             },
             "provincia": "Chubut",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c2"
             ],
             "componente": [
                 "contra identidades políticas"
@@ -6042,14 +4443,8 @@
                 "longitude": -60.58001546210662
             },
             "provincia": "Santa Fe",
-            "tipoId": [
-                "t2"
-            ],
             "tipo": [
                 "hostigamiento e intimidación"
-            ],
-            "componenteId": [
-                "c2"
             ],
             "componente": [
                 "contra identidades políticas"
@@ -6065,14 +4460,8 @@
                 "longitude": -58.42431278465528
             },
             "provincia": "CABA",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c2"
             ],
             "componente": [
                 "contra identidades políticas"
@@ -6088,15 +4477,8 @@
                 "longitude": -58.45043429139845
             },
             "provincia": "CABA",
-            "tipoId": [
-                "t2"
-            ],
             "tipo": [
                 "hostigamiento e intimidación"
-            ],
-            "componenteId": [
-                "c2",
-                "c6"
             ],
             "componente": [
                 "contra identidades políticas",
@@ -6113,14 +4495,8 @@
                 "longitude": -60.6376877306839
             },
             "provincia": "Santa Fe",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c4"
             ],
             "componente": [
                 "misoginia, antifeminismo y antiLGBTINBQ+"
@@ -6136,14 +4512,8 @@
                 "longitude": -58.41367001845509
             },
             "provincia": "CABA",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c2"
             ],
             "componente": [
                 "contra identidades políticas"
@@ -6159,14 +4529,8 @@
                 "longitude": -58.47500946862087
             },
             "provincia": "CABA",
-            "tipoId": [
-                "t3"
-            ],
             "tipo": [
                 "atentados contra la integridad física y la vida"
-            ],
-            "componenteId": [
-                "c2"
             ],
             "componente": [
                 "contra identidades políticas"
@@ -6182,14 +4546,8 @@
                 "longitude": -57.95523010213385
             },
             "provincia": "Buenos Aires",
-            "tipoId": [
-                "t2"
-            ],
             "tipo": [
                 "hostigamiento e investigación"
-            ],
-            "componenteId": [
-                "c4"
             ],
             "componente": [
                 "misoginia, antifeminismo y antiLGBTINBQ+",
@@ -6206,15 +4564,8 @@
                 "longitude": -58.39822845767128
             },
             "provincia": "CABA",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c1",
-                "c2"
             ],
             "componente": [
                 "negacionismo y apología a la dictadura",
@@ -6231,14 +4582,8 @@
                 "longitude": -57.95155065926262
             },
             "provincia": "Buenos Aires",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c1"
             ],
             "componente": [
                 "negacionismo y apología a la dictadura"
@@ -6254,14 +4599,8 @@
                 "longitude": -58.37217263999173
             },
             "provincia": "CABA",
-            "tipoId": [
-                "t2"
-            ],
             "tipo": [
                 "hostigamiento e intimidación"
-            ],
-            "componenteId": [
-                "c6"
             ],
             "componente": [
                 "contra medios de comunicación y periodistas"
@@ -6277,14 +4616,8 @@
                 "longitude": -64.25941125000227
             },
             "provincia": "Santiago del Estero",
-            "tipoId": [
-                "t3"
-            ],
             "tipo": [
                 "atentados contra la integridad física y la vida"
-            ],
-            "componenteId": [
-                "c2"
             ],
             "componente": [
                 "contra identidades políticas"
@@ -6300,14 +4633,8 @@
                 "longitude": -58.390333404147114
             },
             "provincia": "CABA (virtual)",
-            "tipoId": [
-                "t2"
-            ],
             "tipo": [
                 "hostigamiento e intimidación"
-            ],
-            "componenteId": [
-                "c2"
             ],
             "componente": [
                 "contra identidades políticas"
@@ -6323,14 +4650,8 @@
                 "longitude": -58.39033231035108
             },
             "provincia": "Buenos Aires",
-            "tipoId": [
-                "t2"
-            ],
             "tipo": [
                 "hostigamiento e intimidación"
-            ],
-            "componenteId": [
-                "c1"
             ],
             "componente": [
                 "negacionismo y apología a la dictadura"
@@ -6346,15 +4667,8 @@
                 "longitude": -65.02520375919737
             },
             "provincia": " Córdoba",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c1",
-                "c2"
             ],
             "componente": [
                 "negacionismo y apología a la dictadura",
@@ -6371,15 +4685,8 @@
                 "longitude": -64.3010337961628
             },
             "provincia": "Cordoba",
-            "tipoId": [
-                "t2"
-            ],
             "tipo": [
                 "hostigamiento e intimidación"
-            ],
-            "componenteId": [
-                "c4",
-                "c2"
             ],
             "componente": [
                 "contra identidades políticas",
@@ -6396,15 +4703,8 @@
                 "longitude": -71.34969145037529
             },
             "provincia": "Neuquén",
-            "tipoId": [
-                "t3"
-            ],
             "tipo": [
-                "atentados contra la integridad física y la vida"
-            ],
-            "componenteId": [
-                "c3",
-                "c4"
+                "violencia física y atentados contra la vida"
             ],
             "componente": [
                 "nazismo, antisemitismo y supremacismo",
@@ -6421,14 +4721,8 @@
                 "longitude": -58.3891688422977
             },
             "provincia": "CABA",
-            "tipoId": [
-                "t3"
-            ],
             "tipo": [
-                "atentados contra la integridad física y la vida"
-            ],
-            "componenteId": [
-                "c2"
+                "violencia física y atentados contra la vida"
             ],
             "componente": [
                 "contra identidades políticas"
@@ -6444,14 +4738,8 @@
                 "longitude": -71.53500560268641
             },
             "provincia": "Río Negro",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c1"
             ],
             "componente": [
                 "negacionismo y apología a la dictadura"
@@ -6467,16 +4755,8 @@
                 "longitude": -58.347569048435346
             },
             "provincia": "Buenos Aires",
-            "tipoId": [
-                "t3"
-            ],
             "tipo": [
-                "atentados contra la integridad física y la vida"
-            ],
-            "componenteId": [
-                "c1",
-                "c2",
-                "c4"
+                "violencia física y atentados contra la vida"
             ],
             "componente": [
                 "negacionismo y apología a la dictadura",
@@ -6494,14 +4774,8 @@
                 "longitude": -67.7020172536269
             },
             "provincia": "Tierra del Fuego",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c1"
             ],
             "componente": [
                 "negacionismo y apología a la dictadura"
@@ -6517,14 +4791,8 @@
                 "longitude": -58.430658509892595
             },
             "provincia": "Buenos Aires",
-            "tipoId": [
-                "t2"
-            ],
             "tipo": [
                 "hostigamiento e intimidación"
-            ],
-            "componenteId": [
-                "c1"
             ],
             "componente": [
                 "negacionismo y apología a la dictadura"
@@ -6540,14 +4808,8 @@
                 "longitude": -58.42447918918301
             },
             "provincia": "Buenos Aires",
-            "tipoId": [
-                "t2"
-            ],
             "tipo": [
                 "hostigamiento e intimidación"
-            ],
-            "componenteId": [
-                "c1"
             ],
             "componente": [
                 "negacionismo y apología a la dictadura"
@@ -6563,14 +4825,8 @@
                 "longitude": -58.44645836949559
             },
             "provincia": "Ciudad de Buenos Aires",
-            "tipoId": [
-                "t1"
-            ],
             "tipo": [
                 "ataque a símbolos y lugares"
-            ],
-            "componenteId": [
-                "c1"
             ],
             "componente": [
                 "negacionismo y apología a la dictadura"
@@ -6910,7 +5166,6 @@
                 138,
                 139,
                 140,
-                171,
                 181,
                 185,
                 192,
@@ -6938,9 +5193,29 @@
             "otros": [
                 120,
                 151
+            ],
+            "nazismo, antisemitismo y supremaracismo": [
+                171
             ]
         }
     },
     "min": 1580774400000,
-    "max": 1711152000000
+    "max": 1711152000000,
+    "componentNames": [
+        "negacionismo y apología a la dictadura",
+        "contra identidades políticas",
+        "racismo y xenofobia",
+        "misoginia, antifeminismo y antiLGBTINBQ+",
+        "nazismo, antisemitismo y supremacismo",
+        "contra medios de comunicación y periodistas",
+        "otros",
+        "nazismo, antisemitismo y supremaracismo"
+    ],
+    "tiposNames": [
+        "ataque a símbolos y lugares",
+        "atentados contra la integridad física y la vida",
+        "hostigamiento e intimidación",
+        "violencia física y atentados contra la vida",
+        "hostigamiento e investigación"
+    ]
 }
