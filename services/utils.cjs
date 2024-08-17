@@ -30,32 +30,7 @@ const separateBySemicolon = (s) =>
     .split(/;/)
     .map((s) => s.trim());
 
-class Classifier {
-  byId = {};
-  byName = {};
-  idMap = {};
-  nameMap = {};
-  mangle = (t) => t;
-
-  constructor(mangle) {
-    if (mangle) this.mangle = mangle;
-  }
-
-  classify(ids, names, i) {
-    for (let id of ids) {
-      id = this.mangle(id);
-      this.byId[id] = [...(this.byId[id] || []), i];
-    }
-
-    for (let name of names) {
-      name = this.mangle(name);
-      this.byName[name] = [...(this.byName[name] || []), i];
-    }
-  }
-}
-
 module.exports = {
-  Classifier,
   separateBySemicolon,
   parseTsvDateToUTCMillis,
 };
