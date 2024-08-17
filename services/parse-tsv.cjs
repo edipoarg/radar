@@ -60,55 +60,6 @@ const tsvRowToCase = (tsvRow) => {
 };
 
 /** @type {(cases: Case[]) => string[]} */
-const getAllIdsForTipos = (cases) => {
-  /** @type {string[]} */
-  let tiposIds = [];
-  cases.forEach((eachCase) => {
-    const newIds = eachCase.tipoId.filter((tipo) => !tiposIds.includes(tipo));
-    tiposIds = [...tiposIds, ...newIds];
-  });
-  return tiposIds;
-};
-
-/** @type {(cases: Case[]) => string[]} */
-const getAllNamesForTipos = (cases) => {
-  /** @type {string[]} */
-  let tiposNames = [];
-  cases.forEach((eachCase) => {
-    const newNames = eachCase.tipo.filter((tipo) => !tiposNames.includes(tipo));
-    tiposNames = [...tiposNames, ...newNames];
-  });
-  return tiposNames;
-};
-
-/** @type {(cases: Case[]) => Clasificacion} */
-const getTiposClassification = (cases) => {
-  const tiposIds = getAllIdsForTipos(cases);
-  const tiposNames = getAllNamesForTipos(cases);
-
-  /** @type {Record<string, number[]>} */
-  const caseIdsByTipoIds = {};
-  tiposIds.forEach((tipoId) => {
-    caseIdsByTipoIds[tipoId] = cases
-      .filter((eachCase) => eachCase.tipoId.includes(tipoId))
-      .map((eachCase) => eachCase.id);
-  });
-
-  /** @type {Record<string, number[]>} */
-  const caseIdsByTipoName = {};
-  tiposNames.forEach((tipoName) => {
-    caseIdsByTipoName[tipoName] = cases
-      .filter((eachCase) => eachCase.tipo.includes(tipoName))
-      .map((eachCase) => eachCase.id);
-  });
-  /** @type {Clasificacion} */
-  const tipos = {
-    byName: caseIdsByTipoName,
-  };
-  return tipos;
-};
-
-/** @type {(cases: Case[]) => string[]} */
 const getAllIdsForComponentes = (cases) => {
   /** @type {string[]} */
   let componentesIds = [];
@@ -174,7 +125,6 @@ const parseTSVToJSON = async (fileLocation = "services/data/sheet.tsv") => {
     .map(tsvRowToCase)
     .filter((eachCase) => eachCase !== null);
 
-  const tipos = getTiposClassification(cases);
   const componentes = getComponentesClassification(cases);
 
   const allDates = cases.map((c) => c.date);
@@ -187,7 +137,6 @@ const parseTSVToJSON = async (fileLocation = "services/data/sheet.tsv") => {
 
   return {
     cases,
-    tipos,
     componentes,
     min,
     max,
