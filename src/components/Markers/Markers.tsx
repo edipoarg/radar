@@ -1,13 +1,6 @@
 import { Marker } from "react-map-gl/maplibre";
 import styles from "./Markers.module.css";
 import type { Case } from "../../../common/json-shape";
-import { type CaseTipoId } from "../../types/caseData";
-
-const tipoIdStyles: Record<CaseTipoId, string> = {
-  t1: styles.amarillo ?? "",
-  t2: styles.naranja ?? "",
-  t3: styles.rojo ?? "",
-};
 
 type Props = {
   data: Case[];
@@ -29,8 +22,8 @@ const RadarMarker = ({
   setMarker,
   setPopupInfo,
 }: RadarMarkerProps) => {
-  const { coords, id, tipoId } = caseInstance;
-  const markerStyle = `${styles.circulo} ${`${id}` === selected ? styles.selected : ""} ${tipoId[0] ? tipoIdStyles[tipoId[0] as CaseTipoId] : ""}`;
+  const { coords, id } = caseInstance;
+  const markerStyle = `${styles.circulo} ${`${id}` === selected ? styles.selected : ""}`;
 
   return (
     <Marker

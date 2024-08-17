@@ -52,24 +52,9 @@ const tsvRowToCase = (tsvRow) => {
       longitude,
     },
     provincia: tsvProvince,
-    tipoId: separateBySemicolon(tsvTypeIds),
     tipo: separateBySemicolon(tsvTypeDescription),
-    componenteId: separateBySemicolon(tsvComponentIds),
     componente: separateBySemicolon(tsvComponentDescriptions),
   };
-};
-
-/** @type {(cases: Case[]) => string[]} */
-const getAllIdsForComponentes = (cases) => {
-  /** @type {string[]} */
-  let componentesIds = [];
-  cases.forEach((eachCase) => {
-    const newIds = eachCase.componenteId.filter(
-      (componente) => !componentesIds.includes(componente),
-    );
-    componentesIds = [...componentesIds, ...newIds];
-  });
-  return componentesIds;
 };
 
 /** @type {(cases: Case[]) => string[]} */
@@ -85,18 +70,20 @@ const getAllNamesForComponentes = (cases) => {
   return componentesNames;
 };
 
+/** @type {(cases: Case[]) => string[]} */
+const getAllNamesForTipos = (cases) => {
+  /** @type {string[]} */
+  let tiposNames = [];
+  cases.forEach((eachCase) => {
+    const newNames = eachCase.tipo.filter((tipo) => !tiposNames.includes(tipo));
+    tiposNames = [...tiposNames, ...newNames];
+  });
+  return tiposNames;
+};
+
 /** @type {(cases: Case[]) => Clasificacion} */
 const getComponentesClassification = (cases) => {
-  const componentesIds = getAllIdsForComponentes(cases);
   const componentesNames = getAllNamesForComponentes(cases);
-
-  /** @type {Record<string, number[]>} */
-  const caseIdsByComponenteIds = {};
-  componentesIds.forEach((componenteId) => {
-    caseIdsByComponenteIds[componenteId] = cases
-      .filter((eachCase) => eachCase.componenteId.includes(componenteId))
-      .map((eachCase) => eachCase.id);
-  });
 
   /** @type {Record<string, number[]>} */
   const caseIdsByComponenteName = {};
@@ -140,6 +127,8 @@ const parseTSVToJSON = async (fileLocation = "services/data/sheet.tsv") => {
     componentes,
     min,
     max,
+    componentNames: getAllNamesForComponentes(cases),
+    tiposNames: getAllNamesForTipos(cases),
   };
 };
 

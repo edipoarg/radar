@@ -40,20 +40,6 @@
     margin: auto;
 }
 
-
-.circulo.amarillo {
-    background-color: rgb(252, 252, 114);
-
-}
-
-.circulo.naranja {
-    background-color: rgb(255, 166, 0);
-}
-
-.circulo.rojo {
-    background-color: rgb(251, 55, 25);
-}
-
 .circulo:hover {
     background-color: rgb(52, 7, 7);
     transform: scale(1.5);

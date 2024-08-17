@@ -13,13 +13,12 @@ export default function Filters({
   tipoFilters,
   setTipoFilters,
 }: Props) {
-  const handleTipoFilterChange =
-    (tipoId: "t1" | "t2" | "t3") => (checked: boolean) => {
-      setTipoFilters((prevFilters: TipoFilters) => ({
-        ...prevFilters,
-        [tipoId]: checked,
-      }));
-    };
+  const handleTipoFilterChange = (tipoId: string) => (checked: boolean) => {
+    setTipoFilters((prevFilters: TipoFilters) => ({
+      ...prevFilters,
+      [tipoId]: checked,
+    }));
+  };
 
   return (
     <div className={styles.filtros}>
@@ -28,24 +27,14 @@ export default function Filters({
         <h1 className={styles.cantCasos}>{caseCount}</h1>
       </header>
       <div className={styles.filtrosPorTipo}>
-        <Filter
-          description="Ataque a símbolos y lugares"
-          iconClassname={styles.tipo1Icon}
-          onChange={handleTipoFilterChange("t1")}
-          value={tipoFilters.t1}
-        />
-        <Filter
-          description="Hostigamiento e intimidación"
-          iconClassname={styles.tipo2Icon}
-          onChange={handleTipoFilterChange("t2")}
-          value={tipoFilters.t2}
-        />
-        <Filter
-          description="Atentados contra la integridad física y la vida"
-          iconClassname={styles.tipo3Icon}
-          onChange={handleTipoFilterChange("t3")}
-          value={tipoFilters.t3}
-        />
+        {Object.entries(tipoFilters).map(([tipoFilterName, value]) => (
+          <Filter
+            key={tipoFilterName}
+            description={tipoFilterName}
+            onChange={handleTipoFilterChange(tipoFilterName)}
+            value={value}
+          />
+        ))}
       </div>
     </div>
   );

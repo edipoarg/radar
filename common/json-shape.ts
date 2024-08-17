@@ -8,9 +8,7 @@ export type Case = {
     longitude: number;
   };
   provincia: string;
-  tipoId: string[];
   tipo: string[];
-  componenteId: string[];
   componente: string[];
 };
 
@@ -23,4 +21,6 @@ export type AttacksData = {
   componentes: Clasificacion;
   min: number;
   max: number;
+  componentNames: string[];
+  tiposNames: string[];
 };
