@@ -15,7 +15,6 @@ export type Case = {
 };
 
 export type Clasificacion = {
-  byId: Record<string, number[]>;
   byName: Record<string, number[]>;
 };
 
