@@ -20,7 +20,6 @@ export type Clasificacion = {
 
 export type AttacksData = {
   cases: Case[];
-  tipos: Clasificacion;
   componentes: Clasificacion;
   min: number;
   max: number;
