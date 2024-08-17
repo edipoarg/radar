@@ -8,7 +8,6 @@ import type { Case } from "../../../common/json-shape";
 
 const emptyCase: Case = {
   componente: [],
-  componenteId: [],
   coords: {
     latitude: 1,
     longitude: 1,
@@ -18,7 +17,6 @@ const emptyCase: Case = {
   provincia: "",
   source: "",
   tipo: [],
-  tipoId: [],
   title: "",
 };
 
@@ -56,28 +54,28 @@ describe("caseIsWithinMinAndMaxDatesWithDates", () => {
 });
 
 describe("caseIsAllowedByTipoFiltersWithFilters", () => {
-  describe("when given filters allowing for t1, but not for t2 or t3", () => {
+  describe("when given filters allowing for type 'tipo uno', but not for tipo dos or tipo tres", () => {
     const tipoFilters: TipoFilters = {
-      t1: true,
-      t2: false,
-      t3: false,
+      "tipo uno": true,
+      "tipo dos": false,
+      "tipo tres": false,
     };
     const caseIsAllowedByT1Filter =
       caseIsAllowedByTipoFiltersWithFilters(tipoFilters);
     describe("And given a t1 case", () => {
-      const theCase: Case = { ...emptyCase, tipoId: ["t1"] };
+      const theCase: Case = { ...emptyCase, tipo: ["tipo uno"] };
       it("should return true", () => {
         expect(caseIsAllowedByT1Filter(theCase)).toBeTruthy();
       });
     });
-    describe("And given a t2 case", () => {
-      const theCase: Case = { ...emptyCase, tipoId: ["t2"] };
+    describe("And given a tipo 2 case", () => {
+      const theCase: Case = { ...emptyCase, tipo: ["tipo dos"] };
       it("should return false", () => {
         expect(caseIsAllowedByT1Filter(theCase)).toBeFalsy();
       });
     });
-    describe("And given a case that is both t1 and t2", () => {
-      const theCase: Case = { ...emptyCase, tipoId: ["t1", "t2"] };
+    describe("And given a case that is both tipo uno and tipo dos", () => {
+      const theCase: Case = { ...emptyCase, tipo: ["tipo uno", "tipo dos"] };
       it("should return true", () => {
         expect(caseIsAllowedByT1Filter(theCase)).toBeTruthy();
       });
