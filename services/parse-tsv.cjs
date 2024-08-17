@@ -103,7 +103,6 @@ const getTiposClassification = (cases) => {
   });
   /** @type {Clasificacion} */
   const tipos = {
-    byId: caseIdsByTipoIds,
     byName: caseIdsByTipoName,
   };
   return tipos;
@@ -157,7 +156,6 @@ const getComponentesClassification = (cases) => {
   });
   /** @type {Clasificacion} */
   const componentes = {
-    byId: caseIdsByComponenteIds,
     byName: caseIdsByComponenteName,
   };
   return componentes;
