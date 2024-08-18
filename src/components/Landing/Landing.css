@@ -6,14 +6,12 @@
   padding: 0;
 }
 
-/* TODO: Check whether this ID selector is used within the <Marker /> external component */
-#markerLine {
-  background-color: rgb(249, 38, 6);
-  width: 1.5px;
-  height: 12px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
 }
 
 h1,

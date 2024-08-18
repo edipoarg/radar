@@ -2,10 +2,6 @@ import { useMemo, useState } from "react";
 import { useLoaderData } from "react-router-dom";
 import "./Landing.css";
 import styles from "./Landing.module.css";
-import Navlinks from "../../routes/index";
-import { Link as ScrollLink } from "react-scroll";
-import Footer from "../Footer/Footer";
-import SiteSummary from "../SiteSummary/SiteSummary";
 import Popup from "../Popup/Popup";
 import Filters from "../Filters/Filters";
 import Analisis from "../Analisis/Analisis";
@@ -53,7 +49,7 @@ function Landing() {
     useFilters(casos);
 
   return (
-    <div id={Navlinks.homeAnchor} className={styles.Landing}>
+    <div className={styles.Landing}>
       <Filters
         caseCount={filteredData.length}
         tipoFilters={tipoFilters}
@@ -71,22 +67,9 @@ function Landing() {
       />
       <div className={styles["lower-floating-buttons"]}>
         <MonthsSlider boundaryDates={boundaryDates} setFilterDates={setDates} />
-        <ScrollLink
-          to={Navlinks.siteSummary} // ID del elemento de destino (SiteSummary)
-          spy={true} // Activa el modo espía
-          smooth={true} // Activa el desplazamiento suave
-          duration={500} // Duración de la animación (en milisegundos)
-          offset={-70} // Ajusta un offset opcional (si tienes un encabezado fijo)
-        >
-          <div className={styles.toSiteSummary}>
-            <h4 className={styles.plusBoton}>+</h4>
-          </div>
-        </ScrollLink>
       </div>
       {popupInfo && <Popup popupCase={popupInfo} />}
-      <SiteSummary />
       <Analisis {...analisisData} />
-      <Footer />
     </div>
   );
 }

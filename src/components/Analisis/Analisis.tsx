@@ -1,6 +1,5 @@
 import Navlinks from "../../routes";
 import styles from "./Analisis.module.css";
-import { Link as ScrollLink } from "react-scroll";
 
 type PropWithByName = {
   // TODO: These strings are constant and could be narrowed down to a union
@@ -17,10 +16,6 @@ interface Props {
 export default function Analisis({ min, max, total, componentes }: Props) {
   return (
     <div id={Navlinks.analisis} className={styles.analisis}>
-      <div className={styles.fondoAnalisisImg}>
-        {" "}
-        <img src="radarPuntos.png" alt="" />
-      </div>
       <div className={styles.analisisHeader}>
         <div className={styles.analisisTituloSec}>
           <h4 className={styles.tituloAnalisisRadar}>
@@ -60,26 +55,6 @@ export default function Analisis({ min, max, total, componentes }: Props) {
       <h6 className={styles.aclaracionAnalisis}>
         *Las narrativas no son excluyentes. Algunos casos abarcan más de una.
       </h6>
-      <ScrollLink
-        to={Navlinks.homeAnchor}
-        spy={true} // Activa el modo espía
-        smooth={true} // Activa el desplazamiento suave
-        duration={500} // Duración de la animación (en milisegundos)
-        offset={-70} // Ajusta un offset opcional (si tienes un encabezado fijo)
-      >
-        <button className={styles.subir}>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="16"
-            fill="currentColor"
-            className="bi bi-caret-up-fill"
-            viewBox="0 0 16 16"
-          >
-            <path d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z" />
-          </svg>
-        </button>
-      </ScrollLink>
     </div>
   );
 }

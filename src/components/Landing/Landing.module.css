@@ -5,24 +5,6 @@
   position: relative;
 }
 
-.toSiteSummary {
-  cursor: pointer;
-  background-color: black;
-  color: white;
-  border-radius: 10px;
-  right: 2vw;
-  width: 12vw;
-  z-index: 0;
-  height: 7vh;
-  border-radius: 20px;
-  height: 10vh;
-}
-
-.plusBoton {
-  color: white;
-  padding-top: 3vh;
-}
-
 .lower-floating-buttons {
   position: absolute;
   display: flex;
@@ -46,15 +28,6 @@
     width: 55vw;
     z-index: 0;
   }
-
-  .toSiteSummary {
-    width: 10vw;
-    height: 8vh;
-  }
-
-  .plusBoton {
-    padding-top: 2vh;
-  }
 }
 
 /*TV RESPONISVE 1200px*/
@@ -65,14 +38,5 @@
     left: 20vw;
     width: 69vw;
     z-index: 0;
-  }
-
-  .toSiteSummary {
-    width: 8vw;
-    height: 12vh;
-  }
-
-  .plusBoton {
-    padding-top: 4vh;
   }
 }
