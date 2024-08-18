@@ -1,15 +1,3 @@
-.fondoAnalisisImg {
-  position: absolute;
-  background-image: url(../radarPuntos.png);
-  height: 30vh;
-  width: 40vh;
-  background-size: cover;
-  right: 0vw;
-  top: 165vh;
-  opacity: 0.2;
-  z-index: 0;
-}
-
 .analisis {
   display: grid;
   grid-template-columns: 1fr;
@@ -17,6 +5,23 @@
   background-color: #2b3bcd;
   padding: 20px 0px;
   padding-top: 12vh;
+  position: relative;
+}
+
+.analisis:before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.2;
+  background-image: url(../radarPuntos.png);
+  background-origin: border-box;
+  background-size: 120vh 80vh;
+  background-repeat: no-repeat;
+  background-position: 50vw 20%;
 }
 
 .analisisHeader {
@@ -147,14 +152,6 @@
   color: white;
 }
 
-.subir {
-  margin-top: 2vh;
-  background-color: #2b3bcd;
-  border-color: white;
-  border-radius: 12px;
-  width: 20vw;
-}
-
 .enConstruccion {
   color: rgb(118, 138, 227);
 }
@@ -164,16 +161,6 @@
 /*== tablet==*/
 
 @media (min-width: 768px) {
-  .fondoAnalisisImg {
-    position: absolute;
-    background-image: url(../radarPuntos.png);
-    height: 50vh;
-    width: 70vh;
-    background-size: cover;
-    right: 0vw;
-    top: 195vh;
-    opacity: 0.4;
-  }
 
   .analisisHeader {
     padding: 0vw 8vw;
@@ -206,10 +193,6 @@
     padding: 0vh 0vw;
   }
 
-  .subir {
-    width: 10vw;
-  }
-
   .analisisCasos {
     width: 25vw;
   }
@@ -218,22 +201,6 @@
 /*  PC  */
 
 @media (min-width: 1200px) {
-  .fondoAnalisisImg {
-    position: absolute;
-    background-image: url(../radarPuntos.png);
-    height: 70vh;
-    width: 90vh;
-    background-size: cover;
-    right: 15vw;
-    top: 185vh;
-    opacity: 0.4;
-  }
-
-  .subir {
-    width: 8vw;
-    height: 7vh;
-    margin-right: 5vw;
-  }
 
   .tituloAnalisisRadar {
     padding-right: 40vw;
