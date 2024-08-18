@@ -5,58 +5,79 @@
   width: 100vw;
   z-index: 5000;
   height: 8vh;
+  min-height: 2.5rem;
   background-color: #ffffff;
   color: #00425a;
-  display: grid;
+  display: flex;
   justify-content: space-between;
-  grid-template-columns: 1fr 7fr 1fr;
   align-items: center;
+  padding-left: 20px;
   padding-right: 2px;
-  align-content: center;
   box-shadow: 0 2px 60px 5px #00000050;
 }
 
-.heading>h1 {
-  padding: 4px;
-  margin: 0;
+.heading a {
+  text-decoration: none;
+  color: #5a5a5a;
+  transition: color 0.5s;
 }
 
-.reportaBotonNav {
-  color: white;
+.heading a:hover {
+  color: #303030;
+}
+
+
+.logoImg {
+  width: 70px;
+  margin-right: 0.5rem;
+}
+
+.pagesNavLinks {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  flex-grow: 1;
+  margin-right: 5rem;
+  gap: 3rem;
+}
+
+.heading .linkToReport {
+  color: #f5f5f5;
   background-color: #2b3bcd;
   padding: 0.5vh 1vw;
   border-radius: 25px;
+  transition: background-color 0.5s;
+}
+
+.heading .linkToReport:hover {
+  color: white;
+  background-color: #2635b7;
 }
 
 .menuImg {
   width: 100px;
-}
-
-.botonMenu {
   justify-self: right;
 }
 
-.menuPCBox {
-  display: flex;
-  justify-content: right;
-  align-items: center;
-}
 
-.menuPC {
-  justify-items: center;
-  justify-content: center;
-  justify-self: center;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
-  align-items: center;
-}
+/* mobile */
 
-.logoImg {
-  width: 70px;
-}
+@media (max-width: 700px) {
 
-.logo {
-  display: flex;
-  padding-left: 20px;
+  .heading {
+    padding: 0;
+    justify-content: space-around;
+  }
+
+  .pagesNavLinks {
+    font-size: 0.8rem;
+    gap: 0.5rem;
+    margin: 0;
+    flex-grow: 0;
+
+  }
+
+  .menuImg {
+    display: none;
+  }
 }
