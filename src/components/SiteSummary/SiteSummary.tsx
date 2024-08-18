@@ -1,8 +1,8 @@
 import styles from "./SiteSummary.module.css";
 import { Link as ScrollLink } from "react-scroll";
 import { Carousel } from "react-bootstrap";
-import { Details } from "../Conecta/Conecta.js";
-import { Button } from "../Button/Button.js";
+import { Details } from "../Conecta/Conecta";
+import { Button } from "../Button/Button";
 import Navlinks from "../../routes/index";
 import notas from "../../notas.json";
 

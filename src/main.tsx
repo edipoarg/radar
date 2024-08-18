@@ -4,7 +4,7 @@ import { createHashRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
 import Conecta from "./components/Conecta/Conecta";
 import Notas from "./components/Notas/Notas";
-import Root from "./routes/Root.jsx";
+import Root from "./routes/Root";
 import Navlinks from "./routes/index";
 import { fetchUrlsData } from "./helpers/fetchUrlsData";
 import Landing from "./components/Landing/Landing";
