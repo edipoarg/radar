@@ -1,50 +1,44 @@
 .notas {
   width: 100vw;
-  height: 92vh;
   background-color: white;
-}
-
-.notasContainer {
-  padding: 20px 12vw;
   padding-top: 25vh;
-  height: 90vh;
-  color: #2b3bcd;
-}
-
-.notasItemContainer {
-  border-style: inset;
-  border-color: #2b3bcd;
-  border-width: 2px;
-  border-radius: 25px;
-  padding: 10vh 15vw;
-  height: 45vh;
+  padding-bottom: 10vh;
   display: flex;
   flex-direction: column;
-  /* Arrange items vertically */
+  gap: 5vh;
   align-items: center;
-  /* Center items horizontally */
+}
+
+.nota {
+  border: 2px inset #2b3bcd;
+  border-radius: 25px;
+  height: 45vh;
+  width: 60vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
-  /* Center items vertically */
   padding: 5vh 5vw;
-  margin: 0 auto;
+  color: #2b3bcd;
+  gap: 1rem;
+}
+
+.nota h1 {
+  font-size: 1.5rem;
+}
+
+.nota h4 {
+  font-size: 1rem;
 }
 
 /*== tablet==*/
 
 @media (min-width: 768px) {
   .notas {
-    width: 100vw;
-    height: 100vh;
     background-color: white;
   }
 
-  .notasContainer {
-    padding: 19vh 20vw;
-    height: 90vh;
-    color: #2b3bcd;
-  }
-
-  .notasItemContainer {
+  .nota {
     height: 60vh;
   }
 }
