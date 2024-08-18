@@ -1,70 +1,30 @@
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import styles from "./Navbar.module.css";
-import { motion } from "framer-motion";
-import { Link as ScrollLink } from "react-scroll";
-import Container from "react-bootstrap/Container";
-import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
 import Navlinks from "../../routes/index";
 
-export default function NavbarBootstrap() {
+export default function Navbar() {
   return (
     <div className={styles.heading}>
-      <div>
-        <Navbar.Brand>
-          <NavLink to={Navlinks.home}>
-            <div className={styles.logo}>
-              <img className={styles.logoImg} src="logoRadar.png" alt="" />
-            </div>
-          </NavLink>
-        </Navbar.Brand>
+      <NavLink to={Navlinks.home}>
+        <img
+          className={styles.logoImg}
+          src="logoRadar.png"
+          alt="Logotipo de Ra-dar"
+        />
+      </NavLink>
+      <div className={styles.pagesNavLinks}>
+        <NavLink to={Navlinks.notas}>INVESTIGACIONES</NavLink>
+        <NavLink to={Navlinks.conecta}>NOSOTRXS</NavLink>
+        <NavLink
+          to={Navlinks.reportaForm}
+          target="_blank"
+          rel="noopener noreferrer"
+          className={styles.linkToReport}
+        >
+          REPORTÁ
+        </NavLink>
       </div>
-
-      <div className={styles.menuPCBox}>
-        <Navbar bg="blue" data-bs-theme="blue">
-          <Container>
-            <Nav className="me-auto">
-              <div className={styles.menuPC}>
-                <Nav.Link
-                  to={Navlinks.notas}
-                  as={Link}
-                  className="d-none d-lg-block"
-                >
-                  {" "}
-                  <h6>INVESTIGACIONES</h6>{" "}
-                </Nav.Link>
-                <Nav.Link
-                  to={Navlinks.conecta}
-                  as={Link}
-                  className="d-none d-lg-block"
-                >
-                  <h6>NOSOTRXS</h6>
-                </Nav.Link>
-              </div>
-              <Nav.Link
-                href={Navlinks.reportaForm}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <motion.div
-                  whileHover={{
-                    scale: [0.8],
-                  }}
-                >
-                  {" "}
-                  <h6 className={styles.reportaBotonNav}>REPORTÁ</h6>{" "}
-                </motion.div>
-              </Nav.Link>
-            </Nav>
-          </Container>
-        </Navbar>
-      </div>
-
-      <div className={styles.botonMenu}>
-        <ScrollLink to={Navlinks.siteSummary}>
-          <img className={styles.menuImg} src="menu.png" alt="" />
-        </ScrollLink>
-      </div>
+      <img className={styles.menuImg} src="menu.png" alt="Isotipo de Ra-dar" />
     </div>
   );
 }
