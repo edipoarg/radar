@@ -15,9 +15,7 @@ const tsvRowToCase = (tsvRow) => {
     tsvSource,
     tsvCoords,
     tsvProvince,
-    tsvTypeIds,
     tsvTypeDescription,
-    tsvComponentIds,
     tsvComponentDescriptions,
   ] = tsvRow;
 
@@ -25,7 +23,6 @@ const tsvRowToCase = (tsvRow) => {
   if (tsvId === undefined) return null;
   if (tsvSource === undefined) return null;
   if (tsvProvince === undefined) return null;
-  if (tsvTypeIds === undefined) return null;
 
   if (tsvCoords === undefined) return null;
   const [latitude, longitude] = tsvCoords
@@ -39,7 +36,6 @@ const tsvRowToCase = (tsvRow) => {
   if (date === null) return null;
 
   if (tsvTypeDescription === undefined) return null;
-  if (tsvComponentIds === undefined) return null;
   if (tsvComponentDescriptions == undefined) return null;
 
   return {
