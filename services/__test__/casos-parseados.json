@@ -5217,5 +5217,10 @@
         "hostigamiento e intimidación",
         "violencia física y atentados contra la vida",
         "hostigamiento e investigación"
-    ]
+    ],
+    "colorByAttackType": {
+        "ataque a símbolos y lugares": "#fcfc72",
+        "atentados contra la integridad física y la vida": "#fb3719",
+        "hostigamiento e intimidación": "#ffa600"
+    }
 }
