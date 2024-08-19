@@ -23,7 +23,7 @@ type LoaderData = {
 function Landing() {
   const { urls } = useLoaderData() as LoaderData;
   const { provincias, departamentos, departamentosBsAs, rutas, casos } = urls;
-  const { componentes, cases } = casos;
+  const { componentes, cases, colorByAttackType } = casos;
   /** Boundary dates are the earliest date that a case can be from
    * and the latest date that a case can be from in order to be shown on the map.
    */
@@ -54,6 +54,7 @@ function Landing() {
         caseCount={filteredData.length}
         tipoFilters={tipoFilters}
         setTipoFilters={setTipoFilters}
+        colorByAttackType={colorByAttackType}
       />
       <RadarMap
         setPopupInfo={setPopupInfo}
@@ -64,6 +65,7 @@ function Landing() {
           rutas,
         }}
         casesToShow={filteredData}
+        colorByAttackType={colorByAttackType}
       />
       <div className={styles["lower-floating-buttons"]}>
         <MonthsSlider boundaryDates={boundaryDates} setFilterDates={setDates} />
