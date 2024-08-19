@@ -15,7 +15,7 @@ const tsvRowToCase = (tsvRow) => {
     tsvSource,
     tsvCoords,
     tsvProvince,
-    tsvTypeDescription,
+    tsvTypeDescriptions,
     tsvComponentDescriptions,
   ] = tsvRow;
 
@@ -27,7 +27,8 @@ const tsvRowToCase = (tsvRow) => {
   if (tsvCoords === undefined) return null;
   const [latitude, longitude] = tsvCoords
     .split(",")
-    .map((coord) => parseFloat(coord));
+    .map((coord) => parseFloat(coord))
+    .map((coord) => (isNaN(coord) ? undefined : coord));
   if (latitude === undefined) return null;
   if (longitude === undefined) return null;
 
@@ -35,7 +36,7 @@ const tsvRowToCase = (tsvRow) => {
   const date = parseTsvDateToUTCMillis(tsvDate);
   if (date === null) return null;
 
-  if (tsvTypeDescription === undefined) return null;
+  if (tsvTypeDescriptions === undefined) return null;
   if (tsvComponentDescriptions == undefined) return null;
 
   return {
@@ -48,7 +49,7 @@ const tsvRowToCase = (tsvRow) => {
       longitude,
     },
     provincia: tsvProvince,
-    tipo: separateBySemicolon(tsvTypeDescription),
+    tipo: separateBySemicolon(tsvTypeDescriptions),
     componente: separateBySemicolon(tsvComponentDescriptions),
   };
 };
