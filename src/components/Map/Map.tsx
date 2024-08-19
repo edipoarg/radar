@@ -61,9 +61,15 @@ type Props = {
     rutas: unknown;
   };
   casesToShow: Case[];
+  colorByAttackType: Record<string, string>;
 };
 
-export const RadarMap = ({ setPopupInfo, sourceData, casesToShow }: Props) => {
+export const RadarMap = ({
+  setPopupInfo,
+  sourceData,
+  casesToShow,
+  colorByAttackType,
+}: Props) => {
   const [selectedMarkerId, setSelectedMarkerId] = useState<null | string>(null);
   const { provincias, departamentos, departamentosBsAs, rutas } = sourceData;
 
@@ -96,10 +102,11 @@ export const RadarMap = ({ setPopupInfo, sourceData, casesToShow }: Props) => {
 
       {casesToShow.length !== 0 && (
         <Markers
-          data={casesToShow}
+          cases={casesToShow}
           setPopupInfo={setPopupInfo}
           setMarker={setSelectedMarkerId}
           selected={selectedMarkerId}
+          colorByAttackType={colorByAttackType}
         />
       )}
       <NavigationControl position="top-right" />
