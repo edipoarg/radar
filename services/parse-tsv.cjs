@@ -100,19 +100,56 @@ const getComponentesClassification = (cases) => {
 };
 
 /**
- * @param {string | undefined} fileLocation
- * @returns {Promise<AttacksData | null>}
+ * @param {string} tsvResponse
+ * @returns {string[][]}
  */
-const parseTSVToJSON = async (fileLocation = "services/data/sheet.tsv") => {
-  const resp = fs.readFileSync(fileLocation, "utf8");
+const removeHeaderAndSanitizeRowsFromTSVResponse = (tsvResponse) => {
+  const [_tsvHeader, ...tsvRows] = tsvResponse
+    .split("\r\n")
+    .map((r) => r.split("\t").map((str) => str.replace("\n", "")));
+  return tsvRows;
+};
 
-  const [_tsvHeader, ...tsvRows] = resp.split("\r\n").map((r) => r.split("\t"));
+/**
+ *
+ * @param {string} casesFileLocation
+ * @returns {Case[]}
+ */
+const getCasesFromTsvLocation = (casesFileLocation) => {
+  const resp = fs.readFileSync(casesFileLocation, "utf8");
+  const tsvRows = removeHeaderAndSanitizeRowsFromTSVResponse(resp);
   /** type {(Case)[]} */
   const cases = tsvRows
     .map(tsvRowToCase)
     .filter((eachCase) => eachCase !== null);
+  return cases;
+};
 
+/**
+ *
+ * @param {string} colorsByTypeFileLocation
+ * @returns {Record<string, string>}
+ */
+const getColorsByAttackTypeFromTsvLocation = (colorsByTypeFileLocation) => {
+  const resp = fs.readFileSync(colorsByTypeFileLocation, "utf8");
+  const tsvRows = removeHeaderAndSanitizeRowsFromTSVResponse(resp);
+  const colorsByType = Object.fromEntries(tsvRows);
+  return colorsByType;
+};
+
+/**
+ * @param {string | undefined} casesFileLocation
+ * @returns {Promise<AttacksData | null>}
+ */
+const parseTSVToJSON = async (
+  casesFileLocation = "services/data/sheet.tsv",
+  colorsByAttackTypeFileLocation = "services/data/colors-by-type.tsv",
+) => {
+  const cases = getCasesFromTsvLocation(casesFileLocation);
   const componentes = getComponentesClassification(cases);
+  const colorsByType = getColorsByAttackTypeFromTsvLocation(
+    colorsByAttackTypeFileLocation,
+  );
 
   const allDates = cases.map((c) => c.date);
   // sorts in-place, so it mutates allDates!
@@ -129,6 +166,7 @@ const parseTSVToJSON = async (fileLocation = "services/data/sheet.tsv") => {
     max,
     componentNames: getAllNamesForComponentes(cases),
     tiposNames: getAllNamesForTipos(cases),
+    colorByAttackType: colorsByType,
   };
 };
 

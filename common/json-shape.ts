@@ -23,4 +23,5 @@ export type AttacksData = {
   max: number;
   componentNames: string[];
   tiposNames: string[];
+  colorByAttackType: Record<string, string>;
 };
