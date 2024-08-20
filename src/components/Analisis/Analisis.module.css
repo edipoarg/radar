@@ -72,7 +72,7 @@
   width: 100vw;
 }
 
-.analisisCasos {
+.analisisAtaques {
   font-size: 2rem;
   width: 60vw;
   margin-left: 4vw;
@@ -133,7 +133,7 @@
   font-family: "Luxora";
 }
 
-.analisisCasos {
+.analisisAtaques {
   padding-top: 5vh;
   padding-bottom: 1vh;
   text-align: left;
@@ -143,7 +143,7 @@
   font-family: "LuxoraBold";
 }
 
-.analisisCasosBajada {
+.analisisAtaquesBajada {
   text-transform: uppercase;
   text-align: left;
   font-size: 0.8rem;
@@ -193,7 +193,7 @@
     padding: 0vh 0vw;
   }
 
-  .analisisCasos {
+  .analisisAtaques {
     width: 25vw;
   }
 }

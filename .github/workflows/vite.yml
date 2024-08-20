@@ -50,7 +50,7 @@ jobs:
         env:
           CASES_SPREADSHEET_ID: ${{ secrets.CASES_SPREADSHEET_ID }}
         run: |
-         yarn run build && cat public/data/casos.json
+         yarn run build && cat public/data/ataques.json
         working-directory: ${{ env.BUILD_PATH }}
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

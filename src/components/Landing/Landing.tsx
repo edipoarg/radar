@@ -7,7 +7,7 @@ import Filters from "../Filters/Filters";
 import Analisis from "../Analisis/Analisis";
 import MonthsSlider from "../MonthsSlider/MonthsSlider";
 import { RadarMap } from "../Map/Map";
-import type { AttacksData, Case } from "../../../common/json-shape";
+import type { AttacksData, Attack } from "../../../common/json-shape";
 import { useFilters } from "../../helpers/useFilters";
 
 type LoaderData = {
@@ -16,23 +16,23 @@ type LoaderData = {
     departamentos: unknown;
     departamentosBsAs: unknown;
     rutas: unknown;
-    casos: AttacksData;
+    ataques: AttacksData;
   };
 };
 
 function Landing() {
   const { urls } = useLoaderData() as LoaderData;
-  const { provincias, departamentos, departamentosBsAs, rutas, casos } = urls;
-  const { componentes, cases, colorByAttackType } = casos;
-  /** Boundary dates are the earliest date that a case can be from
-   * and the latest date that a case can be from in order to be shown on the map.
+  const { provincias, departamentos, departamentosBsAs, rutas, ataques } = urls;
+  const { componentes, attacks, colorByAttackType } = ataques;
+  /** Boundary dates are the earliest date that an attack can be from
+   * and the latest date that an attack can be from in order to be shown on the map.
    */
   const boundaryDates = useMemo(
     () => ({
-      min: new Date(casos.min),
-      max: new Date(casos.max),
+      min: new Date(ataques.min),
+      max: new Date(ataques.max),
     }),
-    [casos.min, casos.max],
+    [ataques.min, ataques.max],
   );
 
   // This data doesn't change when we apply filters
@@ -40,18 +40,18 @@ function Landing() {
     componentes,
     min: boundaryDates.min,
     max: boundaryDates.max,
-    total: cases.length,
+    total: attacks.length,
   });
 
-  const [popupInfo, setPopupInfo] = useState<Case | null>(null);
+  const [popupInfo, setPopupInfo] = useState<Attack | null>(null);
 
   const { filteredData, setDates, setTipoFilters, tipoFilters } =
-    useFilters(casos);
+    useFilters(ataques);
 
   return (
     <div className={styles.Landing}>
       <Filters
-        caseCount={filteredData.length}
+        attacksCount={filteredData.length}
         tipoFilters={tipoFilters}
         setTipoFilters={setTipoFilters}
         colorByAttackType={colorByAttackType}
@@ -64,13 +64,13 @@ function Landing() {
           provincias,
           rutas,
         }}
-        casesToShow={filteredData}
+        attacksToShow={filteredData}
         colorByAttackType={colorByAttackType}
       />
       <div className={styles["lower-floating-buttons"]}>
         <MonthsSlider boundaryDates={boundaryDates} setFilterDates={setDates} />
       </div>
-      {popupInfo && <Popup popupCase={popupInfo} />}
+      {popupInfo && <Popup attack={popupInfo} />}
       <Analisis {...analisisData} />
     </div>
   );

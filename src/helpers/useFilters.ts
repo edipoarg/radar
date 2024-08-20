@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState } from "react";
-import type { AttacksData, Case } from "../../common/json-shape";
+import type { AttacksData, Attack } from "../../common/json-shape";
 
 export type TipoFilters = Record<string, boolean>;
 type HatredComponentFilters = Record<string, boolean>;
@@ -8,18 +8,18 @@ type FiltersUtilities = {
   setDates: (dates: { min: number; max: number }) => void;
   setTipoFilters: (setter: (oldFilters: TipoFilters) => TipoFilters) => void;
   tipoFilters: TipoFilters;
-  filteredData: Case[];
+  filteredData: Attack[];
   filtersByHatredComponent: HatredComponentFilters;
   setFiltersByHatredComponent: (newFilters: HatredComponentFilters) => void;
 };
 
-export const caseIsWithinMinAndMaxDatesWithDates =
-  (dates: { min: number; max: number }) => (someCase: Case) =>
-    someCase.date >= dates.min && someCase.date <= dates.max;
+export const attackIsWithinMinAndMaxDatesWithDates =
+  (dates: { min: number; max: number }) => (attack: Attack) =>
+    attack.date >= dates.min && attack.date <= dates.max;
 
-export const caseIsAllowedByTipoFiltersWithFilters =
-  (filters: TipoFilters) => (someCase: Case) =>
-    someCase.tipo.some((individualTipo) => filters[individualTipo]);
+export const attackIsAllowedByTipoFiltersWithFilters =
+  (filters: TipoFilters) => (attack: Attack) =>
+    attack.tipo.some((individualTipo) => filters[individualTipo]);
 
 const useHatredComponentFilter = (namesOfComponents: string[]) => {
   const initialFilters = useMemo(() => {
@@ -39,9 +39,9 @@ const useHatredComponentFilter = (namesOfComponents: string[]) => {
   };
 };
 
-const caseHasANonFilteredHateComponent =
-  (filterByHatredComponent: HatredComponentFilters) => (aCase: Case) =>
-    aCase.componente.some(
+const attackHasANonFilteredHateComponent =
+  (filterByHatredComponent: HatredComponentFilters) => (attack: Attack) =>
+    attack.componente.some(
       (componenteName) => filterByHatredComponent[componenteName],
     );
 
@@ -60,14 +60,14 @@ const useAttackTypeFilter = (attackTypeNames: string[]) => {
 };
 
 export const useFilters = ({
-  cases,
+  attacks,
   min,
   max,
   componentNames,
   tiposNames,
 }: AttacksData): FiltersUtilities => {
   const [dates, setDates] = useState({ min, max });
-  const [filteredData, setFilteredData] = useState<Case[]>(cases);
+  const [filteredData, setFilteredData] = useState<Attack[]>(attacks);
 
   const { filtersByHatredComponent, setFiltersByHatredComponent } =
     useHatredComponentFilter(componentNames);
@@ -75,12 +75,12 @@ export const useFilters = ({
   const { tipoFilters, setTipoFilters } = useAttackTypeFilter(tiposNames);
 
   useEffect(() => {
-    const newData = cases
-      .filter(caseIsWithinMinAndMaxDatesWithDates(dates))
-      .filter(caseIsAllowedByTipoFiltersWithFilters(tipoFilters))
-      .filter(caseHasANonFilteredHateComponent(filtersByHatredComponent));
+    const newData = attacks
+      .filter(attackIsWithinMinAndMaxDatesWithDates(dates))
+      .filter(attackIsAllowedByTipoFiltersWithFilters(tipoFilters))
+      .filter(attackHasANonFilteredHateComponent(filtersByHatredComponent));
     setFilteredData(newData);
-  }, [cases, dates, tipoFilters, filtersByHatredComponent]);
+  }, [attacks, dates, tipoFilters, filtersByHatredComponent]);
 
   return {
     setDates,

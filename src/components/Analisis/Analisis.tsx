@@ -25,8 +25,8 @@ export default function Analisis({ min, max, total, componentes }: Props) {
             RELEVAMIENTO
             {min.getFullYear()} - {max.getFullYear()}
           </h1>
-          <h4 className={styles.analisisCasos}> {total} CASOS</h4>
-          <h4 className={styles.analisisCasosBajada}>
+          <h4 className={styles.analisisAtaques}> {total} CASOS</h4>
+          <h4 className={styles.analisisAtaquesBajada}>
             organizados por sus narrativas de odio
           </h4>
         </div>
