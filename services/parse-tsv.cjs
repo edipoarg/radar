@@ -1,13 +1,13 @@
 // @ts-check
 const { parseTsvDateToUTCMillis, separateBySemicolon } = require("./utils.cjs");
 const fs = require("fs");
-/** @import { Case, AttacksData, Clasificacion } from  "../common/json-shape"; */
+/** @import { Attack, AttacksData, Clasificacion } from  "../common/json-shape"; */
 
 /**
  * @param {string[]} tsvRow
- * @returns {Case | null}
+ * @returns {Attack | null}
  */
-const tsvRowToCase = (tsvRow) => {
+const tsvRowToAttack = (tsvRow) => {
   const [
     tsvId,
     tsvTitle,
@@ -54,12 +54,12 @@ const tsvRowToCase = (tsvRow) => {
   };
 };
 
-/** @type {(cases: Case[]) => string[]} */
-const getAllNamesForComponentes = (cases) => {
+/** @type {(attacks: Attack[]) => string[]} */
+const getAllNamesForComponentes = (attacks) => {
   /** @type {string[]} */
   let componentesNames = [];
-  cases.forEach((eachCase) => {
-    const newNames = eachCase.componente.filter(
+  attacks.forEach((attack) => {
+    const newNames = attack.componente.filter(
       (componente) => !componentesNames.includes(componente),
     );
     componentesNames = [...componentesNames, ...newNames];
@@ -67,31 +67,31 @@ const getAllNamesForComponentes = (cases) => {
   return componentesNames;
 };
 
-/** @type {(cases: Case[]) => string[]} */
-const getAllNamesForTipos = (cases) => {
+/** @type {(attacks: Attack[]) => string[]} */
+const getAllNamesForTipos = (attacks) => {
   /** @type {string[]} */
   let tiposNames = [];
-  cases.forEach((eachCase) => {
-    const newNames = eachCase.tipo.filter((tipo) => !tiposNames.includes(tipo));
+  attacks.forEach((attack) => {
+    const newNames = attack.tipo.filter((tipo) => !tiposNames.includes(tipo));
     tiposNames = [...tiposNames, ...newNames];
   });
   return tiposNames;
 };
 
-/** @type {(cases: Case[]) => Clasificacion} */
-const getComponentesClassification = (cases) => {
-  const componentesNames = getAllNamesForComponentes(cases);
+/** @type {(attacks: Attack[]) => Clasificacion} */
+const getComponentesClassification = (attacks) => {
+  const componentesNames = getAllNamesForComponentes(attacks);
 
   /** @type {Record<string, number[]>} */
-  const caseIdsByComponenteName = {};
+  const attackIdsByComponenteName = {};
   componentesNames.forEach((componenteName) => {
-    caseIdsByComponenteName[componenteName] = cases
-      .filter((eachCase) => eachCase.componente.includes(componenteName))
-      .map((eachCase) => eachCase.id);
+    attackIdsByComponenteName[componenteName] = attacks
+      .filter((attack) => attack.componente.includes(componenteName))
+      .map((attack) => attack.id);
   });
   /** @type {Clasificacion} */
   const componentes = {
-    byName: caseIdsByComponenteName,
+    byName: attackIdsByComponenteName,
   };
   return componentes;
 };
@@ -109,17 +109,16 @@ const removeHeaderAndSanitizeRowsFromTSVResponse = (tsvResponse) => {
 
 /**
  *
- * @param {string} casesFileLocation
- * @returns {Case[]}
+ * @param {string} attacksFileLocation
+ * @returns {Attack[]}
  */
-const getCasesFromTsvLocation = (casesFileLocation) => {
-  const resp = fs.readFileSync(casesFileLocation, "utf8");
+const getAttacksFromTsvLocation = (attacksFileLocation) => {
+  const resp = fs.readFileSync(attacksFileLocation, "utf8");
   const tsvRows = removeHeaderAndSanitizeRowsFromTSVResponse(resp);
-  /** type {(Case)[]} */
-  const cases = tsvRows
-    .map(tsvRowToCase)
-    .filter((eachCase) => eachCase !== null);
-  return cases;
+  const attacks = tsvRows
+    .map(tsvRowToAttack)
+    .filter((attack) => attack !== null);
+  return attacks;
 };
 
 /**
@@ -135,20 +134,20 @@ const getColorsByAttackTypeFromTsvLocation = (colorsByTypeFileLocation) => {
 };
 
 /**
- * @param {string | undefined} casesFileLocation
+ * @param {string | undefined} attacksFileLocation
  * @returns {Promise<AttacksData | null>}
  */
 const parseTSVToJSON = async (
-  casesFileLocation = "services/data/sheet.tsv",
+  attacksFileLocation = "services/data/sheet.tsv",
   colorsByAttackTypeFileLocation = "services/data/colors-by-type.tsv",
 ) => {
-  const cases = getCasesFromTsvLocation(casesFileLocation);
-  const componentes = getComponentesClassification(cases);
+  const attacks = getAttacksFromTsvLocation(attacksFileLocation);
+  const componentes = getComponentesClassification(attacks);
   const colorsByType = getColorsByAttackTypeFromTsvLocation(
     colorsByAttackTypeFileLocation,
   );
 
-  const allDates = cases.map((c) => c.date);
+  const allDates = attacks.map((a) => a.date);
   // sorts in-place, so it mutates allDates!
   allDates.sort();
   const min = allDates[0];
@@ -157,12 +156,12 @@ const parseTSVToJSON = async (
   if (min === undefined || max === undefined) return null;
 
   return {
-    cases,
+    attacks: attacks,
     componentes,
     min,
     max,
-    componentNames: getAllNamesForComponentes(cases),
-    tiposNames: getAllNamesForTipos(cases),
+    componentNames: getAllNamesForComponentes(attacks),
+    tiposNames: getAllNamesForTipos(attacks),
     colorByAttackType: colorsByType,
   };
 };

@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 import { parseTSVToJSON } from "../parse-tsv.cjs";
-import parsedCases from "./casos-parseados.json";
+import parsedAttacks from "./ataques.json";
 
 describe("fetchTSV", () => {
   it("parses TSV to JSON as expected", async () => {
@@ -8,6 +8,6 @@ describe("fetchTSV", () => {
       "services/__test__/sheet.tsv",
       "services/__test__/colors-by-type.tsv",
     );
-    expect(result).toEqual(parsedCases);
+    expect(result).toEqual(parsedAttacks);
   });
 });

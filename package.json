@@ -7,7 +7,7 @@
   "scripts": {
     "dev": "vite",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx --report-unused-disable-directives --max-warnings 5",
-    "build": "node services/fetchAndSaveColorByType.js > services/data/colors-by-type.tsv && node services/fetchAndSaveSheet.js > services/data/sheet.tsv && node services/google-sheets.cjs > public/data/casos.json && tsc --noEmit && vite build",
+    "build": "node services/fetchAndSaveColorByType.js > services/data/colors-by-type.tsv && node services/fetchAndSaveSheet.js > services/data/sheet.tsv && node services/google-sheets.cjs > public/data/ataques.json && tsc --noEmit && vite build",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
     "test": "vitest"

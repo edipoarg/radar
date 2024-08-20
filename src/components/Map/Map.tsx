@@ -1,7 +1,7 @@
 import { useState } from "react";
 import MapGL, { NavigationControl } from "react-map-gl/maplibre";
 import maplibregl from "maplibre-gl";
-import type { Case } from "../../../common/json-shape";
+import type { Attack } from "../../../common/json-shape";
 import {
   ProvSource,
   DepsSource,
@@ -53,21 +53,21 @@ const mapSourceStyles = {
 };
 
 type Props = {
-  setPopupInfo: (aCase: Case) => void;
+  setPopupInfo: (attack: Attack) => void;
   sourceData: {
     provincias: unknown;
     departamentos: unknown;
     departamentosBsAs: unknown;
     rutas: unknown;
   };
-  casesToShow: Case[];
+  attacksToShow: Attack[];
   colorByAttackType: Record<string, string>;
 };
 
 export const RadarMap = ({
   setPopupInfo,
   sourceData,
-  casesToShow,
+  attacksToShow,
   colorByAttackType,
 }: Props) => {
   const [selectedMarkerId, setSelectedMarkerId] = useState<null | string>(null);
@@ -100,9 +100,9 @@ export const RadarMap = ({
       <BsAsSource data={departamentosBsAs} style={mapSourceStyles.country} />
       <RutasSource data={rutas} style={mapSourceStyles.rutas} />
 
-      {casesToShow.length !== 0 && (
+      {attacksToShow.length !== 0 && (
         <Markers
-          cases={casesToShow}
+          attacks={attacksToShow}
           setPopupInfo={setPopupInfo}
           setMarker={setSelectedMarkerId}
           selected={selectedMarkerId}
