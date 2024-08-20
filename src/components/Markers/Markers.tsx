@@ -1,24 +1,24 @@
 import { Marker } from "react-map-gl/maplibre";
 import styles from "./Markers.module.css";
-import type { Case } from "../../../common/json-shape";
+import type { Attack } from "../../../common/json-shape";
 import { getColorByAttack } from "../../helpers/colorByAttackType";
 
 type RadarMarkerProps = {
-  caseInstance: Case;
+  attack: Attack;
   selected: string | null;
-  setPopupInfo: (c: Case) => void;
+  setPopupInfo: (c: Attack) => void;
   setMarker: (newMarkerId: string | null) => void;
   colorByAttackType: Record<string, string>;
 };
 
 const RadarMarker = ({
-  caseInstance,
+  attack,
   selected,
   setMarker,
   setPopupInfo,
   colorByAttackType,
 }: RadarMarkerProps) => {
-  const { coords, id } = caseInstance;
+  const { coords, id } = attack;
   const markerStyle = `${styles.circulo} ${`${id}` === selected ? styles.selected : ""}`;
   return (
     <Marker
@@ -27,7 +27,7 @@ const RadarMarker = ({
       latitude={coords.latitude}
       onClick={() => {
         setMarker(`${id}`);
-        setPopupInfo(caseInstance);
+        setPopupInfo(attack);
       }}
     >
       <div
@@ -35,7 +35,7 @@ const RadarMarker = ({
         style={{
           backgroundColor: getColorByAttack(
             colorByAttackType,
-            caseInstance.tipo[0] as string,
+            attack.tipo[0] as string,
           ),
         }}
       />
@@ -44,25 +44,25 @@ const RadarMarker = ({
 };
 
 type Props = {
-  cases: Case[];
-  setPopupInfo: (c: Case) => void;
+  attacks: Attack[];
+  setPopupInfo: (c: Attack) => void;
   setMarker: (newMarkerId: string | null) => void;
   selected: string | null;
   colorByAttackType: Record<string, string>;
 };
 
 export const Markers = ({
-  cases,
+  attacks,
   setPopupInfo,
   setMarker,
   selected,
   colorByAttackType,
 }: Props) =>
-  cases.map((attack) => (
+  attacks.map((attack) => (
     <RadarMarker
       colorByAttackType={colorByAttackType}
       key={attack.id}
-      caseInstance={attack}
+      attack={attack}
       selected={selected}
       setMarker={setMarker}
       setPopupInfo={setPopupInfo}

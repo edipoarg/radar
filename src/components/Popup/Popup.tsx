@@ -1,33 +1,33 @@
-import type { Case } from "../../../common/json-shape";
+import type { Attack } from "../../../common/json-shape";
 import styles from "./Popup.module.css";
 
 interface Props {
-  popupCase: Case;
+  attack: Attack;
 }
 
-const isLink = (caseSource: string) => {
-  return caseSource !== "Fuente directa verificada";
+const isLink = (attackSource: string) => {
+  return attackSource !== "Fuente directa verificada";
 };
 
-const Popup = ({ popupCase }: Props) => (
+const Popup = ({ attack }: Props) => (
   <div className={styles.popup}>
     <h3
       className={`${styles.displayTitulo} ${styles["multiline-text-with-ellipsis"]}`}
     >
-      {popupCase.title}
+      {attack.title}
     </h3>
     <div className={styles.masDatosPopup}>
       {" "}
       <p className={styles.displayFecha}>
         Fecha:{" "}
-        {new Date(popupCase.date).toLocaleDateString("es-AR", {
+        {new Date(attack.date).toLocaleDateString("es-AR", {
           timeZone: "UTC",
         })}
       </p>
-      {isLink(popupCase.source) ? (
+      {isLink(attack.source) ? (
         <a
           className={styles.displayLink}
-          href={popupCase.source}
+          href={attack.source}
           target="_blank"
           rel="noreferrer"
         >

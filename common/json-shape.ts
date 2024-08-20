@@ -1,4 +1,4 @@
-export type Case = {
+export type Attack = {
   id: number;
   title: string;
   date: number;
@@ -17,7 +17,7 @@ export type Clasificacion = {
 };
 
 export type AttacksData = {
-  cases: Case[];
+  attacks: Attack[];
   componentes: Clasificacion;
   min: number;
   max: number;
