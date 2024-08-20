@@ -9,6 +9,7 @@ import MonthsSlider from "../MonthsSlider/MonthsSlider";
 import { RadarMap } from "../Map/Map";
 import type { AttacksData, Attack } from "../../../common/json-shape";
 import { useFilters } from "../../helpers/useFilters";
+import jsonToCsvExport from "json-to-csv-export";
 
 type LoaderData = {
   urls: {
@@ -19,6 +20,11 @@ type LoaderData = {
     ataques: AttacksData;
   };
 };
+
+const makeAttackSerializable = (attack: Attack) => ({
+  ...attack,
+  coords: `${attack.coords.latitude}, ${attack.coords.longitude}`,
+});
 
 function Landing() {
   const { urls } = useLoaderData() as LoaderData;
@@ -48,6 +54,8 @@ function Landing() {
   const { filteredData, setDates, setTipoFilters, tipoFilters } =
     useFilters(ataques);
 
+  const serializableFilteredAttacks = filteredData.map(makeAttackSerializable);
+
   return (
     <div className={styles.Landing}>
       <Filters
@@ -69,6 +77,14 @@ function Landing() {
       />
       <div className={styles["lower-floating-buttons"]}>
         <MonthsSlider boundaryDates={boundaryDates} setFilterDates={setDates} />
+        <button
+          type="button"
+          onClick={() => {
+            jsonToCsvExport({ data: serializableFilteredAttacks });
+          }}
+        >
+          Descargar data
+        </button>
       </div>
       {popupInfo && <Popup attack={popupInfo} />}
       <Analisis {...analisisData} />
