@@ -11,6 +11,8 @@ type FiltersUtilities = {
   filteredData: Attack[];
   filtersByHatredComponent: HatredComponentFilters;
   setFiltersByHatredComponent: (newFilters: HatredComponentFilters) => void;
+  filtersByProvince: Record<string, boolean>;
+  setFiltersByProvince: (newFilter: Record<string, boolean>) => void;
 };
 
 export const attackIsWithinMinAndMaxDatesWithDates =
@@ -59,6 +61,32 @@ const useAttackTypeFilter = (attackTypeNames: string[]) => {
   return { tipoFilters, setTipoFilters };
 };
 
+const getProvincesFilterFromAttacks = (
+  attacks: Attack[],
+): Record<string, true> => {
+  const allProvinces = attacks.map((attack) => attack.provincia);
+  const provincesFilter: Record<string, true> = {};
+  allProvinces.forEach((province) => {
+    provincesFilter[province] = true;
+  });
+  return provincesFilter;
+};
+
+const useProvinceFilter = (attacks: Attack[]) => {
+  const initialFilters = useMemo(
+    () => getProvincesFilterFromAttacks(attacks),
+    [attacks],
+  );
+  const [filtersByProvince, setFiltersByProvince] =
+    useState<Record<string, boolean>>(initialFilters);
+  return { filtersByProvince, setFiltersByProvince };
+};
+
+const attackIsWithinAllowedProvinces =
+  (filtersByProvince: Record<string, boolean>) =>
+  (attack: Attack): boolean =>
+    filtersByProvince[attack.provincia] === true;
+
 export const useFilters = ({
   attacks,
   min,
@@ -71,16 +99,24 @@ export const useFilters = ({
 
   const { filtersByHatredComponent, setFiltersByHatredComponent } =
     useHatredComponentFilter(componentNames);
-
   const { tipoFilters, setTipoFilters } = useAttackTypeFilter(tiposNames);
+  const { filtersByProvince, setFiltersByProvince } =
+    useProvinceFilter(attacks);
 
   useEffect(() => {
     const newData = attacks
       .filter(attackIsWithinMinAndMaxDatesWithDates(dates))
       .filter(attackIsAllowedByTipoFiltersWithFilters(tipoFilters))
-      .filter(attackHasANonFilteredHateComponent(filtersByHatredComponent));
+      .filter(attackHasANonFilteredHateComponent(filtersByHatredComponent))
+      .filter(attackIsWithinAllowedProvinces(filtersByProvince));
     setFilteredData(newData);
-  }, [attacks, dates, tipoFilters, filtersByHatredComponent]);
+  }, [
+    attacks,
+    dates,
+    tipoFilters,
+    filtersByHatredComponent,
+    filtersByProvince,
+  ]);
 
   return {
     setDates,
@@ -89,5 +125,7 @@ export const useFilters = ({
     tipoFilters,
     filtersByHatredComponent,
     setFiltersByHatredComponent,
+    filtersByProvince,
+    setFiltersByProvince,
   };
 };
