@@ -49,6 +49,7 @@ jobs:
       - name: Build with yarn
         env:
           CASES_SPREADSHEET_ID: ${{ secrets.CASES_SPREADSHEET_ID }}
+          COLORS_BY_TYPE_SPREADSHEET_ID: ${{ secrets.COLORS_BY_TYPE_SPREADSHEET_ID }}
         run: |
          yarn run build && cat public/data/ataques.json
         working-directory: ${{ env.BUILD_PATH }}
