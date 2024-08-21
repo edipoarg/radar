@@ -35,7 +35,8 @@ module.exports = {
         "varsIgnorePattern": "^_",
         "ignoreRestSiblings": true
       }
-    ]
+    ],
+    "react/jsx-no-useless-fragment": "error",
   },
   overrides: [
     {
