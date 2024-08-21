@@ -4,7 +4,6 @@ import "./Landing.css";
 import styles from "./Landing.module.css";
 import Popup from "../Popup/Popup";
 import Filters from "../Filters/Filters";
-import Analisis from "../Analisis/Analisis";
 import MonthsSlider from "../MonthsSlider/MonthsSlider";
 import { RadarMap } from "../Map/Map";
 import type { AttacksData, Attack } from "../../../common/json-shape";
@@ -29,7 +28,7 @@ const makeAttackSerializable = (attack: Attack) => ({
 function Landing() {
   const { urls } = useLoaderData() as LoaderData;
   const { provincias, departamentos, departamentosBsAs, rutas, ataques } = urls;
-  const { componentes, attacks, colorByAttackType } = ataques;
+  const { colorByAttackType } = ataques;
   /** Boundary dates are the earliest date that an attack can be from
    * and the latest date that an attack can be from in order to be shown on the map.
    */
@@ -41,14 +40,6 @@ function Landing() {
     [ataques.min, ataques.max],
   );
 
-  // This data doesn't change when we apply filters
-  const [analisisData] = useState({
-    componentes,
-    min: boundaryDates.min,
-    max: boundaryDates.max,
-    total: attacks.length,
-  });
-
   const [popupInfo, setPopupInfo] = useState<Attack | null>(null);
 
   const { filteredData, setDates, setTipoFilters, tipoFilters } =
@@ -57,7 +48,7 @@ function Landing() {
   const serializableFilteredAttacks = filteredData.map(makeAttackSerializable);
 
   return (
-    <div className={styles.Landing}>
+    <article className={styles.Landing}>
       <Filters
         attacksCount={filteredData.length}
         tipoFilters={tipoFilters}
@@ -87,8 +78,7 @@ function Landing() {
         </button>
       </div>
       {popupInfo && <Popup attack={popupInfo} />}
-      <Analisis {...analisisData} />
-    </div>
+    </article>
   );
 }
 

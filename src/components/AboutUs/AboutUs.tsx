@@ -1,31 +1,16 @@
-import styles from "./Conecta.module.css";
+import styles from "./AboutUs.module.css";
 import { useEffect } from "react";
 import Navlinks from "../../routes/index";
+import Footer from "../Footer/Footer";
 
-export const Details = () => (
-  <>
-    <span className={styles.negritaTitulo}>
-      RADAR (Registro de Ataques de Derechas Argentinas Radicalizadas)
-    </span>
-    es un proyecto periodístico colaborativo impulsado por el Equipo de
-    Investigación Política (EdIPo) de la Revista Crisis con apoyo del Centro de
-    Estudios Legales y Sociales (CELS) con el objetivo de fortalecer la
-    democracia y la defensa de los derechos humanos. Presentamos un mapeo
-    colaborativo de ataques protagonizados por derechas radicalizadas con el fin
-    de contribuir al diagnóstico colectivo y la elaboración de estrategias de
-    autocuidado.
-  </>
-);
-
-export default function ReportaForm() {
+export default function AboutUs() {
   useEffect(() => {
     window.scrollTo(0, 0); // Desplázate automáticamente hacia arriba cuando se carga la página
   }, []);
 
   return (
-    <>
-      {/* TODO move this ID to its own constant, as it's used in SiteSummary and main and navbar  */}
-      <div id="conecta" className={styles.conecta}>
+    <article>
+      <section className={styles.conecta}>
         <div>
           <img className={styles.radarDecoImg} src="imgRadar.png" alt="" />
         </div>
@@ -40,12 +25,20 @@ export default function ReportaForm() {
         </div>
         <div>
           <h6 className={styles.conectaTextRadar}>
-            <Details />
+            <span className={styles.negritaTitulo}>
+              RADAR (Registro de Ataques de Derechas Argentinas Radicalizadas)
+            </span>
+            es un proyecto periodístico colaborativo impulsado por el Equipo de
+            Investigación Política (EdIPo) de la Revista Crisis con apoyo del
+            Centro de Estudios Legales y Sociales (CELS) con el objetivo de
+            fortalecer la democracia y la defensa de los derechos humanos.
+            Presentamos un mapeo colaborativo de ataques protagonizados por
+            derechas radicalizadas con el fin de contribuir al diagnóstico
+            colectivo y la elaboración de estrategias de autocuidado.
           </h6>
         </div>
-      </div>
-
-      <div className={styles.conecta2}>
+      </section>
+      <section className={styles.conecta2}>
         <h6 className={styles.textConecta2}>
           Dentro del amplio espectro que componen las derechas llamamos
           radicalizadas a los sectores que apelan directa o indirectamente a la
@@ -54,8 +47,6 @@ export default function ReportaForm() {
           aniquilación del otro con el objeto de silenciar, amedrentar,
           disciplinar o eliminar identidades políticas como forma de influir en
           la discusión pública e inhibir su participación.
-          <br />
-          <br />
         </h6>
 
         <h6 className={styles.siTeInteresa}>
@@ -64,7 +55,8 @@ export default function ReportaForm() {
           <br />
           <a href={Navlinks.mailRadar}>radar.edipo@gmail.com</a>
         </h6>
-      </div>
-    </>
+      </section>
+      <Footer />
+    </article>
   );
 }

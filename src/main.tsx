@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { createHashRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
-import Conecta from "./components/Conecta/Conecta";
+import AboutUs from "./components/AboutUs/AboutUs";
 import Notas from "./components/Notas/Notas";
 import Root from "./routes/Root";
 import Navlinks from "./routes/index";
@@ -25,7 +25,7 @@ const router = createHashRouter([
     element: <Root />,
     children: [
       { path: Navlinks.home, element: <Landing />, loader },
-      { path: Navlinks.conecta, element: <Conecta /> },
+      { path: Navlinks.conecta, element: <AboutUs /> },
       { path: Navlinks.notas, element: <Notas /> },
     ],
   },
