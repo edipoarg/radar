@@ -56,20 +56,6 @@ export const BsAsSource = ({ data, style }: SourceWithFillLayerProps) => (
     />
   </Source>
 );
-export const MunicipiosSource = ({ data, style }: SourceWithFillLayerProps) => (
-  <Source id="municipios-source" type="geojson" data={data}>
-    <Layer
-      id="municipios-layer"
-      type="fill" // Capa de relleno para representar polígonos
-      paint={{
-        "fill-color": style.fillColor,
-        "fill-opacity": style.fillOpacity,
-        "fill-outline-color": style.color,
-      }}
-      minzoom={6} // Set the minimum zoom level to 4
-    />
-  </Source>
-);
 
 type LinePaintProperty = NonNullable<LineLayerSpecification["paint"]>;
 type LineColor = LinePaintProperty["line-color"];

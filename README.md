@@ -36,6 +36,12 @@ Para correr el proyecto, necesitás pasarle al script `yarn build` la variable d
 reemplazando los ceros por la key correspondiente.
 
 
+## Herramientas de análisis de código
+
+- ts-unused-exports: Permite ver qué variables o constantes se exportan pero no se usan. Ojo, que a veces tiene falsos positivos, como por ejemplo con los tipos que se importan en JSDoc. Usar con `npx ts-unused-exports ./tsconfig.json`.
+- unimported: Permite ver qué archivos no se importan nunca. Usar con `npx unimported`.
+
+
 ## License
 
 Distributed under the AGPLv3 License. See `LICENSE` for more information.
