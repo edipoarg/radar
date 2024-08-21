@@ -83,7 +83,7 @@ export const RadarMap = ({
     },
     style: {
       width: "100vw",
-      height: "90vh",
+      height: "92vh",
     },
     mapStyle: mystyle as MapStyle,
   };
@@ -92,7 +92,7 @@ export const RadarMap = ({
       mapLib={maplibregl}
       {...{
         ...mapProps,
-        style: { ...mapProps.style, marginTop: "8vh" },
+        style: { ...mapProps.style },
       }}
     >
       <ProvSource data={provincias} style={mapSourceStyles.provincias} />

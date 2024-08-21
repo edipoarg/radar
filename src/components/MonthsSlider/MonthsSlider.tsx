@@ -102,7 +102,6 @@ export default function MonthsSlider({
             {date2MonthYear(boundaryDates.min)}
           </h6>
         </div>
-        <div> </div>
         <div>
           <h6 className={styles.fechaCierre}>
             {date2MonthYear(boundaryDates.max)}

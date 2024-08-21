@@ -67,7 +67,11 @@ function Landing() {
         colorByAttackType={colorByAttackType}
       />
       <div className={styles["lower-floating-buttons"]}>
-        <MonthsSlider boundaryDates={boundaryDates} setFilterDates={setDates} />
+        <MonthsSlider
+          boundaryDates={boundaryDates}
+          setFilterDates={setDates}
+          className={styles.monthsSlider}
+        />
         <button
           type="button"
           onClick={() => {

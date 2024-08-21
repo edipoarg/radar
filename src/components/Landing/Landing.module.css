@@ -2,6 +2,7 @@
   background-color: white;
   text-align: center;
   width: 100vw;
+  height: 92vh;
   position: relative;
 }
 
@@ -15,6 +16,17 @@
   /* TODO: este valor de index deberia ser alguna constante  definida*/
   z-index: 10000;
   gap: 2vw;
+  width: 90%;
+  justify-content: space-between;
+}
+
+.lower-floating-buttons>.monthsSlider {
+  flex-grow: 1;
+}
+
+.lower-floating-buttons>button {
+  width: 100px;
+  overflow: hidden;
 }
 
 /*------responsive------*/

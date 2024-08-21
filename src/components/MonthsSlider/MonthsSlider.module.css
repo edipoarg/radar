@@ -1,10 +1,9 @@
 .months-slider {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     background-color: white;
     color: black;
     border-radius: 20px;
-    width: 80vw;
-
     padding-top: 2vw;
     padding-left: 6vw;
     padding-bottom: 1vw;
@@ -12,8 +11,8 @@
 }
 
 .months-slider .referenciasFechas {
-    display: grid;
-    grid-template-columns: 1fr 4fr 1fr;
+    display: flex;
+    justify-content: space-between;
 }
 
 .months-slider .referenciasFechas .fechaInicio {
