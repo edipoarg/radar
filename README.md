@@ -40,6 +40,7 @@ reemplazando los ceros por la key correspondiente.
 
 - ts-unused-exports: Permite ver qué variables o constantes se exportan pero no se usan. Ojo, que a veces tiene falsos positivos, como por ejemplo con los tipos que se importan en JSDoc. Usar con `npx ts-unused-exports ./tsconfig.json`.
 - unimported: Permite ver qué archivos no se importan nunca. Usar con `npx unimported`.
+- knip: muy parecido a los otros dos. Puede tirar falsos positivos con JSDoc. Se corre con `npx knip`.
 
 
 ## License
