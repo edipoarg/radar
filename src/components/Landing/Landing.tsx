@@ -9,6 +9,9 @@ import { RadarMap } from "../Map/Map";
 import type { AttacksData, Attack } from "../../../common/json-shape";
 import { useFilters } from "../../helpers/useFilters";
 import jsonToCsvExport from "json-to-csv-export";
+import { ReportPopupContent } from "../ReportPopupContent/ReportPopupContent";
+import ReactPopup from "reactjs-popup";
+import "reactjs-popup/dist/index.css";
 
 type LoaderData = {
   urls: {
@@ -49,6 +52,17 @@ function Landing() {
 
   return (
     <article className={styles.Landing}>
+      <ReactPopup
+        modal
+        trigger={
+          <button type="button" className={styles.reportButton}>
+            Reportá
+          </button>
+        }
+        position="center center"
+      >
+        <ReportPopupContent />
+      </ReactPopup>
       <Filters
         attacksCount={filteredData.length}
         tipoFilters={tipoFilters}

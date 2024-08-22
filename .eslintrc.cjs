@@ -37,6 +37,7 @@ module.exports = {
       }
     ],
     "react/jsx-no-useless-fragment": "error",
+    "react/button-has-type": "error"
   },
   overrides: [
     {

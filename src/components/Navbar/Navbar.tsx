@@ -15,14 +15,6 @@ export default function Navbar() {
       <div className={styles.pagesNavLinks}>
         <NavLink to={Navlinks.notas}>INVESTIGACIONES</NavLink>
         <NavLink to={Navlinks.conecta}>NOSOTRXS</NavLink>
-        <NavLink
-          to={Navlinks.reportaForm}
-          target="_blank"
-          rel="noopener noreferrer"
-          className={styles.linkToReport}
-        >
-          REPORTÁ
-        </NavLink>
       </div>
       <img className={styles.menuImg} src="menu.png" alt="Isotipo de Ra-dar" />
     </div>

@@ -6,6 +6,14 @@
   position: relative;
 }
 
+.reportButton {
+  position: absolute;
+  background-color: red;
+  right: 60px;
+  top: 30px;
+  z-index: 1;
+}
+
 .lower-floating-buttons {
   position: absolute;
   display: flex;
