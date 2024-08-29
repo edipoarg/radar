@@ -11,7 +11,6 @@ import Landing from "./components/Landing/Landing";
 
 const loader = async () => ({
   urls: await fetchUrlsData({
-    departamentos: "data/mapsData/departamentos-argentina.json",
     departamentosBsAs: "data/mapsData/departamentos-buenos_aires.json",
     provincias: "data/mapsData/provincias.json",
     rutas: "data/mapsData/rutas.json",

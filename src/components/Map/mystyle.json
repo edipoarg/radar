@@ -28,7 +28,7 @@
       "type": "line",
       "paint": {
         "line-blur": 3,
-        "line-color": "#7d97ec",
+        "line-color": "#323a4c",
         "line-width": {
           "stops": [
             [
@@ -170,7 +170,7 @@
             "VIR",
             "VUT"
           ],
-          "#d8d7fa",
+          "red",
           [
             "ARE",
             "ARG",
@@ -200,7 +200,7 @@
             "TZA",
             "VAT"
           ],
-          "#d8d7fa",
+          "red",
           [
             "AUT",
             "BEL",
@@ -230,7 +230,7 @@
             "VEN",
             "VGB"
           ],
-          "#d8d7fa",
+          "red",
           [
             "AIA",
             "BIH",
@@ -269,7 +269,7 @@
             "YEM",
             "ZWE"
           ],
-          "#d8d7fa",
+          "red",
           [
             "ABW",
             "ALB",
@@ -306,13 +306,13 @@
             "VCT",
             "ZAF"
           ],
-          "#d8d7fa",
+          "red",
           [
             "ATA",
             "GRL"
           ],
-          "#d8d7fa",
-          "#d8d7fa"
+          "red",
+          "red"
         ]
       },
       "filter": [
@@ -329,7 +329,7 @@
       "id": "countries-boundary",
       "type": "line",
       "paint": {
-        "line-color": "rgba(255, 255, 255, 1)",
+        "line-color": "#323a4c",
         "line-width": {
           "stops": [
             [

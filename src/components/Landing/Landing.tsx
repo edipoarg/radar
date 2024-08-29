@@ -16,7 +16,6 @@ import "reactjs-popup/dist/index.css";
 type LoaderData = {
   urls: {
     provincias: unknown;
-    departamentos: unknown;
     departamentosBsAs: unknown;
     rutas: unknown;
     ataques: AttacksData;
@@ -30,7 +29,7 @@ const makeAttackSerializable = (attack: Attack) => ({
 
 function Landing() {
   const { urls } = useLoaderData() as LoaderData;
-  const { provincias, departamentos, departamentosBsAs, rutas, ataques } = urls;
+  const { provincias, departamentosBsAs, rutas, ataques } = urls;
   const { colorByAttackType } = ataques;
   /** Boundary dates are the earliest date that an attack can be from
    * and the latest date that an attack can be from in order to be shown on the map.
@@ -52,21 +51,9 @@ function Landing() {
 
   return (
     <article className={styles.Landing}>
-      <ReactPopup
-        modal
-        trigger={
-          <button type="button" className={styles.reportButton}>
-            Reportá
-          </button>
-        }
-        position="center center"
-      >
-        <ReportPopupContent />
-      </ReactPopup>
       <RadarMap
         setPopupInfo={setPopupInfo}
         sourceData={{
-          departamentos,
           departamentosBsAs,
           provincias,
           rutas,
@@ -95,6 +82,17 @@ function Landing() {
           Descargar data
         </button>
       </div>
+      <ReactPopup
+        modal
+        trigger={
+          <button type="button" className={styles.reportButton}>
+            Reportá
+          </button>
+        }
+        position="center center"
+      >
+        <ReportPopupContent />
+      </ReactPopup>
 
       {popupInfo && <Popup attack={popupInfo} />}
     </article>

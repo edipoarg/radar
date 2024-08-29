@@ -29,19 +29,6 @@ export const ProvSource = ({ data, style }: SourceWithFillLayerProps) => (
     />
   </Source>
 );
-export const DepsSource = ({ data, style }: SourceWithFillLayerProps) => (
-  <Source id="departamentos-source" type="geojson" data={data}>
-    <Layer
-      id="departamentos-layer"
-      type="fill" // Capa de relleno para representar polígonos
-      paint={{
-        "fill-color": style.fillColor,
-        "fill-opacity": style.fillOpacity,
-        "fill-outline-color": style.color,
-      }}
-    />
-  </Source>
-);
 export const BsAsSource = ({ data, style }: SourceWithFillLayerProps) => (
   <Source id="departamentosBsAs-source" type="geojson" data={data}>
     <Layer
