@@ -1,6 +1,5 @@
 import { useMemo, useState } from "react";
 import { useLoaderData } from "react-router-dom";
-import "./Landing.css";
 import styles from "./Landing.module.css";
 import Popup from "../Popup/Popup";
 import Filters from "../Filters/Filters";
