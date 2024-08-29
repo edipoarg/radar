@@ -8,7 +8,7 @@ export default function Navbar() {
       <NavLink to={Navlinks.home}>
         <img
           className={styles.logoImg}
-          src="logoRadar.png"
+          src="LogotipoRadar.svg"
           alt="Logotipo de Ra-dar"
         />
       </NavLink>

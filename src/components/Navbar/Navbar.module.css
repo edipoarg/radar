@@ -1,19 +1,19 @@
 .heading {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 8vh;
+  position: fixed;
+  bottom: 0;
+  left: 1vw;
+  width: 98vw;
+  height: 10vh;
   min-height: 2.5rem;
-  background-color: #ffffff;
   color: #00425a;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-left: 20px;
-  padding-right: 2px;
-  box-shadow: 0 2px 60px 5px #00000050;
+  padding-left: 1rem;
+  padding-right: 2rem;
   z-index: 1;
+  background-color: red;
+  border-radius: 20px;
 }
 
 .heading a {
@@ -51,10 +51,6 @@
 
 @media (max-width: 700px) {
 
-  .heading {
-    padding: 0;
-    justify-content: space-around;
-  }
 
   .pagesNavLinks {
     font-size: 0.8rem;

@@ -15,10 +15,6 @@ export default function AboutUs() {
           <img className={styles.radarDecoImg} src="imgRadar.png" alt="" />
         </div>
         <div className={styles.contectaTituloContainer}>
-          <div>
-            <img className={styles.logoImgNos} src="logoRadar.png" alt="" />
-          </div>
-
           <h1 className={styles.conectaTitulo}>
             Registro de Ataques de Derechas Argentinas Radicalizadas
           </h1>

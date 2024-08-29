@@ -17,12 +17,6 @@
   height: 70vh;
 }
 
-.logoImgNos {
-  width: 35vw;
-  padding-left: 2vw;
-  z-index: 3000;
-}
-
 .radarDecoImg {
   position: absolute;
   opacity: 0.1;
@@ -122,11 +116,6 @@
   .textConecta2 {
     padding: 0vh 5vw;
   }
-
-  .logoImgNos {
-    width: 35vw;
-    padding-left: 2vw;
-  }
 }
 
 @media (min-width: 1200px) {
@@ -160,11 +149,6 @@
 
   .textConecta2 {
     padding: 0vh 5vw;
-  }
-
-  .logoImgNos {
-    width: 28vw;
-    padding-left: 2vw;
   }
 
   .radarDecoImg {
