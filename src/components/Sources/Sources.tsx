@@ -27,6 +27,14 @@ export const ProvSource = ({ data, style }: SourceWithFillLayerProps) => (
         "fill-outline-color": style.color,
       }}
     />
+    <Layer
+      id="provincias-line-layer"
+      type="line"
+      paint={{
+        "line-color": style.color,
+        "line-width": 2,
+      }}
+    />
   </Source>
 );
 export const BsAsSource = ({ data, style }: SourceWithFillLayerProps) => (

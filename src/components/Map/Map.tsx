@@ -18,10 +18,7 @@ const mapSourceStyles = {
   provincias: {
     fillColor: "#2a364c",
     color: "#515d86",
-    weight: 2,
-    lineColor: "#b2b7f5",
     fillOpacity: 1,
-    lineWidth: 2,
   },
   rutas: {
     weight: 2,
