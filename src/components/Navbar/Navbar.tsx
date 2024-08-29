@@ -50,6 +50,7 @@ export default function Navbar() {
           <HiOutlineBellAlert size={iconsHeight} />
         </NavLink>
         <NavLink
+          title="Isotipo de Ra-dar"
           to={Navlinks.redRadar}
           className={`${getSelectedClassname(isSelected(Navlinks.redRadar))} ${styles.isotypeImg}`}
         >
