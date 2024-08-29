@@ -28,10 +28,7 @@
   height: 4vh;
 }
 
-.heading .selected {
-  color: #145bff;
-  fill: #145bff;
-}
+
 
 .logoImg {
   fill: var(--radar-black);
@@ -41,11 +38,16 @@
   fill: var(--radar-grey);
 }
 
-.pagesNavLinks a:hover {
+.pagesNavLinks a:hover,
+.pagesNavLinks a:focus {
   color: var(--radar-sky-blue);
   fill: var(--radar-sky-blue);
 }
 
+.pagesNavLinks a.selected {
+  color: #145bff;
+  fill: #145bff;
+}
 
 .pagesNavLinks {
   display: flex;
