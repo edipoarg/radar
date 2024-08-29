@@ -88,28 +88,37 @@ export const RadarMap = ({
     mapStyle: mystyle as MapStyle,
   };
   return (
-    <MapGL
-      mapLib={maplibregl}
-      {...{
-        ...mapProps,
-        style: { ...mapProps.style },
+    <div
+      style={{
+        background: "linear-gradient(20deg, #0a0d15, #292f36)",
       }}
     >
-      <ProvSource data={provincias} style={mapSourceStyles.provincias} />
-      <DepsSource data={departamentos} style={mapSourceStyles.departamentos} />
-      <BsAsSource data={departamentosBsAs} style={mapSourceStyles.country} />
-      <RutasSource data={rutas} style={mapSourceStyles.rutas} />
-
-      {attacksToShow.length !== 0 && (
-        <Markers
-          attacks={attacksToShow}
-          setPopupInfo={setPopupInfo}
-          setMarker={setSelectedMarkerId}
-          selected={selectedMarkerId}
-          colorByAttackType={colorByAttackType}
+      <MapGL
+        mapLib={maplibregl}
+        {...{
+          ...mapProps,
+          style: { ...mapProps.style },
+        }}
+      >
+        <ProvSource data={provincias} style={mapSourceStyles.provincias} />
+        <DepsSource
+          data={departamentos}
+          style={mapSourceStyles.departamentos}
         />
-      )}
-      <NavigationControl position="top-right" />
-    </MapGL>
+        <BsAsSource data={departamentosBsAs} style={mapSourceStyles.country} />
+        <RutasSource data={rutas} style={mapSourceStyles.rutas} />
+
+        {attacksToShow.length !== 0 && (
+          <Markers
+            attacks={attacksToShow}
+            setPopupInfo={setPopupInfo}
+            setMarker={setSelectedMarkerId}
+            selected={selectedMarkerId}
+            colorByAttackType={colorByAttackType}
+          />
+        )}
+        <NavigationControl position="top-right" />
+      </MapGL>
+    </div>
   );
 };
