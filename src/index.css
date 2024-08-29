@@ -36,6 +36,15 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+
+  /* Design system variables */
+  --radar-black: #353242;
+  --radar-grey: #a4aeb9;
+  --radar-white: #fffffe;
+
+  --radar-blue: #145bff;
+  --radar-sky-blue: #6d82e1;
+  --radar-background: #d2d7e5;
 }
 
 a {

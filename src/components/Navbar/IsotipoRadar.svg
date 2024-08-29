@@ -1,8 +1,5 @@
-<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 309 268" width="309" height="268">
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 309 268">
 	<title>LogoRadar-svg</title>
-	<style>
-		.s0 { fill: black;stroke: black } 
-	</style>
 	<g>
 		<path class="s0" d="m183.3 29.1v-29.5c0 0 96.1 5.9 93.2 118.3h-28.1c0 0 4.9-77.4-65.1-88.8z"/>
 		<path class="s0" d="m276.5 129.7h31.5c0 0 2.5 133.6-145.4 137v-28.1c0 0 107.1 1 113.9-108.9z"/>
