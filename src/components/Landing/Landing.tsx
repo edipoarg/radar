@@ -63,12 +63,6 @@ function Landing() {
       >
         <ReportPopupContent />
       </ReactPopup>
-      <Filters
-        attacksCount={filteredData.length}
-        tipoFilters={tipoFilters}
-        setTipoFilters={setTipoFilters}
-        colorByAttackType={colorByAttackType}
-      />
       <RadarMap
         setPopupInfo={setPopupInfo}
         sourceData={{
@@ -78,6 +72,12 @@ function Landing() {
           rutas,
         }}
         attacksToShow={filteredData}
+        colorByAttackType={colorByAttackType}
+      />
+      <Filters
+        attacksCount={filteredData.length}
+        tipoFilters={tipoFilters}
+        setTipoFilters={setTipoFilters}
         colorByAttackType={colorByAttackType}
       />
       <div className={styles["lower-floating-buttons"]}>
@@ -95,6 +95,7 @@ function Landing() {
           Descargar data
         </button>
       </div>
+
       {popupInfo && <Popup attack={popupInfo} />}
     </article>
   );

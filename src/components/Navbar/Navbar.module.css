@@ -1,9 +1,8 @@
 .heading {
-  position: sticky;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100vw;
-  z-index: 5000;
   height: 8vh;
   min-height: 2.5rem;
   background-color: #ffffff;
@@ -14,6 +13,7 @@
   padding-left: 20px;
   padding-right: 2px;
   box-shadow: 0 2px 60px 5px #00000050;
+  z-index: 1;
 }
 
 .heading a {

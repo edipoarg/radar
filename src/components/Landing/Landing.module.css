@@ -11,7 +11,6 @@
   background-color: red;
   right: 60px;
   top: 30px;
-  z-index: 1;
 }
 
 .lower-floating-buttons {
@@ -21,8 +20,6 @@
   align-items: center;
   top: 72vh;
   left: 4vw;
-  /* TODO: este valor de index deberia ser alguna constante  definida*/
-  z-index: 10000;
   gap: 2vw;
   width: 90%;
   justify-content: space-between;
@@ -46,7 +43,6 @@
     top: 72vh;
     left: 30vw;
     width: 55vw;
-    z-index: 0;
   }
 }
 
@@ -57,6 +53,5 @@
     top: 872h;
     left: 20vw;
     width: 69vw;
-    z-index: 0;
   }
 }
