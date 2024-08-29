@@ -1,9 +1,8 @@
 .heading {
   position: fixed;
-  bottom: 0;
+  bottom: 0.5vh;
   left: 1vw;
   width: 98vw;
-  height: 10vh;
   min-height: 2.5rem;
   color: #00425a;
   display: flex;
@@ -27,8 +26,6 @@
   transition: color 0.5s;
   height: 4vh;
 }
-
-
 
 .logoImg {
   fill: var(--radar-black);

@@ -1,0 +1,16 @@
+.drawerContainer {
+    left: 2vw;
+    width: 96vw;
+    background-color: var(--radar-background);
+    border-radius: 10px;
+    box-shadow: inset -5px -5px 5px 0px rgba(0, 0, 0, 0.2),
+        inset 5px 5px 5px 0px rgba(255, 255, 255, 0.5);
+}
+
+.hiddenContentContainer.open {
+    transition-timing-function: ease-out;
+}
+
+.hiddenContentContainer.closed {
+    transition-timing-function: ease-in;
+}

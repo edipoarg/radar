@@ -11,6 +11,8 @@ import jsonToCsvExport from "json-to-csv-export";
 import { ReportPopupContent } from "../ReportPopupContent/ReportPopupContent";
 import ReactPopup from "reactjs-popup";
 import "reactjs-popup/dist/index.css";
+import { Drawer } from "../Drawer/Drawer";
+import { useTogglable } from "../../helpers/useTogglable";
 
 type LoaderData = {
   urls: {
@@ -47,6 +49,7 @@ function Landing() {
     useFilters(ataques);
 
   const serializableFilteredAttacks = filteredData.map(makeAttackSerializable);
+  const [drawerIsOpen, toggleDrawerIsOpen] = useTogglable();
 
   return (
     <article className={styles.Landing}>
@@ -60,6 +63,32 @@ function Landing() {
         attacksToShow={filteredData}
         colorByAttackType={colorByAttackType}
       />
+      <button
+        type="button"
+        style={{
+          position: "absolute",
+          bottom: "50vh",
+        }}
+        onClick={toggleDrawerIsOpen}
+      >
+        OPEN OR CLOSE DRAWER
+      </button>
+      <Drawer
+        open={drawerIsOpen}
+        visibleContent={<div>This is visible content</div>}
+        hiddenContent={
+          <div>
+            This is invisible content!
+            <p>It goes</p>
+            <p>It goes</p>
+            <p>It goes</p>
+            <p>It goes</p>
+            <p>It goes</p>
+            <p>It goes</p>
+          </div>
+        }
+      />
+
       <Filters
         attacksCount={filteredData.length}
         tipoFilters={tipoFilters}

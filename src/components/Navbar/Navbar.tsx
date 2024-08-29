@@ -16,12 +16,16 @@ const navlinkIsSelected =
 const getSelectedClassname = (isSelected: boolean) =>
   isSelected ? styles.selected : "";
 
-export default function Navbar() {
+type Props = {
+  heightInVh: number;
+};
+
+export default function Navbar({ heightInVh }: Props) {
   const { pathname } = useLocation();
   const isSelected = navlinkIsSelected(pathname);
   const iconsHeight = "9vh 1vh";
   return (
-    <div className={styles.heading}>
+    <div className={styles.heading} style={{ height: `${heightInVh}vh` }}>
       <NavLink
         to={Navlinks.home}
         title="Logotipo de Ra-dar"
