@@ -1,31 +1,42 @@
 .tipo {
+    position: relative;
     display: flex;
-    flex-direction: column;
-    padding: 7px 5px;
+    flex-direction: row;
+    border: none;
+    border-radius: 50px;
+    transition: background-color 1s, color 1s;
+    height: 49px;
+    width: 120px;
+    overflow: hidden;
+    padding: 10px;
     align-items: center;
-    justify-content: space-between;
-    width: 100%;
+    box-shadow: 0 0 10px 1px #222222aa inset;
+    color: var(--radar-white);
+
+}
+
+.tipo.deactivated {
+    color: var(--radar-black);
 }
 
 .tipoLabel {
-    display: flex;
-    justify-content: flex-start;
-    gap: 20px;
-    width: 100%;
-}
-
-.tipoIcon {
-    width: 23px;
-    height: 23px;
-    border-radius: 5px;
-    padding-left: 4px;
-    margin-right: 5px;
-    flex-shrink: 0;
-}
-
-.tipoDescription {
+    position: absolute;
+    width: 72px;
+    height: 30px;
+    transition: left 1s;
     font-size: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    left: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: justify;
+    text-justify: none;
 }
+
+.tipo.deactivated .tipoLabel {
+    left: 50%;
+}
+
 
 /*== Responsive==*/
 
@@ -33,19 +44,6 @@
 
 @media (min-width: 768px) {
 
-    .tipoLabel {
-        flex-direction: column;
-        align-items: center;
-        justify-content: flex-start;
-        gap: 1vh;
-        width: 60px;
-    }
+    .tipoLabel {}
 
-    .tipoLabel>p {
-        margin: 0;
-    }
-
-    .tipoDescription {
-        font-size: 10px;
-    }
 }

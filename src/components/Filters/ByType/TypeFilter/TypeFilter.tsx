@@ -1,34 +1,22 @@
 import styles from "./TypeFilter.module.css";
-import { Switch } from "@mui/material";
 
 interface Props {
   description: string;
-  iconColor?: string;
+  color?: string;
   value: boolean;
   onChange: (newValue: boolean) => void;
 }
 
-export default function Filter({
-  description,
-  iconColor,
-  value,
-  onChange,
-}: Props) {
+export default function Filter({ description, color, value, onChange }: Props) {
   return (
-    <div className={styles.tipo}>
-      <div className={styles.tipoLabel}>
-        <div
-          className={`${styles.tipoIcon ?? ""}`}
-          style={{ backgroundColor: iconColor }}
-        ></div>
-        <p className={styles.tipoDescription}>{description}</p>
-      </div>
-      <Switch
-        checked={value}
-        onChange={(_event, checked) => {
-          onChange(checked);
-        }}
-      />
-    </div>
+    <button
+      className={`${styles.tipo} ${value ? "" : styles.deactivated}`}
+      title={description}
+      style={{ backgroundColor: value ? color : "#b5d0e8" }} // TODO: change grey to actual color
+      type="button"
+      onClick={() => onChange(!value)}
+    >
+      <span className={styles.tipoLabel}>{description}</span>
+    </button>
   );
 }

@@ -25,7 +25,7 @@ export default function FiltersByType({
     <div className={styles.filtros}>
       {Object.entries(tipoFilters).map(([tipoFilterName, value]) => (
         <Filter
-          iconColor={getColorByAttack(colorByAttackType, tipoFilterName)}
+          color={getColorByAttack(colorByAttackType, tipoFilterName)}
           key={tipoFilterName}
           description={tipoFilterName}
           onChange={handleTipoFilterChange(tipoFilterName)}
