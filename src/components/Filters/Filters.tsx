@@ -4,14 +4,12 @@ import Filter from "./Filter/Filter";
 import styles from "./Filters.module.css";
 
 interface Props {
-  attacksCount: number;
   tipoFilters: TipoFilters;
   setTipoFilters: (callback: (prevFilters: TipoFilters) => TipoFilters) => void;
   colorByAttackType: Record<string, string>;
 }
 
 export default function Filters({
-  attacksCount,
   tipoFilters,
   setTipoFilters,
   colorByAttackType,
@@ -25,10 +23,6 @@ export default function Filters({
 
   return (
     <div className={styles.filtros}>
-      <header>
-        <h4>casos:</h4>
-        <h1 className={styles.cantAtaques}>{attacksCount}</h1>
-      </header>
       <div className={styles.filtrosPorTipo}>
         {Object.entries(tipoFilters).map(([tipoFilterName, value]) => (
           <Filter

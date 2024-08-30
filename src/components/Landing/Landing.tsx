@@ -63,11 +63,24 @@ function Landing() {
         attacksToShow={filteredData}
         colorByAttackType={colorByAttackType}
       />
+      <article
+        style={{
+          position: "absolute",
+          top: "10px",
+          left: "10px",
+          backgroundColor: "white",
+          display: "flex",
+          padding: "1rem",
+        }}
+      >
+        <h4>casos:</h4>
+        <p>{filteredData.length}</p>
+      </article>
       <button
         type="button"
         style={{
           position: "absolute",
-          bottom: "50vh",
+          top: "5vh",
         }}
         onClick={toggleDrawerIsOpen}
       >
@@ -75,41 +88,34 @@ function Landing() {
       </button>
       <Drawer
         open={drawerIsOpen}
-        visibleContent={<div>This is visible content</div>}
-        hiddenContent={
+        visibleContent={
           <div>
-            This is invisible content!
-            <p>It goes</p>
-            <p>It goes</p>
-            <p>It goes</p>
-            <p>It goes</p>
-            <p>It goes</p>
-            <p>It goes</p>
+            <Filters
+              tipoFilters={tipoFilters}
+              setTipoFilters={setTipoFilters}
+              colorByAttackType={colorByAttackType}
+            />
+            <MonthsSlider
+              boundaryDates={boundaryDates}
+              setFilterDates={setDates}
+            />
           </div>
         }
+        hiddenContent={<div>This is invisible content!</div>}
       />
 
-      <Filters
-        attacksCount={filteredData.length}
-        tipoFilters={tipoFilters}
-        setTipoFilters={setTipoFilters}
-        colorByAttackType={colorByAttackType}
-      />
-      <div className={styles["lower-floating-buttons"]}>
-        <MonthsSlider
-          boundaryDates={boundaryDates}
-          setFilterDates={setDates}
-          className={styles.monthsSlider}
-        />
-        <button
-          type="button"
-          onClick={() => {
-            jsonToCsvExport({ data: serializableFilteredAttacks });
-          }}
-        >
-          Descargar data
-        </button>
-      </div>
+      <button
+        type="button"
+        style={{
+          position: "absolute",
+          top: "10px",
+        }}
+        onClick={() => {
+          jsonToCsvExport({ data: serializableFilteredAttacks });
+        }}
+      >
+        Descargar data
+      </button>
       <ReactPopup
         modal
         trigger={

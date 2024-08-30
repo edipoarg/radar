@@ -1,26 +1,8 @@
 .filtros {
-  position: absolute;
-  top: 6vh;
   padding: 3px;
   padding-left: 5px;
-  z-index: 1;
   display: flex;
   flex-direction: column;
-}
-
-.filtros>header {
-  background-color: white;
-  color: black;
-  border-radius: 20px;
-  text-align: left;
-  padding-left: 5vw;
-  height: 11vh;
-  width: 15vh;
-}
-
-.cantAtaques {
-  font-size: 2rem;
-  text-align: left;
 }
 
 .filtrosPorTipo {
@@ -46,11 +28,6 @@
   .filtros {
     padding: 5px;
     padding-left: 15px;
-  }
-
-  .filtros>header {
-    width: 18vw;
-    height: 13vh;
   }
 
   .filtrosPorTipo {
