@@ -2,7 +2,7 @@ import { useMemo, useState } from "react";
 import { useLoaderData } from "react-router-dom";
 import styles from "./Landing.module.css";
 import Popup from "../Popup/Popup";
-import Filters from "../Filters/Filters";
+import FiltersByType from "../Filters/ByType/FiltersByType";
 import MonthsSlider from "../MonthsSlider/MonthsSlider";
 import { RadarMap } from "../Map/Map";
 import type { AttacksData, Attack } from "../../../common/json-shape";
@@ -90,7 +90,7 @@ function Landing() {
         open={drawerIsOpen}
         visibleContent={
           <div>
-            <Filters
+            <FiltersByType
               tipoFilters={tipoFilters}
               setTipoFilters={setTipoFilters}
               colorByAttackType={colorByAttackType}

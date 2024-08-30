@@ -1,4 +1,4 @@
-import styles from "./Filter.module.css";
+import styles from "./TypeFilter.module.css";
 import { Switch } from "@mui/material";
 
 interface Props {

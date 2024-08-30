@@ -2,7 +2,7 @@
   padding: 3px;
   padding-left: 5px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 }
 
 .filtrosPorTipo {
@@ -12,7 +12,7 @@
   color: black;
   border-radius: 20px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: flex-start;
   text-align: start;
   width: 50vw;
