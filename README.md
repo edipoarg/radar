@@ -30,10 +30,12 @@ Se recomienda usar:
 
 ## Variables de ambiente
 Para correr el proyecto, necesitás pasarle al script `yarn build` la variable de ambiente `CASES_SPREADSHEET_ID`:
+y
+`COLORS_BY_TYPE_SPREADSHEET_ID`:
 
-`env CASES_SPREADSHEET_ID=000000000000000000000 yarn build`
+`env CASES_SPREADSHEET_ID='000000000000000000000' COLORS_BY_TYPE_SPREADSHEET_ID='00000000000000000' yarn build`
 
-reemplazando los ceros por la key correspondiente.
+reemplazando los ceros por las keys correspondientes.
 
 
 ## Herramientas de análisis de código
