@@ -1,4 +1,4 @@
-.notas {
+.investigaciones {
   width: 100vw;
   background-color: white;
   padding-top: 25vh;
@@ -34,7 +34,7 @@
 /*== tablet==*/
 
 @media (min-width: 768px) {
-  .notas {
+  .investigaciones {
     background-color: white;
   }
 

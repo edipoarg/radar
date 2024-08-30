@@ -2,12 +2,17 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { createHashRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
-import AboutUs from "./components/AboutUs/AboutUs";
-import Notas from "./components/Notas/Notas";
+import RedRadar from "./components/RedRadar/RedRadar";
+import Investigaciones from "./components/Investigaciones/Investigaciones";
 import Root from "./routes/Root";
 import Navlinks from "./routes/index";
 import { fetchUrlsData } from "./helpers/fetchUrlsData";
 import Landing from "./components/Landing/Landing";
+import QuienesSomos from "./components/QuienesSomos/QuienesSomos";
+import Presentacion from "./components/QuienesSomos/Presentacion/Presentacion";
+import Definiciones from "./components/QuienesSomos/Definiciones/Definiciones";
+import PatronDeCasos from "./components/QuienesSomos/PatronDeCasos/PatronDeCasos";
+import Metodologia from "./components/QuienesSomos/Metodologia/Metodologia";
 
 const loader = async () => ({
   urls: await fetchUrlsData({
@@ -24,8 +29,13 @@ const router = createHashRouter([
     element: <Root />,
     children: [
       { path: Navlinks.home, element: <Landing />, loader },
-      { path: Navlinks.conecta, element: <AboutUs /> },
-      { path: Navlinks.notas, element: <Notas /> },
+      { path: Navlinks.quienesSomos, element: <QuienesSomos /> },
+      { path: Navlinks.presentacion, element: <Presentacion /> },
+      { path: Navlinks.definiciones, element: <Definiciones /> },
+      { path: Navlinks.patronDeCasos, element: <PatronDeCasos /> },
+      { path: Navlinks.metodologia, element: <Metodologia /> },
+      { path: Navlinks.investigaciones, element: <Investigaciones /> },
+      { path: Navlinks.redRadar, element: <RedRadar /> },
     ],
   },
 ]);

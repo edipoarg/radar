@@ -1,13 +1,13 @@
-import styles from "./Notas.module.css";
+import styles from "./Investigaciones.module.css";
 import { Button } from "../Button/Button";
-import notas from "../../notas.json";
+import investigaciones from "../../investigaciones.json";
 import Footer from "../Footer/Footer";
 
-export default function Notas() {
+export default function Investigaciones() {
   return (
     <>
-      <section className={styles.notas}>
-        {notas.map(({ title, author, link }, i) => (
+      <section className={styles.investigaciones}>
+        {investigaciones.map(({ title, author, link }, i) => (
           <article key={i} className={styles.nota}>
             <h1>{title}</h1>
             {author && <h4>Por {author}</h4>}

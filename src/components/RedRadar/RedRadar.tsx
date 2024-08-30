@@ -1,9 +1,9 @@
-import styles from "./AboutUs.module.css";
+import styles from "./RedRadar.module.css";
 import { useEffect } from "react";
 import Navlinks from "../../routes/index";
 import Footer from "../Footer/Footer";
 
-export default function AboutUs() {
+export default function RedRadar() {
   useEffect(() => {
     window.scrollTo(0, 0); // Desplázate automáticamente hacia arriba cuando se carga la página
   }, []);

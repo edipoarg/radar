@@ -37,21 +37,21 @@ export default function Navbar() {
         >
           <IoMdPin size={iconsHeight} />
         </NavLink>
-        <NavLink
-          to={Navlinks.notas}
-          className={getSelectedClassname(isSelected(Navlinks.notas))}
-        >
-          <LuFileSearch size={iconsHeight} />
-        </NavLink>
-        <NavLink to="TODO">
-          <HiOutlineBellAlert size={iconsHeight} />
-        </NavLink>
-        <NavLink to="TODO">
+        <NavLink to={Navlinks.quienesSomos}>
           <TiInfoLarge size={iconsHeight} />
         </NavLink>
         <NavLink
-          to={Navlinks.conecta}
-          className={`${getSelectedClassname(isSelected(Navlinks.conecta))} ${styles.isotypeImg}`}
+          to={Navlinks.investigaciones}
+          className={getSelectedClassname(isSelected(Navlinks.investigaciones))}
+        >
+          <LuFileSearch size={iconsHeight} />
+        </NavLink>
+        <NavLink to={Navlinks.novedades}>
+          <HiOutlineBellAlert size={iconsHeight} />
+        </NavLink>
+        <NavLink
+          to={Navlinks.redRadar}
+          className={`${getSelectedClassname(isSelected(Navlinks.redRadar))} ${styles.isotypeImg}`}
         >
           <IsotipoRadar />
         </NavLink>
