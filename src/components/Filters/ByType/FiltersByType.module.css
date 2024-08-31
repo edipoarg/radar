@@ -3,9 +3,6 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  /*TODO: DELETE THESE MARGINS!!! */
-  margin-bottom: 42px;
-  margin-top: 16px;
 }
 
 /*== Responsive==*/

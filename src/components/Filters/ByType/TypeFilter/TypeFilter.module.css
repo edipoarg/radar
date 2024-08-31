@@ -1,10 +1,11 @@
 .tipo {
+    --transition-time: 0.5s;
     position: relative;
     display: flex;
     flex-direction: row;
     border: none;
     border-radius: 50px;
-    transition: background-color 1s, color 1s;
+    transition: background-color var(--transition-time), color var(--transition-time);
     height: 49px;
     width: 120px;
     overflow: hidden;
@@ -23,7 +24,7 @@
     position: absolute;
     width: 72px;
     height: 30px;
-    transition: left 1s;
+    transition: left var(--transition-time);
     font-size: 10px;
     font-family: 'Times New Roman', Times, serif;
     left: 10px;
@@ -37,13 +38,21 @@
     left: 50%;
 }
 
+.switch {
+    position: absolute;
+    left: 68%;
+    height: 32px;
+    width: 32px;
+    border-radius: 100px;
+    transition: left var(--transition-time);
+    border: 1px solid var(--radar-white);
+    background: radial-gradient(circle at -10px -10px, #bababa 5%, var(--radar-white) 65%);
+    box-shadow: 5px 0 10px #000000a0;
 
-/*== Responsive==*/
 
-/*== tablet==*/
 
-@media (min-width: 768px) {
+}
 
-    .tipoLabel {}
-
+.tipo.deactivated .switch {
+    left: 7px;
 }
