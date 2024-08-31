@@ -22,20 +22,19 @@
 
 .tipoLabel {
     position: absolute;
-    width: 72px;
+    width: 70px;
     height: 30px;
     transition: left var(--transition-time);
-    font-size: 10px;
-    font-family: 'Times New Roman', Times, serif;
+    font-size: 9px;
     left: 10px;
-    overflow: hidden;
-    text-overflow: ellipsis;
     text-align: justify;
     text-justify: none;
+    display: flex;
+    align-items: center;
 }
 
 .tipo.deactivated .tipoLabel {
-    left: 50%;
+    left: 39%;
 }
 
 .switch {

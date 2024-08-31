@@ -1,4 +1,5 @@
 import styles from "./TypeFilter.module.css";
+import LinesEllipsis from "react-lines-ellipsis";
 
 interface Props {
   description: string;
@@ -16,7 +17,15 @@ export default function Filter({ description, color, value, onChange }: Props) {
       type="button"
       onClick={() => onChange(!value)}
     >
-      <span className={styles.tipoLabel}>{description}</span>
+      <span className={styles.tipoLabel}>
+        <LinesEllipsis
+          text={description}
+          maxLine={2}
+          ellipsis="..."
+          trimRight
+          basedOn="letters"
+        />
+      </span>
       <div className={styles.switch}></div>
     </button>
   );

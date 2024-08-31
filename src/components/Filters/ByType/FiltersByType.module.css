@@ -8,9 +8,7 @@
 /*== Responsive==*/
 
 /*== tablet==*/
-
 @media (min-width: 768px) {
-
   .filtros {
     padding: 5px;
     padding-left: 15px;
