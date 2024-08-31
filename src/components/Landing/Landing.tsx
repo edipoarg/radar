@@ -63,29 +63,6 @@ function Landing() {
         attacksToShow={filteredData}
         colorByAttackType={colorByAttackType}
       />
-      <article
-        style={{
-          position: "absolute",
-          top: "10px",
-          left: "10px",
-          backgroundColor: "white",
-          display: "flex",
-          padding: "1rem",
-        }}
-      >
-        <h4>casos:</h4>
-        <p>{filteredData.length}</p>
-      </article>
-      <button
-        type="button"
-        style={{
-          position: "absolute",
-          top: "5vh",
-        }}
-        onClick={toggleDrawerIsOpen}
-      >
-        OPEN OR CLOSE DRAWER
-      </button>
       <Drawer
         open={drawerIsOpen}
         visibleContent={
@@ -101,21 +78,21 @@ function Landing() {
             />
           </div>
         }
-        hiddenContent={<div>This is invisible content!</div>}
-      />
-
-      <button
-        type="button"
-        style={{
-          position: "absolute",
-          top: "10px",
-        }}
-        onClick={() => {
+        hiddenContent={
+          <div style={{ color: "white" }}>
+            This is invisible content! Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. In repellat animi neque fugit quibusdam cupiditate
+            quos ut tenetur suscipit. Distinctio, quos nisi consectetur unde
+            nihil excepturi aspernatur expedita libero laboriosam.
+          </div>
+        }
+        toggleDrawerIsOpen={toggleDrawerIsOpen}
+        numberOfCases={filteredData.length}
+        onDownloadDataRequest={() => {
           jsonToCsvExport({ data: serializableFilteredAttacks });
         }}
-      >
-        Descargar data
-      </button>
+      />
+
       <ReactPopup
         modal
         trigger={

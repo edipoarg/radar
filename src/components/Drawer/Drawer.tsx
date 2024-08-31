@@ -1,11 +1,15 @@
 import { useEffect, useState } from "react";
 import { NAVBAR_HEIGHT_IN_VH } from "../../constants";
 import styles from "./Drawer.module.css";
+import { IoColorFilter } from "react-icons/io5";
 
 type Props = {
   open: boolean;
   visibleContent: JSX.Element;
   hiddenContent: JSX.Element;
+  toggleDrawerIsOpen: () => void;
+  numberOfCases: number;
+  onDownloadDataRequest: () => void;
 };
 
 type Vh = `${number}vh`;
@@ -35,7 +39,14 @@ const useDefferedHeightCollapse = (timeInMs: number, isOpen: boolean) => {
 };
 
 const DRAWER_TRANSITION_MS = 1000;
-export const Drawer = ({ hiddenContent, visibleContent, open }: Props) => {
+export const Drawer = ({
+  hiddenContent,
+  visibleContent,
+  open,
+  toggleDrawerIsOpen,
+  numberOfCases,
+  onDownloadDataRequest,
+}: Props) => {
   const {
     deferredIsOpen: shouldShowHiddenContent,
     maxHeight: hiddenContentContainerMaxHeight,
@@ -49,12 +60,24 @@ export const Drawer = ({ hiddenContent, visibleContent, open }: Props) => {
       }}
     >
       <div
+        className={styles.drawerInnerContent}
         style={{
           position: "relative",
-          width: "100%",
-          height: "100%",
         }}
       >
+        <div className={styles.upperFloatingButtonsContainer}>
+          <article className={styles.numberOfAttacks}>
+            {numberOfCases} casos
+          </article>
+          <div>
+            <button type="button" onClick={toggleDrawerIsOpen}>
+              <IoColorFilter />
+            </button>
+            <button type="button" onClick={onDownloadDataRequest}>
+              Descargar data
+            </button>
+          </div>
+        </div>
         {visibleContent}
         <div
           style={{

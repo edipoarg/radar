@@ -1,11 +1,18 @@
 .drawerContainer {
+    width: fit-content;
     left: 2vw;
+}
+
+.drawerInnerContent {
     width: 96vw;
     background-color: var(--radar-background);
     border-radius: 10px;
     box-shadow: inset -5px -5px 5px 0px rgba(0, 0, 0, 0.2),
         inset 5px 5px 5px 0px rgba(255, 255, 255, 0.5);
-    overflow: hidden;
+}
+
+.hiddenContentContainer {
+    overflow: "hidden";
 }
 
 .hiddenContentContainer.open {
@@ -14,4 +21,28 @@
 
 .hiddenContentContainer.closed {
     transition-timing-function: ease-in;
+}
+
+.upperFloatingButtonsContainer {
+    position: absolute;
+    /* The difference between the height and the top value creates a margin between the container and the drawer itself */
+    top: -50px;
+    height: 40px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.numberOfAttacks {
+    border: 2px solid var(--radar-white);
+    color: var(--radar-white);
+    width: 130px;
+    height: 40px;
+    border-radius: 17px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 23px;
 }
