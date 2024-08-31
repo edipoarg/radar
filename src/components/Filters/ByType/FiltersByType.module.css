@@ -5,20 +5,6 @@
   flex-direction: row;
 }
 
-.filtrosPorTipo {
-  margin-top: 5px;
-  padding: 5px 5px;
-  background-color: white;
-  color: black;
-  border-radius: 20px;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  text-align: start;
-  width: 50vw;
-}
-
-
 /*== Responsive==*/
 
 /*== tablet==*/
@@ -28,15 +14,5 @@
   .filtros {
     padding: 5px;
     padding-left: 15px;
-  }
-
-  .filtrosPorTipo {
-    flex-direction: row;
-    width: fit-content;
-    height: fit-content;
-    justify-content: center;
-    text-align: center;
-    min-width: 18vw;
-    align-items: stretch;
   }
 }
