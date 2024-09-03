@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import { NAVBAR_HEIGHT_IN_VH } from "../../constants";
 import styles from "./Drawer.module.css";
-import { IoColorFilter } from "react-icons/io5";
+import { FaSliders } from "react-icons/fa6";
+import { GoDownload } from "react-icons/go";
 
 type Props = {
   open: boolean;
@@ -15,7 +16,7 @@ type Props = {
 type Vh = `${number}vh`;
 const getVhByOpenState = (isOpen: boolean): Vh => (isOpen ? "60vh" : "0vh");
 
-const useDefferedHeightCollapse = (timeInMs: number, isOpen: boolean) => {
+const useDeferredHeightCollapse = (timeInMs: number, isOpen: boolean) => {
   const [deferredIsOpen, setDeferredIsOpen] = useState(isOpen);
   const [hiddenContentMaxHeight, setMaxHeight] = useState<Vh>(
     getVhByOpenState(isOpen),
@@ -50,31 +51,31 @@ export const Drawer = ({
   const {
     deferredIsOpen: shouldShowHiddenContent,
     maxHeight: hiddenContentContainerMaxHeight,
-  } = useDefferedHeightCollapse(DRAWER_TRANSITION_MS, open);
+  } = useDeferredHeightCollapse(DRAWER_TRANSITION_MS, open);
   return (
     <div
-      className={`${styles.drawerContainer}`}
-      style={{
-        position: "absolute",
-        bottom: `${NAVBAR_HEIGHT_IN_VH + 1}vh`,
-      }}
+      className={styles.drawerContainer}
+      style={{ bottom: `${NAVBAR_HEIGHT_IN_VH + 1}vh` }}
     >
-      <div
-        className={styles.drawerInnerContent}
-        style={{
-          position: "relative",
-        }}
-      >
+      <div className={styles.drawerInnerContent}>
         <div className={styles.upperFloatingButtonsContainer}>
           <article className={styles.numberOfAttacks}>
             {numberOfCases} casos
           </article>
-          <div>
-            <button type="button" onClick={toggleDrawerIsOpen}>
-              <IoColorFilter />
+          <div className={styles.rightSideFloatingButtons}>
+            <button
+              className={styles.floatingButtonWithIcon}
+              type="button"
+              onClick={toggleDrawerIsOpen}
+            >
+              <FaSliders />
             </button>
-            <button type="button" onClick={onDownloadDataRequest}>
-              Descargar data
+            <button
+              className={styles.floatingButtonWithIcon}
+              type="button"
+              onClick={onDownloadDataRequest}
+            >
+              <GoDownload />
             </button>
           </div>
         </div>

@@ -1,9 +1,11 @@
 .drawerContainer {
     width: fit-content;
     left: 2vw;
+    position: absolute;
 }
 
 .drawerInnerContent {
+    position: relative;
     width: 96vw;
     background-color: var(--radar-background);
     border-radius: 10px;
@@ -34,9 +36,19 @@
     justify-content: space-between;
 }
 
-.numberOfAttacks {
+.rightSideFloatingButtons {
+    display: flex;
+    flex-direction: row;
+    gap: 0.4rem;
+}
+
+.numberOfAttacks,
+.floatingButtonWithIcon {
     border: 2px solid var(--radar-white);
     color: var(--radar-white);
+}
+
+.numberOfAttacks {
     width: 130px;
     height: 40px;
     border-radius: 17px;
@@ -45,4 +57,22 @@
     align-items: center;
     justify-content: center;
     font-size: 23px;
+}
+
+.floatingButtonWithIcon {
+    background: none;
+    width: 37px;
+    height: 37px;
+    border-radius: 100%;
+    font-size: 19px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.floatingButtonWithIcon:hover,
+.floatingButtonWithIcon:focus,
+.floatingButtonWithIcon:active {
+    border-color: var(--radar-background);
+    color: var(--radar-background);
 }
