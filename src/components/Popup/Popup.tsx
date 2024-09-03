@@ -10,14 +10,9 @@ const isLink = (attackSource: string) => {
 };
 
 const Popup = ({ attack }: Props) => (
-  <div className={styles.popup}>
-    <h3
-      className={`${styles.displayTitulo} ${styles["multiline-text-with-ellipsis"]}`}
-    >
-      {attack.title}
-    </h3>
+  <article className={styles.popup}>
+    <h3 className={`${styles.displayTitulo}`}>{attack.title}</h3>
     <div className={styles.masDatosPopup}>
-      {" "}
       <p className={styles.displayFecha}>
         Fecha:{" "}
         {new Date(attack.date).toLocaleDateString("es-AR", {
@@ -37,7 +32,7 @@ const Popup = ({ attack }: Props) => (
         <p>[Fuente directa verificada]</p>
       )}
     </div>
-  </div>
+  </article>
 );
 
 export default Popup;

@@ -43,7 +43,7 @@ function Landing() {
     [ataques.min, ataques.max],
   );
 
-  const [popupInfo, setPopupInfo] = useState<Attack | null>(null);
+  const [selectedAttack, setSelectedAttack] = useState<Attack | null>(null);
 
   const { filteredData, setDates, setTipoFilters, tipoFilters } =
     useFilters(ataques);
@@ -54,7 +54,7 @@ function Landing() {
   return (
     <article className={styles.Landing}>
       <RadarMap
-        setPopupInfo={setPopupInfo}
+        setSelectedAttack={setSelectedAttack}
         sourceData={{
           departamentosBsAs,
           provincias,
@@ -66,26 +66,23 @@ function Landing() {
       <Drawer
         open={drawerIsOpen}
         visibleContent={
-          <div>
-            <FiltersByType
-              tipoFilters={tipoFilters}
-              setTipoFilters={setTipoFilters}
-              colorByAttackType={colorByAttackType}
-            />
-            <MonthsSlider
-              boundaryDates={boundaryDates}
-              setFilterDates={setDates}
-            />
-          </div>
+          selectedAttack ? (
+            <Popup attack={selectedAttack} />
+          ) : (
+            <div>
+              <FiltersByType
+                tipoFilters={tipoFilters}
+                setTipoFilters={setTipoFilters}
+                colorByAttackType={colorByAttackType}
+              />
+              <MonthsSlider
+                boundaryDates={boundaryDates}
+                setFilterDates={setDates}
+              />
+            </div>
+          )
         }
-        hiddenContent={
-          <div style={{ color: "white" }}>
-            This is invisible content! Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. In repellat animi neque fugit quibusdam cupiditate
-            quos ut tenetur suscipit. Distinctio, quos nisi consectetur unde
-            nihil excepturi aspernatur expedita libero laboriosam.
-          </div>
-        }
+        hiddenContent={undefined}
         toggleDrawerIsOpen={toggleDrawerIsOpen}
         numberOfCases={filteredData.length}
         onDownloadDataRequest={() => {
@@ -104,8 +101,6 @@ function Landing() {
       >
         <ReportPopupContent />
       </ReactPopup>
-
-      {popupInfo && <Popup attack={popupInfo} />}
     </article>
   );
 }

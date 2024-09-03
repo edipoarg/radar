@@ -6,7 +6,7 @@ import { getColorByAttack } from "../../helpers/colorByAttackType";
 type RadarMarkerProps = {
   attack: Attack;
   selected: string | null;
-  setPopupInfo: (c: Attack) => void;
+  setSelectedAttack: (c: Attack) => void;
   setMarker: (newMarkerId: string | null) => void;
   colorByAttackType: Record<string, string>;
 };
@@ -15,7 +15,7 @@ const RadarMarker = ({
   attack,
   selected,
   setMarker,
-  setPopupInfo,
+  setSelectedAttack,
   colorByAttackType,
 }: RadarMarkerProps) => {
   const { coords, id } = attack;
@@ -27,7 +27,7 @@ const RadarMarker = ({
       latitude={coords.latitude}
       onClick={() => {
         setMarker(`${id}`);
-        setPopupInfo(attack);
+        setSelectedAttack(attack);
       }}
     >
       <div
@@ -45,7 +45,7 @@ const RadarMarker = ({
 
 type Props = {
   attacks: Attack[];
-  setPopupInfo: (c: Attack) => void;
+  setSelectedAttack: (c: Attack) => void;
   setMarker: (newMarkerId: string | null) => void;
   selected: string | null;
   colorByAttackType: Record<string, string>;
@@ -53,7 +53,7 @@ type Props = {
 
 export const Markers = ({
   attacks,
-  setPopupInfo,
+  setSelectedAttack,
   setMarker,
   selected,
   colorByAttackType,
@@ -65,6 +65,6 @@ export const Markers = ({
       attack={attack}
       selected={selected}
       setMarker={setMarker}
-      setPopupInfo={setPopupInfo}
+      setSelectedAttack={setSelectedAttack}
     />
   ));

@@ -1,11 +1,7 @@
 .popup {
   --background-color: #2b3bcd;
-  position: absolute;
-  top: 55vh;
-  left: 2vw;
   width: 96vw;
   height: 15vh;
-
   padding: 15px;
   padding-left: 25px;
   color: white;
@@ -47,9 +43,6 @@
 /*celus mas grandes*/
 @media (min-width: 400px) {
   .popup {
-    position: absolute;
-    top: 50vh;
-    left: 2vw;
     width: 96vw;
     height: 17vh;
     padding: 15px;
@@ -65,9 +58,6 @@
 
 @media (min-width: 768px) {
   .popup {
-    position: absolute;
-    top: 60vh;
-    left: 1vw;
     width: 28vw;
     height: 36vh;
     padding: 16px 8px;
@@ -95,54 +85,9 @@
   }
 
   .popup {
-    position: absolute;
-    top: 63vh;
-    left: 1vw;
     width: 18vw;
     height: 32vh;
     padding: 16px 8px;
     white-space: breakspaces;
   }
-}
-
-/* Taken from https://hackingui.com/a-pure-css-solution-for-multiline-text-truncation/ */
-.multiline-text-with-ellipsis {
-  /* hide text if it more than N lines  */
-  overflow: hidden;
-  /* to set '...' in absolute position */
-  position: relative;
-  line-height: 1em;
-  /* max-height = line-height (1.2) * lines max number (3) */
-  /* a few more pixels to avoid clipping the text*/
-  max-height: 3.1em;
-  /* fix problem when last visible word doesn't adjoin right side  */
-  text-align: justify;
-  /* place for '...' */
-  padding-right: 1em;
-  margin-right: 1em;
-}
-
-/* create the ... */
-.multiline-text-with-ellipsis:before {
-  /* show dots at the end */
-  content: "...";
-  position: absolute;
-  /* set position to right bottom corner of block */
-  right: 0;
-  bottom: 0;
-}
-
-/* hide ... if we have text, which is less than or equal to max lines */
-.multiline-text-with-ellipsis:after {
-  /* hide dots at the end */
-  content: "";
-  position: absolute;
-  /* set position to right bottom corner of text */
-  right: 0;
-  /* set width and height */
-  width: 1em;
-  height: 1em;
-  margin-top: 0.2em;
-  /* bg color same as parent bg color */
-  background: var(--background-color);
 }

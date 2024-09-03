@@ -6,7 +6,7 @@ import { IoColorFilter } from "react-icons/io5";
 type Props = {
   open: boolean;
   visibleContent: JSX.Element;
-  hiddenContent: JSX.Element;
+  hiddenContent?: JSX.Element;
   toggleDrawerIsOpen: () => void;
   numberOfCases: number;
   onDownloadDataRequest: () => void;

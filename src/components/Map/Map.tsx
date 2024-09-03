@@ -29,7 +29,7 @@ const mapSourceStyles = {
 };
 
 type Props = {
-  setPopupInfo: (attack: Attack) => void;
+  setSelectedAttack: (attack: Attack) => void;
   sourceData: {
     provincias: unknown;
     departamentosBsAs: unknown;
@@ -40,7 +40,7 @@ type Props = {
 };
 
 export const RadarMap = ({
-  setPopupInfo,
+  setSelectedAttack,
   sourceData,
   attacksToShow,
   colorByAttackType,
@@ -82,7 +82,7 @@ export const RadarMap = ({
         {attacksToShow.length !== 0 && (
           <Markers
             attacks={attacksToShow}
-            setPopupInfo={setPopupInfo}
+            setSelectedAttack={setSelectedAttack}
             setMarker={setSelectedMarkerId}
             selected={selectedMarkerId}
             colorByAttackType={colorByAttackType}
