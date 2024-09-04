@@ -1,5 +1,4 @@
 .negritaTitulo {
-  font-family: "LuxoraBold";
   padding-right: 10px;
 }
 
@@ -63,7 +62,6 @@
   color: white;
   text-transform: uppercase;
   text-align: center;
-  font-family: "Luxora";
   font-size: 0.8rem;
 
   border-radius: 30px;
@@ -95,7 +93,6 @@
     color: white;
     font-size: 1.2rem;
     text-align: justify;
-    font-family: "Luxora";
   }
 
   .textConecta2 {
@@ -133,7 +130,6 @@
     color: white;
     font-size: 1.2rem;
     text-align: justify;
-    font-family: "Luxora";
   }
 
   .conecta2 {

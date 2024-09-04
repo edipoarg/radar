@@ -1,18 +1,4 @@
 @font-face {
-  font-family: 'Luxora';
-  src: url('./fonts/LuxoraGrotesk-Light.otf') format('opentype');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'LuxoraBold';
-  src: url('./fonts/LuxoraGrotesk-Medium.otf') format('opentype');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
   font-family: "Ronnia Condensed Regular";
   src: url("./fonts/Ronnia/fonnts.com-Ronnia_Cond_Regular.otf") format("opentype");
 }
@@ -57,14 +43,6 @@ html {
 
 body {
   min-height: 100%;
-}
-
-h1,
-h2,
-h5,
-h3,
-h4 {
-  font-family: "Luxora";
 }
 
 h3 {
