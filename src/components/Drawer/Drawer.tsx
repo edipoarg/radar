@@ -66,6 +66,7 @@ export const Drawer = ({
             <button
               className={styles.floatingButtonWithIcon}
               type="button"
+              title="Abrir/cerrar"
               onClick={toggleDrawerIsOpen}
             >
               <FaSliders />
@@ -73,6 +74,7 @@ export const Drawer = ({
             <button
               className={styles.floatingButtonWithIcon}
               type="button"
+              title="Descargar datos filtrados"
               onClick={onDownloadDataRequest}
             >
               <GoDownload />

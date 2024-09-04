@@ -1,4 +1,5 @@
 .tipo {
+    font-family: 'Ronnia Condensed Regular';
     --transition-time: 0.5s;
     position: relative;
     display: flex;

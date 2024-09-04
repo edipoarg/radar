@@ -20,7 +20,7 @@ export default function Filter({ description, color, value, onChange }: Props) {
       <span className={styles.tipoLabel}>
         <LinesEllipsis
           text={description}
-          maxLine={2}
+          maxLine={3} // In actuality they are 2 lines, but there is probably a bug in how the Ronnia font is rendered
           ellipsis="..."
           trimRight
           basedOn="letters"
