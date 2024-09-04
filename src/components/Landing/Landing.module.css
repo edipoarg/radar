@@ -7,7 +7,18 @@
 
 .reportButton {
   position: absolute;
-  background-color: red;
   right: 60px;
   top: 30px;
+
+  border-radius: 30px;
+  height: 35px;
+  width: 95px;
+  border: none;
+
+  text-transform: uppercase;
+  font-family: "Ronnia Condensed Regular";
+  font-size: 17px;
+
+  background: linear-gradient(var(--radar-white) 4%, var(--radar-sky-blue) 43%);
+  color: var(--radar-black);
 }
