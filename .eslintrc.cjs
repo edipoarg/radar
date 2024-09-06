@@ -45,6 +45,12 @@ module.exports = {
       "rules": {
         "@typescript-eslint/no-unnecessary-condition": "off"
       }
+    },
+    {
+      "files": ["*.ts", "*.tsx"],
+      "rules": {
+        "react/prop-types": "off"
+      }
     }
   ]
 }

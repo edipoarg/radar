@@ -14,7 +14,6 @@
     align-items: center;
     box-shadow: 0 0 10px 1px #222222aa inset;
     color: var(--radar-white);
-
 }
 
 .tipo.deactivated {
@@ -48,9 +47,6 @@
     border: 1px solid var(--radar-white);
     background: radial-gradient(circle at -10px -10px, #bababa 5%, var(--radar-white) 65%);
     box-shadow: 5px 0 10px #000000a0;
-
-
-
 }
 
 .tipo.deactivated .switch {

@@ -1,0 +1,42 @@
+.trackOuter {
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    border-radius: 100px;
+}
+
+.trackBackground {
+    background-color: var(--radar-white);
+    box-shadow: -11px 75px 70px -70px #656975 inset;
+    border-radius: 100px;
+    height: 100%;
+    width: calc(100% + 40px);
+    position: absolute;
+}
+
+/*jajaja trakinas*/
+.trackInner {
+    width: calc(100% + 40px);
+    position: relative;
+}
+
+/* There're multiple overlapping backgrounds creating the resulting texture,
+ * so we need multiple containers. We can't stack background colors. See: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_backgrounds_and_borders/Using_multiple_backgrounds 
+ */
+.knobsContainerBackgroundLayer {
+    position: absolute;
+    /* left and width values are decided in JS runtime*/
+    top: 0;
+    height: 100%;
+    border-radius: 100px;
+    background-color: #7787e9;
+}
+
+.knobsContainer {
+    background: linear-gradient(90deg, #3850d7d0, #725ce0d0);
+    box-shadow: inset -10px -17px 10px -9px rgba(0, 0, 0, 0.4),
+        inset 10px 17px 10px -9px rgba(255, 255, 255, 0.4);
+    height: inherit;
+    width: 100%;
+    border-radius: inherit;
+}

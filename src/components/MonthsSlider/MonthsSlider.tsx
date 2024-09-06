@@ -1,12 +1,9 @@
 import { useState, useCallback, useMemo } from "react";
-import { Slider } from "@mui/material";
+import { Range } from "react-range";
 import styles from "./MonthsSlider.module.css";
 import type { BoundaryDates } from "../../types/dates";
-import {
-  date2MonthYear,
-  monthsDiff,
-  sliderKnobToSliderKnobLabel,
-} from "./dateHelpers";
+import { monthsDiff, sliderKnobToSliderKnobLabel } from "./dateHelpers";
+import { SliderTrackHOC } from "./SliderTrack/SliderTrack";
 
 interface Props {
   className?: string;
@@ -39,11 +36,8 @@ const useSliderBehavior = (
   );
 
   const handleSliderValueChange = useCallback(
-    (_event: Event, value: number[] | number) => {
-      /* La API de MUI no permite parametrizar el tipo del value.
-       * El estado del arte es hacer esta chanchada: forzar el tipo a la forma que sabés que va a recibir en runtime.
-       * Ejemplos acá: https://www.programcreek.com/typescript/?api=@mui/material.Slider
-       */
+    (value: number[]) => {
+      // La API de Range devuelve un array de values. Voy a ser optimista y suponer que van a ser dos siempre.
       const range = value as [number, number];
       if (range[1] < range[0]) return;
 
@@ -83,31 +77,31 @@ export default function MonthsSlider({
 }: Props) {
   const { monthRange, totalMonths, handleSliderValueChange, valueLabelFormat } =
     useSliderBehavior(boundaryDates, setFilterDates);
+
   return (
-    <div className={`${styles["months-slider"]} ${className ?? ""}`}>
-      <Slider
-        min={0}
-        max={totalMonths - 1}
-        valueLabelDisplay="auto"
-        value={monthRange}
+    <div className={`${styles.monthsSliderContainer} ${className ?? ""}`}>
+      <Range
+        values={monthRange}
         step={1}
-        getAriaValueText={valueLabelFormat}
-        valueLabelFormat={valueLabelFormat}
+        min={0}
+        max={totalMonths}
         onChange={handleSliderValueChange}
-        aria-labelledby="non-linear-slider"
+        renderThumb={({ props, value, index }) => {
+          const classNameByWhichKnobItIs =
+            index % 2 === 0 ? styles.leftKnob : styles.rightKnob;
+          return (
+            <div
+              className={[styles.knob, classNameByWhichKnobItIs].join(" ")}
+              {...props}
+            >
+              <div className={styles.dateTooltip}>
+                {valueLabelFormat(value)}
+              </div>
+            </div>
+          );
+        }}
+        renderTrack={SliderTrackHOC({ monthRange, totalMonths })}
       />
-      <div className={styles.referenciasFechas}>
-        <div>
-          <h6 className={styles.fechaInicio}>
-            {date2MonthYear(boundaryDates.min)}
-          </h6>
-        </div>
-        <div>
-          <h6 className={styles.fechaCierre}>
-            {date2MonthYear(boundaryDates.max)}
-          </h6>
-        </div>
-      </div>
     </div>
   );
 }

@@ -1,47 +1,55 @@
-.months-slider {
+.monthsSliderContainer {
     display: flex;
     flex-direction: column;
-    background-color: white;
     color: black;
-    border-radius: 20px;
-    padding-top: 2vw;
-    padding-left: 6vw;
-    padding-bottom: 1vw;
-    padding-right: 6vw;
+    height: 100px;
+    padding: 0 30px;
 }
 
-.months-slider .referenciasFechas {
-    display: flex;
-    justify-content: space-between;
+.knob {
+    outline: none;
+    --knob-width: 18px;
+    width: var(--knob-width);
+    height: var(--knob-width);
+    border-radius: 100%;
+    position: relative;
+    box-shadow: inset -12px -12px 2px -9px rgba(255, 255, 255, 0.1),
+        inset 9px 9px 2px -7px rgba(0, 0, 0, 0.2);
 }
 
-.months-slider .referenciasFechas .fechaInicio {
-    color: #2b3bcd;
-    text-align: left;
+.leftKnob {
+    background-color: #485ad7;
 }
 
-.months-slider .referenciasFechas .fechaCierre {
-    color: #2b3bcd;
-    text-align: right;
+.rightKnob {
+    background-color: #7064df;
 }
 
-.referenciasFechas h6 {
-    font-size: 1rem;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+.dateTooltip {
+    position: absolute;
+    top: 47px;
+    font-size: 10px;
+    text-transform: uppercase;
+    width: max-content;
+    left: -50%;
+    padding: 5px 7px;
+    border-radius: 7px;
+    background-color: var(--radar-background);
+    box-shadow: 2px 3px 7px rgba(10, 10, 35, 0.4),
+        -3px -3px 4px rgba(10, 10, 30, 0.2) inset,
+        2px 2px 1px rgba(253, 253, 253, 0.8) inset;
 }
 
-/*TV TABLET 768px*/
-@media (min-width: 768px) {
-    .months-slider {
-        padding-right: 2vw;
-        padding-left: 2vw;
-    }
-}
-
-/*TV RESPONISVE 1200px*/
-@media (min-width: 1200px) {
-    .months-slider {
-        padding-right: 2vw;
-        padding-left: 2vw;
-    }
+.dateTooltip::before {
+    content: " ";
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    position: absolute;
+    top: -4px;
+    left: calc(50% - 5px);
+    background-color: var(--radar-background);
+    transform: rotate(45deg);
+    box-shadow:
+        4px 3px 2px -2px rgba(253, 253, 253, 0.8) inset;
 }
