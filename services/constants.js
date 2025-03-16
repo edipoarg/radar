@@ -11,7 +11,7 @@ if (colorsByTypeId == undefined)
 
 const constants = {
   tsvUrl: `https://docs.google.com/spreadsheets/d/e/${tsvId}/pub?output=tsv`,
-  colorsByTipeTSVUrl: `https://docs.google.com/spreadsheets/d/${colorsByTypeId}/pub?gid=496295073&single=true&output=tsv`,
+  colorsByTipeTSVUrl: `https://docs.google.com/spreadsheets/d/e/${colorsByTypeId}/pub?gid=496295073&single=true&output=tsv`,
 };
 
 export default constants;

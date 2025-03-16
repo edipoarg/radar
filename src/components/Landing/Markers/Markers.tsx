@@ -1,7 +1,7 @@
 import { Marker } from "react-map-gl/maplibre";
 import styles from "./Markers.module.css";
-import type { Attack } from "../../../common/json-shape";
-import { getColorByAttack } from "../../helpers/colorByAttackType";
+import type { Attack } from "../../../../common/json-shape";
+import { getColorByAttack } from "../../../helpers/colorByAttackType";
 
 type RadarMarkerProps = {
   attack: Attack;

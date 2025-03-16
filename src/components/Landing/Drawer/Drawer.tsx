@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
-import { NAVBAR_HEIGHT_IN_VH } from "../../constants";
 import styles from "./Drawer.module.css";
 import { FaSliders } from "react-icons/fa6";
 import { GoDownload } from "react-icons/go";
+import type { Vh } from "../../../types/styles";
 
 type Props = {
   open: boolean;
@@ -11,9 +11,9 @@ type Props = {
   toggleDrawerIsOpen: () => void;
   numberOfCases: number;
   onDownloadDataRequest: () => void;
+  bottom: Vh;
 };
 
-type Vh = `${number}vh`;
 const getVhByOpenState = (isOpen: boolean): Vh => (isOpen ? "60vh" : "0vh");
 
 const useDeferredHeightCollapse = (timeInMs: number, isOpen: boolean) => {
@@ -47,16 +47,14 @@ export const Drawer = ({
   toggleDrawerIsOpen,
   numberOfCases,
   onDownloadDataRequest,
+  bottom,
 }: Props) => {
   const {
     deferredIsOpen: shouldShowHiddenContent,
     maxHeight: hiddenContentContainerMaxHeight,
   } = useDeferredHeightCollapse(DRAWER_TRANSITION_MS, open);
   return (
-    <div
-      className={styles.drawerContainer}
-      style={{ bottom: `${NAVBAR_HEIGHT_IN_VH + 1}vh` }}
-    >
+    <div className={styles.drawerContainer} style={{ bottom }}>
       <div className={styles.drawerInnerContent}>
         <div className={styles.upperFloatingButtonsContainer}>
           <article className={styles.numberOfAttacks}>

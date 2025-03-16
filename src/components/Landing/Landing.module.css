@@ -22,3 +22,10 @@
   background: linear-gradient(var(--radar-white) 4%, var(--radar-sky-blue) 43%);
   color: var(--radar-black);
 }
+
+.attackDetail {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -00%);
+  z-index: 10;
+}

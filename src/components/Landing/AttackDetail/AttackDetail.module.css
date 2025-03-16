@@ -1,18 +1,17 @@
-.popup {
-  --background-color: #2b3bcd;
+.AttackDetail {
+  --background-color: #747a88dd;
+  /* Mobile view */
   width: 96vw;
-  height: 15vh;
-  padding: 15px;
-  padding-left: 25px;
+  height: 200px;
+  padding: 16px 10px;
   color: white;
   background-color: var(--background-color);
-  border: 1px solid white;
   border-radius: 30px;
   overflow: hidden;
   white-space: break-spaces;
 }
 
-.masDatosPopup {
+.AttackDetail .masDatos {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
@@ -29,12 +28,18 @@
   padding-top: 2vh;
 }
 
+.exitButtonRow {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
 .displayLink {
-  color: white;
-  border: solid;
+  background-color: white;
+  color: black;
+  text-decoration: none;
+  border: none;
   padding: 0.5vh 1.5vw;
-  border-color: white;
-  border-width: 1px;
   border-radius: 25px;
   width: 30vw;
   height: 5vh;
@@ -42,14 +47,13 @@
 
 /*celus mas grandes*/
 @media (min-width: 400px) {
-  .popup {
+  .AttackDetail {
     width: 96vw;
     height: 17vh;
     padding: 15px;
     padding-left: 25px;
     color: white;
     background-color: var(--background-color);
-    border: 1px solid white;
     border-radius: 30px;
     overflow: hidden;
     white-space: break-spaces;
@@ -57,14 +61,14 @@
 }
 
 @media (min-width: 768px) {
-  .popup {
+  .AttackDetail {
     width: 28vw;
     height: 36vh;
     padding: 16px 8px;
     white-space: break-spaces;
   }
 
-  .masDatosPopup {
+  .masDatos {
     display: grid;
     grid-template-columns: 1fr;
   }
@@ -84,10 +88,10 @@
     width: 8vw;
   }
 
-  .popup {
-    width: 18vw;
-    height: 32vh;
-    padding: 16px 8px;
+  .AttackDetail {
+    width: 250px;
+    height: 300px;
+    padding: 16px 10px;
     white-space: breakspaces;
   }
 }

@@ -3444,6 +3444,11 @@ quickselect@^2.0.0:
   resolved "https://registry.npmjs.org/quickselect/-/quickselect-2.0.0.tgz"
   integrity sha512-RKJ22hX8mHe3Y6wH/N3wCM6BWtjaxIyyUIkpHOvfFnxdI4yD4tBXEBKSbriGujF6jnSVkJrffuo6vxACiSSxIw==
 
+react-click-away-listener@^2.3.0:
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/react-click-away-listener/-/react-click-away-listener-2.3.0.tgz#985879fd45c105e9e47b7b9883f9f739f2a118f3"
+  integrity sha512-lIc6Pmo33fqMtNugmXUyDrGocsKlFP15LWmfq1m9VTcWzH2cEIS62f12NsRfon74yyRRKzWA7ZGHKQWGQ1an/g==
+
 react-dom@^18.2.0:
   version "18.3.1"
   resolved "https://registry.npmjs.org/react-dom/-/react-dom-18.3.1.tgz"
