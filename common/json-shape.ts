@@ -10,7 +10,7 @@ export type Attack = {
   provincia: string;
   tipo: string[];
   componente: string[];
-  longDescription?: string;
+  longDescription: string;
 };
 
 export type Clasificacion = {

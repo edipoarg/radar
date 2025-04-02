@@ -52,7 +52,7 @@ const tsvRowToAttack = (tsvRow) => {
     provincia: tsvProvince,
     tipo: separateBySemicolon(tsvTypeDescriptions),
     componente: separateBySemicolon(tsvComponentDescriptions),
-    longDescription: tsvLongDescription || undefined,
+    longDescription: tsvLongDescription ?? "",
   };
 };
 

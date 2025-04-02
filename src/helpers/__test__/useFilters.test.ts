@@ -18,6 +18,7 @@ const emptyAttackInstance: Attack = {
   source: "",
   tipo: [],
   title: "",
+  longDescription: "",
 };
 
 describe("attackIsWithinMinAndMaxDatesWithDates", () => {
