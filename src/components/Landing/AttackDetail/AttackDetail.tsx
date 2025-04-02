@@ -44,14 +44,13 @@ const AttackDetail = ({
           >
             {attackType}
           </div>
-        ))}
-        <details className={styles.moreInfo}>
-          <summary>Ver más</summary>
-          <p>
-            La pintada fue realizada sobre un pañuelo de nunca mas en ensenada
-            ajkjiasdjuyhfasd
-          </p>
-        </details>
+        ))}{" "}
+        {attack.longDescription && (
+          <details className={styles.moreInfo}>
+            <summary>Ver más</summary>
+            <p>{attack.longDescription}</p>
+          </details>
+        )}
         <section className={styles.typeOfHate}>
           <h4>Narrativa{attack.componente.length > 1 ? "s" : ""} de odio:</h4>
           <p>{attack.componente.join(" + ")}</p>
