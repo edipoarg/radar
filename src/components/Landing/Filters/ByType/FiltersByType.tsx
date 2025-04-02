@@ -1,5 +1,5 @@
-import { getColorByAttack } from "../../../helpers/colorByAttackType";
-import type { TipoFilters } from "../../../helpers/useFilters";
+import { getColorByAttack } from "../../../../helpers/colorByAttackType";
+import type { TipoFilters } from "../../../../helpers/useFilters";
 import Filter from "./TypeFilter/TypeFilter";
 import styles from "./FiltersByType.module.css";
 

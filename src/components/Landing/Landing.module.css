@@ -28,4 +28,14 @@
   left: 50%;
   transform: translate(-50%, -00%);
   z-index: 10;
+  bottom: 30vh;
+}
+
+/* PC */
+@media (min-width: 1200px) {
+  .attackDetail {
+    left: 20vw;
+    bottom: unset;
+    top: 20vh;
+  }
 }

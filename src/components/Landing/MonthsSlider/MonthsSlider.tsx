@@ -1,7 +1,7 @@
 import { useState, useCallback, useMemo } from "react";
 import { Range } from "react-range";
 import styles from "./MonthsSlider.module.css";
-import type { BoundaryDates } from "../../types/dates";
+import type { BoundaryDates } from "../../../types/dates";
 import { monthsDiff, sliderKnobToSliderKnobLabel } from "./dateHelpers";
 import { SliderTrackHOC } from "./SliderTrack/SliderTrack";
 

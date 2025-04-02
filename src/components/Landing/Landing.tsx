@@ -2,7 +2,7 @@ import { useMemo, useState } from "react";
 import { useLoaderData } from "react-router-dom";
 import styles from "./Landing.module.css";
 import AttackDetail from "./AttackDetail/AttackDetail";
-import FiltersByType from "../Filters/ByType/FiltersByType";
+import FiltersByType from "./Filters/ByType/FiltersByType";
 import MonthsSlider from "./MonthsSlider/MonthsSlider";
 import { RadarMap } from "./Map/Map";
 import type { AttacksData, Attack } from "../../../common/json-shape";
@@ -13,7 +13,7 @@ import ReactPopup from "reactjs-popup";
 import "reactjs-popup/dist/index.css";
 import { Drawer } from "./Drawer/Drawer";
 import { useTogglable } from "../../helpers/useTogglable";
-import { BOTTOM_WIDTH_TO_MAKE_ROOM_FOR_BOTTOM_NAVBAR } from "../../constants";
+import { BOTTOM_MARGIN_TO_MAKE_ROOM_FOR_BOTTOM_NAVBAR } from "../../navbar-absolute-distance-constants";
 
 type LoaderData = {
   urls: {
@@ -44,7 +44,10 @@ function Landing() {
     [ataques.min, ataques.max],
   );
 
-  const [selectedAttack, setSelectedAttack] = useState<Attack | null>(null);
+  const [selectedAttacks, setSelectedAttacks] = useState<Attack[]>([]);
+  const removeAttackFromSelectedAttacks = (attackId: number) => {
+    setSelectedAttacks(selectedAttacks.filter((att) => att.id !== attackId));
+  };
 
   const { filteredData, setDates, setTipoFilters, tipoFilters } =
     useFilters(ataques);
@@ -55,7 +58,9 @@ function Landing() {
   return (
     <article className={styles.Landing}>
       <RadarMap
-        setSelectedAttack={setSelectedAttack}
+        setSelectedAttack={(newAttack) =>
+          setSelectedAttacks([...selectedAttacks, newAttack])
+        }
         sourceData={{
           departamentosBsAs,
           provincias,
@@ -64,17 +69,20 @@ function Landing() {
         attacksToShow={filteredData}
         colorByAttackType={colorByAttackType}
       />
-      {selectedAttack && (
+      {selectedAttacks.map((attack) => (
         <AttackDetail
-          bottom={BOTTOM_WIDTH_TO_MAKE_ROOM_FOR_BOTTOM_NAVBAR}
+          key={attack.id}
+          colorByAttackType={colorByAttackType}
           className={styles.attackDetail}
-          attack={selectedAttack}
-          close={() => setSelectedAttack(null)}
+          attack={attack}
+          closeById={(attackId) => () =>
+            removeAttackFromSelectedAttacks(attackId)
+          }
         />
-      )}
+      ))}
 
       <Drawer
-        bottom={BOTTOM_WIDTH_TO_MAKE_ROOM_FOR_BOTTOM_NAVBAR}
+        bottom={BOTTOM_MARGIN_TO_MAKE_ROOM_FOR_BOTTOM_NAVBAR}
         open={drawerIsOpen}
         visibleContent={
           <div>
