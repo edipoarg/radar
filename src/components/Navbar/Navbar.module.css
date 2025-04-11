@@ -61,3 +61,10 @@
     margin: 0;
   }
 }
+
+/* PC */
+@media (min-width: 1200px) {
+  .heading {
+    display: none;
+  }
+}

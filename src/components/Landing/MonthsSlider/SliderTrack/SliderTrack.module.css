@@ -6,7 +6,7 @@
 }
 
 .trackBackground {
-    background-color: var(--radar-white);
+    background-color: #5b5b5b22;
     box-shadow: -11px 75px 70px -70px #656975 inset;
     border-radius: 100px;
     height: 100%;

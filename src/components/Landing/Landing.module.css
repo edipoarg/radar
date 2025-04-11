@@ -7,8 +7,8 @@
 
 .reportButton {
   position: absolute;
-  right: 60px;
-  top: 30px;
+  right: 64px;
+  top: 32px;
 
   border-radius: 30px;
   height: 35px;
@@ -31,11 +31,83 @@
   bottom: 30vh;
 }
 
+.floatingLogo {
+  display: none;
+}
+
+.leftSideFABs {
+  display: none;
+}
+
+.Landing .desktopMonthsSlider {
+  display: none;
+}
+
 /* PC */
 @media (min-width: 1200px) {
+
+  .mobileFiltersDrawer {
+    display: none;
+  }
+
+  .floatingLogo {
+    width: 100px;
+    display: flex;
+    position: absolute;
+    left: 64px;
+    top: 64px;
+    fill: white;
+  }
+
+  .reportButton {
+    top: 64px;
+  }
+
+  :global(.maplibregl-control-container) {
+    opacity: 80%;
+    position: absolute;
+    top: 160px;
+    right: 64px;
+  }
+
   .attackDetail {
-    left: 20vw;
+    transform: none;
+    left: 120px;
     bottom: unset;
-    top: 20vh;
+    top: 160px;
+  }
+
+  .leftSideFABs {
+    display: flex;
+    position: absolute;
+    top: 160px;
+    left: 64px;
+  }
+
+  .floatingButtonWithIcon {
+    background: none;
+    border: 2px solid var(--radar-white);
+    border-radius: 100%;
+    color: var(--radar-white);
+    width: 25px;
+    height: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .floatingButtonWithIcon svg {
+    stroke-width: 1;
+  }
+
+  .Landing .desktopMonthsSlider {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    /* Center horizontally*/
+    left: 50%;
+    transform: translate(-50%, -00%);
+    width: 50vw;
   }
 }

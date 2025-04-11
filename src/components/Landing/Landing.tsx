@@ -14,6 +14,8 @@ import "reactjs-popup/dist/index.css";
 import { Drawer } from "./Drawer/Drawer";
 import { useTogglable } from "../../helpers/useTogglable";
 import { BOTTOM_MARGIN_TO_MAKE_ROOM_FOR_BOTTOM_NAVBAR } from "../../navbar-absolute-distance-constants";
+import LogotipoRadar from "./LogotipoRadar.svg?react";
+import { GoDownload } from "react-icons/go";
 
 type LoaderData = {
   urls: {
@@ -28,6 +30,12 @@ const makeAttackSerializable = (attack: Attack) => ({
   ...attack,
   coords: `${attack.coords.latitude}, ${attack.coords.longitude}`,
 });
+
+const onDownloadDataRequest =
+  (serializableFilteredAttacks: ReturnType<typeof makeAttackSerializable>[]) =>
+  () => {
+    jsonToCsvExport({ data: serializableFilteredAttacks });
+  };
 
 function Landing() {
   const { urls } = useLoaderData() as LoaderData;
@@ -69,6 +77,21 @@ function Landing() {
         attacksToShow={filteredData}
         colorByAttackType={colorByAttackType}
       />
+      <LogotipoRadar // Desktop only
+        className={styles.floatingLogo}
+      />
+      <div // Desktop only
+        className={styles.leftSideFABs}
+      >
+        <button
+          className={styles.floatingButtonWithIcon}
+          type="button"
+          title="Descargar datos filtrados"
+          onClick={onDownloadDataRequest(serializableFilteredAttacks)}
+        >
+          <GoDownload />
+        </button>
+      </div>
       {selectedAttacks.map((attack) => (
         <AttackDetail
           key={attack.id}
@@ -81,7 +104,14 @@ function Landing() {
         />
       ))}
 
-      <Drawer
+      <MonthsSlider // Desktop only
+        className={styles.desktopMonthsSlider}
+        boundaryDates={boundaryDates}
+        setFilterDates={setDates}
+      />
+
+      <Drawer // Mobile-only
+        className={styles.mobileFiltersDrawer}
         bottom={BOTTOM_MARGIN_TO_MAKE_ROOM_FOR_BOTTOM_NAVBAR}
         open={drawerIsOpen}
         visibleContent={
@@ -100,9 +130,9 @@ function Landing() {
         hiddenContent={undefined}
         toggleDrawerIsOpen={toggleDrawerIsOpen}
         numberOfCases={filteredData.length}
-        onDownloadDataRequest={() => {
-          jsonToCsvExport({ data: serializableFilteredAttacks });
-        }}
+        onDownloadDataRequest={onDownloadDataRequest(
+          serializableFilteredAttacks,
+        )}
       />
 
       <ReactPopup

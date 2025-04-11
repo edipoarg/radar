@@ -12,6 +12,7 @@ type Props = {
   numberOfCases: number;
   onDownloadDataRequest: () => void;
   bottom: Vh;
+  className?: string;
 };
 
 const getVhByOpenState = (isOpen: boolean): Vh => (isOpen ? "60vh" : "0vh");
@@ -48,13 +49,17 @@ export const Drawer = ({
   numberOfCases,
   onDownloadDataRequest,
   bottom,
+  className,
 }: Props) => {
   const {
     deferredIsOpen: shouldShowHiddenContent,
     maxHeight: hiddenContentContainerMaxHeight,
   } = useDeferredHeightCollapse(DRAWER_TRANSITION_MS, open);
   return (
-    <div className={styles.drawerContainer} style={{ bottom }}>
+    <div
+      className={`${styles.drawerContainer} ${className ?? ""}`}
+      style={{ bottom }}
+    >
       <div className={styles.drawerInnerContent}>
         <div className={styles.upperFloatingButtonsContainer}>
           <article className={styles.numberOfAttacks}>
