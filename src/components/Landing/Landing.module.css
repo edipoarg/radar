@@ -23,6 +23,10 @@
   color: var(--radar-black);
 }
 
+.reportButton:focus {
+  border: 1px solid black;
+}
+
 .attackDetail {
   position: absolute;
   left: 50%;
@@ -55,12 +59,14 @@
     display: flex;
     position: absolute;
     left: 64px;
-    top: 64px;
+    top: 32px;
     fill: white;
   }
 
   .reportButton {
-    top: 64px;
+    top: 36px;
+    height: 40px;
+    width: 120px;
   }
 
   :global(.maplibregl-control-container) {

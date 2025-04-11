@@ -1,6 +1,6 @@
 import { NavLink, useLocation } from "react-router-dom";
-import styles from "./Navbar.module.css";
-import Navlinks from "../../routes/index";
+import styles from "./MobileNavbar.module.css";
+import Navlinks from "../../../routes/index";
 import { IoMdPin } from "react-icons/io";
 import { TiInfoLarge } from "react-icons/ti";
 import { HiOutlineBellAlert } from "react-icons/hi2";
@@ -20,10 +20,11 @@ type Props = {
   heightInVh: number;
 };
 
-export default function Navbar({ heightInVh }: Props) {
+const iconsHeight = "9vh 1vh";
+
+export default function MobileNavbar({ heightInVh }: Props) {
   const { pathname } = useLocation();
   const isSelected = navlinkIsSelected(pathname);
-  const iconsHeight = "9vh 1vh";
   return (
     <div className={styles.heading} style={{ height: `${heightInVh}vh` }}>
       <NavLink
@@ -36,7 +37,6 @@ export default function Navbar({ heightInVh }: Props) {
       <div className={styles.pagesNavLinks}>
         <NavLink
           to={Navlinks.home}
-          title="Logotipo de Ra-dar"
           className={getSelectedClassname(isSelected(Navlinks.home))}
         >
           <IoMdPin size={iconsHeight} />

@@ -13,7 +13,7 @@ import ReactPopup from "reactjs-popup";
 import "reactjs-popup/dist/index.css";
 import { Drawer } from "./Drawer/Drawer";
 import { useTogglable } from "../../helpers/useTogglable";
-import { BOTTOM_MARGIN_TO_MAKE_ROOM_FOR_BOTTOM_NAVBAR } from "../../navbar-absolute-distance-constants";
+import { MOBILE_NAVBAR_CONSTANTS } from "../../navbar-absolute-distance-constants";
 import LogotipoRadar from "./LogotipoRadar.svg?react";
 import { GoDownload } from "react-icons/go";
 
@@ -92,6 +92,17 @@ function Landing() {
           <GoDownload />
         </button>
       </div>
+      <ReactPopup
+        modal
+        trigger={
+          <button type="button" className={styles.reportButton}>
+            Reportá
+          </button>
+        }
+        position="center center"
+      >
+        <ReportPopupContent />
+      </ReactPopup>
       {selectedAttacks.map((attack) => (
         <AttackDetail
           key={attack.id}
@@ -112,7 +123,9 @@ function Landing() {
 
       <Drawer // Mobile-only
         className={styles.mobileFiltersDrawer}
-        bottom={BOTTOM_MARGIN_TO_MAKE_ROOM_FOR_BOTTOM_NAVBAR}
+        bottom={
+          MOBILE_NAVBAR_CONSTANTS.BOTTOM_MARGIN_TO_MAKE_ROOM_FOR_BOTTOM_NAVBAR
+        }
         open={drawerIsOpen}
         visibleContent={
           <div>
@@ -134,18 +147,6 @@ function Landing() {
           serializableFilteredAttacks,
         )}
       />
-
-      <ReactPopup
-        modal
-        trigger={
-          <button type="button" className={styles.reportButton}>
-            Reportá
-          </button>
-        }
-        position="center center"
-      >
-        <ReportPopupContent />
-      </ReactPopup>
     </article>
   );
 }
