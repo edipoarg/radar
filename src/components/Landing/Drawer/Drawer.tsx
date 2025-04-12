@@ -3,6 +3,7 @@ import styles from "./Drawer.module.css";
 import { FaSliders } from "react-icons/fa6";
 import { GoDownload } from "react-icons/go";
 import type { Vh } from "../../../types/styles";
+import { NumberOfAttacks } from "../NumberOfAttacks/NumberOfAttacks";
 
 type Props = {
   open: boolean;
@@ -62,9 +63,7 @@ export const Drawer = ({
     >
       <div className={styles.drawerInnerContent}>
         <div className={styles.upperFloatingButtonsContainer}>
-          <article className={styles.numberOfAttacks}>
-            {numberOfCases} casos
-          </article>
+          <NumberOfAttacks number={numberOfCases} />
           <div className={styles.rightSideFloatingButtons}>
             <button
               className={styles.floatingButtonWithIcon}

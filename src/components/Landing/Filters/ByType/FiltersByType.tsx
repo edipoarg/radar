@@ -7,12 +7,14 @@ interface Props {
   tipoFilters: TipoFilters;
   setTipoFilters: (callback: (prevFilters: TipoFilters) => TipoFilters) => void;
   colorByAttackType: Record<string, string>;
+  className?: string;
 }
 
 export default function FiltersByType({
   tipoFilters,
   setTipoFilters,
   colorByAttackType,
+  className,
 }: Props) {
   const handleTipoFilterChange = (tipoId: string) => (checked: boolean) => {
     setTipoFilters((prevFilters: TipoFilters) => ({
@@ -22,7 +24,7 @@ export default function FiltersByType({
   };
 
   return (
-    <div className={styles.filtros}>
+    <div className={`${styles.filtros} ${className ?? ""}`}>
       {Object.entries(tipoFilters).map(([tipoFilterName, value]) => (
         <Filter
           color={getColorByAttack(colorByAttackType, tipoFilterName)}

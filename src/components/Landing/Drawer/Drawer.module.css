@@ -42,21 +42,9 @@
     gap: 0.4rem;
 }
 
-.numberOfAttacks,
 .floatingButtonWithIcon {
     border: 2px solid var(--radar-white);
     color: var(--radar-white);
-}
-
-.numberOfAttacks {
-    width: 130px;
-    height: 40px;
-    border-radius: 17px;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 23px;
 }
 
 .floatingButtonWithIcon {

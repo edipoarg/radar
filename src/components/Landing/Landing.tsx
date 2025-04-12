@@ -16,6 +16,7 @@ import { useTogglable } from "../../helpers/useTogglable";
 import { MOBILE_NAVBAR_CONSTANTS } from "../../navbar-absolute-distance-constants";
 import LogotipoRadar from "./LogotipoRadar.svg?react";
 import { GoDownload } from "react-icons/go";
+import { NumberOfAttacks } from "./NumberOfAttacks/NumberOfAttacks";
 
 type LoaderData = {
   urls: {
@@ -120,6 +121,18 @@ function Landing() {
         boundaryDates={boundaryDates}
         setFilterDates={setDates}
       />
+      <div className={styles.desktopNumberAndFilters}>
+        <NumberOfAttacks
+          number={filteredData.length}
+          className={styles.numberOfAttacks}
+        />
+        <FiltersByType
+          className={styles.desktopFiltersByType}
+          tipoFilters={tipoFilters}
+          setTipoFilters={setTipoFilters}
+          colorByAttackType={colorByAttackType}
+        />
+      </div>
 
       <Drawer // Mobile-only
         className={styles.mobileFiltersDrawer}
