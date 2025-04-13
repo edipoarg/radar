@@ -6,12 +6,19 @@ interface Props {
   color?: string;
   value: boolean;
   onChange: (newValue: boolean) => void;
+  size?: "normal" | "large";
 }
 
-export default function Filter({ description, color, value, onChange }: Props) {
+export default function Filter({
+  description,
+  color,
+  value,
+  onChange,
+  size = "normal",
+}: Props) {
   return (
     <button
-      className={`${styles.tipo} ${value ? "" : styles.deactivated}`}
+      className={`${styles.tipo} ${value ? "" : styles.deactivated} ${size === "large" ? styles.large : ""}`}
       title={description}
       style={{ backgroundColor: value ? color : "#b5d0e8" }}
       type="button"

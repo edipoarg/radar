@@ -33,7 +33,8 @@
     align-items: center;
 }
 
-.tipo.deactivated .tipoLabel {
+.tipo.deactivated .tipoLabel,
+.tipo.deactivated.large .tipoLabel {
     left: 39%;
 }
 
@@ -51,4 +52,29 @@
 
 .tipo.deactivated .switch {
     left: 7px;
+}
+
+.tipo.large {
+    border-radius: 60px;
+    height: 59px;
+    width: 144px;
+    padding: 12px;
+}
+
+
+.tipo.large .tipoLabel {
+    width: 84px;
+    height: 36px;
+    font-size: 11px;
+    left: 12px;
+}
+
+.tipo.deactivated.large .switch {
+    left: 9px;
+}
+
+.tipo.large .switch {
+    height: 38px;
+    width: 38px;
+    border-radius: 120px;
 }

@@ -8,6 +8,7 @@ interface Props {
   setTipoFilters: (callback: (prevFilters: TipoFilters) => TipoFilters) => void;
   colorByAttackType: Record<string, string>;
   className?: string;
+  size?: "normal" | "large";
 }
 
 export default function FiltersByType({
@@ -15,6 +16,7 @@ export default function FiltersByType({
   setTipoFilters,
   colorByAttackType,
   className,
+  size,
 }: Props) {
   const handleTipoFilterChange = (tipoId: string) => (checked: boolean) => {
     setTipoFilters((prevFilters: TipoFilters) => ({
@@ -27,6 +29,7 @@ export default function FiltersByType({
     <div className={`${styles.filtros} ${className ?? ""}`}>
       {Object.entries(tipoFilters).map(([tipoFilterName, value]) => (
         <Filter
+          size={size}
           color={getColorByAttack(colorByAttackType, tipoFilterName)}
           key={tipoFilterName}
           description={tipoFilterName}

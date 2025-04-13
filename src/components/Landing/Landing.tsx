@@ -131,6 +131,7 @@ function Landing() {
           tipoFilters={tipoFilters}
           setTipoFilters={setTipoFilters}
           colorByAttackType={colorByAttackType}
+          size="large"
         />
       </div>
 
