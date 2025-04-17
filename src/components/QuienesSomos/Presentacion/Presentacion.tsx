@@ -2,12 +2,11 @@ import styles from "./Presentacion.module.css";
 import { presentacion } from "./presentacion";
 import { GiRadarSweep } from "react-icons/gi";
 
-
 export default function Presentacion() {
   return (
     <section className={styles.section}>
       <div className={styles.header}>
-      <GiRadarSweep className={styles.headerIcon} />
+        <GiRadarSweep className={styles.headerIcon} />
         <h2 className={styles.title}>{presentacion.title}</h2>
       </div>
 

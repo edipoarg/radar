@@ -1,172 +1,170 @@
 .section {
-    background: linear-gradient(20deg, #0a0d15, #292f36);
-    padding: 0 1rem 5rem 1rem;
-    padding-top: 1rem;
-    min-height: 100vh;
-  }
+  background: linear-gradient(20deg, #0a0d15, #292f36);
+  padding: 0 1rem 5rem 1rem;
+  padding-top: 1rem;
+  min-height: 100vh;
+}
 
-  .deco{
-    position: fixed;
-    top: -5vh;
-    left: 0;
-    margin-top: 5vh;
-    width: 100%;
-    height: 3px;
-    background: linear-gradient(20deg, #0a0d1500, #297fef);
-    border-radius: 360px;
-  }
-  
-  .header {
-    padding: 0.5rem 2rem;
-    padding-top: 1rem;
-    color: #d7dee7;
-    display: flex;
-  }
+.deco {
+  position: fixed;
+  top: -5vh;
+  left: 0;
+  margin-top: 5vh;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(20deg, #0a0d1500, #297fef);
+  border-radius: 360px;
+}
 
-  .headerIcon{
+.header {
+  padding: 0.5rem 2rem;
+  padding-top: 1rem;
+  color: #d7dee7;
+  display: flex;
+}
+
+.headerIcon {
   color: #297fef;
   font-size: 4rem;
   text-shadow: 0 0 10px #297fef, 0 0 30px #297fef, 0 0 50px #297fef;
   filter: drop-shadow(0 0 20px #297fef);
-  }
-  
-  .title {
-    font-size: 2rem;
-    text-align: left;
-  }
-  
-  .icon{
-    font-size: 2rem;
-    padding-right: 1rem;
-    color: #d7dee7;
-    text-shadow: 0 0 10px #d7dee7, 0 0 30px #d7dee7, 0 0 50px #d7dee7;
+}
+
+.title {
+  font-size: 2rem;
+  text-align: left;
+}
+
+.icon {
+  font-size: 2rem;
+  padding-right: 1rem;
+  color: #d7dee7;
+  text-shadow: 0 0 10px #d7dee7, 0 0 30px #d7dee7, 0 0 50px #d7dee7;
   filter: drop-shadow(0 0 20px #d7dee7);
-  }
-  .subTitle {
-    font-size: 1rem;
-    padding: 0 2rem 2rem 2rem;
-    color: #d7dee7;
-  }
-  
-  .content {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-    padding: 0 2rem;
-  }
-  
-  .card {
-    border: solid 3px rgb(27, 129, 245);
-    border-radius: 25px;
-    padding: 0;
-    color: #297fef;
-    text-decoration: none;
-    transition: transform 0.2s, box-shadow 0.2s;
-    box-shadow:  -5px -5px 25px 10px rgba(0, 0, 0, 0.5),
-       5px 5px 20px 0px rgba(0, 0, 0, 0.4);
-  }
-  
-  .card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 8px 30px rgba(53, 164, 255, 0.581);
-  }
-  
-  .cardTitle {
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
-    color: #151616;
-    background: linear-gradient(20deg, #297fef, #204776);
-    border-top-left-radius: 23px;
-    border-top-right-radius: 23px;
-    text-align: left;
-    padding-left: 1.5rem;
-    padding-top: 1rem;
+}
 
-  }
-  
-  .cardText {
-    font-size: 1rem;
-    color: #297fef;
-    padding: 1rem 1rem;
-  }
+.subTitle {
+  font-size: 1rem;
+  padding: 0 2rem 2rem 2rem;
+  color: #d7dee7;
+}
 
-  .cardBody {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 0.5rem;
-    gap: 0rem;
-  }
-  
-  .cardText {
-    flex: 1;
-    font-size: 1rem;
-    color: #297fef;
-    margin: 0;
-  }
-  
-  .arrow {
-    font-size: 2rem;
-    color: #297fef;
-    text-shadow: 0 0 10px #297fef, 0 0 30px #297fef;
-    filter: drop-shadow(0 0 6px #297fef);
-    transition: transform 0.3s ease;
-  }
-  
-  .card:hover .arrow {
-    transform: scale(1.2);
-  }
-  
-  
-  @media (min-width: 768px) {
-    .content {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: stretch;
-        padding: 0 4rem;
-        padding-top: 15vh;
-      }
-    
-      .card {
-        width: calc(50% - 0.75rem); /* 2 cards per row, accounting for gap */
-      }
-    }
-  
-    .cardTitle {
-      font-size: 1.7rem;
-    }
-  
-    .cardText {
-      font-size: 1.1rem;
-    }
-  
-  
-  @media (min-width: 1200px) {
-    .section {
-      min-width: 98.7vw;
-      padding: 0 12vw;
-      padding-top: 8rem;
-    }
-  
-    .subTitle {
-      padding: 0 10rem 2rem 10rem;
-      font-size: 1.5rem;
-    }
-  
-    .header {
-      max-width: 35%;
-      margin-left: 5rem;
-    }
-  
 .content {
-        padding: 0 6rem;
-      }
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding: 0 2rem;
+}
 
-      .deco{
-        height: 5px;
-        background: linear-gradient(20deg, #0a0d1500, #297fef);
-        border-radius: 360px;
-      }
+.card {
+  border: solid 3px rgb(27, 129, 245);
+  border-radius: 25px;
+  padding: 0;
+  color: #297fef;
+  text-decoration: none;
+  transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: -5px -5px 25px 10px rgba(0, 0, 0, 0.5),
+    5px 5px 20px 0px rgba(0, 0, 0, 0.4);
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 30px rgba(53, 164, 255, 0.581);
+}
+
+.cardTitle {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #151616;
+  background: linear-gradient(20deg, #297fef, #204776);
+  border-top-left-radius: 23px;
+  border-top-right-radius: 23px;
+  text-align: left;
+  padding-left: 1.5rem;
+  padding-top: 1rem;
+}
+
+.cardText {
+  font-size: 1rem;
+  color: #297fef;
+  padding: 1rem 1rem;
+}
+
+.cardBody {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0.5rem;
+  gap: 0rem;
+}
+
+.cardText {
+  flex: 1;
+  font-size: 1rem;
+  color: #297fef;
+  margin: 0;
+}
+
+.arrow {
+  font-size: 2rem;
+  color: #297fef;
+  text-shadow: 0 0 10px #297fef, 0 0 30px #297fef;
+  filter: drop-shadow(0 0 6px #297fef);
+  transition: transform 0.3s ease;
+}
+
+.card:hover .arrow {
+  transform: scale(1.2);
+}
+
+@media (min-width: 768px) {
+  .content {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 0 4rem;
+    padding-top: 15vh;
   }
-  
+
+  .card {
+    width: calc(50% - 0.75rem);
+    /* 2 cards per row, accounting for gap */
+  }
+}
+
+.cardTitle {
+  font-size: 1.7rem;
+}
+
+.cardText {
+  font-size: 1.1rem;
+}
+
+@media (min-width: 1200px) {
+  .section {
+    min-width: 98.7vw;
+    padding: 0 12vw;
+    padding-top: 8rem;
+  }
+
+  .subTitle {
+    padding: 0 10rem 2rem 10rem;
+    font-size: 1.5rem;
+  }
+
+  .header {
+    max-width: 35%;
+    margin-left: 5rem;
+  }
+
+  .content {
+    padding: 0 6rem;
+  }
+
+  .deco {
+    height: 5px;
+    background: linear-gradient(20deg, #0a0d1500, #297fef);
+    border-radius: 360px;
+  }
+}

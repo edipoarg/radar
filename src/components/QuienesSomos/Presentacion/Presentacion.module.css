@@ -12,31 +12,30 @@
     display: flex;
     align-items: end;
     padding-bottom: 2rem;
-  }
+}
 
-  .headerIcon{
-  color: #297fef;
-  font-size: 4rem;
-  text-shadow: 0 0 10px #297fef, 0 0 30px #297fef, 0 0 50px #297fef;
-  filter: drop-shadow(0 0 20px #297fef);
-  }
+.headerIcon {
+    color: #297fef;
+    font-size: 4rem;
+    text-shadow: 0 0 10px #297fef, 0 0 30px #297fef, 0 0 50px #297fef;
+    filter: drop-shadow(0 0 20px #297fef);
+}
 
-  .title {
+.title {
     font-size: 2rem;
     text-align: left;
     padding-left: 1rem;
-  }
-  
+}
+
 .term {
     border: solid 1px rgb(121, 120, 120);
     box-shadow: inset -5px -5px 10px 0px rgba(0, 0, 0, 0.2),
-        inset 5px 5px 20px 0px rgba(130, 173, 237, 0.1);
+    inset 5px 5px 20px 0px rgba(130, 173, 237, 0.1);
     border-radius: 25px;
     margin-bottom: 1rem;
     height: fit-content;
     padding-bottom: 3rem;
     background-color: #151616b6;
-    
 }
 
 .term h3 {
