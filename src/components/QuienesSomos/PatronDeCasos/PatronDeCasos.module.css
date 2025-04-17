@@ -1,0 +1,108 @@
+.section {
+    background: linear-gradient(20deg, #0a0d15, #292f36);
+    padding-bottom: 6rem;
+    padding-top: 1rem;
+}
+
+.header {
+    max-width: 80%;
+    padding: 0.5rem 2rem;
+    padding-top: 1.5rem;
+    color: #d7dee7;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 100px;
+    margin: auto;
+    margin-bottom: 2rem;
+    border: solid 1px rgb(121, 120, 120);
+}
+
+.title {
+    font-size: 1.8rem;
+    text-align: left;
+}
+
+.term {
+    border: solid 1px rgb(121, 120, 120);
+    box-shadow: inset -5px -5px 10px 0px rgba(0, 0, 0, 0.2),
+        inset 5px 5px 20px 0px rgba(130, 173, 237, 0.1);
+    border-radius: 25px;
+    padding: 1rem 2rem;
+    margin-bottom: 1rem;
+}
+
+.category h3 {
+    color: #7396f8;
+    font-size: 1.5rem;
+    padding-left: 1rem;
+    padding-bottom: 1.5rem;
+}
+
+.term h2 {
+    font-size: 1.3rem;
+    text-align: left;
+    margin-top: 2rem;
+    margin-bottom: 0.2rem;
+}
+
+.term h4 {
+    padding: 2rem 0rem 0.5rem 0rem;
+}
+
+.category {
+    width: 90%;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.02);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    border-radius: 45px;
+    padding: 2rem 0.4rem;
+}
+
+.description {
+    font-size: 1rem;
+    padding-bottom: 1rem;
+}
+
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5em;
+}
+
+.definition {
+    font-size: 0.9rem;
+    list-style-type: none;
+    color: #0a0d15;
+    background-color: #7396f8;
+    padding: 0.5rem 1rem;
+    margin-top: 0.5rem;
+    border-radius: 45px;
+    text-align: left;
+    width: fit-content;
+}
+
+@media (min-width: 1200px) {
+    .section {
+        padding-top: 3rem;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+        padding: 0vh 5vw;
+        justify-content: space-around;
+    }
+
+    .category {
+        gap: 0vh 10vw;
+        margin-top: 0;
+    }
+
+    .header {
+        max-width: 35%;
+        margin-left: 5rem;
+    }
+}
