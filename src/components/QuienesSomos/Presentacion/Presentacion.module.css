@@ -28,7 +28,7 @@
 }
 
 .term {
-    border: solid 1px rgb(121, 120, 120);
+    border: solid 1px #297fef;
     box-shadow: inset -5px -5px 10px 0px rgba(0, 0, 0, 0.2),
     inset 5px 5px 20px 0px rgba(130, 173, 237, 0.1);
     border-radius: 25px;
@@ -40,8 +40,9 @@
 
 .term h3 {
     font-size: 1.5rem;
-    padding-left: 1rem;
-    padding-bottom: 1.5rem;
+    padding-left: 2rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
     color: #151616;
     background: linear-gradient(20deg, #297fef, #204776);
     border-top-left-radius: 23px;
@@ -60,16 +61,16 @@
 }
 
 .description {
-    font-size: 1rem;
-    padding: 0 0.5rem;
+    font-size: 1.2rem;
     text-align: justify;
-    padding-bottom: 1rem;
+    padding: 2rem 2rem;
     list-style-type: none;
 }
 
 .list {
     display: flex;
     flex-wrap: wrap;
+    padding-left: 1.5rem;
 }
 
 .member {
@@ -92,23 +93,23 @@
 
     .content {
         gap: 1rem;
-        padding: 0vh 3vw;
+        padding: 0vh 8vw;
         justify-content: space-around;
     }
 
     .header {
         max-width: 35%;
-        margin-left: 5rem;
+        margin-left: 10rem;
     }
 
     .description {
         font-size: 1.3rem;
-        padding: 1rem 10rem;
+        padding: 2rem 8rem;
     }
 
     .term h3 {
         font-size: 2rem;
-        padding: 1rem 10rem;
+        padding: 1rem 8rem;
     }
 
     .member {
