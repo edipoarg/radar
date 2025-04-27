@@ -1,3 +1,36 @@
+.floatingLogo {
+  width: 100px;
+  display: flex;
+  position: absolute;
+  left: 64px;
+  top: 32px;
+  fill: white;
+  z-index: 1;
+}
+
+.reportButton {
+  position: absolute;
+  top: 36px;
+  right: 64px;
+
+  height: 40px;
+  width: 120px;
+  border-radius: 30px;
+  border: none;
+  text-transform: uppercase;
+  font-family: "Ronnia Condensed Regular";
+  font-size: 17px;
+  background: var(--radar-sky-blue);
+  color: var(--radar-black);
+  transition: background-color 0.25s;
+  z-index: 1;
+}
+
+.reportButton:focus,
+.reportButton:hover {
+  background-color: var(--radar-grey);
+}
+
 .heading {
   position: absolute;
   top: 32px;
@@ -48,6 +81,14 @@
 /* Hide on mobile */
 @media (max-width: 1200px) {
   .heading {
+    display: none;
+  }
+
+  .floatingLogo {
+    display: none;
+  }
+
+  .reportButton {
     display: none;
   }
 }

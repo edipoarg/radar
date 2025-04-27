@@ -40,10 +40,6 @@
   bottom: 30vh;
 }
 
-.floatingLogo {
-  display: none;
-}
-
 .Landing .desktopMonthsSlider {
   display: none;
 }
@@ -59,19 +55,8 @@
     display: none;
   }
 
-  .floatingLogo {
-    width: 100px;
-    display: flex;
-    position: absolute;
-    left: 64px;
-    top: 32px;
-    fill: white;
-  }
-
   .reportButton {
-    top: 36px;
-    height: 40px;
-    width: 120px;
+    display: none;
   }
 
   :global(.maplibregl-control-container) {

@@ -14,7 +14,6 @@ import "reactjs-popup/dist/index.css";
 import { Drawer } from "./Drawer/Drawer";
 import { useTogglable } from "../../helpers/useTogglable";
 import { MOBILE_NAVBAR_CONSTANTS } from "../../navbar-absolute-distance-constants";
-import LogotipoRadar from "./LogotipoRadar.svg?react";
 import { GoDownload } from "react-icons/go";
 import { NumberOfAttacks } from "./NumberOfAttacks/NumberOfAttacks";
 
@@ -77,9 +76,6 @@ function Landing() {
         }}
         attacksToShow={filteredData}
         colorByAttackType={colorByAttackType}
-      />
-      <LogotipoRadar // Desktop only
-        className={styles.floatingLogo}
       />
 
       <ReactPopup
