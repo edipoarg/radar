@@ -81,18 +81,7 @@ function Landing() {
       <LogotipoRadar // Desktop only
         className={styles.floatingLogo}
       />
-      <div // Desktop only
-        className={styles.leftSideFABs}
-      >
-        <button
-          className={styles.floatingButtonWithIcon}
-          type="button"
-          title="Descargar datos filtrados"
-          onClick={onDownloadDataRequest(serializableFilteredAttacks)}
-        >
-          <GoDownload />
-        </button>
-      </div>
+
       <ReactPopup
         modal
         trigger={
@@ -116,16 +105,21 @@ function Landing() {
         />
       ))}
 
-      <MonthsSlider // Desktop only
-        className={styles.desktopMonthsSlider}
-        boundaryDates={boundaryDates}
-        setFilterDates={setDates}
-      />
       <div className={styles.desktopNumberAndFilters}>
-        <NumberOfAttacks
-          number={filteredData.length}
-          className={styles.numberOfAttacks}
-        />
+        <div className={styles.visibleCasesSummary}>
+          <NumberOfAttacks
+            number={filteredData.length}
+            className={styles.numberOfAttacks}
+          />
+          <button
+            className={styles.floatingButtonWithIcon}
+            type="button"
+            title="Descargar datos filtrados"
+            onClick={onDownloadDataRequest(serializableFilteredAttacks)}
+          >
+            <GoDownload size={16} />
+          </button>
+        </div>
         <FiltersByType
           className={styles.desktopFiltersByType}
           tipoFilters={tipoFilters}
@@ -134,6 +128,11 @@ function Landing() {
           size="large"
         />
       </div>
+      <MonthsSlider // Desktop only
+        className={styles.desktopMonthsSlider}
+        boundaryDates={boundaryDates}
+        setFilterDates={setDates}
+      />
 
       <Drawer // Mobile-only
         className={styles.mobileFiltersDrawer}
