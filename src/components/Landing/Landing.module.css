@@ -48,6 +48,14 @@
   display: none;
 }
 
+.versionNumber {
+  display: none;
+}
+
+.edipoLogo {
+  display: none;
+}
+
 /* PC */
 @media (min-width: 1200px) {
 
@@ -123,6 +131,33 @@
     align-items: center;
     justify-content: space-between;
     gap: 16px;
+  }
+
+  .edipoLogo {
+    color: var(--radar-white);
+    text-decoration: none;
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    display: block;
+    position: absolute;
+    bottom: 16px;
+    left: 64px;
+    font-weight: bold;
+    transition: all 0.25s;
+    outline: none;
+  }
+
+  .edipoLogo:focus,
+  .edipoLogo:hover {
+    color: var(--radar-grey);
+  }
+
+  .versionNumber {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    display: block;
+    position: absolute;
+    bottom: 16px;
+    right: 64px;
+    color: var(--radar-white);
   }
 
   .Landing .desktopFiltersByType {
