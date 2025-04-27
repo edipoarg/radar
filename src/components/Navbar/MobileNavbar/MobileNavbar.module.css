@@ -41,7 +41,7 @@
   fill: var(--radar-sky-blue);
 }
 
-.pagesNavLinks a.selected {
+.pagesNavLinks :global(a.active) {
   color: #145bff;
   fill: #145bff;
 }

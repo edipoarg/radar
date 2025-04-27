@@ -40,9 +40,10 @@
   fill: var(--radar-sky-blue);
 }
 
-.heading a.selected svg {
+.heading :global(a.active svg) {
   color: #739dff;
 }
+
 
 /* Hide on mobile */
 @media (max-width: 1200px) {
