@@ -1,25 +1,24 @@
-import styles from "./Metodologia.module.css";
-import { metodologia } from "./metodologia";
-import { LuDatabaseBackup } from "react-icons/lu";
+import styles from "./Novedades.module.css";
+import { novedades } from "./novedades";
+import { HiOutlineBellAlert } from "react-icons/hi2";
 
-export default function Metodologia() {
+export default function Novedades() {
   return (
     <section className={styles.section}>
       <div className={styles.header}>
-        <LuDatabaseBackup className={styles.headerIcon} />
-
-        <h2 className={styles.title}>{metodologia.title}</h2>
+        <HiOutlineBellAlert className={styles.headerIcon} />
+        <h2 className={styles.headerTitle}>{novedades.title}</h2>
       </div>
 
       <div className={styles.content}>
-        {Object.entries(metodologia.terms).map(([termName, term]) => {
+        {Object.entries(novedades.terms).map(([termName, term]) => {
           return (
             <section key={termName} className={styles.term}>
               <h3>{termName}</h3>
               <ul>
-                {term.definitions.map((definition, index) => (
+                {term.definitions.map((novedad, index) => (
                   <li key={index} className={styles.description}>
-                    {definition.paragraphs.map((paragraph) => (
+                    {novedad.paragraphs.map((paragraph) => (
                       <p key={paragraph}>{paragraph}</p>
                     ))}
                   </li>
@@ -32,6 +31,9 @@ export default function Metodologia() {
                   </li>
                 ))}
               </ul>
+              <div className={`${styles.deco} ${styles.circlesDeco}`}>
+        <div></div> {/* Para el efecto de glow central */}
+      </div>
             </section>
           );
         })}

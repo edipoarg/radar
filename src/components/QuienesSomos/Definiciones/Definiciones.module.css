@@ -1,25 +1,30 @@
 .section {
-    background: linear-gradient(20deg, #0a0d15, #292f36);
-    padding: 0 1rem;
+    background: linear-gradient(180deg, #0a0d15, #297fef);
+    padding: 0px 1rem;
     padding-bottom: 5rem;
     padding-top: 1rem;
 }
 
 .header {
-    max-width: 75%;
-    padding: 0.5rem 3rem;
-    padding-top: 1.5rem;
+    padding: 0.5rem 2rem;
+    padding-top: 1rem;
     color: #d7dee7;
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 100px;
-    margin-left: 3rem;
-    margin-bottom: 2rem;
-    border: solid 1px rgb(121, 120, 120);
+    display: flex;
+    align-items: end;
+    padding-bottom: 2rem;
+}
+
+.headerIcon {
+    color: #297fef;
+    font-size: 4rem;
+    text-shadow: 0 0 10px #297fef, 0 0 30px #297fef, 0 0 50px #297fef;
+    filter: drop-shadow(0 0 20px #297fef);
 }
 
 .title {
     font-size: 2rem;
     text-align: left;
+    padding-left: 1rem;
 }
 
 .subTitle {
@@ -27,23 +32,29 @@
     padding: 0 2rem;
     padding-bottom: 2rem;
     text-align: justify;
+    color: #297fef;
 }
 
 .term {
-    border: solid 1px rgb(121, 120, 120);
+    border: solid 1px #297fef;
     box-shadow: inset -5px -5px 10px 0px rgba(0, 0, 0, 0.2),
         inset 5px 5px 20px 0px rgba(130, 173, 237, 0.1);
     border-radius: 25px;
-    padding: 1rem 2rem;
     margin-bottom: 1rem;
-    list-style-type: none;
+    height: fit-content;
+    padding-bottom: 3rem;
+    background-color: #151616b6;
 }
 
 .term h3 {
-    color: #7396f8;
-    font-size: 2rem;
-    padding-left: 1rem;
-    padding-bottom: 1.5rem;
+    font-size: 1.5rem;
+    padding-left: 2rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    color: #151616;
+    background: linear-gradient(20deg, #297fef, #204776);
+    border-top-left-radius: 23px;
+    border-top-right-radius: 23px;
 }
 
 .term h2 {
@@ -58,43 +69,64 @@
 }
 
 .description {
-    font-size: 1rem;
-    padding-bottom: 1rem;
+    font-size: 1.2rem;
     text-align: justify;
+    padding: 2rem 2rem;
+    list-style-type: none;
+}
+
+.content ul {
+    list-style: none;
+}
+
+.deco {
+    position: fixed;
+    top: -5vh;
+    left: 0;
+    margin-top: 5vh;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(20deg, #0a0d1500, #297fef);
+    border-radius: 360px;
 }
 
 @media (min-width: 1200px) {
     .section {
         min-width: 98.7vw;
-        padding-top: 3rem;
-    }
-
-    .subTitle {
-        padding: 0 10rem;
-        padding-bottom: 2rem;
-        font-size: 1.5rem;
+        padding-top: 8rem;
     }
 
     .content {
-        display: flex;
-        flex-direction: row;
-        gap: 2rem;
-        padding: 0vh 5vw;
+        gap: 1rem;
+        padding: 0vh 8vw;
         justify-content: space-around;
     }
 
     .header {
         max-width: 35%;
-        margin-left: 5rem;
+        margin-left: 10rem;
+    }
+
+    .subTitle {
+        font-size: 1.2rem;
+        padding: 0 15rem;
+        padding-bottom: 2rem;
+        text-align: justify;
     }
 
     .description {
         font-size: 1.3rem;
-        padding: 1rem 10rem;
+        padding: 2rem 8rem;
     }
 
     .term h3 {
         font-size: 2rem;
-        padding: 1rem 10rem;
+        padding: 1rem 8rem;
+    }
+
+    .deco {
+        height: 5px;
+        background: linear-gradient(20deg, #0a0d1500, #297fef);
+        border-radius: 360px;
     }
 }

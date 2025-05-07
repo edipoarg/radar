@@ -1,10 +1,12 @@
 import styles from "./Definiciones.module.css";
 import { definiciones } from "./definiciones";
+import { TbMessageQuestion } from "react-icons/tb";
 
 export default function Definiciones() {
   return (
     <section className={styles.section}>
       <div className={styles.header}>
+        <TbMessageQuestion className={styles.headerIcon} />
         <h2 className={styles.title}>{definiciones.title}</h2>
       </div>
       <h4 className={styles.subTitle}>
@@ -30,6 +32,7 @@ export default function Definiciones() {
           ))}
         </ul>
       </div>
+      <div className={styles.deco}></div>
     </section>
   );
 }

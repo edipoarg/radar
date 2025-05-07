@@ -4,8 +4,6 @@ import maplibregl from "maplibre-gl";
 import type { Attack } from "../../../../common/json-shape";
 import { ProvSource, BsAsSource, RutasSource } from "../../Sources/Sources";
 import { Markers } from "../Markers/Markers";
-import type { MapStyle } from "react-map-gl/maplibre";
-import mystyle from "./mystyle.json";
 import "maplibre-gl/dist/maplibre-gl.css";
 
 const mapSourceStyles = {
@@ -16,7 +14,7 @@ const mapSourceStyles = {
     weight: 0.2,
   },
   provincias: {
-    fillColor: "#2a364c",
+    fillColor: "#132b6d71",
     color: "#515d86",
     fillOpacity: 1,
   },
@@ -59,13 +57,19 @@ export const RadarMap = ({
     style: {
       width: "100vw",
       height: "100vh",
+      zIndex: 1, // Asegúrate de que el mapa esté sobre el fondo, pero no sobre otros elementos.
     },
-    mapStyle: mystyle as MapStyle,
+    mapStyle: "https://tiles.stadiamaps.com/styles/alidade_smooth_dark.json",
   };
+
   return (
     <div
       style={{
-        background: "linear-gradient(20deg, #0a0d15, #292f36)",
+        position: "relative", // Contenedor para manejar el z-index
+        background: "linear-gradient(20deg,rgb(27, 44, 89),rgb(46, 64, 83))",
+        width: "100vw",
+        height: "100vh",
+        zIndex: 0, // Fondo detrás del mapa
       }}
     >
       <MapGL

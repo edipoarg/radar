@@ -86,3 +86,15 @@ button {
 ::-webkit-scrollbar-thumb:hover {
   background: #6E6E6E;
 }
+
+.popup-content {
+  background: transparent !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
+  border: 0 !important;
+}
+
+.popup-overlay {
+  background: #000000e2 !important;
+}

@@ -1,10 +1,13 @@
 import styles from "./PatronDeCasos.module.css";
 import { patronDeCasos } from "./patronDeCasos";
+import { TbMapPinQuestion } from "react-icons/tb";
 
 export default function PatronDeCasos() {
   return (
     <section className={styles.section}>
       <div className={styles.header}>
+        <TbMapPinQuestion className={styles.headerIcon} />
+
         <h2 className={styles.title}>{patronDeCasos.title}</h2>
       </div>
 
@@ -38,6 +41,7 @@ export default function PatronDeCasos() {
           },
         )}
       </div>
+      <div className={styles.deco}></div>
     </section>
   );
 }

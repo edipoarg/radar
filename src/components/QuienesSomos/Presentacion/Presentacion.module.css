@@ -61,7 +61,7 @@
 }
 
 .description {
-    font-size: 1.2rem;
+    font-size: 1rem;
     text-align: justify;
     padding: 2rem 2rem;
     list-style-type: none;
@@ -84,6 +84,17 @@
     text-align: left;
     width: fit-content;
 }
+
+.deco {
+    position: fixed;
+    top: -5vh;
+    left: 0;
+    margin-top: 5vh;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(20deg, #0a0d1500, #297fef);
+    border-radius: 360px;
+  }
 
 @media (min-width: 1200px) {
     .section {
@@ -119,4 +130,10 @@
     .list {
         padding: 0 10rem;
     }
+
+    .deco {
+        height: 5px;
+        background: linear-gradient(20deg, #0a0d1500, #297fef);
+        border-radius: 360px;
+      }
 }

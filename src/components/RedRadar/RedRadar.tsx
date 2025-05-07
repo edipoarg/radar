@@ -1,7 +1,6 @@
 import styles from "./RedRadar.module.css";
 import { useEffect } from "react";
 import Navlinks from "../../routes/index";
-import Footer from "../Footer/Footer";
 
 export default function RedRadar() {
   useEffect(() => {
@@ -12,47 +11,82 @@ export default function RedRadar() {
     <article>
       <section className={styles.conecta}>
         <div>
-          <img className={styles.radarDecoImg} src="imgRadar.png" alt="" />
+          <svg
+            className={styles.radarDecoImg}
+            width="200"
+            height="200"
+            viewBox="0 0 200 200"
+          >
+            {/* Círculo 1 (más grueso, externo) */}
+            <circle
+              className={`${styles.circle} ${styles.circle1}`}
+              cx="100"
+              cy="100"
+              r="90"
+              fill="none"
+              stroke="#fffff"
+              strokeWidth="4"
+              strokeDasharray="0, 565"
+            />
+            {/* Círculo 2 */}
+            <circle
+              className={`${styles.circle} ${styles.circle2}`}
+              cx="100"
+              cy="100"
+              r="70"
+              fill="none"
+              stroke="#fff"
+              strokeWidth="8"
+              strokeDasharray="0, 440"
+            />
+            {/* Círculo 3 */}
+            <circle
+              className={`${styles.circle} ${styles.circle3}`}
+              cx="100"
+              cy="100"
+              r="50"
+              fill="none"
+              stroke="#fff"
+              strokeWidth="4"
+              strokeDasharray=", 315"
+            />
+            {/* Círculo 4 (más fino, interno) */}
+            <circle
+              className={`${styles.circle} ${styles.circle4}`}
+              cx="100"
+              cy="100"
+              r="30"
+              fill="none"
+              stroke="#fff"
+              strokeWidth="3"
+              strokeDasharray="20, 110"
+            />
+          </svg>
         </div>
-        <div className={styles.contectaTituloContainer}>
-          <h1 className={styles.conectaTitulo}>
+        <section className={styles.content}>
+          <h1 className={styles.conectaTitulo}>RA-DAR</h1>
+          <h1 className={styles.conectaSubtitulo}>
             Registro de Ataques de Derechas Argentinas Radicalizadas
           </h1>
-        </div>
-        <div>
-          <h6 className={styles.conectaTextRadar}>
-            <span className={styles.negritaTitulo}>
-              RADAR (Registro de Ataques de Derechas Argentinas Radicalizadas)
-            </span>
-            es un proyecto periodístico colaborativo impulsado por el Equipo de
-            Investigación Política (EdIPo) de la Revista Crisis con apoyo del
-            Centro de Estudios Legales y Sociales (CELS) con el objetivo de
-            fortalecer la democracia y la defensa de los derechos humanos.
-            Presentamos un mapeo colaborativo de ataques protagonizados por
-            derechas radicalizadas con el fin de contribuir al diagnóstico
-            colectivo y la elaboración de estrategias de autocuidado.
-          </h6>
-        </div>
+          <div>
+            <h6 className={styles.conectaTextRadar}>
+              <span className={styles.negritaTitulo}>
+                RADAR (Registro de Ataques de Derechas Argentinas Radicalizadas)
+              </span>
+              es un proyecto periodístico colaborativo impulsado por el Equipo
+              de Investigación Política (EdIPo) de la Revista Crisis con apoyo
+              del Centro de Estudios Legales y Sociales (CELS) con el objetivo
+              de fortalecer la democracia y la defensa de los derechos humanos.
+              Presentamos un mapeo colaborativo de ataques protagonizados por
+              derechas radicalizadas con el fin de contribuir al diagnóstico
+              colectivo y la elaboración de estrategias de autocuidado.
+            </h6>
+            <h6 className={styles.siTeInteresa}>
+              <a href={Navlinks.mailRadar}>radar.edipo@gmail.com</a>
+            </h6>
+          </div>
+        </section>
       </section>
-      <section className={styles.conecta2}>
-        <h6 className={styles.textConecta2}>
-          Dentro del amplio espectro que componen las derechas llamamos
-          radicalizadas a los sectores que apelan directa o indirectamente a la
-          violencia como método de intervención política. Entendemos por ataques
-          de derecha radicalizada aquellas acciones que expresan un deseo de
-          aniquilación del otro con el objeto de silenciar, amedrentar,
-          disciplinar o eliminar identidades políticas como forma de influir en
-          la discusión pública e inhibir su participación.
-        </h6>
-
-        <h6 className={styles.siTeInteresa}>
-          si querés comunicarte con nosotrxs podés escribirnos a
-          <br />
-          <br />
-          <a href={Navlinks.mailRadar}>radar.edipo@gmail.com</a>
-        </h6>
-      </section>
-      <Footer />
     </article>
   );
 }

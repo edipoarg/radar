@@ -35,6 +35,7 @@ export default function Presentacion() {
           );
         })}
       </div>
+      <div className={styles.deco}></div>
     </section>
   );
 }
