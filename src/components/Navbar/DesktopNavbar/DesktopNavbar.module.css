@@ -80,8 +80,13 @@ a:focus>.floatingLogo {
 
 .heading :global(a.active svg) {
   color: #739dff;
+  fill: var(--radar-sky-blue);
 }
 
+
+.isotypeImg {
+  fill: var(--radar-grey);
+}
 
 /* Hide on mobile */
 @media (max-width: 1200px) {
