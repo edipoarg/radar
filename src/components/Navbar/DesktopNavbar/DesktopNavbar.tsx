@@ -14,12 +14,10 @@ const iconsHeight = "9vh 1vh";
 export default function DesktopNavbar() {
   return (
     <>
-      <LogotipoRadar className={styles.floatingLogo} />
+      <NavLink to={Navlinks.home}>
+        <LogotipoRadar className={styles.floatingLogo} />
+      </NavLink>
       <div className={styles.heading}>
-        <NavLink to={Navlinks.home}>
-          <IoMdPin size={iconsHeight} />
-          Casos
-        </NavLink>
         <NavLink to={Navlinks.quienesSomos}>
           <TiInfoLarge size={iconsHeight} />
           ¿Quiénes somos?
