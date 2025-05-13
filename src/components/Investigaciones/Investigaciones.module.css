@@ -50,7 +50,6 @@
   width: 100%;
   border-radius: 18px;
   overflow: hidden;
-  /* Para que la imagen respete bordes redondeados */
   box-shadow:
     -5px -5px 25px 10px rgba(0, 0, 0, 0.5),
     5px 5px 20px 0px rgba(0, 0, 0, 0.4),
@@ -59,7 +58,7 @@
   background-color: #26252db6;
   color: #d7dee7;
   margin-bottom: 1.5rem;
-}
+    text-decoration: none; }
 
 .cardLight {
   width: 20px;
