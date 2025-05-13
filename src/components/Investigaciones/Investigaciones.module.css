@@ -69,30 +69,25 @@
 
 .cardContent {
   flex: 1;
-  /* Ocupa la mitad izquierda */
   padding: 2rem 1.5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: left;
-  /* No bordes aquí para que el card sea un solo bloque */
 }
 
 .cardImageContainer {
   flex: 1;
-  /* Ocupa la mitad derecha */
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  /* Para que la imagen no se salga del contenedor */
 }
 
 .cardImage {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  /* Cubre el área sin deformar */
   border-top-right-radius: 18px;
   border-bottom-right-radius: 18px;
 }
@@ -135,7 +130,6 @@
 
   .card {
     flex: 1 1 30%;
-    /* 3 por fila */
     max-width: 30%;
   }
 
