@@ -33,72 +33,99 @@
 .title {
   font-size: 2rem;
   text-align: left;
-padding-left: 2rem;}
+  padding-left: 2rem;
+}
 
 .content {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
   gap: 1.5rem;
   padding: 2rem 2rem;
-    align-items: stretch;
+  justify-content: flex-start;
 }
 
 .card {
+  cursor: pointer;
   display: flex;
-  align-items: stretch;
-  padding: 0;
-  text-align: center;
-width: 100%;}
+  width: 100%;
+  border-radius: 18px;
+  overflow: hidden;
+  /* Para que la imagen respete bordes redondeados */
+  box-shadow:
+    -5px -5px 25px 10px rgba(0, 0, 0, 0.5),
+    5px 5px 20px 0px rgba(0, 0, 0, 0.4),
+    -5px -5px 10px rgba(103, 142, 243, 0.2),
+    inset 5px 5px 30px rgba(39, 74, 164, 0.495);
+  background-color: #26252db6;
+  color: #d7dee7;
+  margin-bottom: 1.5rem;
+}
 
-  .cardContent {
-    padding: 2rem 1rem; /* Padding movido aquí */
-    flex: 1;
-    border-top: 3px solid #d7dee7;
-    border-right: 3px solid #d7dee7;
-    border-bottom: 3px solid #d7dee7;
-    background-color: #26252db6;
-    box-shadow:  -5px -5px 25px 10px rgba(0, 0, 0, 0.5),
-    5px 5px 20px 0px rgba(0, 0, 0, 0.4), -5px -5px 10px rgba(103, 142, 243, 0.2),
-   inset 5px 5px 30px rgba(39, 74, 164, 0.495),
-          ;
-    border-radius: 18px;
-    border-bottom-left-radius: 0;
-    border-top-left-radius: 0;
+.cardLight {
+  width: 20px;
+  background-color: #297fef;
+  box-shadow: 0 0 20px 8px rgba(41, 127, 239, 0.325);
+  border-radius: 5px 0 0 5px;
+}
 
-  }
-    .cardLight {
-      width: 20px; /* Ancho fijo */
-      min-width: 20px; /* Evita que se encoja */
-      min-height: 100%;
-      background-color: #297fef;
-      box-shadow: 0 0 20px 8px rgba(41, 127, 239, 0.325);
-      border: solid #297fef; /* Sombra más intensa */
-      border-radius: 5px 0 0 5px;
-    }
-  
+.cardContent {
+  flex: 1;
+  /* Ocupa la mitad izquierda */
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  /* No bordes aquí para que el card sea un solo bloque */
+}
+
+.cardImageContainer {
+  flex: 1;
+  /* Ocupa la mitad derecha */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  /* Para que la imagen no se salga del contenedor */
+}
+
+.cardImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* Cubre el área sin deformar */
+  border-top-right-radius: 18px;
+  border-bottom-right-radius: 18px;
+}
 
 .cardTitle {
-  font-size: 1rem;
-  color: #d7dee7;
+  font-size: 1.2rem;
   margin-bottom: 0.5rem;
 }
 
 .author {
-  font-size: 0.6rem;
-  margin-bottom: 1rem;
-  color: #d7dee7;
+  font-size: 0.8rem;
+  margin-bottom: 0.5rem;
+  color: #a0a8b0;
 }
 
-.deco {
-  position: fixed;
-  top: -5vh;
-  left: 0;
-  margin-top: 5vh;
-  width: 100%;
-  height: 3px;
-  background: linear-gradient(20deg, #0a0d1500, #297fef);
-  border-radius: 360px;
+.date {
+  font-size: 0.7rem;
+  margin-bottom: 1rem;
+  color: #8a90a0;
+  font-style: italic;
+}
+
+.arrow {
+  font-size: 2rem;
+  color: #297fef;
+  text-shadow: 0 0 10px #297fef, 0 0 30px #297fef;
+  filter: drop-shadow(0 0 6px #297fef);
+  transition: transform 0.3s ease;
+}
+
+.card:hover .arrow {
+  transform: scale(1.2);
 }
 
 @media (min-width: 1200px) {
@@ -108,7 +135,20 @@ width: 100%;}
   }
 
   .card {
-    padding: 2rem 1rem;
+    flex: 1 1 30%;
+    /* 3 por fila */
+    max-width: 30%;
+  }
+
+  .cardContent,
+  .cardImageContainer {
+    flex: 1;
+    width: 50%;
+  }
+
+  .cardImage {
+    border-radius: 0 18px 18px 0;
+    height: 100%;
   }
 
   .cardTitle {
