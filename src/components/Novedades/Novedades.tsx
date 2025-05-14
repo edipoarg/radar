@@ -7,7 +7,7 @@ export default function Novedades() {
     <section className={styles.section}>
       <div className={styles.header}>
         <HiOutlineBellAlert className={styles.headerIcon} />
-        <h2 className={styles.headerTitle}>{novedades.title}</h2>
+        <h2>{novedades.title}</h2>
       </div>
 
       <div className={styles.content}>
@@ -32,8 +32,8 @@ export default function Novedades() {
                 ))}
               </ul>
               <div className={`${styles.deco} ${styles.circlesDeco}`}>
-        <div></div> {/* Para el efecto de glow central */}
-      </div>
+                <div></div> {/* Para el efecto de glow central */}
+              </div>
             </section>
           );
         })}

@@ -2,16 +2,16 @@
   padding-right: 10px;
 }
 
-
 .conecta {
   background: linear-gradient(20deg, #0a0d15, #292f36);
   padding: 0 1rem 5rem 1rem;
   padding-top: 3rem;
-  
 }
-.content{
-    border: solid 1px #297fef;
-   }
+
+.content {
+  border: solid 1px #297fef;
+}
+
 .conectaTitulo {
   color: #ffffff;
   font-size: 1.8rem;
@@ -39,7 +39,7 @@
   align-self: center;
 }
 
-.siTeInteresa a{
+.siTeInteresa a {
   color: #297fef;
 }
 
@@ -57,26 +57,35 @@
   animation: rotate 6s linear infinite, dash 4s ease-in-out infinite alternate;
 }
 
-.circle-1 { animation-delay: 0s; }
-.circle-2 { animation-delay: 0.5s; }
-.circle-3 { animation-delay: 1s; }
-.circle-4 { animation-delay: 1.5s; }
-
 @keyframes rotate {
-  to { transform: rotate(360deg); }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 @keyframes dash {
-  0% { stroke-dasharray: 0, 565; }
-  25% { stroke-dasharray: 140, 425; }
-  50% { stroke-dasharray: 280, 285; }
-  75% { stroke-dasharray: 420, 145; }
-  100% { stroke-dasharray: 565, 0; }
+  0% {
+    stroke-dasharray: 0, 565;
+  }
+
+  25% {
+    stroke-dasharray: 140, 425;
+  }
+
+  50% {
+    stroke-dasharray: 280, 285;
+  }
+
+  75% {
+    stroke-dasharray: 420, 145;
+  }
+
+  100% {
+    stroke-dasharray: 565, 0;
+  }
 }
 
-
 /*== tablet==*/
-
 @media (min-width: 768px) {
   .conecta {
     width: 100vw;
@@ -91,6 +100,7 @@
     padding: 0vh 5vw;
     text-align: right;
   }
+
   .conectaSubtitulo {
     color: #297fef;
     font-size: 1.8rem;
@@ -106,8 +116,6 @@
     font-size: 1.2rem;
     text-align: justify;
   }
-
-
 }
 
 @media (min-width: 1200px) {
@@ -117,24 +125,13 @@
     padding: 0vh 5vw;
     text-align: left;
   }
-  .conectaBajada{
-    color: #ffffff;
-    font-size: 1.8rem;
-    padding: 0vh 5vw;
-    text-align: left;
-    max-width: 40vw;
-  }
 
   .conectaTextRadar {
     padding: 0vh 4vw;
     padding-top: 5vh;
-
     color: white;
     font-size: 1.2rem;
     text-align: justify;
     padding-right: 15vw;
-
   }
- 
-
 }

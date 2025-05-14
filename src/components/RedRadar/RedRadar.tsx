@@ -19,7 +19,7 @@ export default function RedRadar() {
           >
             {/* Círculo 1 (más grueso, externo) */}
             <circle
-              className={`${styles.circle} ${styles.circle1}`}
+              className={`${styles.circle}`}
               cx="100"
               cy="100"
               r="90"
@@ -30,7 +30,7 @@ export default function RedRadar() {
             />
             {/* Círculo 2 */}
             <circle
-              className={`${styles.circle} ${styles.circle2}`}
+              className={`${styles.circle}`}
               cx="100"
               cy="100"
               r="70"
@@ -41,7 +41,7 @@ export default function RedRadar() {
             />
             {/* Círculo 3 */}
             <circle
-              className={`${styles.circle} ${styles.circle3}`}
+              className={`${styles.circle}`}
               cx="100"
               cy="100"
               r="50"
@@ -52,7 +52,7 @@ export default function RedRadar() {
             />
             {/* Círculo 4 (más fino, interno) */}
             <circle
-              className={`${styles.circle} ${styles.circle4}`}
+              className={`${styles.circle}`}
               cx="100"
               cy="100"
               r="30"

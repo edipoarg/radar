@@ -3,14 +3,8 @@ import Navlinks from "../../routes";
 import styles from "./ReportPopupContent.module.css";
 import { BiSolidBug } from "react-icons/bi";
 import { TiWarningOutline } from "react-icons/ti";
-import { FaBugs } from "react-icons/fa6";
 
-
-type Props = {
-  className?: string;
-};
-
-export const ReportPopupContent = ({ className }: Props) => {
+export const ReportPopupContent = () => {
   return (
     <article className={styles.popupBody}>
       <p>Denunciá un ataque</p>

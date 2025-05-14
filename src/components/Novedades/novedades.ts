@@ -3,7 +3,7 @@ import type { DefinitionList } from "../QuienesSomos/definition-list";
 export const novedades: DefinitionList = {
   title: "Novedades",
   terms: {
-    "NEWSLETTER": {
+    NEWSLETTER: {
       definitions: [
         {
           paragraphs: ["Suscribite completando este formulario"],
