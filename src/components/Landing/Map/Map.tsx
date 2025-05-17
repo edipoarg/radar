@@ -5,6 +5,8 @@ import type { Attack } from "../../../../common/json-shape";
 import { ProvSource, BsAsSource, RutasSource } from "../../Sources/Sources";
 import { Markers } from "../Markers/Markers";
 import "maplibre-gl/dist/maplibre-gl.css";
+import type { MapStyle } from "react-map-gl/maplibre";
+import mystyle from "./mystyle.json";
 
 const mapSourceStyles = {
   country: {
@@ -59,7 +61,7 @@ export const RadarMap = ({
       height: "100vh",
       zIndex: 1, // Asegúrate de que el mapa esté sobre el fondo, pero no sobre otros elementos.
     },
-    mapStyle: "https://tiles.stadiamaps.com/styles/alidade_smooth_dark.json",
+    mapStyle: mystyle as MapStyle,
   };
 
   return (
