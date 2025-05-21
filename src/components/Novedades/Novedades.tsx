@@ -13,33 +13,48 @@ export default function Novedades() {
 
       <div className={styles.content}>
         {Object.entries(novedades.terms).map(([termName, term]) => {
-          // Detectar si es el newsletter
-          const isNewsletter = termName.toLowerCase() === "newsletter";
-          const paragraph = term.definitions[0]?.paragraphs[0];
+          const isNewsletter =
+            term.definitions?.[0]?.paragraphs?.[0]?.toLowerCase() === "ingresar";
 
           return (
             <section key={termName} className={styles.term}>
-              {!isNewsletter && <h3>{termName}</h3>}
-              <section className={styles.solidContainer}>
-                <LuMailPlus className={styles.mailIcon} />
-                <ul className={styles.blueContainer}>
-                  <li className={styles.description}>
-                    {isNewsletter ? (
-                      <p>Ir</p>
-                    ) : (
-                      term.definitions.flatMap((def) =>
+              <h3>{termName}</h3>
+
+              {isNewsletter ? (
+                <a
+                  href="https://www.docs.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={styles.newsletterLink}
+                >
+                  <section className={styles.solidContainer}>
+                    <LuMailPlus className={styles.mailIcon} />
+                    <ul className={styles.blueContainer}>
+                      <li className={styles.description}>
+                        <p>Ingresar</p>
+                      </li>
+                    </ul>
+                  </section>
+                </a>
+              ) : (
+                <section className={styles.solidContainer}>
+                  <LuMailPlus className={styles.mailIcon} />
+                  <ul className={styles.blueContainer}>
+                    <li className={styles.description}>
+                      {term.definitions.flatMap((def) =>
                         def.paragraphs.map((paragraph) => (
                           <p key={paragraph}>{paragraph}</p>
-                        )),
-                      )
-                    )}
-                  </li>
-                </ul>
-              </section>
+                        ))
+                      )}
+                    </li>
+                  </ul>
+                </section>
+              )}
             </section>
           );
         })}
       </div>
+
       <div className={styles.deco}></div>
     </section>
   );

@@ -33,12 +33,13 @@
   padding: 1rem 5rem;
   height: 65vh;
   border-radius: 60px;
-  background: linear-gradient(90deg, #297fef, #29569000);
+  background: linear-gradient(90deg, #297fef, #295690a1);
   box-shadow: inset 20px -30px 90px rgba(77, 206, 235, 0.505);
   padding-top: 4rem;
 }
 .solidContainer{
   display: flex;
+  justify-content: center;
   box-shadow: 0px 10px 10px 2px rgba(0, 0, 0, 0.4),
   0px -5px 8px 5px rgba(211, 211, 211, 0.15),
   5px 5px 20px 0px rgba(130, 173, 237, 0.1);
@@ -49,23 +50,25 @@
 }
 
 .mailIcon{
-  font-size: 5rem;
-  align-self: center;
-  border-radius: 50%;
-  width: 15vw;
-  height: 15vw;}
+  font-size: 4rem;
+  align-self: center;}
 
-.blueContainer{
+.blueContainer {
+  display: flex;               
+  align-items: center;
+  justify-content: center;
   border-radius: 20px;
   background: linear-gradient(90deg, #297fef, #29569000);
   box-shadow: inset 20px -30px 90px rgba(77, 206, 235, 0.505);
   margin-left: 2rem;
+  height: 7vh;
 }
 
+
 .term h3 {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   padding-left: 1.5rem;
-  padding-bottom: 0rem;
+  padding-bottom: 3rem;
   padding-top: 1.5rem;
   color: #151616;
   border-top-left-radius: 23px;
@@ -84,11 +87,40 @@
 }
 
 .description {
+  display: flex;              
+  align-items: center;         
+  justify-content: center;     
   font-size: 1rem;
-  text-align: justify;
+  text-align: center;
   padding: 0rem 1rem;
   list-style-type: none;
+  width: 35vw;
+  height: 100%;
+  color: #d7dee7;                
 }
+
+.newsletterLink {
+  text-decoration: none;
+  display: block;
+  transition: transform 0.1s ease-in-out;
+}
+
+.newsletterLink:hover {
+  filter: drop-shadow(0 0 10px #188fff2f);
+}
+
+.newsletterLink:hover .mailIcon {
+  color: #d7dee7;
+  filter: drop-shadow(0 0 10px #ffffff);
+}
+
+.newsletterLink:hover .blueContainer {
+  transform: scale(0.98);
+  color: #d7dee7;
+  box-shadow: none;
+  background: #0f0f0f;
+}
+
 
 
 .deco {
@@ -101,38 +133,55 @@
   background: linear-gradient(20deg, #0a0d1500, #297fef);
   border-radius: 360px;
 }
-
 @media (min-width: 1200px) {
   .section {
-      min-width: 98.7vw;
-      padding: 12rem;
-      padding-top: 8rem;
+    padding-top: 15vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;  }
+
+  .header {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto 2rem auto;
   }
 
   .content {
-      gap: 1rem;
-      padding: 0vh 8vw;
-      justify-content: space-around;
+    max-width: 900px;
+    width: 100%;
+    padding: 3rem 4rem;
+    border-radius: 40px;
+    height: fit-content;
   }
 
-  .header {
-      max-width: 35%;
-      margin-left: 10rem;
+  .solidContainer {
+    max-width: 30vw;
+    margin: 0 auto 2rem auto;
+    padding: 1.5rem 2rem;
+  }
+
+  .blueContainer {
+    min-width: 200px;
+    max-width: 300px;
+    padding: 0.75rem 2rem;
   }
 
   .description {
-      font-size: 1.3rem;
-      padding: 0rem 8rem;
+    font-size: 1.2rem;
+    padding: 0;
+    width: auto;
   }
 
   .term h3 {
-      font-size: 2rem;
-      padding: 3rem 4rem;
+    font-size: 1.8rem;
+    padding: 2rem 1rem 1rem 1rem;
+    text-align: center;
   }
 
   .deco {
-      height: 5px;
-      background: linear-gradient(20deg, #0a0d1500, #297fef);
-      border-radius: 360px;
-    }
+    height: 5px;
+    background: linear-gradient(20deg, #0a0d1500, #297fef);
+    border-radius: 360px;
+  }
 }
