@@ -3,13 +3,14 @@ import type { DefinitionList } from "../QueHacemos/definition-list";
 export const novedades: DefinitionList = {
   title: "Novedades",
   terms: {
-    NEWSLETTER: {
-      definitions: [
-        {
-          paragraphs: ["Suscribite completando este formulario"],
-        },
-      ],
-      members: [],
-    },
+    "Suscribite al newsletter de ra-dar para recibir novedades de nuestro registro e investigaciones.":
+      {
+        definitions: [
+          {
+            paragraphs: ["Ir"],
+          },
+        ],
+        members: [],
+      },
   },
 };
