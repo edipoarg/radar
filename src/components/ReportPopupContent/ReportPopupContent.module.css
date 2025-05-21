@@ -28,15 +28,23 @@
     flex-direction: column;
     align-items: center;
     background: #050512cf;
-    border: 1px solid #297fef;
-    border-radius: 1rem;
-    padding: 1rem;
+    color:rgb(213, 213, 213);
+    border-radius: 50%;
+    border: solid 1px rgba(41, 127, 239, 0.46);
+    padding: 2rem 1rem;
     min-width: 25vw;
+    min-height: 25vw;
     text-align: center;
     text-decoration: none;
     font-weight: bold;
     transition: all 0.3s ease;
     box-shadow: 0 0 10px transparent;
+    justify-content: center;
+    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 1),
+    inset 0 0 20px 1px rgba(71, 138, 215, 0.2)
+    ;
+
+
   }
   
   .button svg {
@@ -48,7 +56,7 @@
   
   .button:hover {
     border-color: #297fef;
-    box-shadow: 0 0 12px #297fef;
+    box-shadow: 0 0 30px rgba(41, 127, 239, 0.84);
     background-color: #131332bb;
     transform: translateY(-3px);
   }

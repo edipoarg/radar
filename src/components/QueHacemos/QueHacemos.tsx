@@ -1,13 +1,12 @@
-// QuienesSomos.tsx
 import { Link } from "react-router-dom";
-import styles from "./QuienesSomos.module.css";
+import styles from "./QueHacemos.module.css";
 import { GiRadarSweep } from "react-icons/gi";
 import { TbMessageQuestion, TbMapPinQuestion } from "react-icons/tb";
 import { LuDatabaseBackup } from "react-icons/lu";
 import { TiInfoLarge } from "react-icons/ti";
 import { IoArrowForwardCircleOutline } from "react-icons/io5";
 
-export default function QuienesSomos() {
+export default function QueHacemos() {
   return (
     <section className={styles.section}>
       <div className={styles.header}>

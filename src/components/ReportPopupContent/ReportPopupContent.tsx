@@ -7,7 +7,7 @@ import { TiWarningOutline } from "react-icons/ti";
 export const ReportPopupContent = () => {
   return (
     <article className={styles.popupBody}>
-      <p>Denunciá un ataque</p>
+      <p>Reportá</p>
       <div>
         <NavLink
           className={styles.button}
@@ -15,7 +15,7 @@ export const ReportPopupContent = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Reportá
+          Ataque
           <TiWarningOutline />
         </NavLink>
         <NavLink
@@ -24,7 +24,7 @@ export const ReportPopupContent = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Reportá un doxxeo
+          Ataque digital
           <BiSolidBug />
         </NavLink>
       </div>

@@ -8,11 +8,11 @@ import Root from "./routes/Root";
 import Navlinks from "./routes/index";
 import { fetchUrlsData } from "./helpers/fetchUrlsData";
 import Landing from "./components/Landing/Landing";
-import QuienesSomos from "./components/QuienesSomos/QuienesSomos";
-import Presentacion from "./components/QuienesSomos/Presentacion/Presentacion";
-import Definiciones from "./components/QuienesSomos/Definiciones/Definiciones";
-import PatronDeCasos from "./components/QuienesSomos/PatronDeCasos/PatronDeCasos";
-import Metodologia from "./components/QuienesSomos/Metodologia/Metodologia";
+import QueHacemos from "./components/QueHacemos/QueHacemos";
+import Presentacion from "./components/QueHacemos/Presentacion/Presentacion";
+import Definiciones from "./components/QueHacemos/Definiciones/Definiciones";
+import PatronDeCasos from "./components/QueHacemos/PatronDeCasos/PatronDeCasos";
+import Metodologia from "./components/QueHacemos/Metodologia/Metodologia";
 import Novedades from "./components/Novedades/Novedades";
 
 const loader = async () => ({
@@ -30,7 +30,7 @@ const router = createHashRouter([
     element: <Root />,
     children: [
       { path: Navlinks.home, element: <Landing />, loader },
-      { path: Navlinks.quienesSomos, element: <QuienesSomos /> },
+      { path: Navlinks.queHacemos, element: <QueHacemos /> },
       { path: Navlinks.presentacion, element: <Presentacion /> },
       { path: Navlinks.definiciones, element: <Definiciones /> },
       { path: Navlinks.patronDeCasos, element: <PatronDeCasos /> },

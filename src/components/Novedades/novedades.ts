@@ -1,4 +1,4 @@
-import type { DefinitionList } from "../QuienesSomos/definition-list";
+import type { DefinitionList } from "../QueHacemos/definition-list";
 
 export const novedades: DefinitionList = {
   title: "Novedades",

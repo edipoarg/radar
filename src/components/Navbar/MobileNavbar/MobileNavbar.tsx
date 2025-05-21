@@ -28,7 +28,7 @@ export default function MobileNavbar({ heightInVh }: Props) {
         <NavLink to={Navlinks.home}>
           <IoMdPin size={iconsHeight} />
         </NavLink>
-        <NavLink to={Navlinks.quienesSomos}>
+        <NavLink to={Navlinks.queHacemos}>
           <TiInfoLarge size={iconsHeight} />
         </NavLink>
         <NavLink to={Navlinks.investigaciones}>

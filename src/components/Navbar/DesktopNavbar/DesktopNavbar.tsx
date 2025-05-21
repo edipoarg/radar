@@ -18,7 +18,7 @@ export default function DesktopNavbar() {
         <LogotipoRadar className={styles.floatingLogo} />
       </NavLink>
       <div className={styles.heading}>
-        <NavLink to={Navlinks.quienesSomos}>
+        <NavLink to={Navlinks.queHacemos}>
           <TiInfoLarge size={iconsHeight} />
           ¿Quiénes somos?
         </NavLink>
