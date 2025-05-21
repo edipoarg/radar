@@ -24,9 +24,9 @@ export default function RedRadar() {
               cy="100"
               r="90"
               fill="none"
-              stroke="#fffff"
-              strokeWidth="4"
-              strokeDasharray="0, 565"
+              stroke="#fff"
+              strokeWidth="18"
+              strokeDasharray="0, 5"
             />
             {/* Círculo 2 */}
             <circle
@@ -36,7 +36,7 @@ export default function RedRadar() {
               r="70"
               fill="none"
               stroke="#fff"
-              strokeWidth="8"
+              strokeWidth="10"
               strokeDasharray="0, 440"
             />
             {/* Círculo 3 */}
@@ -47,8 +47,8 @@ export default function RedRadar() {
               r="50"
               fill="none"
               stroke="#fff"
-              strokeWidth="4"
-              strokeDasharray=", 315"
+              strokeWidth="7"
+              strokeDasharray="10, 315"
             />
             {/* Círculo 4 (más fino, interno) */}
             <circle
@@ -58,8 +58,8 @@ export default function RedRadar() {
               r="30"
               fill="none"
               stroke="#fff"
-              strokeWidth="3"
-              strokeDasharray="20, 110"
+              strokeWidth="15"
+              strokeDasharray="150, 110"
             />
           </svg>
         </div>
