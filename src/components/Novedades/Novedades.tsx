@@ -14,7 +14,8 @@ export default function Novedades() {
       <div className={styles.content}>
         {Object.entries(novedades.terms).map(([termName, term]) => {
           const isNewsletter =
-            term.definitions?.[0]?.paragraphs?.[0]?.toLowerCase() === "ingresar";
+            term.definitions?.[0]?.paragraphs?.[0]?.toLowerCase() ===
+            "ingresar";
 
           return (
             <section key={termName} className={styles.term}>
@@ -27,13 +28,9 @@ export default function Novedades() {
                   rel="noopener noreferrer"
                   className={styles.newsletterLink}
                 >
-                  <section className={styles.solidContainer}>
+                  <section className={styles.solidButton}>
                     <LuMailPlus className={styles.mailIcon} />
-                    <ul className={styles.blueContainer}>
-                      <li className={styles.description}>
-                        <p>Ingresar</p>
-                      </li>
-                    </ul>
+                    <span className={styles.ingresarText}>Ingresar</span>
                   </section>
                 </a>
               ) : (
@@ -44,7 +41,7 @@ export default function Novedades() {
                       {term.definitions.flatMap((def) =>
                         def.paragraphs.map((paragraph) => (
                           <p key={paragraph}>{paragraph}</p>
-                        ))
+                        )),
                       )}
                     </li>
                   </ul>

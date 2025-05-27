@@ -25,7 +25,7 @@
     font-size: 2rem;
     text-align: left;
     padding-left: 1rem;
-    }
+}
 
 .subTitle {
     font-size: 1rem;
@@ -55,7 +55,6 @@
     background: linear-gradient(20deg, #297fef, #204776);
     border-top-left-radius: 23px;
     border-top-right-radius: 23px;
-    
 }
 
 .term h2 {
@@ -63,7 +62,6 @@
     text-align: left;
     margin-top: 2rem;
     margin-bottom: 0.2rem;
-    
 }
 
 .term h4 {

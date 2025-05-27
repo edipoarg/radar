@@ -16,7 +16,6 @@
   padding-bottom: 2rem;
 }
 
-
 .headerIcon {
   color: #297fef;
   font-size: 4rem;
@@ -25,10 +24,11 @@
 }
 
 .title {
-    font-size: 2rem;
-    text-align: left;
-    padding-left: 1rem;
+  font-size: 2rem;
+  text-align: left;
+  padding-left: 1rem;
 }
+
 .content {
   padding: 1rem 5rem;
   height: 65vh;
@@ -37,33 +37,47 @@
   box-shadow: inset 20px -30px 90px rgba(77, 206, 235, 0.505);
   padding-top: 4rem;
 }
-.solidContainer{
+
+.solidContainer {
   display: flex;
   justify-content: center;
   box-shadow: 0px 10px 10px 2px rgba(0, 0, 0, 0.4),
-  0px -5px 8px 5px rgba(211, 211, 211, 0.15),
-  5px 5px 20px 0px rgba(130, 173, 237, 0.1);
+    0px -5px 8px 5px rgba(211, 211, 211, 0.15),
+    5px 5px 20px 0px rgba(130, 173, 237, 0.1);
   border-radius: 20px;
   margin-bottom: 1rem;
   padding: 1rem 1rem;
   background: linear-gradient(0deg, #0a0d15, #010408a7);
 }
 
-.mailIcon{
+.mailIcon {
   font-size: 4rem;
-  align-self: center;}
-
-.blueContainer {
-  display: flex;               
-  align-items: center;
-  justify-content: center;
-  border-radius: 20px;
-  background: linear-gradient(90deg, #297fef, #29569000);
-  box-shadow: inset 20px -30px 90px rgba(77, 206, 235, 0.505);
-  margin-left: 2rem;
-  height: 7vh;
+  align-self: center;
 }
 
+.solidButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1.5rem 2rem;
+  border-radius: 25px;
+  background: linear-gradient(0deg, #0a0d15, #010408a7);
+  box-shadow: 0px 10px 10px 2px rgba(0, 0, 0, 0.4),
+    0px -5px 8px 5px rgba(211, 211, 211, 0.15),
+    5px 5px 20px 0px rgba(130, 173, 237, 0.1);
+  color: #d7dee7;
+  text-decoration: none;
+  transition: transform 0.1s ease-in-out;
+  cursor: pointer;
+}
+
+.ingresarText {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #d7dee7;
+  transition: filter 0.3s;
+}
 
 .term h3 {
   font-size: 1.4rem;
@@ -87,16 +101,16 @@
 }
 
 .description {
-  display: flex;              
-  align-items: center;         
-  justify-content: center;     
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-size: 1rem;
   text-align: center;
   padding: 0rem 1rem;
   list-style-type: none;
   width: 35vw;
   height: 100%;
-  color: #d7dee7;                
+  color: #d7dee7;
 }
 
 .newsletterLink {
@@ -114,14 +128,10 @@
   filter: drop-shadow(0 0 10px #ffffff);
 }
 
-.newsletterLink:hover .blueContainer {
+.newsletterLink:hover .solidButton {
   transform: scale(0.98);
-  color: #d7dee7;
-  box-shadow: none;
   background: #0f0f0f;
 }
-
-
 
 .deco {
   position: fixed;
@@ -133,13 +143,15 @@
   background: linear-gradient(20deg, #0a0d1500, #297fef);
   border-radius: 360px;
 }
+
 @media (min-width: 1200px) {
   .section {
     padding-top: 15vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: fit-content;  }
+    height: fit-content;
+  }
 
   .header {
     max-width: 800px;
@@ -150,7 +162,7 @@
   .content {
     max-width: 900px;
     width: 100%;
-    padding: 3rem 4rem;
+    padding: 5rem 4rem;
     border-radius: 40px;
     height: fit-content;
   }
@@ -175,13 +187,25 @@
 
   .term h3 {
     font-size: 1.8rem;
-    padding: 2rem 1rem 1rem 1rem;
+    padding: 1rem 1rem 1.5rem 1rem;
     text-align: center;
+    max-width: 80%;
+    margin: auto;
   }
 
   .deco {
     height: 5px;
     background: linear-gradient(20deg, #0a0d1500, #297fef);
     border-radius: 360px;
+  }
+
+  .solidButton {
+    padding: 0.5rem 2rem;
+    max-width: 45%;
+    margin: auto;
+  }
+
+  .mailIcon {
+    font-size: 3.5rem;
   }
 }
