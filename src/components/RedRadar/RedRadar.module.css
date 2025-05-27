@@ -9,19 +9,18 @@
 }
 
 .conectaTitulo {
-color: #ffffff;
-font-size: 5rem;
-text-align: left;  
-color: #297fef;
-text-shadow: 0 0 40px #297fef77;
+  color: #ffffff;
+  font-size: 5rem;
+  text-align: left;
+  color: #297fef;
+  text-shadow: 0 0 40px #297fef77;
 }
 
- .conectaSubtitulo {
-    color: #297fef;
-    font-size: 1rem;
-    text-align: left;
-  }
-
+.conectaSubtitulo {
+  color: #297fef;
+  font-size: 1rem;
+  text-align: left;
+}
 
 .conectaTextRadar {
   padding-top: 5vh;
@@ -43,7 +42,6 @@ text-shadow: 0 0 40px #297fef77;
   margin-top: 1.5rem;
   padding: 2vh 2vw;
   color: #297fef;
-  text-transform: uppercase;
   text-align: center;
   font-size: 1.5rem;
   border-radius: 60px;
@@ -147,9 +145,9 @@ text-shadow: 0 0 40px #297fef77;
   }
 
   .radarDecoImg {
-  top: -15vh;
-  right: 10vw;
-  height: 100vh;
-  filter: drop-shadow(0 0 30px #ffffff);
-}
+    top: -15vh;
+    right: 10vw;
+    height: 100vh;
+    filter: drop-shadow(0 0 30px #ffffff);
+  }
 }

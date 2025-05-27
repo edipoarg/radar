@@ -22,7 +22,7 @@ export default function Novedades() {
 
               {isNewsletter ? (
                 <a
-                  href="https://www.docs.com"
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSemLdPC4Fnm1NY8ScNG8noC_pvTIV1bvaVq4sw9dTrjHPT84Q/viewform"
                   target="_blank"
                   rel="noopener noreferrer"
                   className={styles.newsletterLink}
