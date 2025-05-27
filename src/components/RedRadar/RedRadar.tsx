@@ -1,6 +1,7 @@
 import styles from "./RedRadar.module.css";
 import { useEffect } from "react";
 import Navlinks from "../../routes/index";
+import LogotipoRadar from "../Navbar/MobileNavbar/LogotipoRadar.svg?react";
 
 export default function RedRadar() {
   useEffect(() => {
@@ -64,7 +65,7 @@ export default function RedRadar() {
           </svg>
         </div>
         <section>
-          <h1 className={styles.conectaTitulo}>RA-DAR</h1>
+          <LogotipoRadar className={styles.conectaTitulo} />
           <h1 className={styles.conectaSubtitulo}>
             Registro de Ataques de Derechas Argentinas Radicalizadas
           </h1>

@@ -9,16 +9,15 @@
 }
 
 .conectaTitulo {
-  color: #ffffff;
-  font-size: 5rem;
-  text-align: left;
-  color: #297fef;
-  text-shadow: 0 0 40px #297fef77;
+  width: 200px;
+  height: auto;
+  fill: #297fef;
+  filter: drop-shadow(0 0 40px #297fef77);
 }
 
 .conectaSubtitulo {
   color: #297fef;
-  font-size: 1rem;
+  font-size: 1.5rem;
   text-align: left;
 }
 
@@ -96,15 +95,14 @@
 
   .conectaSubtitulo {
     font-size: 1.8rem;
-    padding: 0vh 5vw;
+    padding: 0vh 4vw;
     text-align: left;
     max-width: 40vw;
   }
 
   .conectaTitulo {
-    color: #297fef;
-    font-size: 6rem;
-    padding: 0vh 5vw;
+    width: 28vw;
+    padding: 0vh 4vw;
     text-align: left;
   }
 
