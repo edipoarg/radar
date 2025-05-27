@@ -98,3 +98,16 @@ button {
 .popup-overlay {
   background: #000000e2 !important;
 }
+
+
+.maplibregl-ctrl-attrib {
+  position: fixed !important;
+  bottom: 2% !important;
+  right: 10% !important;
+  background: none !important;
+  font-size: 7px;
+}
+
+.maplibregl-ctrl-attrib a {
+  color: #a4aeb9 !important;
+}

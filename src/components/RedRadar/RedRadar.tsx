@@ -63,7 +63,7 @@ export default function RedRadar() {
             />
           </svg>
         </div>
-        <section className={styles.content}>
+        <section>
           <h1 className={styles.conectaTitulo}>RA-DAR</h1>
           <h1 className={styles.conectaSubtitulo}>
             Registro de Ataques de Derechas Argentinas Radicalizadas
