@@ -1,7 +1,6 @@
 .section {
   background: linear-gradient(20deg, #0a0d15, #292f36);
-  padding: 0 1rem 5rem 1rem;
-  padding-top: 1rem;
+  padding: 1rem 1rem 5rem;
   min-height: 100vh;
 }
 
@@ -125,8 +124,7 @@
 
 @media (min-width: 1200px) {
   .section {
-    padding: 12rem;
-    padding-top: 8rem;
+    padding: 8rem 12rem 12rem;
   }
 
   .card {
