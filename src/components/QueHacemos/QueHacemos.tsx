@@ -11,7 +11,7 @@ export default function QueHacemos() {
     <section className={styles.section}>
       <div className={styles.header}>
         <TiInfoLarge className={styles.headerIcon} />
-        <h2 className={styles.title}>¿Quiénes somos?</h2>
+        <h2 className={styles.title}>¿Qué hacemos?</h2>
       </div>
 
       <h4 className={styles.subTitle}>

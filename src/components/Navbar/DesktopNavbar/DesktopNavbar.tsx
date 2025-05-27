@@ -20,7 +20,7 @@ export default function DesktopNavbar() {
       <div className={styles.heading}>
         <NavLink to={Navlinks.queHacemos}>
           <TiInfoLarge size={iconsHeight} />
-          ¿Quiénes somos?
+          ¿Qué hacemos?
         </NavLink>
         <NavLink to={Navlinks.investigaciones}>
           <LuFileSearch size={iconsHeight} />
