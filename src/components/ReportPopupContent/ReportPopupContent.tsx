@@ -8,7 +8,7 @@ export const ReportPopupContent = () => {
   return (
     <article className={styles.popupBody}>
       <p>Reportá</p>
-      <div>
+      <div className={styles.buttonContainer}>
         <NavLink
           className={styles.button}
           to={Navlinks.reportaForm}

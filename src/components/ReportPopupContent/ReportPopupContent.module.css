@@ -1,77 +1,68 @@
 .popupBody {
-    padding: 1.5rem;
-    border-radius: 1rem;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    text-align: center;
-  }
-  
-  .popupBody p {
-    font-size: 1.2rem;
-    font-weight: bold;
-    width: fit-content;
-    margin: auto;
-    padding: 0 2rem;
-    margin-bottom: 1rem;
-    color: #297fef;
-    border: 1px solid;
-    border-radius: 120px;
-  }
-  
-  .popupBody div {
-    display: flex;
-    justify-content: center;
-    gap: 1.5rem;
-  }
-  
-  .button {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: #050512cf;
-    color:rgb(213, 213, 213);
-    border-radius: 50%;
-    border: solid 1px rgba(41, 127, 239, 0.46);
-    padding: 2rem 1rem;
-    min-width: 25vw;
-    min-height: 25vw;
-    text-align: center;
-    text-decoration: none;
-    font-weight: bold;
-    transition: all 0.3s ease;
-    box-shadow: 0 0 10px transparent;
-    justify-content: center;
-    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 1),
-    inset 0 0 20px 1px rgba(71, 138, 215, 0.2)
-    ;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
 
+.popupBody p {
+  font-size: 1.2rem;
+  font-weight: bold;
+  width: fit-content;
+  margin: auto;
+  padding: 0 2rem;
+  margin-bottom: 1rem;
+  color: #297fef;
+  border: 1px solid;
+  border-radius: 120px;
+}
 
-  }
-  
-  .button svg {
-    margin-top: 0.5rem;
-    font-size: 2rem;
-    color: #297fef;
-    transition: transform 0.3s ease;
-  }
-  
-  .button:hover {
-    border-color: #297fef;
-    box-shadow: 0 0 30px rgba(41, 127, 239, 0.84);
-    background-color: #131332bb;
-    transform: translateY(-3px);
-  }
-  
-  .button:hover svg {
-    transform: scale(1.1);
-    color: #297fef;
-    font-size: 2rem;
-    text-shadow: 0 0 10px #297fef, 0 0 30px #297fef, 0 0 50px #297fef;
-    filter: drop-shadow(0 0 20px #297fef);
-  }
+.popupBody .buttonContainer {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
 
-  @media (min-width: 1200px) {
-  
-    .button {
-        min-width: 10vw;
-      }
+.button {
+  display: flex;
+  flex-shrink: 0;
+  flex-direction: column;
+  align-items: center;
+  background: #050512cf;
+  color: rgb(213, 213, 213);
+  border-radius: 50%;
+  border: solid 1px rgba(41, 127, 239, 0.46);
+  padding: 2rem 1rem;
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px transparent;
+  justify-content: center;
+  box-shadow: 0 0 20px 1px rgba(0, 0, 0, 1),
+    inset 0 0 20px 1px rgba(71, 138, 215, 0.2);
+}
+
+.button svg {
+  margin-top: 0.5rem;
+  font-size: 2rem;
+  color: #297fef;
+  transition: transform 0.3s ease;
+}
+
+.button:hover {
+  border-color: #297fef;
+  box-shadow: 0 0 30px rgba(41, 127, 239, 0.84);
+  background-color: #131332bb;
+  transform: translateY(-3px);
+}
+
+.button:hover svg {
+  transform: scale(1.1);
+  color: #297fef;
+  font-size: 2rem;
+  text-shadow: 0 0 10px #297fef, 0 0 30px #297fef, 0 0 50px #297fef;
+  filter: drop-shadow(0 0 20px #297fef);
 }
