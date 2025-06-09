@@ -34,18 +34,6 @@
   padding-top: 4rem;
 }
 
-.solidContainer {
-  display: flex;
-  justify-content: center;
-  box-shadow: 0px 10px 10px 2px rgba(0, 0, 0, 0.4),
-    0px -5px 8px 5px rgba(211, 211, 211, 0.15),
-    5px 5px 20px 0px rgba(130, 173, 237, 0.1);
-  border-radius: 20px;
-  margin-bottom: 1rem;
-  padding: 1rem 1rem;
-  background: linear-gradient(0deg, #0a0d15, #010408a7);
-}
-
 .mailIcon {
   font-size: 4rem;
   align-self: center;
@@ -77,36 +65,12 @@
 
 .term h3 {
   font-size: 1.4rem;
-  padding-left: 1.5rem;
   padding-bottom: 3rem;
   padding-top: 1.5rem;
   color: #151616;
   border-top-left-radius: 23px;
   border-top-right-radius: 23px;
-}
-
-.term h2 {
-  font-size: 1.3rem;
-  text-align: left;
-  margin-top: 0rem;
-  margin-bottom: 0.2rem;
-}
-
-.term h4 {
-  padding: 0rem 0rem 0.5rem 0rem;
-}
-
-.description {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1rem;
-  text-align: center;
-  padding: 0rem 1rem;
-  list-style-type: none;
-  width: 35vw;
-  height: 100%;
-  color: #d7dee7;
+  text-align: justify;
 }
 
 .newsletterLink {
@@ -157,27 +121,9 @@
   .content {
     max-width: 900px;
     width: 100%;
-    padding: 5rem 4rem;
+    padding: 4rem 4rem;
     border-radius: 40px;
     height: fit-content;
-  }
-
-  .solidContainer {
-    max-width: 30vw;
-    margin: 0 auto 2rem auto;
-    padding: 1.5rem 2rem;
-  }
-
-  .blueContainer {
-    min-width: 200px;
-    max-width: 300px;
-    padding: 0.75rem 2rem;
-  }
-
-  .description {
-    font-size: 1.2rem;
-    padding: 0;
-    width: auto;
   }
 
   .term h3 {

@@ -12,41 +12,22 @@ export default function Novedades() {
       </div>
 
       <div className={styles.content}>
-        {Object.entries(novedades.terms).map(([termName, term]) => {
-          const isNewsletter =
-            term.definitions?.[0]?.paragraphs?.[0]?.toLowerCase() ===
-            "ingresar";
-
+        {Object.entries(novedades.terms).map(([termName]) => {
           return (
             <section key={termName} className={styles.term}>
               <h3>{termName}</h3>
 
-              {isNewsletter ? (
-                <a
-                  href="https://docs.google.com/forms/d/e/1FAIpQLSemLdPC4Fnm1NY8ScNG8noC_pvTIV1bvaVq4sw9dTrjHPT84Q/viewform"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={styles.newsletterLink}
-                >
-                  <section className={styles.solidButton}>
-                    <LuMailPlus className={styles.mailIcon} />
-                    <span className={styles.ingresarText}>Ingresar</span>
-                  </section>
-                </a>
-              ) : (
-                <section className={styles.solidContainer}>
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSemLdPC4Fnm1NY8ScNG8noC_pvTIV1bvaVq4sw9dTrjHPT84Q/viewform"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.newsletterLink}
+              >
+                <section className={styles.solidButton}>
                   <LuMailPlus className={styles.mailIcon} />
-                  <ul className={styles.blueContainer}>
-                    <li className={styles.description}>
-                      {term.definitions.flatMap((def) =>
-                        def.paragraphs.map((paragraph) => (
-                          <p key={paragraph}>{paragraph}</p>
-                        )),
-                      )}
-                    </li>
-                  </ul>
+                  <span className={styles.ingresarText}>Sumate</span>
                 </section>
-              )}
+              </a>
             </section>
           );
         })}

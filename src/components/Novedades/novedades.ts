@@ -7,7 +7,7 @@ export const novedades: DefinitionList = {
       {
         definitions: [
           {
-            paragraphs: ["Ingresar"],
+            paragraphs: ["Sumate"],
           },
         ],
         members: [],
