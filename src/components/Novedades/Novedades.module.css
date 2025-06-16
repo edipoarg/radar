@@ -27,11 +27,13 @@
 
 .content {
   padding: 1rem 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   height: 65vh;
   border-radius: 60px;
   background: linear-gradient(90deg, #297fef, #295690a1);
   box-shadow: inset 20px -30px 90px rgba(77, 206, 235, 0.505);
-  padding-top: 4rem;
 }
 
 .mailIcon {
