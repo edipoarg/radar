@@ -11,59 +11,57 @@ export default function RedRadar() {
   return (
     <article>
       <section className={styles.conecta}>
-        <div>
-          <svg
-            className={styles.radarDecoImg}
-            width="200"
-            height="200"
-            viewBox="0 0 200 200"
-          >
-            {/* Círculo 1 (más grueso, externo) */}
-            <circle
-              className={`${styles.circle}`}
-              cx="100"
-              cy="100"
-              r="90"
-              fill="none"
-              stroke="#fff"
-              strokeWidth="18"
-              strokeDasharray="0, 5"
-            />
-            {/* Círculo 2 */}
-            <circle
-              className={`${styles.circle}`}
-              cx="100"
-              cy="100"
-              r="70"
-              fill="none"
-              stroke="#fff"
-              strokeWidth="10"
-              strokeDasharray="0, 440"
-            />
-            {/* Círculo 3 */}
-            <circle
-              className={`${styles.circle}`}
-              cx="100"
-              cy="100"
-              r="50"
-              fill="none"
-              stroke="#fff"
-              strokeWidth="7"
-              strokeDasharray="10, 315"
-            />
-            {/* Círculo 4 (más fino, interno) */}
-            <circle
-              className={`${styles.circle}`}
-              cx="100"
-              cy="100"
-              r="30"
-              fill="none"
-              stroke="#fff"
-              strokeWidth="15"
-              strokeDasharray="150, 110"
-            />
-          </svg>
-        </div>
+        <svg
+          className={styles.radarDecoImg}
+          width="200"
+          height="200"
+          viewBox="0 0 200 200"
+        >
+          {/* Círculo 1 (más grueso, externo) */}
+          <circle
+            className={`${styles.circle}`}
+            cx="100"
+            cy="100"
+            r="90"
+            fill="none"
+            stroke="#fff"
+            strokeWidth="18"
+            strokeDasharray="0, 5"
+          />
+          {/* Círculo 2 */}
+          <circle
+            className={`${styles.circle}`}
+            cx="100"
+            cy="100"
+            r="70"
+            fill="none"
+            stroke="#fff"
+            strokeWidth="10"
+            strokeDasharray="0, 440"
+          />
+          {/* Círculo 3 */}
+          <circle
+            className={`${styles.circle}`}
+            cx="100"
+            cy="100"
+            r="50"
+            fill="none"
+            stroke="#fff"
+            strokeWidth="7"
+            strokeDasharray="10, 315"
+          />
+          {/* Círculo 4 (más fino, interno) */}
+          <circle
+            className={`${styles.circle}`}
+            cx="100"
+            cy="100"
+            r="30"
+            fill="none"
+            stroke="#fff"
+            strokeWidth="15"
+            strokeDasharray="150, 110"
+          />
+        </svg>
         <section>
           <LogotipoRadar className={styles.conectaTitulo} />
           <h1 className={styles.conectaSubtitulo}>
