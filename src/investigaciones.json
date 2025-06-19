@@ -4,76 +4,76 @@
     "author": "EdIPo",
     "link": "https://revistacrisis.com.ar/notas/cartografia-politica-del-criptobardo",
     "date": "2025-03-07",
-    "imgLink": "https://revistacrisis.com.ar/sites/default/files/notas/nota_112.jpg"
+    "imgLink": "./imgs-investigaciones/nota_112.jpg"
   },
   {
     "title": "la batalla cultural en la cancillería libertaria",
     "author": "CELS, EdIPo",
     "link": "https://revistacrisis.com.ar/notas/la-batalla-cultural-en-la-cancilleria-libertaria",
     "date": "2024-12-30",
-    "imgLink": "https://informes.revistacrisis.com.ar/wp-content/uploads/2024/12/Ilustracion-Cancilleria-3.jpg"
+    "imgLink": "./imgs-investigaciones/Ilustracion-Cancilleria-3.jpg"
   },
   {
     "title": "la inteligencia contra el Estado",
     "author": "EdIPo",
     "link": "https://revistacrisis.com.ar/notas/la-inteligencia-contra-el-estado",
     "date": "2024-10-03",
-    "imgLink": "https://revistacrisis.com.ar/sites/default/files/notas/side-x-nicolas-daniluk-int.jpg"
+    "imgLink": "./imgs-investigaciones/side-x-nicolas-daniluk-int.jpg"
   },
   {
     "title": "las milicias digitales de la ultraderecha",
     "author": "Colectivo Editorial Crisis, EdIPo",
     "link": "https://revistacrisis.com.ar/notas/las-milicias-digitales-de-la-ultraderecha",
     "date": "2024-07-13",
-    "imgLink": "https://revistacrisis.com.ar/sites/default/files/notas/doxxeo-no-se-acredita-int.jpg"
+    "imgLink": "./imgs-investigaciones/doxxeo-no-se-acredita-int.jpg"
   },
   {
     "title": "la conexión alemana",
     "author": "CELS, EdIPo",
     "link": "https://revistacrisis.com.ar/notas/la-conexion-alemana",
     "date": "2024-06-24",
-    "imgLink": "https://revistacrisis.com.ar/sites/default/files/notas/milei_alemania_x_ezequiel_garcia_int.jpg"
+    "imgLink": "./imgs-investigaciones/milei_alemania_x_ezequiel_garcia_int.jpg"
   },
   {
     "title": "capital inhumano: los seis primeros meses del experimento libertario",
     "author": "CELS, EdIPo",
     "link": "https://revistacrisis.com.ar/notas/capital-inhumano-los-seis-primeros-meses-del-experimento-libertario",
     "date": "2024-06-23",
-    "imgLink": "https://revistacrisis.com.ar/sites/default/files/notas/portada_ok.jpg"
+    "imgLink": "./imgs-investigaciones/portada_ok.jpg"
   },
   {
     "title": "apuntes sobre milei y el internacionalismo reaccionario",
     "author": "CELS, EdIPo",
     "link": "https://revistacrisis.com.ar/notas/apuntes-sobre-milei-y-el-internacionalismo-reaccionario",
     "date": "2024-05-27",
-    "imgLink": "https://revistacrisis.com.ar/sites/default/files/notas/nota_1_5.jpg"
+    "imgLink": "./imgs-investigaciones/nota_1_5.jpg"
   },
   {
     "title": "mapa político del gobierno de javier milei",
     "author": "EdIPo",
     "link": "https://revistacrisis.com.ar/notas/mapa-politico-del-gobierno-de-javier-milei",
     "date": "2024-03-13",
-    "imgLink": "https://revistacrisis.com.ar/sites/default/files/notas/nota_lla_-_ilus_01_-_x_marti_orona_-_int_0.jpg"
+    "imgLink": "./imgs-investigaciones/nota_lla_-_ilus_01_-_x_marti_orona_-_int_0.jpg"
   },
   {
     "title": "los dinosaurios no van a desaparecer",
     "author": "EdIPo",
     "link": "https://revistacrisis.com.ar/notas/los-dinosaurios-no-van-desaparecer",
     "date": "2023-12-09",
-    "imgLink": "https://revistacrisis.com.ar/sites/default/files/notas/01_1_subida.jpg"
+    "imgLink": "./imgs-investigaciones/01_1_subida.jpg"
   },
   {
     "title": "la violencia avanza",
     "author": "EdIPo",
     "link": "https://informes.revistacrisis.com.ar/la-violencia-avanza-1s/",
     "date": "2023-09-01",
-    "imgLink": "https://informes.revistacrisis.com.ar/wp-content/uploads/2023/08/untitled-16-2048x1365.jpg"
+    "imgLink": "./imgs-investigaciones/untitled-16-2048x1365.jpg"
   },
   {
     "title": "el atentado a cfk y la guerra que ya llegó",
     "author": "EdIPo",
     "link": "https://revistacrisis.com.ar/notas/el-atentado-cfk-y-la-guerra-que-ya-llego",
     "date": "2022-09-20",
-    "imgLink": "https://revistacrisis.com.ar/sites/default/files/notas/el-atentado-y-la-guerra2.jpg"
+    "imgLink": "./imgs-investigaciones/el-atentado-y-la-guerra2.jpg"
   }
 ]
