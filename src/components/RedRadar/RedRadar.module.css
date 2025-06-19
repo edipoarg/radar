@@ -90,7 +90,7 @@
     width: 100vw;
     padding: 20vh 15vw;
     padding-bottom: 6vh;
-    height: 100vh;
+    min-height: 100vh;
   }
 
   .conectaSubtitulo {
