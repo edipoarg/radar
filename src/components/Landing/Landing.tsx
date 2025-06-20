@@ -38,6 +38,7 @@ const onDownloadDataRequest =
   };
 
 const currentVersion = import.meta.env.VITE_RADAR_VERSION;
+const edipoUrl = import.meta.env.VITE_EDIPO_URL;
 
 function Landing() {
   const { urls } = useLoaderData() as LoaderData;
@@ -161,7 +162,7 @@ function Landing() {
 
       <a // Desktop-only
         className={styles.edipoLogo}
-        href="https://investigacionpolitica.com"
+        href={edipoUrl}
         target="blank"
       >
         [&nbsp;&nbsp;] EdIPo

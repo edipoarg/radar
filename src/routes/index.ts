@@ -8,9 +8,6 @@ const Navlinks = {
   investigaciones: "/investigaciones",
   novedades: "/novedades",
   redRadar: "/red",
-  analisis: "analisisAnchor",
-  edipo: "http://investigacionpolitica.com",
-  mailRadar: "mailto:radar.edipo@gmail.com",
 } as const;
 
 export default Navlinks;

@@ -1,7 +1,8 @@
 import styles from "./RedRadar.module.css";
 import { useEffect } from "react";
-import Navlinks from "../../routes/index";
 import LogotipoRadar from "../Navbar/MobileNavbar/LogotipoRadar.svg?react";
+
+const radarEmail = import.meta.env.VITE_RADAR_EMAIL;
 
 export default function RedRadar() {
   useEffect(() => {
@@ -81,7 +82,7 @@ export default function RedRadar() {
               colectivo y la elaboración de estrategias de autocuidado.
             </h6>
             <h6 className={styles.siTeInteresa}>
-              <a href={Navlinks.mailRadar}>radar.edipo@gmail.com</a>
+              <a href={`mailto:${radarEmail}`}>{radarEmail}</a>
             </h6>
           </div>
         </section>
