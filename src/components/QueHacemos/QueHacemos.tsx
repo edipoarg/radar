@@ -15,8 +15,8 @@ export default function QueHacemos() {
       </div>
 
       <h4 className={styles.subTitle}>
-        Conocé el contexto, las definiciones clave, el patrón de casos y la
-        metodología detrás de Radar.
+        Conocé nuestro punto de partida, las definiciones que utilizamos, los
+        patrones de casos y nuestra metodología.
       </h4>
 
       <div className={styles.content}>

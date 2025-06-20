@@ -63,7 +63,7 @@ export const definiciones: DefinitionList = {
       ],
       members: [],
     },
-    "Ataques geocalizables": {
+    "Ataques geolocalizables": {
       definitions: [
         {
           paragraphs: [

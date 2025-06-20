@@ -1,8 +1,10 @@
 import { NavLink } from "react-router-dom";
-import Navlinks from "../../routes";
 import styles from "./ReportPopupContent.module.css";
 import { BiSolidBug } from "react-icons/bi";
 import { TiWarningOutline } from "react-icons/ti";
+
+const attackReportUrl = import.meta.env.VITE_ATTACK_REPORT_URL;
+const doxxingReportUrl = import.meta.env.VITE_DOXXING_REPORT_URL;
 
 export const ReportPopupContent = () => {
   return (
@@ -11,7 +13,7 @@ export const ReportPopupContent = () => {
       <div className={styles.buttonContainer}>
         <NavLink
           className={styles.button}
-          to={Navlinks.reportaForm}
+          to={attackReportUrl}
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -20,7 +22,7 @@ export const ReportPopupContent = () => {
         </NavLink>
         <NavLink
           className={styles.button}
-          to="link a doxxeos"
+          to={doxxingReportUrl}
           target="_blank"
           rel="noopener noreferrer"
         >

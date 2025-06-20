@@ -1,7 +1,5 @@
 const Navlinks = {
   home: "/",
-  reportaForm:
-    "https://docs.google.com/forms/d/e/1FAIpQLSe5pKXuvkvSUiwI_YEq5OZrfXCmpcsDuz_6co_iS2Qags80_A/viewform",
   queHacemos: "/que-hacemos",
   presentacion: "/presentacion",
   definiciones: "/definiciones",

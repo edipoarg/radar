@@ -1,4 +1,4 @@
-export const date2MonthYear = (d: Date) =>
+const date2MonthYear = (d: Date) =>
   d.toLocaleDateString("es-AR", {
     month: "short",
     year: "numeric",
