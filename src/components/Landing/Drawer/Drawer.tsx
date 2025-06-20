@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import styles from "./Drawer.module.css";
-import { FaSliders } from "react-icons/fa6";
 import { GoDownload } from "react-icons/go";
 import type { Vh } from "../../../types/styles";
 import { NumberOfAttacks } from "../NumberOfAttacks/NumberOfAttacks";
@@ -46,7 +45,6 @@ export const Drawer = ({
   hiddenContent,
   visibleContent,
   open,
-  toggleDrawerIsOpen,
   numberOfCases,
   onDownloadDataRequest,
   bottom,
