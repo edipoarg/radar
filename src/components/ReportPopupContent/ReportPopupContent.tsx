@@ -9,7 +9,7 @@ const doxxingReportUrl = import.meta.env.VITE_DOXXING_REPORT_URL;
 export const ReportPopupContent = () => {
   return (
     <article className={styles.popupBody}>
-      <p>Reportá</p>
+      <h1>Reportá</h1>
       <div className={styles.buttonContainer}>
         <NavLink
           className={styles.button}

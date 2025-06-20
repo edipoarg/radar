@@ -3,18 +3,20 @@
   border-radius: 1rem;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.popupBody p {
-  font-size: 1.2rem;
+.popupBody>h1 {
+  font-size: 1.5rem;
   font-weight: bold;
   width: fit-content;
   margin: auto;
   padding: 0 2rem;
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
   color: #297fef;
-  border: 1px solid;
-  border-radius: 120px;
 }
 
 .popupBody .buttonContainer {
