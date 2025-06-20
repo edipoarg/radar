@@ -20,15 +20,15 @@ export default function DesktopNavbar() {
       <div className={styles.heading}>
         <NavLink to={Navlinks.queHacemos}>
           <TiInfoLarge size={iconsHeight} />
-          ¿Qué hacemos?
+          <span>¿Qué hacemos?</span>
         </NavLink>
         <NavLink to={Navlinks.investigaciones}>
           <LuFileSearch size={iconsHeight} />
-          Investigaciones
+          <span>Investigaciones</span>
         </NavLink>
         <NavLink to={Navlinks.novedades}>
           <HiOutlineBellAlert size={iconsHeight} />
-          Novedades
+          <span>Novedades</span>
         </NavLink>
         <NavLink
           title="Isotipo de Ra-dar"
@@ -36,7 +36,7 @@ export default function DesktopNavbar() {
           className={`${styles.isotypeImg}`}
         >
           <IsotipoRadar />
-          Red
+          <span>Red</span>
         </NavLink>
       </div>
       <ReactPopup

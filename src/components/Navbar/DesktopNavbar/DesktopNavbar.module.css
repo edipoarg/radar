@@ -71,6 +71,10 @@ a:focus>.floatingLogo {
   gap: 0.5rem;
 }
 
+.heading a span {
+  min-width: fit-content;
+}
+
 .heading a:hover,
 .heading a:focus {
   outline: none;
