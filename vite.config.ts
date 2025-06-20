@@ -7,7 +7,16 @@ import svgr from 'vite-plugin-svgr'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react(),svgr(), ViteImageOptimizer()],
+  plugins: [react(),svgr(), ViteImageOptimizer({
+    jpeg: {
+      quality: 50,
+      progressive: true
+    },
+    jpg: {
+      quality: 50,
+      progressive: true
+    }
+  })],
   base: "./",
   test: {
     globals: true,
