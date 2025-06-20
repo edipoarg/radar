@@ -13,7 +13,7 @@ export type Attack = {
   longDescription: string;
 };
 
-type Clasificacion = {
+export type Clasificacion = {
   byName: Record<string, number[]>;
 };
 
