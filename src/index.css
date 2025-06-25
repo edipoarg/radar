@@ -3,6 +3,21 @@
   src: url("./fonts/Ronnia/fonnts.com-Ronnia_Cond_Regular.otf") format("opentype");
 }
 
+@font-face {
+  font-family: "Adelle Mono Light";
+  src: url("./fonts/Adelle_Mono/Adelle_Mono_W03_Light.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Adelle Mono Regular";
+  src: url("./fonts/Adelle_Mono/Adelle_Mono_W03_Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Adelle Mono Semibold";
+  src: url("./fonts/Adelle_Mono/Adelle_Mono_W05_Semibold.otf") format("opentype");
+}
+
 :root {
   font-family: 'Ronnia Condensed Regular', sans-serif;
   line-height: 1.5;
