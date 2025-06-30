@@ -18,6 +18,11 @@
   src: url("./fonts/Adelle_Mono/Adelle_Mono_W05_Semibold.otf") format("opentype");
 }
 
+@font-face {
+  font-family: "Adelle Mono Extrabold";
+  src: url("./fonts/Adelle_Mono/Adelle_Mono_Flex_Extrabold.otf") format("opentype");
+}
+
 :root {
   font-family: 'Ronnia Condensed Regular', sans-serif;
   line-height: 1.5;
