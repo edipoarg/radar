@@ -51,6 +51,16 @@ export const patronDeCasos: DefinitionListWithCategories = {
             "Violencia sexual",
           ],
         },
+        "Intervenciones públicas": {
+          definitions: [
+            {
+              paragraphs: [
+                "Acciones en el espacio público que dan cuenta de una identidad de derecha radicalizada pero no se dirigen directamente contra símbolos, lugares o personas.",
+              ],
+            },
+          ],
+          members: ["Afiches", "Pintadas", "Manifestaciones"],
+        },
       },
     },
     "Por componente de violencia - Narrativas de odio:": {
