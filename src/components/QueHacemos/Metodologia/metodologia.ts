@@ -9,8 +9,8 @@ export const metodologia: DefinitionList = {
           paragraphs: [
             "La base de datos se construyó recuperando entre 2020 y 2023 aquellos ataques que fueron noticia en los principales medios de comunicación o en prensa independiente/activista.",
             "A partir del año 2023, el registro combina los reportes espontáneos por parte de personas que sufrieron ataques o allegadxs a esas personas.",
-            "Este registro se realiza a través de un formulario al que se accede a través del sitio web de RADAR.",
-            "El equipo de relevamiento de RADAR realiza un contacto con aquellas personas para constatar los hechos y luego pasan a formar parte de la base de datos.",
+            "Este registro se realiza a través de un formulario al que se accede a través del sitio web de RA-DAR.",
+            "El equipo de relevamiento de RA-DAR realiza un contacto con aquellas personas para constatar los hechos y luego pasan a formar parte de la base de datos.",
             "Por otro lado, también se recuperan casos que son sumados a la base de datos a través de revisión periódica de ataques que cuentan con cobertura periodística en medios oficiales e independientes.",
           ],
         },
@@ -44,12 +44,12 @@ export const metodologia: DefinitionList = {
       definitions: [
         {
           paragraphs: [
-            "Las perspectivas de RADAR acerca de las diversas problemáticas relativas al avance de las derechas radicalizadas y su pase del ataque virtual al campo físico informan y alimentan la base de datos.",
+            "Las perspectivas de RA-DAR acerca de las diversas problemáticas relativas al avance de las derechas radicalizadas y su pase del ataque virtual al campo físico informan y alimentan la base de datos.",
             "Estas discusiones son dinámicas, como lo son las problemáticas abordadas, pero se trata no de cambios repentinos sino del resultado de procesos y debates en el campo de la investigación política.",
             "Por lo tanto, la construcción de variables y categorías de análisis pretende ser un reflejo de ello y puede cambiar a lo largo del tiempo.",
             "Por ejemplo, la categorización de la narrativa de odio contra medios de comunicación no existía y se agregó frente a un contexto de ataques continuos contra los periodistas y trabajadores de prensa, promovidos por grupos de derecha radicalizada.",
             "Algo similar sucede en el caso de la clasificación de los hechos registrados por la base, que obedece a una tipología de casos establecida en función de ataques geolocalizables.",
-            "Las investigaciones llevadas adelante por el equipo de trabajo de RADAR desde el establecimiento de la base de datos en julio de 2023 han echado luz sobre nuevas formas en que estos hechos ocurren, lo cual finalmente ha dado lugar a un nuevo subsistema de categorización de los hechos.",
+            "Las investigaciones llevadas adelante por el equipo de trabajo de RA-DAR desde el establecimiento de la base de datos en julio de 2023 han echado luz sobre nuevas formas en que estos hechos ocurren, lo cual finalmente ha dado lugar a un nuevo subsistema de categorización de los hechos.",
             "Dicho subsistema tiene como núcleo una manera de distinguir problemáticas que es transversal a la tipología principal de hechos, y pretende contrarrestar algunas limitaciones identificadas en aquel anterior sistema de categorías sin tener que cambiarlas completamente, lo que hubiera producido un corte en la serie temporal.",
             "Por ejemplo, en un principio se buscaba darle visibilidad exclusivamente a la violencia que pasaba a las acciones directas físicas.",
             'Sin embargo, más adelante observamos el crecimiento de una modalidad de ataque que tiene su origen en lo virtual pero busca explícitamente promover acciones que traspasan la pantalla: el "doxeo".',

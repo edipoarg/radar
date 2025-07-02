@@ -71,7 +71,8 @@ export default function RedRadar() {
           <div>
             <h6 className={styles.conectaTextRadar}>
               <span className={styles.negritaTitulo}>
-                RADAR (Registro de Ataques de Derechas Argentinas Radicalizadas)
+                RA-DAR (Registro de Ataques de Derechas Argentinas
+                Radicalizadas)
               </span>
               es un proyecto periodístico colaborativo impulsado por el Equipo
               de Investigación Política (EdIPo) de la Revista Crisis con apoyo
