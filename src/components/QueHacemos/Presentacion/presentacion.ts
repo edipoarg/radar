@@ -36,9 +36,9 @@ export const presentacion: DefinitionList = {
       definitions: [
         {
           paragraphs: [
-            "El Registro de Ataques de Derechas Argentinas Radicalizadas surgió con el objetivo de construir una sistematización de ataques a nivel nacional y realizar un seguimiento colectivo y en tiempo real sobre el crecimiento de la violencia de ultraderecha. Con el lanzamiento de RADAR se puso a disposición un formulario en el que cualquiera puede reportar hechos de violencia radicalizada de los que es víctima o testigo.",
+            "El Registro de Ataques de Derechas Argentinas Radicalizadas surgió con el objetivo de construir una sistematización de ataques a nivel nacional y realizar un seguimiento colectivo y en tiempo real sobre el crecimiento de la violencia de ultraderecha. Con el lanzamiento de RA-DAR se puso a disposición un formulario en el que cualquiera puede reportar hechos de violencia radicalizada de los que es víctima o testigo.",
             "No se trata de un registro que ofrezca conclusiones terminantes; buscamos contribuir a una elaboración colectiva de diagnósticos y lecturas que nos permitan construir estrategias de intervención política como forma de autocuidado. Lejos de paralizarnos o de quedarnos en lo discursivo, debemos fortalecer las articulaciones que nos permitan leer en tiempo real y con claridad a los actores de esta ultraderecha que avanza a paso acelerado.",
-            "RADAR es sólo un modesto aporte en ese camino colectivo.",
+            "RA-DAR es sólo un modesto aporte en ese camino colectivo.",
           ],
         },
       ],
