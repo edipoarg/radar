@@ -3,56 +3,42 @@ import type { DefinitionList } from "../definition-list";
 export const presentacion: DefinitionList = {
   title: "Presentación",
   terms: {
-    "¿De dónde proviene la información?": {
+    "Punto de partida": {
       definitions: [
         {
           paragraphs: [
-            "La última década estuvo marcada por la expansión global de las ultraderechas. La ola de las derechas radicalizadas cobró cuerpo a partir de la llegada de Donald Trump a la presidencia de los Estados Unidos en 2017 y se confirmó con la victoria de Jair Bolsonaro a fines de 2018 en Brasil. El batacazo de Javier Milei en nuestro país quizás constituyó el inicio de una segunda oleada, esta vez más radical que la anterior.",
-            "Más allá del vertiginoso ascenso de los últimos años, la derecha radicalizada no surge por generación espontánea. Hunde sus raíces en una derecha “analógica” o 1.0 de larga data: reaccionarios, conservadores, activistas pro dictadura. En los años previos al triunfo electoral de La Libertad Avanza, en Argentina podríamos distinguir al menos cuatro etapas de la ultraderecha:",
+            "Más allá del ascenso vertiginoso que las derechas radicalizadas han tenido en los últimos años, su avance no es un fenómeno aislado ni espontáneo. Hay décadas de acumulación gestándose en diversos espacios. Estas oleadas reaccionarias tienen raíces profundas en una derecha analógica y tradicional de larga data, que supo sostener sus agendas y ganar peso en el debate público. Lo que hoy aparece como nuevo no es más que la actualización de una matriz ideológica histórica que se adaptó al lenguaje de las nuevas plataformas contemporáneas.",
+            "En Argentina, en años recientes, podríamos distinguir al menos cuatro etapas de violencia radicalizada que aparecieron en momentos claves y circunstancias diferentes, pero se fueron articulando y reconociendo como partícipes de un mismo movimiento histórico:",
+            "1) En 2018 se produjo, en oposición a la marea verde, una masiva movilización callejera acompañada de una máquina de guerra digital abiertamente reaccionaria, con fuerte énfasis antifeminista y antiprogresista. En ese entonces la vanguardia fue impulsada por sectores antiderechos, que movilizaron multitudes y desplegaron un eficaz lobby parlamentario;",
+            "2) Durante la pandemia, en rechazo a las medidas sanitarias obligatorias y el aislamiento social, surgieron grupos radicalizados denominados anti-vacunas y anti-cuarentena que pasaron del agite en redes a la acción directa. Diferentes grupos radicalizados encontraron espacio para (re) organizarse, difundir discursos de odio y hacer llamados a la violencia;",
+            "3) En noviembre de 2021, Milei se abandera como un referente de una nueva derecha (libertarianismo), logrando su primera expresión concreta en las urnas al obtener dos bancas legislativas, junto a su entonces compañera de fórmula, Victoria Villarruel. Se introduce la narrativa libertaria como una herramienta partidaria de disputa política;",
+            "4) La cuarta embestida estalló en nuestras pantallas el 1 de septiembre de 2022, cuando Fernando Sabag Montiel gatilló en la cara de la ex vicepresidenta de la Nación, Cristina Fernández de Kirchner, introduciendo un lenguaje bélico en el que el sistema político exhibió su pasmo e impotencia frente a una escalada de la violencia.",
+            "Lo que muchos querían leer como un hecho aislado reveló que, en realidad, un grupo relativamente marginal es capaz de marcar el ritmo de los acontecimientos políticos, y, al mismo tiempo, expuso nuestra dificultad para elaborar una respuesta a la altura del desafío.",
+            "Se puso sobre la mesa una pregunta urgente e ineludible por resolver: ¿de dónde viene la violencia política hoy?",
           ],
         },
       ],
       members: [],
     },
-    "Descripción general del modelo de la base de datos:": {
+    "Problemática identificada": {
       definitions: [
         {
           paragraphs: [
-            "Para su sistematización, la información está organizada en una base de datos que releva información de la siguiente manera:",
+            "Desde el Equipo de Investigación Política de la Revista Crisis (EdiPo), realizamos una revisión exhaustiva de medios de comunicación y redes sociales para identificar ataques que, desde 2020 —con el inicio de la pandemia—, tomaron estado público. Esta búsqueda nos permitió analizar en profundidad las dinámicas de radicalización de los últimos años en Argentina, identificando la circulación sostenida de determinadas narrativas de odio. También nos permitió confirmar que el punto de inflexión con el intento de magnicidio de CFK no era un hecho aislado, sino una situación sostenida pero invisibilizada.",
+            "Frente a este diagnóstico, en septiembre de 2023 lanzamos la plataforma RA-DAR (Registro de Ataques de Derechas Argentinas Radicalizadas), definiendo como tales a aquellos sectores de la derecha reaccionaria que recurren, de manera directa o indirecta, al uso de la violencia como método de intervención política para influir en la discusión pública e inhibir la participación de todo aquel que percibe como un otro.",
+            "Desde su lanzamiento, está herramienta nos permitió identificar fluctuaciones y picos de violencia política que encuentran su correlato en los discursos dominantes. Así fue en la campaña electoral del año 2023, donde registramos un aumento considerable de casos de hostigamiento e intimidación. Ya con la ultraderecha en el gobierno, también pudimos observar en tiempo real la proliferación de una modalidad de ataque novedosa: el doxeo. Esta vulneración de datos personales seguida usualmente de amenazas, hostigamiento y hasta violencia física creció al calor de la “batalla cultural” librada por distintos grupos, activistas y políticos afines al presidente. ",
           ],
         },
       ],
-      members: [
-        "Fecha del hecho",
-        "Fuente",
-        "Descripción del hecho",
-        "Víctimas",
-        "Tipo de ataque",
-        "Modalidad de ataque",
-        "Componente de la violencia",
-        "Coordenadas geográficas",
-        "Provincia",
-        "Agresor(es)",
-        "Uso de armas",
-        "Denuncia/Judicialización del ataque",
-      ],
+      members: [],
     },
-    "Cómo se construyen las variables y las categorías": {
+    "¿Qué es RA-DAR?": {
       definitions: [
         {
           paragraphs: [
-            "Las perspectivas de RADAR acerca de las diversas problemáticas relativas al avance de las derechas radicalizadas y su pase del ataque virtual al campo físico informan y alimentan la base de datos.",
-            "Estas discusiones son dinámicas, como lo son las problemáticas abordadas, pero se trata no de cambios repentinos sino del resultado de procesos y debates en el campo de la investigación política.",
-            "Por lo tanto, la construcción de variables y categorías de análisis pretende ser un reflejo de ello y puede cambiar a lo largo del tiempo.",
-            "Por ejemplo, la categorización de la narrativa de odio contra medios de comunicación no existía y se agregó frente a un contexto de ataques continuos contra los periodistas y trabajadores de prensa, promovidos por grupos de derecha radicalizada.",
-            "Algo similar sucede en el caso de la clasificación de los hechos registrados por la base, que obedece a una tipología de casos establecida en función de ataques geolocalizables.",
-            "Las investigaciones llevadas adelante por el equipo de trabajo de RADAR desde el establecimiento de la base de datos en julio de 2023 han echado luz sobre nuevas formas en que estos hechos ocurren, lo cual finalmente ha dado lugar a un nuevo subsistema de categorización de los hechos.",
-            "Dicho subsistema tiene como núcleo una manera de distinguir problemáticas que es transversal a la tipología principal de hechos, y pretende contrarrestar algunas limitaciones identificadas en aquel anterior sistema de categorías sin tener que cambiarlas completamente, lo que hubiera producido un corte en la serie temporal.",
-            "Por ejemplo, en un principio se buscaba darle visibilidad exclusivamente a la violencia que pasaba a las acciones directas físicas.",
-            'Sin embargo, más adelante observamos el crecimiento de una modalidad de ataque que tiene su origen en lo virtual pero busca explícitamente promover acciones que traspasan la pantalla: el "doxeo".',
-            "Esta práctica, ya desplegada ampliamente en otras partes del mundo, desembarcó con fuerza en las redes sociales de Argentina (específicamente en Twitter, ahora X), siendo ejecutada mayormente por militantes de ultraderecha para vulnerar, desacreditar y silenciar a distintas personas, marcadas como objetivo por su identidad política o partidaria.",
-            "A partir de la irrupción de los doxeos en el ecosistema de violencia política decidimos ampliar nuestro registro para poder abordarlos en nuestro análisis.",
-            "Actualmente, hemos desarrollado una investigación sobre el tema. A su vez, estamos trabajando para próximamente compartir en nuestra plataforma información sobre prevención y primeros auxilios ante este tipo de ataques.",
+            "El Registro de Ataques de Derechas Argentinas Radicalizadas surgió con el objetivo de construir una sistematización de ataques a nivel nacional y realizar un seguimiento colectivo y en tiempo real sobre el crecimiento de la violencia de ultraderecha. Con el lanzamiento de RADAR se puso a disposición un formulario en el que cualquiera puede reportar hechos de violencia radicalizada de los que es víctima o testigo.",
+            "No se trata de un registro que ofrezca conclusiones terminantes; buscamos contribuir a una elaboración colectiva de diagnósticos y lecturas que nos permitan construir estrategias de intervención política como forma de autocuidado. Lejos de paralizarnos o de quedarnos en lo discursivo, debemos fortalecer las articulaciones que nos permitan leer en tiempo real y con claridad a los actores de esta ultraderecha que avanza a paso acelerado.",
+            "RADAR es sólo un modesto aporte en ese camino colectivo.",
           ],
         },
       ],

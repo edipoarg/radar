@@ -30,7 +30,7 @@
 .term {
     border: solid 1px #297fef;
     box-shadow: inset -5px -5px 10px 0px rgba(0, 0, 0, 0.2),
-    inset 5px 5px 20px 0px rgba(130, 173, 237, 0.1);
+        inset 5px 5px 20px 0px rgba(130, 173, 237, 0.1);
     border-radius: 25px;
     margin-bottom: 1rem;
     height: fit-content;
@@ -68,6 +68,10 @@
     color: #d7dee7;
 }
 
+.description p {
+    margin-top: 1rem;
+}
+
 .list {
     display: flex;
     flex-wrap: wrap;
@@ -95,7 +99,7 @@
     height: 3px;
     background: linear-gradient(20deg, #0a0d1500, #297fef);
     border-radius: 360px;
-  }
+}
 
 @media (min-width: 1200px) {
     .section {
@@ -136,5 +140,5 @@
         height: 5px;
         background: linear-gradient(20deg, #0a0d1500, #297fef);
         border-radius: 360px;
-      }
+    }
 }
