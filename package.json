@@ -50,6 +50,6 @@
     "typescript-plugin-css-modules": "^5.0.2",
     "vite": "^5",
     "vite-plugin-image-optimizer": "^1.1.9",
-    "vitest": "^1.2.1"
+    "vitest": "^1.6.1"
   }
 }
