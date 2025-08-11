@@ -1,0 +1,170 @@
+.Publicaciones {
+    display: flex;
+    flex-direction: row;
+    color: #d7dee7;
+
+}
+
+.desktopOnly {
+    display: none;
+}
+
+@media (min-width: 1200px) {
+
+    .Publicaciones {
+        position: relative;
+    }
+
+    .Publicaciones>nav {
+        width: 250px;
+        flex-shrink: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        padding-right: 10px;
+        padding-left: 5px;
+        position: sticky;
+        top: 0;
+        height: fit-content;
+    }
+
+    .Publicaciones nav ul {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+
+    .Publicaciones nav ul li {
+        list-style: none;
+        width: 100%;
+    }
+
+    .Publicaciones>nav>h1 {
+        font-size: 1.5em;
+        align-self: flex-start;
+    }
+
+    .desktopOnly {
+        display: unset;
+    }
+
+    .navButton {
+        display: flex;
+        height: 50px;
+        width: 100%;
+        border-radius: 9px;
+        background: none;
+        border: none;
+        box-shadow:
+            -5px -5px 25px 10px rgba(0, 0, 0, 0.5),
+            5px 5px 20px 0px rgba(0, 0, 0, 0.4),
+            -5px -5px 10px rgba(103, 142, 243, 0.2),
+            inset 5px 5px 30px rgba(39, 74, 164, 0.495);
+        overflow: hidden;
+        outline: none;
+        animation: 2s infinite alternate ripple-background;
+    }
+
+    .navButtonLight {
+        width: 8px;
+        background-color: #00000000;
+        box-shadow: 0 0 20px 8px rgba(41, 127, 239, 0);
+        transition: background-color 0.5s, box-shadow 0.5s;
+    }
+
+    .navButtonContent {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        padding: 0 8px 0 8px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        color: #d7dee7;
+        transition: color 0.3s;
+    }
+
+    .navButtonContent h4 {
+        padding-left: 0;
+        margin-left: 0;
+        text-align: left;
+    }
+
+    .navButton:hover .navButtonLight,
+    .navButton:focus .navButtonLight {
+        background-color: #297fef;
+        box-shadow: 0 0 20px 8px rgba(41, 127, 239, 0.325);
+
+    }
+
+    .listaDePublicaciones {
+        display: flex;
+        flex-direction: column;
+        gap: 100px;
+    }
+
+    .publicacion {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid #297fef;
+        box-shadow: inset -5px -5px 10px 0px rgba(0, 0, 0, 0.2), inset 5px 5px 20px 0px rgba(130, 173, 237, 0.1);
+        border-radius: 25px;
+        background-color: #151616b6;
+        font-size: 1.1rem;
+        padding: 2rem 4rem;
+        color: #d7dee7;
+        gap: 1rem;
+    }
+
+    .publicacion p {
+        font-family: "Ronnia Condensed Light";
+
+    }
+
+    .publicacion>h3 {
+        font-size: 0.9em;
+        color: #888888;
+    }
+
+    .publicacion hr {
+        width: 70%;
+        align-self: center;
+    }
+
+    .publicacion h1 {
+        font-size: 1.5em;
+    }
+
+    .publicacion h2 {
+        font-size: 1.4em;
+    }
+
+    .publicacion strong {
+        font-family: "Ronnia Condensed Regular";
+    }
+
+    .cuerpoDePublicacion {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
+
+@keyframes ripple-background {
+    from {
+        box-shadow:
+            -5px -5px 25px 10px rgba(0, 0, 0, 0.5),
+            5px 5px 20px 0px rgba(0, 0, 0, 0.4),
+            -5px -5px 10px rgba(103, 142, 243, 0.2),
+            inset 5px 5px 30px rgba(34, 66, 146, 0.495);
+    }
+
+    to {
+        box-shadow:
+            -9px -9px 35px 15px rgba(0, 0, 0, 0.4),
+            10px 4px 15px 1px rgba(0, 0, 0, 0.3),
+            -5px -5px 10px rgba(100, 144, 240, 0.3),
+            inset 5px 5px 30px rgba(35, 90, 170, 0.6);
+    }
+}

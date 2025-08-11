@@ -4,6 +4,12 @@
 }
 
 @font-face {
+  font-family: "Ronnia Condensed Light";
+  src: url("./fonts/Ronnia/fonnts.com-Ronnia_Cond_Light.otf") format("opentype");
+}
+
+
+@font-face {
   font-family: "Adelle Mono Light";
   src: url("./fonts/Adelle_Mono/Adelle_Mono_W03_Light.otf") format("opentype");
 }
@@ -55,10 +61,12 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+
 }
 
 html {
   height: 100%;
+  scroll-behavior: smooth;
 }
 
 body {
