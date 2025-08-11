@@ -2,7 +2,7 @@ import { useState } from "react";
 import MapGL, { NavigationControl } from "react-map-gl/maplibre";
 import maplibregl from "maplibre-gl";
 import type { Attack } from "../../../../common/json-shape";
-import { ProvSource, BsAsSource, RutasSource } from "../../Sources/Sources";
+import { ProvSource, BsAsSource, RutasSource } from "./Sources/Sources";
 import { Markers } from "../Markers/Markers";
 import "maplibre-gl/dist/maplibre-gl.css";
 import type { MapStyle } from "react-map-gl/maplibre";
