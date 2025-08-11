@@ -1,12 +1,16 @@
 import styles from "./Novedades.module.css";
 import { HiOutlineBellAlert } from "react-icons/hi2";
 import { LuMailPlus } from "react-icons/lu";
+import Publicaciones from "./Publicaciones/Publicaciones";
 
 const newsletterUrl = import.meta.env.VITE_NEWSLETTER_SUBSCRIPTION_URL;
 
 export default function Novedades() {
   return (
-    <section className={styles.section}>
+    <section className={styles.Novedades}>
+      <div className={styles.deco}></div>
+      <Publicaciones />
+
       <div className={styles.header}>
         <HiOutlineBellAlert className={styles.headerIcon} />
         <h2 className={styles.title}>Novedades</h2>
@@ -32,8 +36,6 @@ export default function Novedades() {
           </a>
         </section>
       </div>
-
-      <div className={styles.deco}></div>
     </section>
   );
 }

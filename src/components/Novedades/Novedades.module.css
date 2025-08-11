@@ -1,12 +1,15 @@
-.section {
+.Novedades {
   background: linear-gradient(20deg, #0a0d15, #292f36);
   padding: 1rem 1rem 5rem 1rem;
   min-height: 100vh;
   min-width: 100vw;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 .header {
-  padding: 1rem 2rem 2rem;
+  padding: 1rem 2rem 0rem 0rem;
   color: #d7dee7;
   display: flex;
   align-items: end;
@@ -106,8 +109,8 @@
 }
 
 @media (min-width: 1200px) {
-  .section {
-    padding-top: 15vh;
+  .Novedades {
+    padding-top: 8rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -117,7 +120,7 @@
   .header {
     max-width: 800px;
     width: 100%;
-    margin: 0 auto 2rem auto;
+    margin: 0 auto 0 auto;
   }
 
   .content {
