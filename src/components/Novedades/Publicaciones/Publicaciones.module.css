@@ -4,6 +4,14 @@
     color: #d7dee7;
 }
 
+.Publicaciones a {
+    color: var(--radar-sky-blue);
+}
+
+.Publicaciones a:visited {
+    color: var(--radar-blue);
+}
+
 .desktopOnly {
     display: none;
 }
