@@ -62,12 +62,12 @@ export default function Publicaciones() {
         <h1>Nuestras publicaciones</h1>
         <ul>
           {publicaciones.map((publicacion) => (
-            // I hate doing this but HashRouter does not let me use a simple anchor by ID
             <li key={publicacion.id}>
               <button
                 className={styles.navButton}
                 type="button"
                 onClick={() => {
+                  // I hate doing this but HashRouter does not let me use a simple anchor by ID
                   document.getElementById(publicacion.id)?.scrollIntoView();
                 }}
                 title={publicacion.titulo}
@@ -86,8 +86,7 @@ export default function Publicaciones() {
           ))}
         </ul>
       </nav>
-
-      <article>
+      <article className={styles.desktopOnly}>
         <section className={styles.listaDePublicaciones}>
           {publicaciones.map((publicacion) => (
             <article
@@ -102,6 +101,28 @@ export default function Publicaciones() {
             </article>
           ))}
         </section>
+      </article>
+
+      <article
+        className={`${styles.mobileOnly} ${styles.listaDePublicaciones}`}
+      >
+        {publicaciones.map((publicacion) => (
+          <details
+            className={styles.publicacionDesplegable}
+            key={publicacion.id}
+          >
+            <summary>
+              <div className={styles.publicacionDesplegableLight}></div>
+              {publicacion.titulo}
+            </summary>
+            <article className={styles.publicacion} id={publicacion.id}>
+              <div className={styles.publicacionDesplegableLight}></div>
+              <div className={styles.cuerpoDePublicacion}>
+                <ReactMarkdown>{publicacion.texto}</ReactMarkdown>
+              </div>
+            </article>
+          </details>
+        ))}
       </article>
     </section>
   );
