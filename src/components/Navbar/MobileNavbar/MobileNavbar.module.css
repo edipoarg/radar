@@ -1,5 +1,5 @@
 .heading {
-  position: fixed;
+  position: absolute;
   bottom: 0.5vh;
   left: 1vw;
   width: 98vw;
