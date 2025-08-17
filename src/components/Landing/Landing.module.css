@@ -2,13 +2,16 @@
   background-color: white;
   text-align: center;
   width: 100vw;
-  position: relative;
-  overflow: hidden; /* Asegura que todo se quede dentro del contenedor */
-  background: linear-gradient(20deg, rgba(10, 13, 21, 0.5), rgba(41, 47, 54, 0.5)); /* Fondo opaco */
+  height: 100vh;
+  overflow: hidden;
+  /* Asegura que todo se quede dentro del contenedor */
+  background: linear-gradient(20deg, rgba(10, 13, 21, 0.5), rgba(41, 47, 54, 0.5));
+  /* Fondo opaco */
 }
 
 :global(.maplibregl-map) {
-  opacity: 0.8; /* Los markers no tendrán opacidad afectada */
+  opacity: 0.8;
+  /* Los markers no tendrán opacidad afectada */
 }
 
 

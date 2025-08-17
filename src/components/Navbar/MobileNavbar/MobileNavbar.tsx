@@ -16,7 +16,7 @@ const iconsHeight = "9vh 1vh";
 
 export default function MobileNavbar({ heightInVh }: Props) {
   return (
-    <div className={styles.heading} style={{ height: `${heightInVh}vh` }}>
+    <nav className={styles.heading} style={{ height: `${heightInVh}vh` }}>
       <NavLink
         to={Navlinks.home}
         title="Logotipo de Ra-dar"
@@ -45,6 +45,6 @@ export default function MobileNavbar({ heightInVh }: Props) {
           <IsotipoRadar />
         </NavLink>
       </div>
-    </div>
+    </nav>
   );
 }
