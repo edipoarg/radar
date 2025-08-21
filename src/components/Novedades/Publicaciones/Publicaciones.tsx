@@ -59,7 +59,7 @@ export default function Publicaciones() {
   return (
     <section className={styles.Publicaciones}>
       <nav className={styles.desktopOnly}>
-        <h1>Nuestras publicaciones</h1>
+        <h1>Nuestras novedades</h1>
         <ul>
           {publicaciones.map((publicacion) => (
             <li key={publicacion.id}>
