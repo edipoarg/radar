@@ -1,6 +1,6 @@
 .heading {
-  position: absolute;
-  bottom: 0.5vh;
+  position: fixed;
+  top: calc(100% - 78px);
   left: 1vw;
   width: 98vw;
   min-height: 2.5rem;

@@ -3,8 +3,7 @@
     flex-direction: row;
     color: #d7dee7;
     max-width: 100vw;
-    width: 100vw;
-    padding-right: 1rem;
+    width: 100%;
 }
 
 .Publicaciones a {
@@ -80,6 +79,7 @@
 
     .Publicaciones {
         position: relative;
+        padding-right: 1rem;
     }
 
     .Publicaciones>nav {
