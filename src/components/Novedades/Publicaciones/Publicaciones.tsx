@@ -1,9 +1,6 @@
-import informe1 from "./Informe-1.md?raw";
-import informe2 from "./Informe-2.md?raw";
 import newsletter1 from "./Newsletter-1.md?raw";
 import newsletter2 from "./Newsletter-2.md?raw";
 import newsletter3 from "./Newsletter-3.md?raw";
-import newsletter4 from "./Newsletter-4.md?raw";
 import ReactMarkdown from "react-markdown";
 import styles from "./Publicaciones.module.css";
 
@@ -17,18 +14,6 @@ type Publicacion = {
 type Publicaciones = Publicacion[];
 
 const publicaciones: Publicaciones = [
-  {
-    fecha: "2023-12-01",
-    id: "Informe 1 - 2023",
-    texto: informe1,
-    titulo: "Informe 1 - 2023",
-  },
-  {
-    fecha: "2024-07-01",
-    id: "Informe 2 - 2024",
-    texto: informe2,
-    titulo: "Informe 2 - 2024",
-  },
   {
     fecha: "2023-11-01",
     id: "Newsletter RADAR Nro. 1- Noviembre 2023",
@@ -46,12 +31,6 @@ const publicaciones: Publicaciones = [
     id: "Newsletter RADAR Nro. 3- Marzo 2024",
     texto: newsletter3,
     titulo: "Newsletter RADAR Nro. 3- Marzo 2024",
-  },
-  {
-    fecha: "2025-08-04",
-    id: "¡Alerta RADAR! | Boletín N° 1/2025",
-    texto: newsletter4,
-    titulo: "¡Alerta RADAR! | Boletín N° 1/2025",
   },
 ];
 
