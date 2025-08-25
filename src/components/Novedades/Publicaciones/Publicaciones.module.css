@@ -57,8 +57,16 @@
 }
 
 .mobileOnly .publicacionDesplegable .publicacion .cuerpoDePublicacion {
+    display: flex;
+    flex-direction: column;
     padding-left: 28px;
     padding-right: 8px;
+    gap: 1rem;
+    padding-bottom: 1rem;
+}
+
+.cuerpoDePublicacion h2 {
+    font-size: large;
 }
 
 .publicacion .publicacionDesplegableLight {
