@@ -75,11 +75,7 @@ export default function Publicaciones() {
                 <div className={styles.navButtonLight}></div>
                 <div className={styles.navButtonContent}>
                   <h4>{publicacion.titulo}</h4>
-                  <p>
-                    {new Date(Date.parse(publicacion.fecha)).toLocaleDateString(
-                      "es-AR",
-                    )}
-                  </p>
+                  <p>{publicacion.fecha}</p>
                 </div>
               </button>
             </li>
