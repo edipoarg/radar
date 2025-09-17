@@ -59,7 +59,7 @@ const publicaciones: Publicaciones = [
     id: "Newsletter RADAR Nro. 1 - Noviembre 2023",
     texto: newsletter1,
     titulo: "Newsletter RADAR Nro. 1 - Noviembre 2023",
-  },  
+  },
 ];
 
 export default function Publicaciones() {
