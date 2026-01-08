@@ -5,6 +5,7 @@ import newsletter4 from "./Newsletter-4.md?raw";
 import newsletter5 from "./Newsletter-5.md?raw";
 import newsletter6 from "./Newsletter-6.md?raw";
 import alerta1 from "./alerta-radar-1.md?raw";
+import alerta2 from "./alerta-radar-2.md?raw";
 import ReactMarkdown from "react-markdown";
 import styles from "./Publicaciones.module.css";
 
@@ -18,6 +19,12 @@ type Publicacion = {
 type Publicaciones = Publicacion[];
 
 const publicaciones: Publicaciones = [
+  {
+    fecha: "12/2025",
+    id: "Alerta RADAR N2 (Diciembre de 2025)",
+    texto: alerta2,
+    titulo: "La internacional ultraderechista y los agentes del caos",
+  },
   {
     fecha: "09/2025",
     id: "Newsletter RADAR Nro. 3 - Septiembre 2025",
