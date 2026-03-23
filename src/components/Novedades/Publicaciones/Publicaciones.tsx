@@ -20,7 +20,7 @@ type Publicacion = {
 type Publicaciones = Publicacion[];
 
 const publicaciones: Publicaciones = [
-    {
+  {
     fecha: "03/2025",
     id: "Newsletter RADAR (Marzo de 2026)",
     texto: newsletter7,
