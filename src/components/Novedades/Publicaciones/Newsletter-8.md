@@ -1,5 +1,5 @@
 
-# El gesto que paraliza: Amenazas, comunidades digitales y el fracaso del punitivismo como única respuesta a la violencia escolar
+## El gesto que paraliza: Amenazas, comunidades digitales y el fracaso del punitivismo como única respuesta a la violencia escolar
 
 Entre el lunes 13 y el viernes 17 de abril, Argentina vivió una semana movilizante. Tras una oleada de amenazas de tiroteos para los días 15, 16, 17 y 20 de abril, **no se registró ningún incidente**. Tampoco hubo rastro de ningún plan coordinado que pudiera desbaratarse a tiempo. Pero sí hubo un clima de pánico generalizado que terminó con escuelas cerradas, madres de familia retirando a sus hijos en medio de la jornada, docentes abrumados y autoridades anunciando medidas de seguridad en conferencias de prensa.
 
@@ -9,7 +9,7 @@ La explicación que circuló con más velocidad fue también la más simple: un 
 
 Aquí proponemos tres entradas para complejizar lo que ocurrió: primero, entender la dinámica específica de las amenazas masivas en las escuelas; segundo, distinguirla —sin desconectarla— del fenómeno de radicalización organizada que opera en comunidades digitales como la True Crime Community (TCC); y tercero, evaluar las respuestas institucionales que el Estado desplegó, con sus lógicas, sus límites y sus consecuencias no deseadas.
 
-## La viralización del gesto
+### La viralización del gesto
 
 Descartar el "reto viral" no significa descartar el efecto de contagio. Significa entenderlo con más precisión. Lo que se viralizó durante esa semana no fue una consigna, sino un resultado: la comprobación, repetida en tiempo real, de que una amenaza escrita alcanzaba para suspender clases, activar protocolos, movilizar policías y saturar los medios. *Cada cobertura periodística de una nueva amenaza era, simultáneamente, una demostración de su eficacia.*
 
@@ -17,7 +17,7 @@ Bajo esta lógica, los estudiantes no reproducían un acto de violencia coordina
 
 Esto no equivale a banalizar las amenazas ni a leerlas como simples bromas de adolescentes aburridos. La línea entre el gesto performático y el acto violento real no siempre es nítida, y su banalización puede terminar normalizando conductas progresivamente más graves. Pero confundir ambos planos —tratar cada amenaza como si fuera el anuncio de un ataque inminente— tiene sus propios costos: alimenta el pánico, valida el gesto y, paradójicamente, invita a su repetición.
 
-## Lo que sí existe: la comunidad TCC
+### Lo que sí existe: la comunidad TCC
 
 Ahora bien, que la escalada de amenazas de la segunda semana de abril no haya sido obra de una comunidad organizada no significa que ese tipo de redes no exista. **Existe, y opera en Argentina desde antes de que el caso San Cristóbal pusiera el tema en los titulares.**
 
@@ -27,7 +27,7 @@ Lo que hace a esta comunidad especialmente difícil de detectar y de intervenir 
 
 Aquí es donde la distinción entre consumo y pertenencia se vuelve política y no solo analítica. Muchos adolescentes acceden a contenidos de la comunidad TCC por curiosidad, por sobreexposición mediática, por el mismo mecanismo por el que cualquier persona consume true crime en una plataforma de streaming. La radicalización es un proceso continuo, no un estado binario, y supone una inmersión progresiva en subculturas cerradas donde la violencia deja de ser una posibilidad excepcional y se convierte en el lenguaje de la afiliación. Tratar cada amenaza escolar como evidencia de pertenencia a estas redes es una simplificación que oscurece el problema. Ignorar que esas redes existen y reclutan, también.
 
-## La respuesta institucional: punición como único idioma
+### La respuesta institucional: punición como único idioma
 
 Frente a este panorama complejo, la respuesta del Estado fue, en términos generales, la más predecible: más seguridad, más control, más castigo. Un discurso siempre disponible cuando el tiempo corre y los focos se encienden.
 
@@ -45,7 +45,7 @@ Esto no es un argumento contra tomar medidas. Es un argumento contra tomar solo 
 
 Lo que está ausente en casi todas las respuestas provinciales relevadas es cualquier aproximación a las condiciones que hacen posible este fenómeno. Por ejemplo, no aparece en ningún decreto la pregunta por la salud mental de los y las adolescentes, ni por la sobreexposición a las plataformas digitales desde edades cada vez más tempranas, ni por la fragmentación social que pesa sobre las nuevas generaciones y que las instituciones educativas absorben sin recursos para procesarla. Lo mediático es lo que marca la agenda, y lo mediático requiere gestos rápidos, visibles, que transmitan control. *El abordaje integral, por definición, no tiene esa velocidad ni esa legibilidad.* Y mientras eso no cambie, el castigo seguirá siendo la única salida disponible.
 
-## Lo que queda pendiente
+### Lo que queda pendiente
 
 Al cierre de esta edición, ninguna de las amenazas masivas del 13 al 17 de abril se concretó en un ataque. Eso es un alivio, pero no disuelve el problema. Es la suspensión momentánea de una situación que tiene raíces más profundas que cualquier "reto viral" y que no se resuelve con más policías en las puertas de los colegios.
 
