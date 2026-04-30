@@ -5,6 +5,7 @@ import newsletter4 from "./Newsletter-4.md?raw";
 import newsletter5 from "./Newsletter-5.md?raw";
 import newsletter6 from "./Newsletter-6.md?raw";
 import newsletter7 from "./Newsletter-7.md?raw";
+import newsletter8 from "./Newsletter-8.md?raw";
 import alerta1 from "./alerta-radar-1.md?raw";
 import alerta2 from "./alerta-radar-2.md?raw";
 import ReactMarkdown from "react-markdown";
