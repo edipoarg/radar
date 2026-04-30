@@ -21,7 +21,13 @@ type Publicaciones = Publicacion[];
 
 const publicaciones: Publicaciones = [
   {
-    fecha: "03/2025",
+    fecha: "04/2026",
+    id: "Newsletter RADAR (Abril de 2026)",
+    texto: newsletter8,
+    titulo: "Newsletter RADAR (Abril de 2026)",
+  },
+  {
+    fecha: "03/2026",
     id: "Newsletter RADAR (Marzo de 2026)",
     texto: newsletter7,
     titulo: "Newsletter RADAR (Marzo de 2026)",
