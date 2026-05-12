@@ -8,6 +8,7 @@ import newsletter7 from "./Newsletter-7.md?raw";
 import newsletter8 from "./Newsletter-8.md?raw";
 import alerta1 from "./alerta-radar-1.md?raw";
 import alerta2 from "./alerta-radar-2.md?raw";
+import alerta3 from "./alerta-radar-3.md?raw";
 import ReactMarkdown from "react-markdown";
 import styles from "./Publicaciones.module.css";
 
@@ -21,6 +22,12 @@ type Publicacion = {
 type Publicaciones = Publicacion[];
 
 const publicaciones: Publicaciones = [
+  {
+    fecha: "05/2026",
+    id: "Alerta RADAR N3 (Mayo de 2026)",
+    texto: alerta3,
+    titulo: "¡Alerta RADAR! | Boletín N° 3/2026",
+  },
   {
     fecha: "04/2026",
     id: "Newsletter RADAR (Abril de 2026)",
