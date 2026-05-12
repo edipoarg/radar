@@ -1,5 +1,3 @@
-
-####  ¡Alerta RADAR\! | Boletín N° 03/2026
 # La avanzada libertaria en las universidades públicas
 
 Aunque el gobierno nacional sea hoy un claro detractor de las universidades públicas, la militancia libertaria se despliega a su interior con la *batalla cultural* como bandera. Nos consta que, solo en el AMBA, hay más de veinte unidades académicas con presencia de organizaciones universitarias libertarias, con un despliegue territorial coordinado. Su consigna es "terminar con los gerentes del adoctrinamiento" y “vencer el avance del marxismo cultural” en las universidades, lo que sirve de pretexto para transformar las aulas en escenarios de alta tensión y hostilidad.
