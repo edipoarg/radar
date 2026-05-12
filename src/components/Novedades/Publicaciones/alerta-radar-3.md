@@ -1,12 +1,12 @@
 
-**¡Alerta RADAR\! | Boletín N° 03/2026** 
-**La avanzada libertaria en las universidades públicas**
+####  ¡Alerta RADAR\! | Boletín N° 03/2026
+# La avanzada libertaria en las universidades públicas
 
 Aunque el gobierno nacional sea hoy un claro detractor de las universidades públicas, la militancia libertaria se despliega a su interior con la *batalla cultural* como bandera. Nos consta que, solo en el AMBA, hay más de veinte unidades académicas con presencia de organizaciones universitarias libertarias, con un despliegue territorial coordinado. Su consigna es "terminar con los gerentes del adoctrinamiento" y “vencer el avance del marxismo cultural” en las universidades, lo que sirve de pretexto para transformar las aulas en escenarios de alta tensión y hostilidad.
 
 La disputa universitaria se inscribe en una lógica de guerra: de un lado los aliados del gobierno libertario y, del otro, *enemigos* a neutralizar. Así, tanto docentes que reclaman salarios dignos como agrupaciones que se oponen a la motosierra de Milei se convierten en objetivos a eliminar para “liberar” a las nuevas generaciones universitarias.
 
-Estas narrativas no solo son enunciativas: se materializan en acciones directas que generan violencia en las universidades. Y es allí donde reside el verdadero peligro. Que la militancia libertaria, como tantas otras, se organice para disputar la política universitaria, no es un problema en sí mismo; el verdadero conflicto aparece cuando sus estrategias de protagonismo se comprende que construyen bajo lógicas que legitiman la violencia política.
+Estas narrativas no solo son enunciativas: se materializan en acciones directas que generan violencia en las universidades. Y es allí donde reside el verdadero peligro. Que la militancia libertaria, como tantas otras, se organice para disputar la política universitaria, no es un problema en sí mismo; el verdadero conflicto aparece cuando sus estrategias de protagonismo se construyen bajo lógicas que legitiman la violencia política.
 
 **1\.**
 
@@ -16,11 +16,11 @@ En la Facultad de Ciencia Política de la UNR, militantes de la agrupación “U
 
 Más que organizaciones estudiantiles, estos grupos funcionan como fuerzas de choque: su objetivo no es la disputa política institucional, sino la provocación de una reacción que paralice la organización estudiantil y docente, o escandalice lo suficiente como para legitimar la asfixia presupuestaria. Con ese objetivo, se construye una dinámica de *victimización estratégica*. Desde RADAR, identificamos el siguiente patrón sistemático:
 
-1. **Provocación** y escalada de la tensión.  
-2. **Registro** de la reacción de quien(es) confronta(n).  
-3. **Viralización** del conflicto en las redes sociales, bajo un marco descontextualizado.  
-4. **Identificación** de quienes responden a la provocación.  
-5. **Denuncia** **pública y persecución** de opositores por “antidemocráticos”.
+    1. Provocación y escalada de la tensión.  
+    2. Registro de la reacción de quien(es) confronta(n).  
+    3. Viralización del conflicto en las redes sociales, bajo un marco descontextualizado.  
+    4. Identificación de quienes responden a la provocación.  
+    5. Denuncia pública y persecución de opositores por “antidemocráticos”.
 
 **2\.**
 
