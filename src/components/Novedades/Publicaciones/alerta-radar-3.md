@@ -1,4 +1,6 @@
-**¡Alerta RADAR\! | Boletín N° 3/2026**
+
+**¡Alerta RADAR\! | Boletín N° 03/2026** 
+**La avanzada libertaria en las universidades públicas**
 
 Aunque el gobierno nacional sea hoy un claro detractor de las universidades públicas, la militancia libertaria se despliega a su interior con la *batalla cultural* como bandera. Nos consta que, solo en el AMBA, hay más de veinte unidades académicas con presencia de organizaciones universitarias libertarias, con un despliegue territorial coordinado. Su consigna es "terminar con los gerentes del adoctrinamiento" y “vencer el avance del marxismo cultural” en las universidades, lo que sirve de pretexto para transformar las aulas en escenarios de alta tensión y hostilidad.
 
@@ -6,7 +8,7 @@ La disputa universitaria se inscribe en una lógica de guerra: de un lado los al
 
 Estas narrativas no solo son enunciativas: se materializan en acciones directas que generan violencia en las universidades. Y es allí donde reside el verdadero peligro. Que la militancia libertaria, como tantas otras, se organice para disputar la política universitaria, no es un problema en sí mismo; el verdadero conflicto aparece cuando sus estrategias de protagonismo se comprende que construyen bajo lógicas que legitiman la violencia política.
 
-\---------------------------------------------------------------------------------------------------------------------------
+**1\.**
 
 Desde marzo de 2026, registramos una escalada de agresiones y amenazas por parte de militantes libertarios que no son hechos aislados, sino la punta de lanza de una estrategia más amplia y coordinada, que tiene como objetivo disciplinar a la comunidad universitaria en el marco de un desfinanciamiento atroz.
 
@@ -20,7 +22,7 @@ Más que organizaciones estudiantiles, estos grupos funcionan como fuerzas de ch
 4. **Identificación** de quienes responden a la provocación.  
 5. **Denuncia** **pública y persecución** de opositores por “antidemocráticos”.
 
-\---------------------------------------------------------------------------------------------------------------------------
+**2\.**
 
 En las tres últimas etapas —*viralización*, *identificación* y *denuncia*— sobresale la actuación de Alejandro Ciro Álvarez, principal funcionario nacional del área. El actual Subsecretario de Políticas Universitarias amplifica la provocación de los militantes libertarios y, al hacerlo desde su cargo, los respalda institucionalmente y legitima públicamente, abonando cualquier relato que permita sancionar a docentes, estudiantes o autoridades que no responden ideológicamente con su política universitaria. En ese esquema, Álvarez actúa como un operador político de poca monta, una suerte de vocero para el desprestigio del área que debería administrar. 
 
@@ -28,7 +30,7 @@ Su metodología combina la intervención directa en universidades donde se produ
 
 Tras una supuesta denuncia de agresiones y amenazas a estudiantes libertarios en la Universidad de Lanús, Álvarez [anunció](https://x.com/AleCiroAlvarez/status/2037298808355266941?s=20) la desvinculación de un docente universitario acusándolo de militante kirchnerista y [amenazó](https://x.com/AleCiroAlvarez/status/2037356908361760965?s=20) que tenía los datos personales de todos los docentes universitarios. Luego, tras la protesta de la Facultad de Ciencias Sociales contra legisladores de la Libertad Avanza, [denunció](https://x.com/AleCiroAlvarez/status/2041606631536910386?s=20) públicamente a los estudiantes y los acusó de violentos. Al mismo tiempo, [aprovechó](https://x.com/AleCiroAlvarez/status/2041702046911304018?s=20) para compartir la necesidad de una reforma legal que permita a las fuerzas del orden ingresar a las universidades, con el fin de impedir este tipo de “incidentes”. Estrategias de vigilancia que buscan condicionar el financiamiento universitario a la sumisión política, anulando cualquier forma de autonomía. 
 
-\---------------------------------------------------------------------------------------------------------------------------
+**3\.**
 
 Luciano Games ([@Luchoofg](https://x.com/Luchoofg)), exmilitante de Universitarios de La Libertad Avanza —brazo universitario de “Las Fuerzas del Cielo” que responde a los diputados libertarios Agustín Romo y Santiago Santurio, junto al propio Álvarez— [denunció](https://x.com/Luchoofg/status/2046049521457623076?s=20) al referente de la juventud libertaria. Se trata de Isidro Bonicatto, vinculado estrechamente a la Fundación Faro de Laje, quien fue acusado de recibir pagos no registrados como armador universitario. Mientras un [ayudante de cátedra](https://aduba.org.ar/wp-content/uploads/2026/04/Instructivo-de-Liquidacion-Salarial-Doc-y-No-Doc-Abril-2026.pdf) cobra apenas 200.000 pesos (y a veces ni eso), un militante libertario cobraría el doble. La [acusación](https://www.causajudicial.com/referente-libertario-de-la-plata-senalado-por-maltrato-psicologico-y-amenazas-a-militantes-del-espacio-ulla-10262) de Games pasó inadvertida, pero de comprobarse el hecho, quedaría claro que existe una opaca ingeniería financiera destinada al despliegue de fuerzas de choque en las universidades. Incluso el propio Álvarez, según se reveló, cuenta con [ingresos por hasta tres sueldos en cargos públicos](https://www.dataclave.com.ar/poder/quien-es-el-funcionario-de-milei-que-cobra-en-tres-cargos-publicos-y-responde-a-santiago-caputo_a68fa60b0efcb0cea74da37d9), aunque quiera presentarse como adalid del control presupuestario.
 
@@ -36,4 +38,4 @@ En vísperas de la Marcha Federal Universitaria, consideramos oportuno aportar e
 
 Si tenés algún aporte para realizar al debate, no dudes en enviarnos un correo a [radar.edipo@gmail.com](mailto:radar.edipo@gmail.com).
 
-Si sabés de un ataque físico para reportar, hacelo [acá](https://docs.google.com/forms/d/e/1FAIpQLSe5pKXuvkvSUiwI_YEq5OZrfXCmpcsDuz_6co_iS2Qags80_A/viewform); y si es un hecho de violencia digital, [acá](https://docs.google.com/forms/d/e/1FAIpQLSfz6UfWn2LvLjLSAmIK5WSjO1eb-QdTw3o7cF-gdsNKH-QEfw/viewform). Para recibir alertas como esta, suscribite en [este formulario](https://forms.gle/J1hQzqCMxoXmnwnu9).
+Si sabés de un ataque físico para reportar, hacelo [acá](https://docs.google.com/forms/d/e/1FAIpQLSe5pKXuvkvSUiwI_YEq5OZrfXCmpcsDuz_6co_iS2Qags80_A/viewform); y si es un hecho de violencia digital, [acá](https://docs.google.com/forms/d/e/1FAIpQLSfz6UfWn2LvLjLSAmIK5WSjO1eb-QdTw3o7cF-gdsNKH-QEfw/viewform). Para recibir alertas como esta, ¡suscribite en [este formulario](https://forms.gle/J1hQzqCMxoXmnwnu9)\!
