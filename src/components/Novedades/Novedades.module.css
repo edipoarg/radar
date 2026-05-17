@@ -124,4 +124,18 @@
   .mailIcon {
     font-size: 3.5rem;
   }
+
+   .cuerpoDePublicacion ol {
+    list-style-position: inside;
+    padding-left: 0;
+    margin-left: 0;
+  }
+
+  .cuerpoDePublicacion ol li {
+    text-align: right;
+    padding-right: 2rem;
+    line-height: 1.6;
+    margin-bottom: 0.8rem;
+    margin-left: 0;
+  }
 }
